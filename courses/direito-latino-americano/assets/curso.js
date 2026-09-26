@@ -45,7 +45,7 @@
   upd();
   try {
     var t = document.title.split(' · ')[0];
-    localStorage.setItem('cufrgs-contratos-last', JSON.stringify({ n: m[1], t: t }));
+    localStorage.setItem('cufrgs-dla-last', JSON.stringify({ n: m[1], t: t }));
   } catch (e) {}
 })();
 
@@ -113,5 +113,21 @@
     var el = e.target.closest && e.target.closest('.lk[data-lk]');
     if (pinned) { set(pinned, false); if (el && el.getAttribute('data-lk') === pinned) { pinned = null; return; } pinned = null; }
     if (el && matchMedia('(hover: none)').matches) { pinned = el.getAttribute('data-lk'); set(pinned, true); }
+  });
+})();
+
+// "Place your bets": answers stay hidden until the reader picks an option; then the court's side is marked.
+(function () {
+  document.querySelectorAll('.bet').forEach(function (bet) {
+    bet.classList.add('js-waiting');
+    bet.querySelectorAll('button[data-opt]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        bet.querySelectorAll('button[data-opt]').forEach(function (o) {
+          o.setAttribute('aria-pressed', String(o === b));
+          if (o.hasAttribute('data-court')) o.classList.add('court');
+        });
+        bet.classList.remove('js-waiting');
+      });
+    });
   });
 })();

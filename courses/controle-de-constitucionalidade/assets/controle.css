@@ -304,3 +304,69 @@ dl.termos dd{font-size:17px}
   .art-table th{width:22%!important}
   .art-table .aulas{width:18%!important;white-space:normal!important}
 }
+
+/* ---- quiz cards open alone (the row keeps its height outside the cards) ---- */
+.quiz{align-items:start}
+
+/* ---- figure elements that jump to their own step (data-go = panel id) ---- */
+[data-go]{cursor:pointer}
+[data-go]:hover>rect:first-child,[data-go]:hover>path:first-child,[data-go]:focus-visible>rect:first-child{stroke-width:2.6px}
+[data-go]:hover [style*="opacity"]{opacity:.9!important}
+[data-go]:focus{outline:none}
+[data-go]:focus-visible{outline:2px solid var(--dif);outline-offset:3px}
+
+/* ---- text ↔ figure links (same data-lk lights up together) ---- */
+.lk{cursor:pointer;text-decoration:underline dotted;text-decoration-thickness:2px;text-underline-offset:3px;text-decoration-color:var(--dif);transition:background-color .15s}
+.lk.conc{text-decoration-color:var(--conc)}.lk.mix{text-decoration-color:var(--mix)}
+.lk.on{background:var(--dif-wash)}.lk.conc.on{background:var(--conc-wash)}.lk.mix.on{background:var(--mix-wash)}
+td[data-lk],th[data-lk]{transition:background-color .15s}
+td[data-lk].on,th[data-lk].on{background:var(--dif-wash)}
+svg [data-lk]{transition:filter .15s}
+svg [data-lk].on{filter:drop-shadow(0 0 5px var(--dif))}
+svg [data-lk].on>rect:first-child,svg [data-lk].on>path:first-child{stroke-width:3px}
+
+/* ---- glosas: a pencil note in the gutter with a small arrow back to the text ---- */
+.mk{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px;text-decoration-color:var(--dif)}
+.mk.conc{text-decoration-color:var(--conc)}.mk.mix{text-decoration-color:var(--mix)}
+.glosa{float:right;clear:right;position:relative;width:230px;margin:2px -276px 14px 0;font:italic 16px/1.4 var(--serif);color:var(--dif)}
+.glosa.conc{color:var(--conc)}.glosa.mix{color:var(--mix)}
+.glosa a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+.glosa svg{position:absolute;left:-42px;top:2px;width:36px;height:22px;overflow:visible}
+.glosa svg path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:1099px){
+  .glosa{float:none;width:auto;margin:6px 0 16px;padding:2px 0 2px 12px;border-left:2px solid currentColor;display:block}
+  .glosa svg{display:none}
+}
+@media print{.glosa{float:none;width:auto;margin:4px 0 10px}.glosa svg{display:none}}
+
+/* ---- glosa ↔ its phrase light up together; whole-paragraph glosas get a bar on the glosa's side ---- */
+.mk{transition:background-color .15s}
+.mk.on{background:var(--dif-wash)}.mk.conc.on{background:var(--conc-wash)}.mk.mix.on{background:var(--mix-wash)}
+.glosa[data-lk]{cursor:default}
+.glosa.on{text-decoration:underline;text-underline-offset:2px}
+p.gp{border-right:2px solid var(--dif);padding-right:14px;margin-right:-16px}
+p.gp.gp-conc{border-right-color:var(--conc)}p.gp.gp-mix{border-right-color:var(--mix)}
+@media (max-width:1099px){
+  p.gp{border-right:0;padding-right:0;margin-right:0;border-left:2px solid var(--dif);padding-left:12px;margin-left:-14px}
+  p.gp.gp-conc{border-left-color:var(--conc)}p.gp.gp-mix{border-left-color:var(--mix)}
+}
+
+/* ---- idle life for figures that stay put: tiny loops, after the entrance animations ---- */
+@media (prefers-reduced-motion:no-preference){
+  .idle-float{transform-box:fill-box;animation:idle-float 5.5s 2.2s ease-in-out infinite}
+  @keyframes idle-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+  .idle-pulse{transform-box:fill-box;transform-origin:center;animation:idle-pulse 3.6s ease-in-out infinite}
+  @keyframes idle-pulse{0%,70%,100%{transform:scale(1)}82%{transform:scale(1.28)}}
+  /* moving gaps along an arrow: an overlay in paper colour on top of the solid stroke */
+  .idle-flow{fill:none;stroke:var(--paper);stroke-width:2.2px;stroke-dasharray:3 13;animation:idle-flow 1.4s 2s linear infinite}
+  @keyframes idle-flow{to{stroke-dashoffset:-32}}
+}
+@media (prefers-reduced-motion:reduce){.idle-flow{display:none}}
+@media print{.idle-flow{display:none}}
+
+/* ---- glosa markers: the same small letter ends the marked phrase and opens its glosa ---- */
+.glosa>svg{display:none}
+.gmark{font:600 11px/1 var(--mono);color:var(--dif);letter-spacing:0}
+sup.gmark{margin-left:1px;vertical-align:super}
+b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1px}
+.gmark.conc{color:var(--conc)}.gmark.mix{color:var(--mix)}

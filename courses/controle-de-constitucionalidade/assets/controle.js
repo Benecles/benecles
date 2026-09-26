@@ -52,3 +52,45 @@
     clones.forEach(function (c) { c.remove(); }); clones = [];
   });
 })();
+
+// Figure elements with data-go="<panel id>" take the reader to the step that shows that panel.
+(function () {
+  function go(el) {
+    var step = document.querySelector('.step[data-panel="' + el.getAttribute('data-go') + '"]');
+    if (step) step.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('[data-go]');
+    if (el) go(el);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var el = e.target.closest && e.target.closest('[data-go]');
+    if (el) { e.preventDefault(); go(el); }
+  });
+})();
+
+// Text ↔ figure links: everything sharing a data-lk key lights up together (hover, or tap on touch screens).
+(function () {
+  var groups = {};
+  document.querySelectorAll('[data-lk]').forEach(function (el) {
+    var k = el.getAttribute('data-lk');
+    (groups[k] = groups[k] || []).push(el);
+  });
+  if (!Object.keys(groups).length) return;
+  var pinned = null;
+  function set(k, on) { (groups[k] || []).forEach(function (el) { el.classList.toggle('on', on); }); }
+  document.addEventListener('mouseover', function (e) {
+    var el = e.target.closest && e.target.closest('[data-lk]');
+    if (el && !pinned) set(el.getAttribute('data-lk'), true);
+  });
+  document.addEventListener('mouseout', function (e) {
+    var el = e.target.closest && e.target.closest('[data-lk]');
+    if (el && !pinned) set(el.getAttribute('data-lk'), false);
+  });
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('.lk[data-lk]');
+    if (pinned) { set(pinned, false); if (el && el.getAttribute('data-lk') === pinned) { pinned = null; return; } pinned = null; }
+    if (el && matchMedia('(hover: none)').matches) { pinned = el.getAttribute('data-lk'); set(pinned, true); }
+  });
+})();
