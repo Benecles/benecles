@@ -51,7 +51,7 @@ strong{font-weight:600}
 /* title block, like the stamp in a drawing's corner */
 .hero{max-width:1180px;margin:0 auto;padding:clamp(28px,7vh,80px) clamp(16px,4vw,48px) 40px}
 .hero .kicker{display:flex;flex-wrap:wrap;gap:8px 22px;color:var(--ink-2);border-top:1.5px solid var(--ink);padding-top:12px}
-.hero h1{font:800 clamp(46px,8.4vw,112px)/.92 var(--sans);font-stretch:112%;letter-spacing:-.035em;margin:26px 0 22px;max-width:12ch}
+.hero h1{font:800 clamp(40px,8.4vw,112px)/.92 var(--sans);font-stretch:112%;letter-spacing:-.035em;margin:26px 0 22px;max-width:12ch}
 .hero h1,.chapter h2{text-wrap:balance}
 .hero h1 .split{display:block}
 .hero .deck{font-size:clamp(20px,2.1vw,25px);line-height:1.45;max-width:36ch;color:var(--ink-2);margin:0}
@@ -398,3 +398,26 @@ p.gp.gp-conc{border-right-color:var(--conc)}p.gp.gp-mix{border-right-color:var(-
 sup.gmark{margin-left:1px;vertical-align:super}
 b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1px}
 .gmark.conc{color:var(--conc)}.gmark.mix{color:var(--mix)}
+
+/* ---- "place your bets": the reader commits to an answer before the decision is revealed ---- */
+.bet{max-width:1180px;margin:30px auto 18px;padding:0 clamp(16px,4vw,48px)}
+.bet>div{max-width:66ch;border:1.5px solid var(--ink);background:var(--paper);box-shadow:4px 4px 0 var(--grid-major);padding:18px 20px 16px}
+.bet .bet-k{display:block;font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--conc);margin-bottom:6px}
+.bet .bet-q{font:600 19px/1.4 var(--sans);margin:0 0 14px}
+.bet .bet-opts{display:flex;flex-direction:column;gap:8px}
+.bet button{text-align:left;font:16px/1.4 var(--serif);padding:10px 14px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer;transition:background-color .15s}
+.bet button:hover{background:var(--paper-2)}
+.bet button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.bet button.court{box-shadow:inset 4px 0 0 var(--dif)}
+.bet button .who{display:block;font:11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--dif);margin-top:4px}
+.bet button[aria-pressed="true"] .who{color:var(--paper)}
+.bet .bet-reveal{margin-top:14px;padding-top:12px;border-top:1px solid var(--grid-major);font-size:17px;line-height:1.55}
+.bet .bet-reveal p{margin:0 0 .6em}
+.bet.js-waiting .bet-reveal,.bet.js-waiting .who{display:none}
+@media print{.bet .bet-reveal,.bet .who{display:block!important}}
+
+.hero h1{-webkit-hyphens:auto;hyphens:auto}
+
+.hero-fork.hero-map{margin-top:28px;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}
+@media (max-width:860px){.hero-fork.hero-map{display:block}}
+.hero-fork.hero-map{overflow:hidden}
