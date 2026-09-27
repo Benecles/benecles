@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<script>(function(){var k='cufrgs-theme',r=document.documentElement;try{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}catch(e){}document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){var d=r.dataset.theme==='dark';b.setAttribute('aria-pressed',d)}sync();b.addEventListener('click',function(){var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{localStorage.setItem(k,d?'dark':'light')}catch(e){}sync()})})})()</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Controle de Constitucionalidade · CUFRGS</title>
 <meta name="description" content="Controle de Constitucionalidade (DIR03027, UFRGS 2026/2): 36 aulas organizadas pelos nove blocos do programa, com explicações, diagramas e exercícios.">
-<link rel="stylesheet" href="assets/controle.css?v=20260923-2">
+<link rel="stylesheet" href="assets/controle.css?v=20260927d">
 <style>
 .syllabus{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 80px}
 .block{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(16px,4vw,56px);border-top:1.5px solid var(--ink);padding:22px 0 30px}
@@ -58,45 +59,23 @@
  .course-jumps a{padding:9px 8px 10px 0}
  .map-scroll-note{display:block;margin:-7px 0 12px;font:11px/1.5 var(--mono);letter-spacing:.02em;color:var(--ink-2)}
 }
-</style>
+header.hero.front h1{font-size:clamp(40px,6.2vw,84px)!important;margin:18px 0 12px!important;max-width:none!important}header.hero.front .deck{max-width:66ch!important}header.hero.front .intro>div{max-width:none!important}.planta.front-sheet>h2{font-size:15px!important;font-family:var(--mono)!important;font-weight:500!important;letter-spacing:.1em;text-transform:uppercase;margin:0 0 4px!important}.planta.front-sheet>.lede{font-size:16px!important;max-width:90ch!important;margin:0 0 14px!important;color:var(--ink-2)}header.hero.front .intro{grid-template-columns:1fr!important}.planta.front-sheet{padding-top:10px!important}.front-legend{max-width:1180px;margin:0 auto 26px;padding:0 clamp(16px,4vw,48px)}.front-legend .legend{display:flex;flex-wrap:wrap;gap:6px 28px;align-items:baseline}.front-legend .legend p{margin:0}</style>
 </head>
 <body>
-<nav class="topbar"><a href="../../index.html">← CUFRGS</a><span>DIR03027 · UFRGS · 2026/2</span></nav>
+<nav class="topbar"><a href="../../index.html">← CUFRGS</a><span>DIR03027 · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 
-<header class="hero">
+<header class="hero front">
   <div class="kicker label"><span>Guia de estudo · Direito Constitucional</span><span>Prof. Marcelo Schenk Duque</span><span>36 aulas · blocos I a IX do programa</span></div>
-  <h1><span class="split">Controle de</span><span class="split">Constitu&shy;cionalidade.</span></h1>
+  <h1><span class="split">Controle de Constitu&shy;cionalidade.</span></h1>
   <div class="intro">
     <div>
       <p class="deck">Quem guarda a Constituição, por qual via e com que efeitos. O semestre inteiro em aulas para ler, na ordem do programa, com diagramas que desenham cada mecanismo.</p>
       <a class="start" href="aula-01.html">COMEÇAR PELA AULA 01 →</a>
     </div>
-    <div class="legend">
-      <span class="label">Como ler os diagramas</span>
-      <p><i style="background:var(--conc)"></i><strong class="conc">Vermelho</strong> e <i style="background:var(--dif)"></i><strong class="dif">azul</strong>: os dois lados do contraste central de cada aula. Nos sistemas, vermelho = concentrado e azul = difuso.</p>
-      <p><i style="background:var(--ink)"></i><strong>Grafite</strong>: a Constituição, parâmetro do controle.</p>
-      <p><i style="background:var(--mix)"></i><strong class="mix">Roxo</strong>: combinação, sistema misto.</p>
-    </div>
+    
   </div>
 </header>
-
-<nav class="course-jumps" aria-label="Ir para uma parte do curso">
-  <div class="course-jumps-inner">
-    <span class="jump-label label">Ir direto a</span>
-    <a href="#planta">Planta do semestre</a>
-    <a href="#bloco-i">I · Fundamentos</a>
-    <a href="#bloco-ii">II · Teorias</a>
-    <a href="#bloco-iii">III · Momentos</a>
-    <a href="#bloco-iv">IV · Sistemas</a>
-    <a href="#bloco-v">V · Técnicas</a>
-    <a href="#bloco-vi">VI · ADI</a>
-    <a href="#bloco-vii">VII · Decisões</a>
-    <a href="#bloco-viii">VIII · Estados</a>
-    <a href="#bloco-ix">IX · Tribunais</a>
-  </div>
-</nav>
-
-<section class="planta" id="planta" aria-labelledby="planta-t">
+<section class="planta front-sheet" id="planta" aria-labelledby="planta-t">
   <h2 id="planta-t">Planta do semestre</h2>
   <p class="lede">O curso como um único desenho. Os fundamentos se apoiam na Constituição, e as teorias e os momentos do controle levam à bifurcação dos sistemas. Da rota concentrada saem a ADI, passo a passo, as demais ações diretas e as técnicas atuais de decisão; da rota difusa, o controle nos tribunais. Clique em qualquer peça para abrir a aula.</p>
   <p class="map-scroll-note">No celular, deslize a planta para o lado para percorrê-la.</p>
@@ -196,6 +175,32 @@
   </div>
   <div class="caption"><span>Planta · 36 aulas</span><span>Programa DIR03027 · blocos I–IX</span></div>
 </section>
+<div class="front-legend"><div class="legend">
+      <span class="label">Como ler os diagramas</span>
+      <p><i style="background:var(--conc)"></i><strong class="conc">Vermelho</strong> e <i style="background:var(--dif)"></i><strong class="dif">azul</strong>: os dois lados do contraste central de cada aula. Nos sistemas, vermelho = concentrado e azul = difuso.</p>
+      <p><i style="background:var(--ink)"></i><strong>Grafite</strong>: a Constituição, parâmetro do controle.</p>
+      <p><i style="background:var(--mix)"></i><strong class="mix">Roxo</strong>: combinação, sistema misto.</p>
+    </div></div>
+<nav class="course-jumps" aria-label="Ir para uma parte do curso">
+  <div class="course-jumps-inner">
+    <span class="jump-label label">Ir direto a</span>
+    <a href="#planta">Planta do semestre</a>
+    <a href="#bloco-i">I · Fundamentos</a>
+    <a href="#bloco-ii">II · Teorias</a>
+    <a href="#bloco-iii">III · Momentos</a>
+    <a href="#bloco-iv">IV · Sistemas</a>
+    <a href="#bloco-v">V · Técnicas</a>
+    <a href="#bloco-vi">VI · ADI</a>
+    <a href="#bloco-vii">VII · Decisões</a>
+    <a href="#bloco-viii">VIII · Estados</a>
+    <a href="#bloco-ix">IX · Tribunais</a>
+  </div>
+</nav>
+
+
+
+
+
 
 <main class="syllabus">
   <section class="block" id="bloco-i"><div><span class="roman">I</span><h2>Fundamentos do controle</h2><p class="blurb">O que é controlar, o que precisa existir para haver controle, quem guarda a Constituição e qual é o parâmetro.</p></div><ol>
