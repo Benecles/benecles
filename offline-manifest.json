@@ -1,6 +1,7 @@
 {
-"version": "2d73aa01f693",
+"version": "5ae1be437f88",
 "files": [
+"_qa.js",
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
 "assets/course-diagrams/semana01-exclusoes-conduta-ced6eec05503.svg",
@@ -66,8 +67,10 @@
 "courses/direito-latino-americano/aula-07.html",
 "courses/direito-latino-americano/aula-08.html",
 "courses/direito-latino-americano/aula-09.html",
+"courses/direito-latino-americano/cartoes.html",
 "courses/direito-latino-americano/index.html",
 "courses/direito-latino-americano/",
+"courses/direito-latino-americano/revisao-atividade.html",
 "courses/teoria-do-delito/atelier/iter.css",
 "courses/teoria-do-delito/atelier/iter.html",
 "courses/teoria-do-delito/atelier/iter.js",
