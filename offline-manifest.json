@@ -1,5 +1,5 @@
 {
-"version": "6af8cdf7dcc9",
+"version": "fd7479643e9a",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
@@ -84,12 +84,14 @@
 "courses/teoria-do-delito/",
 "courses/teoria-do-delito/mapa-do-curso.html",
 "courses/teoria-do-delito/provenance.json",
+"courses/teoria-do-delito/revisao-p1.html",
 "courses/teoria-do-delito/search-index.json",
 "courses/teoria-do-delito/suplemento-16.html",
 "courses/teoria-do-delito/suplemento-17.html",
 "courses/teoria-do-delito/suplemento-18.html",
 "courses/teoria-do-delito/suplemento-19.html",
 "courses/teoria-do-delito/suplemento-20.html",
+"courses/teoria-do-delito/unidade-01-casos.html",
 "courses/teoria-do-delito/unidade-01.html",
 "courses/teoria-do-delito/unidade-02.html",
 "courses/teoria-do-delito/unidade-03.html",
