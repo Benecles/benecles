@@ -4,4 +4,5 @@ body{background:#e9dfca;--accent:#a14b39}.instrument{max-width:1400px;margin:aut
 let current=0,angle=0;const choices=[...document.querySelectorAll('[data-topic]')],topics=[...document.querySelectorAll('.topic')];function show(n,delta){angle-=delta*90;current=(n+4)%4;document.querySelector('.wheel').style.setProperty('--turn',angle+'deg');topics.forEach((p,i)=>p.hidden=i!==current);choices.forEach((b,i)=>b.setAttribute('aria-pressed',i===current));}show(0,0);choices.forEach((b,i)=>b.addEventListener('click',()=>{let d=(i-current+4)%4;if(d>2)d-=4;show(i,d)}));document.querySelector('#prev').addEventListener('click',()=>show(current-1,-1));document.querySelector('#next').addEventListener('click',()=>show(current+1,1));
 </script><script src="../assets/offline.js" defer></script>
 <script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body></html>

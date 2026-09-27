@@ -1,5 +1,5 @@
 {
-"version": "4a75eb2a6897",
+"version": "f268436d042d",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
@@ -8,6 +8,7 @@
 "assets/course-search.js",
 "assets/course.css",
 "assets/course.js",
+"assets/highlight-panel.js",
 "assets/highlight.js",
 "assets/offline.js",
 "assets/unit08/diagram.html",

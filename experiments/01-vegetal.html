@@ -4,4 +4,5 @@ body{background:#e7e6d9}.layout{max-width:1400px;margin:auto;display:grid;grid-t
 const buttons=[...document.querySelectorAll('[data-layer]')];buttons.forEach(b=>b.addEventListener('click',()=>{let on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);document.querySelector('.'+b.dataset.layer).classList.toggle('lifted',!on);b.textContent=(b.dataset.layer==='occupation'?'Ocupação':'Memória')+' · '+(on?'retirar':'repor');let count=buttons.filter(x=>x.getAttribute('aria-pressed')==='true').length;document.querySelector('.status').textContent=count===2?'Três leituras se encontram. Retire uma folha para ver o que ela acrescenta.':count===1?'Uma folha permanece sobre o terreno. O que mudou na leitura?':'Só o terreno. Os outros traços estavam nas folhas, não no chão.'}));
 </script><script src="../assets/offline.js" defer></script>
 <script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body></html>

@@ -62,6 +62,18 @@
     while ((n = w.nextNode())) { arr.push({ n: n, s: pos }); parts.push(n.nodeValue); pos += n.nodeValue.length; }
     return { arr: arr, text: parts.join('') };
   }
+  // Kindle-style: a mark always covers whole words, even if the selection starts or ends mid-word.
+  var segmenter = window.Intl && Intl.Segmenter ? new Intl.Segmenter('pt-BR', { granularity: 'word' }) : null;
+  function wordSnap(off) {
+    if (!segmenter || !off) return off;
+    var lo = Math.max(0, off.s - 40), hi = Math.min(off.text.length, off.e + 40), first = null, last = null;
+    Array.from(segmenter.segment(off.text.slice(lo, hi))).forEach(function (part) {
+      if (!part.isWordLike) return;
+      var a = lo + part.index, b = a + part.segment.length;
+      if (a < off.e && off.s < b) { if (!first) first = a; last = b; }
+    });
+    return first === null ? off : { s: Math.min(first, off.s), e: Math.max(last, off.e), text: off.text };
+  }
   function rangeOffsets(r) {
     var ix = index(), s = -1, e = -1;
     ix.arr.forEach(function (x) {
@@ -108,6 +120,7 @@
   var hl = [];
   function save() {
     try { hl.length ? localStorage.setItem(KEY, JSON.stringify(hl)) : localStorage.removeItem(KEY); } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent('cufrgs:highlights-change', { detail: { highlights: hl.slice() } })); } catch (e) {}
   }
   function restore() {
     var saved = [];
@@ -156,7 +169,7 @@
     if (!off) { hide(); return; }
     var rects = [].filter.call(r.getClientRects(), function (q) { return q.width > 0; });
     if (!rects.length) return;
-    pending = off; rm.hidden = true; sync(null);
+    pending = wordSnap(off); rm.hidden = true; sync(null);
     place(rects, coarse); // on touch screens the system menu sits above the selection
   }
   var t;

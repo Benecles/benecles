@@ -24,7 +24,7 @@ def public_files():
             out.append(os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, '/'))
     return sorted(out)
 
-SCRIPTS = ('assets/offline.js', 'assets/highlight.js')
+SCRIPTS = ('assets/offline.js', 'assets/highlight.js', 'assets/highlight-panel.js')
 
 def add_script(path):
     full = os.path.join(ROOT, path)

@@ -4,4 +4,5 @@ body{background:#f4dc9b;color:#352e32;--shift:3px}.top{border-color:#352e3255}.p
 const inks=[...document.querySelectorAll('[data-ink]')];inks.forEach(b=>b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);document.querySelector('.plate-'+b.dataset.ink).classList.toggle('hidden-ink',!on);let n=inks.filter(x=>x.getAttribute('aria-pressed')==='true').length;document.querySelector('.status').textContent=n===2?'As duas tintas se encontram. O papel participa da cor.':n===1?'Uma só passagem. A região de encontro desaparece.':'Só o papel e as marcas de registro. A cor começa aqui.'}));document.querySelector('#offset').addEventListener('input',e=>{document.documentElement.style.setProperty('--shift',e.target.value+'px');document.querySelector('#amount').textContent=e.target.value+' mm*'});
 </script><script src="../assets/offline.js" defer></script>
 <script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body></html>
