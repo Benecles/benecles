@@ -12,3 +12,6 @@
 /* The contents live on a separate index slip; the reading sheet stays central on roomy screens. */
 .chapter-nav{background:#e2d7ba;padding:23px 17px 25px;border-left:3px solid #9b624a;box-shadow:1px 3px 4px #9b87621f}.chapter-nav a{border-left:0;border-bottom:1px dotted #ad9b7666;padding-left:7px}.chapter-nav a[aria-current=location]{background:#f2e7c9;color:#8e4738;border-left:2px solid #a25b41}.chapter-nav h2{padding-bottom:17px;border-bottom:1px solid #ad9b7666}.chapter-header{position:relative}.chapter-header:after{content:'';position:absolute;bottom:-4px;left:0;width:36px;border-bottom:3px solid #a26348;transform:rotate(-2deg)}
 @media(min-width:1280px){.reader-layout{grid-template-columns:210px minmax(0,820px) 210px;gap:22px;max-width:1350px;justify-content:center}.reading-sheet{padding-left:56px;padding-right:56px}}
+
+/* night mode: the contents slip goes dark with the page (it kept its light paper before) */
+@media (prefers-color-scheme:dark){.chapter-nav{background:#26241f;border-color:#6b604c}.chapter-nav h2{color:#eee5d4}.chapter-nav a{color:#d0c2aa;border-left-color:#8a7c6366}.chapter-nav a[aria-current=page],.chapter-nav a[aria-current=location],.chapter-nav a:hover{background:#38332b;color:#f0b8a4}}
