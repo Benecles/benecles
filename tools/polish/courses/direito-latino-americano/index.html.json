@@ -1,0 +1,10 @@
+[
+{
+"before": " · 08</text></a><a href=\"aula-05.html\" aria-label=\"Montevideo: aulas 05\"><use href=\"#lm-URY\" style=\"fill:transparent;stroke:none\"/><circle cx=\"423.9\" cy=\"449.8\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"423.9\" cy=\"449.8\" r=\"7.5\" style=\"fill:none;stroke:var(--ink);stroke-width:.9\"/><text x=\"435.9\" y=\"455.8\" text-anchor=\"start\" style=\"font:600 12px var(--mono);fill:var(--ink)\">Montevideo</text><text x=\"435.9\" y=\"470.8\" text-anchor=\"start\" style=\"font:11px var(--mono);fill:var(--conc)\">aulas 05</text>",
+"after": " · 08</text></a><a href=\"aula-05.html\" aria-label=\"Montevidéu: aulas 05\"><use href=\"#lm-URY\" style=\"fill:transparent;stroke:none\"/><circle cx=\"423.9\" cy=\"449.8\" r=\"4\" style=\"fill:var(--ink)\"/><circle cx=\"423.9\" cy=\"449.8\" r=\"7.5\" style=\"fill:none;stroke:var(--ink);stroke-width:.9\"/><text x=\"435.9\" y=\"455.8\" text-anchor=\"start\" style=\"font:600 12px var(--mono);fill:var(--ink)\">Montevidéu</text><text x=\"435.9\" y=\"470.8\" text-anchor=\"start\" style=\"font:11px var(--mono);fill:var(--conc)\">aulas 05</text>"
+},
+{
+"before": "Atividade avaliativa · 05.10.2026</span>\n        <h2 id=\"exam-title\">Revisão para",
+"after": "Atividade avaliativa · 05/10/2026</span>\n        <h2 id=\"exam-title\">Revisão para"
+}
+]

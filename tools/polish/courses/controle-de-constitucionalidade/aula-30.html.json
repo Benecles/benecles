@@ -1,0 +1,14 @@
+[
+{
+"before": "13 da Lei 9.868 é anterior a",
+"after": "13 da Lei 9.868/1999 é anterior a"
+},
+{
+"before": "<span class=\"num mix\" aria-hidden=\"true\">04</span><h2 id=\"c4\">A pergunta é uma; a resposta pode ser constitucional ou não</h2><p class=\"lede\">ADC não ",
+"after": "<span class=\"num mix\" aria-hidden=\"true\">04</span><h2 id=\"c4\">A ADC pode terminar em constitucionalidade ou em inconstitucionalidade</h2><p class=\"lede\">ADC não "
+},
+{
+"before": "<p class=\"caso\"><span class=\"label\">Exemplo trabalhado</span>Imagine que uma lei federal institua um critério de",
+"after": "<p class=\"caso\"><span class=\"label\">Exemplo trabalhado</span>Uma lei federal institui um critério de"
+}
+]

@@ -1,0 +1,6 @@
+[
+{
+"before": "</div>\n    <div class=\"stamp\"><span>Status<b>—</b></span><span>Programa<b>—</b></span><span>Prof.<b>—</b></span></div>\n  </div>\n",
+"after": "</div>\n    <div class=\"stamp\"><span>Status<b>–</b></span><span>Programa<b>–</b></span><span>Prof.<b>–</b></span></div>\n  </div>\n"
+}
+]

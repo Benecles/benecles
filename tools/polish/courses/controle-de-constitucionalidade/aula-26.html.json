@@ -1,0 +1,34 @@
+[
+{
+"before": "2º, da Lei 9.868/99.</p><svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\"><defs><marker id=\"ah26hero\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/></marker>",
+"after": "2º, da Lei 9.868/1999.</p><svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\"><defs><marker id=\"ah26hero\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/></marker>"
+},
+{
+"before": "§ 2º, LEI 9.868/99</text>\n      </svg>\n      <figcaption><span>",
+"after": "§ 2º, LEI 9.868/1999</text>\n      </svg>\n      <figcaption><span>"
+},
+{
+"before": "essa alteração.</p>\n      <p>Comece pelo início da sequência: a <strong class=\"dif\">Lei ",
+"after": "essa alteração.</p>\n      <p>No início da sequência, a <strong class=\"dif\">Lei "
+},
+{
+"before": "</h3>\n      <blockquote class=\"law\"><cite>Lei 9.868/99, art. 11, §",
+"after": "</h3>\n      <blockquote class=\"law\"><cite>Lei 9.868/1999, art. 11, §"
+},
+{
+"before": " teste rápido</h2><p class=\"lede\">Fixe primeiro a sequência; depois confira as respostas.</p></section><div class=\"wide\"><dl class=\"termos\"><dt>Efeito repristinatório cautelar</dt><dd>Restauração ",
+"after": " teste rápido</h2><p class=\"lede\">Primeiro a sequência; depois as respostas.</p></section><div class=\"wide\"><dl class=\"termos\"><dt>Efeito repristinatório da cautelar</dt><dd>Restauração "
+},
+{
+"before": "modulação.</dd></dl><div class=\"quiz\"><details><summary>Lei 2 havia revogado Lei 1 e",
+"after": "modulação.</dd></dl><div class=\"quiz\"><details><summary>A Lei 2 havia revogado a Lei 1 e"
+},
+{
+"before": "11, § 2º, Lei 9.868/99).</p></details><details><summary>A ",
+"after": "11, § 2º, da Lei 9.868/1999).</p></details><details><summary>A "
+},
+{
+"before": "2º, da Lei 9.868/99 estabelece regra própria",
+"after": "2º, da Lei 9.868/1999 estabelece regra própria"
+}
+]

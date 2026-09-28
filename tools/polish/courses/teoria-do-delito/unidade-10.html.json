@@ -1,0 +1,42 @@
+[
+{
+"before": "<div class=\"longform\"><div><p class=\"lex \"><b>Ideia central</b><strong>Causa de ",
+"after": "<div class=\"longform\"><div><p class=\"lex \"><b>Ideia da unidade</b><strong>Causa de "
+},
+{
+"before": "\n<section class=\"chapter\" aria-labelledby=\"c02\"><span class=\"num \" aria-hidden=\"true\">02</span><h2 id=\"c02\">Fontes e autoridade de cada formulação",
+"after": "\n<section class=\"chapter\" aria-labelledby=\"c02\"><span class=\"num \" aria-hidden=\"true\">02</span><h2 id=\"c02\">Autoridade de cada formulação"
+},
+{
+"before": "\n<div class=\"longform\"><div><p>As fontes não têm a",
+"after": "\n<div class=\"longform\"><div><p>As formulações não têm a"
+},
+{
+"before": "fundamentos e casos; o Archive fornece material histórico de terceiro. A fonte comparada não substitui os",
+"after": "fundamentos e casos; exemplos históricos servem só de ilustração. A comparação com o direito alemão não substitui os"
+},
+{
+"before": "\n<div class=\"table-wrap\" tabindex=\"0\" role=\"region\"><table class=\"compare\"><thead><tr><th scope=\"col\">Fonte</th><th scope=\"col\">Função</th><th scope=\"col\">Limite",
+"after": "\n<div class=\"table-wrap\" tabindex=\"0\" role=\"region\"><table class=\"compare\"><thead><tr><th scope=\"col\">Referência</th><th scope=\"col\">Função</th><th scope=\"col\">Limite"
+},
+{
+"before": "</td></tr><tr><td>Roxin, pp. 36 a 43</td><td>Autodefesa, prevalência, ",
+"after": "</td></tr><tr><td>Roxin, princípios de justificação</td><td>Autodefesa, prevalência, "
+},
+{
+"before": "</td></tr><tr><td>Roxin, pp. 44 a 51</td><td>Responsabilidade, prevenção ",
+"after": "</td></tr><tr><td>Roxin, responsabilidade</td><td>Responsabilidade, prevenção "
+},
+{
+"before": "</td></tr><tr><td>Roxin, pp. 44 a 60</td><td>Ponte entre ",
+"after": "</td></tr><tr><td>Roxin, justificação e culpabilidade</td><td>Ponte entre "
+},
+{
+"before": " brasileira</td></tr><tr><td>Archive</td><td>Classificações de ",
+"after": " brasileira</td></tr><tr><td>Exemplos históricos</td><td>Classificações de "
+},
+{
+"before": " e excesso</td><td>Material histórico de terceiro</td></tr><tr><td>BGB, ",
+"after": " e excesso</td><td>Ilustração, sem valor normativo</td></tr><tr><td>BGB, "
+}
+]

@@ -1,0 +1,26 @@
+[
+{
+"before": "resultado socialmente indesejado. A pergunta funcional vem depois",
+"after": "resultado socialmente indesejado. O exame funcional vem depois"
+},
+{
+"before": "<th scope=\"col\">Modelo</th><th scope=\"col\">Ideia central</th><th scope=\"col\">Ganho explicativo</th>",
+"after": "<th scope=\"col\">Modelo</th><th scope=\"col\">Ideia do modelo</th><th scope=\"col\">Ganho explicativo</th>"
+},
+{
+"before": "inicial. Uma decisão extremamente anormal, livre e ",
+"after": "inicial. Uma decisão anormal, livre e "
+},
+{
+"before": "em jogo.</p><p class=\"lex \"><b>A pergunta correta</b>Não basta dizer",
+"after": "em jogo.</p><p class=\"lex \"><b>O que mostrar</b>Não basta dizer"
+},
+{
+"before": "que houve uma violação. É preciso mostrar: “qual risco a norma",
+"after": "que houve uma violação: é preciso mostrar qual risco a norma"
+},
+{
+"before": "pertence a esse perigo?”</p><h3 id=\"54-resultado-dentro-e-fora-do-risco\">5.4 Resultado ",
+"after": "pertence a esse perigo.</p><h3 id=\"54-resultado-dentro-e-fora-do-risco\">5.4 Resultado "
+}
+]

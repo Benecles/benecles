@@ -1,0 +1,30 @@
+[
+{
+"before": "aula de 21/09 não pede para reaprender o que é um ECI. Pede outra coisa: olhar o que acontece <strong>depois</strong> da declaração. Quem recebe as ordens,",
+"after": "aula de 21/09 trata do que acontece <strong>depois</strong> da declaração do ECI: quem recebe as ordens,"
+},
+{
+"before": "de ler: como você decidiria?</span><p class=\"bet-q\">As autoridades ",
+"after": "de ler: como decidir?</span><p class=\"bet-q\">As autoridades "
+},
+{
+"before": " de 2004</h2><p class=\"lede\">Não uma ordem, mas um calendário com",
+"after": " de 2004</h2><p class=\"lede\">A sentença é um calendário com"
+},
+{
+"before": "é o mais esperto. Sem ele, qualquer",
+"after": "é o mais engenhoso. Sem ele, qualquer"
+},
+{
+"before": " anos depois</h2><p class=\"lede\">Avanços, sim. Superação, não.</p></section>\n<div class=\"longform\"><div><p>",
+"after": " anos depois</h2><p class=\"lede\">Houve avanços, mas não superação.</p></section>\n<div class=\"longform\"><div><p>"
+},
+{
+"before": "</p><p>Três movimentos merecem atenção. O primeiro é",
+"after": "</p><p>Três movimentos se destacam. O primeiro é"
+},
+{
+"before": "</tr><tr><th scope=\"row\">Participação</th><td>Nenhum: aqui a Corte",
+"after": "</tr><tr><th scope=\"row\">Participação</th><td>Nenhuma: aqui a Corte"
+}
+]

@@ -1,0 +1,46 @@
+[
+{
+"before": "lista de direitos fundamentais, sem o bloco,",
+"after": "lista de direitos fundamentais; sem o bloco,"
+},
+{
+"before": "EC</text>\n        <text x=\"352\" y=\"140\" class=\"t-small tc-mix\">TRATADO §3º</text>\n        <path class=\"grow\" d=\"M60 420C110 380 150 340 195 300\" style=\"stroke:var(--mix)\" stroke-width=\"2.5\" fill=\"none\" marker-end=\"url(#ah3)\"/>\n        <text x=\"40\" y=\"400\" class=\"t-small tc-mix\">BLOCO",
+"after": "EC</text>\n        <text x=\"352\" y=\"140\" class=\"t-small tc-mix\">TRATADO § 3º</text>\n        <path class=\"grow\" d=\"M60 420C110 380 150 340 195 300\" style=\"stroke:var(--mix)\" stroke-width=\"2.5\" fill=\"none\" marker-end=\"url(#ah3)\"/>\n        <text x=\"40\" y=\"400\" class=\"t-small tc-mix\">BLOCO"
+},
+{
+"before": "</text><text x=\"432\" y=\"404\" class=\"t-small\">ART. 5º, §3º</text><rect x=\"78\" y=\"366\" width=\"104\" height=\"50\" rx=\"14\" class=\"w-grey ink\"/><text x=\"90\" y=\"388\" class=\"t-small\">TRATADOS DH",
+"after": "</text><text x=\"432\" y=\"404\" class=\"t-small\">ART. 5º, § 3º</text><rect x=\"78\" y=\"366\" width=\"104\" height=\"50\" rx=\"14\" class=\"w-grey ink\"/><text x=\"90\" y=\"388\" class=\"t-small\">TRATADOS DH"
+},
+{
+"before": "o parâmetro formal central. Em sentido estrito,",
+"after": "o parâmetro formal principal. Em sentido estrito,"
+},
+{
+"before": "lhe dão consistência, em suma, o que se",
+"after": "lhe dão consistência, isto é, o que se"
+},
+{
+"before": "abarcaria também uma \"ordem constitucional global\" e valores suprapositivos,",
+"after": "abarcaria também uma “ordem constitucional global” e valores suprapositivos,"
+},
+{
+"before": "o art. 5º, §3º, criou um novo",
+"after": "o art. 5º, § 3º, criou um novo"
+},
+{
+"before": "\n      <tr><th scope=\"row\">Origem</th><td>, </td><td>Direito francês, ",
+"after": "\n      <tr><th scope=\"row\">Origem</th><td></td><td>Direito francês, "
+},
+{
+"before": " do STF/doutrina</th><td>, </td><td>Restritiva prevalece: ",
+"after": " do STF/doutrina</th><td></td><td>Restritiva prevalece: "
+},
+{
+"before": " de ampliação</th><td>, </td><td>EC 45/2004, art. 5º, §3º: tratados de DH",
+"after": " de ampliação</th><td></td><td>EC 45/2004, art. 5º, § 3º: tratados de DH"
+},
+{
+"before": "suprapositivos e uma \"ordem constitucional global\", não foi acolhida",
+"after": "suprapositivos e uma “ordem constitucional global”, não foi acolhida"
+}
+]

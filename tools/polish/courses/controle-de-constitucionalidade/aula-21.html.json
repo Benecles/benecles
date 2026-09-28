@@ -1,0 +1,74 @@
+[
+{
+"before": "procedimento da Lei 9.868/99, os requisitos formais",
+"after": "procedimento da Lei 9.868/1999, os requisitos formais"
+},
+{
+"before": "inicial e um contraste central: o fundamento constitucional",
+"after": "inicial e um contraste: o fundamento constitucional"
+},
+{
+"before": "do mérito, julgamento. Duas setas saem dessa linha para um mesmo bloco, a manifestação das autoridades e do PGR, e voltam.</p>\n</section>\n\n<div class=\"scrolly\">\n  ",
+"after": "do mérito, julgamento. A manifestação das autoridades e do PGR entra em duas dessas fases.</p>\n</section>\n\n<div class=\"scrolly\">\n  "
+},
+{
+"before": "ADI/ADC · LEI 9.868/99</text>\n        <line x1=\"60\" y1=\"300\" x2=\"540\" y2=\"300\" class=\"ink grow\" stroke-width=\"3\"/>\n        <circle cx=\"100\" cy=\"300\" r=\"13\" style=\"fill:var(--ink)\"/>\n        ",
+"after": "ADI/ADC · LEI 9.868/1999</text>\n        <line x1=\"60\" y1=\"300\" x2=\"540\" y2=\"300\" class=\"ink grow\" stroke-width=\"3\"/>\n        <circle cx=\"100\" cy=\"300\" r=\"13\" style=\"fill:var(--ink)\"/>\n        "
+},
+{
+"before": "rito da Lei 9.868/99</h3>\n      <p>O processamento",
+"after": "rito da Lei 9.868/1999</h3>\n      <p>O processamento"
+},
+{
+"before": "de entrada</h3>\n      <p>Da fase de <strong class=\"conc\">",
+"after": "de entrada</h3>\n      <p>Na fase de <strong class=\"conc\">"
+},
+{
+"before": " cautelar</strong> e da fase de <strong>",
+"after": " cautelar</strong> e na fase de <strong>"
+},
+{
+"before": " do mérito</strong> partem setas para o mesmo bloco: a <strong>manifestação ",
+"after": " do mérito</strong> ocorre a <strong>manifestação "
+},
+{
+"before": "e um princípio decisivo: primeiro os requisitos formais comuns, depois um princípio que qualifica um deles, o fundamento jurídico",
+"after": "e um princípio que qualifica um deles: o fundamento jurídico"
+},
+{
+"before": "(arts. 3º e 14, Lei 9.868/99).</li>\n    <li><b>Indicação ",
+"after": "(arts. 3º e 14 da Lei 9.868/1999).</li>\n    <li><b>Indicação "
+},
+{
+"before": "que comprovem a impugnação: ou, na ADC,",
+"after": "que comprovem a impugnação, ou, na ADC,"
+},
+{
+"before": ", há uma ressalva importante: o STF <strong>",
+"after": ", há uma ressalva: o STF <strong>"
+},
+{
+"before": "causa de pedir aberta, com números soltos</h3>\n      <p>A causa",
+"after": "causa de pedir aberta</h3>\n      <p>A causa"
+},
+{
+"before": "(arts. 4º e 15, Lei 9.868/99).</li>\n    <li><b>Recurso ",
+"after": "(arts. 4º e 15 da Lei 9.868/1999).</li>\n    <li><b>Recurso "
+},
+{
+"before": "\n  <p class=\"note\">A Lei 9.868/99 prevê o agravo,",
+"after": "\n  <p class=\"note\">A Lei 9.868/1999 prevê o agravo,"
+},
+{
+"before": "</h2>\n  <p class=\"lede\">O contraste central da aula, reorganizado",
+"after": "</h2>\n  <p class=\"lede\">O contraste da aula, reorganizado"
+},
+{
+"before": "15 da Lei 9.868/99).</p></details>\n    <details><summary>O",
+"after": "15 da Lei 9.868/1999).</p></details>\n    <details><summary>O"
+},
+{
+"before": "interno. A Lei 9.868/99 prevê o agravo,",
+"after": "interno. A Lei 9.868/1999 prevê o agravo,"
+}
+]

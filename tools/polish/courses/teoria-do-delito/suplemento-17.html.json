@@ -1,0 +1,386 @@
+[
+{
+"before": "</header>\n<div class=\"longform\"><div><p class=\"lex \"><b>Leitura de apoio</b>Este guia acompanha a relação",
+"after": "</header>\n<div class=\"longform\"><div><p class=\"lex \"><b>Escopo</b>Esta unidade acompanha a relação"
+},
+{
+"before": " das categorias.</p><p>O texto não é um tratado completo. É uma intervenção programática: Roxin tenta redesenhar a",
+"after": " das categorias.</p><p>A obra de Roxin não é um tratado completo, mas uma intervenção programática: tenta redesenhar a"
+},
+{
+"before": "teoria do delito. O guia explica o projeto",
+"after": "teoria do delito. Esta unidade explica o projeto"
+},
+{
+"before": " dogmática brasileira atual. Quando a ponte pedagógica ultrapassar o que as páginas dizem, isso ficará visível.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11\" aria-labelledby=\"c00\"><span class=\"num dif\" aria-hidden=\"true\">",
+"after": " dogmática brasileira atual.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11\" aria-labelledby=\"c00\"><span class=\"num dif\" aria-hidden=\"true\">"
+},
+{
+"before": "<div><p>O movimento não é “política criminal substitui dogmática”. É o contrário: decisões valorativas entram",
+"after": "<div><p>O movimento é o contrário de “política criminal substitui dogmática”: decisões valorativas entram"
+},
+{
+"before": "O verbo “introduzir” é crucial: o sistema continua",
+"after": "O verbo “introduzir” importa: o sistema continua"
+},
+{
+"before": "\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01\">Paratexto que muda o modo de ler</h2><p class=\"lede\">A abertura editorial e a tese orientam a leitura do texto-base.</p></section>\n<div class=\"longform\"><div><h3 id=\"11-a-edição-brasileira-não-é-uma-janela-transparente\">1.1 A edição brasileira não é uma janela transparente</h3><p>As páginas 1–10 não começam com a tese doutrinária propriamente dita. Há capa, título, editora, ficha catalográfica, nota do tradutor, lista de abreviaturas, prefácio do autor à tradução brasileira, versão alemã do prefácio e sumário. Esse material pertence à unidade porque informa como a obra chega ao leitor brasileiro e porque o autor, em 2000, comenta o que",
+"after": "\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01\">A obra e sua origem</h2><p class=\"lede\">Origem e contexto da conferência orientam a leitura da tese.</p></section>\n<div class=\"longform\"><div><h3 id=\"11-a-edição-brasileira-não-é-uma-janela-transparente\">1.1 Origem da obra e contexto</h3><p>A obra chega ao leitor brasileiro numa edição que traz prefácio de Roxin à tradução, escrito em 2000, no qual ele comenta o que"
+},
+{
+"before": "O título português apresenta <em>política criminal e sistema",
+"after": "O título português é <em>Política criminal e sistema"
+},
+{
+"before": "jurídico-penal</em>. A nota do tradutor identifica a conferência de",
+"after": "jurídico-penal</em>. A origem é a conferência de"
+},
+{
+"before": "1970, em Berlim, como origem do texto, em versão reduzida",
+"after": "1970, em Berlim, apresentada em versão reduzida"
+},
+{
+"before": "e discussões de notas não pretendem formar",
+"after": "e discussões de nota não pretendem formar"
+},
+{
+"before": "</p><p>O tradutor, por sua vez, situa a obra como marco do sistema funcionalista",
+"after": "</p><p>O tradutor, Luís Greco, situa a obra como ponto de partida do sistema funcionalista"
+},
+{
+"before": "ou teleológico-racional e menciona a teoria da imputação objetiva como um fruto posterior.",
+"after": "ou teleológico-racional e vê na teoria da imputação objetiva um fruto posterior."
+},
+{
+"before": "é a leitura editorial de Luís Greco sobre a",
+"after": "é a leitura de Greco sobre a"
+},
+{
+"before": "histórica do livro, não uma passagem que Roxin pudesse",
+"after": "histórica do livro, e não algo que Roxin pudesse"
+},
+{
+"before": " escrito em 1970. O guia usa essa moldura para orientar, mas não para provar sozinho uma genealogia completa do funcionalismo.</p><h3 id=\"12-a-advertência-temporal-do-prefácio-de-roxin\">1.2 A ",
+"after": " escrito em 1970.</p><h3 id=\"12-a-advertência-temporal-do-prefácio-de-roxin\">1.2 A "
+},
+{
+"before": "1.3 Duas atualizações: Imputação objetiva e responsabilidade",
+"after": "1.3 Duas atualizações: imputação objetiva e responsabilidade"
+},
+{
+"before": "simultaneamente à publicação, ocupa papel central, ao lado do",
+"after": "simultaneamente à publicação, integra, ao lado do"
+},
+{
+"before": "nullum crimen</em>, na estrutura preventivo-geral do",
+"after": "nullum crimen</em>, a estrutura preventivo-geral do"
+},
+{
+"before": "uma convivência segura. Não se trata aqui de estudar toda a teoria da imputação objetiva; o prefácio oferece a função que",
+"after": "uma convivência segura. Aqui não se estuda toda a teoria da imputação objetiva: o prefácio indica a função que"
+},
+{
+"before": "campos de desenvolvimento. Não devemos atribuir ao recorte uma solução detalhada para",
+"after": "campos de desenvolvimento. Roxin não oferece, aí, solução detalhada para"
+},
+{
+"before": " um.</p><h3 id=\"14-notas-abreviaturas-e-a-materialidade-do-texto\">1.4 Notas, abreviaturas e a materialidade do texto</h3><p>A lista de abreviaturas explica referências ao <em>StGB</em>, ",
+"after": " um.</p><h3 id=\"14-notas-abreviaturas-e-a-materialidade-do-texto\">1.4 Fontes alemãs e direito comparado</h3><p>As siglas <em>StGB</em>, "
+},
+{
+"before": "<em>JZ</em> e outros periódicos e instituições alemãs. Isso não é ornamento inútil. O manifesto conversa",
+"after": "<em>JZ</em> e outras designam leis, tribunais e periódicos alemães. O manifesto conversa"
+},
+{
+"before": "legislativos, manuais e artigos; conhecer a sigla",
+"after": "legislativos, manuais e artigos, e conhecer a sigla"
+},
+{
+"before": "argumento próprio, exemplo legal, nota do tradutor e bibliografia de apoio.</p><p>Quando o texto citar um parágrafo",
+"after": "argumento próprio, exemplo legal e bibliografia de apoio.</p><p>Quando Roxin citar um parágrafo"
+},
+{
+"before": "em artigo do código penal brasileiro. A tradução",
+"after": "em artigo do Código Penal brasileiro. A tradução"
+},
+{
+"before": "é uma escolha terminológica explicitada nas notas. O estudante deve",
+"after": "é uma escolha terminológica. O estudante deve"
+},
+{
+"before": "separação de Liszt: Ciência social e ciência",
+"after": "separação de Liszt: ciência social e ciência"
+},
+{
+"before": "criminal. O problema não é apenas retórico. Roxin reconstrói essa",
+"after": "criminal. O problema vai além da retórica: Roxin reconstrói essa"
+},
+{
+"before": "A política criminal não é uma licença para dispensar conceitos; é a fonte consciente de sua função.</p><h3 id=\"32-categorias-que-perderam-rendimento\">3.2 Categorias ",
+"after": "A política criminal dá aos conceitos uma função consciente, sem ser licença para dispensá-los.</p><h3 id=\"32-categorias-que-perderam-rendimento\">3.2 Categorias "
+},
+{
+"before": "Logo, o alvo não é sistema enquanto tal. São as premissas errôneas",
+"after": "Logo, o alvo são as premissas errôneas"
+},
+{
+"before": "realidade e aos fins. Roxin localiza uma",
+"after": "realidade e aos fins, e não o sistema enquanto tal. Roxin localiza uma"
+},
+{
+"before": "ocasionalidade ou habitualidade. A nota do tradutor explica essa classificação. Porém, no modelo liberal, a lei não era instrumento de reforma social; era meio de reordenar liberdades coexistentes.</p><p>Roxin não ",
+"after": "ocasionalidade ou habitualidade. Porém, no modelo liberal, a lei era meio de reordenar liberdades coexistentes, e não instrumento de reforma social.</p><p>Roxin não "
+},
+{
+"before": "interferências. Ele usa a transformação do direito administrativo: da administração de",
+"after": "interferências. Ele usa como analogia a transformação do direito administrativo, da administração de"
+},
+{
+"before": "intervenção para formas prestadoras: como analogia. O estado social",
+"after": "intervenção para formas prestadoras. O estado social"
+},
+{
+"before": "agressora. Uma leitura rigorista: o direito nunca precisa ceder ao injusto: parece clara; a decisão real",
+"after": "agressora. Uma leitura rigorista (o direito nunca precisa ceder ao injusto) parece clara, mas a decisão real"
+},
+{
+"before": " dupla medida</h3><p>Na página 19, Roxin retoma a ",
+"after": " dupla medida</h3><p>Roxin retoma a "
+},
+{
+"before": "a dosimetria brasileira: as páginas apenas anunciam uma orientação.</p></div>",
+"after": "a dosimetria brasileira: Roxin apenas anuncia uma orientação.</p></div>"
+},
+{
+"before": "genérico de ação. A nota remete à comparação de Radbruch com o sistema de plantas de Lineu:",
+"after": "genérico de ação. Radbruch compara esse sistema ao das plantas de Lineu:"
+},
+{
+"before": "6.3 O finalismo: Realidade sem função político-criminal",
+"after": "6.3 O finalismo: realidade sem função político-criminal"
+},
+{
+"before": "reconstrução sistemática e não se conclui neste recorte</td></tr></tbody></table></div>\n",
+"after": "reconstrução sistemática e permanece em aberto</td></tr></tbody></table></div>\n"
+},
+{
+"before": "</h3><p>Na passagem final das páginas 25–29, Roxin afirma que",
+"after": "</h3><p>Na passagem final, Roxin afirma que"
+},
+{
+"before": "</p><h3 id=\"72-tipo-determinação-legal\">7.2 Tipo: Determinação legal</h3><p>O ",
+"after": "</p><h3 id=\"72-tipo-determinação-legal\">7.2 Tipo: determinação legal</h3><p>O "
+},
+{
+"before": "de outro modo. A pergunta central é normativa: como e até",
+"after": "de outro modo. O problema é normativo: cabe decidir como e até"
+},
+{
+"before": "em situação excepcional. Não é uma licença para punir profissionais por status. É um argumento sobre como deveres sociais",
+"after": "em situação excepcional. O argumento não licencia punir profissionais por status: mostra como deveres sociais"
+},
+{
+"before": "</h2><p class=\"lede\">Os exemplos do legado mostram onde a ",
+"after": "</h2><p class=\"lede\">Os exemplos mostram onde a "
+},
+{
+"before": "forma juridicamente controlada. Este recorte não oferece os",
+"after": "forma juridicamente controlada. Roxin não oferece os"
+},
+{
+"before": "da pena desejada. O segundo guia desenvolverá a consequência:",
+"after": "da pena desejada. A unidade seguinte desenvolverá a consequência:"
+},
+{
+"before": "fixam as distinções centrais.</p></section>\n<div class=\"longform\"><div><ol>",
+"after": "fixam as distinções principais.</p></section>\n<div class=\"longform\"><div><ol>"
+},
+{
+"before": "regra positiva brasileira não localizada aqui, marque `` e vá ao código ou à fonte indicada pelo curso.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c11\"><span class=\"num \" aria-hidden=\"true\">",
+"after": "regra positiva brasileira que não está aqui, marque a lacuna e consulte o Código Penal.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c11\"><span class=\"num \" aria-hidden=\"true\">"
+},
+{
+"before": "lenta do método: Como uma função entra",
+"after": "lenta do método: como uma função entra"
+},
+{
+"before": "nullum crimen</em></h3><p>Nas páginas lidas, <em>nullum crimen, ",
+"after": "nullum crimen</em></h3><p>Em Roxin, <em>nullum crimen, "
+},
+{
+"before": "todos os atos. A página 27 distingue crimes de",
+"after": "todos os atos. Roxin distingue crimes de"
+},
+{
+"before": "Esta distinção prepara o segundo guia, no qual risco permitido,",
+"after": "Esta distinção prepara a unidade seguinte, na qual risco permitido,"
+},
+{
+"before": "de autor também aparece nas notas do tradutor. Ela mostra que",
+"after": "de autor também pertence a Liszt. Ela mostra que"
+},
+{
+"before": "como caixas herméticas. “causalismo” e “finalismo” são",
+"after": "como caixas herméticas. “Causalismo” e “finalismo” são"
+},
+{
+"before": "</li><li>Feche com limite: o recorte é manifesto, não tratado de direito",
+"after": "</li><li>Feche com o limite: o texto de Roxin é um manifesto, e não um tratado de direito"
+},
+{
+"before": "Uma boa resposta não é a que repete “funcionalismo”; é a que mostra qual problema ",
+"after": "Uma boa resposta mostra qual problema "
+},
+{
+"before": "qual novo risco cria.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c19\"><span class=\"num dif\" aria-hidden=\"true\">",
+"after": "qual novo risco cria, em vez de repetir “funcionalismo”.</p></div></div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c19\"><span class=\"num dif\" aria-hidden=\"true\">"
+},
+{
+"before": "</h2></section>\n<div class=\"longform\"><div><p>O texto quer substituir uma",
+"after": "</h2></section>\n<div class=\"longform\"><div><p>Roxin quer substituir uma"
+},
+{
+"before": " categorias controláveis.</p><p>O ponto mais importante não é decorar que tipo corresponde à determinação e antijuridicidade à solução de conflitos. É perceber o método:",
+"after": " categorias controláveis.</p><p>Mais do que decorar que o tipo corresponde à determinação e a antijuridicidade à solução de conflitos, importa perceber o método:"
+},
+{
+"before": "\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c18\"><span class=\"num \" aria-hidden=\"true\">18</span><h2 id=\"c18\">Notas bibliográficas que funcionam como argumento</h2></section>\n<div class=\"longform\"><div><p>As referências em rodapé não são simplesmente",
+"after": "\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c18\"><span class=\"num \" aria-hidden=\"true\">18</span><h2 id=\"c18\">Autoridades e projetos alemães citados por Roxin</h2></section>\n<div class=\"longform\"><div><p>As referências de Roxin não são simplesmente"
+},
+{
+"before": "uma lista de nomes. Elas mostram como Roxin constrói autoridade e",
+"after": "uma lista de nomes: mostram como ele constrói autoridade e"
+},
+{
+"before": "histórico; Radbruch e Linneu fornecem a imagem",
+"after": "histórico; Radbruch e Lineu fornecem a imagem"
+},
+{
+"before": "e o projeto alternativo: e à segunda lei de",
+"after": "e o projeto alternativo e a segunda lei de"
+},
+{
+"before": "deve preservar a posição da nota do tradutor. Ela explica termos como <em>rechtstaatlich-liberale ",
+"after": "deve preservar a distinção entre o texto alemão e sua tradução. Termos como <em>rechtstaatlich-liberale "
+},
+{
+"before": " e <em>Bestimmtheitsgebot</em>, além de informar mudanças no código alemão e equivalências terminológicas. Essas notas aumentam a acessibilidade, mas não convertem o",
+"after": " e <em>Bestimmtheitsgebot</em> exigem equivalências terminológicas, e as mudanças no código alemão não convertem o"
+},
+{
+"before": "em comentário ao código penal brasileiro.</p><p>Uma ",
+"after": "em comentário ao Código Penal brasileiro.</p><p>Uma "
+},
+{
+"before": " autor...”</td></tr><tr><td>Nota do tradutor</td><td>Atualização de ",
+"after": " autor...”</td></tr><tr><td>Tradução</td><td>Atualização de "
+},
+{
+"before": " termo</td><td>“a nota do tradutor esclarece...”</td></tr></tbody></table>",
+"after": " termo</td><td>“a tradução brasileira esclarece...”</td></tr></tbody></table>"
+},
+{
+"before": "erro de atribuir ao autor brasileiro a escolha do",
+"after": "erro de atribuir a Roxin a escolha do"
+},
+{
+"before": "</h2></section>\n<div class=\"longform\"><div><p>Feche o guia e escreva um parágrafo",
+"after": "</h2></section>\n<div class=\"longform\"><div><p>Sem consultar o texto, escreva um parágrafo"
+},
+{
+"before": "sentimentos externos. Depois reabra as páginas e confira se você mencionou: clareza e",
+"after": "sentimentos externos. Depois confira se mencionou: clareza e"
+},
+{
+"before": "ou “nullum crimen”. Você deverá falar em previsibilidade,",
+"after": "ou “nullum crimen”. É preciso falar em previsibilidade,"
+},
+{
+"before": "</p><p>Por fim, reconstruir a sequência histórica",
+"after": "</p><p>Por fim, reconstrua a sequência histórica"
+},
+{
+"before": "fazer uma proposta. O recorte não permite concluir",
+"after": "fazer uma proposta. Essa reconstrução não permite concluir"
+},
+{
+"before": "regra brasileira pronta no recorte</td></tr><tr><td>Risco ",
+"after": "regra brasileira pronta em Roxin</td></tr><tr><td>Risco "
+},
+{
+"before": "“político-criminal” flutue sem ancoragem. Também faz aparecer quando você está transferindo uma intuição de uma categoria",
+"after": "“político-criminal” flutue sem ancoragem e mostra quando uma intuição é transferida de uma categoria"
+},
+{
+"before": "ficar vazia, provavelmente você está prometendo mais do que a fonte sustenta.</p></div></div>\n",
+"after": "ficar vazia, provavelmente se está prometendo mais do que Roxin sustenta.</p></div></div>\n"
+},
+{
+"before": "</span><h2 id=\"c21\">Última síntese: Do divórcio à arquitetura",
+"after": "</span><h2 id=\"c21\">Última síntese: do divórcio à arquitetura"
+},
+{
+"before": "deles, na leitura selecionada, uniu as três",
+"after": "deles, na leitura de Roxin, uniu as três"
+},
+{
+"before": "união. O tipo não é somente fotografia da",
+"after": "união. O tipo é instrumento de determinação e prevenção geral, e não somente fotografia da"
+},
+{
+"before": "causalidade ou da finalidade; é instrumento de determinação e prevenção geral. A antijuridicidade não é somente ausência de norma permissiva; é a zona",
+"after": "causalidade ou da finalidade. A antijuridicidade é a zona"
+},
+{
+"before": "de regulação de conflitos. A <strong>culpabilidade</strong> não é somente uma prova metafísica de poder agir de outro modo; é limite e",
+"after": "de regulação de conflitos, e não somente ausência de norma permissiva. A <strong>culpabilidade</strong> é limite e"
+},
+{
+"before": "que precisa ser necessária.</p><p>Essa arquitetura ",
+"after": "que precisa ser necessária, e não somente uma prova metafísica de poder agir de outro modo.</p><p>Essa arquitetura "
+},
+{
+"before": " formal desagrada.</p><p>Se você conseguir reconstruir esse deslocamento",
+"after": " formal desagrada.</p><p>Quem reconstruir esse deslocamento"
+},
+{
+"before": "a função, a fonte e o limite, terá aprendido a unidade. Se apenas repetir que Roxin é “teleológico-racional”, ainda não leu",
+"after": "a função, a base legal e o limite terá aprendido a unidade. Quem apenas repetir que Roxin é “teleológico-racional” ainda não leu"
+},
+{
+"before": " de verificação: <strong>Qual é a categoria,",
+"after": " de verificação: <strong>qual é a categoria,"
+},
+{
+"before": "de leitura para os guias seguintes.</p><p>Se ",
+"after": "de leitura para as unidades seguintes.</p><p>Se "
+},
+{
+"before": "sequência pode voltar ao texto original sem perder o",
+"after": "sequência pode voltar a Roxin sem perder o"
+},
+{
+"before": "função e controle. A leitura seguinte deve testar a fórmula",
+"after": "função e controle. O passo seguinte é testar a fórmula"
+},
+{
+"before": "automaticamente a solução alemã. Pergunte qual artigo legal",
+"after": "automaticamente a solução alemã: qual artigo legal"
+},
+{
+"before": "expansão aparece e que fonte atual precisa ser consultada.</p><p>Esse retorno ao texto original é parte do método, não uma formalidade editorial. O guia oferece uma reconstrução de baixo atrito, mas a autoridade continua nas páginas escaneadas e nas notas identificadas. Uma síntese responsável ",
+"after": "expansão aparece e qual texto legal atual deve ser consultado.</p><p>Uma síntese responsável "
+},
+{
+"before": "de voltar ao argumento, corrigir uma inferência",
+"after": "de voltar ao argumento de Roxin, corrigir uma inferência"
+},
+{
+"before": " controle.</p></details><details><summary>A questão 7 da prova de 2023/1 sustenta primazia da política",
+"after": " controle.</p></details><details><summary>Uma questão que relaciona dogmática penal, sistematização, racionalidade e segurança jurídica sustenta a primazia da política"
+},
+{
+"before": " penal?</summary><p>Não. Ela relaciona dogmática penal, sistematização, racionalidade e segurança jurídica; o enunciado não atribui",
+"after": " penal?</summary><p>Não. O enunciado não atribui"
+}
+]

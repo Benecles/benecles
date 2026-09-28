@@ -1,0 +1,130 @@
+[
+{
+"before": "\n    <p>O ponto central é a origem:",
+"after": "\n    <p>O ponto de partida é a origem:"
+},
+{
+"before": " doutrinária.</p>\n  <div class=\"chave\"><span class=\"label\">Fixe isto</span>Pertinência temática =",
+"after": " doutrinária.</p>\n  <div class=\"chave\"><span class=\"label\">Ponto-chave</span>Pertinência temática ="
+},
+{
+"before": "Na prática</span>\n      <h3>Uma matéria de dificuldades práticas</h3>\n      <p>Aplicar",
+"after": "Na prática</span>\n      <h3>Dificuldades práticas</h3>\n      <p>Aplicar"
+},
+{
+"before": "\n  <span class=\"num\" aria-hidden=\"true\">03</span>\n  <h2 id=\"c3\">Um título diz quatro. A lista traz cinco.</h2>\n  <p class=\"lede\">O bloco central trata das entidades",
+"after": "\n  <span class=\"num\" aria-hidden=\"true\">03</span>\n  <h2 id=\"c3\">Cinco condicionantes para as entidades de classe</h2>\n  <p class=\"lede\">Este bloco trata das entidades"
+},
+{
+"before": "classe de âmbito nacional. O título inicial menciona quatro condicionantes, embora a lista enumere cinco.</p>\n</section>\n\n<div class=\"scrolly\">\n  ",
+"after": "classe de âmbito nacional e dos cinco condicionantes que o STF aplica a elas.</p>\n</section>\n\n<div class=\"scrolly\">\n  "
+},
+{
+"before": "Fig. 2 · Quatro no título, cinco na lista</span></figcaption>\n    </figure>\n  </div>",
+"after": "Fig. 2 · Os cinco condicionantes</span></figcaption>\n    </figure>\n  </div>"
+},
+{
+"before": "lista</span>\n      <h3>Cinco condicionantes, não quatro</h3>\n      <p>Para entidades",
+"after": "lista</span>\n      <h3>Cinco condicionantes</h3>\n      <p>Para entidades"
+},
+{
+"before": "representatividade e pertinência. A lista enumera <strong>cinco</strong>: ",
+"after": "representatividade e pertinência. São <strong>cinco</strong>: "
+},
+{
+"before": "pela norma.</p>\n      <p>O título introdutório menciona quatro, embora a enumeração contenha cinco condicionantes.</p>\n    </div></div>\n  </div>",
+"after": "pela norma.</p>\n      <p>Cada um deles é examinado nas seções seguintes.</p>\n    </div></div>\n  </div>"
+},
+{
+"before": "do art. 103, IX CF, organização formada",
+"after": "do art. 103, IX, da CF, organização formada"
+},
+{
+"before": "lado da cláusula \"confederação sindical\", traz conteúdo dirigido",
+"after": "lado da cláusula “confederação sindical”, traz conteúdo dirigido"
+},
+{
+"before": "à ideia de \"profissão\": entendendo-se \"classe\" não no sentido de \"classe social\", mas de \"categoria profissional\". Por isso não",
+"after": "à ideia de “profissão”: entendendo-se “classe” não no sentido de “classe social”, mas de “categoria profissional”. Por isso não"
+},
+{
+"before": "a noção de \"classe\" passou a ter",
+"after": "a noção de “classe” passou a ter"
+},
+{
+"before": " às chamadas <strong>\"Associações de Associações\"</strong>: as entidades",
+"after": " às chamadas <strong>“Associações de Associações”</strong>: as entidades"
+},
+{
+"before": "Partidos Políticos (Lei 9.096/95, art. 7º, §",
+"after": "Partidos Políticos (Lei 9.096/1995, art. 7º, §"
+},
+{
+"before": "1.7.2011</span></header>\n      <div class=\"corpo\"><p>\"Carece de legitimação para",
+"after": "1.7.2011</span></header>\n      <div class=\"corpo\"><p>“Carece de legitimação para"
+},
+{
+"before": "cujos interesses pretenda tutelar.\"</p></div>\n      <div class=\"tese\">Exigência ",
+"after": "cujos interesses pretenda tutelar.”</p></div>\n      <div class=\"tese\">Exigência "
+},
+{
+"before": "A categoria funcional \"policiais militares\" é composta por",
+"after": "A categoria funcional “policiais militares” é composta por"
+},
+{
+"before": "só os oficiais. \"Entidade que representa em",
+"after": "só os oficiais. “Entidade que representa em"
+},
+{
+"before": "a norma se aplica.\"</p></div>\n      <div class=\"tese\">Ilegitimidade: ",
+"after": "a norma se aplica.”</p></div>\n      <div class=\"tese\">Ilegitimidade: "
+},
+{
+"before": "flagrante. O STF: \"não é legítimo permitir-se",
+"after": "flagrante. O STF: “não é legítimo permitir-se"
+},
+{
+"before": "normativos por essa via\". O tema interessa",
+"after": "normativos por essa via”. O tema interessa"
+},
+{
+"before": "Confederações sindicais x centrais, federações e sindicatos",
+"after": "Confederações sindicais x centrais sindicais, federações e sindicatos"
+},
+{
+"before": "o art. 103, IX CF expressamente inclui,",
+"after": "o art. 103, IX, da CF expressamente inclui,"
+},
+{
+"before": "a exclusão das centrais.</b> \"No plano da organização",
+"after": "a exclusão das centrais sindicais.</b> “No plano da organização"
+},
+{
+"before": "de fiscalização normativa abstrata.\" (<strong>ADI 1442,",
+"after": "de fiscalização normativa abstrata.” (<strong>ADI 1442,"
+},
+{
+"before": "Mas é preciso \"cuidar o nome\": a <strong>FEBRABAN</strong>",
+"after": "Mas é preciso “cuidar o nome”: a <strong>FEBRABAN</strong>"
+},
+{
+"before": "de se chamar \"Federação\", é em verdade",
+"after": "de se chamar “Federação”, é em verdade"
+},
+{
+"before": " os cinco critérios. O título original menciona quatro, embora a lista enumere cinco.</p>\n</section>\n<div class=\"wide\">\n  ",
+"after": " os cinco critérios.</p>\n</section>\n<div class=\"wide\">\n  "
+},
+{
+"before": "</table>\n  </div>\n  <div class=\"chave\"><span class=\"label\">Não esquecer</span>A lista enumera cinco condicionantes, embora o título introdutório mencione quatro.</div>\n  <dl class=\"termos\">\n    <dt>Pertinência",
+"after": "</table>\n  </div>\n  <div class=\"chave\"><span class=\"label\">Atenção</span>São cinco os condicionantes: homogeneidade, categoria, nove estados, pertinência e representatividade integral.</div>\n  <dl class=\"termos\">\n    <dt>Pertinência"
+},
+{
+"before": "presumido.</p></details>\n    <details><summary>A lista de condicionantes enumera quantos critérios, e quais são?",
+"after": "presumido.</p></details>\n    <details><summary>Quantos são os condicionantes e quais são?"
+},
+{
+"before": "leitura então vigente, \"classe\" era entendida como",
+"after": "leitura então vigente, “classe” era entendida como"
+}
+]

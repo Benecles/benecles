@@ -1,0 +1,46 @@
+[
+{
+"before": "Consulte o texto do Planalto e separe regra vigente de explicação histórica.</p><p class=\"lex \">",
+"after": "Consulte o texto vigente e separe a regra atual da explicação histórica.</p><p class=\"lex \">"
+},
+{
+"before": " determinado.</p><h3 id=\"caso-1-objeto-alheio\">Caso 1 : objeto alheio</h3><p>",
+"after": " determinado.</p><h3 id=\"caso-1-objeto-alheio\">Caso 1: objeto alheio</h3><p>"
+},
+{
+"before": "subjetiva. </p><h3 id=\"caso-2-alvo-errado\">Caso 2 : alvo errado</h3><p>",
+"after": "subjetiva. </p><h3 id=\"caso-2-alvo-errado\">Caso 2: alvo errado</h3><p>"
+},
+{
+"before": " matar”.</p><h3 id=\"caso-3-instrumento-defeituoso\">Caso 3 : instrumento defeituoso</h3><p>",
+"after": " matar”.</p><h3 id=\"caso-3-instrumento-defeituoso\">Caso 3: instrumento defeituoso</h3><p>"
+},
+{
+"before": "putativas. Nesta semana, aprenda a reconhecer a dependência:",
+"after": "putativas. Nesta semana, basta reconhecer a dependência:"
+},
+{
+"before": "\n<div class=\"longform\"><div><h3 id=\"caso-4-risco-no-trânsito\">Caso 4 : risco no trânsito",
+"after": "\n<div class=\"longform\"><div><h3 id=\"caso-4-risco-no-trânsito\">Caso 4: risco no trânsito"
+},
+{
+"before": " aberta.</p><h3 id=\"caso-5-brincadeira-perigosa\">Caso 5 : brincadeira perigosa</h3><p>",
+"after": " aberta.</p><h3 id=\"caso-5-brincadeira-perigosa\">Caso 5: brincadeira perigosa</h3><p>"
+},
+{
+"before": " assumiu.</p><h3 id=\"caso-6-ordem-superior\">Caso 6 : ordem superior</h3><p>",
+"after": " assumiu.</p><h3 id=\"caso-6-ordem-superior\">Caso 6: ordem superior</h3><p>"
+},
+{
+"before": " automática.</p><h3 id=\"caso-7-propósito-especial\">Caso 7 : propósito especial</h3><p>",
+"after": " automática.</p><h3 id=\"caso-7-propósito-especial\">Caso 7: propósito especial</h3><p>"
+},
+{
+"before": " aplicável.</p><h3 id=\"caso-8-resultado-não-querido\">Caso 8 : resultado não querido",
+"after": " aplicável.</p><h3 id=\"caso-8-resultado-não-querido\">Caso 8: resultado não querido"
+},
+{
+"before": "apenas o que a fonte permite.</li></ol></div></div>\n<nav class=\"endnav\" aria-label=\"Aulas vizinhas\">",
+"after": "apenas o que os fatos e o texto legal permitem.</li></ol></div></div>\n<nav class=\"endnav\" aria-label=\"Aulas vizinhas\">"
+}
+]

@@ -1,0 +1,14 @@
+[
+{
+"before": " Barbosa</td><td>Modelo alemão; doutrina de Hans Kelsen; referência ao STF</td></tr>\n      <tr><th scope=\"row\">Situação",
+"after": " Barbosa</td><td>Modelo austríaco-alemão; doutrina de Hans Kelsen</td></tr>\n      <tr><th scope=\"row\">Situação"
+},
+{
+"before": "<div class=\"step on\" data-panel=\"p08-anulavel\" data-slides=\"Slide 4\"><div class=\"card\">\n      <span class=\"label conc\">Modelo alemão · Kelsen · referência ao STF</span>\n      <h3>A decisão",
+"after": "<div class=\"step on\" data-panel=\"p08-anulavel\" data-slides=\"Slide 4\"><div class=\"card\">\n      <span class=\"label conc\">Modelo austríaco-alemão · Kelsen</span>\n      <h3>A decisão"
+},
+{
+"before": "do julgamento?</h3>\n      <p>O esquema mostra a lei, o julgamento e o trânsito em julgado. Depois deste marco, arcos e ponto de interrogação deixam em aberto a extensão temporal dos efeitos: o tema da",
+"after": "do julgamento?</h3>\n      <p>Depois do trânsito em julgado, a extensão temporal dos efeitos fica em aberto: é o tema da"
+}
+]

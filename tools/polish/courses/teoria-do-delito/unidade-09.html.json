@@ -1,0 +1,30 @@
+[
+{
+"before": "pode ser permitido: a pergunta é qual norma o",
+"after": "pode ser permitido: resta saber qual norma o"
+},
+{
+"before": "<div class=\"longform\"><div><p class=\"lex \"><b>Ideia central</b>O fato <strong>",
+"after": "<div class=\"longform\"><div><p class=\"lex \"><b>Ideia da unidade</b>O fato <strong>"
+},
+{
+"before": " outra.</p><p>Brandão é mobilizado para tratar a ação como",
+"after": " outra.</p><p>Brandão trata a ação como"
+},
+{
+"before": "ou retirar permissões. A nota do tradutor situa essa transformação no contexto da doutrina alemã; ela não funciona como",
+"after": "ou retirar permissões. O exemplo vem da doutrina alemã e não funciona como"
+},
+{
+"before": " trata da prática  para salvar de ",
+"after": " trata da prática do fato para salvar de "
+},
+{
+"before": " os perigos.</p><p>O Archive apresenta como distinção histórica a situação do animal com dono, relacionada à legítima defesa, e do animal sem dono, relacionada ao estado de",
+"after": " os perigos.</p><p>Como distinção histórica, o animal com dono se relaciona à legítima defesa, e o animal sem dono ao estado de"
+},
+{
+"before": "em substituir a reconferência da fonte atual.</p><h3 id=\"45-provocação-e-dever-de-enfrentar\">4.5 Provocação ",
+"after": "em substituir a conferência do texto atual da lei.</p><h3 id=\"45-provocação-e-dever-de-enfrentar\">4.5 Provocação "
+}
+]

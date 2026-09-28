@@ -1,0 +1,26 @@
+[
+{
+"before": "da representação</th><th scope=\"col\">Pergunta decisiva</th></tr></thead><tbody><tr><td>",
+"after": "da representação</th><th scope=\"col\">Pergunta</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "</g></svg><figcaption><span>Fig. 1 · Dossiê ·",
+"after": "</g></svg><figcaption><span>Fig. 2 · Dossiê ·"
+},
+{
+"before": "<div class=\"longform\"><div><p class=\"lex conc\"><b>Limite</b>se A sabe que",
+"after": "<div class=\"longform\"><div><p class=\"lex conc\"><b>Limite</b>Se A sabe que"
+},
+{
+"before": "A diferença é fina, mas decisiva.</p><p>No casamento ",
+"after": "A diferença é fina e muda o enquadramento.</p><p>No casamento "
+},
+{
+"before": "funcional de alguém. A pergunta mais precisa é qual função o",
+"after": "funcional de alguém. Mais preciso é perguntar qual função o"
+},
+{
+"before": " O exemplo tradicional preservado no material é o de",
+"after": " O exemplo tradicional é o de"
+}
+]
