@@ -92,7 +92,7 @@
       <a class="resume" href="#" hidden><span>Continuar de onde parou</span><span aria-hidden="true">→</span></a>
     </aside>
 <script>(function(){if(new Date()<new Date('2026-09-26T00:00:00-03:00'))return;var c=document.querySelector('.exam-card');if(!c)return;c.classList.add('p2');c.querySelector('.exam-date').textContent='Segunda prova · 27.11.2026';c.querySelector('h2').textContent='Revisão para a P2';c.querySelector('p').textContent='Interpretação, revisão, cessão e extinção, com os artigos, e doze casos resolvidos.';var a=c.querySelector('a:not(.resume)');a.href='revisao-p2.html';a.firstChild.textContent='Abrir revisão P2'})()</script>
-<script>(function(){try{var d=JSON.parse(localStorage.getItem('cufrgs-contratos-last')||'null');if(!d||!/^\d\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}catch(e){}})()</script></section>
+<script>(function(){try{if(localStorage.getItem('cufrgs-no-resume'))return;var d=JSON.parse(localStorage.getItem('cufrgs-contratos-last')||'null');if(!d||!/^\d\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}catch(e){}})()</script></section>
 
 <section class="lessons" id="aulas" aria-labelledby="lessons-title">
   <header class="section-head"><span class="label">02 / Caderno de estudo</span><h2 id="lessons-title">Aulas</h2><p>Na ordem do programa.</p></header>

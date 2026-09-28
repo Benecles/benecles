@@ -93,7 +93,7 @@
       </ol>
     </div>
   </div>
-<script>(function(){try{var d=JSON.parse(localStorage.getItem('cufrgs-dla-last')||'null');if(!d||!/^\d\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}catch(e){}})()</script>
+<script>(function(){try{if(localStorage.getItem('cufrgs-no-resume'))return;var d=JSON.parse(localStorage.getItem('cufrgs-dla-last')||'null');if(!d||!/^\d\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}catch(e){}})()</script>
 </section>
 
 <section class="lessons" id="aulas" aria-labelledby="lessons-title">
