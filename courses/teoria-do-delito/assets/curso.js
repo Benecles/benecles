@@ -30,7 +30,7 @@
 
 // Reading progress hairline + remember the last lesson opened (per-viewer convenience only).
 (function () {
-  var m = location.pathname.match(/aula-(\d\d)\.html$/);
+  var m = location.pathname.match(/(?:unidade|suplemento)-(\d\d)(?:-[a-z-]+)?\.html$/);
   if (!m) return;
   var bar = document.createElement('div');
   bar.className = 'read-progress';
@@ -45,7 +45,7 @@
   upd();
   try {
     var t = document.title.split(' · ')[0];
-    if (!localStorage.getItem('cufrgs-no-resume')) localStorage.setItem('cufrgs-dla-last', JSON.stringify({ n: m[1], t: t }));
+    if (!localStorage.getItem('cufrgs-no-resume')) localStorage.setItem('cufrgs-delito-last', JSON.stringify({ h: location.pathname.split('/').pop(), t: t }));
   } catch (e) {}
 })();
 
