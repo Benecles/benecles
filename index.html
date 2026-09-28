@@ -153,7 +153,25 @@ body{transition:background-color .35s ease,color .35s ease}
   <div><h3>Guias de estudo, não resumos.</h3><p>O conteúdo aparece por inteiro, reorganizado para leitura, do conceito à jurisprudência.</p></div>
   <div><h3>A oficina continua aberta.</h3><p>Os estudos de papel, diagramas e formas de leitura que deram origem a estas páginas estão nos <a href="experiments/">experimentos de design</a>.</p></div>
 </section>
-<footer class="foot"><span>CUFRGS</span><a href="index-folio-teoria.html">Página inicial anterior</a></footer>
+<footer class="foot"><span>CUFRGS</span><span class="foot-r"><details class="hist"><summary>Histórico neste aparelho</summary><div class="hist-card">
+<p>O site guarda, só neste navegador, a última aula aberta de cada disciplina (para o “continuar de onde parou”), suas marcações e o progresso dos cartões.</p>
+<button type="button" data-act="resume">Esquecer onde parei</button>
+<label><input type="checkbox" data-act="nores"> Não lembrar onde parei</label>
+<button type="button" data-act="all" class="danger">Apagar tudo: marcações e cartões também</button>
+<p class="hist-st" role="status" aria-live="polite"></p></div></details><a href="index-folio-teoria.html">Página inicial anterior</a></span></footer>
+<style>.foot-r{display:flex;gap:22px;align-items:baseline;flex-wrap:wrap}.hist{position:relative}.hist>summary{cursor:pointer;list-style:none;color:var(--muted)}.hist>summary::-webkit-details-marker{display:none}
+.hist>summary:hover,.hist[open]>summary{color:var(--conc)}.hist-card{position:absolute;right:0;bottom:calc(100% + 10px);width:min(340px,calc(100vw - 32px));padding:16px 18px;background:var(--paper);border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--grid-major);text-transform:none;letter-spacing:0;display:grid;gap:10px;z-index:20}
+.hist-card p{font:13.5px/1.45 var(--serif);color:var(--ink-2);margin:0}.hist-card button{font:600 13px var(--sans);text-align:left;padding:9px 12px;background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);cursor:pointer}
+.hist-card button:hover{background:var(--conc-wash)}.hist-card button.danger{border-color:var(--conc);color:var(--conc);font-weight:500}.hist-card label{font:13px var(--sans);color:var(--ink);display:flex;gap:8px;align-items:center;cursor:pointer}
+.hist-card input{accent-color:var(--conc)}.hist-st{font:11px var(--mono)!important;color:var(--conc)!important;min-height:1em}</style>
+<script>(function(){var c=document.querySelector('.hist-card');if(!c)return;var st=c.querySelector('.hist-st'),nr=c.querySelector('[data-act=nores]');
+function ls(){try{return window.localStorage}catch(e){return null}}var L=ls();if(!L){c.querySelectorAll('button,input').forEach(function(b){b.disabled=true});st.textContent='Este navegador não permite guardar dados.';return}
+function keys(f){var o=[];for(var i=0;i<L.length;i++){var k=L.key(i);if(k&&f(k))o.push(k)}return o}
+nr.checked=!!L.getItem('cufrgs-no-resume');
+nr.addEventListener('change',function(){if(nr.checked){L.setItem('cufrgs-no-resume','1');keys(function(k){return /^cufrgs-.*-last$/.test(k)}).forEach(function(k){L.removeItem(k)});st.textContent='Pronto: o site não vai mais lembrar onde você parou.'}else{L.removeItem('cufrgs-no-resume');st.textContent='O site volta a lembrar onde você parou.'}});
+c.querySelector('[data-act=resume]').addEventListener('click',function(){var n=keys(function(k){return /^cufrgs-.*-last$/.test(k)});n.forEach(function(k){L.removeItem(k)});st.textContent=n.length?'Esquecido.':'Não havia nada guardado.'});
+c.querySelector('[data-act=all]').addEventListener('click',function(){if(!confirm('Apagar onde parou, todas as marcações e o progresso dos cartões neste aparelho? Não dá para desfazer.'))return;var n=keys(function(k){return /^cufrgs-.*-last$/.test(k)||/^cufrgs-hl:/.test(k)||/-cartoes-v\d+$/.test(k)});n.forEach(function(k){L.removeItem(k)});st.textContent=n.length+' itens apagados. Tema e tamanho do texto ficam como estavam.'});
+document.addEventListener('click',function(e){var d=c.parentNode;if(d.open&&!d.contains(e.target))d.open=false})})()</script>
 <script src="assets/offline.js" defer></script>
 <script src="assets/highlight.js" defer></script>
 <script src="assets/highlight-panel.js" defer></script>
