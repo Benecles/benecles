@@ -7,7 +7,10 @@
 2. Writes offline-manifest.json: every public file, plus directory URLs for index pages,
    and a content hash as the version (so saved copies refresh when the site changes).
 """
-import hashlib, json, os, re
+import hashlib, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sanitize
+sanitize.run()   # no visible sourcing, whatever generated the page
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')
