@@ -1,0 +1,10 @@
+[
+{
+"before": "\n\n<section class=\"chapter\" aria-labelledby=\"c1\"><span class=\"num\" aria-hidden=\"true\">01</span><h2 id=\"c1\">Intervir é exceção, não um recurso de supervisão</h2><p class=\"lede\">",
+"after": "\n\n<section class=\"chapter\" aria-labelledby=\"c1\"><span class=\"num\" aria-hidden=\"true\">01</span><h2 id=\"c1\">A intervenção é exceção e não serve de supervisão</h2><p class=\"lede\">"
+},
+{
+"before": "saúde.</p></div>\n    <div class=\"excecao\"><span class=\"label\">Não confunda as esferas</span><p>A representação ",
+"after": "saúde.</p></div>\n    <div class=\"excecao\"><span class=\"label\">Duas esferas distintas</span><p>A representação "
+}
+]

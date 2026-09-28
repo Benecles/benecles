@@ -1,0 +1,38 @@
+[
+{
+"before": "\n</div>\n<div class=\"longform\"><div><p>Teoria do Delito tem uma espinha",
+"after": "\n</div>\n<div class=\"longform\"><div><p>A teoria do delito tem uma espinha"
+},
+{
+"before": "pontos de saída. A pergunta inicial é se algo aconteceu",
+"after": "pontos de saída. Primeiro se verifica se algo aconteceu"
+},
+{
+"before": "</p><p>O desacordo não é apenas histórico. Ele decide onde entram ",
+"after": "</p><p>O desacordo decide onde entram "
+},
+{
+"before": "exclusões da conduta não são uma lista que autoriza conclusões sem prova. São razões para perguntar",
+"after": "exclusões da conduta são razões para perguntar"
+},
+{
+"before": "houve controle e atribuição.</p></div></div>\n<div class=\"wide\">\n",
+"after": "houve controle e atribuição, e nenhuma delas dispensa prova.</p></div></div>\n<div class=\"wide\">\n"
+},
+{
+"before": "causa de justificação realmente existiu.</td></tr></tbody></table></div>",
+"after": "causa de justificação existiu.</td></tr></tbody></table></div>"
+},
+{
+"before": "uma unidade indiferenciada. A pergunta inicial continua sendo comportamental: qual pessoa",
+"after": "uma unidade indiferenciada. O exame continua comportamental: qual pessoa"
+},
+{
+"before": "Não confundir</th><th scope=\"col\">Diferença decisiva</th></tr></thead><tbody><tr><td>",
+"after": "Não confundir</th><th scope=\"col\">Diferença</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "é omissão penal. Dever jurídico e possibilidade de agir são essenciais.</td></tr><tr><td><strong>Erro",
+"after": "é omissão penal. Sem dever jurídico e possibilidade de agir, não há omissão penal.</td></tr><tr><td><strong>Erro"
+}
+]

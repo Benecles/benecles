@@ -1,0 +1,18 @@
+[
+{
+"before": "</td></tr><tr><th scope=\"row\">Promessa de fato</th><td>Não fica ",
+"after": "</td></tr><tr><th scope=\"row\">Promessa (art. 439)</th><td>Não fica "
+},
+{
+"before": "Fig. 3 · A promessa de fato de terceiro</span><span class=\"stage-step\">1 / ",
+"after": "Fig. 3 · Quem responde pela promessa</span><span class=\"stage-step\">1 / "
+},
+{
+"before": "foi feita, que foi decisiva para o lojista e que",
+"after": "foi feita, que orientou a decisão do lojista e que"
+},
+{
+"before": "Não. A promessa de fato de terceiro não obriga o",
+"after": "Não. A promessa do art. 439 não obriga o"
+}
+]

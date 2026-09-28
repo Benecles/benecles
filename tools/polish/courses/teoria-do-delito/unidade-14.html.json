@@ -1,0 +1,30 @@
+[
+{
+"before": "</div>\n<div class=\"longform\"><div><p class=\"lex \"><b>Pergunta central</b>Em um fato",
+"after": "</div>\n<div class=\"longform\"><div><p class=\"lex \"><b>Questão da autoria</b>Em um fato"
+},
+{
+"before": "ou modelo</th><th scope=\"col\">Ideia central</th><th scope=\"col\">Vantagem</th><th scope=\"col\">Risco",
+"after": "ou modelo</th><th scope=\"col\">Ideia</th><th scope=\"col\">Vantagem</th><th scope=\"col\">Risco"
+},
+{
+"before": "</strong> distingue contribuições centrais e acessórias pela",
+"after": "</strong> distingue contribuições principais e acessórias pela"
+},
+{
+"before": " risco cria.</p><p>As notas gerais vinculam conduta final, dolo",
+"after": " risco cria.</p><p>A doutrina finalista vincula conduta final, dolo"
+},
+{
+"before": "chave pode ser essencial ao plano sem",
+"after": "chave pode ser indispensável ao plano sem"
+},
+{
+"before": "o controle efetivo são decisivos.</p><p>Se B ",
+"after": "o controle efetivo definem o enquadramento.</p><p>Se B "
+},
+{
+"before": "e autoria mediata. Os esquemas auxiliares podem admitir participação e",
+"after": "e autoria mediata. A doutrina pode admitir participação e"
+}
+]

@@ -1,0 +1,38 @@
+[
+{
+"before": "\n        <text x=\"60\" y=\"470\" class=\"t-serif\">a norma \"muta-se\" pela via da",
+"after": "\n        <text x=\"60\" y=\"470\" class=\"t-serif\">a norma “muta-se” pela via da"
+},
+{
+"before": "texto literal</strong>. Sucede-se pela <strong>via ",
+"after": "texto literal</strong>. Ocorre pela <strong>via "
+},
+{
+"before": "A norma constitucional \"muta-se\" <strong>para abranger ",
+"after": "A norma constitucional “muta-se” <strong>para abranger "
+},
+{
+"before": "à parte: inconstitucionalidade \"chapada\"</h2>\n  <p class=\"lede\">Antes do <em>backlash</em>, vale distinguir a expressão",
+"after": "à parte: inconstitucionalidade “chapada”</h2>\n  <p class=\"lede\">Antes do <em>backlash</em>, convém distinguir a expressão"
+},
+{
+"before": "<div class=\"prosa\">\n    <p><strong>Inconstitucionalidade \"chapada\"</strong> foi uma ",
+"after": "<div class=\"prosa\">\n    <p><strong>Inconstitucionalidade “chapada”</strong> foi uma "
+},
+{
+"before": "reforma.</dd>\n    <dt>Inconstitucionalidade \"chapada\"</dt>\n    <dd>Expressão de",
+"after": "reforma.</dd>\n    <dt>Inconstitucionalidade “chapada”</dt>\n    <dd>Expressão de"
+},
+{
+"before": " art. 5º, XII, CF fala em",
+"after": " art. 5º, XII, da CF fala em"
+},
+{
+"before": "função de publicidade. Não se apresenta aqui essa tese como entendimento pacificado.</p></details>",
+"after": "função de publicidade. A tese não é entendimento pacificado.</p></details>"
+},
+{
+"before": "cunhou a expressão \"inconstitucionalidade chapada\", e o que",
+"after": "cunhou a expressão “inconstitucionalidade chapada”, e o que"
+}
+]

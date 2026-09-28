@@ -1,0 +1,18 @@
+[
+{
+"before": "<h2 id=\"c2\">Boa-fé objetiva</h2><p class=\"lede\">O princípio central do direito contratual. A pergunta não é se a parte se sentia honesta, e sim se sua conduta, vista de fora,",
+"after": "<h2 id=\"c2\">Boa-fé objetiva</h2><p class=\"lede\">Princípio central do direito contratual. Conta se a conduta da parte, vista de fora,"
+},
+{
+"before": "foi leal e cooperativa.</p></section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\">",
+"after": "foi leal e cooperativa, e não se ela se sentia honesta.</p></section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\">"
+},
+{
+"before": "consequência. Sem isso, \"boa-fé\" vira rótulo para",
+"after": "consequência. Sem isso, “boa-fé” vira rótulo para"
+},
+{
+"before": "dar e receber. Equilíbrio não é igualdade matemática: é respeito à relação pactuada.</p></section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\">",
+"after": "dar e receber. O equilíbrio respeita a relação pactuada; não exige igualdade matemática.</p></section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\">"
+}
+]

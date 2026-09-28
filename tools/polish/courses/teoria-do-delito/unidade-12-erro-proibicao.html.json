@@ -1,0 +1,26 @@
+[
+{
+"before": " crime culposo.</p><p>A primeira pergunta é qual situação imaginada",
+"after": " crime culposo.</p><p>Primeiro se identifica qual situação imaginada"
+},
+{
+"before": "pode saber</th><th scope=\"col\">Pergunta decisiva</th></tr></thead><tbody><tr><td>",
+"after": "pode saber</th><th scope=\"col\">Pergunta</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "art. 20, § 1º e à controvérsia",
+"after": "art. 20, § 1º, e à controvérsia"
+},
+{
+"before": "Não confundir</th><th scope=\"col\">Diferença decisiva</th></tr></thead><tbody><tr><td>",
+"after": "Não confundir</th><th scope=\"col\">Diferença</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "momento da ação é decisivo?</li><li>Por que ",
+"after": "momento da ação importa?</li><li>Por que "
+},
+{
+"before": "com a prova decisiva e a condição",
+"after": "com a prova que sustenta a conclusão e a condição"
+}
+]

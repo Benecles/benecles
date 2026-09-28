@@ -1,0 +1,26 @@
+[
+{
+"before": " proteção.</td></tr><tr><td>Archive e jurisprudência</td><td>Resumo de terceiro não prova entendimento",
+"after": " proteção.</td></tr><tr><td>Exemplo histórico e jurisprudência</td><td>Exemplo histórico não prova entendimento"
+},
+{
+"before": "intervenção lícita. O material comparado não fornece",
+"after": "intervenção lícita. O exemplo comparado não fornece"
+},
+{
+"before": "</span><h2 id=\"c21\">Vulnerabilidade e co-responsabilidade</h2></section>\n<div class=\"longform\"><div><p>",
+"after": "</span><h2 id=\"c21\">Vulnerabilidade e corresponsabilidade</h2></section>\n<div class=\"longform\"><div><p>"
+},
+{
+"before": "<tr><th scope=\"col\">Hipótese</th><th scope=\"col\">Pergunta decisiva</th></tr></thead><tbody><tr><td>",
+"after": "<tr><th scope=\"col\">Hipótese</th><th scope=\"col\">Pergunta</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "</th><th scope=\"col\">Situação</th><th scope=\"col\">Questão decisiva</th></tr></thead><tbody><tr><td>",
+"after": "</th><th scope=\"col\">Situação</th><th scope=\"col\">Questão</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": "comprovados e a fonte brasileira adicional decidem o caso.",
+"after": "comprovados e a jurisprudência brasileira decidem o caso."
+}
+]

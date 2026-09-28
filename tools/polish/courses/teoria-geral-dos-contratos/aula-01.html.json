@@ -1,0 +1,14 @@
+[
+{
+"before": "comum, contrato é \"o negócio\". Por trás do",
+"after": "comum, contrato é “o negócio”. Por trás do"
+},
+{
+"before": "</h3><p>A palavra \"contrato\" serve tanto para",
+"after": "</h3><p>A palavra “contrato” serve tanto para"
+},
+{
+"before": "\n<div class=\"step\" data-panel=\"p-dest\"><div class=\"card\"><span class=\"label \">A pergunta central</span><h3>O bem ",
+"after": "\n<div class=\"step\" data-panel=\"p-dest\"><div class=\"card\"><span class=\"label \">A questão</span><h3>O bem "
+}
+]

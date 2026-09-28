@@ -1,0 +1,22 @@
+[
+{
+"before": "</text><text x=\"114\" y=\"362\" class=\"t-small\">basta um \"aceito\" para concluir</text><text x=\"114\" y=\"378\" class=\"t-small\">",
+"after": "</text><text x=\"114\" y=\"362\" class=\"t-small\">basta um “aceito” para concluir</text><text x=\"114\" y=\"378\" class=\"t-small\">"
+},
+{
+"before": "que um simples \"aceito\" forme o contrato,",
+"after": "que um simples “aceito” forme o contrato,"
+},
+{
+"before": " com ela.</p><p>\"Presente\" e \"ausente\" se referem ao",
+"after": " com ela.</p><p>“Presente” e “ausente” se referem ao"
+},
+{
+"before": "DIA 10</text><path d=\"M440 176H160\" class=\"c-dif grow\" marker-end=\"url(#p-swap-d)\" style=\"--d:.5s\"/><text x=\"300\" y=\"206\" class=\"t-small tc-dif\" text-anchor=\"middle\">\"ACEITO, MAS ENTREGA DIA 20\"</text><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"80\" y=\"270\" width=\"440\" height=\"110\" class=\"ink\" style=\"fill:var(--mix-wash);stroke:var(--mix)\"/><text x=\"94\" y=\"312\" class=\"t-mid tc-mix\">NOVA ",
+"after": "DIA 10</text><path d=\"M440 176H160\" class=\"c-dif grow\" marker-end=\"url(#p-swap-d)\" style=\"--d:.5s\"/><text x=\"300\" y=\"206\" class=\"t-small tc-dif\" text-anchor=\"middle\">“ACEITO, MAS ENTREGA DIA 20”</text><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"80\" y=\"270\" width=\"440\" height=\"110\" class=\"ink\" style=\"fill:var(--mix-wash);stroke:var(--mix)\"/><text x=\"94\" y=\"312\" class=\"t-mid tc-mix\">NOVA "
+},
+{
+"before": " se aceita.</p><p>Não confunda com o art. 430: se a aceitação",
+"after": " se aceita.</p><p>O art. 430 trata de outro caso: se a aceitação"
+}
+]

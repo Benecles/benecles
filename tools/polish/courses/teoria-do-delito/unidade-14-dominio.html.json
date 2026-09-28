@@ -1,0 +1,58 @@
+[
+{
+"before": "<td>A participação foi realmente de menor importância",
+"after": "<td>A participação foi de menor importância"
+},
+{
+"before": " estrutura</h3><p>A exposição associa domínio da",
+"after": " estrutura</h3><p>A tese associa domínio da"
+},
+{
+"before": "concreta se realizou. O artigo de Moraes e Nassar oferece tese sobre criminalidade",
+"after": "concreta se realizou. Moraes e Nassar oferecem tese sobre criminalidade"
+},
+{
+"before": " de aplicação</h2><p class=\"lede\">Casos herdados testam o título",
+"after": " de aplicação</h2><p class=\"lede\">Os casos a seguir testam o título"
+},
+{
+"before": "autônoma. O momento de consumação e adesão é decisivo.</p></div></div>\n<section class=\"chapter\" data-src=\"sanches-p382\" aria-labelledby=\"c16\"><span class=\"num \" aria-hidden=\"true\">",
+"after": "autônoma. O momento da consumação e da adesão define o enquadramento.</p></div></div>\n<section class=\"chapter\" data-src=\"sanches-p382\" aria-labelledby=\"c16\"><span class=\"num \" aria-hidden=\"true\">"
+},
+{
+"before": "deve ser conferida em fonte judicial primária antes de ser",
+"after": "deve ser conferida na jurisprudência antes de ser"
+},
+{
+"before": "deve ser reescrita. A fonte pode ser o artigo de lei, Roxin, Moraes e Nassar ou material auxiliar, mas o leitor",
+"after": "deve ser reescrita. O apoio pode vir do artigo de lei, de Roxin ou de Moraes e Nassar, mas o leitor"
+},
+{
+"before": "da organização; os materiais auxiliares preservam debates e limites.</p><p>O art. ",
+"after": "da organização; os debates da doutrina preservam limites para cada critério.</p><p>O art. "
+},
+{
+"before": "19</span><h2 id=\"c19\">Recuperação</h2><p class=\"lede\">Questões do material legado e quatro novas perguntas apoiadas na leitura.</p></section>\n<div class=\"wide\">\n<div class=\"quiz\">",
+"after": "19</span><h2 id=\"c19\">Recuperação</h2><p class=\"lede\">Perguntas de recuperação sobre autoria, participação e concurso.</p></section>\n<div class=\"wide\">\n<div class=\"quiz\">"
+},
+{
+"before": " se comunicam?</summary><p>A seção 11.2, “Circunstâncias e excesso”, mantém a resposta do material legado; o pacote de leitura desta unidade não contém span próprio para aprofundar esse tema.<span class=\"src\" hidden data-src=\"legacy-unidade-14-sec11-2\" aria-hidden=\"true\"></span></p></details>",
+"after": " se comunicam?</summary><p>Quando são elementares do crime (art. 30); do contrário, permanecem individuais. A seção 11.2, “Circunstâncias e excesso”, desenvolve o tema.<span class=\"src\" hidden data-src=\"legacy-unidade-14-sec11-2\" aria-hidden=\"true\"></span></p></details>"
+},
+{
+"before": " de dever?</summary><p>Consulte a seção 8,",
+"after": " de dever?</summary><p>Prova-se a obrigação especial, sua violação e o vínculo do agente com o resultado, conforme o tipo; a seção 8,"
+},
+{
+"before": "e de dever”, que preserva a exposição herdada. O pacote desta unidade não traz fonte doutrinária própria para aprofundar o tema.<span class=\"src\" hidden data-src=\"legacy-unidade-14-sec8\" aria-hidden=\"true\"></span>",
+"after": "e de dever”, desenvolve o tema.<span class=\"src\" hidden data-src=\"legacy-unidade-14-sec8\" aria-hidden=\"true\"></span>"
+},
+{
+"before": " de coautor?</summary><p>A unidade legada manda examinar o que",
+"after": " de coautor?</summary><p>Deve-se examinar o que"
+},
+{
+"before": "</p></details><details><summary>Qual fonte é lei e",
+"after": "</p></details><details><summary>Qual texto é lei e"
+}
+]

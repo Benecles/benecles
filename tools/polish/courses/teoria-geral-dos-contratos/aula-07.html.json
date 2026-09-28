@@ -1,0 +1,22 @@
+[
+{
+"before": " varie depois.</p><p>\"Bilateral\" não quer dizer",
+"after": " varie depois.</p><p>“Bilateral” não quer dizer"
+},
+{
+"before": "</text><g class=\"pop\" style=\"--d:0.3s\"><path d=\"M291 133l18 18M309 133l-18 18\" class=\"c-conc\" style=\"stroke-width:3.2;stroke-linecap:round\"/></g><path d=\"M440 172H160\" class=\"c-conc grow\" marker-end=\"url(#p-476-c)\" style=\"--d:.5s\"/><text x=\"300\" y=\"196\" class=\"t-small tc-conc\" text-anchor=\"middle\">\"PAGUE!\"</text><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"360\" y=\"250\" width=\"200\" height=\"110\" class=\"w-dif ink\" rx=\"8\"/><circle cx=\"400\" cy=\"290\" r=\"18\" class=\"accent\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><text x=\"400\" y=\"294\" class=\"t-small\" text-anchor=\"middle\">R$",
+"after": "</text><g class=\"pop\" style=\"--d:0.3s\"><path d=\"M291 133l18 18M309 133l-18 18\" class=\"c-conc\" style=\"stroke-width:3.2;stroke-linecap:round\"/></g><path d=\"M440 172H160\" class=\"c-conc grow\" marker-end=\"url(#p-476-c)\" style=\"--d:.5s\"/><text x=\"300\" y=\"196\" class=\"t-small tc-conc\" text-anchor=\"middle\">“PAGUE!”</text><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"360\" y=\"250\" width=\"200\" height=\"110\" class=\"w-dif ink\" rx=\"8\"/><circle cx=\"400\" cy=\"290\" r=\"18\" class=\"accent\" stroke=\"var(--ink)\" stroke-width=\"1.4\"/><text x=\"400\" y=\"294\" class=\"t-small\" text-anchor=\"middle\">R$"
+},
+{
+"before": " × gratuitos</h2><p class=\"lede\">A pergunta é quem tem vantagem",
+"after": " × gratuitos</h2><p class=\"lede\">Interessa quem tem vantagem"
+},
+{
+"before": " × aleatórios</h2><p class=\"lede\">A pergunta é se as prestações",
+"after": " × aleatórios</h2><p class=\"lede\">Interessa se as prestações"
+},
+{
+"before": "Classifique antes de responder, e ache o fato que",
+"after": "Classifique antes de responder e identifique o fato que"
+}
+]

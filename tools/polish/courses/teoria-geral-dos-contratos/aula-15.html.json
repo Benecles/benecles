@@ -1,0 +1,10 @@
+[
+{
+"before": "</div></div>\n<div class=\"step\" data-panel=\"p-mall2\"><div class=\"card\"><span class=\"label \">A pergunta certa</span><h3>Qual prestação ",
+"after": "</div></div>\n<div class=\"step\" data-panel=\"p-mall2\"><div class=\"card\"><span class=\"label \">O foco da análise</span><h3>Qual prestação "
+},
+{
+"before": " fato afetou?</h3><p>Não pergunte só “houve um fato imprevisível?”. Pergunte qual prestação ele",
+"after": " fato afetou?</h3><p>A análise vai além de “houve um fato imprevisível?”: cabe identificar qual prestação ele"
+}
+]

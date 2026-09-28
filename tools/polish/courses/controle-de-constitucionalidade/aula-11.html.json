@@ -1,0 +1,30 @@
+[
+{
+"before": "heranças</h2>\n  <p class=\"lede\">Duas setas atravessam o mapa: uma sai dos Estados Unidos, outra da Alemanha, e as duas terminam no Brasil. Cada seta traz um sistema",
+"after": "heranças</h2>\n  <p class=\"lede\">Duas heranças chegam ao Brasil, uma dos Estados Unidos e outra da Alemanha. Cada uma traz um sistema"
+},
+{
+"before": "Antes dos detalhes, fixe o vocabulário. “Sistema”",
+"after": "Antes dos detalhes, vale fixar o vocabulário. “Sistema”"
+},
+{
+"before": "pelas instâncias</h2>\n  <p class=\"lede\"> há três prédios de tribunais ligados por setas, uma ampulheta e o STF no fim do caminho. O difuso leva tempo.",
+"after": "pelas instâncias</h2>\n  <p class=\"lede\">O controle difuso leva tempo."
+},
+{
+"before": " decisão do STF, a mesma lei pode ser afastada num processo e aplicada em outro. Até a palavra final do Supremo, a mesma lei",
+"after": " decisão do STF, a mesma lei"
+},
+{
+"before": " STF decide?</summary><p> antes da decisão do STF os efeitos são",
+"after": " STF decide?</summary><p>Antes da decisão do STF, os efeitos são"
+},
+{
+"before": "<em>inter partes</em>.  associa a ampliação ",
+"after": "<em>inter partes</em>. A abstrativização associa a ampliação "
+},
+{
+"before": "as súmulas vinculantes; a fórmula não significa que",
+"after": "as súmulas vinculantes; isso não significa que"
+}
+]

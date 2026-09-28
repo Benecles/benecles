@@ -1,0 +1,50 @@
+[
+{
+"before": " culpa penal.</button><button type=\"button\" data-opt=\"1\" data-court aria-pressed=\"false\">*Não por si só;",
+"after": " culpa penal.</button><button type=\"button\" data-opt=\"1\" data-court aria-pressed=\"false\">Não por si só;"
+},
+{
+"before": " só. O caso do material pede a regra",
+"after": " só. O caso pede a regra"
+},
+{
+"before": "depois de ocorrido. A pergunta correta é anterior: qual comportamento era",
+"after": "depois de ocorrido. O exame olha para antes do resultado: qual comportamento era"
+},
+{
+"before": " em risco</h3><p>As anotações de aula registram a discussão sobre autocolocação voluntária em",
+"after": " em risco</h3><p>A autocolocação voluntária em"
+},
+{
+"before": "que conhece o perigo. O consentimento ou",
+"after": "que conhece o perigo, também entra na discussão. O consentimento ou"
+},
+{
+"before": "Prevê e assume risco. A classificação depende do que a pessoa representou e de sua atitude, não da gravidade posterior do resultado.</p></div></div>\n",
+"after": "Prevê e assume o risco de produzir o resultado.</p></div></div>\n"
+},
+{
+"before": " consciente</h3><span class=\"src\" hidden data-src=\"faccini:197-200;sanches:204-207\"></span><p>Prevê e confia que evita. A classificação depende do que a pessoa representou e de sua atitude, não da gravidade posterior do resultado.</p></div></div>\n",
+"after": " consciente</h3><span class=\"src\" hidden data-src=\"faccini:197-200;sanches:204-207\"></span><p>Prevê, mas confia que evita o resultado.</p></div></div>\n"
+},
+{
+"before": "</h3><span class=\"src\" hidden data-src=\"faccini:197-200;sanches:204-207\"></span><p>Não prevê; podia prever. A classificação depende do que a pessoa representou e de sua atitude, não da gravidade posterior do resultado.</p></div></div>\n<div class=\"step\" data-panel=\"u06-subj-preter\"><div class=\"card\">",
+"after": "</h3><span class=\"src\" hidden data-src=\"faccini:197-200;sanches:204-207\"></span><p>Não prevê, embora pudesse prever.</p></div></div>\n<div class=\"step\" data-panel=\"u06-subj-preter\"><div class=\"card\">"
+},
+{
+"before": "</th><th scope=\"col\">Representação</th><th scope=\"col\">Questão decisiva</th></tr></thead><tbody><tr><td>",
+"after": "</th><th scope=\"col\">Representação</th><th scope=\"col\">Questão</th></tr></thead><tbody><tr><td>"
+},
+{
+"before": " da arma</h3><p>As anotações de aula registram o caso em que alguém aposta o patrimônio acertando uma maçã na",
+"after": " da arma</h3><p>Um caso clássico é o de quem aposta o patrimônio em acertar uma maçã na"
+},
+{
+"before": "a própria pessoa. A fonte usa o exemplo para ilustrar culpa consciente quando",
+"after": "a própria pessoa. O exemplo ilustra culpa consciente quando"
+},
+{
+"before": " dos fatos.</p><p>As as anotações também afirmam que a atribuição de dolo ou culpa envolve razão normativa",
+"after": " dos fatos.</p><p>A atribuição de dolo ou culpa também envolve razão normativa"
+}
+]

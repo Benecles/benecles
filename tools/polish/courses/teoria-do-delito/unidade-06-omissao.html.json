@@ -1,0 +1,46 @@
+[
+{
+"before": " a morte.</button><button type=\"button\" data-opt=\"1\" data-court aria-pressed=\"false\">*A omissão de socorro",
+"after": " a morte.</button><button type=\"button\" data-opt=\"1\" data-court aria-pressed=\"false\">A omissão de socorro"
+},
+{
+"before": " e autoria</h3><p>O material de Moraes e Nassar resume a distinção roxiniana e ressalta que a teoria",
+"after": " e autoria</h3><p>Moraes e Nassar resumem a distinção roxiniana e ressaltam que a teoria"
+},
+{
+"before": "<td><strong>Caso 10, switchman</strong></td><td>Operador ferroviário",
+"after": "<td><strong>Caso 10, guarda-chaves</strong></td><td>Operador ferroviário"
+},
+{
+"before": "cair e vai embora embora pudesse resgatá-lo.",
+"after": "cair e vai embora, embora pudesse resgatá-lo."
+},
+{
+"before": "deve ser conferido no Planalto. A Exposição de",
+"after": "deve ser conferido na redação atual da lei. A Exposição de"
+},
+{
+"before": "omissão, mas não substitui a redação atual. Brandão oferece a",
+"after": "omissão, mas não a substitui. Brandão oferece a"
+},
+{
+"before": "imputação e autoria. As anotações gerais, o resumo, as anotações de aula, o arquivo de erro e a prova de 2025 preservam exemplos, distinções e armadilhas; Moraes e Nassar ",
+"after": "imputação e autoria. Moraes e Nassar "
+},
+{
+"before": "do fato.</p><p class=\"lex \"><b>Hierarquia das fontes</b>O Planalto controla a redação",
+"after": "do fato.</p><p class=\"lex \"><b>Texto legal e doutrina</b>O texto vigente controla a redação"
+},
+{
+"before": "e 269. Brandão, Roxin, as anotações de aula e Moraes/Nassar ajudam a explicar",
+"after": "e 269. Brandão, Roxin e Moraes e Nassar ajudam a explicar"
+},
+{
+"before": "no mesmo fato. O manual adota a estrutura",
+"after": "no mesmo fato. Sanches adota a estrutura"
+},
+{
+"before": "</h3><ol><li>A assertiva de 2025-2 que pune por",
+"after": "</h3><ol><li>A assertiva que pune por"
+}
+]

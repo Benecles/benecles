@@ -1,0 +1,14 @@
+[
+{
+"before": "DO ART. 5º §3º → EQUIVALENTE À",
+"after": "DO ART. 5º § 3º → EQUIVALENTE À"
+},
+{
+"before": "<div class=\"steps\">\n    <div class=\"step\" data-panel=\"p-fluxo\" data-slides=\"Slide 5\"><div class=\"card\">\n      <span class=\"label\">A pergunta decisiva</span>\n      <h3>Tudo começa pela natureza do tratado</h3>\n      <p>A primeira",
+"after": "<div class=\"steps\">\n    <div class=\"step\" data-panel=\"p-fluxo\" data-slides=\"Slide 5\"><div class=\"card\">\n      <span class=\"label\">Primeiro critério</span>\n      <h3>A natureza do tratado define o caminho</h3>\n      <p>A primeira"
+},
+{
+"before": "5º, § 3º, CF). Exemplos são ",
+"after": "5º, § 3º, da CF). Exemplos são "
+}
+]

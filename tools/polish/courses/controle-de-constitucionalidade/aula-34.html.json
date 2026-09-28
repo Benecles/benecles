@@ -1,0 +1,30 @@
+[
+{
+"before": "\n<section class=\"chapter\" aria-labelledby=\"c2\"><span class=\"num conc\" aria-hidden=\"true\">02</span><h2 id=\"c2\">Não confunda as técnicas</h2><p class=\"lede\">",
+"after": "\n<section class=\"chapter\" aria-labelledby=\"c2\"><span class=\"num conc\" aria-hidden=\"true\">02</span><h2 id=\"c2\">Diferença entre as técnicas</h2><p class=\"lede\">"
+},
+{
+"before": "abstrato, a Lei 9.868 autoriza o STF,",
+"after": "abstrato, a Lei 9.868/1999 autoriza o STF,"
+},
+{
+"before": "Nas hipóteses do CPC art. 988, § 5º, II (acórdão de recurso",
+"after": "Nas hipóteses do art. 988, § 5º, II, do CPC (acórdão de recurso"
+},
+{
+"before": "esgotar as instâncias ordinárias e que o ato questionado esteja manifestamente em desacordo",
+"after": "esgotar as instâncias ordinárias, e o ato questionado deve estar manifestamente em desacordo"
+},
+{
+"before": "de ser permitido. Compare com uma lei hipotética que contenha expressão destacável e inconstitucional: aí o tribunal pode",
+"after": "de ser permitido. Numa lei hipotética com expressão destacável e inconstitucional, o tribunal pode"
+},
+{
+"before": " o comando vinculante, reclamação exige mostrar",
+"after": " o comando vinculante, a reclamação exige mostrar"
+},
+{
+"before": "27 da Lei 9.868.</p></details><details><summary>Reclamação ",
+"after": "27 da Lei 9.868/1999.</p></details><details><summary>Reclamação "
+}
+]

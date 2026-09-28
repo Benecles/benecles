@@ -1,0 +1,58 @@
+[
+{
+"before": "Constituição. A diferença central está em quem ",
+"after": "Constituição. A diferença está em quem "
+},
+{
+"before": "confuso, concentrado</h3>\n      <p>A abertura usa três bandeiras para apresentar os modelos: Estados Unidos rotulados <strong class=\"dif\">Difuso</strong>, Alemanha rotulada <strong class=\"conc\">Concentrado</strong> e, entre as duas, o Brasil rotulado <strong>Confuso</strong>. No mapa-múndi ao lado, duas setas grossas (uma da América do Norte, outra da Europa) convergem sobre a América do Sul.</p>\n      <p>É a mesma imagem de fundo da Aula 11 (duas heranças chegando ao Brasil), mas agora com uma etiqueta nova: a soma das duas heranças não é apresentada como uma solução, e sim como uma confusão a ser explicada.</p>\n      <span class=\"src\" hidden data-src=\"Slides 1–2\"></span>\n    </div>",
+"after": "confuso, concentrado</h3>\n      <p>Os Estados Unidos representam o modelo <strong class=\"dif\">Difuso</strong>, a Alemanha o <strong class=\"conc\">Concentrado</strong> e o Brasil, entre os dois, o <strong>Confuso</strong>.</p>\n      <p>O Brasil juntou o controle difuso de origem americana e o concentrado de origem austríaca sem definir qual prevalece; boa parte da aula trata dos atritos que isso produz (art. 52, X, e a chamada abstrativização).</p>\n      <span class=\"src\" hidden data-src=\"Slides 1–2\"></span>\n    </div>"
+},
+{
+"before": "sistema difuso brasileiro, um único triângulo substitui a pirâmide de duas camadas: dentro dele, juntas, as palavras <strong>“jurisdições ordinária ",
+"after": "sistema difuso brasileiro, as duas jurisdições se reúnem num só corpo: <strong>“jurisdições ordinária "
+},
+{
+"before": "concreto</text>\n        <rect x=\"50\" y=\"420\" width=\"500\" height=\"60\" style=\"fill:var(--dif)\"/>\n        <text x=\"66\" y=\"458\" class=\"t-light t-mid\">\"CADA JUIZ É UM TRIBUNAL CONSTITUCIONAL\"</text>\n        <text x=\"50\" y=\"520\" class=\"t-small tc-muted\">O QUE",
+"after": "concreto</text>\n        <rect x=\"50\" y=\"420\" width=\"500\" height=\"60\" style=\"fill:var(--dif)\"/>\n        <text x=\"66\" y=\"458\" class=\"t-light t-mid\">“CADA JUIZ É UM TRIBUNAL CONSTITUCIONAL”</text>\n        <text x=\"50\" y=\"520\" class=\"t-small tc-muted\">O QUE"
+},
+{
+"before": "Brasil</strong>.</p>\n      <p>A pergunta que fecha o bloco é retórica: o que acontece quando vários desses",
+"after": "Brasil</strong>.</p>\n      <p>O problema aparece quando vários desses"
+},
+{
+"before": "sobre a mesma lei?</p>\n      <span class=\"src\" hidden data-src=\"Slides 9–11\"></span>\n    </div>",
+"after": "sobre a mesma lei.</p>\n      <span class=\"src\" hidden data-src=\"Slides 9–11\"></span>\n    </div>"
+},
+{
+"before": "do WhatsApp</h3>\n      <p>Imagine uma lei sobre tributação de serviços digitais. Juízes de diferentes regiões",
+"after": "do WhatsApp</h3>\n      <p>Numa lei hipotética sobre tributação de serviços digitais, juízes de diferentes regiões"
+},
+{
+"before": "e as categorias não são rigorosamente equivalentes, são aproximações de ",
+"after": "e as categorias são aproximações de "
+},
+{
+"before": "pelo Congresso Nacional, é de suma importância que se defina, o quanto antes,",
+"after": "pelo Congresso Nacional, importa definir, o quanto antes,"
+},
+{
+"before": "\n  <span class=\"num\" aria-hidden=\"true\">07</span>\n  <h2 id=\"c7\">O programa: art. 52, X e abstrativização do",
+"after": "\n  <span class=\"num\" aria-hidden=\"true\">07</span>\n  <h2 id=\"c7\">Art. 52, X, e abstrativização do"
+},
+{
+"before": "<dt>Art. 52, X, CF</dt>\n    <dd>Compete",
+"after": "<dt>Art. 52, X, da CF</dt>\n    <dd>Compete"
+},
+{
+"before": "frase: o Brasil não escolheu entre difuso e concentrado, somou os dois, e a soma",
+"after": "frase: o Brasil somou o difuso e o concentrado, e a soma"
+},
+{
+"before": "episódio real ilustra de insegurança jurídica causada",
+"after": "episódio real ilustra a insegurança jurídica causada"
+},
+{
+"before": "exceção.</p></details>\n    <details><summary> qual concepção é considerada",
+"after": "exceção.</p></details>\n    <details><summary>Qual concepção é considerada"
+}
+]

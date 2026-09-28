@@ -1,0 +1,22 @@
+[
+{
+"before": "</div>\n<div class=\"longform\"><div><p class=\"lex \"><b>Pergunta central</b>Depois de verificar",
+"after": "</div>\n<div class=\"longform\"><div><p class=\"lex \"><b>Questão da exigibilidade</b>Depois de verificar"
+},
+{
+"before": "a regra legal central, mas não é",
+"after": "a regra legal principal, mas não é"
+},
+{
+"before": "art. 20, § 1º e teoria adotada.",
+"after": "art. 20, § 1º, e teoria adotada."
+},
+{
+"before": " coator ou superior.\n[!CAUTION] Posição não basta\nComando, hierarquia e ",
+"after": " coator ou superior. Comando, hierarquia e "
+},
+{
+"before": " automática da culpa, não elimina a",
+"after": " automática da culpa, mas não elimina a"
+}
+]

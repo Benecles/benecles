@@ -1,0 +1,26 @@
+[
+{
+"before": "\n\n<section class=\"chapter\" aria-labelledby=\"c1\"><span class=\"num\" aria-hidden=\"true\">01</span><h2 id=\"c1\">Comece por quem precisa da tutela",
+"after": "\n\n<section class=\"chapter\" aria-labelledby=\"c1\"><span class=\"num\" aria-hidden=\"true\">01</span><h2 id=\"c1\">Quem precisa da tutela"
+},
+{
+"before": "ponto de partida não é apenas a falta de lei. É o que essa falta impede, e quem pode",
+"after": "ponto de partida é o que a falta de lei impede e quem pode"
+},
+{
+"before": "Constituição em si? Pense em ADO. Busca permitir",
+"after": "Constituição em si? A via é a ADO. Busca permitir"
+},
+{
+"before": "falta da norma? Pense em mandado de injunção.",
+"after": "falta da norma? A via é o mandado de injunção."
+},
+{
+"before": "administrativo, a Lei 9.868 prevê 30 dias,",
+"after": "administrativo, a Lei 9.868/1999 prevê 30 dias,"
+},
+{
+"before": "partes; a Lei 13.300 admite extensão quando",
+"after": "partes; a Lei 13.300/2016 admite extensão quando"
+}
+]

@@ -1,0 +1,22 @@
+[
+{
+"before": "nome a esse cenário, e passou a",
+"after": "nome a esse cenário e passou a"
+},
+{
+"before": "reconhecer um ECI não é só apontar um erro. É, às vezes, escrever",
+"after": "reconhecer um ECI é apontar um erro e, às vezes, escrever"
+},
+{
+"before": "</section>\n\n<div class=\"wide\">\n  <div class=\"chave\"><span class=\"label\"> · Em suma</span>A matéria do ECI é uma das mais desafiadoras do direito constitucional contemporâneo.",
+"after": "</section>\n\n<div class=\"wide\">\n  <div class=\"chave\"><span class=\"label\">Resumo</span>O ECI é tema disputado no direito constitucional contemporâneo."
+},
+{
+"before": "</section>\n<div class=\"wide\">\n  <div class=\"chave\"><span class=\"label\"> · Conclusão</span>O nome é sedutor. Mas bons nomes não significam bons resultados. O Judiciário possui uma fórmula mágica? Somente reformas institucionais podem resolver questões complexas.</div>\n  <p class=\"note\">A imagem é dura: mãos entre as grades de uma cela superlotada, o retrato do próprio caso de origem, o sistema prisional da ADPF 347. Em suma: nomear um estado de coisas inconstitucional não resolve a superlotação; só reformas institucionais, fora do que uma decisão judicial pode sozinha entregar, resolvem.</p>\n  <span class=\"src\" hidden data-src=\"Slide 12\"></span>\n</div>",
+"after": "</section>\n<div class=\"wide\">\n  <div class=\"chave\"><span class=\"label\">Conclusão</span>O nome é sedutor, mas bons nomes não garantem bons resultados. Só reformas institucionais resolvem questões complexas; o Judiciário não tem fórmula mágica.</div>\n  <p class=\"note\">Na ADPF 347 (2015), o STF declarou o estado de coisas inconstitucional do sistema prisional. A declaração não abriu uma única vaga: as medidas que reduzem a superlotação (orçamento, construção, política de encarceramento) dependem do Executivo e do Legislativo.</p>\n  <span class=\"src\" hidden data-src=\"Slide 12\"></span>\n</div>"
+},
+{
+"before": "Qual é a crítica central sobre a consequência",
+"after": "Qual é a principal crítica sobre a consequência"
+}
+]

@@ -1,0 +1,42 @@
+[
+{
+"before": "\n  <span class=\"num\" aria-hidden=\"true\">02</span>\n  <h2 id=\"c2\">Leia o contexto e os efeitos</h2>\n  <p class=\"lede\">A figura separa o texto visível do ato e o que aparece ao observar sua aplicação.",
+"after": "\n  <span class=\"num\" aria-hidden=\"true\">02</span>\n  <h2 id=\"c2\">O contexto e os efeitos do ato</h2>\n  <p class=\"lede\">O texto visível do ato não mostra tudo o que ele faz; é preciso observar sua aplicação."
+},
+{
+"before": "efeitos sejam irregulares. Trate-a como hipótese problemática, não como precedente ou caso resolvido.</dd>\n    ",
+"after": "efeitos sejam irregulares. É hipótese problemática, não precedente nem caso resolvido.</dd>\n    "
+},
+{
+"before": "sítio</dt>\n    <dd>A declaração desses institutos de",
+"after": "sítio</dt>\n    <dd>A decretação desses institutos de"
+},
+{
+"before": "Ponto de partida</span>Verifique forma, competência e",
+"after": "Ponto de partida</span>Examinam-se forma, competência e"
+},
+{
+"before": " ato.</div>\n    <div class=\"excecao\"><span class=\"label\">Pergunta central</span>O que o",
+"after": " ato.</div>\n    <div class=\"excecao\"><span class=\"label\">Questão</span>O que o"
+},
+{
+"before": "\n      <li><b>Efeito</b> Compare decisões, registros e",
+"after": "\n      <li><b>Efeito</b> Comparam-se decisões, registros e"
+},
+{
+"before": "\n      <li><b>Ligação</b> Pergunte se o uso",
+"after": "\n      <li><b>Ligação</b> Resta saber se o uso"
+},
+{
+"before": " a hipótese?</summary><p>Compare a aplicação, o",
+"after": " a hipótese?</summary><p>Comparam-se a aplicação, o"
+},
+{
+"before": "os efeitos práticos; então relacione o uso do",
+"after": "os efeitos práticos; em seguida, relaciona-se o uso do"
+},
+{
+"before": "com a Constituição: a aula propõe, como hipótese, uso para prejudicar",
+"after": "com a Constituição: propõe-se, como hipótese, o uso para prejudicar"
+}
+]

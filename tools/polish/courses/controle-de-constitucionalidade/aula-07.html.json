@@ -1,0 +1,42 @@
+[
+{
+"before": "de uma vez. A pergunta é se cada norma compatível continua recebida, ou se deixa de integrar a nova ordem. O resultado é recepção, quando compatível, ou não recepção, quando incompatível.</p>\n  <svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\">\n    <path class=\"draw\" d=\"M20 81H1060\" stroke-width=\"2\" fill=\"none\" style=\"stroke:var(--ink-2)\"/>\n    ",
+"after": "de uma vez. Cada norma anterior passa por um juízo próprio: se é compatível com a nova ordem, é recebida; se é incompatível, deixa de integrá-la. O resultado é recepção ou não recepção.</p>\n  <svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\">\n    <path class=\"draw\" d=\"M20 81H1060\" stroke-width=\"2\" fill=\"none\" style=\"stroke:var(--ink-2)\"/>\n    "
+},
+{
+"before": "<div class=\"prosa\">\n    <p>O objeto desta aula é o <strong>",
+"after": "<div class=\"prosa\">\n    <p>O objeto é o <strong>"
+},
+{
+"before": " como portão</h2><p class=\"lede\">Pense na CF/1988 como um portão",
+"after": " como portão</h2><p class=\"lede\">A CF/1988 funciona como um portão"
+},
+{
+"before": " não recepção</h2><p class=\"lede\">Para uma norma anterior à CF/1988, a aula rejeita a ideia de que ela se torne inconstitucional por causa da Constituição nova. O resultado indicado é a não",
+"after": " não recepção</h2><p class=\"lede\">Uma norma anterior à CF/1988 não se torna inconstitucional por causa da Constituição nova: o resultado é a não"
+},
+{
+"before": "e a consequência apresentada é sua <strong>não",
+"after": "e a consequência é sua <strong>não"
+},
+{
+"before": "de não recepção. A aula distingue esse resultado de declarar a",
+"after": "de não recepção. Esse resultado difere de declarar a"
+},
+{
+"before": "\n    <p>O exemplo trabalha com uma lei de <strong>1980</strong> que teria vício formal originário, aferido conforme a ordem constitucional indicada como a <strong>Constituição ",
+"after": "\n    <p>O exemplo é uma lei de <strong>1980</strong> com suposto vício formal originário, aferido conforme a <strong>Constituição "
+},
+{
+"before": "</tr>\n    <tr><th scope=\"row\">Juízo indicado</th><td>Recepção ou ",
+"after": "</tr>\n    <tr><th scope=\"row\">Juízo cabível</th><td>Recepção ou "
+},
+{
+"before": "Via de controle indicada</th><td>ADPF, observados ",
+"after": "Via de controle cabível</th><td>ADPF, observados "
+},
+{
+"before": "é o juízo apresentado na regra geral?</summary><p>",
+"after": "é o juízo da regra geral?</summary><p>"
+}
+]
