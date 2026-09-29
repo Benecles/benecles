@@ -1,0 +1,34 @@
+{
+ "key": "14",
+ "date": "Semana 14",
+ "pages": [
+  {
+   "file": "aula-14.html",
+   "h1a": "Funções e titulares",
+   "h1b": "dos direitos fundamentais",
+   "title": "Direitos fundamentais: dimensões, funções e titulares",
+   "desc": "Dimensão subjetiva e objetiva, funções de defesa e de prestação, status de Jellinek e quem titulariza direitos: estrangeiros, nascituro, pessoa jurídica e animais.",
+   "deck": "Antes de perguntar se um direito é exigível, é preciso saber <strong class=\"dif\">qual posição o titular invoca e contra quem</strong>. A titularidade de animais, do nascituro e das pessoas jurídicas é <strong class=\"conc\">terreno de armadilhas</strong>.",
+   "bet": {
+    "after_chapter": 2,
+    "question": "O STF proibiu a farra do boi, a rinha de galo e a vaquejada por crueldade. Um candidato conclui que o Tribunal reconheceu os animais como titulares de direitos fundamentais. A conclusão procede?",
+    "options": [
+     ["Sim: a vedação de crueldade do art. 225, § 1º, VII, só se explica se o animal for titular de direito fundamental, e foi essa a razão de decidir da maioria.", ""],
+     ["Não: a proibição mostra um dever constitucional de proteção da fauna. A titularidade animal é tese de Sarlet, e o fundamento determinante da maioria não foi o reconhecimento de direitos dos animais.", "*"],
+     ["Não: animais só recebem proteção infraconstitucional, porque a Constituição não trata da fauna como objeto de dever estatal.", ""],
+     ["Sim, mas apenas na rinha de galo de 2011, em que todos os ministros adotaram a dignidade da vida não humana.", ""]
+    ],
+    "reveal": "<p>O art. 225, § 1º, VII, impõe ao Estado o dever de proteger a fauna e veda a crueldade, e o STF proscreveu as três práticas por serem cruéis. Sarlet sustenta que os animais são titulares de direitos fundamentais, mas ressalva que esse não foi o fundamento determinante da maioria; alguns ministros, como Lewandowski na segunda rinha de galo (2011), ligaram a crueldade à dignidade da pessoa humana. Dever de proteção e titularidade são perguntas distintas.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  ["O que distingue a dimensão subjetiva da dimensão objetiva dos direitos fundamentais?", "Na dimensão subjetiva, o titular pode fazer valer perante o destinatário um interesse protegido pela norma, inclusive em juízo, numa relação de titular, objeto e destinatário. Na dimensão objetiva, as normas exprimem decisões valorativas e fins da Constituição, com função autônoma: irradiam-se pela interpretação do direito infraconstitucional, geram deveres estatais de proteção e efeitos sobre organização e procedimento."],
+  ["Quais são os deveres de proteção do Estado e o que a proibição de insuficiência acrescenta?", "O Estado deve proteger direitos preventivamente contra agressões dos poderes públicos, de particulares e de outros Estados. O dever não se cumpre só evitando intervenções: a omissão e a proteção manifestamente insuficiente ficam sujeitas a controle, inclusive judicial. A resposta concreta depende do direito em causa e dos limites aplicáveis."],
+  ["Como Jellinek classificava os status do indivíduo perante o Estado, e por que a classificação funcional não separa os direitos em dois blocos?", "Os status são passivo (sujeição), negativo (liberdade contra o Estado), positivo (usar instituições e exigir ações) e ativo (participar da vontade estatal, como no voto). Cada direito reúne posições negativas e positivas, materiais ou normativas: a saúde pode ser defesa contra uma medida, prestação de medicamento ou exigência de norma organizatória. Por isso é preciso identificar a posição invocada, e o capítulo da Constituição em que o direito está não revela sua estrutura."],
+  ["Qual a diferença entre titular e destinatário, e por que a capacidade civil não resolve a titularidade?", "Titular ocupa o polo ativo; destinatário deve respeitar, proteger ou promover o direito, e pode ser pessoa física, jurídica ou ente despersonalizado, não apenas o Estado (os direitos dos trabalhadores têm entidades privadas como destinatárias). Canotilho adverte que aplicar em geral a capacidade de fato do direito civil restringe direitos sem necessidade. A adolescente é titular do direito à intimidade mesmo sem praticar todos os atos da vida civil, ao passo que o voto exige requisitos próprios de cidadania."],
+  ["O estrangeiro não residente pode invocar direitos fundamentais? Com que critérios?", "Sarlet propõe três critérios. Direitos ligados à dignidade humana alcançam residentes ou não. Quando o texto protege 'ninguém' ou 'todos', como na vedação de tortura, a universalidade inclui qualquer pessoa. O terceiro critério amplia o raciocínio a direitos de tratados ratificados, com o art. 5º, § 2º, e o art. 4º, II, e é controvertido. Direitos políticos, porém, ficam reservados a nacionais."],
+  ["Que proteção tem a vida antes do nascimento e o que o STF decidiu sobre a titularidade?", "Sarlet distingue proteção constitucional da vida, titularidade de posição subjetiva e personalidade civil (art. 2º do Código Civil). O STF não decidiu o ponto de forma clara: há leitura de que consagrou a tese natalista, sobretudo pelo voto de Ayres Britto nas células-tronco, mas poucos votos trataram da titularidade. Para Sarlet, a vida do nascituro tem proteção na dimensão objetiva, por deveres estatais de proteção."],
+  ["Pessoas jurídicas, inclusive as de direito público, titularizam direitos fundamentais?", "A Constituição não traz cláusula geral, mas a doutrina e o STF reconhecem prima facie os direitos compatíveis com a natureza e os fins da entidade, caso a caso, sem equiparação às pessoas naturais. As de direito público são em regra destinatárias, mas Sarlet lhes reconhece direitos processuais, como a igualdade de armas e a ampla defesa, e materiais, como a autonomia universitária do art. 207."]
+ ]
+}
