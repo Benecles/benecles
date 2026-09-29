@@ -136,7 +136,7 @@ def _mx(k):
         o += f'<rect x="{x}" y="{y}" width="190" height="28" style="fill:{col if lit else "var(--ink-2)"}"/>'
         o += T(x + 12, y + 19, title, 't-small', style='fill:var(--paper);font-size:10px;letter-spacing:.06em')
         for j, line in enumerate(ex):
-            o += T(x + 12, y + 56 + j * 19, line, 't-small', style=f'font-size:11.5px;fill:{"var(--ink)" if lit else "var(--ink-2)"}')
+            o += T(x + 12, y + 56 + j * 19, line, 't-small', style=f'font-size:10px;fill:{"var(--ink)" if lit else "var(--ink-2)"}')
     o += T(30, 560, 'Fonte da necessidade e regime da decisão são perguntas diferentes.', 't-small', style='font-size:12.5px;fill:var(--ink)')
     return o
 
@@ -152,5 +152,41 @@ def fig_pc03():
     tones = ['conc', 'dif', 'dif', '']
     return kit.scrolly('Necessidade e unitariedade', [(f'p-mx{i}', _mx(i), labels[i]) for i in range(4)],
                        [S(f'p-mx{i}', labels[i], _Q[i][2].capitalize().replace('-', ' e '), bodies[i] + src(ref), tones[i]) for i in range(4)])
+
+FIGS[('processo-civil', 'aula-03.html')] = {4: fig_pc03}
+
+# ---- PC Aula 03 · genre: matrix. The two axes of joinder in four combinations (draft unit-03-integrated)
+_Q = [(0, 0, 'NECESSÁRIO-UNITÁRIO', ['relação indivisível:', 'todos no processo;', 'ex.: composse'], 'conc'),
+      (0, 1, 'NECESSÁRIO-SIMPLES', ['a lei exige todos', '(cônjuges réus), mas', 'cada um tem capítulo'], 'dif'),
+      (1, 0, 'FACULTATIVO-UNITÁRIO', ['um colegitimado', 'demanda sozinho;', 'mérito uniforme'], 'dif'),
+      (1, 1, 'FACULTATIVO-SIMPLES', ['pedidos reunidos', 'por conexão; cada', 'um com seu resultado'], 'ink')]
+def _mx(k):
+    o = T(30, 44, 'DOIS EIXOS, QUATRO COMBINAÇÕES', 't-small', style='letter-spacing:.1em')
+    o += T(265, 98, 'UNITÁRIO', 't-small', anchor='middle', style='letter-spacing:.1em;fill:var(--ink-2)')
+    o += T(465, 98, 'SIMPLES', 't-small', anchor='middle', style='letter-spacing:.1em;fill:var(--ink-2)')
+    o += T(160, 230, 'NECESSÁRIO', 't-small', anchor='end', style='letter-spacing:.06em;fill:var(--ink-2)')
+    o += T(160, 440, 'FACULTATIVO', 't-small', anchor='end', style='letter-spacing:.06em;fill:var(--ink-2)')
+    for i, (r, c, title, ex, tone) in enumerate(_Q):
+        x, y = 170 + c * 200, 112 + r * 210
+        lit = k == i
+        col = f'var(--{tone})'
+        o += R(x, y, 190, 200, 'ink', style=f'fill:{"var(--paper)" if lit else "var(--grid-major)"};stroke:{col if lit else "var(--ink-2)"};stroke-width:{2 if lit else .8}')
+        o += R(x, y, 190, 28, 'ink', style=f'fill:{col if lit else "var(--ink-2)"};stroke:none')
+        o += T(x + 10, y + 19, title, 't-small', style='fill:var(--paper);font-size:9.5px;letter-spacing:.04em')
+        for j, line in enumerate(ex):
+            o += T(x + 10, y + 58 + j * 20, line, 't-small', style=f'font-size:10px;fill:{"var(--ink)" if lit else "var(--ink-2)"}')
+    o += T(30, 566, 'Fonte da necessidade e regime da decisão: perguntas diferentes.', 't-small', style='font-size:12px;fill:var(--ink)')
+    return o
+
+def fig_pc03():
+    ref = 'draft unit-03-integrated "Unitário ou simples" (four combinations); REsp 1.811.718/SP; CPC arts. 114, 116'
+    B = ['<p>Uma relação indivisível exige a presença de todos, e a decisão tem de ser igual para todos. Na composse, a reintegração tinha de citar todos os co-possuidores; sem isso, o STJ anulou a sentença (REsp 1.811.718/SP).</p>',
+         '<p>A necessidade pode vir da lei, e não da relação. Se a lei impõe os cônjuges como réus, os dois precisam estar no processo, mas cada um pode receber um capítulo próprio.</p>',
+         '<p>Um colegitimado pode iniciar a demanda sozinho, e mesmo assim o mérito exige resultado uniforme. A unitariedade se examina pelo art. 116, não pela obrigatoriedade da formação.</p>',
+         '<p>Pedidos individuais reunidos por conexão ou afinidade: ninguém é obrigado a litigar junto, e cada litisconsorte recebe o seu resultado. A solidariedade, sozinha, não muda isso se a obrigação for divisível.</p>']
+    L = ['Necessário e unitário', 'Necessário e simples', 'Facultativo e unitário', 'Facultativo e simples']
+    tones = ['conc', 'dif', 'dif', '']
+    return kit.scrolly('Necessidade e unitariedade', [(f'p-mx{i}', _mx(i), L[i]) for i in range(4)],
+                       [S(f'p-mx{i}', L[i], L[i], B[i] + src(ref), tones[i]) for i in range(4)])
 
 FIGS[('processo-civil', 'aula-03.html')] = {4: fig_pc03}
