@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.join(WORK, 'contract-build', 'generators'))
 sys.path.insert(0, os.path.join(WORK, 'latam-build'))
 sys.path.insert(0, os.path.join(SITE, 'tools'))
 import kit
+from figs import FIGS            # genre figures, keyed by (course, page file) → {after_chapter: fn}
 import common as latam            # longform(), lex(), bet(), EXTRA_CSS: the Latam lesson components
 from polish import apply_polish as _polish
 kit.apply_polish = lambda p: _polish(p, quiet=False)
@@ -142,8 +143,9 @@ def bet_html(b):
     return latam.bet(b['question'], [(t, '*' if w.startswith('*') else '') for t, w in b['options']], b['reveal'],
                      kicker='Antes de ler: como você decidiria?')
 
-def body_html(blocks, spec_page, quiz=None, first_num=1):
+def body_html(blocks, spec_page, quiz=None, first_num=1, figkey=None):
     b, n = '', first_num
+    figs = FIGS.get(figkey, {}) if figkey else {}
     secs = sections(blocks)
     bet = spec_page.get('bet')
     if bet and bet.get('after_chapter') == 0:
@@ -154,6 +156,8 @@ def body_html(blocks, spec_page, quiz=None, first_num=1):
         exam = bool(EXAM.match(title))
         b += kit.chapter(f'{n:02d}', f'c{n}', inline(title), '', 'conc' if exam else ('dif' if n % 2 else ''))
         b += render_blocks(bl)
+        if n - first_num + 1 in figs:
+            b += figs[n - first_num + 1]()
         if bet and bet.get('after_chapter') == n - first_num + 1:
             b += bet_html(bet); bet = None
         n += 1
@@ -304,7 +308,7 @@ def build(cname):
         for pi, (f, pblocks) in enumerate(zip(files, pages)):
             pg = sp['pages'][pi]
             last = pi == len(files) - 1
-            body, num = body_html(pblocks, pg, sp.get('quiz') if last else None, num)
+            body, num = body_html(pblocks, pg, sp.get('quiz') if last else None, num, (cname, f))
             j = next(i for i, s in enumerate(seq) if s[1] == f)
             prev = ('index.html', '← Curso', C['course']) if j == 0 else (seq[j - 1][1], '← ' + label_of(seq[j - 1]), seq[j - 1][2]['title'])
             nxt = ('index.html', 'Curso →', 'Todas as aulas') if j == len(seq) - 1 else (seq[j + 1][1], label_of(seq[j + 1]) + ' →', seq[j + 1][2]['title'])
