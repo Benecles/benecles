@@ -66,3 +66,49 @@ def fig_pc07():
     ])
 
 FIGS[('processo-civil', 'aula-07.html')] = {6: fig_pc07}
+
+# ---- CI Aula 04 · genre: genealogy. Two lineages of constitutional review and the Brazilian mixed system
+def _gen(k):
+    """k = 0 US lineage lit, 1 Austrian lineage lit, 2 both converge on Brazil."""
+    on = lambda i: (k == i) or k == 2
+    o = T(30, 44, 'DE ONDE VEM O CONTROLE BRASILEIRO', 't-small', style='letter-spacing:.1em')
+    def root(x, title, sub1, sub2, sub3, tone, lit):
+        col = f'var(--{tone})' if lit else 'var(--ink-2)'
+        g = f'<rect x="{x}" y="80" width="250" height="150" style="fill:var(--paper);stroke:{col};stroke-width:{2 if lit else 1}"/>'
+        g += f'<rect x="{x}" y="80" width="250" height="34" style="fill:{col if lit else "var(--grid-major)"}"/>'
+        g += T(x + 16, 103, title, 't-small', style=f'font-size:13px;letter-spacing:.1em;fill:{"var(--paper)" if lit else "var(--ink-2)"}')
+        for i, t in enumerate((sub1, sub2, sub3)):
+            g += T(x + 16, 146 + i * 26, t, 't-small', style=f'font-size:13px;fill:{"var(--ink)" if lit else "var(--ink-2)"}')
+        return g
+    o += root(30, 'EUA · 1803', 'Marbury v. Madison', 'todos os juízes: difuso', 'no caso: concreto', 'dif', on(0))
+    o += root(320, 'ÁUSTRIA · KELSEN', 'Tribunal Constitucional', 'um só órgão: concentrado', 'a lei em tese: abstrato', 'conc', on(1))
+    lit = k == 2
+    o += P('M155 230V300H300V330', style=f'fill:none;stroke:{"var(--dif)" if lit else "var(--grid-major)"};stroke-width:{2.5 if lit else 1.5}')
+    o += P('M445 230V300H300V330', style=f'fill:none;stroke:{"var(--conc)" if lit else "var(--grid-major)"};stroke-width:{2.5 if lit else 1.5}')
+    col = 'var(--ink)' if lit else 'var(--ink-2)'
+    o += f'<rect x="60" y="330" width="480" height="240" style="fill:var(--paper);stroke:{col};stroke-width:{2 if lit else 1}"/>'
+    o += T(80, 360, 'BRASIL · MODELO MISTO', 't-small', style=f'font-size:13px;letter-spacing:.1em;fill:{col}')
+    rows = [('difuso-concreto', 'qualquer juiz, e o STF no recurso extraordinário;', 'efeitos entre as partes, gerais via art. 52, X', 'dif'),
+            ('abstrato-concentrado', 'desde a EC 16/1965, só no STF;', 'erga omnes e efeito vinculante', 'conc'),
+            ('depois de 1988', 'acesso direto ampliado:', 'ADI, ADC, ADPF, ADO, súmula vinculante', 'ink')]
+    for i, (a, b1, b2, tone) in enumerate(rows):
+        y = 394 + i * 60
+        o += f'<rect x="80" y="{y - 13}" width="8" height="48" style="fill:{"var(--" + tone + ")" if lit else "var(--grid-major)"}"/>'
+        o += T(100, y, a.upper(), 't-small', style=f'letter-spacing:.08em;fill:{col}')
+        o += T(100, y + 17, b1, 't-small', style='font-size:12px;fill:var(--ink-2)')
+        o += T(100, y + 32, b2, 't-small', style='font-size:12px;fill:var(--ink-2)')
+    return o
+
+def fig_ci04():
+    ref = 'Tavares cap. XIII via draft unit-04 ("Que modelos de defesa existem?", "Como o Brasil combinou os modelos?")'
+    return kit.scrolly('Os dois modelos e o sistema brasileiro', [
+        ('p-gen0', _gen(0), 'Modelo norte-americano'), ('p-gen1', _gen(1), 'Modelo austríaco'), ('p-gen2', _gen(2), 'Brasil')], [
+        S('p-gen0', 'Modelo norte-americano', 'Todos os juízes, dentro de um caso',
+          '<p>A matriz é <em>Marbury v. Madison</em> (1803). O controle se exerce durante um processo, para resolver o ponto de direito de que depende uma controvérsia entre partes: é difuso, porque cabe a qualquer juiz, e concreto.</p>' + src(ref), 'dif'),
+        S('p-gen1', 'Modelo austríaco', 'Um só tribunal, a lei em tese',
+          '<p>Na concepção de Kelsen, a defesa da Constituição cabe a um órgão técnico fora da estrutura do Judiciário, o Tribunal Constitucional. O controle é concentrado, porque só ele decide, e abstrato, porque examina a lei em tese. Concentrado e abstrato são eixos diferentes: o modelo italiano é concentrado, mas incidental.</p>' + src(ref), 'conc'),
+        S('p-gen2', 'Modelo misto', 'O Brasil junta os dois',
+          '<p>O controle difuso-concreto continua com todos os juízes, e o STF também o exerce no recurso extraordinário, com efeitos entre as partes, que só se tornam gerais pela resolução do Senado (art. 52, X). Desde a EC 16/1965 existe o controle abstrato, concentrado no STF, com eficácia <em>erga omnes</em> e efeito vinculante. Depois de 1988, o acesso direto se ampliou e surgiu uma pluralidade de ações.</p>' + src(ref), ''),
+    ])
+
+FIGS[('constitucional', 'aula-04.html')] = {5: fig_ci04}
