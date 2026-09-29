@@ -217,7 +217,7 @@ body.pocket-open{ overflow:hidden; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*){ animation:none !important; }
 }
 
-@media (max-width:640px){
+@media (max-width:640px) and (orientation:portrait){
   /* Antes a videira e os marcadores eram simplesmente escondidos no celular
      (ficavam em left:-6.4vw, ou seja, fora da tela, já que a coluna passa a
      ocupar toda a largura). Resultado: o motivo central da peça — o tempo que
@@ -263,7 +263,7 @@ body.pocket-open .lab-home{ display:none; }
 /* mobile: o link fixo colidia com o conteúdo no topo da página (a coluna
    passa a ocupar toda a largura, e não sobra margem para ele flutuar).
    Em telas estreitas ele deixa de ser fixo e rola junto com a página. */
-@media (max-width:720px){
+@media (max-width:720px) and (orientation:portrait){
   .lab-home{ position:absolute; top:10px; left:10px; opacity:1; }
 }
 </style>

@@ -269,18 +269,18 @@ h1{
   text-transform:uppercase; font-weight:700; color:var(--ink-soft);
 }
 .inkcard .tape{ width:88px; height:24px; top:-11px; left:-16px; transform:rotate(-9deg); }
-@media (max-width:1079px){ .inkcard{ display:none; } }
+@media (max-width:1079px) and (orientation:portrait){ .inkcard{ display:none; } }
 
 /* No celular não sobra margem: em captura de 390px o carimbo
    caía POR CIMA das últimas linhas do texto. Passa a entrar no
    fluxo, encostado à direita, ainda torto. */
-@media (max-width:719px){
+@media (max-width:719px) and (orientation:portrait){
   .stampmark{
     position:static; display:block; width:max-content;
     margin:26px 4px 0 auto; transform:rotate(-5deg);
   }
 }
-@media (max-width:619px){ .band .fill{ display:none; } }
+@media (max-width:619px) and (orientation:portrait){ .band .fill{ display:none; } }
 
 /* ---------- faixa de seção, escrita na prancha ---------- */
 .band{

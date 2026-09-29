@@ -97,7 +97,7 @@
 
 // Phone: tap a pinned figure to tuck it up for more reading room; tap again to bring it back. One setting for the page.
 (function () {
-  var mq = matchMedia('(max-width:860px)');
+  var mq = matchMedia('(max-width:860px) and (orientation:portrait)');
   var stages = document.querySelectorAll('.scrolly .stage');
   function mark() {
     stages.forEach(function (st) {
