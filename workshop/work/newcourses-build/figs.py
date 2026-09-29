@@ -112,3 +112,45 @@ def fig_ci04():
     ])
 
 FIGS[('constitucional', 'aula-04.html')] = {5: fig_ci04}
+
+# ---- PC Aula 03 · genre: matrix. The two axes of joinder cross in four combinations (draft unit-03-integrated)
+_Q = [  # (row, col, title, example, tone)  row 0 necessário / 1 facultativo; col 0 unitário / 1 simples
+    (0, 0, 'NECESSÁRIO-UNITÁRIO', ['relação indivisível que exige', 'todos no polo passivo;', 'composse na possessória'], 'conc'),
+    (0, 1, 'NECESSÁRIO-SIMPLES', ['a lei exige a presença conjunta', '(cônjuges como réus), mas', 'admite capítulos individuais'], 'dif'),
+    (1, 0, 'FACULTATIVO-UNITÁRIO', ['um colegitimado pode demandar', 'sozinho, e o mérito ainda', 'exige resultado uniforme'], 'dif'),
+    (1, 1, 'FACULTATIVO-SIMPLES', ['pedidos individuais reunidos', 'por conexão ou afinidade;', 'cada um com resultado próprio'], 'ink'),
+]
+def _mx(k):
+    o = T(30, 44, 'DOIS EIXOS, QUATRO COMBINAÇÕES', 't-small', style='letter-spacing:.1em')
+    o += T(330, 92, 'UNITÁRIO', 't-small', anchor='middle', style='letter-spacing:.1em;fill:var(--ink-2)')
+    o += T(490, 92, 'SIMPLES', 't-small', anchor='middle', style='letter-spacing:.1em;fill:var(--ink-2)')
+    o += T(250, 72, 'O MÉRITO PRECISA SER IGUAL PARA TODOS?', 't-small', style='fill:var(--ink-2)')
+    o += f'<text transform="translate(52 330) rotate(-90)" class="t-small" text-anchor="middle" style="letter-spacing:.08em;fill:var(--ink-2)">TODOS PRECISAM ESTAR NO POLO?</text>'
+    o += T(150, 210, 'NECESSÁRIO', 't-small', anchor='end', style='letter-spacing:.1em;fill:var(--ink-2)')
+    o += T(150, 420, 'FACULTATIVO', 't-small', anchor='end', style='letter-spacing:.1em;fill:var(--ink-2)')
+    for i, (r, c, title, ex, tone) in enumerate(_Q):
+        x, y = 170 + c * 200, 110 + r * 210
+        lit = (k == i) or k == 4
+        col = f'var(--{tone})'
+        o += f'<rect x="{x}" y="{y}" width="190" height="200" style="fill:{"var(--paper)" if lit else "var(--grid-major)"};stroke:{col if lit else "var(--ink-2)"};stroke-width:{2 if lit else .8}"/>'
+        o += f'<rect x="{x}" y="{y}" width="190" height="28" style="fill:{col if lit else "var(--ink-2)"}"/>'
+        o += T(x + 12, y + 19, title, 't-small', style='fill:var(--paper);font-size:10px;letter-spacing:.06em')
+        for j, line in enumerate(ex):
+            o += T(x + 12, y + 56 + j * 19, line, 't-small', style=f'font-size:11.5px;fill:{"var(--ink)" if lit else "var(--ink-2)"}')
+    o += T(30, 560, 'Fonte da necessidade e regime da decisão são perguntas diferentes.', 't-small', style='font-size:12.5px;fill:var(--ink)')
+    return o
+
+def fig_pc03():
+    ref = 'draft unit-03-integrated: "Unitário ou simples" (four combinations), REsp 1.811.718/SP; CPC arts. 114, 116'
+    bodies = [
+        '<p>Quando uma relação indivisível exige a presença de todos e a decisão tem de ser a mesma para todos, o litisconsórcio é necessário e unitário. É frequente no polo passivo. Na composse, a reintegração tinha de citar todos os co-possuidores: sem isso, o STJ anulou a sentença (REsp 1.811.718/SP).</p>',
+        '<p>A necessidade pode vir da lei e não da relação. Se a lei impõe a presença dos cônjuges como réus, todos precisam estar no processo, mas isso não obriga a solução uniforme: cada um pode receber um capítulo próprio.</p>',
+        '<p>No polo ativo, um colegitimado pode iniciar a demanda sozinho, e mesmo assim o mérito exige resultado uniforme entre os envolvidos. A unitariedade se examina pelo art. 116, e não pela obrigatoriedade da formação.</p>',
+        '<p>Pedidos individuais reunidos por conexão ou afinidade formam o caso mais comum: ninguém é obrigado a litigar junto, e cada litisconsorte recebe o seu resultado. A solidariedade, sozinha, não muda isso, se a obrigação for divisível.</p>',
+    ]
+    labels = ['Necessário e unitário', 'Necessário e simples', 'Facultativo e unitário', 'Facultativo e simples']
+    tones = ['conc', 'dif', 'dif', '']
+    return kit.scrolly('Necessidade e unitariedade', [(f'p-mx{i}', _mx(i), labels[i]) for i in range(4)],
+                       [S(f'p-mx{i}', labels[i], _Q[i][2].capitalize().replace('-', ' e '), bodies[i] + src(ref), tones[i]) for i in range(4)])
+
+FIGS[('processo-civil', 'aula-03.html')] = {4: fig_pc03}
