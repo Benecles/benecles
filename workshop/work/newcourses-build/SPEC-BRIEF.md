@@ -35,3 +35,7 @@ Path: `/home/user/study-lab-private/Documents/Codex/2026-09-23/you-h/work/newcou
 - Portuguese (Brazil), house register. No em dashes. No visible sourcing (no page numbers, "segundo o texto", "o material"). Named authors are fine where the draft names them.
 
 When done, run: `python3 -c "import json,glob;[json.load(open(f)) for f in glob.glob('/home/user/study-lab-private/Documents/Codex/2026-09-23/you-h/work/newcourses-build/specs/*/*.json')];print('ok')"` and then lint your prose by writing all deck/bet/quiz strings of each file to a temporary .md and running `python3 /home/user/study-lab-private/Documents/Protocols/tools/slop_lint.py <tmp.md>`; fix hits once. Write only in `specs/<course>/`. No git.
+
+## Splitting long drafts (added)
+If a draft (or dossier) runs over ~4,500 words, split it into two pages at the most natural `##` (or `#`) heading, roughly in the middle of the argument. Page 2 gets `"start": "<the exact heading text, without #>"` and its own file name (`aula-NN-<topic>.html`, a short slug). Drafts that already have two `#` parts split there. Never split a draft under ~4,500 words. Case dossiers are `aula-NN-casos.html`, one page unless over ~4,500 words.
+Also: if you find visible source talk in the draft (sentences about "o material", "a ementa disponível", OCR, Moodle, what the sources do not say, "esta página"), list each one with its line number in your final message so Claude can remove it.

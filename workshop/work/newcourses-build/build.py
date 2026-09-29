@@ -35,6 +35,7 @@ def inline(t):
     t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
     t = re.sub(r'(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?!\w)', r'<em>\1</em>', t)
     t = re.sub(r'(?<![\w_])_(?!\s)(.+?)(?<!\s)_(?![\w_])', r'<em>\1</em>', t)
+    t = re.sub(r'"([^"<>]+)"', '\u201c\\1\u201d', t)   # house style: curly quotes
     return t.replace(' -- ', ', ')
 
 def parse(md):
@@ -196,28 +197,32 @@ COURSES = {
     'processo-civil': dict(
         slug='processo-civil-i', course='Processo Civil I-a', code='DIR02002', prof='Prof. Eduardo Scarparo',
         kick=['Processo Civil I-a', 'DIR02002', 'UFRGS · 2026/2'], stations=PC_STATIONS, exam=('P1', '07/10/2026'),
+        scope='A P1 cobre as Aulas 01 a 09. As Aulas 10 e 11, sobre saneamento e julgamento conforme o estado do processo, são dadas depois da prova.',
         lessons=[
-            ('01', 'unit-01-petition-demand-amendment', 'draft.md', ['aula-01.html'], [], {0}, 'Petição inicial'),
-            ('02', 'unit-02-preliminary-dismissal-hearing', 'draft.md', ['aula-02.html'], [], {1}, 'Improcedência liminar e audiência'),
-            ('03', 'unit-03-integrated', 'draft.md', ['aula-03.html'], [], {2}, 'Partes e litisconsórcio'),
-            ('04', 'unit-04-intervention-assistance', 'draft.md', ['aula-04.html'], [], {2}, 'Assistência'),
-            ('05', 'unit-05-intervention-impleader-other', 'draft.md', ['aula-05.html'], [], {2}, 'Denunciação e outras intervenções'),
-            ('06', 'unit-06-procedural-acts-service', 'draft.md', ['aula-06.html', 'aula-06-citacao.html'], ['Página II'], {3}, 'Atos, citação e intimação'),
-            ('07', 'unit-07-deadlines-preclusion', 'draft.md', ['aula-07.html', 'aula-07-preclusao.html'], ['Preclusão'], {3}, 'Prazos e preclusão'),
-            ('08', 'unit-08-defendant-response', 'draft.md', ['aula-08.html'], [], {4}, 'Resposta do réu'),
-            ('08r', 'unit-15-counterclaim-default', 'draft.md', ['aula-08-revelia.html'], [], {4}, 'Reconvenção e revelia'),
-            ('09', 'unit-09-nullities', 'draft.md', ['aula-09.html'], [], {5}, 'Nulidades'),
-            ('10', 'unit-10-case-management', 'draft.md', ['aula-10.html', 'aula-10-estabilizacao.html'], ['Quando o saneamento se estabiliza'], {5}, 'Julgamento conforme o estado e saneamento'),
+            ('01', 'unit-01-petition-demand-amendment', 'draft.md', {0}, 'Petição inicial'),
+            ('02', 'unit-02-preliminary-dismissal-hearing', 'draft.md', {1}, 'Improcedência liminar e audiência'),
+            ('03', 'unit-03-integrated', 'draft.md', {2}, 'Partes e litisconsórcio'),
+            ('04', 'unit-04-intervention-assistance', 'draft.md', {2}, 'Assistência'),
+            ('05', 'unit-05-intervention-impleader-other', 'draft.md', {2}, 'Denunciação e outras intervenções'),
+            ('05c', 'unit-05-intervention-impleader-other-cases', 'case-dossier.md', {2}, 'Casos de denunciação'),
+            ('06', 'unit-06-procedural-acts-service', 'draft.md', {3}, 'Atos, citação e intimação'),
+            ('07', 'unit-07-deadlines-preclusion', 'draft.md', {3}, 'Prazos e preclusão'),
+            ('08', 'unit-08-defendant-response', 'draft.md', {4}, 'Resposta do réu'),
+            ('08r', 'unit-15-counterclaim-default', 'draft.md', {4}, 'Reconvenção e revelia'),
+            ('09', 'unit-09-nullities', 'draft.md', {5}, 'Nulidades'),
+            ('10', 'unit-10-case-management', 'draft.md', {5}, 'Julgamento conforme o estado e saneamento'),
+            ('11', 'unit-11-judgments-partial-merits', 'draft.md', {6}, 'Sentença, extinção e mérito'),
         ]),
     'constitucional': dict(
         slug='direito-constitucional-i', course='Direito Constitucional I', code='DIR03045', prof='Profa. Roberta Baggio',
         kick=['Direito Constitucional I', 'DIR03045', 'UFRGS · 2026/2'], stations=CI_STATIONS, exam=('Prova', '05/10/2026'),
+        scope='A prova de 05/10 cobre as Aulas 01 a 04, com o caso da ADI 3.345.',
         lessons=[
-            ('01', 'unit-01-history-origins', 'draft.md', ['aula-01.html'], [], {0}, 'Origens do constitucionalismo'),
-            ('02', 'unit-02-constitution-types', 'draft.md', ['aula-02.html'], [], {1, 7}, 'Classificação das constituições'),
-            ('03', 'unit-03-brazilian-constitutionalism', 'draft.md', ['aula-03.html', 'aula-03-republica.html'], ['Parte II'], {1, 2}, 'Formação constitucional do Brasil'),
-            ('04', 'unit-04-force-supremacy-guardian', 'draft.md', ['aula-04.html'], [], {7}, 'Supremacia e guarda da Constituição'),
-            ('04c', 'unit-04-force-supremacy-guardian-cases', 'case-dossier.md', ['aula-04-casos.html'], [], {7}, 'Caso: ADI 3.345'),
+            ('01', 'unit-01-history-origins', 'draft.md', {0}, 'Origens do constitucionalismo'),
+            ('02', 'unit-02-constitution-types', 'draft.md', {1, 7}, 'Classificação das constituições'),
+            ('03', 'unit-03-brazilian-constitutionalism', 'draft.md', {1, 2}, 'Formação constitucional do Brasil'),
+            ('04', 'unit-04-force-supremacy-guardian', 'draft.md', {7}, 'Supremacia e guarda da Constituição'),
+            ('04c', 'unit-04-force-supremacy-guardian-cases', 'case-dossier.md', {7}, 'Caso: ADI 3.345'),
         ]),
 }
 EXTRA = '@media (max-width:560px){.hero h1{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}}'
@@ -234,12 +239,14 @@ def build(cname):
     specs = {k: json.load(open(os.path.join(HERE, 'specs', cname, f'{k}.json'))) for k, *_ in C['lessons']}
     # flat page sequence for prev/next
     seq = []
-    for key, pdir, srcf, files, starts, hl, short in C['lessons']:
-        for i, f in enumerate(files):
-            seq.append((key, f, specs[key]['pages'][i]))
+    for key, pdir, srcf, hl, short in C['lessons']:
+        for pg in specs[key]['pages']:
+            seq.append((key, pg['file'], pg))
     index = []
-    for key, pdir, srcf, files, starts, hl, short in C['lessons']:
+    for key, pdir, srcf, hl, short in C['lessons']:
         sp = specs[key]
+        files = [pg['file'] for pg in sp['pages']]
+        starts = [pg['start'] for pg in sp['pages'][1:]]
         md = open(os.path.join(DRAFTS, cname, pdir, srcf)).read()
         blocks = parse(md)
         pages = split_pages(blocks, starts)
@@ -266,7 +273,7 @@ def build(cname):
 def label_of(s):
     key, f, pg = s
     base = 'Aula ' + re.sub(r'\D', '', key)
-    if f.endswith('-casos.html'): return base + ' · caso'
+    if f.endswith('-casos.html'): return base + ' · casos'
     if re.search(r'aula-\d+-[a-z]', f): return base + ' · II'
     return base
 
@@ -305,7 +312,7 @@ def front(C, index):
   <aside class="exam-card" aria-labelledby="exam-title">
     <span class="exam-date">{C['exam'][0]} · {C['exam'][1]}</span>
     <h2 id="exam-title">O que cai</h2>
-    <p>As aulas abaixo cobrem o conteúdo do programa até a {C['exam'][0]}. Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>
+    <p>{C['scope']} Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>
     <a href="{index[0][1]}"><span>Começar pela Aula 01</span><span aria-hidden="true">→</span></a>
   </aside>
 </section>
@@ -327,3 +334,4 @@ if __name__ == '__main__':
         build(c)
     import subprocess
     subprocess.run([sys.executable, os.path.join(SITE, 'tools', 'fontes_info.py')], check=True)   # the ⓘ card on the fronts
+    subprocess.run([sys.executable, os.path.join(SITE, 'tools', 'offline_build.py')], check=True)   # modo avião script + manifest
