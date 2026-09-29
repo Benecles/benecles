@@ -103,12 +103,12 @@ body{
 }
 /* No celular o disco encostava no kicker e a linha ficava
    escura sobre vermelho. Sobe e sai pela borda. */
-@media (max-width:719px){ .disc{ width:132px; right:-46px; top:-52px; } }
+@media (max-width:719px) and (orientation:portrait){ .disc{ width:132px; right:-46px; top:-52px; } }
 
 .kicker{ display:block; color:var(--ink-soft); margin:0 0 clamp(16px,3vh,30px); }
 /* o disco sangra pelo canto no celular; o rabicho do kicker
    caía em cima dele e ficava escuro sobre vermelho. */
-@media (max-width:719px){ .kicker .opt{ display:none; } }
+@media (max-width:719px) and (orientation:portrait){ .kicker .opt{ display:none; } }
 
 h1{
   font-family:'Fraunces', Georgia, serif; font-weight:900;
@@ -143,7 +143,7 @@ h1{
   align-items:end; margin:0 0 clamp(52px,10vh,104px);
   filter:drop-shadow(14px 14px 0 var(--hard));
 }
-@media (max-width:899px){
+@media (max-width:899px) and (orientation:portrait){
   .leporello{ grid-template-columns:1fr; filter:drop-shadow(10px 10px 0 var(--hard)); }
 }
 
@@ -154,12 +154,12 @@ h1{
   min-height:var(--h);
   transition:translate .26s cubic-bezier(.2,.7,.3,1);
 }
-@media (max-width:899px){ .panel{ min-height:0; padding-top:clamp(22px,4vw,32px); } }
+@media (max-width:899px) and (orientation:portrait){ .panel{ min-height:0; padding-top:clamp(22px,4vw,32px); } }
 
 /* o vinco entre painéis: uma linha, não um degradê.
    Sanfona dobra; a dobra é uma aresta, não uma sombra macia. */
 .panel + .panel{ box-shadow:inset 2px 0 0 rgba(255,247,228,.34); }
-@media (max-width:899px){ .panel + .panel{ box-shadow:inset 0 2px 0 rgba(255,247,228,.34); } }
+@media (max-width:899px) and (orientation:portrait){ .panel + .panel{ box-shadow:inset 0 2px 0 rgba(255,247,228,.34); } }
 
 .p1{ background:var(--i-dossie); --h:clamp(340px,44vh,470px); }
 .p2{ background:var(--i-terra);  --h:clamp(384px,50vh,530px); }
@@ -176,7 +176,7 @@ h1{
   -webkit-mask-image:radial-gradient(circle at 50% 46px, transparent 0 13px, #000 13.6px);
   mask-image:radial-gradient(circle at 50% 46px, transparent 0 13px, #000 13.6px);
 }
-@media (max-width:899px){
+@media (max-width:899px) and (orientation:portrait){
   .panel{
     -webkit-mask-image:radial-gradient(circle at 34px 34px, transparent 0 11px, #000 11.6px);
     mask-image:radial-gradient(circle at 34px 34px, transparent 0 11px, #000 11.6px);
@@ -187,7 +187,7 @@ h1{
   font-family:'Fraunces',serif; font-weight:900; font-size:clamp(46px,4.6vw,68px);
   line-height:.86; letter-spacing:-.03em; margin:clamp(30px,3vw,44px) 0 0; opacity:.55;
 }
-@media (max-width:899px){ .no{ margin-top:0; padding-left:56px; } }
+@media (max-width:899px) and (orientation:portrait){ .no{ margin-top:0; padding-left:56px; } }
 
 .panel h2{
   font-family:'Fraunces', Georgia, serif; font-weight:700;

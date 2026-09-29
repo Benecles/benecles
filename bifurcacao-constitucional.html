@@ -161,7 +161,7 @@ strong{ font-weight:600; }
   display:flex; align-items:center; justify-content:center;
   margin-bottom:24px;
 }
-@media (max-width:899px){
+@media (max-width:899px) and (orientation:portrait){
   .drawing{
     position:sticky; top:0; height:clamp(210px,44svh,340px); z-index:5;
     background:linear-gradient(to bottom, var(--ground) 0 88%, transparent);
@@ -358,7 +358,7 @@ tbody tr:last-child th, tbody tr:last-child td{ border-bottom:0; }
    Abaixo de 720px a tabela vira uma lista empilhada: cada critério é um bloco,
    e cada via ganha seu próprio rótulo. Continua sendo uma <table> real na
    árvore de acessibilidade. */
-@media (max-width:720px){
+@media (max-width:720px) and (orientation:portrait){
   .tbl-wrap{ overflow-x:visible; }
   table{ min-width:0; display:block; }
   thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
@@ -445,7 +445,7 @@ body.pocket-open .lab-home{ display:none; }
 /* mobile: o link fixo colidia com o conteúdo no topo da página (a coluna
    passa a ocupar toda a largura, e não sobra margem para ele flutuar).
    Em telas estreitas ele deixa de ser fixo e rola junto com a página. */
-@media (max-width:720px){
+@media (max-width:720px) and (orientation:portrait){
   .lab-home{ position:absolute; top:10px; left:10px; opacity:1; }
 }
 </style>

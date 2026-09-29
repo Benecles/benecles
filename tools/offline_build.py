@@ -11,6 +11,8 @@ import hashlib, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sanitize
 sanitize.run()   # no visible sourcing, whatever generated the page
+import landscape
+landscape.run()   # a sideways phone gets the desktop layout: narrow rules also require portrait
 import assetver
 assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach cached phones
 

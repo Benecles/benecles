@@ -208,13 +208,13 @@ dl.termos dd{font-size:17px}
 .prosa{max-width:70ch;font-size:19px}
 .prosa p{margin:0 0 16px}
 
-@media (max-width:860px){
+@media (max-width:860px) and (orientation:portrait){
   .par{grid-template-columns:1fr}.par>div+div{border-left:0;border-top:1.5px solid var(--ink)}
   dl.termos{grid-template-columns:1fr}dl.termos dt{border-bottom:0;padding-bottom:0}
 }
 
 /* phone: figure pins to the top third, text scrolls beneath */
-@media (max-width:860px){
+@media (max-width:860px) and (orientation:portrait){
   .hero-fork{display:none}
   body{font-size:18px}
   .scrolly{grid-template-columns:1fr;gap:0}
@@ -244,7 +244,7 @@ dl.termos dd{font-size:17px}
    as an internal audit trail (see the digests / build notes) but are never displayed. */
 .src,.stage-count,details.provenance,body:has(.src) .titleblock div:first-child{display:none!important}
 .titleblock{grid-template-columns:repeat(4,auto)}body:has(.src) .titleblock{grid-template-columns:repeat(3,auto)}
-@media (max-width:860px){.titleblock{grid-template-columns:1fr 1fr}}
+@media (max-width:860px) and (orientation:portrait){.titleblock{grid-template-columns:1fr 1fr}}
 /* long Portuguese words (inconstitucionalidade) must wrap on phones */
 .titleblock b,.compare th,.compare td,.split{overflow-wrap:anywhere;hyphens:auto}
 
@@ -333,7 +333,7 @@ svg [data-lk].on>rect:first-child,svg [data-lk].on>path:first-child{stroke-width
 .glosa a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .glosa svg{position:absolute;left:-42px;top:2px;width:36px;height:22px;overflow:visible}
 .glosa svg path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-@media (max-width:1099px){
+@media (max-width:1099px) and (orientation:portrait){
   .glosa{float:none;width:auto;margin:6px 0 16px;padding:2px 0 2px 12px;border-left:2px solid currentColor;display:block}
   .glosa svg{display:none}
 }
@@ -346,7 +346,7 @@ svg [data-lk].on>rect:first-child,svg [data-lk].on>path:first-child{stroke-width
 .glosa.on{text-decoration:underline;text-underline-offset:2px}
 p.gp{border-right:2px solid var(--dif);padding-right:14px;margin-right:-16px}
 p.gp.gp-conc{border-right-color:var(--conc)}p.gp.gp-mix{border-right-color:var(--mix)}
-@media (max-width:1099px){
+@media (max-width:1099px) and (orientation:portrait){
   p.gp{border-right:0;padding-right:0;margin-right:0;border-left:2px solid var(--dif);padding-left:12px;margin-left:-14px}
   p.gp.gp-conc{border-left-color:var(--conc)}p.gp.gp-mix{border-left-color:var(--mix)}
 }
@@ -408,7 +408,7 @@ body{transition:background-color .35s ease,color .35s ease}
 
 
 /* phone: tap a pinned figure to tuck it up (only its bottom edge and caption stay), tap again to bring it back */
-@media (max-width:860px){
+@media (max-width:860px) and (orientation:portrait){
   .stage.tuckable{--fw:min(calc(100vw - 2 * clamp(16px,4vw,48px)),46vh);transition:top .35s ease}
   .stage.tuckable figure{cursor:pointer;-webkit-tap-highlight-color:transparent}
   .stage.tuckable figure:focus-visible{outline:2px solid var(--conc);outline-offset:3px}
