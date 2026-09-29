@@ -403,3 +403,14 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
 .stage figcaption{flex-wrap:wrap;min-width:0}.stage figcaption>span{min-width:0;overflow-wrap:anywhere}
 /* titleblock cells wrap long labels instead of widening the page */
 .titleblock>div{min-width:0}.titleblock b{overflow-wrap:anywhere}
+
+/* phone: tap a pinned figure to tuck it up (only its bottom edge and caption stay), tap again to bring it back */
+@media (max-width:860px){
+  .stage.tuckable{--fw:min(calc(100vw - 2 * clamp(16px,4vw,48px)),46vh);transition:top .35s ease}
+  .stage.tuckable figure{cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .stage.tuckable figure:focus-visible{outline:2px solid var(--conc);outline-offset:3px}
+  body.figs-tucked .stage.tuckable{top:calc(24px - var(--fw))}
+  body.figs-tucked .stage.tuckable .panel{opacity:0}
+  .stage.tuckable figcaption::after{content:'▴ recolher';flex:none;margin-left:auto;color:var(--conc)}
+  body.figs-tucked .stage.tuckable figcaption::after{content:'▾ abrir'}
+}

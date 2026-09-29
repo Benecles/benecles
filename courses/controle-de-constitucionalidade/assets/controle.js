@@ -94,3 +94,36 @@
     if (el && matchMedia('(hover: none)').matches) { pinned = el.getAttribute('data-lk'); set(pinned, true); }
   });
 })();
+
+// Phone: tap a pinned figure to tuck it up for more reading room; tap again to bring it back. One setting for the page.
+(function () {
+  var mq = matchMedia('(max-width:860px)');
+  var stages = document.querySelectorAll('.scrolly .stage');
+  function mark() {
+    stages.forEach(function (st) {
+      var f = st.querySelector('figure');
+      var ok = mq.matches && getComputedStyle(st).position === 'sticky';
+      st.classList.toggle('tuckable', ok);
+      if (!f) return;
+      if (ok) { f.setAttribute('tabindex', '0'); f.setAttribute('role', 'button'); f.setAttribute('aria-expanded', String(!document.body.classList.contains('figs-tucked'))); }
+      else { f.removeAttribute('tabindex'); f.removeAttribute('role'); f.removeAttribute('aria-expanded'); }
+    });
+  }
+  function toggle() {
+    var on = document.body.classList.toggle('figs-tucked');
+    stages.forEach(function (s) { var f = s.querySelector('figure'); if (f && s.classList.contains('tuckable')) f.setAttribute('aria-expanded', String(!on)); });
+  }
+  stages.forEach(function (st) {
+    var f = st.querySelector('figure');
+    if (!f) return;
+    f.addEventListener('click', function (e) {
+      if (!st.classList.contains('tuckable') || e.target.closest('a,button,input,select,summary')) return;
+      toggle();
+    });
+    f.addEventListener('keydown', function (e) {
+      if ((e.key === 'Enter' || e.key === ' ') && st.classList.contains('tuckable') && e.target === f) { e.preventDefault(); toggle(); }
+    });
+  });
+  mark();
+  (mq.addEventListener ? mq.addEventListener('change', mark) : mq.addListener(mark));
+})();

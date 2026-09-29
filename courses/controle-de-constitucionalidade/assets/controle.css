@@ -406,3 +406,14 @@ body{transition:background-color .35s ease,color .35s ease}
 .topbar{align-items:center}.topbar>span{margin-left:auto}
 :root[data-theme="dark"] .planta .map rect[style*="fill:var(--paper)"]{fill:var(--paper-2)!important}
 
+
+/* phone: tap a pinned figure to tuck it up (only its bottom edge and caption stay), tap again to bring it back */
+@media (max-width:860px){
+  .stage.tuckable{--fw:min(calc(100vw - 2 * clamp(16px,4vw,48px)),46vh);transition:top .35s ease}
+  .stage.tuckable figure{cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .stage.tuckable figure:focus-visible{outline:2px solid var(--conc);outline-offset:3px}
+  body.figs-tucked .stage.tuckable{top:calc(24px - var(--fw))}
+  body.figs-tucked .stage.tuckable .panel{opacity:0}
+  .stage.tuckable figcaption::after{content:'▴ recolher';flex:none;margin-left:auto;color:var(--conc)}
+  body.figs-tucked .stage.tuckable figcaption::after{content:'▾ abrir'}
+}
