@@ -1,0 +1,63 @@
+{
+ "key": "13",
+ "date": "Semana 14",
+ "pages": [
+  {
+   "file": "aula-13.html",
+   "h1a": "Catálogo aberto de",
+   "h1b": "direitos fundamentais",
+   "title": "Catálogo aberto de direitos fundamentais",
+   "desc": "Fundamentalidade formal e material, direitos dentro e fora do Título II, direitos implícitos, art. 5º, §§ 2º e 3º e a supralegalidade dos tratados no STF.",
+   "deck": "O art. 5º, § 2º, abre o catálogo, mas cada inclusão pede justificativa. A lição ensina a preencher três campos: <strong class=\"dif\">sede, conteúdo e regime</strong>. A <strong class=\"conc\">aprovação sem ratificação</strong> é a armadilha do tema.",
+   "bet": {
+    "after_chapter": 4,
+    "question": "O Congresso aprovou uma convenção internacional sobre direitos humanos em cada Casa, em dois turnos, por três quintos dos votos dos membros. O Executivo ainda não a ratificou. Um candidato afirma que ela já equivale a emenda constitucional. Está correto?",
+    "options": [
+     [
+      "Sim: a votação qualificada do art. 5º, § 3º, basta para a equivalência a emenda.",
+      ""
+     ],
+     [
+      "Não: a aprovação parlamentar não conclui a incorporação, que exige ainda a ratificação pelo Executivo.",
+      "*"
+     ],
+     [
+      "Sim, mas só se o tratado tiver tramitado como proposta de emenda pelo rito integral do art. 60.",
+      ""
+     ],
+     [
+      "Não: tratado de direitos humanos nunca alcança estatura de emenda, apenas supralegal.",
+      ""
+     ]
+    ],
+    "reveal": "<p>O rito do § 3º exige três perguntas: é instrumento internacional sobre direitos humanos, foi aprovado em cada Casa em dois turnos por três quintos e o Brasil o ratificou? Depois da aprovação, o Executivo ainda conclui a ratificação. Se a prova diz apenas que o Congresso aprovou, falta um passo antes de dizer que o tratado vincula o Brasil. A expressão é equivalentes: não é preciso o rito integral do art. 60.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "O que é dupla fundamentalidade?",
+   "Ideia de Canotilho seguida por Sarlet, Marinoni e Mitidiero: a fundamentalidade formal nasce da posição e do regime do direito na Constituição (topo da hierarquia, limites do art. 60, aplicação imediata do art. 5º, § 1º), e a material, do conteúdo e da relação com as decisões constitucionais sobre Estado, sociedade e pessoa humana."
+  ],
+  [
+   "Todo direito do Título II é materialmente fundamental?",
+   "Para Sarlet, que acompanha a orientação majoritária e a leitura que identifica na jurisprudência do STF, sim: a inserção deliberada no catálogo é escolha política e jurídica, e a presunção alcança a dimensão material. A posição contrária, que liga a fundamentalidade a bens como o mínimo existencial, ataca sobretudo direitos sociais e alguns direitos dos trabalhadores."
+  ],
+  [
+   "Que exigência há para um direito fora do Título II ser fundamental?",
+   "Justificativa mais explícita: demonstrar conteúdo e importância comparáveis aos do Título II e a ligação com o sistema e os princípios constitucionais. Exemplos apontados por Sarlet são os arts. 37, I, 93, IX, 150 e 225."
+  ],
+  [
+   "Como se reconhecem direitos implícitos e qual a posição sobre a lei ordinária?",
+   "Pelo art. 5º, § 2º, a interpretação explicita um direito subentendido ou estende o âmbito de um direito escrito, como a proteção de dados, antes incluída na privacidade e depois prevista no art. 5º, LXXIX (EC 115/2022). Sarlet considera controvertido que a lei ordinária, por si só, crie direito fundamental e adota posição restritiva."
+  ],
+  [
+   "Quais as hierarquias dos tratados de direitos humanos e o que decidiu o STF no RE 466.343?",
+   "Aprovado pelo rito do § 3º e ratificado, equivale a emenda. Incorporado sem o rito, é supralegal, acima da lei e abaixo da Constituição. No RE 466.343, o STF reconheceu essa posição, e a Súmula Vinculante 25 declarou ilícita a prisão civil do depositário infiel; Sarlet e Piovesan defendem hierarquia constitucional, e Gilmar Mendes a rejeitou por risco de ampliar o bloco de constitucionalidade."
+  ],
+  [
+   "Que campos preencher antes de concluir que um direito novo é fundamental?",
+   "Qual a sede (Título II, outra parte da Constituição, tratado ou dedução implícita); que conteúdo e importância justificam a fundamentalidade material; e qual regime decorre da fonte e, se for tratado, do procedimento de aprovação. A resposta só fica completa quando mostra a ponte constitucional."
+  ]
+ ]
+}

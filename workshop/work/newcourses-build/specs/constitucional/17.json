@@ -7,27 +7,57 @@
    "h1a": "Liberdade religiosa e",
    "h1b": "objeção de consciência",
    "title": "Liberdade religiosa e objeção de consciência",
-   "desc": "Consciência, crença e culto no art. 5º, VI a VIII, o Estado laico, a objeção de consciência ao serviço militar e os conflitos com outros direitos, como no RHC 146.303.",
+   "desc": "Consciência, crença e culto (art. 5º, VI a VIII), Estado laico, objeção de consciência ao serviço militar e conflitos com outros direitos, como no RHC 146.303.",
    "deck": "A convicção protege, mas <strong class=\"conc\">não dispensa</strong> o dever geral: o art. 5º, VIII, liga <strong class=\"dif\">dever, objeção e prestação alternativa</strong>. Quem recusa também a alternativa entra no art. 15, IV.",
    "bet": {
     "after_chapter": 4,
     "question": "Uma pessoa alistada, em tempo de paz, recusa atividade essencialmente militar por convicção ética sobre o uso de armas, sem fundamento religioso, e também recusa o serviço alternativo que a lei prevê. Qual a consequência constitucional?",
     "options": [
-     ["Nenhuma: a liberdade de consciência é inviolável e a recusa de qualquer dever geral por convicção é protegida.", ""],
-     ["A objeção não vale porque só a crença religiosa autoriza a recusa; o art. 143, § 1º, exclui convicções filosóficas.", ""],
-     ["A objeção fundada em convicção filosófica é protegida, e a resposta constitucional seria o serviço alternativo. Como ela recusa também a prestação alternativa, entra a hipótese de perda ou suspensão de direitos políticos do art. 15, IV.", "*"],
-     ["A pessoa perde os direitos políticos ao invocar a convicção, ainda que aceitasse cumprir o serviço alternativo.", ""]
+     [
+      "Nenhuma: a liberdade de consciência é inviolável e a recusa de qualquer dever geral por convicção é protegida.",
+      ""
+     ],
+     [
+      "A objeção não vale porque só a crença religiosa autoriza a recusa; o art. 143, § 1º, exclui convicções filosóficas.",
+      ""
+     ],
+     [
+      "A objeção fundada em convicção filosófica é protegida, e a resposta constitucional seria o serviço alternativo. Como ela recusa também a prestação alternativa, entra a hipótese de perda ou suspensão de direitos políticos do art. 15, IV.",
+      "*"
+     ],
+     [
+      "A pessoa perde os direitos políticos ao invocar a convicção, ainda que aceitasse cumprir o serviço alternativo.",
+      ""
+     ]
     ],
     "reveal": "<p>O art. 143, § 1º, prevê serviço alternativo, em tempo de paz, para o alistado que invoque imperativo de consciência decorrente de crença religiosa ou convicção filosófica ou política. O art. 5º, VIII, protege contra a perda de direitos, mas ressalva quem se exime de obrigação legal a todos imposta e recusa a prestação alternativa, e o art. 15, IV, tira daí a perda ou suspensão de direitos políticos. Quem aceita e cumpre a alternativa não se enquadra na recusa.</p>"
    }
   }
  ],
  "quiz": [
-  ["Como se distinguem liberdade de consciência, de crença e de culto?", "A consciência resguarda a formação de juízos éticos e existenciais e a atuação segundo eles, sem depender de fé (a objeção ao serviço militar por convicção ética é exemplo). A crença cobre ter, não ter, mudar ou deixar uma religião ou convicção. O culto protege a exteriorização em ritos, práticas, ensino e locais próprios. Por isso a Constituição não protege só igrejas organizadas, e o direito ao culto não elimina a liberdade de quem prefere não participar."],
-  ["Como o Estado laico se relaciona com a religião no texto de 1988?", "O art. 19, I, proíbe estabelecer ou subvencionar cultos, embaraçar seu funcionamento ou manter dependência ou aliança, ressalvada a colaboração de interesse público na forma da lei. Jorge Miranda distingue laicidade de laicismo hostil, e Tavares sustenta que o Estado não precisa afastar-se por completo do fenômeno religioso. Há ensino religioso facultativo nas escolas públicas de ensino fundamental (art. 210, § 1º) e casamento religioso com efeitos civis (art. 226, § 2º)."],
-  ["Que posições a liberdade religiosa gera e quem a titulariza?", "Negativamente, impede coerção estatal e privada sobre crer, não crer ou mudar de crença. Positivamente, o Estado deve dar acesso efetivo à assistência religiosa às pessoas internadas que a desejem (art. 5º, VII), sem impor o atendimento. Pessoas físicas, inclusive estrangeiros não residentes, são titulares; igrejas exercem os aspectos coletivos compatíveis com sua natureza, como auto-organização e ensino, mas a pessoa jurídica não professa fé como um indivíduo."],
-  ["Que elementos compõem a objeção de consciência do art. 5º, VIII?", "Um dever geral, uma objeção fundada em convicção religiosa, filosófica ou política e uma alternativa fixada em lei. No serviço militar, o art. 143, § 1º, atribui serviço alternativo em tempo de paz. Quem recusa também a prestação alternativa sujeita-se à perda ou suspensão de direitos políticos (art. 15, IV); o rótulo de objeção não apaga o dever."],
-  ["Como se resolvem conflitos entre liberdade religiosa e outros direitos?", "O art. 5º, VI, não traz reserva legal, mas o exercício pode encontrar limites em outros direitos e na dignidade, por ponderação e proporcionalidade, sem esvaziar o núcleo da liberdade. Nas transfusões de sangue, a intervenção para salvar menores é tratada como substancialmente consensual, enquanto para adultos capazes as posições divergem. O STF reconheceu repercussão geral sobre custeio de procedimento alternativo à transfusão (sem conclusão na edição que relata o caso), sobre abate religioso de animais e sobre hábito religioso em foto de documento (RE 859.376)."],
-  ["O que decidiu o STF no RHC 146.303/RJ e qual o limite dessa conclusão?", "Em 2018, a Primeira Turma trancou ação penal contra sacerdote católico por obra que criticava a doutrina espírita: a obra pregava a fé católica e afirmava a incompatibilidade entre os credos, sem intenção de ofender. Nas religiões universalistas, o proselitismo integra a expressão religiosa. O fundamento não protege manifestações notadamente discriminatórias e ofensivas, incitação à violência ou intolerância, e a análise exige examinar conteúdo e contexto."]
+  [
+   "Como se distinguem liberdade de consciência, de crença e de culto?",
+   "A consciência resguarda a formação de juízos éticos e existenciais e a atuação segundo eles, sem depender de fé (a objeção ao serviço militar por convicção ética é exemplo). A crença cobre ter, não ter, mudar ou deixar uma religião ou convicção. O culto protege a exteriorização em ritos, práticas, ensino e locais próprios. Por isso a Constituição não protege só igrejas organizadas, e o direito ao culto não elimina a liberdade de quem prefere não participar."
+  ],
+  [
+   "Como o Estado laico se relaciona com a religião no texto de 1988?",
+   "O art. 19, I, proíbe estabelecer ou subvencionar cultos, embaraçar seu funcionamento ou manter dependência ou aliança, ressalvada a colaboração de interesse público na forma da lei. Jorge Miranda distingue laicidade de laicismo hostil, e Tavares sustenta que o Estado não precisa afastar-se por completo do fenômeno religioso. Há ensino religioso facultativo nas escolas públicas de ensino fundamental (art. 210, § 1º) e casamento religioso com efeitos civis (art. 226, § 2º)."
+  ],
+  [
+   "Que posições a liberdade religiosa gera e quem a titulariza?",
+   "Negativamente, impede coerção estatal e privada sobre crer, não crer ou mudar de crença. Positivamente, o Estado deve dar acesso efetivo à assistência religiosa às pessoas internadas que a desejem (art. 5º, VII), sem impor o atendimento. Pessoas físicas, inclusive estrangeiros não residentes, são titulares; igrejas exercem os aspectos coletivos compatíveis com sua natureza, como auto-organização e ensino, mas a pessoa jurídica não professa fé como um indivíduo."
+  ],
+  [
+   "Que elementos compõem a objeção de consciência do art. 5º, VIII?",
+   "Um dever geral, uma objeção fundada em convicção religiosa, filosófica ou política e uma alternativa fixada em lei. No serviço militar, o art. 143, § 1º, atribui serviço alternativo em tempo de paz. Quem recusa também a prestação alternativa sujeita-se à perda ou suspensão de direitos políticos (art. 15, IV); o rótulo de objeção não apaga o dever."
+  ],
+  [
+   "Como se resolvem conflitos entre liberdade religiosa e outros direitos?",
+   "O art. 5º, VI, não traz reserva legal, mas o exercício pode encontrar limites em outros direitos e na dignidade, por ponderação e proporcionalidade, sem esvaziar o núcleo da liberdade. Nas transfusões de sangue, a intervenção para salvar menores é tratada como substancialmente consensual, enquanto para adultos capazes as posições divergem. O STF reconheceu repercussão geral sobre custeio de procedimento alternativo à transfusão (sem conclusão na edição que relata o caso), sobre abate religioso de animais e sobre hábito religioso em foto de documento (RE 859.376)."
+  ],
+  [
+   "O que decidiu o STF no RHC 146.303/RJ e qual o limite dessa conclusão?",
+   "Em 2018, a Primeira Turma trancou ação penal contra sacerdote católico por obra que criticava a doutrina espírita: a obra pregava a fé católica e afirmava a incompatibilidade entre os credos, sem intenção de ofender. Nas religiões universalistas, o proselitismo integra a expressão religiosa. O fundamento não protege manifestações notadamente discriminatórias e ofensivas, incitação à violência ou intolerância, e a análise exige examinar conteúdo e contexto."
+  ]
  ]
 }
