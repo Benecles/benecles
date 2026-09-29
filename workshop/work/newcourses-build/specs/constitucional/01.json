@@ -1,63 +1,63 @@
 {
-  "key": "01",
-  "date": "Semanas 1–2",
-  "pages": [
-    {
-      "file": "aula-01.html",
-      "h1a": "Origens do",
-      "h1b": "constitucionalismo",
-      "title": "Origens do constitucionalismo",
-      "desc": "Da lei do Senhor dos hebreus e da pólis grega à monarquia inglesa e às Constituições escritas dos Estados Unidos e da França: o que cada experiência ensina.",
-      "deck": "Limitar o governante pelo Direito não começou no século XVIII, e a <strong class=\"dif\">Constituição escrita</strong> não é o único jeito de fazê-lo. A aula separa épocas e critérios para a <strong class=\"conc\">comparação entre Inglaterra, Estados Unidos e França</strong>.",
-      "bet": {
-        "after_chapter": 4,
-        "question": "Uma questão de prova afirma: o Reino Unido não tem Constituição escrita, logo nunca conheceu constitucionalismo. O que o candidato deve responder?",
-        "options": [
-          [
-            "A afirmação está certa: sem documento único não há limite jurídico identificável ao poder, e a Magna Carta de 1215 nunca chegou a funcionar como Constituição.",
-            ""
-          ],
-          [
-            "A afirmação está errada: escrita e constitucionalismo não são sinônimos. O Reino Unido limita o poder por leis estatutárias, convenções, jurisprudência e costumes parlamentares, o que configura uma Constituição em sentido material.",
-            "*"
-          ],
-          [
-            "A afirmação está certa quanto ao texto, mas o constitucionalismo inglês só começou em 1789, com a influência da Declaração francesa.",
-            ""
-          ],
-          [
-            "A afirmação está errada porque a Inglaterra codificou sua Constituição num só documento em 1689, com o Bill of Rights.",
-            ""
-          ]
-        ],
-        "reveal": "<p>A escrita é uma diferença de forma: publicidade, clareza e segurança sobre o limite, segundo Canotilho. Uma comunidade pode limitar o poder por práticas persistentes sem reuni-las num documento único, e isso é Constituição em sentido material. Hoje nem existe constituição inteiramente costumeira: a britânica combina leis estatutárias, convenções, jurisprudência e costumes parlamentares.</p>"
-      }
-    }
+ "key": "01",
+ "date": "Semanas 1–2",
+ "pages": [
+  {
+   "file": "aula-01.html",
+   "h1a": "Origens das",
+   "h1b": "constituições",
+   "title": "Origens do constitucionalismo",
+   "desc": "Da lei do Senhor dos hebreus e da pólis grega à monarquia inglesa e às Constituições escritas dos Estados Unidos e da França: o que cada experiência ensina.",
+   "deck": "Limitar o governante pelo Direito não começou no século XVIII, e a <strong class=\"dif\">Constituição escrita</strong> não é o único jeito de fazê-lo. A aula separa épocas e critérios para a <strong class=\"conc\">comparação entre Inglaterra, Estados Unidos e França</strong>.",
+   "bet": {
+    "after_chapter": 4,
+    "question": "Uma questão de prova afirma: o Reino Unido não tem Constituição escrita, logo nunca conheceu constitucionalismo. O que o candidato deve responder?",
+    "options": [
+     [
+      "A afirmação está certa: sem documento único não há limite jurídico identificável ao poder, e a Magna Carta de 1215 nunca chegou a funcionar como Constituição.",
+      ""
+     ],
+     [
+      "A afirmação está errada: escrita e constitucionalismo não são sinônimos. O Reino Unido limita o poder por leis estatutárias, convenções, jurisprudência e costumes parlamentares, o que configura uma Constituição em sentido material.",
+      "*"
+     ],
+     [
+      "A afirmação está certa quanto ao texto, mas o constitucionalismo inglês só começou em 1789, com a influência da Declaração francesa.",
+      ""
+     ],
+     [
+      "A afirmação está errada porque a Inglaterra codificou sua Constituição num só documento em 1689, com o Bill of Rights.",
+      ""
+     ]
+    ],
+    "reveal": "<p>A escrita é uma diferença de forma: publicidade, clareza e segurança sobre o limite, segundo Canotilho. Uma comunidade pode limitar o poder por práticas persistentes sem reuni-las num documento único, e isso é Constituição em sentido material. Hoje nem existe constituição inteiramente costumeira: a britânica combina leis estatutárias, convenções, jurisprudência e costumes parlamentares.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Que critérios Henkin e os demais autores oferecem para dizer que uma organização política é constitucionalista, e por que um texto chamado Constituição não basta?",
+   "Há constitucionalismo quando a organização política contém mecanismos que impedem o titular do poder de tratar a própria vontade como regra suficiente. Henkin enumera elementos como soberania popular, Constituição superior e obrigatória, separação de poderes, Judiciário independente e direitos protegidos. Um documento pode organizar o Estado e deixar o governante sem controle efetivo, por isso a análise pergunta quem limita o poder, por qual regra e por qual instituição."
   ],
-  "quiz": [
-    [
-      "Que critérios Henkin e os demais autores oferecem para dizer que uma organização política é constitucionalista, e por que um texto chamado Constituição não basta?",
-      "Há constitucionalismo quando a organização política contém mecanismos que impedem o titular do poder de tratar a própria vontade como regra suficiente. Henkin enumera elementos como soberania popular, Constituição superior e obrigatória, separação de poderes, Judiciário independente e direitos protegidos. Um documento pode organizar o Estado e deixar o governante sem controle efetivo, por isso a análise pergunta quem limita o poder, por qual regra e por qual instituição."
-    ],
-    [
-      "Que experiências anteriores às revoluções modernas mostram a ideia de limitar o poder?",
-      "Entre os hebreus, a lei do Senhor limitava o poder político mesmo num Estado teocrático (Loewenstein). Na pólis grega do século V a.C., o poder foi distribuído entre cargos ocupados por sorteio e por tempo determinado, com participação direta dos cidadãos (Tavares). Na Idade Média, Canotilho distingue as lois du roi, feitas e revogáveis pelo rei, das lois de royaume, leis superiores que o rei devia respeitar."
-    ],
-    [
-      "Como Jorge Miranda distingue a Revolução Gloriosa de 1688 da Revolução Francesa de 1789?",
-      "A inglesa se integra numa linha de continuidade e confirma ou reforça garantias já disputadas, com a nobreza acomodando parte dos interesses da classe comerciante. A francesa tenta reconstruir a arquitetura estatal desde o começo, e a opressão da classe plebeia favoreceu a ruptura."
-    ],
-    [
-      "Que modelos de equilíbrio do poder aparecem na tradição inglesa, e em que divergem?",
-      "A Constituição mista combinava o Rei, os Lordes e os Comuns para impedir que uma classe concentrasse o poder. O modelo aristotélico busca aproximar economicamente as classes e dar-lhes acesso aos diferentes poderes. O modelo polibiano parte de uma sociedade já dividida e reserva a cada classe um órgão próprio: em Roma, cônsules, Senado e povo. Ambos previnem a preponderância de uma parte, mas divergem sobre a aproximação social que a sustentaria."
-    ],
-    [
-      "Que efeitos práticos Canotilho atribui à forma escrita, e que datas marcam a experiência norte-americana e a francesa?",
-      "A escrita traz publicidade (o povo conhece a estrutura de poder e as garantias), clareza (regras reunidas reduzem a incerteza) e segurança (referência estável para governantes e governados). Nos Estados Unidos, o Congresso de Filadélfia propôs Constituições estaduais em 15 de maio de 1776 e a Constituição federal é de 1787. Na França, a Declaração dos Direitos do Homem e do Cidadão é de 1789 e serviu de preâmbulo à Constituição de 1791, a primeira Constituição formal europeia na exposição de Tavares."
-    ],
-    [
-      "Como responder a uma questão que pede a origem de um instituto constitucional entre Inglaterra, Estados Unidos e França?",
-      "Evitando atribuir o instituto a um só país. A Inglaterra influenciou os colonos e Montesquieu, os franceses recorreram às cartas americanas por serem mais precisas, e as ideias circularam de volta. Santi Romano resume quatro resultados dos processos americano e francês: direitos formulados para todos os homens, divisão de poderes com lugar constitucional, soberania passando do príncipe à Nação e depois ao Estado, e igualdade como base de novas instituições."
-    ]
+  [
+   "Que experiências anteriores às revoluções modernas mostram a ideia de limitar o poder?",
+   "Entre os hebreus, a lei do Senhor limitava o poder político mesmo num Estado teocrático (Loewenstein). Na pólis grega do século V a.C., o poder foi distribuído entre cargos ocupados por sorteio e por tempo determinado, com participação direta dos cidadãos (Tavares). Na Idade Média, Canotilho distingue as lois du roi, feitas e revogáveis pelo rei, das lois de royaume, leis superiores que o rei devia respeitar."
+  ],
+  [
+   "Como Jorge Miranda distingue a Revolução Gloriosa de 1688 da Revolução Francesa de 1789?",
+   "A inglesa se integra numa linha de continuidade e confirma ou reforça garantias já disputadas, com a nobreza acomodando parte dos interesses da classe comerciante. A francesa tenta reconstruir a arquitetura estatal desde o começo, e a opressão da classe plebeia favoreceu a ruptura."
+  ],
+  [
+   "Que modelos de equilíbrio do poder aparecem na tradição inglesa, e em que divergem?",
+   "A Constituição mista combinava o Rei, os Lordes e os Comuns para impedir que uma classe concentrasse o poder. O modelo aristotélico busca aproximar economicamente as classes e dar-lhes acesso aos diferentes poderes. O modelo polibiano parte de uma sociedade já dividida e reserva a cada classe um órgão próprio: em Roma, cônsules, Senado e povo. Ambos previnem a preponderância de uma parte, mas divergem sobre a aproximação social que a sustentaria."
+  ],
+  [
+   "Que efeitos práticos Canotilho atribui à forma escrita, e que datas marcam a experiência norte-americana e a francesa?",
+   "A escrita traz publicidade (o povo conhece a estrutura de poder e as garantias), clareza (regras reunidas reduzem a incerteza) e segurança (referência estável para governantes e governados). Nos Estados Unidos, o Congresso de Filadélfia propôs Constituições estaduais em 15 de maio de 1776 e a Constituição federal é de 1787. Na França, a Declaração dos Direitos do Homem e do Cidadão é de 1789 e serviu de preâmbulo à Constituição de 1791, a primeira Constituição formal europeia na exposição de Tavares."
+  ],
+  [
+   "Como responder a uma questão que pede a origem de um instituto constitucional entre Inglaterra, Estados Unidos e França?",
+   "Evitando atribuir o instituto a um só país. A Inglaterra influenciou os colonos e Montesquieu, os franceses recorreram às cartas americanas por serem mais precisas, e as ideias circularam de volta. Santi Romano resume quatro resultados dos processos americano e francês: direitos formulados para todos os homens, divisão de poderes com lugar constitucional, soberania passando do príncipe à Nação e depois ao Estado, e igualdade como base de novas instituições."
   ]
+ ]
 }

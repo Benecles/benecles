@@ -163,31 +163,32 @@ def body_html(blocks, spec_page, quiz=None, first_num=1):
     return b, n
 
 # ---------------------------------------------------------------- course heroes
-def track(stations, current, done):
+def track(stations, current, done, quiet=False):
     """A horizontal procedure/timeline: stations [(label, sub)], current: set of indexes, done: indexes before."""
     k = len(stations)
     x0, x1 = 70, 1010
     xs = [x0 + i * (x1 - x0) / (k - 1) for i in range(k)]
     cur = sorted(current)
     o = f'<path d="M{x0} 72H{x1}" style="fill:none;stroke:var(--grid-major);stroke-width:3"/>'
-    if cur:
+    if cur and not quiet:
         o += f'<path class="draw" d="M{x0} 72H{xs[cur[-1]]:.0f}" style="fill:none;stroke:var(--ink);stroke-width:3"/>'
     for i, (x, (a, sub)) in enumerate(zip(xs, stations)):
         on, past = i in current, i < (cur[0] if cur else 0)
+        if quiet: on, past = False, True
         col = 'var(--conc)' if on else ('var(--ink)' if past else 'var(--ink-2)')
         r = 11 if on else 7
         fill = col if (on or past) else 'var(--paper)'
         o += (f'<g class="pop" style="--d:{.15 + i * .12:.2f}s;font:12px var(--mono);letter-spacing:.06em">'
               f'<circle cx="{x:.0f}" cy="72" r="{r}" style="fill:{fill};stroke:{col};stroke-width:2"/>'
               + (f'<circle cx="{x:.0f}" cy="72" r="18" style="fill:none;stroke:var(--conc);stroke-width:1"/>' if on else '')
-              + f'<text x="{x:.0f}" y="{40 if i % 2 == 0 else 112}" text-anchor="middle" style="fill:{col};font-weight:{700 if on else 500}">{a}</text>'
-              f'<text x="{x:.0f}" y="{58 if i % 2 == 0 else 130}" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">{sub}</text></g>')
+              + f'<text x="{x:.0f}" y="{30 if i % 2 == 0 else 114}" text-anchor="middle" style="fill:{col};font-weight:{700 if on else 500}">{a}</text>'
+              f'<text x="{x:.0f}" y="{46 if i % 2 == 0 else 131}" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">{sub}</text></g>')
     return o
 
 PC_STATIONS = [('PETIÇÃO', 'demanda'), ('LIMINAR', 'e audiência'), ('SUJEITOS', 'partes e terceiros'), ('ATOS', 'citação e prazos'),
                ('RESPOSTA', 'contestação'), ('SANEAMENTO', 'nulidades'), ('SENTENÇA', 'julgamento')]
 CI_STATIONS = [('1787 · 1791', 'EUA e França'), ('1824', 'Império'), ('1891', 'República'), ('1934', 'social'), ('1937', 'Estado Novo'),
-               ('1946', 'redemocratização'), ('1967 · 69', 'regime militar'), ('1988', 'Constituição Cidadã')]
+               ('1946', 'redemocratização'), ('1967 · 69', 'regime militar'), ('1988', 'Cidadã')]
 
 # ---------------------------------------------------------------- course definitions
 # (key, packet dir, source file, [page files], [split markers for pages 2..n], hero highlight, short label)
@@ -219,6 +220,7 @@ COURSES = {
             ('04c', 'unit-04-force-supremacy-guardian-cases', 'case-dossier.md', ['aula-04-casos.html'], [], {7}, 'Caso: ADI 3.345'),
         ]),
 }
+EXTRA = '@media (max-width:560px){.hero h1{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}}'
 PAGE_HIGHLIGHT = {('constitucional', 'aula-03-republica.html'): {3, 4, 5, 6, 7}}
 
 def build(cname):
@@ -256,7 +258,7 @@ def build(cname):
                   ('Antes', prev[2] if j else 'Início do curso'), ('Depois', nxt[2])]
             hero = track(C['stations'], PAGE_HIGHLIGHT.get((cname, f), hl), set())
             kit.page(f, key, pg['title'], pg['desc'], C['kick'], pg['h1a'], pg['h1b'], pg['deck'], hero, tb, body, prev, nxt,
-                     extra_css=latam.EXTRA_CSS, toplabel=f"{label_of((key, f, pg))} · {sp['date']}")
+                     extra_css=latam.EXTRA_CSS + EXTRA, toplabel=f"{label_of((key, f, pg))} · {sp['date']}")
             index.append((key, f, pg, sp['date'], short, mins))
     front(C, index)
     return index
@@ -298,7 +300,7 @@ def front(C, index):
   <p class="deck">{C.get('deck', 'As aulas do programa, na ordem em que o curso as apresenta. Cada aula tem um teste no fim.')}</p>
 </header>
 <main>
-<section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso">{track(C['stations'], allon, set())}</svg></section>
+<section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso">{track(C['stations'], allon, set(), quiet=True)}</svg></section>
 <section class="map-section front-sheet" aria-label="Avaliação">
   <aside class="exam-card" aria-labelledby="exam-title">
     <span class="exam-date">{C['exam'][0]} · {C['exam'][1]}</span>
@@ -323,3 +325,5 @@ def front(C, index):
 if __name__ == '__main__':
     for c in (sys.argv[1:] or list(COURSES)):
         build(c)
+    import subprocess
+    subprocess.run([sys.executable, os.path.join(SITE, 'tools', 'fontes_info.py')], check=True)   # the ⓘ card on the fronts
