@@ -7,3 +7,4 @@ One line per shipped step: what changed, the study-lab commit on `main`, and whe
 | 1 | PC Aula 07: calendar scrolly for the 2025 P1 deadline count | `6030351` | PR #5; figs.py fig_pc07; build.py figure hook |
 | 2 | Home: patch notes section 'O que mudou' (24/09 to 29/09); stale empty-card text fixed | `9e01738` | PR #6; edit between PATCHNOTES markers in index.html; add a line per future ship |
 | 3 | Home: own drawings on the three new course cards; patch note; baton pins (stale schematics, Controle granularity) | `72f7003` | PR #7 |
+| 4 | CI Aula 04: genealogy scrolly of review models (US, Austria, Brazil) | `c291d18` | PR #8; figs.py fig_ci04 |
