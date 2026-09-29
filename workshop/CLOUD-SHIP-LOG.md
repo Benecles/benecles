@@ -9,3 +9,4 @@ One line per shipped step: what changed, the study-lab commit on `main`, and whe
 | 3 | Home: own drawings on the three new course cards; patch note; baton pins (stale schematics, Controle granularity) | `72f7003` | PR #7 |
 | 4 | CI Aula 04: genealogy scrolly of review models (US, Austria, Brazil) | `c291d18` | PR #8; figs.py fig_ci04 |
 | 5 | Home patch notes itemized: every added lesson linked by day; baton pin: blog idea | `f9115b3` | PR #9; lists rebuilt from each course index order |
+| 6 | PC Aula 03: litisconsórcio matrix scrolly | `e00848f` | PR #10; figs.py fig_pc03. Session ends here: next figures for the Mac (see baton) |
