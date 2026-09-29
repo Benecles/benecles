@@ -221,7 +221,7 @@ COURSES = {
             ('11', 'unit-11-judgments-partial-merits', 'draft.md', {6}, 'Sentença, extinção e mérito'),
         ]),
     'constitucional': dict(
-        slug='direito-constitucional-i', course='Direito Constitucional I', code='DIR03045', prof='Profa. Roberta Baggio',
+        slug='direito-constitucional-i', course='Direito Constitucional I', code='DIR03045', prof='',   # professor to confirm
         kick=['Direito Constitucional I', 'DIR03045', 'UFRGS · 2026/2'], stations=CI_STATIONS, exam=('Prova', '05/10/2026'),
         scope='A prova de 05/10 cobre as Aulas 01 a 04, com o caso da ADI 3.345.',
         lessons=[

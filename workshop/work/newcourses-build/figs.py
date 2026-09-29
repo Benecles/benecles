@@ -190,3 +190,34 @@ def fig_pc03():
                        [S(f'p-mx{i}', L[i], L[i], B[i] + src(ref), tones[i]) for i in range(4)])
 
 FIGS[('processo-civil', 'aula-03.html')] = {4: fig_pc03}
+
+# ---- CI Aula 02 · genre: ledger. Each axis answers one question; 1988 on every axis (draft unit-02, last section)
+_AX = [('CONTEÚDO', ['formal', 'material'], 0), ('FORMA', ['escrita', 'costumeira'], 0), ('EXTENSÃO', ['sintética', 'analítica'], 1),
+       ('ESTABILIDADE', ['flexível', 'semirrígida', 'rígida'], 2), ('PROJETO', ['garantia', 'social-dirigente'], 1)]
+def _ledger(k):
+    o = T(30, 44, 'UMA PERGUNTA POR EIXO' if k == 0 else 'A CONSTITUIÇÃO DE 1988 EM CADA EIXO', 't-small', style='letter-spacing:.1em')
+    for i, (ax, opts, pick) in enumerate(_AX):
+        y = 80 + i * 92
+        o += R(30, y, 540, 78, 'ink', style='fill:var(--paper);stroke:var(--ink);stroke-width:1')
+        o += T(46, y + 26, ax, 't-small', style='letter-spacing:.1em;fill:var(--ink-2)')
+        w = 380 / len(opts)
+        for j, op in enumerate(opts):
+            x = 180 + j * w
+            on = k == 1 and j == pick
+            o += R(x, y + 38, w - 10, 28, 'ink', style=f'fill:{"var(--conc)" if on else "var(--paper)"};stroke:{"var(--conc)" if on else "var(--ink-2)"};stroke-width:1')
+            o += T(x + (w - 10) / 2, y + 57, op, 't-small', anchor='middle', style=f'font-size:12px;fill:{"var(--paper)" if on else "var(--ink)"}')
+    if k == 1:
+        o += T(30, 556, 'Rígida pelo art. 60; alguns autores dizem super-rígida pelo § 4º.', 't-small', style='font-size:12px;fill:var(--ink)')
+        o += T(30, 576, 'Os rótulos não competem: cada um responde a um critério.', 't-small', style='font-size:12px;fill:var(--ink-2)')
+    return o
+
+def fig_ci02():
+    ref = 'draft unit-02 "Como classificar sem misturar os eixos" (Tavares); CF art. 60 and § 4º'
+    return kit.scrolly('Classificar sem misturar os eixos', [('p-lg0', _ledger(0), 'Os eixos'), ('p-lg1', _ledger(1), 'A Constituição de 1988')], [
+        S('p-lg0', 'Método', 'Cada eixo responde a uma pergunta',
+          '<p>Conteúdo, forma, extensão, estabilidade e projeto político são critérios independentes. A pergunta sobre como a Constituição se altera não diz nada sobre sua extensão, e a forma escrita não decide sua origem.</p>' + src(ref), 'dif'),
+        S('p-lg1', 'Aplicação', 'A de 1988 em cada eixo',
+          '<p>Formal, porque integra o documento aprovado como texto constitucional; escrita; analítica, porque contém muitas regras e detalhes; rígida, pelo procedimento de emenda do art. 60, e super-rígida para quem destaca o § 4º; social-dirigente, porque o texto também orienta a ação estatal.</p>' + src(ref), 'conc'),
+    ])
+
+# FIGS[('constitucional', 'aula-02.html')] = {7: fig_ci02}   # held: 390px page overflow to check (cloud session ran out of budget)
