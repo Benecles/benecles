@@ -1,5 +1,5 @@
 {
-"version": "e7a1594567fb",
+"version": "c19effe32194",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
@@ -87,6 +87,7 @@
 "courses/processo-civil-i/aula-02.html",
 "courses/processo-civil-i/aula-03.html",
 "courses/processo-civil-i/aula-04.html",
+"courses/processo-civil-i/aula-05-casos.html",
 "courses/processo-civil-i/aula-05.html",
 "courses/processo-civil-i/aula-06-citacao.html",
 "courses/processo-civil-i/aula-06.html",
@@ -97,6 +98,8 @@
 "courses/processo-civil-i/aula-09.html",
 "courses/processo-civil-i/aula-10-estabilizacao.html",
 "courses/processo-civil-i/aula-10.html",
+"courses/processo-civil-i/aula-11-merito.html",
+"courses/processo-civil-i/aula-11.html",
 "courses/processo-civil-i/index.html",
 "courses/processo-civil-i/",
 "courses/teoria-do-delito/assets/curso.css",
