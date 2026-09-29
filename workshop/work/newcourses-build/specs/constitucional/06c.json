@@ -1,0 +1,95 @@
+{
+ "key": "06c",
+ "date": "Semanas 10–11",
+ "pages": [
+  {
+   "file": "aula-06-casos.html",
+   "h1a": "Limites à reforma",
+   "h1b": "ADI 2.096 e 5.316-MC",
+   "title": "Limites à reforma: ADI 2.096 e ADI 5.316-MC",
+   "desc": "O STF aplica o art. 60, § 4º, à EC 20/98 na ADI 2.096 (idade mínima para o trabalho) e à EC 88/2015 na ADI 5.316-MC (nova sabatina após os 70 anos).",
+   "deck": "Dois julgados, duas maneiras de aplicar o § 4º. Na ADI 2.096 a cláusula pétrea é invocada <strong class=\"conc\">contra a emenda e devolvida ao autor</strong>; na ADI 5.316 a emenda é barrada em <strong class=\"dif\">uma só expressão</strong>, por atingir o núcleo da separação dos Poderes.",
+   "bet": {
+    "after_chapter": 0,
+    "question": "A CNTI ajuizou ação direta contra a EC 20/98, na parte que elevou de 14 para 16 anos a idade mínima de admissão ao trabalho (art. 7º, XXXIII). Alega que a emenda viola direitos fundamentais dos adolescentes, protegidos pelo art. 60, § 4º, IV, porque a renda do jovem sustenta a família. Como o STF deve julgar?",
+    "options": [
+     [
+      "Procedente: o direito ao trabalho do adolescente é direito individual, e a emenda o aboliu.",
+      ""
+     ],
+     [
+      "Improcedente: a emenda amplia a proteção de um grupo vulnerável, e o pedido, ao restaurar a regra antiga, é que reduziria a proteção já alcançada.",
+      "*"
+     ],
+     [
+      "Não conhecer: emenda constitucional não se submete a controle em ação direta.",
+      ""
+     ],
+     [
+      "Não conhecer: a CNTI, confederação da indústria, não tem pertinência temática para impugnar a emenda.",
+      ""
+     ]
+    ],
+    "reveal": "<p>Em 2020, por unanimidade e nos termos do voto do Ministro Celso de Mello, o Plenário julgou improcedente a ação, em julgamento de mérito. O relator afirmou que emendas são controláveis (HC 18.178, de 1926; ADIs 939 e 3.685), reconheceu a pertinência temática da CNTI e aplicou a proteção integral do art. 227 e a vedação ao retrocesso social. A direção da mudança pesa no juízo sobre \"tendente a abolir\".</p>"
+   }
+  },
+  {
+   "file": "aula-06-casos-precatorios.html",
+   "h1a": "Precatórios e",
+   "h1b": "a EC 30/2000",
+   "title": "ADIs 2.356 e 2.362: parcelamento de precatórios",
+   "desc": "O STF suspende em cautelar o art. 2º da EC 30/2000, que parcelou precatórios em dez anos (art. 78 do ADCT), e debate direito adquirido, isonomia e art. 33.",
+   "deck": "O parcelamento de 1988 (art. 33 do ADCT) veio do constituinte originário; o de 2000 veio de emenda. O caso mostra como <strong class=\"dif\">poder originário e poder derivado</strong> recebem tratamento diferente e por que o resultado é <strong class=\"conc\">uma cautelar, não o mérito</strong>.",
+   "bet": {
+    "after_chapter": 0,
+    "question": "A EC 30/2000 acrescentou o art. 78 ao ADCT: os precatórios pendentes na promulgação seriam pagos em prestações anuais, em até dez anos. CNI e OAB impugnam a norma. Para os precatórios já pendentes, com sentença transitada em julgado, qual fundamento o relator Néri da Silveira adotou, e por que o art. 33 do ADCT não a salva?",
+    "options": [
+     [
+      "O parcelamento fere direito adquirido, ato jurídico perfeito e coisa julgada (art. 60, § 4º, IV); o art. 33 não legitima o art. 78, porque veio do constituinte originário, e este veio do poder reformador, que deve obedecer àquele.",
+      "*"
+     ],
+     [
+      "Só a isonomia é violada, e o art. 33 serve de precedente porque o Supremo já aceitou moratória de precatórios.",
+      ""
+     ],
+     [
+      "Nada é violado: precatório é procedimento administrativo, e o Estado é um só, sem ofensa à separação dos Poderes.",
+      ""
+     ],
+     [
+      "A norma só cairia no mérito, pois cautelar não pode suspender emenda constitucional.",
+      ""
+     ]
+    ],
+    "reveal": "<p>Em 2010, por maioria, o Plenário deferiu a cautelar e suspendeu o art. 2º da EC 30/2000; ficaram vencidos os Ministros Ellen Gracie (em parte), Eros Grau, Joaquim Barbosa, Dias Toffoli e Ricardo Lewandowski. Para os pendentes, o voto de Néri da Silveira vê ofensa a direito adquirido, ato jurídico perfeito e coisa julgada. Só para os precatórios futuros, de ações até 1999, afasta esses fundamentos e aponta a isonomia. A decisão é cautelar, e os fundamentos variam por Ministro.</p>"
+   },
+   "start": "3. ADI 2.356-MC/DF e ADI 2.362-MC/DF: parcelamento de precatórios (EC 30/2000, art. 78 do ADCT)"
+  }
+ ],
+ "quiz": [
+  [
+   "O que decidiu o STF na ADI 2.096 e em que tipo de julgamento?",
+   "Em sessão virtual de outubro de 2020, por unanimidade e nos termos do voto do Ministro Celso de Mello, julgou improcedente a ação e confirmou a validade do art. 7º, XXXIII, na redação da EC 20/98. É julgamento de mérito. O relator ainda reconheceu a legitimidade da CNTI e a pertinência temática, contra o entendimento da PGR e do Presidente da República."
+  ],
+  [
+   "Como o relator da ADI 2.096 tratou a cláusula do art. 60, § 4º, IV, contra o pedido da CNTI?",
+   "O poder de reforma é constituinte derivado, sujeito a limites formais, circunstanciais e materiais, e a emenda que os ultrapassa é inconstitucional. Mas a emenda ampliou a proteção do adolescente, pela proteção integral do art. 227. A vedação ao retrocesso social mostra que restaurar a idade de 14 anos é que reduziria proteção já alcançada."
+  ],
+  [
+   "Que parte da EC 88/2015 o STF suspendeu na ADI 5.316-MC e por quê?",
+   "Em 21 de maio de 2015, em cautelar, suspendeu a expressão \"nas condições do art. 52 da Constituição Federal\" do art. 100 do ADCT. Ela impunha nova sabatina no Senado ao ministro que já exerce o cargo, o que fere a independência do Judiciário e a separação dos Poderes (art. 60, § 4º, III). O aumento de 70 para 75 anos permaneceu."
+  ],
+  [
+   "Que método de controle de emenda dividiu o relator Fux e o Ministro Teori Zavascki?",
+   "Fux e a maioria suspenderam a expressão, porque os debates legislativos mostravam que a intenção era exigir segunda sabatina. Teori Zavascki, com Marco Aurélio, propôs interpretação conforme, para entender a remissão ao art. 52 apenas como sabatina dos futuros ministros. Também divergiram sobre a cumulação de ADI com ADC, que Marco Aurélio recusou."
+  ],
+  [
+   "Como o STF tratou a ADI 2.356 e a ADI 2.362 e qual a distinção entre os precatórios pendentes e os futuros?",
+   "Cautelar de 25 de novembro de 2010, por maioria, suspendeu o art. 2º da EC 30/2000. Para os pendentes, o voto do relator vê ofensa a direito adquirido, ato jurídico perfeito e coisa julgada; para os futuros, de ações até 1999, afasta esses fundamentos mas vê ofensa à isonomia (art. 5º, caput)."
+  ],
+  [
+   "Por que o art. 33 do ADCT não serviu de precedente e que limites tem a decisão?",
+   "O art. 33 veio do constituinte originário, cujas regras não estão sujeitas a limitação normativa. O art. 78 veio do poder reformador, que deve obedecer às cláusulas pétreas. A decisão é cautelar, vale até o julgamento final, e Toffoli e Lewandowski, vencidos, invocaram o tempo decorrido e os efeitos sobre as finanças públicas."
+  ]
+ ]
+}

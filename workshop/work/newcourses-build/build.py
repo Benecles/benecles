@@ -191,6 +191,9 @@ PC_STATIONS = [('PETIÇÃO', 'demanda'), ('LIMINAR', 'e audiência'), ('SUJEITOS
 CI_STATIONS = [('1787 · 1791', 'EUA e França'), ('1824', 'Império'), ('1891', 'República'), ('1934', 'social'), ('1937', 'Estado Novo'),
                ('1946', 'redemocratização'), ('1967 · 69', 'regime militar'), ('1988', 'Cidadã')]
 
+MJ_STATIONS = [('SÉC. XII', 'escolas medievais'), ('SÉC. XVI', 'humanismo'), ('CASUÍSMO', 'o caso e o sistema'), ('AMÉRICA', 'prática colonial'),
+               ('LITERATURA', 'pragmática'), ('COSTUME', 'direito indiano'), ('SÉC. XIX', 'ensino jurídico'), ('HOJE', 'dogmática')]
+
 # ---------------------------------------------------------------- course definitions
 # (key, packet dir, source file, [page files], [split markers for pages 2..n], hero highlight, short label)
 COURSES = {
@@ -223,13 +226,59 @@ COURSES = {
             ('03', 'unit-03-brazilian-constitutionalism', 'draft.md', {1, 2}, 'Formação constitucional do Brasil'),
             ('04', 'unit-04-force-supremacy-guardian', 'draft.md', {7}, 'Supremacia e guarda da Constituição'),
             ('04c', 'unit-04-force-supremacy-guardian-cases', 'case-dossier.md', {7}, 'Caso: ADI 3.345'),
+            ('05', 'unit-05-constituent-power', 'draft.md', {7}, 'Poder constituinte'),
+            ('06', 'unit-06-reform-limits', 'draft.md', {7}, 'Reforma e seus limites'),
+            ('06c', 'unit-06-reform-limits-cases', 'case-dossier.md', {7}, 'Casos: limites da reforma'),
+            ('07', 'unit-07-efficacy-applicability', 'draft.md', {7}, 'Eficácia e aplicabilidade'),
+            ('08', 'unit-08-rules-principles', 'draft.md', {7}, 'Regras e princípios'),
+            ('09', 'unit-09-principled-application-limits', 'draft.md', {7}, 'Aplicação dos princípios'),
+            ('10', 'unit-10-norms-over-time-reception', 'draft.md', {7}, 'Normas no tempo e recepção'),
+            ('11', 'unit-11-norms-in-space-international-rights', 'draft.md', {7}, 'Normas no espaço e tratados'),
+            ('12', 'unit-12-rights-concept-evolution', 'draft.md', {7}, 'Direitos fundamentais: conceito'),
+            ('13', 'unit-13-rights-catalogue', 'draft.md', {7}, 'O catálogo de direitos'),
+            ('14', 'unit-14-rights-functions-holders', 'draft.md', {7}, 'Funções e titulares'),
+            ('15', 'unit-15-rights-applicability-horizontal-effect', 'draft.md', {7}, 'Aplicabilidade e eficácia horizontal'),
+            ('16', 'unit-16-rights-limits', 'draft.md', {7}, 'Limites dos direitos'),
+            ('17', 'unit-17-rights-religion-conscience', 'draft.md', {7}, 'Religião e consciência'),
+            ('18', 'unit-18-rights-expression', 'draft.md', {7}, 'Liberdade de expressão'),
+            ('19', 'unit-19-rights-information', 'draft.md', {7}, 'Direito à informação'),
+            ('20', 'unit-20-rights-property', 'draft.md', {7}, 'Propriedade'),
+            ('21', 'unit-21-rights-sexual-liberty', 'draft.md', {7}, 'Liberdade sexual'),
+            ('21c', 'unit-21-rights-sexual-liberty-cases', 'case-dossier.md', {7}, 'Casos: ADPF 132 e RE 778.889'),
+            ('22', 'unit-22-rights-social-enforceability', 'draft.md', {7}, 'Direitos sociais'),
+            ('23', 'unit-23-rights-housing', 'draft.md', {7}, 'Moradia'),
+            ('24', 'unit-24-rights-environment', 'draft.md', {7}, 'Meio ambiente'),
+            ('25', 'unit-25-rights-indigenous-identity', 'draft.md', {7}, 'Identidade indígena'),
+        ]),
+    'metodologia': dict(
+        slug='metodologia-juridica', course='Metodologia Jurídica', code='DIR03044', prof='',
+        kick=['Metodologia Jurídica', 'DIR03044', 'UFRGS · 2026/2'], stations=MJ_STATIONS, exam=None,
+        scope='Estas são as aulas cujos textos já foram publicados no Moodle; as Aulas 10 a 13 entram quando os textos forem postados.',
+        lessons=[
+            ('01', 'lesson-01', 'draft.md', {0}, 'Escolas jurídicas medievais'),
+            ('02', 'lesson-02', 'draft.md', {1}, 'Recepção e humanismo'),
+            ('03', 'lesson-03', 'draft.md', {2}, 'Casuísmo e sistema I'),
+            ('04', 'lesson-04', 'draft.md', {3}, 'Prática jurídica colonial'),
+            ('05', 'lesson-05', 'draft.md', {4}, 'Literatura normativa pragmática'),
+            ('06', 'lesson-06', 'draft.md', {3}, 'O jurista hispano-colonial'),
+            ('07', 'lesson-07', 'draft.md', {5}, 'O costume no direito indiano'),
+            ('08', 'lesson-08', 'draft.md', {2}, 'Casuísmo e sistema II'),
+            ('09', 'lesson-09', 'draft.md', {2}, 'Casuísmo e sistema III'),
+            ('14', 'lesson-14', 'draft.md', {6}, 'Educação jurídica no Brasil'),
+            ('15b', 'lesson-15b', 'draft.md', {7}, 'Relação e norma'),
         ]),
 }
 EXTRA = '@media (max-width:560px){.hero h1{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}}'
 PAGE_HIGHLIGHT = {('constitucional', 'aula-03-republica.html'): {3, 4, 5, 6, 7}}
 
 def build(cname):
-    C = COURSES[cname]
+    C = dict(COURSES[cname])
+    cj = os.path.join(HERE, 'specs', cname, 'course.json')
+    if os.path.exists(cj):
+        j = json.load(open(cj))
+        if j.get('prof'): C['prof'] = j['prof']
+        if j.get('exam'): C['exam'] = ('Prova', j['exam'])
+        if j.get('exam_scope'): C['scope'] = j['exam_scope']
     out = os.path.join(SITE, 'courses', C['slug']) + '/'
     os.makedirs(out + 'assets', exist_ok=True)
     for a in ('curso.css', 'curso.js'):
@@ -282,7 +331,7 @@ def front(C, index):
     src = open(os.path.join(SITE, 'courses', 'direito-latino-americano', 'index.html')).read()
     head = src[:src.find('<body')]
     head = re.sub(r'<title>.*?</title>', f"<title>{C['course']} · CUFRGS</title>", head, flags=re.S)
-    desc = f"Guia de estudo de {C['course']} ({C['code']}), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes para a {C['exam'][0]}."
+    desc = f"Guia de estudo de {C['course']} ({C['code']}), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes."
     head = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{desc}">', head)
     head = re.sub(r'<!-- FONTES:START -->.*?<!-- FONTES:END -->', '', head, flags=re.S)
     head = head.replace('</style>', '.front-track{margin:8px auto 0;max-width:1180px;padding:0 clamp(16px,4vw,48px)}'
@@ -299,10 +348,12 @@ def front(C, index):
                   f'<p>{pages[0][1]["deck"]}</p><p class="label" style="margin-top:6px">≈ {total} min de leitura</p><div class="lesson-links">{links}</div></article>')
     n_aulas = len({re.sub(r'\D', '', k) for k, *_ in index})
     allon = set(range(len(C['stations'])))
+    kick_exam = f" · {C['exam'][0]} em {C['exam'][1][:5]}" if C['exam'] else ''
+    prof = f"<span>{C['prof']}</span>" if C['prof'] else ''
     body = f'''<body>
 <nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← CUFRGS</a><span>{C['code']} · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 <header class="hero front">
-  <div class="kicker label"><span>Guia de estudo</span><span>{C['prof']}</span><span>{n_aulas} aulas · {C['exam'][0]} em {C['exam'][1][:5]}</span></div>
+  <div class="kicker label"><span>Guia de estudo</span>{prof}<span>{n_aulas} aulas{kick_exam}</span></div>
   <h1><span class="split">{C['course'].rsplit(' ', 1)[0]}</span><span class="split">{C['course'].rsplit(' ', 1)[1]}</span></h1>
   <p class="deck">{C.get('deck', 'As aulas do programa, na ordem em que o curso as apresenta. Cada aula tem um teste no fim.')}</p>
 </header>
@@ -310,8 +361,8 @@ def front(C, index):
 <section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso">{track(C['stations'], allon, set(), quiet=True)}</svg></section>
 <section class="map-section front-sheet" aria-label="Avaliação">
   <aside class="exam-card" aria-labelledby="exam-title">
-    <span class="exam-date">{C['exam'][0]} · {C['exam'][1]}</span>
-    <h2 id="exam-title">O que cai</h2>
+    <span class="exam-date">{(C['exam'][0] + ' · ' + C['exam'][1]) if C['exam'] else 'Semestre 2026/2'}</span>
+    <h2 id="exam-title">{'O que cai' if C['exam'] else 'O que já está aqui'}</h2>
     <p>{C['scope']} Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>
     <a href="{index[0][1]}"><span>Começar pela Aula 01</span><span aria-hidden="true">→</span></a>
   </aside>

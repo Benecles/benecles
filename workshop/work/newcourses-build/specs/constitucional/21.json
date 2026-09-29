@@ -1,0 +1,33 @@
+{
+ "key": "21",
+ "date": "Semanas 15–18",
+ "pages": [
+  {
+   "file": "aula-21.html",
+   "h1a": "Liberdade sexual",
+   "h1b": "e a ADPF 132",
+   "title": "Liberdade sexual e a ADPF 132",
+   "desc": "Como o voto do Ministro Ayres Britto na ADPF 132 e na ADI 4.277 extrai a liberdade sexual do art. 3º, IV, do art. 5º, II e X, e da dignidade, e o que a decisão não decidiu.",
+   "deck": "A Constituição não nomeia a liberdade sexual, e o STF a construiu <strong class=\"dif\">passo a passo</strong> a partir de outros textos. A decisão iguala a união estável homoafetiva, mas <strong class=\"conc\">não trata de casamento nem de adoção</strong>.",
+   "bet": {
+    "after_chapter": 6,
+    "question": "Um candidato escreve que, na ADPF 132/RJ e na ADI 4.277/DF, o STF autorizou o casamento civil e a adoção por casais do mesmo sexo. A afirmação está correta?",
+    "options": [
+     ["Sim: ao reconhecer a família homoafetiva, o Tribunal reescreveu o art. 226, § 3º, e estendeu o regime do casamento e da adoção.", ""],
+     ["Não: o dispositivo dá interpretação conforme ao art. 1.723 do Código Civil e trata da união estável, com eficácia erga omnes e efeito vinculante. O relator observou de passagem que a Constituição não distingue adotante, mas o pedido e o dispositivo não tratam de casamento nem de adoção.", "*"],
+     ["Sim quanto ao casamento, porque o voto do relator o equipara à união estável, e não quanto à adoção.", ""],
+     ["Não: a decisão foi apenas de perda de objeto, porque a Lei fluminense 5.034/2007 já equiparava o parceiro homoafetivo ao companheiro.", ""]
+    ],
+    "reveal": "<p>O primeiro pedido da ADPF perdeu objeto por causa da lei do Rio de Janeiro, e o restante foi convertido em ADI e julgado com a ADI 4.277, por unanimidade, em 4 e 5 de maio de 2011. O Tribunal excluiu do art. 1.723 do Código Civil qualquer significado que impeça o reconhecimento da união contínua, pública e duradoura entre pessoas do mesmo sexo como entidade familiar. Quem responde que o STF autorizou casamento e adoção nessa decisão atribui ao acórdão o que ele não disse.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  ["Quais são os quatro apoios de que o relator deduz a liberdade sexual?", "A vedação de preconceito em razão do sexo (art. 3º, IV), que alcança o uso da sexualidade; o silêncio da Constituição somado ao art. 5º, II, que faz valer a norma geral negativa (o que não é proibido nem obrigatório é permitido); a intimidade e a vida privada (art. 5º, X); e a dignidade da pessoa humana (art. 1º, III), com o art. 5º, § 2º, e a cláusula pétrea do art. 60, § 4º, IV, como reforço."],
+  ["Qual a diferença entre intimidade e vida privada no voto?", "A intimidade diz respeito ao indivíduo consigo mesmo, como um diário, e abriga a abstenção sexual e o uso solitário. A vida privada cobre o indivíduo diante de pessoas próximas e abriga o uso da sexualidade com outra pessoa. Como o art. 5º, § 1º, dá aplicação imediata, a liberdade vale sem depender de lei."],
+  ["Quais os limites da liberdade sexual apontados no voto?", "A idade, porque o voto trata de pessoas adultas, e o direito de outrem: quando a sexualidade de uma pessoa é usada para negar a de outra, como no estupro, a liberdade acaba, e o mesmo vale para a pedofilia e o incesto. Por outro lado, os heteroafetivos não têm direito à não equiparação jurídica com os homoafetivos."],
+  ["Como o relator lê o art. 226 para chegar à família?", "Em cinco passos: o caput dá a família como continente, com especial proteção; a Constituição de 1988 deslocou o eixo do casamento (art. 175 de 1967/69) para a família; o § 3º é norma de inclusão, e não de exclusão; 'entidade familiar' e 'família' são sinônimos, sem família de segunda classe; e as diferenças entre união estável e casamento não tratam do sexo dos parceiros, sendo enunciativa a lista do art. 226."],
+  ["Qual foi o caminho processual da ADPF 132 e o dispositivo?", "O governador pediu interpretação conforme do Estatuto dos Servidores do Rio e a declaração de que decisões que negavam os direitos violavam preceitos fundamentais. O primeiro pedido foi julgado prejudicado, porque a Lei estadual 5.034/2007 já dava o reconhecimento. O restante foi convertido em ADI e julgado com a ADI 4.277, da PGR, contra o art. 1.723 do Código Civil. O Tribunal julgou procedentes as ações, por unanimidade, com eficácia erga omnes e efeito vinculante."],
+  ["A unanimidade implicou identidade de fundamentos, e o que a equiparação exige?", "Não. Os Ministros Lewandowski, Gilmar Mendes e Peluso viram a união homoafetiva como nova forma de entidade familiar, deixando a matéria aberta à conformação legislativa, enquanto o relator extraiu a solução do próprio texto constitucional. A equiparação traz as mesmas regras e consequências da união estável heteroafetiva: continua sendo preciso provar convivência pública, contínua e duradoura com objetivo de constituir família."]
+ ]
+}

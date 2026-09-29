@@ -1,0 +1,63 @@
+{
+ "key": "09",
+ "date": "Semanas 12–13",
+ "pages": [
+  {
+   "file": "aula-09.html",
+   "h1a": "Proporcionalidade",
+   "h1b": "e restrição estatal",
+   "title": "Proporcionalidade no controle de restrições estatais",
+   "desc": "Adequação, necessidade e proporcionalidade em sentido estrito no controle de restrições a direitos, com bases constitucionais, licitude do fim e razoabilidade.",
+   "deck": "O teste tem três etapas e uma triagem prévia. Cada etapa faz uma pergunta diferente sobre a mesma medida, e a resposta de prova exige <strong class=\"dif\">nomear o ganho, o sacrifício e a alternativa</strong>. O erro comum é chamar de <strong class=\"conc\">ponderação</strong> uma conclusão sem premissas.",
+   "bet": {
+    "after_chapter": 4,
+    "question": "Uma prefeitura proíbe reuniões em todas as praças depois das 21h para reduzir o ruído. Admite-se que a medida reduz o ruído, mas se mostra que limitar caixas de som junto a residências protegeria o descanso com eficácia equivalente e restringiria bem menos. Em que etapa do teste a proibição geral falha?",
+    "options": [
+     [
+      "Adequação, pois a proibição não contribui para reduzir o ruído.",
+      ""
+     ],
+     [
+      "Necessidade, pois existe alternativa igualmente apta e menos gravosa.",
+      "*"
+     ],
+     [
+      "Proporcionalidade em sentido estrito, pois o descanso nunca pode pesar mais que a reunião.",
+      ""
+     ],
+     [
+      "Licitude do fim, pois proteger o descanso não é objetivo constitucionalmente aceitável.",
+      ""
+     ]
+    ],
+    "reveal": "<p>A adequação pergunta só se o meio pode contribuir para o fim, e a proibição contribui. A necessidade compara meios que alcancem o mesmo fim com eficácia equivalente e escolhe o que impõe o menor ônus. Como a alternativa conserva a capacidade de proteger o descanso, a proibição geral falha aqui, antes do balanceamento. Canotilho lembra que a necessidade tem dimensões material, espacial, temporal e pessoal, e a proibição para a cidade inteira afeta todas.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Onde a proporcionalidade encontra base na Constituição de 1988?",
+   "A Constituição não enuncia o teste. Tavares aponta o art. 5º, § 2º, uma norma não escrita do Estado Democrático de Direito, o devido processo legal substantivo e a isonomia material, e conclui que um conjunto de bases explica a recepção melhor que uma única origem."
+  ],
+  [
+   "Onde ficam a licitude do meio e do fim no teste?",
+   "Dimoulis e Martins as incluem na própria análise, somadas aos três subcritérios. Tavares as trata como questão anterior ao teste. Nas duas formas, a medida só avança se meio e fim forem constitucionalmente admissíveis."
+  ],
+  [
+   "O que examina a adequação e quando ela reprova a medida?",
+   "Examina se o meio tem aptidão para contribuir para o fim, não se o resultado já ocorreu. Na formulação de Tavares, reprova quando o meio é totalmente inviável para atingir o objetivo, como proibir reunião silenciosa em praça fechada e sem residências para reduzir ruído residencial."
+  ],
+  [
+   "Que comparação faz a necessidade e quais as dimensões de Canotilho?",
+   "Compara meios que alcancem o mesmo fim com capacidade equivalente e pergunta qual impõe o menor ônus. Canotilho separa a necessidade material (meio mais poupado), espacial (área de intervenção), temporal (duração da coerção) e pessoal (pessoas cujos interesses precisam ser sacrificados)."
+  ],
+  [
+   "O que exige a proporcionalidade em sentido estrito e que crítica recebe?",
+   "Compara vantagens da medida com as desvantagens para outros direitos e interesses, o que Tavares chama de otimização das possibilidades jurídicas. Leonardo Martins, seguindo em parte Schlink, vê na ponderação fator de racionalidade duvidosa, pelo risco de trocar a discricionariedade do legislador pela do juiz. A resposta precisa nomear ganho, sacrifício, pessoas atingidas e fatos."
+  ],
+  [
+   "Como Queiroz e Ávila distinguem razoabilidade de proporcionalidade?",
+   "Para Queiroz, razoabilidade é mais ampla e liga-se à qualidade da atuação concreta; proporcionalidade, à quantidade da restrição e à proibição do excesso. Para Ávila, proporcionalidade envolve relação causal entre meio e fim, e razoabilidade pode exigir correspondência entre grandezas, como culpa e pena."
+  ]
+ ]
+}
