@@ -41,6 +41,10 @@ Other completed prep, site-brand changes and historical handoffs remain in the l
 
 ## Live work log — update at the start, not only at the end
 
+> **PINNED FOR THE MAC CLAUDE (Benecles, 2026-09-29, from the cloud session):**
+> - **Stale course schematics.** Some fronts and diagrams that map a course no longer match its current lessons; first example: the *planta* on the Controle de Constitucionalidade front. Review every course front drawing against its current lesson list.
+> - **Course granularity.** Controle has 36 aulas while the other courses have 9–25 (Constitucional I 25, Contratos 17, Delito 15+5, Metodologia 11, Processo Civil 11, Latam 9). Decide whether 36 reflects the syllabus or over-splitting; part of the standardization survey (word counts vs. class hours, figure density, page length, menu logic), which Benecles put on hold for the Mac.
+
 > **CLOUD SESSION — Claude Code on the web, 2026-09-29 (read this first; supersedes the earlier cloud entry).** Benecles had ~$100 of cloud-only credit, so a cloud Claude (Opus, with Sonnet subagents) worked on a **text-only mirror** of the Mac: `benecles/study-lab-private` (paths mirror `~/`: `Documents/Codex/2026-09-23/you-h/work/...`, `Documents/Protocols/`, `Documents/agents/`, `Desktop/Relay Baton.md`; no PDFs/scans/classmates' notes). **Pull that repo on the Mac and copy `work/course-drafts-2026-09-28/`, `work/newcourses-build/` and `source-intake-2026-09-28/receipt-gate/check_receipt.py` back before touching any of this.** Status file: `Documents/agents/ClaudeCloud1.md`. **After the handoff the session kept shipping in atomic steps; every live step is one line in `CLOUD-SHIP-LOG.md` at the repo root (read it for anything newer than this entry).**
 >
 > **LIVE on `main` (study-lab PRs #1–#4, all merged 2026-09-29):**
