@@ -1,0 +1,63 @@
+{
+  "key": "05",
+  "date": "09/09",
+  "pages": [
+    {
+      "file": "aula-05.html",
+      "h1a": "Intervenção provocada",
+      "h1b": "e amicus curiae",
+      "title": "Intervenção provocada, desconsideração e amicus curiae",
+      "desc": "Denunciação da lide, chamamento ao processo, desconsideração da personalidade jurídica e amicus curiae: quem chama quem, em que prazo e com quais efeitos.",
+      "deck": "Denunciação e chamamento parecem trazer um terceiro para o mesmo processo, mas o vínculo é outro: garantia ou regresso de um lado, <strong class=\"conc\">dívida comum ao mesmo credor</strong> do outro. A classificação do vínculo decide qual técnica cabe.",
+      "bet": {
+        "after_chapter": 3,
+        "question": "Um banco cobra o saldo de um empréstimo de uma fiadora, que tem outros dois cofiadores solidários. Em outro processo, o banco cobra apenas o devedor principal, que quer chamar a fiadora. O que o art. 130 permite?",
+        "options": [
+          [
+            "A fiadora pode chamar o devedor principal e os cofiadores, e o devedor principal também pode chamar a fiadora.",
+            ""
+          ],
+          [
+            "Nenhum dos dois chamamentos cabe, porque o chamamento só existe para devedores solidários.",
+            ""
+          ],
+          [
+            "A fiadora pode chamar o devedor principal e os cofiadores na contestação, mas o devedor principal não pode chamar a fiadora.",
+            "*"
+          ],
+          [
+            "Só o devedor principal pode chamar, porque o fiador tem benefício de ordem e não precisa de chamamento.",
+            ""
+          ]
+        ],
+        "reveal": "<p>O art. 130, I e II, autoriza o fiador demandado a chamar o afiançado e os demais fiadores. O pedido é feito na contestação, e as citações devem ser promovidas em 30 dias (dois meses se o chamado estiver em outra comarca ou em lugar incerto), sob pena de o chamamento ficar sem efeito.</p><p>O caminho inverso não existe: o devedor principal não tem regresso contra quem garantiu a própria dívida dele, então o art. 130, I, não o autoriza a chamar o fiador.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O que é a denunciação da lide e quando o juiz examina o pedido de regresso?",
+      "É a demanda pela qual uma parte pede que o terceiro responda por garantia ou regresso se ela perder a ação principal (art. 125). O pedido é eventual: o juiz só o examina se o denunciante sucumbir na causa principal (art. 129). Perder a principal não prova por si que o denunciado deve indenizar, pois o contrato ou a lei do regresso ainda precisa ser demonstrado."
+    ],
+    [
+      "Quantas denunciações sucessivas o CPC admite, e o que acontece com a omissão de denunciar?",
+      "Uma só: o denunciado pode denunciar seu antecessor imediato ou quem deva indenizá-lo (art. 125, § 2º), e não se admite salto sobre o elo imediato. Denunciar é ônus, não obrigação: se a denunciação não é feita ou é indeferida, o art. 125, § 1º, preserva a ação regressiva autônoma."
+    ],
+    [
+      "Qual a divergência sobre o alcance do art. 125, II, e a posição de Didier?",
+      "Sidney Sanches, Nelson Nery Jr. e Greco Filho leem restritivamente, limitando a denunciação à garantia própria para não trazer fatos e provas novos. Dinamarco lê amplamente, pois o inciso não distingue garantia própria e imprópria. Didier recusa proibição e admissão automática: o juiz compara a economia de resolver duas relações com o custo de ampliar a prova e atrasar a demanda principal."
+    ],
+    [
+      "Quais as hipóteses de chamamento ao processo e o prazo para citar o chamado?",
+      "O fiador chama o afiançado, um fiador chama os demais fiadores, e o devedor solidário demandado chama os codevedores (art. 130). O pedido é feito na contestação e as citações devem ocorrer em 30 dias, ou dois meses se o chamado estiver em outra comarca ou em lugar incerto (art. 131). A sentença vale como título executivo para o réu que pagar (art. 132)."
+    ],
+    [
+      "Como funciona o incidente de desconsideração da personalidade jurídica?",
+      "Depende de pedido da parte ou do Ministério Público, nunca de ofício, e pode ocorrer em qualquer fase do conhecimento, no cumprimento de sentença e na execução. O sócio ou a pessoa jurídica é citado para se manifestar e pedir provas em 15 dias, e o processo fica suspenso, salvo se o pedido veio na inicial. A decisão é interlocutória. Os pressupostos materiais vêm da lei aplicável (art. 133, § 1º), e a falta de bens, sozinha, não os preenche."
+    ],
+    [
+      "Quais os requisitos e os poderes do amicus curiae no art. 138?",
+      "Relevância da matéria, especificidade do tema ou repercussão social (critérios alternativos), com representatividade adequada do interessado. Ele tem 15 dias para se manifestar e o juiz ou relator fixa seus poderes. Como regra não pode recorrer, salvo embargos de declaração e recurso contra decisão em IRDR, e sua participação não altera a competência."
+    ]
+  ]
+}
