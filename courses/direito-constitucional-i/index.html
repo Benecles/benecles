@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>(function(){var k='cufrgs-theme',r=document.documentElement;try{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}catch(e){}document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){var d=r.dataset.theme==='dark';b.setAttribute('aria-pressed',d)}sync();b.addEventListener('click',function(){var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{localStorage.setItem(k,d?'dark':'light')}catch(e){}sync()})})})()</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direito Constitucional I · CUFRGS</title>
+<meta name="description" content="Guia de estudo de Direito Constitucional I (DIR03045), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes para a Prova.">
+<link rel="stylesheet" href="assets/curso.css?v=20260927h">
+<style>
+.course-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(20px,4vw,56px);align-items:start}
+.course-intro .deck{max-width:54ch}
+.exam-card{position:relative;border:1.5px solid var(--ink);background:var(--paper);padding:20px 22px 22px;box-shadow:6px 6px 0 var(--conc-wash)}
+.exam-card.p2{box-shadow:6px 6px 0 var(--dif-wash)}.exam-card.p2::before{content:"P2 · AGORA";background:var(--dif)}.exam-card.p2 .exam-date{color:var(--dif)}
+.exam-card::before{content:"P1 · AGORA";display:inline-block;background:var(--conc);color:var(--paper);padding:5px 8px;font:500 10px var(--mono);letter-spacing:.1em}
+.exam-card h2{font:750 clamp(23px,3vw,31px)/1.1 var(--sans);margin:16px 0 8px}
+.exam-card p{margin:0 0 14px;color:var(--ink-2);font-size:17px;line-height:1.45}
+.exam-card .exam-date{font:500 12px var(--mono);letter-spacing:.06em;color:var(--conc);text-transform:uppercase}
+.exam-card a{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;font:600 15px var(--sans);border-top:1px solid var(--rule);padding-top:12px}
+.exam-card a.resume{margin-top:8px;color:var(--dif);font-weight:500}
+.exam-card a[hidden]{display:none}
+.exam-card a:hover,.exam-card a:focus-visible{color:var(--conc);text-decoration:underline;text-underline-offset:4px}
+.course-nav{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px) 8px}
+.course-nav-inner{display:flex;flex-wrap:wrap;gap:0 20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:9px 0}
+.course-nav .label{width:100%;color:var(--ink-2);margin-bottom:2px}
+.course-nav a{font:500 13px/1.5 var(--sans);text-decoration:none;padding:4px 0}
+.course-nav a:hover,.course-nav a:focus-visible{color:var(--conc);text-decoration:underline;text-underline-offset:3px}
+.map-section,.lessons{max-width:1180px;margin:0 auto;padding:50px clamp(16px,4vw,48px) 20px}
+.section-head{border-top:1.5px solid var(--ink);padding-top:13px;margin-bottom:20px}
+.section-head .label{color:var(--ink-2)}
+.section-head h2{font:750 clamp(30px,4vw,46px)/1.05 var(--sans);letter-spacing:-.025em;margin:8px 0}
+.section-head p{font-size:19px;line-height:1.45;color:var(--ink-2);max-width:64ch;margin:0}
+.map-key{display:flex;gap:9px 20px;flex-wrap:wrap;margin:18px 0 22px;font:11px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2)}
+.map-key span{display:flex;gap:8px;align-items:center}.map-key i{width:22px;height:4px;background:var(--conc)}.map-key .p2 i{background:var(--dif)}
+.pathway{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;counter-reset:unit}
+.unit{counter-increment:unit;position:relative;min-width:0;border:1.5px solid var(--ink);border-right:0;background:var(--paper);padding:16px 14px 17px;display:flex;flex-direction:column;min-height:190px}
+.unit:nth-child(3n){border-right:1.5px solid var(--ink)}
+.unit::before{content:"0" counter(unit);font:500 11px var(--mono);color:var(--ink-2);letter-spacing:.08em}
+.unit:not(:last-child):not(:nth-child(3n))::after{content:"";position:absolute;z-index:1;right:-6px;top:28px;width:10px;height:10px;border-top:1.5px solid var(--ink);border-right:1.5px solid var(--ink);transform:rotate(45deg);background:var(--paper)}
+.unit h3{font:700 clamp(17px,1.8vw,22px)/1.1 var(--sans);margin:12px 0 8px}
+.unit p{font-size:14px;line-height:1.4;color:var(--ink-2);margin:0 0 12px}
+.unit .unit-links{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px}
+.unit .unit-links a,.unit .unit-links span{display:inline-block;border:1px solid var(--ink);padding:5px 7px;text-decoration:none;font:500 10px var(--mono);letter-spacing:.04em}
+.unit .unit-links a:hover,.unit .unit-links a:focus-visible{background:var(--conc-wash);border-color:var(--conc);color:var(--conc);text-decoration:underline}
+.unit.current{border-top:5px solid var(--conc);padding-top:12px}
+.unit.current::before{color:var(--conc)}
+.unit.p2{border-top-color:var(--dif)}.unit.p2::before{color:var(--dif)}
+.unit.upcoming{border-top:5px solid var(--ink-2);border-top-style:dashed;padding-top:12px;background:color-mix(in srgb,var(--paper) 84%,var(--paper-2))}
+.unit.upcoming h3{color:var(--ink-2)}
+.unit.upcoming .unit-links span{border-style:dashed;color:var(--ink-2)}
+.bridge{margin:15px 0 0;border-left:3px solid var(--dif);padding:8px 0 8px 14px;font:14px/1.45 var(--sans);color:var(--ink-2);max-width:72ch}
+.lessons{padding-top:44px}
+.lesson-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px;border-top:1.5px solid var(--ink)}
+.lesson-group{padding:18px 0 22px;border-bottom:1px solid var(--ink)}
+.lesson-group h3{font:750 21px/1.15 var(--sans);margin:0 0 9px}
+.lesson-group h3 span{font:11px var(--mono);color:var(--ink-2);margin-right:8px}
+.lesson-group p{font-size:15px;line-height:1.45;color:var(--ink-2);margin:0 0 12px;max-width:58ch}
+.lesson-links{display:flex;gap:8px;flex-wrap:wrap}
+.lesson-links a{display:inline-block;background:var(--paper);border:1px solid var(--ink);padding:7px 10px;text-decoration:none;font:500 12px var(--mono);letter-spacing:.02em}
+.lesson-links a:hover,.lesson-links a:focus-visible{background:var(--conc-wash);border-color:var(--conc);color:var(--conc);text-decoration:underline;text-underline-offset:3px}
+.lesson-links .review-link{background:var(--conc);border-color:var(--conc);color:var(--paper)}
+.lesson-links .review-link.p2{background:var(--dif);border-color:var(--dif)}
+.lesson-links .review-link:hover,.lesson-links .review-link:focus-visible{background:var(--paper);color:var(--conc)}
+.endnote{max-width:1180px;margin:0 auto;padding:22px clamp(16px,4vw,48px) 64px;color:var(--ink-2);font:12px/1.5 var(--mono);letter-spacing:.03em}
+@media(max-width:860px){.course-intro{grid-template-columns:1fr}.pathway{grid-template-columns:1fr}.unit{min-height:0;border-right:1.5px solid var(--ink);border-bottom:0;padding:15px 16px}.unit:last-child{border-bottom:1.5px solid var(--ink)}.unit:not(:last-child):not(:nth-child(3n))::after{right:auto;left:26px;top:auto;bottom:-6px;transform:rotate(135deg)}.unit h3{margin:8px 0 6px}.unit p{max-width:58ch}.lesson-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.topbar{font-size:9px;gap:8px}.exam-card{padding:17px}.course-nav-inner{gap:0 14px}.course-nav a{font-size:12px}.map-section,.lessons{padding-top:38px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+.exam-card.p2::before{content:"P2 · PRÓXIMA PROVA";background:var(--dif)}.atlas{display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);gap:34px;align-items:start}.atlas svg.fig{width:100%;height:auto;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}.atlas a use{cursor:pointer}.atlas a:hover use,.atlas a:focus-visible use{fill:var(--conc-wash)!important;fill-opacity:.9}.exam-card::before{content:"PRÓXIMA AVALIAÇÃO"!important}.hero.front{padding-bottom:6px}header.hero.front h1{font-size:clamp(40px,6.2vw,84px)!important;margin:18px 0 12px!important;max-width:none}.hero.front .deck{max-width:62ch}.front-sheet{padding-top:18px!important}.atlas-side{display:grid;gap:22px;align-content:start}.atlas-side .exam-card{margin:0}@media(max-width:860px){.atlas{grid-template-columns:1fr}}.front-track{margin:8px auto 0;max-width:1180px;padding:0 clamp(16px,4vw,48px)}.front-track svg{width:100%;height:auto;display:block}.front-track .note{font:12px var(--mono);color:var(--ink-2);margin:6px 0 0}.lesson-links a.pt2{opacity:.85}</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← CUFRGS</a><span>DIR03045 · UFRGS · 2026/2</span><span class="tb-right"><!-- FONTES:START --><style>.topbar{position:relative}.tb-right{display:flex;align-items:center;gap:14px}.fontes-i{position:static}.fontes-i>summary{list-style:none;cursor:pointer;width:22px;height:22px;border:1.5px solid var(--ink-2);border-radius:50%;display:grid;place-items:center;font:italic 600 13px/1 var(--serif);color:var(--ink-2);text-transform:none;letter-spacing:0}.fontes-i>summary::-webkit-details-marker{display:none}.fontes-i>summary:hover,.fontes-i[open]>summary,.fontes-i>summary:focus-visible{border-color:var(--conc);color:var(--conc)}.fontes-card{position:absolute;right:clamp(16px,4vw,48px);top:calc(100% - 4px);z-index:30;width:min(380px,calc(100vw - 32px));padding:16px 18px 12px;background:var(--paper);border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--grid-major);text-transform:none;letter-spacing:0;color:var(--ink)}.fontes-card h2{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}.fontes-card h3{font:500 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--conc);margin:12px 0 4px}.fontes-card ul{margin:0;padding:0;list-style:none}.fontes-card li{font:14px/1.4 var(--serif);padding:3px 0}.fontes-card p{font:11px/1.4 var(--mono);color:var(--muted);margin:12px 0 0}</style><details class="fontes-i"><summary aria-label="Fontes do curso" title="Fontes do curso">i</summary><div class="fontes-card" role="dialog" aria-label="Fontes do curso"><h2>Fontes do curso</h2><h3>Do programa</h3><ul><li>Ingo Wolfgang Sarlet, Luiz Guilherme Marinoni e Daniel Mitidiero, <i>Curso de Direito Constitucional</i></li><li>André Ramos Tavares, <i>Curso de Direito Constitucional</i></li><li>Paulo Bonavides, <i>Curso de Direito Constitucional</i></li></ul><h3>Lei e jurisprudência</h3><ul><li>Constituição Federal de 1988</li><li>STF: ADI 3.345 e ADI 3.365 (número de vereadores)</li></ul><p>As principais, não a bibliografia completa.</p></div></details><!-- FONTES:END --><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></span></nav><script>(function(){var d=document.querySelector(".fontes-i");if(!d)return;document.addEventListener("click",function(e){if(d.open&&!d.contains(e.target))d.open=false});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.open){d.open=false;d.querySelector("summary").focus()}})})()</script>
+<header class="hero front">
+  <div class="kicker label"><span>Guia de estudo</span><span>Profa. Roberta Baggio</span><span>4 aulas · Prova em 05/10</span></div>
+  <h1><span class="split">Direito Constitucional</span><span class="split">I</span></h1>
+  <p class="deck">As aulas do programa, na ordem em que o curso as apresenta. Cada aula tem um teste no fim.</p>
+</header>
+<main>
+<section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso"><path d="M70 72H1010" style="fill:none;stroke:var(--grid-major);stroke-width:3"/><g class="pop" style="--d:0.15s;font:12px var(--mono);letter-spacing:.06em"><circle cx="70" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="70" y="30" text-anchor="middle" style="fill:var(--ink);font-weight:500">1787 · 1791</text><text x="70" y="46" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">EUA e França</text></g><g class="pop" style="--d:0.27s;font:12px var(--mono);letter-spacing:.06em"><circle cx="204" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="204" y="114" text-anchor="middle" style="fill:var(--ink);font-weight:500">1824</text><text x="204" y="131" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">Império</text></g><g class="pop" style="--d:0.39s;font:12px var(--mono);letter-spacing:.06em"><circle cx="339" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="339" y="30" text-anchor="middle" style="fill:var(--ink);font-weight:500">1891</text><text x="339" y="46" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">República</text></g><g class="pop" style="--d:0.51s;font:12px var(--mono);letter-spacing:.06em"><circle cx="473" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="473" y="114" text-anchor="middle" style="fill:var(--ink);font-weight:500">1934</text><text x="473" y="131" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">social</text></g><g class="pop" style="--d:0.63s;font:12px var(--mono);letter-spacing:.06em"><circle cx="607" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="607" y="30" text-anchor="middle" style="fill:var(--ink);font-weight:500">1937</text><text x="607" y="46" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">Estado Novo</text></g><g class="pop" style="--d:0.75s;font:12px var(--mono);letter-spacing:.06em"><circle cx="741" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="741" y="114" text-anchor="middle" style="fill:var(--ink);font-weight:500">1946</text><text x="741" y="131" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">redemocratização</text></g><g class="pop" style="--d:0.87s;font:12px var(--mono);letter-spacing:.06em"><circle cx="876" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="876" y="30" text-anchor="middle" style="fill:var(--ink);font-weight:500">1967 · 69</text><text x="876" y="46" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">regime militar</text></g><g class="pop" style="--d:0.99s;font:12px var(--mono);letter-spacing:.06em"><circle cx="1010" cy="72" r="7" style="fill:var(--ink);stroke:var(--ink);stroke-width:2"/><text x="1010" y="114" text-anchor="middle" style="fill:var(--ink);font-weight:500">1988</text><text x="1010" y="131" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">Cidadã</text></g></svg></section>
+<section class="map-section front-sheet" aria-label="Avaliação">
+  <aside class="exam-card" aria-labelledby="exam-title">
+    <span class="exam-date">Prova · 05/10/2026</span>
+    <h2 id="exam-title">O que cai</h2>
+    <p>As aulas abaixo cobrem o conteúdo do programa até a Prova. Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>
+    <a href="aula-01.html"><span>Começar pela Aula 01</span><span aria-hidden="true">→</span></a>
+  </aside>
+</section>
+<section class="lessons" id="aulas" aria-labelledby="lessons-title">
+  <header class="section-head"><span class="label">Caderno de estudo</span><h2 id="lessons-title">Aulas</h2><p>Na ordem do programa.</p></header>
+  <div class="lesson-grid"><article class="lesson-group"><h3><span>Semanas 1–2 · Aula 01</span>Origens do constitucionalismo</h3><p>Limitar o governante pelo Direito não começou no século XVIII, e a <strong class="dif">Constituição escrita</strong> não é o único jeito de fazê-lo. A aula separa épocas e critérios para a <strong class="conc">comparação entre Inglaterra, Estados Unidos e França</strong>.</p><p class="label" style="margin-top:6px">≈ 13 min de leitura</p><div class="lesson-links"><a href="aula-01.html">Origens do constitucionalismo</a></div></article><article class="lesson-group"><h3><span>Semanas 3–4 · Aula 02</span>Classificação das constituições</h3><p>Cada classificação responde a uma pergunta diferente, e a prova cobra que o candidato <strong class="conc">nomeie o critério antes do rótulo</strong>. Assim uma Constituição pode ser <strong class="dif">rígida e analítica</strong> ao mesmo tempo, sem contradição.</p><p class="label" style="margin-top:6px">≈ 11 min de leitura</p><div class="lesson-links"><a href="aula-02.html">Classificação das Constituições</a></div></article><article class="lesson-group"><h3><span>Semanas 5–7 · Aula 03</span>Formação constitucional do Brasil</h3><p>Para 1824 e 1891 valem três perguntas: <strong class="dif">como nasceu, o que deu ou tirou ao Executivo e o que a prática fez</strong>. O <strong class="conc">parlamentarismo imperial</strong> é armadilha frequente.</p><p class="label" style="margin-top:6px">≈ 42 min de leitura</p><div class="lesson-links"><a href="aula-03.html">Constitucionalismo brasileiro: Império e Primeira República</a><a href="aula-03-republica.html" class="pt2">Constitucionalismo brasileiro de 1930 a 1988</a></div></article><article class="lesson-group"><h3><span>Semanas 8–9 · Aula 04</span>Supremacia e guarda da Constituição</h3><p>A supremacia não se executa sozinha: alguém precisa certificar a inconstitucionalidade. Esta aula compara os modelos de defesa e mostra <strong class="dif">qual ação cabe em cada situação</strong>, com as <strong class="conc">confusões clássicas entre concentrado e abstrato, ADI e ADPF</strong>.</p><p class="label" style="margin-top:6px">≈ 19 min de leitura</p><div class="lesson-links"><a href="aula-04.html">Supremacia da Constituição e controle de constitucionalidade</a></div></article><article class="lesson-group"><h3><span>Semanas 8–9 · Aula 04</span>Caso: ADI 3.345</h3><p>O TSE aplicou às eleições de 2004 a tese do STF sobre vereadores proporcionais à população (art. 29, IV). O caso decide se isso é <strong class="conc">legislar</strong> ou <strong class="dif">explicitar uma decisão do Supremo</strong>, e o que muda com o art. 16.</p><p class="label" style="margin-top:6px">≈ 15 min de leitura</p><div class="lesson-links"><a href="aula-04-casos.html">ADI 3.345: Resolução do TSE e número de vereadores</a></div></article></div>
+</section>
+</main>
+<p class="endnote">Direito Constitucional I (DIR03045) · UFRGS · 2026/2.</p>
+<script src="assets/curso.js?v=20260927h"></script>
+<script src="../../assets/offline.js" defer></script>
+<script src="../../assets/highlight.js" defer></script>
+<script src="../../assets/highlight-panel.js" defer></script>
+</body>
+</html>

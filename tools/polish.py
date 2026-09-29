@@ -67,6 +67,12 @@ def capture(files):
             print(f'!! {rel}: hunks do not reproduce the edit exactly; stored anyway, check by hand')
         p = _store_path(rel); os.makedirs(os.path.dirname(p), exist_ok=True)
         prev = json.load(open(p)) if os.path.exists(p) else []
+        # a stored edit whose result is no longer in the page was superseded by a later edit to the same text;
+        # keeping it would make it fail (and shadow the newer hunk) on the next regeneration
+        stale = [h for h in prev if h['after'] not in new]
+        if stale:
+            print(f'   {rel}: dropped {len(stale)} superseded edits')
+            prev = [h for h in prev if h['after'] in new]
         seen = {(h['before'], h['after']) for h in prev}
         merged = prev + [h for h in hs if (h['before'], h['after']) not in seen]
         json.dump(merged, open(p, 'w'), ensure_ascii=False, indent=0)
