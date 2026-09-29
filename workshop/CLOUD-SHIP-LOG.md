@@ -14,3 +14,4 @@ One line per shipped step: what changed, the study-lab commit on `main`, and whe
 | 7 | CI: wrong professor name removed; CI 02 figure held (pinned) | `a067d57` | PR #11 |
 | 8 | CI: professor Vivian Caminha on front and home card | `ac3f638` | PR #12 |
 | 9 | PARTIAL, not live: CI Aula 02 classification-ledger figure (fig_ci02) | — | Switched off in figs.py: at 390 px the page overflows to 405 px in 2 of 4 QA runs (light and dark). Not the SVG; check the scrolly stage/figcaption on phone, then re-enable and ship. |
+| 9b | Diagnosis for step 9 (not live) | — | At 390 px the scrolly's `<figure>` has scrollWidth 358 vs clientWidth 356 and the page grows to 432 px; the SVG is fine. Likely cause: the figcaption (title + '1 / 2') does not wrap. Fix: shorter title in fig_ci02 ('Os eixos da classificação') or let `.stage figcaption` wrap on phones; then re-enable the FIGS line and QA. |

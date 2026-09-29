@@ -220,4 +220,4 @@ def fig_ci02():
           '<p>Formal, porque integra o documento aprovado como texto constitucional; escrita; analítica, porque contém muitas regras e detalhes; rígida, pelo procedimento de emenda do art. 60, e super-rígida para quem destaca o § 4º; social-dirigente, porque o texto também orienta a ação estatal.</p>' + src(ref), 'conc'),
     ])
 
-# FIGS[('constitucional', 'aula-02.html')] = {7: fig_ci02}   # held: page overflows to 405 px at 390 px width in 2 of 4 QA runs (both themes); not the SVG itself, check the scrolly stage/figcaption at phone width
+# FIGS[('constitucional', 'aula-02.html')] = {7: fig_ci02}   # held: see CLOUD-SHIP-LOG step 9
