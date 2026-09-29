@@ -398,3 +398,8 @@ p.gp.gp-conc{border-right-color:var(--conc)}p.gp.gp-mix{border-right-color:var(-
 sup.gmark{margin-left:1px;vertical-align:super}
 b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1px}
 .gmark.conc{color:var(--conc)}.gmark.mix{color:var(--mix)}
+
+/* figcaption wraps on phones instead of widening the page */
+.stage figcaption{flex-wrap:wrap;min-width:0}.stage figcaption>span{min-width:0;overflow-wrap:anywhere}
+/* titleblock cells wrap long labels instead of widening the page */
+.titleblock>div{min-width:0}.titleblock b{overflow-wrap:anywhere}
