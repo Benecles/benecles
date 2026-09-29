@@ -23,6 +23,17 @@ SOURCES = {
                        'Julgados do STJ e do TJSP indicados em aula (entre eles, o caso Zeca Pagodinho)']),
         ('Lei', ['Código Civil, arts. 421 a 480; Código de Defesa do Consumidor']),
     ],
+    'processo-civil-i': [
+        ('Do programa', ['Fredie Didier Jr., <i>Curso de Direito Processual Civil</i>, v. 1', 'Luiz Guilherme Marinoni, Sérgio Arenhart e Daniel Mitidiero, <i>Novo Curso de Processo Civil</i>']),
+        ('Leituras indicadas', ['Elie Pierre Eid, <i>Litisconsórcio unitário: fundamentos, estrutura e regime</i>', 'J. J. Calmon de Passos, <i>Esboço de uma teoria das nulidades aplicada às nulidades processuais</i>',
+                                'Paulo Henrique dos Santos Lucon, comentários aos arts. 355 a 357 do CPC']),
+        ('Lei', ['Código de Processo Civil (Lei 13.105/2015)']),
+    ],
+    'direito-constitucional-i': [
+        ('Do programa', ['Ingo Wolfgang Sarlet, Luiz Guilherme Marinoni e Daniel Mitidiero, <i>Curso de Direito Constitucional</i>', 'André Ramos Tavares, <i>Curso de Direito Constitucional</i>',
+                         'Paulo Bonavides, <i>Curso de Direito Constitucional</i>']),
+        ('Lei e jurisprudência', ['Constituição Federal de 1988', 'STF: ADI 3.345 e ADI 3.365 (número de vereadores)']),
+    ],
     'direito-latino-americano': [
         ('Do programa', ['Fabiano Engelmann e Júlia Bandeira, “A construção da autonomia política do judiciário na América Latina” (<i>Dados</i>, 2017)']),
         ('Decisões', ['STF: ADPF 153, ADPF 347, STA 175 e RE 566.471 (Tema 6)', 'Corte IDH: Gomes Lund vs. Brasil, Gelman vs. Uruguai e OC‑28/2021',
