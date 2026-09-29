@@ -11,6 +11,8 @@ import hashlib, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sanitize
 sanitize.run()   # no visible sourcing, whatever generated the page
+import assetver
+assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach cached phones
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')
