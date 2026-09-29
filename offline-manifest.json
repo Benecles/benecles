@@ -1,5 +1,5 @@
 {
-"version": "0957eac7d18b",
+"version": "328f6e7ecaf5",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
@@ -92,6 +92,7 @@
 "courses/direito-constitucional-i/aula-25.html",
 "courses/direito-constitucional-i/index.html",
 "courses/direito-constitucional-i/",
+"courses/direito-constitucional-i/revisao-p1.html",
 "courses/direito-latino-americano/assets/curso.css",
 "courses/direito-latino-americano/assets/curso.js",
 "courses/direito-latino-americano/aula-01.html",
@@ -143,6 +144,7 @@
 "courses/processo-civil-i/aula-11.html",
 "courses/processo-civil-i/index.html",
 "courses/processo-civil-i/",
+"courses/processo-civil-i/revisao-p1.html",
 "courses/teoria-do-delito/assets/curso.css",
 "courses/teoria-do-delito/assets/curso.js",
 "courses/teoria-do-delito/atelier/iter.css",
