@@ -6,9 +6,13 @@ Live: https://benecles.github.io/study-lab/
 
 ## Courses
 
-`courses/controle-de-constitucionalidade/` contains a 29-lesson guide built from 559 course slides. Its semester map links the lessons in syllabus order, and each page gives slide references, redrawn diagrams, review questions and source notes. The source slide PDFs and visual digests remain outside this public repository. Where the slides present a debated position, the guide labels it as the source's position; Aula 29 also links to official STF material on the scope of binding effect.
+`courses/controle-de-constitucionalidade/` contains a 36-lesson guide built from the course slides and organized by the nine blocks of the syllabus. Its semester map links the lessons in syllabus order, and each page gives slide references, redrawn diagrams, review questions and source notes. The source slide PDFs and visual digests remain outside this public repository. Where the slides present a debated position, the guide labels it as the source's position; Aula 29 also links to official STF material on the scope of binding effect.
 
 `courses/teoria-do-delito/` contains the full selected Teoria do Delito guide: 15 study units, five doctrinal supplements, the course map and the master study guide. The index groups the reading by the six blocks in the supplied 2026/2 syllabus. Individual week divisions are editorial; they are not verified classroom dates.
+
+`courses/teoria-geral-dos-contratos/` contains 17 lessons on contract theory (concept, principles, formation, classification and the rest of the semester), P1 and P2 review pages, an article reference page and review cards.
+
+`courses/direito-latino-americano/` contains a nine-lesson guide to Direito Latino-americano (DIR03057, UFRGS 2026/2), covering constitutionalism, courts, transitional justice, popular sovereignty and structural litigation in Latin America, plus an activity review page and review cards.
 
 The public editorial page and provenance JSON explain the source/version decisions, input hashes, transformations and bounded review. Source PDFs/books are not distributed by this repository.
 
