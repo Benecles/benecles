@@ -24,7 +24,11 @@
           "label": "Aula 01",
           "title": "Conceito de contrato",
           "complementary": false,
-          "desc": "O que é contrato; negócio jurídico e operação econômica; contrato de consumo."
+          "desc": "O que é contrato; negócio jurídico e operação econômica; contrato de consumo.",
+          "reg": {
+            "does": "Qualificar o contrato como negócio jurídico e identificar relação de consumo.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -38,13 +42,21 @@
           "label": "Aula 02",
           "title": "Liberdade, força e relatividade",
           "complementary": false,
-          "desc": "Os seis princípios contratuais."
+          "desc": "Os seis princípios contratuais.",
+          "reg": {
+            "does": "Aplicar liberdade, relatividade e força vinculativa diante dos limites legais.",
+            "exam": "P1"
+          }
         },
         {
           "href": "aula-03.html",
           "label": "Aula 03",
           "title": "Função social, boa-fé e equilíbrio",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Invocar função social, boa-fé e equilíbrio sem apagar autonomia e riscos.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -58,13 +70,21 @@
           "label": "Aula 04",
           "title": "O contrato como processo",
           "complementary": false,
-          "desc": "Tratativas, proposta e aceitação."
+          "desc": "Tratativas, proposta e aceitação.",
+          "reg": {
+            "does": "Identificar a formação do vínculo e responsabilizar ruptura desleal das tratativas.",
+            "exam": "P1"
+          }
         },
         {
           "href": "aula-05.html",
           "label": "Aula 05",
           "title": "Proposta e aceitação",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Testar firmeza, completude e determinabilidade da proposta e o efeito da aceitação.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -78,7 +98,11 @@
           "label": "Aula 06",
           "title": "Incidentes da formação",
           "complementary": false,
-          "desc": "Estipulação em favor de terceiro, promessa de fato de terceiro, pessoa a declarar, contrato preliminar e arras."
+          "desc": "Estipulação em favor de terceiro, promessa de fato de terceiro, pessoa a declarar, contrato preliminar e arras.",
+          "reg": {
+            "does": "Distinguir estipulação em favor de terceiro, promessa de fato e pessoa a declarar.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -92,13 +116,21 @@
           "label": "Aula 07",
           "title": "Classificação dos contratos I",
           "complementary": false,
-          "desc": "Bilaterais, onerosos, aleatórios, reais, de adesão, coligados e outros."
+          "desc": "Bilaterais, onerosos, aleatórios, reais, de adesão, coligados e outros.",
+          "reg": {
+            "does": "Classificar contratos por obrigações, vantagens, riscos e dependência entre vínculos.",
+            "exam": "P1"
+          }
         },
         {
           "href": "aula-08.html",
           "label": "Aula 08",
           "title": "Classificação dos contratos II",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Classificar contratos pela forma, tempo de execução e relação de acessoriedade.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -112,13 +144,21 @@
           "label": "Aula 09",
           "title": "O sentido do acordo",
           "complementary": false,
-          "desc": "Sentido das declarações, contexto, usos e regras especiais."
+          "desc": "Sentido das declarações, contexto, usos e regras especiais.",
+          "reg": {
+            "does": "Interpretar declarações pelo texto, contrato inteiro, contexto, usos e conduta posterior.",
+            "exam": "P2"
+          }
         },
         {
           "href": "aula-10.html",
           "label": "Aula 10",
           "title": "Regras especiais",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Selecionar a regra interpretativa conforme benefício, adesão ou relação de consumo.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -132,19 +172,31 @@
           "label": "Aula 11",
           "title": "Desequilíbrio na origem",
           "complementary": false,
-          "desc": "Cláusulas abusivas, lesão, imprevisão e base do negócio."
+          "desc": "Cláusulas abusivas, lesão, imprevisão e base do negócio.",
+          "reg": {
+            "does": "Distinguir cláusula abusiva e lesão conforme o defeito existia na celebração.",
+            "exam": "P2"
+          }
         },
         {
           "href": "aula-12.html",
           "label": "Aula 12",
           "title": "O que mudou na execução",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Testar alocação de riscos e requisitos legais para rever prestação por fato superveniente.",
+            "exam": "P2"
+          }
         },
         {
           "href": "aula-13.html",
           "label": "Aula 13",
           "title": "A base comum do negócio",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Avaliar a frustração da base comum quando o fim compartilhado do contrato desaparece.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -158,7 +210,11 @@
           "label": "Aula 14",
           "title": "Quem entra no contrato?",
           "complementary": false,
-          "desc": "Transferência da posição contratual e efeitos para as partes."
+          "desc": "Transferência da posição contratual e efeitos para as partes.",
+          "reg": {
+            "does": "Transferir a posição contratual com anuência do cedido e definir a liberação do cedente.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -172,19 +228,31 @@
           "label": "Aula 15",
           "title": "Qual evento extingue o quê?",
           "complementary": false,
-          "desc": "Saídas consensuais, denúncia, resolução e inadimplemento."
+          "desc": "Saídas consensuais, denúncia, resolução e inadimplemento.",
+          "reg": {
+            "does": "Distinguir extinção por cumprimento e impossibilidade conforme a prestação afetada.",
+            "exam": "P2"
+          }
         },
         {
           "href": "aula-16.html",
           "label": "Aula 16",
           "title": "Saída por vontade",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Formalizar distrato ou denúncia e determinar seus pressupostos e efeitos.",
+            "exam": "P2"
+          }
         },
         {
           "href": "aula-17.html",
           "label": "Aula 17",
           "title": "Mora ou ruptura?",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Separar mora, cumprimento defeituoso e inadimplemento definitivo para escolher o remédio.",
+            "exam": "P2"
+          }
         }
       ]
     }
@@ -233,5 +301,11 @@
       "page": "revisao-p2.html",
       "reason": "Página editorial de revisão para a P2; não é aula."
     }
-  ]
+  ],
+  "reg": {
+    "exams": [
+      "P1",
+      "P2"
+    ]
+  }
 }
