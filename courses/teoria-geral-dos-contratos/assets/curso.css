@@ -414,3 +414,13 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
   .stage.tuckable figcaption::after{content:'▴ recolher';flex:none;margin-left:auto;color:var(--conc)}
   body.figs-tucked .stage.tuckable figcaption::after{content:'▾ abrir'}
 }
+
+/* Keep figure labels readable after their SVG viewBox is scaled to the stage. */
+@media (min-width:861px){
+  .stage figure svg.fig text{font-size:14px!important}
+  .stage figure svg.hero-fork text{font-size:16px!important}
+}
+@media (max-width:860px) and (orientation:portrait){
+  .stage figure svg.fig text{font-size:18px!important}
+  .stage figure svg.hero-fork text{font-size:36px!important}
+}
