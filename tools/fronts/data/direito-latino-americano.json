@@ -33,69 +33,117 @@
       "reason": "Ferramenta de cartões de estudo com revisão espaçada, não é aula."
     }
   ],
+  "reg": {
+    "exams": [
+      "Atividade avaliativa (05/10)",
+      "Prova (30/11 · 50 pontos)",
+      "Prova de recuperação (14/12)"
+    ],
+    "units": [
+      {
+        "label": "17/08",
+        "title": "Cortes constitucionais e democratização na América Latina",
+        "lessons": ["aula-01.html", "aula-02.html"]
+      },
+      {
+        "label": "24/08",
+        "title": "Justiça de transição: as Cortes diante do passado autoritário",
+        "lessons": ["aula-03.html", "aula-04.html"]
+      },
+      {
+        "label": "31/08",
+        "title": "Soberania popular, democracia e direitos humanos",
+        "lessons": ["aula-05.html", "aula-06.html"]
+      },
+      {
+        "label": "14/09",
+        "title": "A negação estrutural de direitos: o Estado de Coisas Inconstitucional",
+        "lessons": ["aula-07.html"]
+      },
+      {
+        "label": "21/09",
+        "title": "Litígio estrutural e diálogos institucionais",
+        "lessons": ["aula-08.html"]
+      },
+      {
+        "label": "28/09",
+        "title": "Direitos sociais, políticas públicas e diálogo institucional: o direito à saúde",
+        "lessons": ["aula-09.html"]
+      }
+    ]
+  },
   "lessons": [
     {
       "href": "aula-01.html",
       "label": "Aula 01",
       "title": "Constitucionalismo latino-americano",
       "complementary": false,
-      "desc": "Haiti, Cádiz e os projetos constitucionais fundacionais, lidos a partir da soberania popular e de quem participa da cidadania."
+      "desc": "Haiti, Cádiz e os projetos constitucionais fundacionais, lidos a partir da soberania popular e de quem participa da cidadania.",
+      "reg": {"does": "Relacionar Haiti, Cádiz e projetos à disputa por soberania e cidadania.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-02.html",
       "label": "Aula 02",
       "title": "Cortes e democratização",
       "complementary": false,
-      "desc": "Estudo comparado da autonomia judicial e da democratização das cortes em cinco países latino-americanos."
+      "desc": "Estudo comparado da autonomia judicial e da democratização das cortes em cinco países latino-americanos.",
+      "reg": {"does": "Comparar a autonomia das cortes latino-americanas e explicar diferenças de protagonismo.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-03.html",
       "label": "Aula 03",
       "title": "Justiça de transição no Brasil",
       "complementary": false,
-      "desc": "ADPF 153 e Gomes Lund: o alcance da Lei de Anistia de 1979 e os deveres de investigar graves violações."
+      "desc": "ADPF 153 e Gomes Lund: o alcance da Lei de Anistia de 1979 e os deveres de investigar graves violações.",
+      "reg": {"does": "Confrontar a leitura da anistia na ADPF 153 com os deveres fixados em Gomes Lund.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-04.html",
       "label": "Aula 04",
       "title": "Justiça de transição na Colômbia",
       "complementary": false,
-      "desc": "A Corte Constitucional colombiana examina reformas constitucionais ligadas ao processo de paz e seus limites jurídicos."
+      "desc": "A Corte Constitucional colombiana examina reformas constitucionais ligadas ao processo de paz e seus limites jurídicos.",
+      "reg": {"does": "Avaliar os limites constitucionais colombianos à justiça de transição e à JEP.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-05.html",
       "label": "Aula 05",
       "title": "A maioria e os direitos",
       "complementary": false,
-      "desc": "Gelman contra Uruguai e a controvérsia sobre os efeitos do voto popular diante de graves violações de direitos humanos."
+      "desc": "Gelman contra Uruguai e a controvérsia sobre os efeitos do voto popular diante de graves violações de direitos humanos.",
+      "reg": {"does": "Examinar quando o voto popular pode limitar a investigação de graves violações.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-06.html",
       "label": "Aula 06",
       "title": "Reeleição e direitos políticos",
       "complementary": false,
-      "desc": "A reeleição boliviana e a OC-28/2021: limites constitucionais e interamericanos aos direitos políticos."
+      "desc": "A reeleição boliviana e a OC-28/2021: limites constitucionais e interamericanos aos direitos políticos.",
+      "reg": {"does": "Comparar os limites à reeleição na Bolívia e na interpretação interamericana.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-07.html",
       "label": "Aula 07",
       "title": "Estado de coisas inconstitucional",
       "complementary": false,
-      "desc": "A T-153 colombiana e a ADPF 347 tratam de violações prisionais que dependem de respostas de várias instituições."
+      "desc": "A T-153 colombiana e a ADPF 347 tratam de violações prisionais que dependem de respostas de várias instituições.",
+      "reg": {"does": "Identificar violações sistêmicas e avaliar o papel e os limites do ECI.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-08.html",
       "label": "Aula 08",
       "title": "T-025 e o litígio estrutural",
       "complementary": false,
-      "desc": "A T-025 e os autos de acompanhamento da resposta estatal ao deslocamento forçado na Colômbia."
+      "desc": "A T-025 e os autos de acompanhamento da resposta estatal ao deslocamento forçado na Colômbia.",
+      "reg": {"does": "Analisar ordens, monitoramento e participação no litígio da T-025.", "exam": "Atividade avaliativa (05/10)"}
     },
     {
       "href": "aula-09.html",
       "label": "Aula 09",
       "title": "Saúde e diálogo institucional",
       "complementary": false,
-      "desc": "STA 175, Temas 500, 6 e 1234 e Súmulas Vinculantes 60 e 61: decisões de saúde e coordenação institucional."
+      "desc": "STA 175, Temas 500, 6 e 1234 e Súmulas Vinculantes 60 e 61: decisões de saúde e coordenação institucional.",
+      "reg": {"does": "Aplicar os parâmetros dos Temas 6 e 1234 a pedidos de medicamentos no SUS.", "exam": "Atividade avaliativa (05/10)"}
     }
   ]
 }
