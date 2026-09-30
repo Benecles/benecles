@@ -25,21 +25,24 @@ Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally he
 5. **Atomic cycles, like clockwork**: find an issue → diagnose → iterate → document → ship. One issue = one branch = one PR = one merge (the app shows the merge card). Every merge adds a line to `ISSUES.md` (site repo) and a patch-note line. Engineers, not execs: no top-down audits, no auditing audits, no inference-heavy reviews. Cheap scripts are fine.
 6. **Bulk/content work goes to Codex in the app** via the baton, one issue per brief, staged on a branch; the CEO gates and merges. The CEO builds design-language components personally.
 
-## State (30/09 ~15:40)
-Shipped in the last 24 h: see `git log` in study-lab. Headlines: the D1 front template for all 7 courses (+ lesson descriptions, bibliographies), D4 modo avião phrases, D5 bookmarks + Meu caderno, home masthead removal, the figure-legibility repair (labels ≥11 px) across 6 courses, 35 Controle box figures redrawn, curation builds for Processo + MJ, D2 ius commune plates on 5 MJ lessons, C9 Latam bets and course intros.
-Measured 30/09 (words per lesson): Contratos 1.3k · Controle 1.7k · MJ 2.6k · Latam 3.5k · Const I 5.3k · Processo 5.8k · Delito 7.3k. Class registers differ per course: units 0–11, gists 0–100%, reading time on some, three different exam-division styles.
-The headless Codex machine (runner/watcher/LaunchAgent) is RETIRED. Codex runs in its app; the chairman tracks usage himself.
+## State (30/09 ~17:00)
+- **Out of iCloud (done):** the site is at `~/Developer/study-lab` (standalone clone on main); the workshop (work/, protocols/, agents/, Relay Baton.md, CEO.md) is here. Old paths are symlinks; all verified. Codex trusts both folders.
+- **Chairman is switching off iCloud Desktop & Documents** (Keep Downloaded → toggle off → move files home). Afterwards, re-verify the symlinks (`~/Desktop/Relay Baton.md`, `~/Documents/Protocols`, `~/Documents/agents`, the old `work/` and `study-lab-publish` paths) and run a site build.
+- **Shipped today via PR** (the app shows merge cards): study-lab#13, the hero/figure line animations finish drawing (dasharray 1200 → 3000; the site-wide scan finds 0 remaining); study-lab-private#1, the workshop move + this file. Cycles from here: branch → PR → merge.
+- Measured 30/09 (words per lesson): Contratos 1.3k · Controle 1.7k · MJ 2.6k · Latam 3.5k · Const I 5.3k · Processo 5.8k · Delito 7.3k. The class registers differ per course (units 0–11, gists 0–100%, three exam-division styles).
+- The headless Codex machine is retired; Codex runs in its app; the chairman tracks usage himself.
 
 ## In flight
-- Codex app: nothing launched yet under the new mandate. The remaining pre-mandate queue is in the baton entry "BACK TO THE APP + BATON" (Controle/Contratos curation builds, front drawings r3, Const I/Latam curation, plates-2, box detector, Delito wave 2). **Re-express each as atomic issues under the new mandate** rather than running them as mega-orders.
+- **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
+- **Tools port** (study-lab branch `tools-home`, pushed? NO, local only; a WIP commit): front.py + data + shells and gates moved into `tools/`. BLOCKER: the staging `d1/data` picked up the INTERRUPTED, unapproved front-drawings-r3 output (e.g. a Processo "railway" drawing), so regenerating from it changes live fronts. Fix: reconcile `tools/fronts/data/*.json` so that regenerating reproduces live `courses/*/index.html` byte-for-byte (except asset ?v= stamps) BEFORE merging; then delete the relay-design d1 copy from use.
+- Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
 
 ## Next up (in order)
-1. **Finish Phase 0 foundations**: (a) move the site-building tools that still live in `work/relay-design-2026-09-29/` (`d1/front.py` + `d1/data/`, `gates/jank.mjs`, `gates/gate.mjs`, `fr/check_text.py`, `d1/check_front.py`, `d2/*` plate tools) into the site repo's `tools/` with paths fixed, plus `tools/check_all`; (b) a one-time cheap diff per course (regenerate to a temp dir vs live): archive any generator that doesn't reproduce live (Delito's is known stale) and treat that course's live HTML as canonical; write the result as one line per course in `tools/SOURCES.md`; (c) give each doc a single job: protocols = why, specimen = look and signs, ISSUES.md = history, baton = live coordination only (archive old baton log entries to `Relay Baton — archive.md`).
-2. **Cycle 0: the class register + specimen page.** Anatomy (to refine under "signs over text"): unit header (mono label, sans title, one serif line of what the unit lets you do) → lesson rows (number · title · serif gist ≤2 lines · a drawn clock sign + minutes computed from word count · part ticks for multi-page lessons · "complementar" state) → exam FOLD between rows (a ruled line with a mono label; --conc only for the upcoming exam), no colored row bars → a missing gist shows as a quiet gap, never a different layout. Build once in `front.py`; ship to all 7 fronts as PR #1; ISSUES.md #1.
-3. **Content cycles for Codex** (one issue per brief): gists written as "what this lesson lets you do" for Controle (0/36) and Delito (0/20) → units for Const I and Latam → course decks rewritten as function.
-4. **Lesson-page anatomy + subpage standard** (the same shared-hand treatment for lesson pages: hero, chapter heads, bets, figures, quiz, endnav, the "Nesta unidade · I · II" strip).
-5. **Size outliers as cycles**: Delito S19 8.7k, Const I aula-03-república 7.2k, Contratos' thin lessons (deepen from sources).
-6. The pre-mandate figure work (Controle/Contratos curation, front drawings, plates, box detector), re-expressed as atomic issues.
+1. Finish the tools port (reconcile the data, see In flight) → PR → merge. Then `tools/check_all`.
+2. **Cycle 0: the class register + specimen page**, under the mandate (signs over text: a drawn clock sign + minutes computed from word count, part ticks, the exam fold, one row per lesson, units always, a missing gist as a quiet gap). Build it once in `tools/fronts/front.py`; ship to all 7 fronts as a PR; ISSUES.md #1.
+3. Write the crossed-labels Codex issue into the baton.
+4. Content cycles for Codex: gists as "what this lesson lets you do" (Controle 0/36, Delito 0/20) → units for Const I/Latam → course decks as function.
+5. The lesson-page anatomy + subpage standard; then size outliers; then the pre-mandate figure work as atomic issues.
 
 ## Open decisions for the chairman
 - (none pending as of this handoff)
