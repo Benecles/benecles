@@ -10,5 +10,45 @@
 {
 "before": " CUFRGS</title>\n<meta name=\"description\" content=\"Guia de estudo de Direito Latino-americano (DIR03057), UFRGS 2026/2: constitucionalismo, cortes, justiça de transição, soberania popular e litígio estrutural na América Latina.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=715b8de10b\">\n<style>\n.course-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(20px,4vw,56px);align-items:start}",
 "after": " CUFRGS</title>\n<meta name=\"description\" content=\"Guia de estudo de Direito Latino-americano (DIR03057), UFRGS 2026/2: constitucionalismo, cortes, justiça de transição, soberania popular e litígio estrutural na América Latina.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=c65e19c024\">\n<style>\n.course-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(20px,4vw,56px);align-items:start}"
+},
+{
+"before": "estudo</span><h2 id=\"front-lessons-title\">Aulas</h2></div><div class=\"front-unit-grid\"><article class=\"front-unit\"><span class=\"front-unit-label\">17/08</span><h3>Constitucionalismo e cortes</h3><p class=\"front-unit-desc\">Haiti, Cádiz e os três projetos fundacionais; o estudo de Engelmann e Bandeira e o mapa das cortes constitucionais.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-01.html\"><span>Aula 01 ",
+"after": "estudo</span><h2 id=\"front-lessons-title\">Aulas</h2></div><div class=\"front-unit-lessons front-flat-lessons\"><a class=\"front-lesson-row\" href=\"aula-01.html\"><span>Aula 01 "
+},
+{
+"before": "Cádiz e os três projetos fundacionais; o estudo de Engelmann e Bandeira e o mapa das cortes constitucionais.</span></span></a><a class=\"front-lesson-row\" href=\"aula-02.html\"><span>Aula",
+"after": "Cádiz e os projetos constitucionais fundacionais, lidos a partir da soberania popular e de quem participa da cidadania.</span></span></a><a class=\"front-lesson-row\" href=\"aula-02.html\"><span>Aula"
+},
+{
+"before": " Cortes e democratização</span></a></div></article><article class=\"front-unit\"><span class=\"front-unit-label\">24/08</span><h3>Justiça de transição</h3><p class=\"front-unit-desc\">ADPF 153 e Gomes Lund; a Corte Constitucional colombiana e o processo de paz.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-03.html\"><span>Aula 03 ",
+"after": " Cortes e democratização<span class=\"front-lesson-desc\">Estudo comparado da autonomia judicial e da democratização das cortes em cinco países latino-americanos.</span></span></a><a class=\"front-lesson-row\" href=\"aula-03.html\"><span>Aula 03 "
+},
+{
+"before": "153 e Gomes Lund; a Corte Constitucional colombiana e o processo de paz.</span></span></a><a class=\"front-lesson-row\" href=\"aula-04.html\"><span>Aula",
+"after": "153 e Gomes Lund: o alcance da Lei de Anistia de 1979 e os deveres de investigar graves violações.</span></span></a><a class=\"front-lesson-row\" href=\"aula-04.html\"><span>Aula"
+},
+{
+"before": " transição na Colômbia</span></a></div></article><article class=\"front-unit\"><span class=\"front-unit-label\">31/08</span><h3>Soberania popular e direitos</h3><p class=\"front-unit-desc\">Gelman contra a Lei de Caducidade; a reeleição boliviana e a OC-28.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-05.html\"><span>Aula 05 ",
+"after": " transição na Colômbia<span class=\"front-lesson-desc\">A Corte Constitucional colombiana examina reformas constitucionais ligadas ao processo de paz e seus limites jurídicos.</span></span></a><a class=\"front-lesson-row\" href=\"aula-05.html\"><span>Aula 05 "
+},
+{
+"before": "direitos<span class=\"front-lesson-desc\">Gelman contra a Lei de Caducidade; a reeleição boliviana e a OC-28.</span></span></a><a class=\"front-lesson-row\" href=\"aula-06.html\"><span>Aula",
+"after": "direitos<span class=\"front-lesson-desc\">Gelman contra Uruguai e a controvérsia sobre os efeitos do voto popular diante de graves violações de direitos humanos.</span></span></a><a class=\"front-lesson-row\" href=\"aula-06.html\"><span>Aula"
+},
+{
+"before": " e direitos políticos</span></a></div></article><article class=\"front-unit\"><span class=\"front-unit-label\">14/09</span><h3>Estado de coisas inconstitucional</h3><p class=\"front-unit-desc\">T-153 e as prisões colombianas; a ADPF 347 no STF.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-07.html\"><span>Aula 07 ",
+"after": " e direitos políticos<span class=\"front-lesson-desc\">A reeleição boliviana e a OC-28/2021: limites constitucionais e interamericanos aos direitos políticos.</span></span></a><a class=\"front-lesson-row\" href=\"aula-07.html\"><span>Aula 07 "
+},
+{
+"before": "de coisas inconstitucional<span class=\"front-lesson-desc\">T-153 e as prisões colombianas; a ADPF 347 no STF.</span></span></a></div></article><article class=\"front-unit\"><span class=\"front-unit-label\">21/09</span><h3>Litígio estrutural</h3><p class=\"front-unit-desc\">T-025, deslocamento forçado e os autos de acompanhamento.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-08.html\"><span>Aula 08 ",
+"after": "de coisas inconstitucional<span class=\"front-lesson-desc\">A T-153 colombiana e a ADPF 347 tratam de violações prisionais que dependem de respostas de várias instituições.</span></span></a><a class=\"front-lesson-row\" href=\"aula-08.html\"><span>Aula 08 "
+},
+{
+"before": "o litígio estrutural<span class=\"front-lesson-desc\">T-025, deslocamento forçado e os autos de acompanhamento.</span></span></a></div></article><article class=\"front-unit\"><span class=\"front-unit-label\">28/09</span><h3>Saúde e diálogo institucional</h3><p class=\"front-unit-desc\">STA 175, Temas 500, 6 e 1234 e as Súmulas Vinculantes 60 e 61.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-09.html\"><span>Aula 09 ",
+"after": "o litígio estrutural<span class=\"front-lesson-desc\">A T-025 e os autos de acompanhamento da resposta estatal ao deslocamento forçado na Colômbia.</span></span></a><a class=\"front-lesson-row\" href=\"aula-09.html\"><span>Aula 09 "
+},
+{
+"before": "e 1234 e as Súmulas Vinculantes 60 e 61.</span></span></a></div></article></div></section><section class=\"front-bibliografia\" id=\"bibliografia\"><h2>Bibliografia</h2>",
+"after": "e 1234 e Súmulas Vinculantes 60 e 61: decisões de saúde e coordenação institucional.</span></span></a></div></section><section class=\"front-bibliografia\" id=\"bibliografia\"><h2>Bibliografia</h2>"
 }
 ]
