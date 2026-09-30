@@ -39,7 +39,7 @@ def _head(old: str) -> str:
 
 def _topbar(old: str, data: dict[str, Any]) -> str:
     m = re.search(r"<nav\b[^>]*class=[\"'][^\"']*topbar[^\"']*[\"'][^>]*>.*?</nav>", old, re.I | re.S)
-    nav = m.group(0) if m else '<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← CUFRGS</a><span>' + _esc(data.get("code")) + ' · UFRGS · 2026/2</span></nav>'
+    nav = m.group(0) if m else '<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← Ordenações Filipinas</a><span>' + _esc(data.get("code")) + ' · UFRGS · 2026/2</span></nav>'
     items = data.get("info_items_html") or ""
     biblink = '<a class="bibliografia-link" href="#bibliografia">ver bibliografia completa →</a>' if data.get("bibliografia") else ""
     if items and "fontes-card" in nav:
@@ -105,7 +105,7 @@ def _exam(data: dict[str, Any], old: str) -> str:
     resume = ""
     # Preserve the saved-place behavior only on fronts that already offered it.
     saved_script = next((s for s in re.findall(r"<script\b[^>]*>.*?</script\s*>", old, re.I | re.S)
-                         if "Continuar:" in s or re.search(r"cufrgs-delito-last|cufrgs-course-last", s, re.I)), None)
+                         if "Continuar:" in s or re.search(r"ordenacoes-delito-last|ordenacoes-course-last", s, re.I)), None)
     if saved_script and not re.search(r'class=["\'][^"\']*\bresume\b', exam, re.I):
         resume = '<a class="resume front-resume" href="#" hidden>Continuar: <span></span></a>'
     if not exam and not review and not resume:

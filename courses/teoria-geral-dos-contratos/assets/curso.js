@@ -45,7 +45,7 @@
   upd();
   try {
     var t = document.title.split(' · ')[0];
-    if (!localStorage.getItem('cufrgs-no-resume')) localStorage.setItem('cufrgs-contratos-last', JSON.stringify({ n: m[1], t: t }));
+    if (!localStorage.getItem('ordenacoes-no-resume')) localStorage.setItem('ordenacoes-contratos-last', JSON.stringify({ n: m[1], t: t }));
   } catch (e) {}
 })();
 

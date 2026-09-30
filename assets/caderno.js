@@ -1,7 +1,7 @@
 /* Caderno local: imported values remain text and links are rebuilt from validated paths. */
 (function () {
   'use strict';
-  var KEY_BM = 'cufrgs-bm', PREFIX_HL = 'cufrgs-hl:', MAX_FILE = 2 * 1024 * 1024, MAX_ITEMS = 1500;
+  var KEY_BM = 'ordenacoes-bm', PREFIX_HL = 'ordenacoes-hl:', MAX_FILE = 2 * 1024 * 1024, MAX_ITEMS = 1500;
   var root = document.getElementById('caderno-app');
   if (!root) return;
   var list = root.querySelector('.entries'), empty = root.querySelector('.empty'), status = root.querySelector('[role="status"]');
@@ -123,7 +123,7 @@
     else list.hidden = true;
   }
   function getData() { return { version: 1, bookmarks: readBookmarks(), highlights: readHighlights() }; }
-  function canStore() { try { var s = localStorage; var k = '__cufrgs_test__'; s.setItem(k, '1'); s.removeItem(k); return true; } catch (_) { unavailable = true; return false; } }
+  function canStore() { try { var s = localStorage; var k = '__ordenacoes_test__'; s.setItem(k, '1'); s.removeItem(k); return true; } catch (_) { unavailable = true; return false; } }
   function saveBookmarks(items) { try { localStorage.setItem(KEY_BM, JSON.stringify(items)); return true; } catch (_) { unavailable = true; return false; } }
   function identityHighlight(h) { return h.id + '\u0000' + h.q; }
   function exportJSON() {
@@ -131,7 +131,7 @@
     var data = getData();
     if (unavailable) { say('Não foi possível ler as marcações guardadas neste navegador.'); return false; }
     var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }), url = URL.createObjectURL(blob), a = document.createElement('a');
-    a.href = url; a.download = 'meu-caderno-cufrgs.json'; a.click(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    a.href = url; a.download = 'meu-caderno-ordenacoes-filipinas.json'; a.click(); setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
     say('Arquivo JSON preparado para download.'); return data;
   }
   function validateImport(raw) {
@@ -204,8 +204,8 @@
   var theme = document.querySelector('.theme-toggle');
   if (theme) {
     function syncTheme() { var dark = document.documentElement.dataset.theme === 'dark'; theme.setAttribute('aria-pressed', String(dark)); }
-    syncTheme(); theme.addEventListener('click', function () { var dark = document.documentElement.dataset.theme !== 'dark'; if (dark) document.documentElement.dataset.theme = 'dark'; else delete document.documentElement.dataset.theme; try { localStorage.setItem('cufrgs-theme', dark ? 'dark' : 'light'); } catch (_) {} syncTheme(); });
+    syncTheme(); theme.addEventListener('click', function () { var dark = document.documentElement.dataset.theme !== 'dark'; if (dark) document.documentElement.dataset.theme = 'dark'; else delete document.documentElement.dataset.theme; try { localStorage.setItem('ordenacoes-theme', dark ? 'dark' : 'light'); } catch (_) {} syncTheme(); });
   }
-  window.CUFRGSCaderno = { exportData: exportJSON, importData: function (raw) { try { var added = mergeImport(validateImport(raw)); render(); say(added ? added + ' marcação(ões) adicionada(s); conflitos mantidos como estavam.' : 'O arquivo não acrescentou marcações novas.'); return added; } catch (e) { say(e.message || 'Arquivo inválido.'); return false; } }, normalizePath: normalizePath };
+  window.OrdenacoesCaderno = { exportData: exportJSON, importData: function (raw) { try { var added = mergeImport(validateImport(raw)); render(); say(added ? added + ' marcação(ões) adicionada(s); conflitos mantidos como estavam.' : 'O arquivo não acrescentou marcações novas.'); return added; } catch (e) { say(e.message || 'Arquivo inválido.'); return false; } }, normalizePath: normalizePath };
   render();
 })();

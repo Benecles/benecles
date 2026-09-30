@@ -5,7 +5,7 @@
   if (!path || /\/index\.html$/i.test(location.pathname) || !/^\/courses\//.test(path)) return;
   if (!/\.html$/i.test(path) || !/^\/courses\/[a-z0-9-]+\/(?:aula-[a-z0-9][a-z0-9-]*|unidade-[a-z0-9][a-z0-9-]*|suplemento-[a-z0-9][a-z0-9-]*|revisao(?:-[a-z0-9][a-z0-9-]*)?)\.html$/i.test(path)) return;
 
-  var KEY = 'cufrgs-bm';
+  var KEY = 'ordenacoes-bm';
   var BLOCK = 'p,li,td,th,blockquote,figcaption,dd,dt,h2,h3,h4';
   var SKIP = 'nav,button,select,input,textarea,summary,svg,script,style,label,[contenteditable],.topbar,.label,.kicker,.titleblock,.endnav,.course-nav,.stage,.deck-wrap,.deck-tools,.art-tools,.art-key,.heading-anchor,.chapter-nav,.chapter-pagination,.skip-link,.site-return,.num,.tag,.cu-pop,.cu-hlbar';
   var pageHeadings = Array.prototype.slice.call(document.querySelectorAll('h2'));
@@ -147,7 +147,7 @@
     if (!match) return;
     var id; try { id = decodeURIComponent(match[1]); } catch (e) { return; }
     if (!id || id.length > 160) return;
-    var highlightKey = 'cufrgs-hl:' + path;
+    var highlightKey = 'ordenacoes-hl:' + path;
     var highlight = null;
     try {
       var raw = localStorage.getItem(highlightKey);
