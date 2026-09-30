@@ -1,0 +1,63 @@
+{
+ "key": "12",
+ "date": "Semana 14",
+ "pages": [
+  {
+   "file": "aula-12.html",
+   "h1a": "Direitos humanos e",
+   "h1b": "direitos fundamentais",
+   "title": "Direitos humanos, direitos fundamentais e dimensões",
+   "desc": "Direitos humanos e fundamentais, a história até as declarações de 1776 e 1789, as três dimensões, propostas de outras dimensões e os limites do modelo.",
+   "deck": "As dimensões são cumulativas e funcionam como mapa didático, não como lei de sucessão histórica. A lição mostra <strong class=\"dif\">o que cada dimensão acrescenta</strong> e por que é <strong class=\"conc\">erro afirmar que uma dimensão substitui a anterior</strong>.",
+   "bet": {
+    "after_chapter": 3,
+    "question": "Uma questão pede que se classifique o direito de greve e se explique a relação entre as dimensões. Um candidato escreve que a greve é de segunda dimensão porque exige prestação do Estado, e que a terceira dimensão veio substituir as anteriores. Qual leitura, segundo Sarlet, está correta?",
+    "options": [
+     [
+      "Segunda dimensão, porque o Estado deve prestar; e cada dimensão substitui a anterior.",
+      ""
+     ],
+     [
+      "Primeira dimensão, porque exige apenas abstenção do Estado.",
+      ""
+     ],
+     [
+      "Segunda dimensão, como liberdade social de ação coletiva, e as dimensões são cumulativas e complementares.",
+      "*"
+     ],
+     [
+      "Terceira dimensão, porque a greve tem titularidade coletiva.",
+      ""
+     ]
+    ],
+    "reveal": "<p>A segunda dimensão reúne direitos a prestações, como saúde e educação, e liberdades sociais, como sindicalização e greve. Seu traço predominante é responder à desigualdade e buscar condições materiais, não uma única forma de atuação pública. Sarlet prefere dimensões a gerações justamente porque o reconhecimento é cumulativo: uma Constituição que assegura direitos sociais continua a proteger liberdade, propriedade e participação política.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Como se distinguem direitos humanos e direitos fundamentais?",
+   "Direitos fundamentais são os positivados na Constituição de um Estado, num espaço e momento histórico. Direitos humanos são as posições reconhecidas no plano internacional, com pretensão de validade universal. A distinção depende da esfera de positivação, não de quem é protegido, e um mesmo direito pode estar nos dois planos."
+  ],
+  [
+   "Como Klaus Stern organiza a história dos direitos fundamentais?",
+   "Em três momentos: pré-história até o século XVI, fase intermediária de elaboração jusnaturalista e afirmação dos direitos naturais, e constitucionalização, iniciada em 1776 com as declarações dos novos Estados americanos."
+  ],
+  [
+   "Que contribuição e que limite tem a Magna Carta de 1215?",
+   "Foi pactuada pelo rei João Sem-Terra com bispos e barões, e seus privilégios eram estamentais. Ainda assim, a proteção contra prisão arbitrária, a liberdade de locomoção, o devido processo e a propriedade serviram de referência a desenvolvimentos posteriores."
+  ],
+  [
+   "O que acrescenta cada uma das três dimensões?",
+   "A primeira conteve o poder sobre a liberdade individual, com direitos de defesa. A segunda tornou possível o gozo material dos direitos, com saúde, educação, trabalho, sindicalização e greve. A terceira protege bens compartilhados, como paz, meio ambiente e patrimônio cultural, com titularidade coletiva ou difusa."
+  ],
+  [
+   "Por que Sarlet prefere dimensões a gerações, e o que pensa das propostas de quarta a sexta dimensão?",
+   "Gerações sugere que uma etapa substitui a anterior, e o reconhecimento é cumulativo. Sarlet registra as propostas (Bonavides, na quarta; Oliveira Júnior, Wolkmer e Sampaio, na quinta; Fachin e Silva, na sexta) e observa que muitas reivindicações se reconduzem a vida, liberdade, igualdade e dignidade. O teste é se há transformação qualitativa, e não apenas novo objeto."
+  ],
+  [
+   "O que a teoria das dimensões não prova sobre a história de um país?",
+   "Não prevê uma sequência universal. A Declaração Universal de 1948 já reuniu direitos civis e sociais, e os pactos de 1966 foram adotados no mesmo ano. Na sequência brasileira descrita por José Murilo de Carvalho, os direitos sociais vieram antes dos políticos, o que não invalida a distinção de conteúdos: explicar as causas exige evidência histórica."
+  ]
+ ]
+}

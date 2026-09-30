@@ -1,0 +1,105 @@
+from common import *
+
+hero = ('<g class="pop" style="--d:.1s"><rect x="40" y="62" width="230" height="46" style="fill:var(--paper);stroke:var(--ink);stroke-width:2"/>'
+        '<text x="155" y="90" text-anchor="middle" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--ink)">LEI 6.683/1979</text></g>'
+        '<path class="draw" d="M270 85C420 85 460 40 640 40" style="fill:none;stroke:var(--dif);stroke-width:3"/>'
+        '<path class="draw" d="M270 85C420 85 460 130 640 130" style="fill:none;stroke:var(--conc);stroke-width:3;--d:.5s"/>'
+        '<g class="pop" style="--d:1s;font:12px var(--mono);letter-spacing:1px">'
+        '<text x="652" y="36" style="fill:var(--dif)">STF · ADPF 153 · ABRIL DE 2010</text>'
+        '<text x="652" y="54" style="fill:var(--ink-2)">a anistia alcança os agentes do Estado</text>'
+        '<text x="652" y="126" style="fill:var(--conc)">CORTE IDH · GOMES LUND · NOVEMBRO DE 2010</text>'
+        '<text x="652" y="144" style="fill:var(--ink-2)">a anistia não impede investigar e punir</text></g>')
+
+# ---- Fig 1: two readings of "crimes conexos"
+def readings(k):
+    o = T(40, 60, 'O QUE SÃO "CRIMES CONEXOS"? (ART. 1º, § 1º)', 't-small', style='letter-spacing:.1em')
+    o += G(box(40, 90, 230, 90, 'OPOSIÇÃO', 'crimes políticos e conexos', 'dif', ctx='rd'), 'pop', d=.1)
+    o += G(box(300, 90, 260, 90, 'AGENTES DO ESTADO', 'tortura e desaparecimentos', 'conc', ctx='rd'), 'pop', d=.2)
+    if k == 0:
+        o += G(R(24, 70, 262, 130, 'f-paper ink', rx=24, style='fill:none;stroke:var(--dif);stroke-width:3;stroke-dasharray:6 5'), 'fade', d=.5)
+        o += G(T(155, 232, 'dentro da anistia', 't-small tc-dif', anchor='middle') + T(430, 232, 'fora: crimes comuns', 't-small tc-conc', anchor='middle'), 'fade', d=.7)
+        o += G(box(40, 300, 520, 110, 'LEITURA DA OAB', 'conexão penal exige unidade de desígnio; não há', 'dif', ctx='rd', sub2='conexão entre crime de opinião e tortura'), 'pop', d=.9)
+        o += G(box(40, 430, 520, 110, 'PEDIDO', 'interpretação conforme para excluir os agentes;', 'grey', ctx='rd', sub2='subsidiariamente, não recepção do § 1º'), 'pop', d=1.1)
+    else:
+        o += G(R(24, 70, 552, 130, 'f-paper ink', rx=24, style='fill:none;stroke:var(--ink);stroke-width:3;stroke-dasharray:6 5'), 'fade', d=.5)
+        o += G(T(300, 232, 'as duas colunas dentro da anistia: "bilateral"', 't-small', anchor='middle'), 'fade', d=.7)
+        o += G(box(40, 300, 520, 110, 'LEITURA DA MAIORIA (EROS GRAU)', 'a lei estendeu a conexão aos crimes dos agentes', 'grey', ctx='rd', sub2='do Estado contra quem lutava contra o regime'), 'pop', d=.9)
+        o += G(box(40, 430, 520, 110, 'RESULTADO', 'ação improcedente: a anistia de 1979 vale', 'grey', ctx='rd', sub2='para opositores e para agentes da repressão'), 'pop', d=1.1)
+    return o
+
+# ---- Fig 2: the votes
+MAJ = ['Eros Grau (relator)', 'Cármen Lúcia', 'Gilmar Mendes', 'Ellen Gracie', 'Celso de Mello', 'Cezar Peluso', 'Marco Aurélio']
+MIN = ['Ricardo Lewandowski', 'Ayres Britto']
+def votes():
+    o = T(40, 60, 'ADPF 153 · 28 E 29 DE ABRIL DE 2010', 't-small', style='letter-spacing:.1em')
+    o += G(T(40, 104, 'IMPROCEDÊNCIA · 7', 't-mid tc-dif'), 'pop', d=.1)
+    for i, n in enumerate(MAJ):
+        o += G(C(52, 140 + i * 42, 11, 'f-dif') + T(76, 145 + i * 42, n, 't-small'), 'pop', d=.2 + i * .08)
+    o += G(T(330, 104, 'PROCEDÊNCIA PARCIAL · 2', 't-mid tc-conc'), 'pop', d=.8)
+    for i, n in enumerate(MIN):
+        o += G(C(342, 140 + i * 42, 11, 'f-conc') + T(366, 145 + i * 42, n, 't-small'), 'pop', d=.9 + i * .1)
+    o += G(T(330, 260, 'não votaram:', 't-small') + T(330, 280, 'Joaquim Barbosa (licenciado)', 't-small') + T(330, 300, 'Dias Toffoli (impedido)', 't-small'), 'fade', d=1.1)
+    o += G(box(40, 470, 520, 80, 'ANISTIA RECEBIDA PELA CF/88', 'e estendida aos agentes do Estado', 'dif', ctx='vt'), 'pop', d=1.3)
+    return o
+
+b = ''
+b += chapter('01', 'c1', 'A lei, o texto e a pergunta', 'Tudo gira em torno de uma palavra do art. 1º, § 1º, da Lei de Anistia: "conexos".', 'dif')
+b += longform(
+    '<p>A Lei 6.683, de 28 de agosto de 1979, concedeu anistia a quem, entre 2 de setembro de 1961 e 15 de agosto de 1979, cometeu crimes políticos "ou conexo com estes". Foi aprovada ainda sob o regime militar, como parte da abertura "lenta, gradual e segura", e respondeu a uma campanha popular por anistia ampla, geral e irrestrita. O ponto que chegou ao STF três décadas depois está no parágrafo primeiro:</p>',
+    lex('Lei 6.683/1979, art. 1º, § 1º', 'Consideram-se conexos, para efeito deste artigo, os crimes de qualquer natureza relacionados com crimes políticos ou praticados por motivação política.'),
+    '<p>A redação não diz quem cometeu os crimes conexos. Se "conexos" significa apenas os crimes comuns praticados pela oposição junto com seus crimes políticos (um assalto para financiar a luta armada, por exemplo), a anistia não alcança quem torturou ou matou presos em nome do Estado. Se significa qualquer crime relacionado ao conflito político, alcança. O § 2º completa o quadro: ficaram fora da anistia os <em>já condenados</em> por terrorismo, assalto, sequestro e atentado pessoal, crimes que o regime imputava à oposição armada. É a esse recorte que Eros Grau se refere quando diz que a anistia só não foi irrestrita porque não abrangeu os já condenados.</p>',
+    '<p>A pergunta jurídica, portanto, é precisa: os agentes públicos que cometeram crimes comuns e graves violações de direitos humanos contra opositores (homicídio, desaparecimento forçado, tortura, estupro) estão ou não cobertos pela anistia de 1979?</p>')
+b += bet('A anistia de 1979 alcança os agentes do Estado que torturaram, mataram ou fizeram desaparecer opositores?', [
+    ('Sim: a lei foi um acordo bilateral, e o Judiciário não pode reescrevê-la.', '*STF, maioria: Eros Grau e mais seis'),
+    ('Não automaticamente: o juiz deve examinar caso a caso se o crime tinha conexão política.', 'Lewandowski, vencido'),
+    ('Não para os crimes hediondos e equiparados: tortura não é crime político.', 'Ayres Britto, vencido'),
+], '<p>O STF ficou com a primeira resposta, por 7 × 2, em abril de 2010. As outras duas são os votos vencidos. A leitura abaixo mostra por que cada lado chegou aonde chegou.</p>')
+b += scrolly('Duas leituras de "conexos"', [('p-rd0', readings(0), 'OAB'), ('p-rd1', readings(1), 'Maioria')], [
+    S('p-rd0', 'A petição inicial', 'A tese da OAB', '<p>O Conselho Federal da OAB ajuizou a ADPF contra o § 1º do art. 1º. Pediu que o STF desse <strong>interpretação conforme</strong> à Constituição e declarasse que a anistia aos crimes políticos e conexos não se estende aos crimes comuns praticados por agentes da repressão contra opositores. Se o Tribunal não aceitasse, pediu que declarasse o dispositivo <strong>não recebido</strong> pela Constituição de 1988.</p><p>O argumento principal é técnico. Conexão penal pressupõe um vínculo entre os crimes (unidade de desígnio, relação de meio e fim). Não há como conectar o crime de opinião de um dissidente com a tortura que ele sofreu na prisão. A conexão prevista nas leis processuais serve para reunir processos no mesmo juízo, não para estender um benefício. A inicial afirma ainda que a redação foi propositadamente obscura, para incluir os agentes do regime de forma sub-reptícia, e que a leitura ampla viola a dignidade humana, o princípio republicano e o direito à verdade.</p>', 'dif'),
+    S('p-rd1', 'O voto do relator', 'Eros Grau: uma lei-medida e um acordo bilateral', '<p>Para o relator, a Lei 6.683 é uma <strong>lei-medida</strong>: não uma regra geral e abstrata para o futuro, mas a decisão política concreta de um momento, o da transição conciliada de 1979. O intérprete deve lê-la no contexto em que foi editada. Nesse contexto, a anistia foi <strong>bilateral</strong>: estendeu a conexão aos crimes praticados pelos agentes do Estado contra quem lutava contra o regime, e só não foi irrestrita porque excluiu os já condenados.</p><p>Daí a frase que resume o voto: nem mesmo o STF está autorizado a reescrever leis de anistia. Se a sociedade quiser rever o acordo de 1979, a via é o Legislativo, não uma nova redação judicial. Celso de Mello somou um argumento penal: os efeitos de uma anistia se esgotam no momento em que ela entra em vigor, e reinterpretá-la para punir quem ela beneficiou violaria a irretroatividade da lei penal mais grave. Ellen Gracie falou em "concertação" política, da qual a anistia foi uma etapa, e chamou de política, e não jurídica, a tese de que esse acordo não existiu.</p>'),
+])
+b += chapter('02', 'c2', 'O placar e as duas divergências', 'Sete ministros julgaram a ação improcedente; dois ficaram vencidos, cada um por um caminho.')
+b += scrolly('O julgamento', [('p-vt', votes(), 'Votos')], [
+    S('p-vt', 'Resultado', '7 × 2 pela improcedência', '<p>Votaram com o relator Cármen Lúcia, Gilmar Mendes, Ellen Gracie, Celso de Mello, Cezar Peluso (presidente) e Marco Aurélio. Joaquim Barbosa estava licenciado e Dias Toffoli, impedido. A consequência foi manter a leitura de que a anistia de 1979 cobriu, de forma bilateral, os opositores e os agentes encarregados da repressão.</p>', 'dif'),
+])
+b += longform(
+    '<h3>Lewandowski: nenhuma anistia automática, análise caso a caso</h3>',
+    '<p>Ricardo Lewandowski julgou a ação procedente em parte. Deu interpretação conforme ao § 1º para afirmar que os agentes do Estado <em>não estão automaticamente</em> abrangidos pela anistia. Antes de admitir a persecução penal, o juiz deve fazer uma abordagem caso a caso (<em>case by case approach</em>): verificar se o crime do agente guarda relação real com crime político ou motivação política, ou se foi um crime comum cometido sob a proteção do aparato estatal.</p>',
+    '<h3>Ayres Britto: tortura não é crime político</h3>',
+    '<p>Ayres Britto também julgou procedente em parte, com um recorte diferente. Deu interpretação conforme para excluir da anistia os crimes do art. 5º, XLIII, da Constituição, que ele resumiu como “os crimes hediondos e os que lhe sejam equiparados: homicídio, tortura e estupro, especialmente”. Vale separar as camadas: o inciso XLIII nomeia a tortura, o tráfico e o terrorismo e remete à lei a definição dos hediondos; homicídio qualificado e estupro são hediondos por força da Lei 8.072/1990, não do texto constitucional.</p><p>O argumento de Britto tem duas partes. A primeira é de método: o histórico das tratativas de 1979 só serve para tirar dúvida que sobre depois da leitura literal, lógica, teleológica e sistemática, e essa leitura, para ele, não mostra com clareza a intenção de anistiar crimes hediondos. A segunda é conceitual: crime político é o ataque à estrutura jurídica e à ordem político-social do Estado; o torturador não comete crime político nem crime de opinião, e por isso não entra na conexão.</p>',
+    '<p>As duas divergências não negam que a lei possa ter sido um acordo político. Negam que a palavra "conexos" tenha força para incluir, por presunção, as graves violações praticadas pelos agentes do regime.</p>')
+b += wide(table(['', 'Posição', 'Fundamento'], [
+    ['Eros Grau (relator)', 'Improcedência', 'Lei-medida de um acordo político; anistia bilateral; o Judiciário não reescreve leis de anistia.'],
+    ['Celso de Mello', 'Improcedência', 'Os efeitos da anistia se esgotaram em 1979; rever seria aplicar retroativamente lei penal mais grave.'],
+    ['Ellen Gracie', 'Improcedência', 'A anistia foi etapa de uma "concertação" política que viabilizou a transição.'],
+    ['Ricardo Lewandowski', 'Procedência parcial', 'Agentes do Estado não estão automaticamente anistiados; o juiz decide caso a caso.'],
+    ['Ayres Britto', 'Procedência parcial', 'Interpretação conforme: fora da anistia os crimes do art. 5º, XLIII; tortura não é crime político.'],
+], hcls=['', '', '']))
+
+b += chapter('03', 'c3', 'Sete meses depois, a Corte Interamericana', 'Em Gomes Lund, a Corte IDH julgou a mesma lei por outro parâmetro, a Convenção Americana.', 'dif')
+b += longform(
+    '<p>Em 24 de novembro de 2010, a Corte Interamericana julgou o caso <em>Gomes Lund e outros ("Guerrilha do Araguaia") vs. Brasil</em>, sobre o desaparecimento forçado de integrantes da guerrilha durante as operações do Exército no início dos anos 1970. A Corte declarou que as disposições da Lei de Anistia que impedem a investigação e a punição de graves violações de direitos humanos são incompatíveis com a Convenção Americana e carecem de efeitos jurídicos, e determinou que o Brasil investigasse e, se fosse o caso, punisse os responsáveis.</p>',
+    '<p>A divergência entre as duas cortes não está nos fatos, mas no parâmetro. O STF examinou a lei de 1979 à luz da Constituição de 1988 e de princípios penais internos (legalidade, irretroatividade), e tratou a anistia como um pacto político da transição. A Corte IDH examinou a mesma lei à luz das obrigações assumidas pelo Estado na Convenção (arts. 1.1, 2, 8 e 25): investigar, processar e punir graves violações, e garantir às vítimas acesso à justiça e à verdade. Para ela, a origem política ou o caráter "bilateral" da anistia não importam; importa o efeito de deixar graves violações sem investigação. É o mesmo raciocínio que a Corte aplicaria, três meses depois, à lei uruguaia no caso Gelman (Aula 05).</p>',
+    '<p>O resultado é um impasse que dura até hoje: a decisão do STF, em controle concentrado, tem eficácia geral e efeito vinculante no plano interno; a sentença da Corte IDH obriga o Estado brasileiro no plano internacional. Qual das duas prevalece é, precisamente, a pergunta da última aula do programa (23/11): quem tem a última palavra.</p>')
+
+b += chapter('04', 'c4', 'O eixo da aula', 'A justiça de transição envolve obrigações internacionais de direitos humanos?')
+b += longform(
+    eixo('A justiça de transição envolve obrigações internacionais de direitos humanos?'),
+    '<p>O caso brasileiro permite responder mostrando as duas lógicas em choque. Para a maioria do STF, a transição foi um arranjo político interno, fechado em 1979, que o Judiciário deve respeitar: a pergunta sobre obrigações internacionais praticamente não aparece como fundamento. Para a Corte IDH, a resposta é sim. Em Gomes Lund ela afirmou que a incompatibilidade vem do conteúdo da lei, e não da sua origem: não importa se foi autoanistia ou “acordo político”, o que conta é que ela deixa sem investigação graves violações (§175). E disse expressamente que o STF, na ADPF 153, confirmou a lei sem exercer o controle de convencionalidade (§177).</p>',
+    '<p>A comparação que a professora propõe com a Colômbia (Aula 04) completa o quadro. Lá, a Corte Constitucional aceitou reformar a própria Constituição para permitir seleção e priorização de casos, mas sempre condicionando os benefícios à verdade, à reparação e à punição dos máximos responsáveis. Em sua síntese, o STF adotou uma postura de <strong>autocontenção</strong> (validou o pacto e o manteve intocado), enquanto a Corte colombiana teve <strong>intervenção ativa</strong> (validou a transição, mas impôs limites).</p>')
+
+b += chapter('05', 'c5', 'Teste', 'Responda antes de abrir.')
+b += quiz([
+    ('Qual era exatamente o objeto da ADPF 153?', 'O § 1º do art. 1º da Lei 6.683/1979, que define os crimes "conexos" aos políticos. A OAB pediu interpretação conforme para excluir da anistia os crimes comuns praticados por agentes da repressão contra opositores e, subsidiariamente, a declaração de não recepção.'),
+    ('O que Eros Grau quer dizer ao chamar a Lei de Anistia de "lei-medida"?', 'Que ela não é uma norma geral e abstrata para o futuro, mas a decisão política concreta de um momento histórico, a transição de 1979. Por isso deve ser lida no seu contexto, e o Judiciário não pode reescrevê-la.'),
+    ('Em que as divergências de Lewandowski e Ayres Britto se diferenciam?', 'Lewandowski nega a anistia automática aos agentes do Estado e exige análise caso a caso. Ayres Britto dá interpretação conforme para excluir os crimes do art. 5º, XLIII, que ele lê como os hediondos e equiparados (ele cita homicídio, tortura e estupro; homicídio qualificado e estupro são hediondos pela Lei 8.072/1990, não pela Constituição), porque o torturador não comete crime político.'),
+    ('Qual foi o placar e quem não votou?', '7 × 2 pela improcedência (vencidos Lewandowski e Ayres Britto). Joaquim Barbosa estava licenciado e Dias Toffoli, impedido.'),
+    ('Por que STF e Corte IDH chegaram a conclusões opostas sobre a mesma lei?', 'Porque usaram parâmetros diferentes. O STF leu a lei pela Constituição e por princípios penais internos, como um pacto político da transição. A Corte IDH a leu pelas obrigações convencionais de investigar e punir graves violações (arts. 1.1, 2, 8 e 25), para as quais a origem ou o caráter bilateral da anistia são irrelevantes.'),
+])
+
+lesson('03', 'aula-03.html', 'Justiça de transição no Brasil: a ADPF 153',
+       'ADPF 153 e a Lei de Anistia: os crimes conexos, o voto de Eros Grau, as divergências de Lewandowski e Ayres Britto, e o contraste com Gomes Lund na Corte IDH.',
+       'Justiça de transição', 'no Brasil',
+       'Em 2010, o STF decidiu que a anistia de 1979 alcança os agentes da repressão. Sete meses depois, a Corte Interamericana disse que ela <strong class="conc">não pode impedir</strong> a investigação de graves violações. A mesma lei, <strong class="dif">dois parâmetros</strong>.',
+       hero, [('Aula', '24/08 · Justiça de transição'), ('Leitura', '≈ 18 min'), ('Antes', 'Aula 02 · Cortes e democratização'), ('Depois', 'Aula 04 · Colômbia')], b,
+       ('aula-02.html', '← Aula 02', 'Cortes e democratização'), ('aula-04.html', 'Aula 04 →', 'Justiça de transição na Colômbia'), '24/08')

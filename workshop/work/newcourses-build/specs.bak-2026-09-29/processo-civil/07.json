@@ -1,0 +1,95 @@
+{
+ "key": "07",
+ "date": "16/09",
+ "pages": [
+  {
+   "file": "aula-07.html",
+   "h1a": "Prazos processuais",
+   "h1b": "e tempo do processo",
+   "title": "Prazos processuais e tempo do processo",
+   "desc": "Como se conta o prazo em dias úteis, o marco inicial de cada comunicação, quando o prazo dobra ou suspende e o que exige a duração razoável do processo.",
+   "deck": "O prazo só começa a correr depois de um marco que varia com o modo de comunicação, e disponibilização no Diário da Justiça não é publicação. Errar esse ponto <strong class=\"conc\">antecipa o prazo em um dia útil</strong> e custa o recurso.",
+   "bet": {
+    "after_chapter": 3,
+    "question": "Uma sentença é disponibilizada no Diário da Justiça eletrônico na quinta-feira, 4 de setembro. O prazo é de cinco dias úteis e nenhum dia do período é feriado. Qual o último dia para praticar o ato?",
+    "options": [
+     [
+      "Terça-feira, 9 de setembro, contando cinco dias corridos a partir da disponibilização.",
+      ""
+     ],
+     [
+      "Quinta-feira, 11 de setembro, contando o primeiro dia útil depois da própria disponibilização.",
+      ""
+     ],
+     [
+      "Sexta-feira, 12 de setembro: a publicação é na sexta, 5, e a contagem começa na segunda, 8.",
+      "*"
+     ],
+     [
+      "Segunda-feira, 15 de setembro, porque o prazo só começa quando a parte lê a intimação.",
+      ""
+     ]
+    ],
+    "reveal": "<p>O art. 224, § 2º, considera data de publicação o primeiro dia útil seguinte ao da disponibilização, e o art. 231, VII, faz dela o dia do começo do prazo. Como o dia do começo não entra na conta (art. 224, § 3º), o primeiro dia contado é a segunda, 8, e cinco dias úteis terminam na sexta, 12.</p><p>Quem conta a partir da própria disponibilização adianta o prazo em um dia útil e chega à quinta, 11.</p>"
+   }
+  },
+  {
+   "file": "aula-07-preclusao.html",
+   "h1a": "Preclusão",
+   "h1b": "e suas espécies",
+   "title": "Preclusão: espécies, natureza e efeitos",
+   "desc": "As quatro espécies de preclusão (temporal, lógica, consumativa e punitiva), o debate sobre ser sanção, a diferença para decadência e prescrição e o art. 507.",
+   "deck": "Preclusão é a perda de um poder processual, e o fato que a produz muda de espécie para espécie. Contestar no quinto dia e querer completar a peça no décimo é caso de <strong class=\"conc\">preclusão consumativa</strong>, não de prazo perdido.",
+   "bet": {
+    "after_chapter": 5,
+    "question": "O réu apresenta a contestação no quinto dia de um prazo de quinze, sem um argumento importante. No décimo segundo dia, ainda dentro do prazo, quer juntar uma peça complementar com esse argumento. O juiz deve aceitar?",
+    "options": [
+     [
+      "Sim, porque o prazo ainda não terminou e a preclusão temporal só ocorre depois do vencimento.",
+      ""
+     ],
+     [
+      "Sim, desde que o réu prove justa causa para não ter incluído o argumento antes.",
+      ""
+     ],
+     [
+      "Não, porque o réu praticou ato incompatível com a complementação, o que configura preclusão lógica.",
+      ""
+     ],
+     [
+      "Não, porque o réu já exerceu o poder de se defender, e o exercício, bem ou mal feito, o consumou.",
+      "*"
+     ]
+    ],
+    "reveal": "<p>A preclusão consumativa é a perda do poder porque ele já foi exercido, pouco importa se bem ou mal. Praticado o ato, não se pode corrigi-lo, melhorá-lo ou repeti-lo, e os dez dias restantes não reabrem a oportunidade (art. 200, que dá efeito imediato aos atos das partes).</p><p>Não é preclusão temporal, porque o prazo não se esgotou, nem lógica, porque não há ato incompatível. A justa causa do art. 223 serve a quem perdeu o prazo, e aqui o prazo foi cumprido.</p>"
+   },
+   "start": "Preclusão"
+  }
+ ],
+ "quiz": [
+  [
+   "Como se conta um prazo em dias, e qual o dia do começo quando a comunicação é pelo Diário da Justiça?",
+   "Só dias úteis, excluindo o dia do começo e incluindo o do vencimento (arts. 219 e 224). No Diário, a disponibilização gera publicação no primeiro dia útil seguinte (art. 224, § 2º), o dia do começo é a publicação (art. 231, VII) e a contagem inicia no dia útil depois dela. Por correio, o marco é a juntada do AR; por oficial, a juntada do mandado cumprido; por edital, o dia útil seguinte ao fim da dilação."
+  ],
+  [
+   "Como o prazo é contado quando há vários réus ou advogados de escritórios diferentes?",
+   "Para contestar, com vários réus, o dia do começo é a última das datas dos incisos I a VI do art. 231 (§ 1º); para outros atos, o prazo de cada intimado corre individualmente. O art. 229 dobra o prazo dos litisconsortes com escritórios distintos, mas não em autos eletrônicos e não quando, havendo só dois réus, um deles contesta sozinho."
+  ],
+  [
+   "Qual a diferença entre suspensão do prazo e interrupção pelos embargos de declaração?",
+   "A suspensão (arts. 220 e 221, inclusive de 20 de dezembro a 20 de janeiro) devolve apenas o tempo que faltava. Os embargos de declaração interrompem o prazo de outro recurso (art. 1.026), que recomeça por inteiro depois da intimação da decisão dos embargos. Na questão de 2025, a apelação de quinze dias corre de 16 de setembro a 6 de outubro."
+  ],
+  [
+   "O que Marinoni entende por duração razoável do processo?",
+   "O art. 5º, LXXVIII, da Constituição obriga Legislativo, administração judiciária e juiz a promover a tutela tempestiva, mas razoável não significa rápido: o tempo é inerente ao processo e ao contraditório. O que se elimina é o tempo patológico, medido pela complexidade da causa, pelo comportamento das partes, pelo comportamento do juiz e pela importância do direito para o litigante. A violação gera direito à reparação pelo Estado."
+  ],
+  [
+   "Quais as quatro espécies de preclusão para Didier, e o que produz cada uma?",
+   "Temporal, pela inércia durante o prazo (art. 223, com a saída da justa causa); lógica, pelo ato anterior incompatível com o poder (venire contra factum proprium); consumativa, porque o poder já foi exercido, bem ou mal; e punitiva, pela perda de poder como sanção a ato ilícito, como o advogado que não devolve os autos e perde a vista fora de cartório (art. 234, § 2º)."
+  ],
+  [
+   "Preclusão é sanção? Ela vale para o juiz e o que diz o art. 507?",
+   "A maioria (Giannico, Leonel, Grinover, Cintra e Dinamarco) responde que não, pois decorre de ato lícito e se liga ao ônus; João Batista Lopes vê penalidade sui generis; Didier admite a preclusão-sanção só na espécie punitiva. Para o juiz, valem sem discussão a lógica e a consumativa (art. 494); a temporal depende de os prazos do juiz serem impróprios, o que Didier critica citando o art. 235. O art. 507 veda à parte discutir questões já decididas e preclusas."
+  ]
+ ]
+}

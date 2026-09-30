@@ -11,26 +11,26 @@
       "deck": "Duas perguntas diferentes governam o litisconsórcio: <strong class=\"conc\">quem precisa estar no polo</strong> (necessário ou facultativo) e <strong class=\"conc\">se o mérito precisa ser igual para todos</strong> (unitário ou simples). Misturar as duas é o erro clássico de prova.",
       "bet": {
         "after_chapter": 3,
-        "question": "Dois locadores, coproprietários de um imóvel, ajuizam despejo por término do prazo contratual. Os demais herdeiros não entraram no polo ativo. O réu alega que todos os locadores precisavam demandar juntos porque são solidários. O que decide o STJ no REsp 1.737.476/SP?",
+        "question": "Dois locadores, coproprietários de um imóvel, ajuizam despejo por término do prazo do contrato. Os demais herdeiros do imóvel não entraram no polo ativo. O réu alega que todos os locadores tinham de demandar juntos, porque são solidários entre si. Pelo art. 114, o litisconsórcio é necessário quando a lei o determina ou quando, pela natureza da relação controvertida, a eficácia da sentença depende da citação de todos. A solidariedade entre os locadores basta para tornar necessário o litisconsórcio ativo?",
         "options": [
           [
-            "A solidariedade material entre os locadores cria litisconsórcio ativo necessário, e o processo é extinto.",
+            "Sim: a solidariedade material cria litisconsórcio ativo necessário, e o processo deve ser extinto.",
             ""
           ],
           [
-            "Todos os herdeiros devem ser citados como réus, para que a sentença lhes seja eficaz.",
+            "Sim, mas a falta dos demais herdeiros se resolve citando todos como réus, para que a sentença lhes seja eficaz.",
             ""
           ],
           [
-            "A solidariedade, sozinha, não cria litisconsórcio necessário, e o despejo por término de prazo pode ser proposto sem os demais.",
+            "Não: a solidariedade, sozinha, não cria litisconsórcio necessário, e o despejo por término de prazo pode ser proposto sem os demais.",
             "*"
           ],
           [
-            "O litisconsórcio é necessário, mas só para o polo passivo, nunca para autores.",
+            "Não: o litisconsórcio necessário só existe no polo passivo, nunca entre autores.",
             ""
           ]
         ],
-        "reveal": "<p>O STJ distinguiu a solidariedade material da necessidade processual. Pelo art. 114, o litisconsórcio é necessário quando a lei o determina ou quando a eficácia da sentença depende da citação de todos, e a solidariedade entre locadores não preenche nenhuma das duas condições.</p><p>A decisão se limita ao despejo por encerramento contratual em imóvel em condomínio, e não fixa regra para toda controvérsia entre coproprietários.</p>"
+        "reveal": "<p>A solidariedade material entre os locadores é uma coisa; a necessidade processual do litisconsórcio é outra. Pelo art. 114, só há litisconsórcio necessário quando a lei o determina ou quando a eficácia da sentença depende da presença de todos, e a solidariedade entre locadores não preenche nenhuma das duas condições. Foi o que o STJ decidiu no REsp 1.737.476/SP.</p><p>A decisão se limita ao despejo por encerramento contratual em imóvel em condomínio, e não fixa regra para toda controvérsia entre coproprietários. Em outros casos, como uma revisional de financiamento habitacional com vários mutuários, o STJ reconheceu litisconsórcio ativo necessário.</p>"
       }
     }
   ],

@@ -1,0 +1,193 @@
+# Figure + page kit for the Contratos course (drafting-sheet style, same system as Controle aula-11).
+import html as _h, re, sys
+
+OUT = "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/teoria-geral-dos-contratos/"
+WARN = []
+
+# ---- text width estimates (px) for the course fonts --------------------------------------------
+def tw(txt, cls=''):
+    t = re.sub(r'<[^>]+>', '', txt)
+    up = sum(1 for c in t if c.isupper() or c.isdigit())
+    lo = len(t) - up
+    if 't-big' in cls:   return up * 21 + lo * 15
+    if 't-mid' in cls:   return up * 14 + lo * 10.5
+    if 't-small' in cls: return len(t) * 7.0
+    if 't-serif' in cls: return len(t) * 8.6
+    if 't-hand' in cls:  return len(t) * 9.6
+    if 'stamp-t' in cls: return len(t) * 17
+    return len(t) * 8.1  # mono 13px
+
+def esc(s): return s.replace('&', '&amp;') if '&' in s and '&amp;' not in s else s
+
+def T(x, y, txt, cls='', anchor=None, style='', maxw=None, ctx=''):
+    if maxw is not None and tw(txt, cls) > maxw:
+        WARN.append(f'{ctx}: "{txt}" ~{tw(txt, cls):.0f}px > {maxw}px')
+    a = f' text-anchor="{anchor}"' if anchor else ''
+    st = f' style="{style}"' if style else ''
+    c = f' class="{cls}"' if cls else ''
+    return f'<text x="{x}" y="{y}"{c}{a}{st}>{txt}</text>'
+
+def R(x, y, w, h, cls='f-paper ink', rx=0, style='', extra=''):
+    r = f' rx="{rx}"' if rx else ''
+    st = f' style="{style}"' if style else ''
+    return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" class="{cls}"{r}{st}{extra}/>'
+
+def P(d, cls='ink', m=None, style='', extra=''):
+    mk = f' marker-end="url(#{m})"' if m else ''
+    st = f' style="{style}"' if style else ''
+    return f'<path d="{d}" class="{cls}"{mk}{st}{extra}/>'
+
+def C(cx, cy, r, cls='ink', style='', extra=''):
+    st = f' style="{style}"' if style else ''
+    return f'<circle cx="{cx}" cy="{cy}" r="{r}" class="{cls}"{st}{extra}/>'
+
+def G(inner, cls='', d=None, extra=''):
+    c = f' class="{cls}"' if cls else ''
+    st = f' style="--d:{d}s"' if d is not None else ''
+    return f'<g{c}{st}{extra}>{inner}</g>'
+
+TONE = {'conc': ('w-conc ink', 'tc-conc'), 'dif': ('w-dif ink', 'tc-dif'), 'grey': ('w-grey ink', ''),
+        'paper': ('f-paper ink', ''), 'mix': ('ink', 'tc-mix'), 'ink': ('f-ink', 't-light')}
+
+def box(x, y, w, h, title, sub=None, tone='paper', tcls='t-mid', scls='t-small', ctx='', rx=0, sub2=None):
+    rc, tc = TONE[tone]
+    style = 'fill:var(--mix-wash);stroke:var(--mix)' if tone == 'mix' else ''
+    out = R(x, y, w, h, rc, rx=rx, style=style)
+    lines = [l for l in [sub, sub2] if l]
+    ty = y + h / 2 + (7 if not lines else -4 - 9 * (len(lines) - 1))
+    tcls2 = (tcls + ' ' + tc).strip()
+    out += T(x + 14, round(ty), title, tcls2, maxw=w - 22, ctx=ctx)
+    for i, l in enumerate(lines):
+        c = scls + (' t-light' if tone == 'ink' else '')
+        out += T(x + 14, round(ty + 20 + i * 16), l, c, maxw=w - 22, ctx=ctx)
+    return out
+
+def person(cx, cy, label=None, cls='ink', lcls='t-big', s=1.0):
+    o = C(cx, cy, 16 * s, cls, extra=' stroke-width="2"')
+    o += P(f'M{cx} {cy+16*s}v{50*s}M{cx-22*s} {cy+34*s}h{44*s}M{cx} {cy+66*s}l{-16*s} {34*s}M{cx} {cy+66*s}l{16*s} {34*s}', cls, extra=' stroke-width="2"')
+    if label: o += T(cx, cy + 130 * s, label, lcls, anchor='middle')
+    return o
+
+def doc(x, y, w=90, h=110, label=None, cls='f-paper ink', lines=4, lcls='t-small'):
+    o = R(x, y, w, h, cls)
+    for i in range(lines):
+        ll = w - 28 if i % 3 != 2 else (w - 28) * .6
+        o += P(f'M{x+14} {y+22+i*16}h{ll:.0f}', 'thin')
+    if label: o += T(x + w / 2, y + h + 20, label, lcls, anchor='middle')
+    return o
+
+def lens(cx, cy, r=26):
+    return C(cx, cy, r, 'ink', extra=' stroke-width="3"') + P(f'M{cx+r*.72:.0f} {cy+r*.72:.0f}l{r*.8:.0f} {r*.8:.0f}', 'ink', style='stroke-width:6;stroke-linecap:round')
+
+def coin(cx, cy, r=18, label='R$', cls='accent'):
+    return C(cx, cy, r, cls, extra=' stroke="var(--ink)" stroke-width="1.4"') + T(cx, cy + 4, label, 't-small', anchor='middle')
+
+def check(cx, cy, ok=True, s=1):
+    if ok: return P(f'M{cx-9*s} {cy}l{7*s} {8*s}l{13*s} {-16*s}', 'c-dif', style='stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round')
+    return P(f'M{cx-9*s} {cy-9*s}l{18*s} {18*s}M{cx+9*s} {cy-9*s}l{-18*s} {18*s}', 'c-conc', style='stroke-width:3.2;stroke-linecap:round')
+
+def markers(p):
+    cols = {'c': 'var(--conc)', 'd': 'var(--dif)', 'i': 'var(--ink)', 'm': 'var(--mix)', 'a': 'var(--accent)', 'u': 'var(--muted)'}
+    return '<defs>' + ''.join(
+        f'<marker id="{p}{k}" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:{v}"/></marker>'
+        for k, v in cols.items()) + '</defs>'
+
+def panel(pid, inner, on=False, label=''):
+    return f'<svg class="panel fig{" on" if on else ""}" id="{pid}" viewBox="0 0 600 600" role="img" aria-label="{_h.escape(label)}">{markers(pid+"-")}{inner}</svg>'
+
+# ---- page building blocks ------------------------------------------------------------------------
+FIGN = [0]
+def scrolly(title, panels, steps):
+    """panels: list of (id, inner, aria); steps: list of dict(panel, label, lcls, h3, body(html))"""
+    FIGN[0] += 1
+    ps = ''.join(panel(pid, inner, on=(i == 0), label=aria) for i, (pid, inner, aria) in enumerate(panels))
+    st = ''
+    for s in steps:
+        lab = f'<span class="label {s.get("lcls","")}">{s["label"]}</span>' if s.get('label') else ''
+        st += f'<div class="step" data-panel="{s["panel"]}"><div class="card">{lab}<h3>{s["h3"]}</h3>{s["body"]}</div></div>\n'
+    return (f'<div class="scrolly">\n <div class="stage" aria-hidden="true"><figure>{ps}'
+            f'<figcaption><span>Fig. {FIGN[0]} · {title}</span><span class="stage-step">1 / {len(steps)}</span></figcaption></figure></div>\n'
+            f' <div class="steps">\n{st} </div>\n</div>\n')
+
+def chapter(num, cid, h2, lede='', numcls=''):
+    l = f'<p class="lede">{lede}</p>' if lede else ''
+    return f'<section class="chapter" aria-labelledby="{cid}"><span class="num {numcls}" aria-hidden="true">{num}</span><h2 id="{cid}">{h2}</h2>{l}</section>\n'
+
+def wide(inner): return f'<div class="wide">\n{inner}\n</div>\n'
+
+def quiz(items):
+    return wide('<div class="quiz">' + ''.join(f'<details><summary>{q}</summary><p>{a}</p></details>' for q, a in items) + '</div>')
+
+def table(headers, rows, cls='compare', hcls=None):
+    hcls = hcls or [''] * len(headers)
+    th = ''.join(f'<th scope="col" class="{c}">{h}</th>' for h, c in zip(headers, hcls))
+    tr = ''.join('<tr><th scope="row">' + r[0] + '</th>' + ''.join(f'<td>{c}</td>' for c in r[1:]) + '</tr>' for r in rows)
+    return f'<div class="table-wrap" tabindex="0" role="region"><table class="{cls}"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table></div>'
+
+HEAD = '''<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>(function(){{var k='cufrgs-theme',r=document.documentElement;try{{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}}catch(e){{}}document.addEventListener('DOMContentLoaded',function(){{var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){{var d=r.dataset.theme==='dark';b.setAttribute('aria-pressed',d)}}sync();b.addEventListener('click',function(){{var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{{localStorage.setItem(k,d?'dark':'light')}}catch(e){{}}sync()}})}})}})()</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title} · Teoria Geral dos Contratos</title>
+<meta name="description" content="{desc}">
+<link rel="stylesheet" href="assets/curso.css?v={ver}">
+{extra_css}</head>
+<body>
+<nav class="topbar"><a href="index.html">← Teoria Geral dos Contratos</a><span>Aula {n} · Unidade {unit}</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<header class="hero">
+  <div class="kicker label">{kicker}</div>
+  <h1><span class="split">{h1a}</span><span class="split">{h1b}</span></h1>
+  <p class="deck">{deck}</p>
+  <svg class="hero-fork" viewBox="0 0 1080 170" aria-hidden="true">{hero}</svg>
+  <div class="titleblock label" role="list">{tb}</div>
+</header>
+'''
+
+VER = '20260925d'
+def page(fname, n, title, desc, kicker, h1a, h1b, deck, hero, tb, body, prev, nxt, extra_css='', unit=''):
+    kick = ''.join(f'<span>{k}</span>' for k in kicker)
+    tbh = ''.join(f'<div role="listitem">{a}<b>{b}</b></div>' for a, b in tb)
+    head = HEAD.format(ver=VER, unit=unit, title=title, desc=desc, n=n, kicker=kick, h1a=h1a, h1b=h1b, deck=deck, hero=hero, tb=tbh,
+                       extra_css=f'<style>{extra_css}</style>\n' if extra_css else '')
+    nav = ('<nav class="endnav" aria-label="Aulas vizinhas">'
+           f'<a href="{prev[0]}"><span>{prev[1]}</span>{prev[2]}</a>'
+           f'<a href="{nxt[0]}" style="text-align:right"><span>{nxt[1]}</span>{nxt[2]}</a></nav>\n')
+    html = head + body + nav + '<script src="assets/curso.js?v=' + VER + '"></script>\n</body>\n</html>\n'
+    open(OUT + fname, 'w').write(html)
+    FIGN[0] = 0
+    GLOSA_LETTERS.clear()
+    if WARN:
+        print('\n'.join('  WARN ' + w for w in WARN))
+        WARN.clear()
+    print('wrote', fname, len(html), 'bytes')
+
+# ---- annotation helpers (2026-09-25) ------------------------------------------------------------
+# go(): attributes for a figure group that jumps to the step showing panel `pid`. Use as G(..., extra=go('p-x', 'label')).
+def go(pid, label=''):
+    return f'data-go="{pid}" tabindex="0" role="link" aria-label="{label or pid}"'
+# lk(): a term in the prose that lights up everything sharing `key` (figure groups get extra=f'data-lk="{key}"').
+def lk(key, text, tone='dif'):
+    return f'<span class="lk {tone}" data-lk="{key}">{text}</span>'
+# Glosas (margin notes). mk() marks the phrase a glosa talks about; glosa() is the note itself, placed where the phrase
+# is (it floats into the right gutter at that line on wide screens and drops in as an indented note on narrow ones).
+# Give both the same `key` so they light up together. For a glosa about a whole paragraph, open that paragraph with
+# gp(tone) instead of '<p>' and skip mk(): the paragraph gets a bar on the glosa's side.
+# Tones: dif (connection), conc (exam trap), mix (consumer/CDC).
+GLOSA_LETTERS = {}
+def _letter(key):
+    if key not in GLOSA_LETTERS:
+        GLOSA_LETTERS[key] = 'abcdefghijklmnopqrstuvwxyz'[len(GLOSA_LETTERS)]
+    return GLOSA_LETTERS[key]
+def mk(text, tone='dif', key=None):
+    if not key:
+        return f'<span class="mk {tone}">{text}</span>'
+    return f'<span class="mk {tone}" data-lk="{key}">{text}</span><sup class="gmark {tone}" data-lk="{key}">{_letter(key)}</sup>'
+def glosa(html, tone='dif', key=None):
+    k = f' data-lk="{key}"' if key else ''
+    m = f'<b class="gmark {tone}">{_letter(key)}</b>' if key else ''
+    return f'<span class="glosa {tone}" role="note"{k}>{m}{html}</span>'
+mnote = glosa  # old name
+def gp(tone='dif'):
+    return '<p class="gp">' if tone == 'dif' else f'<p class="gp gp-{tone}">'

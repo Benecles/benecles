@@ -1,0 +1,119 @@
+===== PÁGINA 1 =====
+
+               UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL
+                               FACULDADE DE DIREITO
+          DEPARTAMENTO DE DIREITO PRIVADO E PROCESSO CIVIL
+Período letivo: 2026/2 | Teoria Geral dos Contratos - DIR02023 | Profª: Giovana Benetti
+                      Lista de Exercícios para a Primeira Avaliação
+
+
+
+1. Em uma festa de aniversário entre amigos, Roberto, em tom de brincadeira e visivelmente
+exaltado pela comemoração, disse a Fernanda: “Estou tão feliz que vou te vender minha casa
+na praia por R$ 10.000,00, pode levar a chave amanhã!”. Todos riram da declaração. No dia
+seguinte, Fernanda compareceu à casa de Roberto com o dinheiro em mãos, dizendo que
+aceitava a proposta. Roberto recusou, afirmando que jamais falou sério. Considerando os
+requisitos da proposta e o disposto no Código Civil, assinale a alternativa correta:
+a. ( ) A proposta de Roberto é vinculante, pois a manifestação de vontade, ainda que em tom
+jocoso, produz efeitos jurídicos independentemente do contexto.
+b. ( ) A proposta de Roberto não o obriga, pois lhe faltou o requisito da seriedade (firmeza),
+uma vez que o tom jocoso e o ambiente festivo afastam a intenção real de contratar.
+c. ( ) A proposta de Roberto obriga-o integralmente, pois o Código Civil não exige seriedade
+como requisito da proposta, bastando a manifestação externa de vontade.
+d. ( ) A proposta de Roberto é válida, mas pode ser revogada por ele a qualquer momento
+antes da aceitação, ainda que já tenha sido recebida por Fernanda.
+
+
+
+2. A agência de publicidade “Criativa” foi contratada pela indústria de bebidas “Saborosa” para
+criar uma campanha publicitária com o cantor Zé, que assinou contrato de exclusividade para
+estrelar os comerciais de um novo refrigerante durante 12 meses. A agência concorrente
+“Esperta”, ciente do contrato entre “Criativa” e o cantor, ofereceu a Zé o triplo do valor para
+romper o contrato e estrelar uma campanha de um concorrente direto. Zé aceitou e abandonou
+a campanha da “Criativa”, que já havia investido altos valores na produção. Com base nos
+princípios contratuais e na teoria do terceiro ofensor, assinale a alternativa correta:
+a. ( ) A agência “Esperta” não cometeu ato ilícito, pois não era parte no contrato entre
+“Criativa” e Zé, sendo livre a concorrência.
+b. ( ) A agência “Esperta” responde civilmente pelos danos causados à “Criativa”, pois violou
+o princípio da boa-fé objetiva e o dever geral de respeito aos contratos alheios.
+c. ( ) A agência “Esperta” responde apenas se houver prova de que agiu com dolo, o que não
+ocorreu, pois ofereceu vantagem superior dentro da livre iniciativa.
+d. ( ) Nenhuma das alternativas anteriores está correta.
+
+
+
+3. Uma empresa fabricante de produtos de madeira celebrou com instituição financeira contrato
+de swap cambial para proteção contra oscilações do mercado. O swap é um contrato em que
+duas partes combinam trocar entre si os resultados financeiros de dois índices diferentes (por
+exemplo, a variação do dólar e uma taxa de juros): conforme o índice sobe ou desce, uma parte
+
+===== PÁGINA 2 =====
+
+paga à outra a diferença, o que serve para proteger-se contra oscilações de mercado. Após forte
+desvalorização do real, a empresa alegou que o resultado do contrato se tornou excessivamente
+oneroso e pediu sua revisão judicial. Considerando a natureza dos contratos de derivativos,
+assinale a alternativa correta:
+a. ( ) O contrato é comutativo, pois as partes sempre conhecem previamente o valor exato que
+receberão ao final.
+b. ( ) O contrato é aleatório, pois as partes assumem conscientemente a possibilidade de ganho
+ou perda conforme a variação do parâmetro financeiro, afastando-se, em regra, a revisão por
+onerosidade excessiva decorrente da própria oscilação prevista.
+c. ( ) O contrato é aleatório, mas toda variação cambial autoriza automaticamente a aplicação
+da teoria da imprevisão.
+d. ( ) A existência de exposição desigual aos riscos torna necessariamente inválida a cláusula
+limitativa de risco, ainda que as partes conhecessem seu conteúdo.
+
+
+
+4. Um particular cedeu direitos relacionados ao projeto de uma modalidade de loteria e ajustou
+que sua remuneração dependeria de a arrecadação do novo jogo superar determinado patamar
+em comparação com outra loteria. Após a implantação, a proporção entre as arrecadações não
+se manteve, e o cedente alegou a existência de ilícito contratual. Considerando a distinção entre
+contratos comutativos e aleatórios, assinale a alternativa correta:
+a. ( ) O contrato é comutativo, pois as prestações estariam definidas de antemão e a
+remuneração seria certa e independente do desempenho da arrecadação, não se sujeitando a
+evento futuro e incerto.
+b. ( ) O contrato é aleatório, pois o cedente assumiu o risco de não receber a remuneração caso
+a arrecadação não atingisse o patamar previsto, não havendo ilícito contratual pela simples
+alteração dos resultados econômicos.
+c. ( ) O contrato é necessariamente gratuito, pois a remuneração dependia de evento futuro e
+incerto.
+d. ( ) A alteração da proporção entre as arrecadações caracteriza automaticamente culpa
+contratual da outra parte, ainda que não houvesse obrigação de manter essa proporção.
+
+
+
+5. Uma sociedade empresária transferiu um imóvel para integralizar o capital social de
+determinada companhia. Posteriormente, discutiu-se se a operação seria gratuita, por não ter
+havido pagamento direto em dinheiro, ou onerosa, para fins de incidência do laudêmio (taxa
+paga ao Governo Federal quando você vende um imóvel localizado em um terreno da União)
+previsto para a transferência de domínio útil de terreno de marinha. Considerando o
+entendimento do Superior Tribunal de Justiça, assinale a alternativa correta:
+a. ( ) A operação é gratuita, pois a transferência não envolveu pagamento em dinheiro.
+b. ( ) A operação é onerosa, pois a entrega do imóvel ocorreu em contrapartida ao recebimento
+de quotas ou ações, sendo devido o laudêmio.
+c. ( ) A operação é gratuita, pois a integralização de capital constitui mera liberalidade do
+sócio em favor da sociedade.
+
+===== PÁGINA 3 =====
+
+d. ( ) A operação somente seria onerosa se houvesse contrato autônomo de compra e venda
+do imóvel.
+
+
+
+6. O Banco Bradescard e o supermercado Bistek iniciaram negociações avançadas para a
+implantação de uma bandeira de cartão de crédito. Durante as tratativas, foram elaboradas
+minutas, produzidos materiais publicitários e realizados investimentos pelo supermercado, que
+acreditava na conclusão do negócio. O banco rompeu abruptamente as negociações, sem a
+celebração do contrato definitivo. Considerando o entendimento do STJ, assinale a alternativa
+correta:
+a. ( ) A inexistência de contrato definitivo exclui, em qualquer hipótese, a responsabilidade
+civil do banco.
+b. ( ) O simples encerramento de qualquer negociação preliminar gera automaticamente o
+dever de indenizar, ainda que não exista prejuízo.
+c. ( ) A boa-fé objetiva também incide na fase pré-contratual, podendo o rompimento
+injustificado de negociações avançadas, com frustração de legítima expectativa e efetivo
+prejuízo, gerar responsabilidade por perdas e danos.
+d. ( ) A responsabilidade pré-contratual permite exigir obrigatoriamente a celebração do
+contrato que estava sendo negociado.

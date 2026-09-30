@@ -1,0 +1,95 @@
+{
+ "key": "22",
+ "date": "Semanas 15–18",
+ "pages": [
+  {
+   "file": "aula-22.html",
+   "h1a": "Direitos sociais:",
+   "h1b": "exigibilidade",
+   "title": "Direitos sociais: exigibilidade e judicialização",
+   "desc": "Regime dos direitos sociais, defesa e prestação, direitos derivados e originários, norma programática, reserva do possível e limites da decisão judicial.",
+   "deck": "Pedir o medicamento da lista do SUS e pedir o tratamento que nenhuma política oferece <strong class=\"dif\">não é o mesmo problema</strong>. A página separa <strong class=\"conc\">direito derivado e originário</strong> e testa as objeções à exigibilidade.",
+   "bet": {
+    "after_chapter": 5,
+    "question": "Um município nega um medicamento que consta da lista oficial do SUS, alegando falta de verba, e o paciente vai a juízo. O município sustenta que o pedido é judicialização da política e viola a separação de poderes. Como se analisa a alegação?",
+    "options": [
+     [
+      "Procede: toda decisão que impõe prestação a município invade a esfera do Executivo, e a reserva do possível basta para negar o pedido.",
+      ""
+     ],
+     [
+      "Procede em parte: o juiz só pode deferir se o autor provar que não tem meios para comprar o medicamento, por força da subsidiariedade.",
+      ""
+     ],
+     [
+      "Não procede: o pedido exige prestação já prevista no sistema (direito derivado), e nesses casos não se fala em judicialização da política nem em afronta à separação de poderes. Cabe ao município demonstrar a impossibilidade de atender, e a mera alegação de escassez não basta.",
+      "*"
+     ],
+     [
+      "Não procede porque o direito à saúde é sempre originário e a reserva do possível é falácia que nunca pode ser invocada.",
+      ""
+     ]
+    ],
+    "reveal": "<p>Segundo a jurisprudência que Sarlet descreve, a maioria expressiva dos casos busca coibir omissões ou exigir o cumprimento de leis e políticas existentes, hipótese dos direitos derivados. A discussão difícil está nos pedidos originários. Quanto à reserva do possível, Sarlet não a trata como falácia em si, mas como argumento que não pode ser obstáculo intransponível, e o ônus de provar a indisponibilidade é do Poder Público. Se o município a demonstra, ainda se examinam o mínimo existencial e a proporcionalidade.</p>"
+   }
+  },
+  {
+   "file": "aula-22-retrocesso.html",
+   "start": "Proibição de retrocesso e limites aos limites",
+   "h1a": "Retrocesso e",
+   "h1b": "o teto de gastos",
+   "title": "Proibição de retrocesso e teto de gastos da EC 95/2016",
+   "desc": "A garantia implícita contra a redução de direitos sociais já concretizados, o mínimo existencial, os quatro filtros de uma restrição e o debate da EC 95/2016.",
+   "deck": "Depois de exigir prestações, a pergunta muda: <strong class=\"dif\">quanto o legislador pode reduzir</strong> o que já existe? A proibição de retrocesso não impede toda mudança, mas <strong class=\"conc\">obriga a justificá-la</strong>, inclusive em emenda constitucional.",
+   "bet": {
+    "after_chapter": 1,
+    "question": "Uma lei revoga uma prestação de que os beneficiários dependem para sobreviver e ressalva os direitos adquiridos de quem já a recebe. A prestação integra o mínimo existencial. A ressalva basta para tornar a medida constitucional?",
+    "options": [
+     [
+      "Sim: a preservação dos direitos adquiridos satisfaz a proibição de retrocesso, que só protege situações já consolidadas.",
+      ""
+     ],
+     [
+      "Sim: a proibição de retrocesso impede a mudança apenas de prestações além do mínimo existencial, e não do mínimo.",
+      ""
+     ],
+     [
+      "Não: o conjunto de prestações que densifica o mínimo existencial não pode ser suprimido nem reduzido, mesmo com ressalva de direitos adquiridos, e a legislação superveniente que compromete o nível alcançado pode ser declarada inconstitucional.",
+      "*"
+     ],
+     [
+      "Não, porque a proibição de retrocesso torna imutável toda a legislação que concretiza direitos sociais.",
+      ""
+     ]
+    ],
+    "reveal": "<p>Para Sarlet, toda medida que suprima ou restrinja o âmbito de proteção de um direito social é suspeita, mas suspeita não é proibida: fora do mínimo existencial, a mudança passa pelos quatro filtros (finalidade legítima, núcleo essencial, proporcionalidade e razoabilidade, e reservas legais, segurança jurídica e confiança). O mínimo existencial recebe tratamento reforçado, e a adaptação dos sistemas de prestação à realidade não justifica reduzi-lo.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Como se compara o regime dos direitos sociais no Brasil com o de outros países, e o que dizem os arts. 5º, §§ 1º e 2º?",
+   "No Brasil, os direitos sociais estão no Título II e têm aplicabilidade imediata (art. 5º, § 1º), com o alcance da eficácia avaliado em cada direito. O § 2º abre o catálogo a direitos implícitos, de outras partes da Constituição e de tratados. Em Portugal, Espanha, França, Itália e Alemanha têm força menor, e em Colômbia, Bolívia, Equador e África do Sul, exigibilidade mais intensa. A posição brasileira é dominante, com resistência em parte da doutrina."
+  ],
+  [
+   "Que posições um direito social cria e como se distinguem derivadas e originárias?",
+   "Defesa, prestações normativas (proteção, organização e procedimento) e prestações fáticas, como o direito à saúde mostra. Direitos derivados a prestações garantem participação igual no sistema já concretizado em lei e políticas; originários são deduzidos diretamente da Constituição, sem norma infraconstitucional. A objeção pesa menos nos derivados: dizer que o direito 'é exigível' nunca basta, é preciso saber qual posição se exige."
+  ],
+  [
+   "Por que Sarlet rejeita a objeção da norma programática e o que resta dela?",
+   "Porque o art. 5º, § 1º, dá aplicação imediata aos direitos fundamentais, entre eles os sociais, e porque, se o objeto do direito ficasse subordinado ao legislador, ele valeria só na medida da lei, e os direitos sociais são trunfos contra a maioria. Resta que a dimensão programática convive com a subjetiva, e que os efeitos concretos podem ser mais modestos e têm limites."
+  ],
+  [
+   "Quais as dimensões da reserva do possível e o que Sarlet conclui?",
+   "A disponibilidade fática dos recursos, a disponibilidade jurídica (competências, receitas, orçamento, federalismo) e a proporcionalidade da prestação. Para Sarlet, não é falácia em si, mas não pode ser obstáculo intransponível nem desculpa genérica para omissão; legítima é, por exemplo, no conflito com o núcleo essencial de outro direito. No STF, a impossibilidade deve ser demonstrada pelo Poder Público, a quem cabe o ônus da prova."
+  ],
+  [
+   "Quais os critérios para o juiz impor uma prestação?",
+   "Direito derivado ou originário; ônus da prova da indisponibilidade; vida e mínimo existencial como critério material, com três problemas em aberto apontados a partir de Alexy (custo, sobreposição com o núcleo essencial e definição do conteúdo e do papel do juiz); subsidiariedade, controversa diante da saúde universal e da educação gratuita; proporcionalidade em dupla face; diálogo institucional; e modo de efetivar, individual ou coletivo."
+  ],
+  [
+   "O que é a proibição de retrocesso, quais seus fundamentos e como se aplica à EC 95/2016?",
+   "É garantia implícita contra medidas que afetem gravemente o grau de concretização de um direito social, fundada no dever de realização progressiva do PIDESC (art. 2º), na segurança jurídica e na confiança, na máxima eficácia (art. 5º, § 1º) e na dignidade. Sarlet, com Élida Graziane Pinto, sustenta que o congelamento de gastos por vinte anos pode reduzir em termos reais os investimentos em saúde e educação e atingir o núcleo essencial, além de violar a proporcionalidade, pois havia alternativas de financiamento."
+  ]
+ ]
+}

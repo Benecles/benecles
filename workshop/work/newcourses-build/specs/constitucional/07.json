@@ -1,63 +1,63 @@
 {
- "key": "07",
- "date": "Semanas 12–13",
- "pages": [
-  {
-   "file": "aula-07.html",
-   "h1a": "Eficácia das",
-   "h1b": "normas constitucionais",
-   "title": "Eficácia e aplicabilidade das normas constitucionais",
-   "desc": "Eficácia e aplicabilidade: Cooley, Crisafulli, Zagrebelsky, Ferreira Filho, José Afonso da Silva, Bastos e Britto, Barroso e a crítica às programáticas.",
-   "deck": "A tríade de José Afonso da Silva é a classificação que a prova mais cobra. A lição mostra como separar <strong class=\"dif\">plena, contida e limitada</strong>, por que <strong class=\"conc\">contida e limitada não se confundem</strong> e por que \"programática\" não serve de desculpa.",
-   "bet": {
-    "after_chapter": 3,
-    "question": "O art. 170, parágrafo único, assegura a todos o livre exercício de qualquer atividade econômica, independentemente de autorização de órgãos públicos, salvo nos casos previstos em lei. Não existe lei que exija autorização para determinada atividade. Como classificar a norma na tríade de José Afonso da Silva e o que ocorre enquanto a lei não vem?",
-    "options": [
-     [
-      "Eficácia limitada: sem lei, a norma não produz seus efeitos principais.",
-      ""
-     ],
-     [
-      "Eficácia contida: a norma se aplica sem restrições enquanto a lei restritiva não existe, e a lei pode reduzir seu alcance.",
-      "*"
-     ],
-     [
-      "Eficácia plena: a lei não pode restringir o alcance da norma.",
-      ""
-     ],
-     [
-      "Eficácia contida, mas a atividade só é livre depois de a lei restritiva ser editada.",
-      ""
-     ]
+  "key": "07",
+  "date": "Semanas 12–13",
+  "pages": [
+    {
+      "file": "aula-07.html",
+      "h1a": "Eficácia das",
+      "h1b": "normas constitucionais",
+      "title": "Eficácia e aplicabilidade das normas constitucionais",
+      "desc": "Eficácia e aplicabilidade: Cooley, Crisafulli, Zagrebelsky, Ferreira Filho, José Afonso da Silva, Bastos e Britto, Barroso e a crítica às programáticas.",
+      "deck": "A tríade de José Afonso da Silva é a classificação que a prova mais cobra. A lição mostra como separar <strong class=\"dif\">plena, contida e limitada</strong>, por que <strong class=\"conc\">contida e limitada não se confundem</strong> e por que \"programática\" não serve de desculpa.",
+      "bet": {
+        "after_chapter": 3,
+        "question": "O art. 170, parágrafo único, assegura a todos o livre exercício de qualquer atividade econômica, independentemente de autorização de órgãos públicos, salvo nos casos previstos em lei. Não existe lei que exija autorização para determinada atividade. Na tríade de José Afonso da Silva, duas perguntas classificam a norma: ela precisa de lei para produzir seus efeitos principais? E a lei pode reduzir o alcance que ela já tem? Como se classifica a norma e o que ocorre enquanto a lei não vem?",
+        "options": [
+          [
+            "Eficácia limitada: sem lei, a norma não produz seus efeitos principais.",
+            ""
+          ],
+          [
+            "Eficácia contida: a norma se aplica sem restrições enquanto a lei restritiva não existe, e a lei pode reduzir seu alcance.",
+            "*"
+          ],
+          [
+            "Eficácia plena: a lei não pode restringir o alcance da norma.",
+            ""
+          ],
+          [
+            "Eficácia contida, mas a atividade só é livre depois de a lei restritiva ser editada.",
+            ""
+          ]
+        ],
+        "reveal": "<p>Na primeira pergunta do roteiro, a norma não precisa de lei para produzir seus efeitos principais. Na segunda, a própria redação abre à lei os casos em que a autorização será exigida, então a lei pode reduzir o alcance. É eficácia contida, no mesmo esquema do art. 5º, XII, que Tavares dá como exemplo: enquanto a lei restritiva não existe, a atividade é livre. Contida e limitada se distinguem porque a contida já funciona e pode ser recortada depois.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O que significa dizer que uma norma constitucional não tem eficácia plena?",
+      "Não significa que não produza efeito. Todas as normas constitucionais têm força normativa e alguma eficácia, ao menos a de servir de base para invalidar a lei que as contraria. Uma lei que cobre taxa pelo direito de petição (art. 5º, XXXIV, a) não se aplica nesse ponto."
     ],
-    "reveal": "<p>Na primeira pergunta do roteiro, a norma não precisa de lei para produzir seus efeitos principais. Na segunda, a própria redação abre à lei os casos em que a autorização será exigida, então a lei pode reduzir o alcance. É eficácia contida, no mesmo esquema do art. 5º, XII, que Tavares dá como exemplo: enquanto a lei restritiva não existe, a atividade é livre. Contida e limitada se distinguem porque a contida já funciona e pode ser recortada depois.</p>"
-   }
-  }
- ],
- "quiz": [
-  [
-   "O que significa dizer que uma norma constitucional não tem eficácia plena?",
-   "Não significa que não produza efeito. Todas as normas constitucionais têm força normativa e alguma eficácia, ao menos a de servir de base para invalidar a lei que as contraria. Uma lei que cobre taxa pelo direito de petição (art. 5º, XXXIV, a) não se aplica nesse ponto."
-  ],
-  [
-   "Como Cooley, Crisafulli e Zagrebelsky classificam as normas?",
-   "Cooley separa normas self-executing e not self-executing, conforme deem ou não os meios para seu aproveitamento. Crisafulli fala em eficácia plena e limitada, esta com normas de legislação e programáticas. Zagrebelsky distingue eficácia direta e indireta, esta com normas de eficácia diferida, de princípio e programáticas."
-  ],
-  [
-   "Quais são as três classes de José Afonso da Silva e as duas perguntas que as separam?",
-   "Eficácia plena, contida e limitada. Pergunta 1: a norma precisa de lei para produzir seus efeitos principais? Se sim, é limitada (institutiva ou programática). Pergunta 2: a lei pode reduzir o alcance que ela já tem? Se sim, é contida; se não, plena."
-  ],
-  [
-   "Qual a diferença entre norma contida, limitada e condicionada de Ferreira Filho?",
-   "A contida funciona antes da lei, e a lei só a restringe. A limitada não produz todos os efeitos principais até a lei integradora. A condicionada, de Ferreira Filho, é completa em si, mas a Constituição subordina sua aplicação à lei por opção política, e por isso a falta de lei a bloqueia."
-  ],
-  [
-   "Que critérios usam Bastos e Britto e Barroso?",
-   "Bastos e Britto usam o imediatismo: normas de aplicação (irregulamentáveis e regulamentáveis) e de integração (completáveis e restringíveis). Barroso usa o tema: normas de organização, definidoras de direitos e programáticas, que produzem efeitos imediatos, como revogar atos anteriores contrários e invalidar os posteriores."
-  ],
-  [
-   "Que críticas recebe a tríade de Silva e a doutrina da programaticidade?",
-   "Ferreira Filho aponta que plena e contida têm a mesma aplicabilidade e diferem só na possibilidade de restrição, então a tríade mistura dois critérios. Tavares acrescenta que a doutrina das programáticas impediu avanços sociais e manteve o estado de coisas inconstitucional, e cita o STF no AgI no RE 271.286, sobre o art. 196."
+    [
+      "Como Cooley, Crisafulli e Zagrebelsky classificam as normas?",
+      "Cooley separa normas self-executing e not self-executing, conforme deem ou não os meios para seu aproveitamento. Crisafulli fala em eficácia plena e limitada, esta com normas de legislação e programáticas. Zagrebelsky distingue eficácia direta e indireta, esta com normas de eficácia diferida, de princípio e programáticas."
+    ],
+    [
+      "Quais são as três classes de José Afonso da Silva e as duas perguntas que as separam?",
+      "Eficácia plena, contida e limitada. Pergunta 1: a norma precisa de lei para produzir seus efeitos principais? Se sim, é limitada (institutiva ou programática). Pergunta 2: a lei pode reduzir o alcance que ela já tem? Se sim, é contida; se não, plena."
+    ],
+    [
+      "Qual a diferença entre norma contida, limitada e condicionada de Ferreira Filho?",
+      "A contida funciona antes da lei, e a lei só a restringe. A limitada não produz todos os efeitos principais até a lei integradora. A condicionada, de Ferreira Filho, é completa em si, mas a Constituição subordina sua aplicação à lei por opção política, e por isso a falta de lei a bloqueia."
+    ],
+    [
+      "Que critérios usam Bastos e Britto e Barroso?",
+      "Bastos e Britto usam o imediatismo: normas de aplicação (irregulamentáveis e regulamentáveis) e de integração (completáveis e restringíveis). Barroso usa o tema: normas de organização, definidoras de direitos e programáticas, que produzem efeitos imediatos, como revogar atos anteriores contrários e invalidar os posteriores."
+    ],
+    [
+      "Que críticas recebe a tríade de Silva e a doutrina da programaticidade?",
+      "Ferreira Filho aponta que plena e contida têm a mesma aplicabilidade e diferem só na possibilidade de restrição, então a tríade mistura dois critérios. Tavares acrescenta que a doutrina das programáticas impediu avanços sociais e manteve o estado de coisas inconstitucional, e cita o STF no AgI no RE 271.286, sobre o art. 196."
+    ]
   ]
- ]
 }

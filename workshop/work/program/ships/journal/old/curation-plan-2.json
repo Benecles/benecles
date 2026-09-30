@@ -1,0 +1,14 @@
+{
+  "phase": "error",
+  "order": "curation-plan-2",
+  "paths": [
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/curation/direito-constitucional-i-plan.csv",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/curation/processo-civil-i-plan.csv",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/curation/metodologia-juridica-plan.csv",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/curation/direito-latino-americano-plan.csv",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/curation/PLAN-SUMMARY-2.md"
+  ],
+  "html_paths": [],
+  "summary": "Prepared four course curation plans and ranked recommendations for Claude approval; no lesson pages changed.",
+  "error": "command failed (1): python3 tools/offline_build.py\nTraceback (most recent call last):\n  File \"/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/tools/offline_build.py\", line 13, in <module>\n    sanitize.run()   # no visible sourcing, whatever generated the page\n  File \"/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/tools/sanitize.py\", line 20, in run\n    p = os.path.join(d, f); s = open(p).read(); s2 = sanitize(s)\nOSError: [Errno 11] Resource deadlock avoided\n"
+}

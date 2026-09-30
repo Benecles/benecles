@@ -17,7 +17,7 @@ HARD = {
     'conector formulaico / metatexto': r'\b(?:vale (?:a pena )?(?:ressaltar|destacar|notar|lembrar|mencionar)|cabe (?:ressaltar|destacar|notar|lembrar)|é (?:importante|interessante|fundamental) (?:notar|ressaltar|destacar|observar|lembrar|mencionar)|nesta aula (?:veremos|vamos)|como (?:vimos|veremos)|vamos entender|em conclusão|por fim, mas não menos importante|à luz do exposto)\b',
     'atribuição vaga': r'\b(?:especialistas (?:apontam|afirmam|destacam)|muitos autores|a doutrina moderna|há quem (?:diga|sustente|defenda)|alguns críticos)\b',
     'fala com o leitor': r'\b(?:você já deve ter percebido|não se preocupe|pense nisso|perceba que|repare:?)\b',
-    'calque de IA': r'\b(?:no cenário (?:atual|jurídico|brasileiro)|navegar (?:por|pel[oa]s?)|abordagem holística|robust[oa]s?|(?-i:jornada)|mergulh(?:ar|amos|e) (?:em|n[oa]s?))\b',
+    'calque de IA': r'\b(?:no cenário (?:atual|jurídico|brasileiro)|navegar (?:por|pel[oa]s?)|abordagem holística|robust[oa]s?|(?-i:jornada)(?! (?:de trabalho|limitada|diária|semanal|máxima))|mergulh(?:ar|amos|e) (?:em|n[oa]s?))\b',
     'tríade de efeito ("X, Y e, sobretudo, Z")': r'\b(?:e, sobretudo,|e, acima de tudo,)',
 }
 LIMIT = {  # pattern, max per lesson
