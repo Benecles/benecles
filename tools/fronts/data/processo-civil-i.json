@@ -1,0 +1,226 @@
+{
+  "course": "processo-civil-i",
+  "code": "DIR02002",
+  "area": "Direito Processual Civil",
+  "prof": "Prof. Eduardo Scarparo",
+  "n_aulas": 11,
+  "title": "Processo Civil I-a",
+  "deck": "Da petição inicial ao julgamento do mérito.",
+  "deck_flag": false,
+  "exam_html": "<aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n    <span class=\"exam-date\">P1 · 07/10/2026</span>\n    <h2 id=\"exam-title\">O que cai</h2>\n    <p>A P1 inclui as Aulas 01 a 09. As Aulas 10 e 11 — saneamento e julgamento conforme o estado do processo — vêm depois da prova. Estude uma aula, responda aos testes sem consultar o texto e retome os trechos ligados a cada erro.</p>\n    <a href=\"revisao-p1.html\"><span>Abrir a revisão para a P1</span><span aria-hidden=\"true\">→</span></a><a href=\"cartoes.html\"><span>Revisar com os cartões</span><span aria-hidden=\"true\">→</span></a><a href=\"aula-01.html\"><span>Começar pela Aula 01</span><span aria-hidden=\"true\">→</span></a>\n  </aside>",
+  "review_href": "revisao-p1.html",
+  "units": [
+    {
+      "label": "UNIDADE 01",
+      "title": "Petição inicial",
+      "desc": "Demanda, emenda à inicial e pedido.",
+      "lessons": [
+        {
+          "href": "aula-01.html",
+          "label": "Aula 01",
+          "title": "Petição inicial, demanda e pedido",
+          "complementary": false,
+          "desc": "A petição inicial dá forma à demanda, e o que ela apresenta limita o que o juiz pode decidir. Até quando o autor pode alterar pedido e causa de pedir sem o consentimento do réu?"
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 02",
+      "title": "Improcedência liminar e audiência",
+      "desc": "Improcedência liminar, conciliação e mediação.",
+      "lessons": [
+        {
+          "href": "aula-02.html",
+          "label": "Aula 02",
+          "title": "Indeferimento liminar e audiência inicial",
+          "complementary": false,
+          "desc": "Duas ações podem receber decisão antes de o réu ser ouvido, mas só uma julga o pedido. Essa diferença define recurso, coisa julgada e se o processo segue para audiência: defeito da inicial ou improcedência do pedido?"
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 03",
+      "title": "Partes e litisconsórcio",
+      "desc": "Partes, sujeitos do processo e litisconsórcio.",
+      "lessons": [
+        {
+          "href": "aula-03.html",
+          "label": "Aula 03",
+          "title": "Partes e litisconsórcio",
+          "complementary": false,
+          "desc": "Duas perguntas diferentes governam o litisconsórcio: quem precisa estar no polo (necessário ou facultativo) e se o mérito precisa ser igual para todos (unitário ou simples). Misturar as duas é o erro clássico de prova."
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 04",
+      "title": "Assistência",
+      "desc": "Intervenção de terceiros: assistência.",
+      "lessons": [
+        {
+          "href": "aula-04.html",
+          "label": "Aula 04",
+          "title": "Assistência simples e litisconsorcial",
+          "complementary": false,
+          "desc": "O sublocatário pode entrar no despejo para defender o locatário, mas seus poderes dependem do vínculo que ele aponta. A omissão do assistido e a renúncia do assistido produzem resultados opostos para o assistente."
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 05",
+      "title": "Denunciação da lide",
+      "desc": "Intervenção provocada e casos no STJ.",
+      "lessons": [
+        {
+          "href": "aula-05.html",
+          "label": "Aula 05",
+          "title": "Intervenção provocada e amicus curiae",
+          "complementary": false,
+          "desc": "Denunciação e chamamento parecem trazer um terceiro para o mesmo processo, mas o vínculo é outro: garantia ou regresso de um lado, dívida comum ao mesmo credor do outro. A classificação do vínculo decide qual técnica cabe."
+        },
+        {
+          "href": "aula-05-casos.html",
+          "label": "Aula 05 · casos",
+          "title": "Denunciação no STJ",
+          "complementary": true,
+          "desc": "Três casos sobre quando a denunciação pesa demais para quem pediu a tutela, e um sobre o que o denunciado passa a ser: a seguradora que contesta pode ser condenada direto."
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 06",
+      "title": "Atos processuais e comunicação",
+      "desc": "Atos, cartas, citação e intimação.",
+      "lessons": [
+        {
+          "href": "aula-06.html",
+          "label": "Aula 06",
+          "title": "Atos processuais, negócios e cartas",
+          "complementary": false,
+          "desc": "Uma cláusula de foro num contrato já é ato processual, e as partes podem mudar o procedimento, mas não tudo. Onde termina o poder do art. 190, e o que o juiz faz quando a parte descumpre o negócio?"
+        },
+        {
+          "href": "aula-06-citacao.html",
+          "label": "Aula 06 · complemento",
+          "title": "Citação e intimação",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 07",
+      "title": "Prazos e preclusão",
+      "desc": "Tempo dos atos e espécies de preclusão.",
+      "lessons": [
+        {
+          "href": "aula-07.html",
+          "label": "Aula 07",
+          "title": "Prazos processuais e tempo do processo",
+          "complementary": false,
+          "desc": "O prazo só começa a correr depois de um marco que varia com o modo de comunicação, e disponibilização no Diário da Justiça não é publicação. Errar esse ponto antecipa o prazo em um dia útil e custa o recurso."
+        },
+        {
+          "href": "aula-07-preclusao.html",
+          "label": "Aula 07 · complemento",
+          "title": "Preclusão e suas espécies",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 08",
+      "title": "Resposta do réu",
+      "desc": "Contestação, reconvenção e revelia.",
+      "lessons": [
+        {
+          "href": "aula-08.html",
+          "label": "Aula 08",
+          "title": "A resposta do réu",
+          "complementary": false,
+          "desc": "Resposta é o conjunto das reações do réu, e contestação é só a peça de defesa. Contar quinze dias da citação, sem olhar a audiência, e deixar fato sem impugnação específica são os erros que a prova explora."
+        },
+        {
+          "href": "aula-08-revelia.html",
+          "label": "Aula 08 · complemento",
+          "title": "Reconvenção e revelia",
+          "complementary": true,
+          "desc": "A contestação resiste, a reconvenção demanda. E a revelia é a falta de resposta no prazo, cujo efeito material, a presunção de veracidade, tem quatro exceções e não decide o direito."
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 09",
+      "title": "Nulidades processuais",
+      "desc": "Nulidades e estabilização do processo.",
+      "lessons": [
+        {
+          "href": "aula-09.html",
+          "label": "Aula 09",
+          "title": "Nulidades processuais e estabilização",
+          "complementary": false,
+          "desc": "Um ato defeituoso vale até o juiz pronunciar a nulidade, e só o defeito somado ao prejuízo justifica desfazê-lo. A mesma falha de forma pode anular a intimação de um réu e salvar a de outro."
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 10",
+      "title": "Saneamento e julgamento",
+      "desc": "Providências preliminares, saneamento e mérito parcial.",
+      "lessons": [
+        {
+          "href": "aula-10.html",
+          "label": "Aula 10",
+          "title": "Julgamento conforme o estado do processo",
+          "complementary": false,
+          "desc": "Terminado o prazo da contestação, o juiz corrige, ouve o autor e escolhe uma de cinco saídas. O julgamento antecipado só vale se a prova é desnecessária, e o juiz que o adota não pode julgar improcedente por falta de prova."
+        },
+        {
+          "href": "aula-10-estabilizacao.html",
+          "label": "Aula 10 · complemento",
+          "title": "Estabilização do saneamento e acordos",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "UNIDADE 11",
+      "title": "Sentença e mérito",
+      "desc": "Extinção sem mérito e resolução de mérito.",
+      "lessons": [
+        {
+          "href": "aula-11.html",
+          "label": "Aula 11",
+          "title": "Sentença, extinção e abandono",
+          "complementary": false,
+          "desc": "Excluir um litisconsorte por ilegitimidade não é sentença, embora se funde no art. 485. A forma depende da extensão da decisão, e o recurso muda com ela: apelação ou agravo."
+        },
+        {
+          "href": "aula-11-merito.html",
+          "label": "Aula 11 · complemento",
+          "title": "Mérito, antecipado e parcial",
+          "complementary": true
+        }
+      ]
+    }
+  ],
+  "info_items_html": "<div class=\"fontes-card\" role=\"dialog\" aria-label=\"Fontes do curso\"><h2>Fontes do curso</h2><h3>Do programa</h3><ul><li>Fredie Didier Jr., <i>Curso de Direito Processual Civil</i>, v. 1</li><li>Luiz Guilherme Marinoni, Sérgio Arenhart e Daniel Mitidiero, <i>Novo Curso de Processo Civil</i></li></ul><h3>Leituras indicadas</h3><ul><li>Elie Pierre Eid, <i>Litisconsórcio unitário: fundamentos, estrutura e regime</i></li><li>J. J. Calmon de Passos, <i>Esboço de uma teoria das nulidades aplicada às nulidades processuais</i></li><li>Paulo Henrique dos Santos Lucon, comentários aos arts. 355 a 357 do CPC</li></ul><h3>Lei</h3><ul><li>Código de Processo Civil (Lei 13.105/2015)</li></ul><p>As principais, não a bibliografia completa.</p></div>",
+  "bibliografia": {
+    "basica": [
+      "DIDIER JR, Fredie. Curso de Direito Processual Civil. Volume I. Salvador: Ius Podivm",
+      "MARINONI, Luiz Guilherme; ARENHART, Sérgio Cruz; MITIDIERO, Daniel. Novo Curso de Processo Civil. Volume I. São Paulo: Revista dos Tribunais."
+    ],
+    "complementar": [],
+    "source_file": "Direito Processual Civil I-a/Anotações/Cronograma do Semestre - P1 - 2026-2.pdf (Bibliografia de acompanhamento geral)"
+  },
+  "endnote_html": "<p class=\"endnote\">Processo Civil I-a (DIR02002) · UFRGS · 2026/2.</p>",
+  "excluded_pages": [
+    {
+      "page": "cartoes.html",
+      "reason": "ferramenta de cartões de estudo"
+    },
+    {
+      "page": "revisao-p1.html",
+      "reason": "revisão para avaliação"
+    }
+  ]
+}
