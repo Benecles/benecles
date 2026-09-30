@@ -22,8 +22,7 @@
           "complementary": false,
           "desc": "A petição inicial dá forma à demanda, e o que ela apresenta limita o que o juiz pode decidir. Até quando o autor pode alterar pedido e causa de pedir sem o consentimento do réu?",
           "reg": {
-            "does": "Delimite a demanda pelo pedido e distinga emenda de alteração.",
-            "exam": "P1"
+            "does": "Delimitar a demanda pelo pedido e distinga emenda de alteração."
           }
         }
       ]
@@ -40,8 +39,7 @@
           "complementary": false,
           "desc": "Duas ações podem receber decisão antes de o réu ser ouvido, mas só uma julga o pedido. Essa diferença define recurso, coisa julgada e se o processo segue para audiência: defeito da inicial ou improcedência do pedido?",
           "reg": {
-            "does": "Classifique a decisão liminar e determine se cabe audiência inicial.",
-            "exam": "P1"
+            "does": "Classificar a decisão liminar e determine se cabe audiência inicial."
           }
         }
       ]
@@ -58,8 +56,7 @@
           "complementary": false,
           "desc": "Duas perguntas diferentes governam o litisconsórcio: quem precisa estar no polo (necessário ou facultativo) e se o mérito precisa ser igual para todos (unitário ou simples). Misturar as duas é o erro clássico de prova.",
           "reg": {
-            "does": "Classifique o litisconsórcio e identifique quem deve integrar o polo.",
-            "exam": "P1"
+            "does": "Classificar o litisconsórcio e identifique quem deve integrar o polo."
           }
         }
       ]
@@ -76,8 +73,7 @@
           "complementary": false,
           "desc": "O sublocatário pode entrar no despejo para defender o locatário, mas seus poderes dependem do vínculo que ele aponta. A omissão do assistido e a renúncia do assistido produzem resultados opostos para o assistente.",
           "reg": {
-            "does": "Relacione o vínculo do terceiro assistente aos poderes que exerce.",
-            "exam": "P1"
+            "does": "Relacionar o vínculo do terceiro assistente aos poderes que exerce."
           }
         }
       ]
@@ -94,8 +90,7 @@
           "complementary": false,
           "desc": "Denunciação e chamamento parecem trazer um terceiro para o mesmo processo, mas o vínculo é outro: garantia ou regresso de um lado, dívida comum ao mesmo credor do outro. A classificação do vínculo decide qual técnica cabe.",
           "reg": {
-            "does": "Escolha a intervenção provocada conforme a relação jurídica envolvida.",
-            "exam": "P1"
+            "does": "Escolher a intervenção provocada conforme a relação jurídica envolvida."
           }
         },
         {
@@ -105,8 +100,7 @@
           "complementary": true,
           "desc": "Três casos sobre quando a denunciação pesa demais para quem pediu a tutela, e um sobre o que o denunciado passa a ser: a seguradora que contesta pode ser condenada direto.",
           "reg": {
-            "does": "Aplique precedentes do STJ aos limites da denunciação da lide.",
-            "exam": "P1"
+            "does": "Aplicar precedentes do STJ aos limites da denunciação da lide."
           }
         }
       ]
@@ -123,8 +117,7 @@
           "complementary": false,
           "desc": "Uma cláusula de foro num contrato já é ato processual, e as partes podem mudar o procedimento, mas não tudo. Onde termina o poder do art. 190, e o que o juiz faz quando a parte descumpre o negócio?",
           "reg": {
-            "does": "Classifique atos processuais, negócios e cartas pelos seus efeitos e limites.",
-            "exam": "P1"
+            "does": "Classificar atos processuais, negócios e cartas pelos seus efeitos e limites."
           }
         },
         {
@@ -133,8 +126,7 @@
           "title": "Citação e intimação",
           "complementary": true,
           "reg": {
-            "does": "Determine a modalidade de citação e o marco de ciência processual aplicável.",
-            "exam": "P1"
+            "does": "Determinar a modalidade de citação e o marco de ciência processual aplicável."
           }
         }
       ]
@@ -151,8 +143,7 @@
           "complementary": false,
           "desc": "O prazo só começa a correr depois de um marco que varia com o modo de comunicação, e disponibilização no Diário da Justiça não é publicação. Errar esse ponto antecipa o prazo em um dia útil e custa o recurso.",
           "reg": {
-            "does": "Calcule prazos úteis a partir do marco correto de cada comunicação.",
-            "exam": "P1"
+            "does": "Calcular prazos úteis a partir do marco correto de cada comunicação."
           }
         },
         {
@@ -161,8 +152,7 @@
           "title": "Preclusão e suas espécies",
           "complementary": true,
           "reg": {
-            "does": "Distinga as espécies de preclusão pelo fato que extingue o poder processual.",
-            "exam": "P1"
+            "does": "Distinguir as espécies de preclusão pelo fato que extingue o poder processual."
           }
         }
       ]
@@ -179,8 +169,7 @@
           "complementary": false,
           "desc": "Resposta é o conjunto das reações do réu, e contestação é só a peça de defesa. Contar quinze dias da citação, sem olhar a audiência, e deixar fato sem impugnação específica são os erros que a prova explora.",
           "reg": {
-            "does": "Estruture a contestação com preliminares, impugnação específica e defesa de mérito.",
-            "exam": "P1"
+            "does": "Estruturar a contestação com preliminares, impugnação específica e defesa de mérito."
           }
         },
         {
@@ -190,8 +179,7 @@
           "complementary": true,
           "desc": "A contestação resiste, a reconvenção demanda. E a revelia é a falta de resposta no prazo, cujo efeito material, a presunção de veracidade, tem quatro exceções e não decide o direito.",
           "reg": {
-            "does": "Formule reconvenção e determine os efeitos e limites da revelia.",
-            "exam": "P1"
+            "does": "Formular reconvenção e determine os efeitos e limites da revelia."
           }
         }
       ]
@@ -208,8 +196,7 @@
           "complementary": false,
           "desc": "Um ato defeituoso vale até o juiz pronunciar a nulidade, e só o defeito somado ao prejuízo justifica desfazê-lo. A mesma falha de forma pode anular a intimação de um réu e salvar a de outro.",
           "reg": {
-            "does": "Aplique defeito e prejuízo para decidir se cabe invalidar o ato processual.",
-            "exam": "P1"
+            "does": "Aplicar defeito e prejuízo para decidir se cabe invalidar o ato processual."
           }
         }
       ]
@@ -226,8 +213,7 @@
           "complementary": false,
           "desc": "Terminado o prazo da contestação, o juiz corrige, ouve o autor e escolhe uma de cinco saídas. O julgamento antecipado só vale se a prova é desnecessária, e o juiz que o adota não pode julgar improcedente por falta de prova.",
           "reg": {
-            "does": "Escolha a saída após a resposta do réu e verifique quando cabe julgamento antecipado.",
-            "exam": "AFF"
+            "does": "Escolher a saída após a resposta do réu e verifique quando cabe julgamento antecipado."
           }
         },
         {
@@ -236,8 +222,7 @@
           "title": "Estabilização do saneamento e acordos",
           "complementary": true,
           "reg": {
-            "does": "Separe o saneamento estabilizado dos capítulos ainda sujeitos a recurso.",
-            "exam": "AFF"
+            "does": "Separar o saneamento estabilizado dos capítulos ainda sujeitos a recurso."
           }
         }
       ]
@@ -254,8 +239,7 @@
           "complementary": false,
           "desc": "Excluir um litisconsorte por ilegitimidade não é sentença, embora se funde no art. 485. A forma depende da extensão da decisão, e o recurso muda com ela: apelação ou agravo.",
           "reg": {
-            "does": "Classifique a extinção pelo mérito, extensão e forma para definir o recurso cabível.",
-            "exam": "AFF"
+            "does": "Classificar a extinção pelo mérito, extensão e forma para definir o recurso cabível."
           }
         },
         {
@@ -264,8 +248,7 @@
           "title": "Mérito, antecipado e parcial",
           "complementary": true,
           "reg": {
-            "does": "Identifique quando cabe julgamento parcial e quais efeitos de mérito ele produz.",
-            "exam": "AFF"
+            "does": "Identificar quando cabe julgamento parcial e quais efeitos de mérito ele produz."
           }
         }
       ]
@@ -293,8 +276,25 @@
   ],
   "reg": {
     "exams": [
-      "P1",
-      "AFF"
+      {
+        "label": "P1",
+        "date": "07/10",
+        "covers": [
+          "aula-01.html",
+          "aula-02.html",
+          "aula-03.html",
+          "aula-04.html",
+          "aula-05.html",
+          "aula-05-casos.html",
+          "aula-06.html",
+          "aula-06-citacao.html",
+          "aula-07.html",
+          "aula-07-preclusao.html",
+          "aula-08.html",
+          "aula-08-revelia.html",
+          "aula-09.html"
+        ]
+      }
     ]
   }
 }

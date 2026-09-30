@@ -26,8 +26,7 @@
           "complementary": false,
           "desc": "O direito comum medieval se formou pelo trabalho dos juristas sobre textos romanos e canônicos. A aula compara os métodos dos glosadores e comentadores e acompanha a mudança trazida pelo Humanismo.",
           "reg": {
-            "does": "Distinguir glosadores e comentadores pelo uso do ius commune e dos iura propria.",
-            "exam": "P1"
+            "does": "Distinguir glosadores e comentadores pelo uso do ius commune e dos iura propria."
           }
         },
         {
@@ -37,8 +36,7 @@
           "complementary": false,
           "desc": "A recepção do direito romano em Portugal não significava submissão ao Imperador. A aula explica essa justificativa, a ordem subsidiária das fontes nas Ordenações Afonsinas e o Humanismo português.",
           "reg": {
-            "does": "Aplicar a ordem das fontes das Afonsinas a uma lacuna e justificar o critério do pecado.",
-            "exam": "P1"
+            "does": "Aplicar a ordem das fontes das Afonsinas a uma lacuna e justificar o critério do pecado."
           }
         },
         {
@@ -48,8 +46,7 @@
           "complementary": false,
           "desc": "Para Víctor Tau, a atenção ao caso concreto funcionava como pressuposto compartilhado da cultura jurídica dos séculos XVI e XVII, não apenas como técnica. A aula distingue essa crença social do sentido posterior e pejorativo de “casuísmo”.",
           "reg": {
-            "does": "Avaliar um caso concreto e identificar a circunstância que altera a razão da regra.",
-            "exam": "P1"
+            "does": "Avaliar um caso concreto e identificar a circunstância que altera a razão da regra."
           }
         },
         {
@@ -59,8 +56,7 @@
           "complementary": false,
           "desc": "A aula acompanha como normas eclesiásticas foram aplicadas em uma sociedade colonial, em relação com as condições locais e com autoridades civis e indígenas. A prática não se reduz à cópia de Trento nem à autonomia da Igreja em relação ao poder político.",
           "reg": {
-            "does": "Interpretar uma norma conciliar pelo território, autoridade e efeito sobre a comunidade.",
-            "exam": "P1"
+            "does": "Interpretar uma norma conciliar pelo território, autoridade e efeito sobre a comunidade."
           }
         },
         {
@@ -70,8 +66,7 @@
           "complementary": false,
           "desc": "Thomas Duve acompanha como um prático seleciona e interpreta materiais normativos para resolver um caso. A aula define a literatura normativa pragmática pelo trabalho que esses textos permitem, não apenas pelo título ou pelo assunto.",
           "reg": {
-            "does": "Classificar um texto pela função de sustentar a legitimidade de uma ação.",
-            "exam": "P1"
+            "does": "Classificar um texto pela função de sustentar a legitimidade de uma ação."
           }
         },
         {
@@ -81,8 +76,7 @@
           "complementary": false,
           "desc": "Juan de Solórzano Pereira passou pela Universidade de Salamanca, pela Audiência de Lima e pelo Conselho das Índias. A aula relaciona essa trajetória à sua escrita sobre o governo das Índias e examina os argumentos jurídicos e teológicos da defesa do domínio espanhol.",
           "reg": {
-            "does": "Reconstruir os títulos jurídicos com que Solórzano defende o domínio espanhol.",
-            "exam": "P1"
+            "does": "Reconstruir os títulos jurídicos com que Solórzano defende o domínio espanhol."
           }
         }
       ]
@@ -99,8 +93,7 @@
           "complementary": false,
           "desc": "Víctor Tau propõe estudar como lei, costume, uso e prática se combinavam em cada situação do Direito indiano. O caso Beruti mostra o costume influindo na decisão sem, por si só, resolver a questão normativa.",
           "reg": {
-            "does": "Examinar como lei, costume e prática se combinam num conflito do Direito indiano.",
-            "exam": "P2"
+            "does": "Examinar como lei, costume e prática se combinam num conflito do Direito indiano."
           }
         },
         {
@@ -110,8 +103,7 @@
           "complementary": false,
           "desc": "Tau relaciona o peso do caso nas Índias à diversidade, à mudança das circunstâncias e à distância. A aula explica por que decidir conforme o caso não equivalia a arbitrariedade nem se explica pelo simples descumprimento da lei.",
           "reg": {
-            "does": "Relacionar diversidade, mutabilidade e distância ao peso do caso nas Índias.",
-            "exam": "P2"
+            "does": "Relacionar diversidade, mutabilidade e distância ao peso do caso nas Índias."
           }
         },
         {
@@ -121,8 +113,7 @@
           "complementary": false,
           "desc": "A ideia de sistema ganhou força no século XVIII, mas a prática casuística não desapareceu de imediato. A aula distingue os sentidos de sistema e acompanha a duração dessa mudança até sua consolidação no século XIX.",
           "reg": {
-            "does": "Distinguir a crítica ilustrada ao casuísmo da consolidação gradual da ideia de sistema.",
-            "exam": "P2"
+            "does": "Distinguir a crítica ilustrada ao casuísmo da consolidação gradual da ideia de sistema."
           }
         }
       ]
@@ -139,8 +130,7 @@
           "complementary": false,
           "desc": "Os cursos jurídicos brasileiros do século XIX aproveitaram modelos de Coimbra e os reorganizaram. A aula acompanha as propostas e decisões que levaram à criação dos cursos em São Paulo e Olinda, em 1827.",
           "reg": {
-            "does": "Avaliar o modelo de Coimbra comparando os Estatutos de Cachoeira e a Lei de 1827.",
-            "exam": "P2"
+            "does": "Avaliar o modelo de Coimbra comparando os Estatutos de Cachoeira e a Lei de 1827."
           }
         },
         {
@@ -150,8 +140,7 @@
           "complementary": false,
           "desc": "Ruy Cirne Lima parte das relações que se formam na vida social para explicar o direito; as normas enunciam como essas relações devem formar-se. A aula reconstrói essa ordem no argumento e examina a relação entre direito natural e direito positivo.",
           "reg": {
-            "does": "Explicar o círculo do direito positivo a partir da relação, da norma e do direito natural.",
-            "exam": "P2"
+            "does": "Explicar o círculo do direito positivo a partir da relação, da norma e do direito natural."
           }
         }
       ]
@@ -194,8 +183,27 @@
   ],
   "reg": {
     "exams": [
-      "P1",
-      "P2"
+      {
+        "label": "P1",
+        "covers": [
+          "aula-01.html",
+          "aula-02.html",
+          "aula-03.html",
+          "aula-04.html",
+          "aula-05.html",
+          "aula-06.html"
+        ]
+      },
+      {
+        "label": "P2",
+        "covers": [
+          "aula-07.html",
+          "aula-08.html",
+          "aula-09.html",
+          "aula-14.html",
+          "aula-15.html"
+        ]
+      }
     ]
   }
 }
