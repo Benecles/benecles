@@ -100,18 +100,6 @@
 "after": "condutas de risco sim.”</p>\n      </div>\n      <div class=\"tese\">Procedente."
 },
 {
-"before": "DA LEGALIDADE</text>\n        <text x=\"60\" y=\"220\" class=\"t-small\">\"ninguém será obrigado... senão",
-"after": "DA LEGALIDADE</text>\n        <text x=\"60\" y=\"220\" class=\"t-small\">“ninguém será obrigado... senão"
-},
-{
-"before": "em virtude de lei\"</text>\n        <text x=\"60\" y=\"388\" class=\"t-small\">A lei",
-"after": "em virtude de lei”</text>\n        <text x=\"60\" y=\"388\" class=\"t-small\">A lei"
-},
-{
-"before": "\n        <text x=\"50\" y=\"356\" class=\"t-mid\">se torna \"inovador\" o bastante</text>\n        ",
-"after": "\n        <text x=\"50\" y=\"356\" class=\"t-mid\">se torna “inovador” o bastante</text>\n        "
-},
-{
 "before": "Executivo (art. 84, IV CF, destinados a",
 "after": "Executivo (art. 84, IV, da CF, destinados a"
 },
@@ -178,5 +166,13 @@
 {
 "before": "\n  <p>O critério decisivo é a persistência ",
 "after": "\n  <p>O critério é a persistência "
+},
+{
+"before": " EM FORMA</text>\n        <rect x=\"50\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"66\" y=\"342\" class=\"t-mid tc-dif\">PEC</text><text x=\"66\" y=\"366\" class=\"t-small\" style=\"font-size:9.9px\">MERA PROPOSTA · AINDA NÃO É EC</text>\n        <path d=\"M60 320l200 60M260 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"342\" class=\"t-mid tc-dif\">LEI MUNICIPAL</text><text x=\"346\" y=\"366\" class=\"t-small\">NÃO CABE ADI NO STF</text>\n        <path d=\"M340 320l200 60M540 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO",
+"after": " EM FORMA</text>\n        <rect x=\"50\" y=\"310\" width=\"220\" height=\"96\" class=\"w-dif ink\"/>\n        <text x=\"66\" y=\"340\" class=\"t-mid tc-dif\">PEC</text><text x=\"66\" y=\"365\" class=\"t-small\" style=\"font-size:9.9px\"><tspan x=\"66\">MERA PROPOSTA ·</tspan><tspan x=\"66\" dy=\"16\">AINDA NÃO É EC</tspan></text>\n        <path d=\"M60 320l200 60M260 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"96\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"336\" class=\"t-mid tc-dif\">LEI MUNICIPAL</text><text x=\"346\" y=\"366\" class=\"t-small\"><tspan x=\"346\">NÃO CABE ADI</tspan><tspan x=\"346\" dy=\"16\">NO STF</tspan></text>\n        <path d=\"M340 320l200 60M540 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO"
+},
+{
+"before": "só pelo parlamentar,</text><text x=\"50\" y=\"532\" class=\"t-small\">contra vício do ",
+"after": "só pelo parlamentar,</text><text x=\"50\" y=\"540\" class=\"t-small\">contra vício do "
 }
 ]
