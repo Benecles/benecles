@@ -24,10 +24,6 @@
 "after": "O verbo “introduzir” importa: o sistema continua"
 },
 {
-"before": "\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01\">Paratexto que muda o modo de ler</h2><p class=\"lede\">A abertura editorial e a tese orientam a leitura do texto-base.</p></section>\n<div class=\"longform\"><div><h3 id=\"11-a-edição-brasileira-não-é-uma-janela-transparente\">1.1 A edição brasileira não é uma janela transparente</h3><p>As páginas 1–10 não começam com a tese doutrinária propriamente dita. Há capa, título, editora, ficha catalográfica, nota do tradutor, lista de abreviaturas, prefácio do autor à tradução brasileira, versão alemã do prefácio e sumário. Esse material pertence à unidade porque informa como a obra chega ao leitor brasileiro e porque o autor, em 2000, comenta o que",
-"after": "\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01\">A obra e sua origem</h2><p class=\"lede\">Origem e contexto da conferência orientam a leitura da tese.</p></section>\n<div class=\"longform\"><div><h3 id=\"11-a-edição-brasileira-não-é-uma-janela-transparente\">1.1 Origem da obra e contexto</h3><p>A obra chega ao leitor brasileiro numa edição que traz prefácio de Roxin à tradução, escrito em 2000, no qual ele comenta o que"
-},
-{
 "before": "O título português apresenta <em>política criminal e sistema",
 "after": "O título português é <em>Política criminal e sistema"
 },
@@ -382,5 +378,13 @@
 {
 "before": " penal?</summary><p>Não. Ela relaciona dogmática penal, sistematização, racionalidade e segurança jurídica; o enunciado não atribui",
 "after": " penal?</summary><p>Não. O enunciado não atribui"
+},
+{
+"before": "</div>\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01\">A obra e ",
+"after": "</div>\n<section class=\"chapter\" data-src=\"roxin:14-16\" aria-labelledby=\"c01\"><span class=\"num \" aria-hidden=\"true\">01</span><h2 id=\"c01b\">A obra e "
+},
+{
+"before": "</div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c19\"><span class=\"num dif\" aria-hidden=\"true\">19</span><h2 id=\"c19\">Exercício de reconstrução ",
+"after": "</div>\n<section class=\"chapter\" data-src=\"roxin:11-23\" aria-labelledby=\"c19\"><span class=\"num dif\" aria-hidden=\"true\">19</span><h2 id=\"c19b\">Exercício de reconstrução "
 }
 ]

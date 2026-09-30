@@ -5,7 +5,7 @@ Generators rebuild pages from their sources, which would wipe prose edits made d
 (the gardeners' ~1,000 fixes). This stores each edit as an exact before→after replacement, with enough context
 to be unique, and re-applies it after a page is generated.
 
-    python3 tools/polish.py capture [FILE ...]    # record the working-tree edits vs git HEAD (default: all changed pages)
+    python3 tools/polish.py capture [FILE ...]    # record the working-tree edits vs git HEAD, or vs $POLISH_BASE (default: all changed pages)
     python3 tools/polish.py apply FILE ...        # re-apply stored patches to generated files
     python3 tools/polish.py check                 # report patches that no longer apply anywhere
 
@@ -52,7 +52,7 @@ def capture(files):
     for f in files:
         rel = _rel(f)
         try:
-            old = subprocess.run(['git', '-C', ROOT, 'show', f'HEAD:{rel}'], capture_output=True, text=True, check=True).stdout
+            old = subprocess.run(['git', '-C', ROOT, 'show', f"{os.environ.get('POLISH_BASE', 'HEAD')}:{rel}"], capture_output=True, text=True, check=True).stdout
         except subprocess.CalledProcessError:
             continue
         new = open(os.path.join(ROOT, rel)).read()
