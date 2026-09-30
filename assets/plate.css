@@ -1,0 +1,89 @@
+/* D2 full-bleed plate. Colours and typography inherit the course theme tokens. */
+.plate {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 3rem 0 3.25rem calc(50% - 50vw);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.plate__sheet {
+  height: min(80vh, 900px);
+  min-height: min(560px, 80vh);
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: clamp(12px, 2vh, 22px);
+  padding: clamp(18px, 3vw, 42px) clamp(18px, 5vw, 76px) clamp(14px, 2.5vh, 28px);
+  border-top: 1.5px solid var(--ink);
+  border-bottom: 1.5px solid var(--ink);
+  overflow: hidden;
+}
+
+.plate__title {
+  min-width: 0;
+  color: var(--ink-2);
+  font: 500 clamp(11px, 1vw, 13px)/1.35 var(--mono, ui-monospace, monospace);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.plate__drawing,
+.plate__desktop,
+.plate__phone {
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.plate__desktop { display: block; }
+.plate__phone { display: none; }
+
+.plate__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: var(--ink);
+}
+
+.plate__caption {
+  min-width: 0;
+  margin: 0;
+  color: var(--ink-2);
+  font: 400 clamp(14px, 1.35vw, 18px)/1.35 var(--serif, Georgia, serif);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 699px) and (orientation:portrait) {
+  .plate {
+    margin-top: 2rem;
+    margin-bottom: 2.25rem;
+  }
+
+  .plate__sheet {
+    height: auto;
+    min-height: 0;
+    grid-template-rows: auto minmax(240px, auto) auto;
+    gap: 12px;
+    padding: 16px 16px 14px;
+  }
+
+  .plate__drawing { height: auto; }
+  .plate--has-phone .plate__desktop { display: none; }
+  .plate:not(.plate--has-phone) .plate__desktop { display: block; }
+  .plate__phone { display: block; height: auto; }
+  .plate__svg--phone { height: auto; aspect-ratio: 7 / 11; }
+  .plate__svg--desktop { height: auto; }
+  .plate__caption { font-size: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate *, .plate *::before, .plate *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
