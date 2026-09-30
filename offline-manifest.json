@@ -1,5 +1,5 @@
 {
-"version": "158acb2d0782",
+"version": "19c2751bfb49",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
@@ -95,6 +95,7 @@
 "courses/direito-constitucional-i/aula-23.html",
 "courses/direito-constitucional-i/aula-24.html",
 "courses/direito-constitucional-i/aula-25.html",
+"courses/direito-constitucional-i/cartoes.html",
 "courses/direito-constitucional-i/index.html",
 "courses/direito-constitucional-i/",
 "courses/direito-constitucional-i/revisao-p1.html",
@@ -126,6 +127,7 @@
 "courses/metodologia-juridica/aula-09.html",
 "courses/metodologia-juridica/aula-14.html",
 "courses/metodologia-juridica/aula-15.html",
+"courses/metodologia-juridica/cartoes.html",
 "courses/metodologia-juridica/index.html",
 "courses/metodologia-juridica/",
 "courses/processo-civil-i/assets/curso.css",
@@ -147,6 +149,7 @@
 "courses/processo-civil-i/aula-10.html",
 "courses/processo-civil-i/aula-11-merito.html",
 "courses/processo-civil-i/aula-11.html",
+"courses/processo-civil-i/cartoes.html",
 "courses/processo-civil-i/index.html",
 "courses/processo-civil-i/",
 "courses/processo-civil-i/revisao-p1.html",
