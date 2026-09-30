@@ -17,6 +17,13 @@ Roles: **Benecles = executive chairman** (sets direction, owns decisions listed 
 | Agent status registry | `agents/` here (old `~/Documents/agents` = symlink) |
 Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally here but are git-ignored. Raw course material (`~/Desktop/UFRGS 2026-2`) is the chairman's and stays put.
 
+## After a factory reset (chairman planned one on 30/09)
+If `~/Developer` is missing, restore first:
+1. `mkdir -p ~/Developer && cd ~/Developer && gh repo clone Benecles/study-lab && gh repo clone Benecles/study-lab-private`
+2. Restore the dotfiles per `dotfiles/README.md` (Codex config + AGENTS.md; Claude CLAUDE.md + memories).
+3. Recreate the convenience symlinks only if the old paths are wanted: `~/Desktop/Relay Baton.md` → this repo's baton; `~/Documents/Protocols` → `protocols/`; `~/Documents/agents` → `agents/`.
+4. Git-ignored binaries (source-intake exam PDFs, book extracts, page captures) come back only if the chairman restored them from his Google Drive backup; everything else is in git.
+
 ## The mandate (chairman's direction, 30/09; read this twice)
 1. **The design system is the product.** Exams don't gate development; this site is one study resource among many. Ship every day.
 2. **Show, don't tell. Function, not description. Signs over text.** Never caption what's already visible (the "O semestre, desenhado." masthead was removed for this reason). When words are needed, say what a thing DOES, not what it IS. Guiding question for all design work: *what does this do?* A drawn sign (an orange airplane in an orange ring) beats a sentence. Course decks answer "what does this course let you do?".
@@ -34,7 +41,7 @@ Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally he
 
 ## In flight
 - **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
-- **Tools port** (study-lab branch `tools-home`, pushed? NO, local only; a WIP commit): front.py + data + shells and gates moved into `tools/`. BLOCKER: the staging `d1/data` picked up the INTERRUPTED, unapproved front-drawings-r3 output (e.g. a Processo "railway" drawing), so regenerating from it changes live fronts. Fix: reconcile `tools/fronts/data/*.json` so that regenerating reproduces live `courses/*/index.html` byte-for-byte (except asset ?v= stamps) BEFORE merging; then delete the relay-design d1 copy from use.
+- **Tools port** (study-lab branch `tools-home`, pushed to GitHub; a WIP commit): front.py + data + shells and gates moved into `tools/`. BLOCKER: the staging `d1/data` picked up the INTERRUPTED, unapproved front-drawings-r3 output (e.g. a Processo "railway" drawing), so regenerating from it changes live fronts. Fix: reconcile `tools/fronts/data/*.json` so that regenerating reproduces live `courses/*/index.html` byte-for-byte (except asset ?v= stamps) BEFORE merging; then delete the relay-design d1 copy from use.
 - Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
 
 ## Next up (in order)
