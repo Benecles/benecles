@@ -1,0 +1,249 @@
+/* D1 shared course-front frame. Colors are supplied by course.css theme tokens. */
+.front-title,
+.front-main > section,
+.endnote {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 48px);
+  box-sizing: border-box;
+}
+.front-title {
+  padding-top: clamp(28px, 5vw, 62px);
+  padding-bottom: 24px;
+}
+.front-kicker,
+.front-label,
+.front-unit-label {
+  color: var(--ink-2);
+  font: 500 11px/1.5 var(--mono);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.front-kicker { display: flex; flex-wrap: wrap; gap: 4px 10px; min-width: 0; }
+.front-title h1 {
+  max-width: 18ch;
+  margin: 16px 0 12px;
+  color: var(--ink);
+  font: 750 clamp(40px, 6.2vw, 84px)/.98 var(--sans);
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+.front-deck {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--ink-2);
+  font: 400 clamp(17px, 2vw, 20px)/1.45 var(--serif);
+}
+.front-drawing { padding-top: 10px; padding-bottom: 24px; }
+.front-sheet {
+  min-width: 0;
+  padding: clamp(10px, 2vw, 22px);
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--grid-major);
+}
+.front-sheet > :first-child { margin-top: 0; }
+.front-sheet > :last-child { margin-bottom: 0; }
+.front-sheet svg,
+.front-sheet img,
+.front-sheet canvas { display: block; max-width: 100%; height: auto; }
+.front-sheet svg { overflow: visible; }
+.front-sheet a { color: inherit; }
+.front-art-phone { display: none; }
+.front-drawing-empty {
+  min-height: 70px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  color: var(--ink-2);
+}
+.front-drawing-empty p { margin: 0; font: 14px/1.45 var(--serif); }
+.front-exam {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  padding-top: 20px;
+  padding-bottom: 38px;
+}
+.front-exam-content { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 16px 24px; min-width: 0; }
+.front-exam-content > .exam-card { width: min(100%, 520px); min-width: 0; box-sizing: border-box; }
+.front-exam-card {
+  width: min(100%, 520px);
+  min-width: 0;
+  padding: 18px 20px;
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--grid-major);
+  box-sizing: border-box;
+}
+.front-exam-card > :first-child { margin-top: 0; }
+.front-exam-card > :last-child { margin-bottom: 0; }
+.front-exam-card :is(h2,h3) { overflow-wrap: anywhere; }
+.front-review,
+.front-resume,
+.front-exam-card .exam-card a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  min-width: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--grid-major);
+  color: var(--ink);
+  font: 600 14px/1.4 var(--sans);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.front-review:hover,
+.front-resume:hover,
+.front-exam-card a:hover { color: var(--conc); text-decoration: underline; text-underline-offset: 3px; }
+.front-exam-card .front-resume { margin-top: 9px; color: var(--dif); }
+.front-resume[hidden] { display: none; }
+.front-lessons { padding-top: 20px; padding-bottom: 46px; }
+.front-section-head {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1.5px solid var(--ink);
+}
+.front-section-head h2,
+.front-bibliografia > h2 {
+  margin: 8px 0 0;
+  color: var(--ink);
+  font: 750 clamp(28px, 4vw, 44px)/1.05 var(--sans);
+  letter-spacing: -.025em;
+}
+.front-unit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 14px;
+}
+.front-unit {
+  min-width: 0;
+  padding: 17px 18px 12px;
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--grid-major);
+  box-sizing: border-box;
+}
+.front-unit h3 {
+  margin: 9px 0 5px;
+  color: var(--ink);
+  font: 700 clamp(18px, 2vw, 22px)/1.15 var(--sans);
+  overflow-wrap: anywhere;
+}
+.front-unit-desc {
+  display: -webkit-box;
+  min-width: 0;
+  margin: 0 0 12px;
+  overflow: hidden;
+  color: var(--ink-2);
+  font: 14px/1.4 var(--serif);
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.front-unit-lessons { border-top: 1px solid var(--grid-major); }
+.front-lesson-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--grid);
+  color: var(--ink);
+  font: 500 13px/1.4 var(--sans);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.front-lesson-row > span:first-child { min-width: 0; }
+.front-lesson-row:hover,
+.front-lesson-row:focus-visible { color: var(--conc); text-decoration: underline; text-underline-offset: 3px; }
+.front-lesson-row.is-complementary { color: var(--ink-2); }
+.complementary-mark {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font: 500 9px/1.25 var(--mono);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.front-bibliografia { padding-top: 26px; padding-bottom: 44px; border-top: 1.5px solid var(--ink); }
+.front-bibliografia > h2 { font-size: 25px; }
+.front-bib-group { margin-top: 17px; }
+.front-bib-group h3 {
+  margin: 0 0 5px;
+  color: var(--ink-2);
+  font: 500 10px/1.4 var(--mono);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.front-bib-group ul { margin: 0; padding: 0; list-style: none; }
+.front-bib-group li {
+  max-width: 95ch;
+  padding: 3px 0;
+  color: var(--ink-2);
+  font: 13px/1.42 var(--serif);
+  overflow-wrap: anywhere;
+}
+.endnote { padding-top: 20px; padding-bottom: 56px; color: var(--ink-2); font: 11px/1.5 var(--mono); letter-spacing: .03em; }
+.fontes-card .bibliografia-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--conc);
+  font: 500 11px/1.4 var(--mono);
+  text-decoration: none;
+}
+.fontes-card .bibliografia-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.front-info-fallback { position: relative; }
+.front-info-fallback > summary {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--ink-2);
+  color: var(--ink-2);
+  cursor: pointer;
+  font: italic 600 13px/1 var(--serif);
+  list-style: none;
+}
+.front-info-fallback > summary::-webkit-details-marker { display: none; }
+.front-info-fallback > summary:hover,
+.front-info-fallback[open] > summary,
+.front-info-fallback > summary:focus-visible { border-color: var(--conc); color: var(--conc); }
+.front-info-fallback .fontes-card {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 30;
+  width: min(380px, calc(100vw - 32px));
+  padding: 16px 18px 12px;
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 6px 6px 0 var(--grid-major);
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.front-info-fallback .fontes-card h2 { margin: 0 0 10px; font: 600 11px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.front-info-fallback .fontes-card ul { margin: 0; padding-left: 17px; font: 14px/1.45 var(--serif); }
+@media (max-width: 699px) and (orientation:portrait) {
+  .front-title { padding-top: 30px; padding-bottom: 18px; }
+  .front-title h1 { max-width: 15ch; font-size: clamp(39px, 11vw, 56px); }
+  .front-drawing { padding-top: 8px; }
+  .front-sheet { padding: 10px; }
+  .front-art-desktop:has(+ .front-art-phone) { display: none; }
+  .front-art-phone { display: block; min-width: 0; }
+  .front-art-phone svg { width: 100%; }
+  .front-exam { padding-top: 17px; padding-bottom: 28px; }
+  .front-exam-card { padding: 16px; }
+  .front-unit-grid { grid-template-columns: minmax(0, 1fr); }
+  .front-unit { padding-inline: 14px; }
+  .front-lesson-row { align-items: flex-start; }
+}
+@media (max-width: 351px) and (orientation:portrait) {
+  .front-unit-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .front-main *, .front-title *, .endnote * { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

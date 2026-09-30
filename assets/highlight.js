@@ -214,3 +214,14 @@
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', restore); else restore();
 })();
+
+// Load the chapter ribbon from this asset directory; the reader remains usable if storage is unavailable.
+(function () {
+  var current = document.currentScript;
+  if (!current || !current.src || document.querySelector('script[data-cufrgs-bookmarks]')) return;
+  var loader = document.createElement('script');
+  loader.src = new URL('bookmarks.js', current.src).href;
+  loader.defer = true;
+  loader.setAttribute('data-cufrgs-bookmarks', '');
+  document.head.appendChild(loader);
+})();
