@@ -45,7 +45,7 @@
   upd();
   try {
     var t = document.title.split(' · ')[0];
-    if (!localStorage.getItem('cufrgs-no-resume')) localStorage.setItem('cufrgs-delito-last', JSON.stringify({ h: location.pathname.split('/').pop(), t: t }));
+    if (!localStorage.getItem('ordenacoes-no-resume')) localStorage.setItem('ordenacoes-delito-last', JSON.stringify({ h: location.pathname.split('/').pop(), t: t }));
   } catch (e) {}
 })();
 
