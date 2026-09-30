@@ -1,0 +1,237 @@
+{
+  "course": "Teoria Geral dos Contratos",
+  "code": "DIR02023",
+  "area": "Direito Privado",
+  "prof": "Profa. Giovana Benetti",
+  "n_aulas": 17,
+  "title": "Teoria Geral dos Contratos",
+  "deck": "Do acordo inicial ao encerramento: acompanhe como o vínculo se forma, é interpretado e pode mudar.",
+  "deck_flag": false,
+  "drawing": {
+    "inner_html": "<svg class=\"life\" viewBox=\"0 0 1100 580\" role=\"img\" aria-label=\"Planta do curso: a vida de um contrato, das tratativas à extinção, com as aulas no momento que governam\"><defs><marker id=\"la\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--ink)\"/></marker></defs><text x=\"30\" y=\"30\" class=\"hdr\">A VIDA DE UM CONTRATO</text><text x=\"1070\" y=\"30\" text-anchor=\"end\" class=\"ex\">antes da assinatura: P1 · depois dela: P2 (27/11)</text><rect x=\"30\" y=\"52\" width=\"1040\" height=\"56\" style=\"fill:var(--paper-2);stroke:var(--ink);stroke-width:1.5\"/><text x=\"46\" y=\"76\" class=\"hdr\">CONCEITO E PRINCÍPIOS</text><text x=\"46\" y=\"95\" class=\"ex\" style=\"fill:var(--ink-2)\">valem em toda a vida do contrato</text><a href=\"aula-01.html\"><rect x=\"330\" y=\"63\" width=\"150\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"341\" y=\"85\"><tspan class=\"n\">01</tspan><tspan class=\"u\" dx=\"7\">Conceito</tspan></text></a><a href=\"aula-02.html\"><rect x=\"492\" y=\"63\" width=\"262\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"503\" y=\"85\"><tspan class=\"n\">02</tspan><tspan class=\"u\" dx=\"7\">Liberdade, força, relatividade</tspan></text></a><a href=\"aula-03.html\"><rect x=\"766\" y=\"63\" width=\"290\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"777\" y=\"85\"><tspan class=\"n\">03</tspan><tspan class=\"u\" dx=\"7\">Função social, boa-fé, equilíbrio</tspan></text></a><text x=\"40\" y=\"146\" class=\"hdr\" style=\"font-size:12px\">FORMAÇÃO</text><a href=\"aula-04.html\"><rect x=\"40\" y=\"156\" width=\"160\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"51\" y=\"178\"><tspan class=\"n\">04</tspan><tspan class=\"u\" dx=\"7\">Tratativas</tspan></text></a><a href=\"aula-05.html\"><rect x=\"216\" y=\"156\" width=\"200\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"227\" y=\"178\"><tspan class=\"n\">05</tspan><tspan class=\"u\" dx=\"7\">Proposta e aceitação</tspan></text></a><a href=\"aula-06.html\"><rect x=\"432\" y=\"156\" width=\"210\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"443\" y=\"178\"><tspan class=\"n\">06</tspan><tspan class=\"u\" dx=\"7\">Incidentes da formação</tspan></text></a><path d=\"M120 190V248\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><path d=\"M316 190V248\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><path d=\"M537 190V214H470V248\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"30\" y=\"250\" width=\"440\" height=\"80\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1.2;stroke-dasharray:6 4\"/><path d=\"M470 250H1000L1007 258L997 266L1007 274L997 282L1007 290L997 298L1007 306L997 314L1007 322L1000 330H470Z\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"44\" y=\"266\" class=\"ex\" style=\"fill:var(--ink-2)\">A e B negociam; ainda não há contrato</text><text x=\"484\" y=\"266\" class=\"ex\" style=\"fill:var(--ink-2)\">A e B estão vinculados</text><text x=\"36\" y=\"279\" class=\"pt\">A</text><text x=\"36\" y=\"326\" class=\"pt\">B</text><path d=\"M50 284H430C450 284 454 294 470 294H988C1004 294 1010 268 1040 268\" class=\"party\"/><path d=\"M50 312H430C450 312 454 304 470 304H835C850 304 852 354 870 360\" class=\"party\"/><path d=\"M820 360C842 354 846 304 862 304H988C1004 304 1010 322 1040 322\" class=\"party c\"/><text x=\"812\" y=\"374\" class=\"pt\" style=\"fill:var(--dif)\">C</text><text x=\"840\" y=\"240\" text-anchor=\"middle\" class=\"ex\" style=\"fill:var(--dif)\">cessão: B sai, C entra ↓</text><text x=\"80\" y=\"302\" class=\"ex\" style=\"fill:var(--ink-2)\">tratativas</text><path d=\"M250 287V308\" style=\"stroke:var(--ink);stroke-width:1.2;fill:none\" marker-end=\"url(#la)\"/><text x=\"256\" y=\"302\" class=\"ex\">proposta</text><path d=\"M380 309V288\" style=\"stroke:var(--ink);stroke-width:1.2;fill:none\" marker-end=\"url(#la)\"/><text x=\"386\" y=\"302\" class=\"ex\">aceitação</text><path d=\"M470 234V340\" style=\"stroke:var(--conc);stroke-width:2;fill:none\"/><path d=\"M436 244c7-15 13 9 19-3s9-12 14 1 7 7 13-5 6-4 12 2\" style=\"stroke:var(--conc);stroke-width:1.6;fill:none\"/><text x=\"470\" y=\"356\" text-anchor=\"middle\" class=\"ex\" style=\"fill:var(--conc)\">assinam: o contrato nasce</text><text x=\"1044\" y=\"356\" text-anchor=\"end\" class=\"ex\" style=\"fill:var(--conc)\">extinção: o vínculo acaba</text><rect x=\"40\" y=\"392\" width=\"330\" height=\"96\" style=\"fill:none;stroke:var(--ink);stroke-width:1.2\"/><rect x=\"45\" y=\"397\" width=\"320\" height=\"86\" style=\"fill:none;stroke:var(--ink);stroke-width:.8;stroke-dasharray:3 3\"/><text x=\"58\" y=\"418\" class=\"hdr\" style=\"font-size:12px\">CLASSIFICAÇÃO</text><text x=\"186\" y=\"418\" class=\"ex\" style=\"fill:var(--ink-2)\">que tipo de contrato?</text><a href=\"aula-07.html\"><rect x=\"58\" y=\"432\" width=\"145\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"69\" y=\"454\"><tspan class=\"n\">07</tspan><tspan class=\"u\" dx=\"7\">Classificação I</tspan></text></a><a href=\"aula-08.html\"><rect x=\"212\" y=\"432\" width=\"145\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"223\" y=\"454\"><tspan class=\"n\">08</tspan><tspan class=\"u\" dx=\"7\">Classificação II</tspan></text></a><path d=\"M370 440H454V364\" style=\"stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 4;fill:none\"/><text x=\"500\" y=\"390\" class=\"hdr\" style=\"font-size:12px\">INTERPRETAÇÃO</text><path d=\"M590 332V376\" style=\"stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 3;fill:none\"/><a href=\"aula-09.html\"><rect x=\"500\" y=\"400\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"500\" y=\"400\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"511\" y=\"422\"><tspan class=\"n\">09</tspan><tspan class=\"u\" dx=\"7\">Sentido do acordo</tspan></text></a><a href=\"aula-10.html\"><rect x=\"500\" y=\"442\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"500\" y=\"442\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"511\" y=\"464\"><tspan class=\"n\">10</tspan><tspan class=\"u\" dx=\"7\">Regras especiais</tspan></text></a><text x=\"640\" y=\"390\" class=\"hdr\" style=\"font-size:12px\">REVISÃO</text><path d=\"M720 332V376\" style=\"stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 3;fill:none\"/><a href=\"aula-11.html\"><rect x=\"640\" y=\"400\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"640\" y=\"400\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"651\" y=\"422\"><tspan class=\"n\">11</tspan><tspan class=\"u\" dx=\"7\">Na origem</tspan></text></a><a href=\"aula-12.html\"><rect x=\"640\" y=\"442\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"640\" y=\"442\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"651\" y=\"464\"><tspan class=\"n\">12</tspan><tspan class=\"u\" dx=\"7\">Na execução</tspan></text></a><a href=\"aula-13.html\"><rect x=\"640\" y=\"484\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"640\" y=\"484\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"651\" y=\"506\"><tspan class=\"n\">13</tspan><tspan class=\"u\" dx=\"7\">Base do negócio</tspan></text></a><text x=\"790\" y=\"390\" class=\"hdr\" style=\"font-size:12px\">CESSÃO</text><a href=\"aula-14.html\"><rect x=\"790\" y=\"400\" width=\"125\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"790\" y=\"400\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"801\" y=\"422\"><tspan class=\"n\">14</tspan><tspan class=\"u\" dx=\"7\">Quem entra</tspan></text></a><text x=\"930\" y=\"390\" class=\"hdr\" style=\"font-size:12px\">EXTINÇÃO</text><path d=\"M1000 332V376\" style=\"stroke:var(--ink-2);stroke-width:1;stroke-dasharray:2 3;fill:none\"/><a href=\"aula-15.html\"><rect x=\"930\" y=\"400\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"930\" y=\"400\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"941\" y=\"422\"><tspan class=\"n\">15</tspan><tspan class=\"u\" dx=\"7\">Cumprimento</tspan></text></a><a href=\"aula-16.html\"><rect x=\"930\" y=\"442\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"930\" y=\"442\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"941\" y=\"464\"><tspan class=\"n\">16</tspan><tspan class=\"u\" dx=\"7\">Por vontade</tspan></text></a><a href=\"aula-17.html\"><rect x=\"930\" y=\"484\" width=\"135\" height=\"34\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"930\" y=\"484\" width=\"4\" height=\"34\" style=\"fill:var(--dif)\"/><text x=\"941\" y=\"506\"><tspan class=\"n\">17</tspan><tspan class=\"u\" dx=\"7\">Inadimplemento</tspan></text></a><text x=\"30\" y=\"566\" class=\"ex\" style=\"fill:var(--muted)\">linhas: as partes · tracejado: antes de o contrato existir · <tspan style=\"fill:var(--dif)\">▌</tspan> matéria da P2 (27/11)</text></svg>",
+    "css": ".life{width:100%;height:auto;display:block;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}.life-scroll{overflow-x:auto}.life-scroll .life{min-width:880px}.life text{font-family:var(--mono);font-size:11px;fill:var(--ink)}.life .hdr{font:600 13px var(--mono);letter-spacing:.1em}.life .ex{fill:var(--conc)}.life .u{font:500 11.5px var(--sans)}.life .n{fill:var(--conc);font-weight:500}.life .pt{font:600 12px var(--mono)}.life .party{fill:none;stroke:var(--ink);stroke-width:2.2}.life .party.c{stroke:var(--dif)}.life a rect{transition:fill .15s}.life a:hover rect:first-child,.life a:focus-visible rect:first-child{fill:var(--conc-wash)}header.hero.front h1{font-size:clamp(40px,6.2vw,84px)!important;margin:18px 0 12px!important;max-width:none}header.hero.front .deck{max-width:62ch}.front-row{max-width:1180px;margin:28px auto 0;padding:0 clamp(16px,4vw,48px)}.front-row .exam-card{max-width:520px}"
+  },
+  "exam_html": "<aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n      <span class=\"exam-date\">Primeira prova · 25/09/2026</span>\n      <h2 id=\"exam-title\">Revisão para a P1</h2>\n      <p>Revisão das cinco unidades da prova, com artigos aplicáveis e dez casos resolvidos.</p>\n      <a href=\"revisao-p1.html\"><span>Abrir revisão P1</span><span aria-hidden=\"true\">→</span></a>\n      <a class=\"resume\" href=\"#\" hidden><span>Continuar de onde parou</span><span aria-hidden=\"true\">→</span></a>\n    </aside>\n<script>(function(){if(new Date()<new Date('2026-09-26T00:00:00-03:00'))return;var c=document.querySelector('.exam-card');if(!c)return;c.classList.add('p2');c.querySelector('.exam-date').textContent='Segunda prova · 27/11/2026';c.querySelector('h2').textContent='Revisão para a P2';c.querySelector('p').textContent='Interpretação, revisão, cessão e extinção, com artigos aplicáveis e doze casos resolvidos.';var a=c.querySelector('a:not(.resume)');a.href='revisao-p2.html';a.firstChild.textContent='Abrir revisão P2'})()</script>\n<script>(function(){try{if(localStorage.getItem('cufrgs-no-resume'))return;var d=JSON.parse(localStorage.getItem('cufrgs-contratos-last')||'null');if(!d||!/^\\d\\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}catch(e){}})()</script>",
+  "review_href": "revisao-p2.html",
+  "units": [
+    {
+      "label": "Unidade 01",
+      "title": "Conceito e funções",
+      "desc": "Distinguir contrato, negócio jurídico e operação econômica; identificar quando a relação também é de consumo.",
+      "lessons": [
+        {
+          "href": "aula-01.html",
+          "label": "Aula 01",
+          "title": "Conceito de contrato",
+          "complementary": false,
+          "desc": "O que é contrato; negócio jurídico e operação econômica; contrato de consumo."
+        }
+      ]
+    },
+    {
+      "label": "Unidade 02",
+      "title": "Princípios fundamentais",
+      "desc": "Aplicar liberdade contratual, força obrigatória e relatividade, considerando seus limites e a atuação de terceiro ofensor.",
+      "lessons": [
+        {
+          "href": "aula-02.html",
+          "label": "Aula 02",
+          "title": "Liberdade, força e relatividade",
+          "complementary": false,
+          "desc": "Os seis princípios contratuais."
+        },
+        {
+          "href": "aula-03.html",
+          "label": "Aula 03",
+          "title": "Função social, boa-fé e equilíbrio",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Unidade 03",
+      "title": "Formação",
+      "desc": "Percorrer tratativas, responsabilidade pré-contratual, proposta e aceitação até identificar quando o vínculo se forma.",
+      "lessons": [
+        {
+          "href": "aula-04.html",
+          "label": "Aula 04",
+          "title": "O contrato como processo",
+          "complementary": false,
+          "desc": "Tratativas, proposta e aceitação."
+        },
+        {
+          "href": "aula-05.html",
+          "label": "Aula 05",
+          "title": "Proposta e aceitação",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Unidade 04",
+      "title": "Incidentes da formação",
+      "desc": "Comparar estipulação em favor de terceiro, promessa de fato de terceiro, pessoa a declarar, contrato preliminar e arras.",
+      "lessons": [
+        {
+          "href": "aula-06.html",
+          "label": "Aula 06",
+          "title": "Incidentes da formação",
+          "complementary": false,
+          "desc": "Estipulação em favor de terceiro, promessa de fato de terceiro, pessoa a declarar, contrato preliminar e arras."
+        }
+      ]
+    },
+    {
+      "label": "Unidade 05",
+      "title": "Classificação dos contratos",
+      "desc": "Classificar contratos por obrigações, riscos, forma, execução e relação entre contratos.",
+      "lessons": [
+        {
+          "href": "aula-07.html",
+          "label": "Aula 07",
+          "title": "Classificação dos contratos I",
+          "complementary": false,
+          "desc": "Bilaterais, onerosos, aleatórios, reais, de adesão, coligados e outros."
+        },
+        {
+          "href": "aula-08.html",
+          "label": "Aula 08",
+          "title": "Classificação dos contratos II",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Unidade 06",
+      "title": "Interpretação dos contratos",
+      "desc": "Interpretar declarações à luz do texto, do contexto, da conduta posterior e das regras especiais.",
+      "lessons": [
+        {
+          "href": "aula-09.html",
+          "label": "Aula 09",
+          "title": "O sentido do acordo",
+          "complementary": false,
+          "desc": "Sentido das declarações, contexto, usos e regras especiais."
+        },
+        {
+          "href": "aula-10.html",
+          "label": "Aula 10",
+          "title": "Regras especiais",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Unidade 07",
+      "title": "Revisão dos contratos",
+      "desc": "Distinguir desequilíbrio na origem, mudança durante a execução e quebra da base comum do negócio.",
+      "lessons": [
+        {
+          "href": "aula-11.html",
+          "label": "Aula 11",
+          "title": "Desequilíbrio na origem",
+          "complementary": false,
+          "desc": "Cláusulas abusivas, lesão, imprevisão e base do negócio."
+        },
+        {
+          "href": "aula-12.html",
+          "label": "Aula 12",
+          "title": "O que mudou na execução",
+          "complementary": false
+        },
+        {
+          "href": "aula-13.html",
+          "label": "Aula 13",
+          "title": "A base comum do negócio",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Unidade 08",
+      "title": "Cessão da posição contratual",
+      "desc": "Identificar quem cede, quem recebe e quem permanece na relação, além do alcance da transferência.",
+      "lessons": [
+        {
+          "href": "aula-14.html",
+          "label": "Aula 14",
+          "title": "Quem entra no contrato?",
+          "complementary": false,
+          "desc": "Transferência da posição contratual e efeitos para as partes."
+        }
+      ]
+    },
+    {
+      "label": "Unidade 09",
+      "title": "Extinção dos contratos",
+      "desc": "Distinguir cumprimento, impossibilidade superveniente, resilição e resolução conforme o modo de encerramento.",
+      "lessons": [
+        {
+          "href": "aula-15.html",
+          "label": "Aula 15",
+          "title": "Qual evento extingue o quê?",
+          "complementary": false,
+          "desc": "Saídas consensuais, denúncia, resolução e inadimplemento."
+        },
+        {
+          "href": "aula-16.html",
+          "label": "Aula 16",
+          "title": "Saída por vontade",
+          "complementary": false
+        },
+        {
+          "href": "aula-17.html",
+          "label": "Aula 17",
+          "title": "Mora ou ruptura?",
+          "complementary": false
+        }
+      ]
+    }
+  ],
+  "info_items_html": "<h3>Do programa</h3><ul><li>Caio Mário da Silva Pereira, <i>Instituições de Direito Civil</i>, v. III</li><li>Sílvio de Salvo Venosa, <i>Direito Civil: Contratos</i></li><li>Orlando Gomes, <i>Contratos</i></li></ul><h3>Do Moodle</h3><ul><li>Slides das aulas da Profa. Giovana Benetti</li><li>Artigos de Judith Martins-Costa, Antonio Junqueira de Azevedo e Gerson Branco</li><li>Julgados do STJ e do TJSP indicados em aula (entre eles, o caso Zeca Pagodinho)</li></ul><h3>Lei</h3><ul><li>Código Civil, arts. 421 a 480; Código de Defesa do Consumidor</li></ul><p>As principais, não a bibliografia completa.</p>",
+  "bibliografia": {
+    "basica": [
+      "VENOSA, Silvio de S. Direito Civil - Contratos - Vol. 3 - 26ª Edição 2026. 26. ed. Rio de Janeiro: Atlas, 2025. E-book.. Disponível em: https://app.minhabiblioteca.com.br/reader/books/9786559778034/.",
+      "PEREIRA, Caio Mário da S. Instituições de Direito Civil - Vol. III - 26ª Edição 2024. 26. ed. Rio de Janeiro: Forense, 2024. E-book. Disponível em: https://app.minhabiblioteca.com.br/reader/books/9786559649167/."
+    ],
+    "complementar": [
+      "FRANCO, Vera Helena De Mello. Teoria Geral do Contrato. Confronto com o Direito Europeu Futuro. 1.ed. São Paulo: Thomson Reuters Brasil, 2011",
+      "GOMES, Orlando. Contratos - 28ª Edição 2022. 28. ed. Rio de Janeiro: Forense, 2022. E-book. Disponível em: https://app.minhabiblioteca.com.br/reader/books/9786559645640/.",
+      "NANNI, Giovanni Ettore. Comentários ao código Civil: Direito privado contemporâneo. 1.ed. São Paulo: Thomson Reuters Brasil, 2023. E-book. Disponível em: https://proview.thomsonreuters.com/launchapp/title/rt/codigos/308724409/v3/page/IV?sponsor=UFRGS-5",
+      "NERY, Rosa Maria de Andrade. Instituições de direito civil vol. II: das obrigações, dos contratos e da responsabilidade civil. 3.ed. São Paulo: Thomson Reuters, 2022. E-book. Disponível em: https://proview.thomsonreuters.com/launchapp/title/rt/monografias/107375475/v3/page/1?sponsor=UFRGS-5",
+      "NERY JUNIOR, Nelson; NERY, Rosa Maria de Andrade. Código Civil Comentado. 4.ed. São Paulo: Thomson Reuters Brasil, 2022. E-book. Disponível em: https://proview.thomsonreuters.com/launchapp/title/rt/codigos/100083938/v14/page/IV?sponsor=UFRGS-5",
+      "AGUIAR JR. Ruy Rosado. Extinção dos Contratos por Inadimplemento do Devedor. Rio de Janeiro: Ed. Aide, 1991.",
+      "BRANCO, Gerson Luiz Carlos; SILVA, Luis Renato Ferreira da. Contratos: controvérsias sobre a teoria geral: diálogo entre dois professores. São Paulo: Quartier Latin, 2023.",
+      "COUTO E SILVA, Clóvis. O Princípio da Boa Fé no Direito Brasileiro e Português. In: Estudos de Direito Civil Brasileiro e Português. São Paulo, Editora RT, 1980.",
+      "DA GUIA, Rodrigo. Remédios ao inadimplemento dos contratos: princípio do equilíbrio e tutela do programa contratual. 1.ed. São Paulo: Thomson Reuters Brasil, 2023. E-book. Disponível em: https://proview.thomsonreuters.com/launchapp/title/rt/monografias/317533161/v1/page/IV?sponsor=UFRGS-5",
+      "MARTINS-COSTA, Judith. O Método da Concreção e a Interpretação dos Contratos: Primeiras Notas de uma Leitura Suscitada pelo Código Civil. In: NANNI, Giovanni (Org.). Temas Relevantes do Direito Civil Contemporâneo. São Paulo: Atlas, 2008, p. 475-506.",
+      "PINHEIRO, Patricia Peck Garrido. Contratos digitais ou eletrônicos: apenas um meio ou uma nova modalidade contratual? Revista dos Tribunais, São Paulo, vol. 966, p. 21-40, abr. 2016.",
+      "PONTES DE MIRANDA, Francisco Cavalcanti. Tratado de Direito Privado. São Paulo: Revista dos Tribunais, 2012. Tomo XXIII."
+    ],
+    "source_file": "~/Desktop/UFRGS 2026-2/Teoria Geral dos Contratos/Teoria Geral dos Contratos - GVB - 2026.2.pdf"
+  },
+  "endnote_html": "Teoria Geral dos Contratos · DIR02023 · 2026/2",
+  "excluded_pages": [
+    {
+      "page": "index.html",
+      "reason": "Front atual preservado no snapshot; será substituído pelo renderer D1."
+    },
+    {
+      "page": "artigos.html",
+      "reason": "Índice de consulta aos artigos legais usados nas aulas; não é aula."
+    },
+    {
+      "page": "cartoes.html",
+      "reason": "Ferramenta interativa de cartões de estudo; não é aula."
+    },
+    {
+      "page": "revisao-p1.html",
+      "reason": "Página editorial de revisão para a P1; não é aula."
+    },
+    {
+      "page": "revisao-p2.html",
+      "reason": "Página editorial de revisão para a P2; não é aula."
+    }
+  ]
+}

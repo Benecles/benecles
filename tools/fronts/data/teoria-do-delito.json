@@ -1,0 +1,284 @@
+{
+  "course": "teoria-do-delito",
+  "code": "DIR01199",
+  "area": "Direito Penal",
+  "prof": "Prof. Orlando Faccini Neto",
+  "n_aulas": 15,
+  "title": "Teoria do Delito",
+  "deck": "Teoria geral do crime, tentativa e concurso de pessoas.",
+  "deck_flag": false,
+  "drawing": {
+    "inner_html": "<div class=\"front-art-desktop\"><svg class=\"cascade flowc\" viewBox=\"0 0 1100 912\" role=\"img\" aria-label=\"Planta do curso: a análise do crime como perguntas em sequência; cada resposta negativa encerra o caso com seu resultado; as unidades ficam ao lado da pergunta que estudam\"><defs><marker id=\"dm\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--ink)\"/></marker><marker id=\"dx\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker></defs><text x=\"30\" y=\"36\" class=\"hdr\">O QUE ESTUDAR</text><text x=\"440\" y=\"36\" class=\"hdr\">A PERGUNTA</text><text x=\"790\" y=\"36\" class=\"hdr\" style=\"fill:var(--conc)\">SE A RESPOSTA FOR NÃO</text><a href=\"unidade-01.html\"><rect x=\"30\" y=\"56\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"30\" y=\"56\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"42\" y=\"80\"><tspan class=\"n\">01</tspan><tspan class=\"u\" dx=\"7\">Arquitetura do delito</tspan></text></a><a href=\"suplemento-17.html\" class=\"sup\"><rect x=\"210\" y=\"56\" width=\"170\" height=\"38\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"220\" y=\"80\">17 Roxin: método</text></a><path d=\"M392 60V90M392 92H440\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"440\" y=\"62\" width=\"300\" height=\"60\" style=\"fill:var(--ink);stroke:var(--ink);stroke-width:1.5\"/><text x=\"456\" y=\"88\" class=\"q\" style=\"fill:var(--paper)\">O que aconteceu?</text><text x=\"456\" y=\"109\" class=\"ex\" style=\"fill:var(--paper);opacity:.8\">o fato, com o que está provado</text><path d=\"M590 122V172\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#dm)\"/><a href=\"unidade-02.html\"><rect x=\"30\" y=\"168\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"30\" y=\"168\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"42\" y=\"192\"><tspan class=\"n\">02</tspan><tspan class=\"u\" dx=\"7\">Conduta</tspan></text></a><a href=\"suplemento-16.html\" class=\"sup\"><rect x=\"210\" y=\"168\" width=\"170\" height=\"38\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"220\" y=\"192\">16 Brandão: conduta</text></a><path d=\"M392 172V202M392 204H440\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"440\" y=\"174\" width=\"300\" height=\"60\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"456\" y=\"200\" class=\"q\" style=\"\">1 · Há conduta?</text><text x=\"456\" y=\"221\" class=\"ex\" style=\"fill:var(--ink-2);\">comportamento humano controlável</text><path d=\"M740 204H786\" style=\"stroke:var(--conc);stroke-width:1.5;fill:none\" marker-end=\"url(#dx)\"/><text x=\"752\" y=\"197\" class=\"yn\" style=\"fill:var(--conc)\">não</text><rect x=\"790\" y=\"184\" width=\"280\" height=\"40\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:1.5\"/><text x=\"804\" y=\"209\" class=\"out\">não há ação</text><path d=\"M590 234V333\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#dm)\"/><text x=\"600\" y=\"254\" class=\"yn\">sim</text><a href=\"unidade-03.html\"><rect x=\"30\" y=\"280\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"30\" y=\"280\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"42\" y=\"304\"><tspan class=\"n\">03</tspan><tspan class=\"u\" dx=\"7\">Tipicidade objetiva</tspan></text></a><a href=\"unidade-04.html\"><rect x=\"210\" y=\"280\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"210\" y=\"280\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"222\" y=\"304\"><tspan class=\"n\">04</tspan><tspan class=\"u\" dx=\"7\">Tipo subjetivo e dolo</tspan></text></a><a href=\"unidade-05.html\"><rect x=\"30\" y=\"324\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"30\" y=\"324\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"42\" y=\"348\"><tspan class=\"n\">05</tspan><tspan class=\"u\" dx=\"7\">Erro de tipo</tspan></text></a><a href=\"unidade-06.html\"><rect x=\"210\" y=\"324\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"210\" y=\"324\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"222\" y=\"348\"><tspan class=\"n\">06</tspan><tspan class=\"u\" dx=\"7\">Culpa e omissão</tspan></text></a><a href=\"unidade-07.html\"><rect x=\"30\" y=\"368\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"30\" y=\"368\" width=\"4\" height=\"38\" style=\"fill:var(--conc)\"/><text x=\"42\" y=\"392\"><tspan class=\"n\">07</tspan><tspan class=\"u\" dx=\"7\">Imputação objetiva</tspan></text></a><a href=\"unidade-08.html\"><rect x=\"210\" y=\"368\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"222\" y=\"392\"><tspan class=\"n\">08</tspan><tspan class=\"u\" dx=\"7\">Tentativa e abandono</tspan></text></a><a href=\"suplemento-18.html\" class=\"sup\"><rect x=\"30\" y=\"412\" width=\"170\" height=\"38\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"40\" y=\"436\">18 Roxin: tipo e dever</text></a><path d=\"M392 284V446M392 365H440\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"440\" y=\"335\" width=\"300\" height=\"60\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"456\" y=\"361\" class=\"q\" style=\"\">2 · O fato é típico?</text><text x=\"456\" y=\"382\" class=\"ex\" style=\"fill:var(--ink-2);\">tipo objetivo e tipo subjetivo</text><path d=\"M740 365H786\" style=\"stroke:var(--conc);stroke-width:1.5;fill:none\" marker-end=\"url(#dx)\"/><text x=\"752\" y=\"358\" class=\"yn\" style=\"fill:var(--conc)\">não</text><rect x=\"790\" y=\"345\" width=\"280\" height=\"40\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:1.5\"/><text x=\"804\" y=\"370\" class=\"out\">fato atípico</text><path d=\"M590 395V499\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#dm)\"/><text x=\"600\" y=\"415\" class=\"yn\">sim</text><a href=\"unidade-09.html\"><rect x=\"30\" y=\"490\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"42\" y=\"514\"><tspan class=\"n\">09</tspan><tspan class=\"u\" dx=\"7\">Normas de permissão</tspan></text></a><a href=\"unidade-10.html\"><rect x=\"210\" y=\"490\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"222\" y=\"514\"><tspan class=\"n\">10</tspan><tspan class=\"u\" dx=\"7\">Justificação e excesso</tspan></text></a><a href=\"suplemento-19.html\" class=\"sup\"><rect x=\"30\" y=\"534\" width=\"170\" height=\"38\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"40\" y=\"558\">19 Roxin: justificação</text></a><path d=\"M392 494V568M392 531H440\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"440\" y=\"501\" width=\"300\" height=\"60\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"456\" y=\"527\" class=\"q\" style=\"\">3 · É ilícito?</text><text x=\"456\" y=\"548\" class=\"ex\" style=\"fill:var(--ink-2);\">nenhuma norma o permite</text><path d=\"M740 531H786\" style=\"stroke:var(--conc);stroke-width:1.5;fill:none\" marker-end=\"url(#dx)\"/><text x=\"752\" y=\"524\" class=\"yn\" style=\"fill:var(--conc)\">não</text><rect x=\"790\" y=\"511\" width=\"280\" height=\"40\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:1.5\"/><text x=\"804\" y=\"536\" class=\"out\">justificado</text><path d=\"M590 561V621\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#dm)\"/><text x=\"600\" y=\"581\" class=\"yn\">sim</text><a href=\"unidade-11.html\"><rect x=\"30\" y=\"612\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"42\" y=\"636\"><tspan class=\"n\">11</tspan><tspan class=\"u\" dx=\"7\">Culpabilidade</tspan></text></a><a href=\"unidade-12.html\"><rect x=\"210\" y=\"612\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"222\" y=\"636\"><tspan class=\"n\">12</tspan><tspan class=\"u\" dx=\"7\">Imputabilidade e erro</tspan></text></a><a href=\"unidade-13.html\"><rect x=\"30\" y=\"656\" width=\"170\" height=\"38\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"42\" y=\"680\"><tspan class=\"n\">13</tspan><tspan class=\"u\" dx=\"7\">Exigibilidade</tspan></text></a><a href=\"suplemento-20.html\" class=\"sup\"><rect x=\"210\" y=\"656\" width=\"170\" height=\"38\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"220\" y=\"680\">20 Roxin: culpa</text></a><path d=\"M392 616V690M392 653H440\" style=\"stroke:var(--ink-2);stroke-width:1;fill:none\"/><rect x=\"440\" y=\"623\" width=\"300\" height=\"60\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"456\" y=\"649\" class=\"q\" style=\"\">4 · É culpável?</text><text x=\"456\" y=\"670\" class=\"ex\" style=\"fill:var(--ink-2);\">pode ser censurado por isso</text><path d=\"M740 653H786\" style=\"stroke:var(--conc);stroke-width:1.5;fill:none\" marker-end=\"url(#dx)\"/><text x=\"752\" y=\"646\" class=\"yn\" style=\"fill:var(--conc)\">não</text><rect x=\"790\" y=\"633\" width=\"280\" height=\"40\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:1.5\"/><text x=\"804\" y=\"658\" class=\"out\">isento de pena</text><path d=\"M590 683V708\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#dm)\"/><text x=\"600\" y=\"703\" class=\"yn\">sim</text><rect x=\"440\" y=\"742\" width=\"300\" height=\"44\" style=\"fill:var(--ink)\"/><text x=\"590\" y=\"770\" text-anchor=\"middle\" class=\"q\" style=\"fill:var(--paper);letter-spacing:.14em\">CRIME</text><rect x=\"30\" y=\"808\" width=\"1040\" height=\"70\" style=\"fill:var(--dif-wash);stroke:var(--dif);stroke-width:1.5;stroke-dasharray:6 4\"/><text x=\"46\" y=\"838\" class=\"hdr\" style=\"fill:var(--dif)\">VÁRIOS AGENTES?</text><text x=\"46\" y=\"858\" class=\"ex\" style=\"fill:var(--ink-2)\">concurso de pessoas: quem é autor, quem participa</text><a href=\"unidade-14.html\"><rect x=\"440\" y=\"821\" width=\"305\" height=\"44\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"452\" y=\"848\"><tspan class=\"n\">14</tspan><tspan class=\"u\" dx=\"8\">Autoria, coautoria e domínio do fato</tspan></text></a><a href=\"unidade-15.html\"><rect x=\"760\" y=\"821\" width=\"305\" height=\"44\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"772\" y=\"848\"><tspan class=\"n\">15</tspan><tspan class=\"u\" dx=\"8\">Participação e acessoriedade</tspan></text></a><text x=\"30\" y=\"900\" class=\"ex\" style=\"fill:var(--muted)\"><tspan style=\"fill:var(--conc)\">▌</tspan> matéria da P1 (01/10) · tracejado: leituras complementares (Brandão e Roxin)</text></svg></div><div class=\"front-art-phone\"><svg class=\"cascade flowc flowc-m\" viewBox=\"0 0 400 1166\" role=\"img\" aria-label=\"Planta do curso, versão vertical: perguntas em sequência, a saída de cada uma e as unidades que a estudam\"><defs><marker id=\"mm\" viewBox=\"0 0 10 10\" refX=\"8\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--ink)\"/></marker></defs><rect x=\"16\" y=\"16\" width=\"368\" height=\"58\" style=\"fill:var(--ink);stroke:var(--ink);stroke-width:1.5\"/><text x=\"30\" y=\"42\" class=\"q\" style=\"fill:var(--paper)\">O que aconteceu?</text><text x=\"30\" y=\"61\" class=\"ex\" style=\"fill:var(--paper)\">o fato, com o que está provado</text><a href=\"unidade-01.html\"><rect x=\"16\" y=\"84\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"16\" y=\"84\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"27\" y=\"107\"><tspan class=\"n\">01</tspan><tspan class=\"u\" dx=\"6\">Arquitetura do delito</tspan></text></a><a href=\"suplemento-17.html\" class=\"sup\"><rect x=\"204\" y=\"84\" width=\"180\" height=\"36\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"214\" y=\"107\">17 Roxin: método</text></a><path d=\"M200 132V158\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#mm)\"/><rect x=\"16\" y=\"164\" width=\"368\" height=\"58\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"30\" y=\"190\" class=\"q\" style=\"\">1 · Há conduta?</text><text x=\"30\" y=\"209\" class=\"ex\" style=\"fill:var(--ink-2)\">comportamento humano controlável</text><text x=\"384\" y=\"242\" text-anchor=\"end\" class=\"out\" style=\"font-size:13px\">não → não há ação</text><a href=\"unidade-02.html\"><rect x=\"16\" y=\"250\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"16\" y=\"250\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"27\" y=\"273\"><tspan class=\"n\">02</tspan><tspan class=\"u\" dx=\"6\">Conduta</tspan></text></a><a href=\"suplemento-16.html\" class=\"sup\"><rect x=\"204\" y=\"250\" width=\"180\" height=\"36\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"214\" y=\"273\">16 Brandão: conduta</text></a><path d=\"M200 298V324\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#mm)\"/><text x=\"210\" y=\"316\" class=\"yn\">sim</text><rect x=\"16\" y=\"330\" width=\"368\" height=\"58\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"30\" y=\"356\" class=\"q\" style=\"\">2 · O fato é típico?</text><text x=\"30\" y=\"375\" class=\"ex\" style=\"fill:var(--ink-2)\">tipo objetivo e tipo subjetivo</text><text x=\"384\" y=\"408\" text-anchor=\"end\" class=\"out\" style=\"font-size:13px\">não → fato atípico</text><a href=\"unidade-03.html\"><rect x=\"16\" y=\"416\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"16\" y=\"416\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"27\" y=\"439\"><tspan class=\"n\">03</tspan><tspan class=\"u\" dx=\"6\">Tipicidade objetiva</tspan></text></a><a href=\"unidade-04.html\"><rect x=\"204\" y=\"416\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"204\" y=\"416\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"215\" y=\"439\"><tspan class=\"n\">04</tspan><tspan class=\"u\" dx=\"6\">Tipo subjetivo e dolo</tspan></text></a><a href=\"unidade-05.html\"><rect x=\"16\" y=\"458\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"16\" y=\"458\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"27\" y=\"481\"><tspan class=\"n\">05</tspan><tspan class=\"u\" dx=\"6\">Erro de tipo</tspan></text></a><a href=\"unidade-06.html\"><rect x=\"204\" y=\"458\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"204\" y=\"458\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"215\" y=\"481\"><tspan class=\"n\">06</tspan><tspan class=\"u\" dx=\"6\">Culpa e omissão</tspan></text></a><a href=\"unidade-07.html\"><rect x=\"16\" y=\"500\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><rect x=\"16\" y=\"500\" width=\"4\" height=\"36\" style=\"fill:var(--conc)\"/><text x=\"27\" y=\"523\"><tspan class=\"n\">07</tspan><tspan class=\"u\" dx=\"6\">Imputação objetiva</tspan></text></a><a href=\"unidade-08.html\"><rect x=\"204\" y=\"500\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"215\" y=\"523\"><tspan class=\"n\">08</tspan><tspan class=\"u\" dx=\"6\">Tentativa e abandono</tspan></text></a><a href=\"suplemento-18.html\" class=\"sup\"><rect x=\"16\" y=\"542\" width=\"180\" height=\"36\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"26\" y=\"565\">18 Roxin: tipo e dever</text></a><path d=\"M200 590V616\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#mm)\"/><text x=\"210\" y=\"608\" class=\"yn\">sim</text><rect x=\"16\" y=\"622\" width=\"368\" height=\"58\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"30\" y=\"648\" class=\"q\" style=\"\">3 · É ilícito?</text><text x=\"30\" y=\"667\" class=\"ex\" style=\"fill:var(--ink-2)\">nenhuma norma o permite</text><text x=\"384\" y=\"700\" text-anchor=\"end\" class=\"out\" style=\"font-size:13px\">não → justificado</text><a href=\"unidade-09.html\"><rect x=\"16\" y=\"708\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"27\" y=\"731\"><tspan class=\"n\">09</tspan><tspan class=\"u\" dx=\"6\">Normas de permissão</tspan></text></a><a href=\"unidade-10.html\"><rect x=\"204\" y=\"708\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"215\" y=\"731\"><tspan class=\"n\">10</tspan><tspan class=\"u\" dx=\"6\">Justificação e excesso</tspan></text></a><a href=\"suplemento-19.html\" class=\"sup\"><rect x=\"16\" y=\"750\" width=\"180\" height=\"36\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"26\" y=\"773\">19 Roxin: justificação</text></a><path d=\"M200 798V824\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#mm)\"/><text x=\"210\" y=\"816\" class=\"yn\">sim</text><rect x=\"16\" y=\"830\" width=\"368\" height=\"58\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"30\" y=\"856\" class=\"q\" style=\"\">4 · É culpável?</text><text x=\"30\" y=\"875\" class=\"ex\" style=\"fill:var(--ink-2)\">pode ser censurado por isso</text><text x=\"384\" y=\"908\" text-anchor=\"end\" class=\"out\" style=\"font-size:13px\">não → isento de pena</text><a href=\"unidade-11.html\"><rect x=\"16\" y=\"916\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"27\" y=\"939\"><tspan class=\"n\">11</tspan><tspan class=\"u\" dx=\"6\">Culpabilidade</tspan></text></a><a href=\"unidade-12.html\"><rect x=\"204\" y=\"916\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"215\" y=\"939\"><tspan class=\"n\">12</tspan><tspan class=\"u\" dx=\"6\">Imputabilidade e erro</tspan></text></a><a href=\"unidade-13.html\"><rect x=\"16\" y=\"958\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"27\" y=\"981\"><tspan class=\"n\">13</tspan><tspan class=\"u\" dx=\"6\">Exigibilidade</tspan></text></a><a href=\"suplemento-20.html\" class=\"sup\"><rect x=\"204\" y=\"958\" width=\"180\" height=\"36\" style=\"fill:var(--paper-2);stroke:var(--ink-2);stroke-width:1;stroke-dasharray:4 3\"/><text x=\"214\" y=\"981\">20 Roxin: culpa</text></a><path d=\"M200 1006V1032\" style=\"stroke:var(--ink);stroke-width:2;fill:none\" marker-end=\"url(#mm)\"/><text x=\"210\" y=\"1024\" class=\"yn\">sim</text><rect x=\"16\" y=\"1038\" width=\"368\" height=\"40\" style=\"fill:var(--ink)\"/><text x=\"200\" y=\"1064\" text-anchor=\"middle\" class=\"q\" style=\"fill:var(--paper);letter-spacing:.14em\">CRIME</text><text x=\"16\" y=\"1096\" class=\"hdr\" style=\"fill:var(--dif)\">VÁRIOS AGENTES?</text><a href=\"unidade-14.html\"><rect x=\"16\" y=\"1106\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"27\" y=\"1129\"><tspan class=\"n\">14</tspan><tspan class=\"u\" dx=\"6\">Autoria e domínio do fato</tspan></text></a><a href=\"unidade-15.html\"><rect x=\"204\" y=\"1106\" width=\"180\" height=\"36\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:1.5\"/><text x=\"215\" y=\"1129\"><tspan class=\"n\">15</tspan><tspan class=\"u\" dx=\"6\">Participação</tspan></text></a></svg></div>",
+    "css": ".cascade{width:100%;height:auto;display:block;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}.cascade a rect{transition:fill .15s}.cascade a:hover rect,.cascade a:focus-visible rect{fill:var(--conc-wash)}.cascade text{font-family:var(--mono);font-size:12px;letter-spacing:.04em;fill:var(--ink)}.cascade .hdr{font:600 13px var(--mono);letter-spacing:.1em}.cascade .u{font:500 13px var(--sans);letter-spacing:0}.cascade .n{fill:var(--conc);font-weight:500}.cascade .ex{fill:var(--conc);font-size:11px}.cascade .sup text{fill:var(--ink-2);font-size:11.5px}.sheet-scroll{overflow-x:auto}.sheet-scroll .cascade{min-width:880px}.flowc-m{display:none}@media(max-width:720px) and (orientation:portrait){.sheet-scroll{display:none}.flowc-m{display:block;min-width:0!important}.flowc-m .u{font-size:12px}.flowc-m .sup text{font-size:10.5px}}.flowc .u{font-size:12.5px}.flowc .sup text{font-size:11px}.flowc .q{font:650 17px var(--sans);letter-spacing:0}.flowc .yn{font:600 12px var(--mono);letter-spacing:.06em}.flowc .out{font:600 14px var(--sans);letter-spacing:0;fill:var(--conc)}@media(max-width:860px) and (orientation:portrait){.front-note{display:block}}"
+  },
+  "exam_html": "<section class=\"front-row\" aria-label=\"Próxima prova\">\n  <aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n    <span class=\"exam-date\">Primeira prova · 01/10/2026 · com Código Penal</span>\n    <h2 id=\"exam-title\">Revisão para a P1</h2>\n    <p>Conteúdo até a imputação objetiva (unidades 01 a 07). P1 de 2025/2 resolvida, com questões e distinções para revisar.</p>\n    <a href=\"revisao-p1.html\"><span>Abrir revisão P1</span><span aria-hidden=\"true\">→</span></a>\n    <a class=\"resume\" href=\"#\" hidden><span>Continuar de onde parou</span><span aria-hidden=\"true\">→</span></a>\n  </aside>\n  <script>(function(){try{if(localStorage.getItem('cufrgs-no-resume'))return;var d=JSON.parse(localStorage.getItem('cufrgs-delito-last')||'null');if(!d||!/^(unidade|suplemento)-\\d\\d[a-z-]*\\.html$/.test(d.h))return;var a=document.querySelector('.exam-card .resume');a.href=d.h;a.firstChild.textContent='Continuar: '+String(d.t).slice(0,52);a.hidden=false}catch(e){}})()</script>\n</section>",
+  "review_href": "revisao-p1.html",
+  "units": [
+    {
+      "label": "Semanas 1–2",
+      "title": "Quadro geral da teoria do crime",
+      "desc": "Conceitos básicos.",
+      "lessons": [
+        {
+          "href": "unidade-01.html",
+          "label": "Aula 01",
+          "title": "Conceito analítico e arquitetura do delito",
+          "complementary": false
+        },
+        {
+          "href": "unidade-02.html",
+          "label": "Aula 02",
+          "title": "Conduta e modelos de ação",
+          "complementary": false
+        },
+        {
+          "href": "suplemento-16.html",
+          "label": "Leitura complementar",
+          "title": "Teorias da conduta",
+          "complementary": true
+        },
+        {
+          "href": "suplemento-17.html",
+          "label": "Leitura complementar",
+          "title": "Política criminal e método",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "Semanas 3–6",
+      "title": "Teoria do tipo objetivo e subjetivo",
+      "desc": "Dolo e culpa.",
+      "lessons": [
+        {
+          "href": "unidade-03.html",
+          "label": "Aula 03",
+          "title": "Tipo e tipicidade objetiva",
+          "complementary": false
+        },
+        {
+          "href": "unidade-04.html",
+          "label": "Aula 04",
+          "title": "Tipo subjetivo e dolo",
+          "complementary": false
+        },
+        {
+          "href": "unidade-05.html",
+          "label": "Aula 05",
+          "title": "Erro de tipo e classificação",
+          "complementary": false
+        },
+        {
+          "href": "unidade-06.html",
+          "label": "Aula 06",
+          "title": "Culpa e preterdolo",
+          "complementary": false
+        },
+        {
+          "href": "suplemento-18.html",
+          "label": "Leitura complementar",
+          "title": "Tipo, dever, omissão e imprudência",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "Semanas 7–8",
+      "title": "Nexo causal, imputação objetiva e tentativa",
+      "desc": "Iter criminis e tentativa.",
+      "lessons": [
+        {
+          "href": "unidade-07.html",
+          "label": "Aula 07",
+          "title": "Nexo causal e concausas",
+          "complementary": false
+        },
+        {
+          "href": "unidade-08.html",
+          "label": "Aula 08",
+          "title": "Iter criminis e tentativa",
+          "complementary": false
+        }
+      ]
+    },
+    {
+      "label": "Semanas 9–10",
+      "title": "Antijuridicidade e excludentes",
+      "desc": "Causas de justificação.",
+      "lessons": [
+        {
+          "href": "unidade-09.html",
+          "label": "Aula 09",
+          "title": "Antijuridicidade e normas de permissão",
+          "complementary": false
+        },
+        {
+          "href": "unidade-10.html",
+          "label": "Aula 10",
+          "title": "Causas de justificação e seus limites",
+          "complementary": false
+        },
+        {
+          "href": "suplemento-19.html",
+          "label": "Leitura complementar",
+          "title": "Justificação e conflito social",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "Semanas 11–13",
+      "title": "Culpabilidade e excludentes",
+      "desc": "Responsabilidade penal e causas de exclusão.",
+      "lessons": [
+        {
+          "href": "unidade-11.html",
+          "label": "Aula 11",
+          "title": "Culpabilidade: conceito e teorias",
+          "complementary": false
+        },
+        {
+          "href": "unidade-12.html",
+          "label": "Aula 12",
+          "title": "Imputabilidade e capacidade pessoal",
+          "complementary": false
+        },
+        {
+          "href": "unidade-13.html",
+          "label": "Aula 13",
+          "title": "Exigibilidade sob pressão",
+          "complementary": false
+        },
+        {
+          "href": "suplemento-20.html",
+          "label": "Leitura complementar",
+          "title": "Culpabilidade e desistência",
+          "complementary": true
+        }
+      ]
+    },
+    {
+      "label": "Semanas 14–15",
+      "title": "Concurso de pessoas",
+      "desc": "Autoria e participação.",
+      "lessons": [
+        {
+          "href": "unidade-14.html",
+          "label": "Aula 14",
+          "title": "Autoria, coautoria e domínio do fato",
+          "complementary": false
+        },
+        {
+          "href": "unidade-15.html",
+          "label": "Aula 15",
+          "title": "Participação e seus limites",
+          "complementary": false
+        }
+      ]
+    }
+  ],
+  "info_items_html": "<div class=\"fontes-card\" role=\"dialog\" aria-label=\"Bibliografia do programa\"><h2>Bibliografia do programa</h2><ul><li>João Paulo Orsini Martinelli e Leonardo Schmitt de Bem, <i>Lições Fundamentais de Direito Penal: Parte Geral</i> (2023)</li><li>Ângelo Roberto Ilha da Silva, <i>Instituições de Direito Penal</i>, 6ª ed. (2025)</li><li>Rogério Sanches Cunha, <i>Manual de Direito Penal – Parte Geral</i> (2023)</li><li>Francisco de Assis Toledo, <i>Princípios Básicos de Direito Penal</i> (1994)</li><li>Cezar Roberto Bitencourt, <i>Tratado de Direito Penal</i> (2023)</li><li>Orlando Faccini Neto, <i>Teoria Geral do Crime</i>, 2ª ed. (2023)</li></ul></div>",
+  "bibliografia": {
+    "basica": [
+      "MARTINELLI, João Paulo Orsini; SCHIMITT DE BEM, Leonardo. Lições Fundamentais de Direito Penal: Parte Geral. São Paulo: Saraiva, 2023.",
+      "ILHA DA SILVA, Ângelo Roberto. Instituições de Direito Penal. 6ª ed. São Paulo: Tirant lo Blanch, 2025.",
+      "SANCHES CUNHA, Rogério. Manual de Direito Penal – Parte Geral (volume único). Salvador: JusPodivm, 2023.",
+      "ASSIS TOLEDO, Francisco de. Princípios Básicos de Direito Penal. São Paulo: Saraiva, 1994.",
+      "BITENCOURT, Cezar Roberto. Tratado de Direito Penal. São Paulo: Saraiva, 2023.",
+      "FACCINI NETO, Orlando. Teoria Geral do Crime. 2ª ed. Curitiba: Juruá, 2023."
+    ],
+    "complementar": [],
+    "source_file": "/Users/benecles/Desktop/UFRGS 2026-2/Teoria do Delito/Anotações/PLANO TEORIA DO DELITO 2026 (2).docx"
+  },
+  "endnote_html": "<p class=\"endnote\">Teoria do Delito · UFRGS · 2026/2. As leituras complementares aprofundam as unidades; não são aulas do programa.</p>",
+  "excluded_pages": [
+    {
+      "page": "index.html",
+      "reason": "A própria página de entrada do curso, preservada como referência do front anterior."
+    },
+    {
+      "page": "revisao-p1.html",
+      "reason": "Página de revisão de prova, vinculada separadamente como chamada de avaliação."
+    },
+    {
+      "page": "guia-de-estudo.html",
+      "reason": "Guia editorial do curso, não é aula do programa."
+    },
+    {
+      "page": "mapa-do-curso.html",
+      "reason": "Mapa de consulta do curso, não é aula do programa."
+    },
+    {
+      "page": "editorial.html",
+      "reason": "Página editorial de contexto, não é aula do programa."
+    },
+    {
+      "page": "unidade-01-casos.html",
+      "reason": "Aprofundamento de casos da unidade 01."
+    },
+    {
+      "page": "unidade-02-funcionalismo.html",
+      "reason": "Aprofundamento temático de funcionalismo."
+    },
+    {
+      "page": "unidade-03-elementos.html",
+      "reason": "Aprofundamento de aplicação e elementos."
+    },
+    {
+      "page": "unidade-04-dolo.html",
+      "reason": "Aprofundamento sobre arquitetura do dolo."
+    },
+    {
+      "page": "unidade-04-aplicacoes.html",
+      "reason": "Aprofundamento de prova e casos."
+    },
+    {
+      "page": "unidade-05-fronteiras.html",
+      "reason": "Aprofundamento de fronteiras e aplicações."
+    },
+    {
+      "page": "unidade-06-omissao.html",
+      "reason": "Aprofundamento de omissão e dever."
+    },
+    {
+      "page": "unidade-07-imputacao.html",
+      "reason": "Aprofundamento de imputação objetiva."
+    },
+    {
+      "page": "unidade-08-tentativa.html",
+      "reason": "Aprofundamento de interrupção e resposta."
+    },
+    {
+      "page": "unidade-09-casos.html",
+      "reason": "Aprofundamento de casos e limites da permissão."
+    },
+    {
+      "page": "unidade-10-excesso.html",
+      "reason": "Aprofundamento de aplicação e excesso."
+    },
+    {
+      "page": "unidade-11-reprovacao.html",
+      "reason": "Aprofundamento sobre reprovação e consequência."
+    },
+    {
+      "page": "unidade-12-erro-proibicao.html",
+      "reason": "Aprofundamento sobre erro de proibição."
+    },
+    {
+      "page": "unidade-13-casos.html",
+      "reason": "Aprofundamento de aplicação do art. 22."
+    },
+    {
+      "page": "unidade-14-dominio.html",
+      "reason": "Aprofundamento de limites e casos de autoria."
+    },
+    {
+      "page": "unidade-15-casos.html",
+      "reason": "Aprofundamento de casos e prova."
+    },
+    {
+      "page": "unidade-08-original.html",
+      "reason": "Cópia de segurança do material original, não é uma aula publicada."
+    }
+  ]
+}
