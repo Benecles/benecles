@@ -1,0 +1,82 @@
+[
+{
+"before": ".note{font:12px var(--mono);color:var(--ink-2);margin:10px 0 0}</style>\n</head>\n<body>\n",
+"after": ".note{font:12px var(--mono);color:var(--ink-2);margin:10px 0 0}.mj-map-index{margin:10px auto 0;padding:0 clamp(16px,4vw,48px);max-width:520px}.mj-map-index-title{margin:0 0 10px;font:600 13px var(--mono);letter-spacing:.06em;text-transform:uppercase}.mj-map-index ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;list-style:none;margin:0;padding:0}.mj-map-index li{min-width:0}.mj-map-index a{display:flex;height:100%;min-height:58px;flex-direction:column;justify-content:center;gap:3px;padding:9px 10px;border:1px solid var(--grid-major);color:var(--ink);text-decoration:none}.mj-map-index a:hover,.mj-map-index a:focus-visible{border-color:var(--conc);background:var(--conc-wash)}.mj-map-index strong{font:600 13px/1.2 var(--sans);overflow-wrap:anywhere}.mj-map-index span{font:11px/1.3 var(--mono);color:var(--ink-2)}.mj-map-index-note{margin:9px 0 0;font:11px/1.4 var(--mono);color:var(--ink-2)}@media(max-width:350px) and (orientation:portrait){.mj-map-index ul{grid-template-columns:minmax(0,1fr)}}</style>\n</head>\n<body>\n"
+},
+{
+"before": "<h1>Metodologia Jurídica</h1><p class=\"front-deck\">De Bolonha às faculdades de 1827: como se pensa o direito.</p></header>\n<main class=\"front-main\"><section class=\"front-drawing\" aria-label=\"Desenho do curso\"><div class=\"front-sheet\"><section class=\"front-sheet-map\" aria-label=\"Mapa do curso\"><div class=\"fsm-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Mapa do curso\"><svg class=\"mj-map\" viewBox=\"0 0 1200 809\" role=\"img\" aria-label=\"Mapa do curso: o percurso do direito comum, de Bolonha à Península Ibérica e daí às Índias e ao Brasil; cada lugar leva à aula que o estuda\"><defs><path id=\"fiuscommune-ZWE\" d=\"M1283.2 650.9L1268.6 648.6L1266.0 649.0L1263.1 647.4L1262.9 645.4L1253.9 643.2L1250.8 638.8L1250.9 633.8L1247.3 633.6L1246.4 630.2L1237.3 625.1L1235.3 619.7L1229.0 611.0L1229.2 609.4L1235.8 611.0L1238.8 610.6L1242.8 611.7L1245.0 610.9L1251.6 602.8L1255.2 600.2L1260.5 598.1L1261.9 593.2L1269.2 590.1L1275.2 590.1L1275.6 593.3L1282.7 593.5L1289.0 597.2L1298.0 599.7L1297.4 601.2L1298.4 614.5L1297.5 617.8L1295.8 619.7L1297.2 621.2L1296.5 623.8L1298.4 629.1L1294.0 635.2L1292.7 639.5L1293.4 640.9Z\"/><path id=\"fiuscommune-ZMB\" d=\"M1275.2 590.1L1267.1 590.6L1261.9 593.2L1260.5 598.1L1253.1 601.4L1245.0 610.9L1242.8 611.7L1238.8 610.6L1234.6 610.8L1232.6 609.7L1229.2 609.4L1226.9 607.4L1224.5 606.9L1220.4 606.6L1212.4 608.1L1201.3 598.7L1200.4 595.7L1199.8 566.3L1217.6 566.2L1216.9 564.5L1218.3 552.0L1217.6 547.2L1221.2 549.5L1221.3 552.1L1229.5 550.3L1230.0 554.0L1236.1 556.4L1243.2 557.0L1246.2 553.6L1249.6 559.1L1257.4 562.0L1258.7 564.9L1259.8 565.1L1262.2 569.1L1263.7 569.9L1267.6 568.6L1269.6 570.3L1269.8 558.7L1268.9 559.1L1267.2 559.4L1267.0 561.1L1263.3 560.5L1258.1 555.7L1256.9 552.7L1259.5 544.3L1259.1 536.5L1257.3 532.4L1261.5 528.5L1261.8 525.8L1278.4 523.1L1280.9 526.8L1284.6 527.3L1286.6 529.6L1293.4 531.8L1297.8 534.0L1298.5 536.0L1300.3 536.0L1301.7 538.1L1301.3 539.7L1303.2 541.5L1304.4 544.3L1300.8 547.4L1301.9 549.8L1300.6 552.1L1300.8 558.4L1301.6 560.1L1303.1 560.5L1298.7 563.0L1298.2 568.4L1295.6 571.6L1298.4 575.5L1299.8 574.8L1300.3 575.4L1273.7 584.2Z\"/>",
+"after": "<h1>Metodologia Jurídica</h1><p class=\"front-deck\">Das escolas medievais a Cirne Lima: como os juristas leem, organizam e aplicam o direito.</p></header>\n<main class=\"front-main\"><section class=\"front-drawing\" aria-label=\"Desenho do curso\"><div class=\"front-sheet\"><div class=\"front-art-desktop\"><section class=\"front-sheet-map\" aria-label=\"Mapa do curso\"><div class=\"fsm-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Mapa do curso\"><svg class=\"mj-map\" viewBox=\"0 0 1200 809\" role=\"img\" aria-label=\"Mapa do curso: o percurso do direito comum, de Bolonha à Península Ibérica e daí às Índias e ao Brasil; cada lugar leva à aula que o estuda\"><defs><path id=\"fiuscommune-ZWE\" d=\"M1283.2 650.9L1268.6 648.6L1266.0 649.0L1263.1 647.4L1262.9 645.4L1253.9 643.2L1250.8 638.8L1250.9 633.8L1247.3 633.6L1246.4 630.2L1237.3 625.1L1235.3 619.7L1229.0 611.0L1229.2 609.4L1235.8 611.0L1238.8 610.6L1242.8 611.7L1245.0 610.9L1251.6 602.8L1255.2 600.2L1260.5 598.1L1261.9 593.2L1269.2 590.1L1275.2 590.1L1275.6 593.3L1282.7 593.5L1289.0 597.2L1298.0 599.7L1297.4 601.2L1298.4 614.5L1297.5 617.8L1295.8 619.7L1297.2 621.2L1296.5 623.8L1298.4 629.1L1294.0 635.2L1292.7 639.5L1293.4 640.9Z\"/><path id=\"fiuscommune-ZMB\" d=\"M1275.2 590.1L1267.1 590.6L1261.9 593.2L1260.5 598.1L1253.1 601.4L1245.0 610.9L1242.8 611.7L1238.8 610.6L1234.6 610.8L1232.6 609.7L1229.2 609.4L1226.9 607.4L1224.5 606.9L1220.4 606.6L1212.4 608.1L1201.3 598.7L1200.4 595.7L1199.8 566.3L1217.6 566.2L1216.9 564.5L1218.3 552.0L1217.6 547.2L1221.2 549.5L1221.3 552.1L1229.5 550.3L1230.0 554.0L1236.1 556.4L1243.2 557.0L1246.2 553.6L1249.6 559.1L1257.4 562.0L1258.7 564.9L1259.8 565.1L1262.2 569.1L1263.7 569.9L1267.6 568.6L1269.6 570.3L1269.8 558.7L1268.9 559.1L1267.2 559.4L1267.0 561.1L1263.3 560.5L1258.1 555.7L1256.9 552.7L1259.5 544.3L1259.1 536.5L1257.3 532.4L1261.5 528.5L1261.8 525.8L1278.4 523.1L1280.9 526.8L1284.6 527.3L1286.6 529.6L1293.4 531.8L1297.8 534.0L1298.5 536.0L1300.3 536.0L1301.7 538.1L1301.3 539.7L1303.2 541.5L1304.4 544.3L1300.8 547.4L1301.9 549.8L1300.6 552.1L1300.8 558.4L1301.6 560.1L1303.1 560.5L1298.7 563.0L1298.2 568.4L1295.6 571.6L1298.4 575.5L1299.8 574.8L1300.3 575.4L1273.7 584.2Z\"/>"
+},
+{
+"before": "o lado.</p></section></div></section><section class=\"front-exam\" aria-label=\"Avaliações\"><div class=\"front-exam-content\"><aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n    <span class=\"exam-date\">",
+"after": "o lado.</p></section></div><div class=\"front-art-phone\"><nav class=\"mj-map-index\" aria-label=\"Locais do mapa e aulas correspondentes\">\n  <p class=\"mj-map-index-title\">Do mapa para a aula</p>\n  <ul>\n    <li><a href=\"aula-01.html\"><strong>Bolonha</strong><span>Aulas 01 · 02</span></a></li>\n    <li><a href=\"aula-02.html\"><strong>Península Ibérica</strong><span>Aulas 02 · 05 · 06 · 08 · 14</span></a></li>\n    <li><a href=\"aula-05.html\"><strong>México</strong><span>Aulas 05 · 09</span></a></li>\n    <li><a href=\"aula-04.html\"><strong>Lima</strong><span>Aulas 04 · 06 · 07 · 08</span></a></li>\n    <li><a href=\"aula-07.html\"><strong>Charcas</strong><span>Aula 07</span></a></li>\n    <li><a href=\"aula-07.html\"><strong>Buenos Aires</strong><span>Aulas 04 · 07</span></a></li>\n    <li><a href=\"aula-14.html\"><strong>Olinda · São Paulo · Rio</strong><span>Aula 14</span></a></li>\n    <li><a href=\"aula-15.html\"><strong>Porto Alegre</strong><span>Aula 15</span></a></li>\n  </ul>\n  <p class=\"mj-map-index-note\">Cada local leva à aula que o estuda.</p>\n</nav></div></div></section><section class=\"front-exam\" aria-label=\"Avaliações\"><div class=\"front-exam-content\"><aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n    <span class=\"exam-date\">"
+},
+{
+"before": "está aqui</h2>\n    <p>Estas são as aulas cujos textos já foram publicados no Moodle; as Aulas 10 a 13 entram quando os textos forem postados. Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>\n    <a href=\"cartoes.html\"><span>Revisar ",
+"after": "está aqui</h2>\n    <p>Este índice reúne as aulas já publicadas no Moodle. As Aulas 10 a 13 serão incluídas quando seus textos forem publicados. Ao terminar cada aula, use os testes para identificar o que precisa revisar.</p>\n    <a href=\"cartoes.html\"><span>Revisar "
+},
+{
+"before": " direito comum</h3><p class=\"front-unit-desc\">Escolas, recepção, casuísmo e prática jurídica nos mundos ibéricos.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-01.html\"><span>Aula ",
+"after": " direito comum</h3><p class=\"front-unit-desc\">A formação do direito comum medieval e sua circulação em Portugal e na América ibérica, da leitura dos textos à prática jurídica.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-01.html\"><span>Aula "
+},
+{
+"before": "O direito comum foi uma construção medieval, e não a simples sobrevivência do direito romano. Distinguir o que o glosador e o comentador fazem com o texto e por que o método mudou quando o direito nacional ganhou espaço.</span></span></a><a class=\"front-lesson-row\" href=\"aula-02.html\"><span>Aula",
+"after": "O direito comum medieval se formou pelo trabalho dos juristas sobre textos romanos e canônicos. A aula compara os métodos dos glosadores e comentadores e acompanha a mudança trazida pelo Humanismo.</span></span></a><a class=\"front-lesson-row\" href=\"aula-02.html\"><span>Aula"
+},
+{
+"before": "comum em Portugal<span class=\"front-lesson-desc\">Portugal recebeu o direito romano sem se submeter ao Imperador, e o direito comum entrava só como subsidiário. A ordem das fontes nas Afonsinas e o destino do Humanismo em Portugal são os pontos de aplicação.</span></span></a><a class=\"front-lesson-row\" href=\"aula-03.html\"><span>Aula",
+"after": "comum em Portugal<span class=\"front-lesson-desc\">A recepção do direito romano em Portugal não significava submissão ao Imperador. A aula explica essa justificativa, a ordem subsidiária das fontes nas Ordenações Afonsinas e o Humanismo português.</span></span></a><a class=\"front-lesson-row\" href=\"aula-03.html\"><span>Aula"
+},
+{
+"before": "I o caso<span class=\"front-lesson-desc\">Tau trata a atenção ao caso como uma crença social, e não como uma técnica escolhida. O passo que a prova cobra é mostrar por que o fato diferente muda a razão da regra.</span></span></a><a class=\"front-lesson-row\" href=\"aula-04.html\"><span>Aula",
+"after": "I o caso<span class=\"front-lesson-desc\">Para Víctor Tau, a atenção ao caso concreto funcionava como pressuposto compartilhado da cultura jurídica dos séculos XVI e XVII, não apenas como técnica. A aula distingue essa crença social do sentido posterior e pejorativo de “casuísmo”.</span></span></a><a class=\"front-lesson-row\" href=\"aula-04.html\"><span>Aula"
+},
+{
+"before": "na América colonial<span class=\"front-lesson-desc\">Flores lê as normas da Igreja na América como prática jurídica situada, e não como cópia de Trento. O sentido de autonomia e o uso local das palavras são os pontos em que a prova erra.</span></span></a><a class=\"front-lesson-row\" href=\"aula-05.html\"><span>Aula",
+"after": "na América colonial<span class=\"front-lesson-desc\">A aula acompanha como normas eclesiásticas foram aplicadas em uma sociedade colonial, em relação com as condições locais e com autoridades civis e indígenas. A prática não se reduz à cópia de Trento nem à autonomia da Igreja em relação ao poder político.</span></span></a><a class=\"front-lesson-row\" href=\"aula-05.html\"><span>Aula"
+},
+{
+"before": "literatura normativa pragmática<span class=\"front-lesson-desc\">Duve define o gênero pelo que o texto faz nas mãos de um prático. Título, impressão e assunto jurídico não bastam, e por isso Mercado e Soto ficam em lados diferentes.</span></span></a><a class=\"front-lesson-row\" href=\"aula-06.html\"><span>Aula",
+"after": "literatura normativa pragmática<span class=\"front-lesson-desc\">Thomas Duve acompanha como um prático seleciona e interpreta materiais normativos para resolver um caso. A aula define a literatura normativa pragmática pelo trabalho que esses textos permitem, não apenas pelo título ou pelo assunto.</span></span></a><a class=\"front-lesson-row\" href=\"aula-06.html\"><span>Aula"
+},
+{
+"before": "O jurista hispano-colonial<span class=\"front-lesson-desc\">Solórzano uniu universidade, magistratura americana e governo, e sua defesa do domínio espanhol mistura argumento jurídico e teológico. O alcance de cada título é o que a prova testa.</span></span></a></div></article><article class=\"front-unit\">",
+"after": "O jurista hispano-colonial<span class=\"front-lesson-desc\">Juan de Solórzano Pereira passou pela Universidade de Salamanca, pela Audiência de Lima e pelo Conselho das Índias. A aula relaciona essa trajetória à sua escrita sobre o governo das Índias e examina os argumentos jurídicos e teológicos da defesa do domínio espanhol.</span></span></a></div></article><article class=\"front-unit\">"
+},
+{
+"before": " no direito</h3><p class=\"front-unit-desc\">Costume e casuísmo nas Índias; sistema e mudança jurídica.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-07.html\"><span>Aula ",
+"after": " no direito</h3><p class=\"front-unit-desc\">Costume, caso e sistema no Direito indiano; a mudança gradual da prática casuística à sistematização.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-07.html\"><span>Aula "
+},
+{
+"before": "no Direito indiano<span class=\"front-lesson-desc\">Tau pergunta que trabalho jurídico uma prática fazia em cada lugar, em vez de procurar regras costumeiras isoladas. O caso Beruti",
+"after": "no Direito indiano<span class=\"front-lesson-desc\">Víctor Tau propõe estudar como lei, costume, uso e prática se combinavam em cada situação do Direito indiano. O caso Beruti"
+},
+{
+"before": "mostra o costume atuando na decisão sem resolver a questão",
+"after": "mostra o costume influindo na decisão sem, por si só, resolver a questão"
+},
+{
+"before": "do caso<span class=\"front-lesson-desc\">Tau explica o peso do",
+"after": "do caso<span class=\"front-lesson-desc\">Tau relaciona o peso do"
+},
+{
+"before": "caso nas Índias por três condições: diversidade, mutabilidade e distância. Decidir conforme o caso não autorizava arbitrariedade, e nem o descumprimento de lei explica o fenômeno.</span></span></a><a class=\"front-lesson-row\" href=\"aula-09.html\"><span>Aula",
+"after": "caso nas Índias à diversidade, à mudança das circunstâncias e à distância. A aula explica por que decidir conforme o caso não equivalia a arbitrariedade nem se explica pelo simples descumprimento da lei.</span></span></a><a class=\"front-lesson-row\" href=\"aula-09.html\"><span>Aula"
+},
+{
+"before": "ideia de ordem<span class=\"front-lesson-desc\">O sistema avançou no século XVIII sem apagar a prática casuística, num processo longo. Nem toda crítica a uma regra é ruptura, e o vocabulário de ordem precisa ser lido com precisão.</span></span></a></div></article><article class=\"front-unit\">",
+"after": "ideia de ordem<span class=\"front-lesson-desc\">A ideia de sistema ganhou força no século XVIII, mas a prática casuística não desapareceu de imediato. A aula distingue os sentidos de sistema e acompanha a duração dessa mudança até sua consolidação no século XIX.</span></span></a></div></article><article class=\"front-unit\">"
+},
+{
+"before": " século XIX</h3><p class=\"front-unit-desc\">Juristas, codificação e ensino jurídico entre Europa e Brasil.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-14.html\"><span>Aula ",
+"after": " século XIX</h3><p class=\"front-unit-desc\">Prática dos juristas, codificação, ensino jurídico no Brasil e dogmática jurídica.</p><div class=\"front-unit-lessons\"><a class=\"front-lesson-row\" href=\"aula-14.html\"><span>Aula "
+},
+{
+"before": "cursos jurídicos brasileiros herdaram Coimbra e a reorganizaram. Copiar Coimbra e romper com Coimbra são as afirmações excessivas que a prova costuma apresentar.</span></span></a><a class=\"front-lesson-row\" href=\"aula-15.html\"><span>Aula",
+"after": "cursos jurídicos brasileiros do século XIX aproveitaram modelos de Coimbra e os reorganizaram. A aula acompanha as propostas e decisões que levaram à criação dos cursos em São Paulo e Olinda, em 1827.</span></span></a><a class=\"front-lesson-row\" href=\"aula-15.html\"><span>Aula"
+},
+{
+"before": "em Cirne Lima<span class=\"front-lesson-desc\">Para Cirne Lima, o direito específico é uma ontologia da relação, e a norma vem depois dela. A ordem das duas fundações e a origem da autonomia da vontade são as armadilhas de leitura.</span></span></a></div></article></div>",
+"after": "em Cirne Lima<span class=\"front-lesson-desc\">Ruy Cirne Lima parte das relações que se formam na vida social para explicar o direito; as normas enunciam como essas relações devem formar-se. A aula reconstrói essa ordem no argumento e examina a relação entre direito natural e direito positivo.</span></span></a></div></article></div>"
+}
+]

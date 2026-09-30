@@ -1,13 +1,5 @@
 [
 {
-"before": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}",
-"after": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf .deck{max-width:48ch}.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}"
-},
-{
-"before": "para ler</span></div>\n  <h1 class=\"sr-only\">CUFRGS · guias de estudo das disciplinas de Direito da UFRGS, 2026/2</h1>\n</header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">",
-"after": "para ler</span></div>\n  <h1>Guias por disciplina</h1>\n  <p class=\"deck\">Escolha uma disciplina para ler as aulas, consultar figuras e acessar materiais de revisão.</p>\n</header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">"
-},
-{
 "before": "</div>\n  </a>\n  <div class=\"prancha vazia\" aria-label=\"Próximas disciplinas\">\n    <svg class=\"fig\" viewBox=\"0 0 400 180\" aria-hidden=\"true\">\n      <rect x=\"40\" y=\"30\" width=\"320\" height=\"120\" style=\"fill:none;stroke:var(--ink);stroke-width:1\" stroke-dasharray=\"6 6\"/>\n      <path d=\"M200 70v40M180 90h40\" style=\"stroke:var(--ink-2);stroke-width:1.5\"/>\n      <text x=\"136\" y=\"140\" style=\"fill:var(--ink-2)\">PRANCHA EM BRANCO</text>\n    </svg>\n    <div class=\"body\">\n      <span class=\"label\">Em preparação",
 "after": "</div>\n  </a>\n  <div class=\"prancha vazia\" aria-label=\"Próximas disciplinas\">\n    <div class=\"body\">\n      <span class=\"label\">Em preparação"
 },
@@ -18,5 +10,29 @@
 {
 "before": "O que mudou</h2><details class=\"note\" open><summary><span>29/09/2026</span></summary>",
 "after": "O que mudou</h2><details class=\"note\" open><summary><span>29–30/09/2026</span></summary><ul><li>Entraram os guias de sete disciplinas, com descrições das aulas e bibliografias onde havia plano de ensino. Também entraram os favoritos e Meu caderno, as frases do modo avião e figuras refeitas em Processo Civil, Contratos e Direito Latino-americano.</li></ul></details><details class=\"note\" open><summary><span>29/09/2026</span></summary>"
+},
+{
+"before": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf",
+"after": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding:0;height:0;overflow:hidden}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf"
+},
+{
+"before": "noite</span></button></nav>\n\n<header class=\"hero hero-shelf\">\n  <div class=\"kicker label\"><span>Guias de estudo</span><span>Uma prancha por disciplina</span><span>Aulas para ler</span></div>\n  <h1>Guias por disciplina</h1>\n  <p class=\"deck\">Escolha uma disciplina para ler as aulas, consultar figuras e acessar materiais de revisão.</p>\n</header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">\n    ",
+"after": "noite</span></button></nav>\n\n<header class=\"hero hero-shelf\"><h1 class=\"sr-only\">Guias de estudo de Direito da UFRGS</h1></header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">\n    "
+},
+{
+"before": "de Constitucionalidade</h2>\n      <p>Quem guarda a Constituição, por qual via e com que efeitos. Dos fundamentos à ADI, ADC, ADO, ADPF e ao controle estadual e difuso.</p>\n      <span class=\"go\">ABRIR O",
+"after": "de Constitucionalidade</h2>\n      <p>O guia percorre os fundamentos do controle, as ações ADI, ADC, ADO e ADPF e as vias estadual e difusa. Em cada uma, a pergunta é quem decide e quais efeitos a decisão produz.</p>\n      <span class=\"go\">ABRIR O"
+},
+{
+"before": "Constitucional I</h2>\n      <p>Da origem do constitucionalismo e da formação constitucional do Brasil ao poder constituinte, à teoria das normas e aos direitos fundamentais, com",
+"after": "Constitucional I</h2>\n      <p>O percurso vai das origens do constitucionalismo à formação constitucional do Brasil. Depois, passa pelo poder constituinte, pela teoria das normas e pelos direitos fundamentais, com"
+},
+{
+"before": "Civil I-a</h2>\n      <p>Da petição inicial à sentença: partes e terceiros, atos, citação, prazos, resposta do réu, nulidades, saneamento e julgamento conforme o estado do processo.</p>\n      <span class=\"go\">ABRIR O",
+"after": "Civil I-a</h2>\n      <p>Acompanhe o processo da petição inicial à sentença: quem participa, como ocorrem os atos e a citação, e como prazos, resposta do réu e nulidades influem no saneamento e no julgamento.</p>\n      <span class=\"go\">ABRIR O"
+},
+{
+"before": "Metodologia Jurídica</h2>\n      <p>A tradição do direito comum, o casuísmo e o sistema no direito indiano, o ensino jurídico no Brasil do século XIX e a relação entre",
+"after": "Metodologia Jurídica</h2>\n      <p>O guia relaciona a tradição do direito comum e o debate entre casuísmo e sistema no direito indiano ao ensino jurídico brasileiro do século XIX. Também examina a relação entre"
 }
 ]

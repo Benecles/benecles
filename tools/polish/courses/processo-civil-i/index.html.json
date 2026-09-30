@@ -2,5 +2,17 @@
 {
 "before": " CUFRGS</title>\n<meta name=\"description\" content=\"Guia de estudo de Processo Civil I-a (DIR02002), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=715b8de10b\">\n<style>\n.course-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(20px,4vw,56px);align-items:start}",
 "after": " CUFRGS</title>\n<meta name=\"description\" content=\"Guia de estudo de Processo Civil I-a (DIR02002), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=c65e19c024\">\n<style>\n.course-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(20px,4vw,56px);align-items:start}"
+},
+{
+"before": "\n    <p>A P1 cobre as Aulas 01",
+"after": "\n    <p>A P1 inclui as Aulas 01"
+},
+{
+"before": "Aulas 10 e 11, sobre saneamento e julgamento",
+"after": "Aulas 10 e 11 — saneamento e julgamento"
+},
+{
+"before": "o estado do processo, são dadas depois da prova. Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>\n    <a href=\"revisao-p1.html\"><span>Abrir ",
+"after": "o estado do processo — vêm depois da prova. Estude uma aula, responda aos testes sem consultar o texto e retome os trechos ligados a cada erro.</p>\n    <a href=\"revisao-p1.html\"><span>Abrir "
 }
 ]
