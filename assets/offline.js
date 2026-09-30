@@ -2,7 +2,7 @@
    on this device (via sw.js) so it can be read without a connection. */
 (function () {
   if (!('serviceWorker' in navigator) || !('caches' in window)) return;
-  var KEY = 'cufrgs-offline';
+  var KEY = 'ordenacoes-offline';
   var root = new URL('..', document.currentScript.src).href; // site root
   function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function set(v) { try { v ? localStorage.setItem(KEY, v) : localStorage.removeItem(KEY); } catch (e) {} }
@@ -107,7 +107,7 @@
       navigator.serviceWorker.getRegistrations().then(function (rs) {
         rs.forEach(function (r) { if (r.active) r.active.postMessage({ type: 'offline-wipe' }); r.unregister(); });
       });
-      caches.keys().then(function (ks) { ks.forEach(function (k) { if (k.indexOf('cufrgs-offline-') === 0) caches.delete(k); }); });
+      caches.keys().then(function (ks) { ks.forEach(function (k) { if (k.indexOf('ordenacoes-offline-') === 0) caches.delete(k); }); });
       view('off'); open(false);
     }
   });

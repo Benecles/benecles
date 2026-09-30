@@ -1,8 +1,8 @@
-# CUFRGS
+# Ordenações Filipinas
 
 A paper-inspired reading collection for law-school study guides.
 
-Live: https://benecles.github.io/cufrgs/
+Live: https://benecles.github.io/ordenacoes-filipinas/
 
 ## Courses
 
