@@ -23,25 +23,41 @@
           "href": "unidade-01.html",
           "label": "Aula 01",
           "title": "Conceito analítico e arquitetura do delito",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Ordene a análise penal pelos filtros da conduta à culpabilidade.",
+            "exam": "P1"
+          }
         },
         {
           "href": "unidade-02.html",
           "label": "Aula 02",
           "title": "Conduta e modelos de ação",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Compare causalismo, finalismo e teoria social ao analisar a conduta.",
+            "exam": "P1"
+          }
         },
         {
           "href": "suplemento-16.html",
           "label": "Leitura complementar",
           "title": "Teorias da conduta",
-          "complementary": true
+          "complementary": true,
+          "reg": {
+            "does": "Distinga ação, omissão e resultado pelas teorias da conduta.",
+            "exam": "P1"
+          }
         },
         {
           "href": "suplemento-17.html",
           "label": "Leitura complementar",
           "title": "Política criminal e método",
-          "complementary": true
+          "complementary": true,
+          "reg": {
+            "does": "Relacione as funções das categorias penais a seus limites legais.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -54,31 +70,51 @@
           "href": "unidade-03.html",
           "label": "Aula 03",
           "title": "Tipo e tipicidade objetiva",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Verifique a tipicidade objetiva confrontando elementos do tipo e fatos provados.",
+            "exam": "P1"
+          }
         },
         {
           "href": "unidade-04.html",
           "label": "Aula 04",
           "title": "Tipo subjetivo e dolo",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Distinga dolo eventual de culpa consciente pelos elementos de conhecimento e vontade.",
+            "exam": "P1"
+          }
         },
         {
           "href": "unidade-05.html",
           "label": "Aula 05",
           "title": "Erro de tipo e classificação",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Classifique o erro sobre elemento do tipo e determine seu efeito sobre o dolo.",
+            "exam": "P1"
+          }
         },
         {
           "href": "unidade-06.html",
           "label": "Aula 06",
           "title": "Culpa e preterdolo",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Impute o resultado culposo pelo dever de cuidado, risco e nexo causal.",
+            "exam": "P1"
+          }
         },
         {
           "href": "suplemento-18.html",
           "label": "Leitura complementar",
           "title": "Tipo, dever, omissão e imprudência",
-          "complementary": true
+          "complementary": true,
+          "reg": {
+            "does": "Analise omissão e autoria conforme o tipo, o dever preexistente e a equivalência.",
+            "exam": "P1"
+          }
         }
       ]
     },
@@ -91,13 +127,21 @@
           "href": "unidade-07.html",
           "label": "Aula 07",
           "title": "Nexo causal e concausas",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Examine o nexo causal e a imputação objetiva diante de concausas.",
+            "exam": "P1"
+          }
         },
         {
           "href": "unidade-08.html",
           "label": "Aula 08",
           "title": "Iter criminis e tentativa",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Distinga preparação, execução e consumação para reconhecer a tentativa.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -110,19 +154,31 @@
           "href": "unidade-09.html",
           "label": "Aula 09",
           "title": "Antijuridicidade e normas de permissão",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Identifique a permissão jurídica que afasta a antijuridicidade do fato típico.",
+            "exam": "P2"
+          }
         },
         {
           "href": "unidade-10.html",
           "label": "Aula 10",
           "title": "Causas de justificação e seus limites",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Avalie os limites da justificante e a ocorrência de excesso no caso concreto.",
+            "exam": "P2"
+          }
         },
         {
           "href": "suplemento-19.html",
           "label": "Leitura complementar",
           "title": "Justificação e conflito social",
-          "complementary": true
+          "complementary": true,
+          "reg": {
+            "does": "Reconstrua os princípios que fundamentam e limitam as permissões jurídicas.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -135,25 +191,41 @@
           "href": "unidade-11.html",
           "label": "Aula 11",
           "title": "Culpabilidade: conceito e teorias",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Examine se o injusto pode ser pessoalmente censurado ao agente.",
+            "exam": "P2"
+          }
         },
         {
           "href": "unidade-12.html",
           "label": "Aula 12",
           "title": "Imputabilidade e capacidade pessoal",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Avalie a imputabilidade pelo efeito da condição mental na ação ou omissão.",
+            "exam": "P2"
+          }
         },
         {
           "href": "unidade-13.html",
           "label": "Aula 13",
           "title": "Exigibilidade sob pressão",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Examine coação e obediência hierárquica para decidir se era exigível outra conduta.",
+            "exam": "P2"
+          }
         },
         {
           "href": "suplemento-20.html",
           "label": "Leitura complementar",
           "title": "Culpabilidade e desistência",
-          "complementary": true
+          "complementary": true,
+          "reg": {
+            "does": "Relacione culpabilidade, necessidade de pena e desistência no fato global.",
+            "exam": "P2"
+          }
         }
       ]
     },
@@ -166,13 +238,21 @@
           "href": "unidade-14.html",
           "label": "Aula 14",
           "title": "Autoria, coautoria e domínio do fato",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Classifique autoria imediata, coautoria e autoria mediata pelo domínio do fato.",
+            "exam": "P2"
+          }
         },
         {
           "href": "unidade-15.html",
           "label": "Aula 15",
           "title": "Participação e seus limites",
-          "complementary": false
+          "complementary": false,
+          "reg": {
+            "does": "Delimite a participação e individualize a imputação conforme os arts. 29 a 31.",
+            "exam": "P2"
+          }
         }
       ]
     }
@@ -280,5 +360,11 @@
       "page": "unidade-08-original.html",
       "reason": "Cópia de segurança do material original, não é uma aula publicada."
     }
-  ]
+  ],
+  "reg": {
+    "exams": [
+      "P1",
+      "P2"
+    ]
+  }
 }
