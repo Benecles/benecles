@@ -111,7 +111,7 @@ def fig_ci04():
           '<p>O controle difuso-concreto continua com todos os juízes, e o STF também o exerce no recurso extraordinário, com efeitos entre as partes, que só se tornam gerais pela resolução do Senado (art. 52, X). Desde a EC 16/1965 existe o controle abstrato, concentrado no STF, com eficácia <em>erga omnes</em> e efeito vinculante. Depois de 1988, o acesso direto se ampliou e surgiu uma pluralidade de ações.</p>' + src(ref), ''),
     ])
 
-FIGS[('constitucional', 'aula-04.html')] = {5: fig_ci04}
+FIGS[('constitucional', 'aula-04.html')] = {9: fig_ci04}
 
 # ---- PC Aula 03 · genre: matrix. The two axes of joinder cross in four combinations (draft unit-03-integrated)
 _Q = [  # (row, col, title, example, tone)  row 0 necessário / 1 facultativo; col 0 unitário / 1 simples
@@ -220,4 +220,11 @@ def fig_ci02():
           '<p>Formal, porque integra o documento aprovado como texto constitucional; escrita; analítica, porque contém muitas regras e detalhes; rígida, pelo procedimento de emenda do art. 60, e super-rígida para quem destaca o § 4º; social-dirigente, porque o texto também orienta a ação estatal.</p>' + src(ref), 'conc'),
     ])
 
-# FIGS[('constitucional', 'aula-02.html')] = {7: fig_ci02}   # held: see CLOUD-SHIP-LOG step 9
+FIGS[('constitucional', 'aula-02.html')] = {7: fig_ci02}
+
+# P1 figures (29/09), in their own modules so parallel work never collides
+for _m in ("figs_ci_p1", "figs_pc_p1", "figs_mj"):
+    try:
+        __import__(_m)
+    except ModuleNotFoundError:
+        pass

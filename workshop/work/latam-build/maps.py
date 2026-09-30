@@ -192,6 +192,7 @@ class Frame:
     def __init__(self, name):
         d = json.load(open(os.path.join(os.path.dirname(__file__), 'geo', f'frame_{name}.json')))
         self.name, self.pj, self.ct = name, d['proj'], d['c']
+        self.coast = d.get('coast', '')
         self.W, self.H = round(self.pj['W']), self.pj['H']
         rp = os.path.join(os.path.dirname(__file__), 'geo', f'relief_{name}.json')
         self.relief = None   # relief retired
@@ -200,6 +201,12 @@ class Frame:
         return (round(p['OX'] + (lon - p['LON0']) * p['KX'] * p['S'], 1), round(p['OY'] + (p['LAT1'] - lat) * p['S'], 1))
     def defs(self):
         paths = ''.join(f'<path id="f{self.name}-{k}" d="{v["d"]}"/>' for k, v in self.ct.items())
+        if self.ct and getattr(self, 'coast', None):
+            paths += f'<path id="f{self.name}-coast" d="{self.coast}"/>'
+        px, py = self.pj.get('OX', 0), self.pj.get('OY', 0)
+        mw, mh = self.pj.get('MAP_W', self.W), self.pj.get('MAP_H', self.H)
+        paths += (f'<clipPath id="f{self.name}-frame-clip"><rect x="{px}" y="{py}" '
+                  f'width="{mw}" height="{mh}"/></clipPath>')
         if self.relief:
             paths += ''.join(f'<path id="f{self.name}-rl{k.replace("-", "m")}" d="{v}"/>' for k, v in self.relief['lines'].items())
             paths += ''.join(f'<path id="f{self.name}-rh{k}" d="{v}"/>' for k, v in self.relief.get('hach', {}).items() if v)
@@ -209,26 +216,33 @@ class Frame:
         fills = fills or {}
         o = ''
         if water:
-            for w, col in ((18, 'var(--grid-major)'), (14, 'var(--paper)'), (10, 'var(--grid-major)'), (7, 'var(--paper)'), (3.5, 'var(--grid-major)')):
-                o += f'<g style="fill:none;stroke:{col};stroke-width:{w};stroke-linejoin:round;opacity:{.5 if "grid" in col else 1}">'
-                o += ''.join(f'<use href="#f{self.name}-{k}"/>' for k in self.ct) + '</g>'
+            # One faint engraved water ripple in the open Atlantic.
+            a, b = self.xy(-53, 24), self.xy(-26, 24)
+            mid = self.xy(-39.5, 26)
+            o += (f'<path d="M{a[0]} {a[1]}Q{mid[0]} {mid[1]} {b[0]} {b[1]}" '
+                  'style="fill:none;stroke:var(--grid-major);stroke-width:1.2;opacity:.38"/>')
         if self.relief:
             o += (f'<use href="#f{self.name}-rlm3000" style="fill:none;stroke:var(--grid-major);stroke-width:.8;stroke-dasharray:1 3"/>'
                   f'<use href="#f{self.name}-rlm200" style="fill:none;stroke:var(--ink-2);stroke-width:.7;opacity:.45"/>')
+        o += f'<g clip-path="url(#f{self.name}-frame-clip)">'
         for k in self.ct:
             tone = fills.get(k, 'base')
-            o += f'<use href="#f{self.name}-{k}" style="{TONES[tone]};stroke-width:{sw if tone != "base" else .8};stroke-linejoin:round"/>'
+            o += f'<use href="#f{self.name}-{k}" style="fill:{TONES[tone].split("fill:")[1].split(";")[0]};stroke:none"/>'
+        if getattr(self, 'coast', None):
+            o += (f'<use href="#f{self.name}-coast" style="fill:none;stroke:var(--grid-major);'
+                  f'stroke-width:{sw};stroke-linecap:round;stroke-linejoin:round"/>')
         if self.relief:
             o += ''.join(f'<use href="#f{self.name}-rh{k}" style="fill:none;stroke:var(--ink);stroke-width:{w * 1.2:.2f};stroke-linecap:round;opacity:.7;pointer-events:none"/>'
                          for k, w in HACH_W.items() if self.relief.get('hach', {}).get(k))
-        return o
+        return o + '</g>'
     LATS = ((0, 'Equador'), (23.44, 'Trópico de Câncer'), (-23.44, 'Trópico de Capricórnio'))
     def graticule(self, lats=LATS, labels=True):
         o = ''
+        px, width = self.pj.get('OX', 0), self.pj.get('MAP_W', self.W)
         for lat, name in lats:
             _, y = self.xy(0, lat)
             dash = '' if lat == 0 else ';stroke-dasharray:2 5'
-            o += f'<path d="M0 {y}H{self.W}" style="fill:none;stroke:var(--grid-major);stroke-width:{1 if lat == 0 else .8}{dash}"/>'
+            o += f'<path d="M{px} {y}H{px + width}" style="fill:none;stroke:var(--grid-major);stroke-width:{1 if lat == 0 else .8}{dash}"/>'
         return o + (self.grat_labels(lats) if labels else '')
     def grat_labels(self, lats=LATS):
         # call after base() so the land never covers the names

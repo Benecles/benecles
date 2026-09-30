@@ -1,0 +1,33 @@
+{
+  "key": "02",
+  "date": "19/08",
+  "pages": [
+    {
+      "file": "aula-02.html",
+      "h1a": "Indeferimento liminar",
+      "h1b": "e audiência inicial",
+      "title": "Indeferimento liminar e audiência de conciliação ou mediação",
+      "desc": "Como distinguir indeferimento da inicial e improcedência liminar, qual recurso cabe em cada caso e quando a audiência do art. 334 se realiza ou é dispensada.",
+      "deck": "Duas ações podem receber decisão antes de o réu ser ouvido, mas só uma julga o pedido. Essa diferença define recurso, coisa julgada e se o processo segue para audiência: <strong class=\"conc\">defeito da inicial ou improcedência do pedido?</strong>",
+      "bet": {
+        "after_chapter": 3,
+        "question": "Uma consumidora protocola inicial completa pedindo revisão de cobrança. A questão é documental e o pedido contraria acórdão do STJ em recurso repetitivo. O juiz decide antes da citação. Como classificar a decisão que ele pode tomar?",
+        "options": [
+          ["Indeferimento da inicial por inépcia, com apelação e retratação do art. 331.", ""],
+          ["Improcedência liminar do art. 332, sentença de mérito, com apelação e retratação em cinco dias.", "*"],
+          ["Decisão interlocutória que extingue parte do processo, atacável por agravo de instrumento.", ""],
+          ["Nenhuma decisão é possível, porque o réu precisa ser citado antes de qualquer julgamento de mérito.", ""]
+        ],
+        "reveal": "<p>A inicial está completa, então não há defeito de forma a reconhecer: o juiz não indefere pelo art. 330. Como a causa dispensa instrução e o pedido contraria recurso repetitivo, cabe a improcedência liminar do art. 332, que é julgamento de mérito.</p><p>A autora pode apelar, o juiz pode se retratar em cinco dias e, mantida a sentença, o réu é citado para contrarrazões em quinze dias.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    ["Quais são as hipóteses de indeferimento da petição inicial do art. 330, e quando a inicial é inepta?", "A inicial é indeferida quando inepta, quando a parte é manifestamente ilegítima, quando falta interesse processual ou quando o autor não cumpre os arts. 106 e 321. É inepta quando falta pedido ou causa de pedir, o pedido é indeterminado fora das exceções legais, os fatos não levam logicamente à conclusão ou os pedidos são incompatíveis entre si."],
+    ["Por que o juiz não pode indeferir a inicial com defeito corrigível sem antes mandar emendar, e como deve ser a ordem?", "O art. 321 exige que o juiz indique com precisão o que deve ser corrigido ou completado, o que Didier trata como expressão da cooperação. Uma ordem genérica como “emende a inicial” não permite ao autor cumprir corretamente."],
+    ["Qual recurso cabe contra o indeferimento total e contra o parcial da inicial?", "O indeferimento total é sentença e cabe apelação, com retratação em cinco dias (art. 331). O parcial, que deixa pedidos em curso, é decisão interlocutória e cabe agravo de instrumento (art. 354, parágrafo único)."],
+    ["Quais os requisitos da improcedência liminar do art. 332?", "A causa deve dispensar fase instrutória e o pedido deve contrariar súmula do STF ou do STJ, acórdão em recurso repetitivo, entendimento firmado em IRDR ou assunção de competência, ou súmula de tribunal de justiça sobre direito local. O § 1º acrescenta decadência e prescrição reconhecidas desde logo."],
+    ["O que acontece com o réu depois de uma improcedência liminar mantida após a apelação?", "Se o juiz não se retratar em cinco dias, o réu é citado para apresentar contrarrazões em quinze dias. Na leitura de Didier, essas contrarrazões são a primeira manifestação do réu e a citação posterior não converte a sentença em decisão sem mérito."],
+    ["Quando a audiência de conciliação ou mediação do art. 334 deixa de ocorrer, e quais os prazos envolvidos?", "Quando ambas as partes manifestam desinteresse expresso (o autor na inicial, o réu por petição até dez dias antes da audiência, e todos os litisconsortes) ou quando o caso não admite autocomposição. A audiência é designada com pelo menos trinta dias de antecedência e o réu é citado com pelo menos vinte."]
+  ]
+}

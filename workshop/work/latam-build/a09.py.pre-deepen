@@ -1,0 +1,102 @@
+from common import *
+
+# hero: from one judge's decision to a negotiated system
+TL = [(80, '2009', 'Audiência', ('pública sobre', 'saúde'), 'ink'),
+      (250, '2010', 'STA 175', ('o Plenário mantém', 'o fornecimento'), 'dif'),
+      (420, '2019', 'Tema 500', ('medicamento', 'sem registro'), 'ink'),
+      (590, '2023', 'Comissão', ('Especial de', 'conciliação'), 'conc'),
+      (760, '2024', 'Temas 1234 e 6', ('acordos homologados', 'e requisitos'), 'dif'),
+      (930, 'HOJE', 'SV 60 e 61', ('tudo isso', 'vincula juízes'), 'conc')]
+hero = '<path class="draw" d="M60 70H1020" style="fill:none;stroke:var(--ink);stroke-width:3"/>'
+for i, (x, y, a, b_, tone) in enumerate(TL):
+    col = {'ink': 'var(--ink)', 'dif': 'var(--dif)', 'conc': 'var(--conc)'}[tone]
+    hero += (f'<g class="pop" style="--d:{.2 + i * .2:.1f}s;font:12px var(--mono);letter-spacing:1px">'
+             f'<circle cx="{x}" cy="70" r="7" style="fill:{col}"/>'
+             f'<text x="{x}" y="46" text-anchor="middle" style="fill:{col}">{y}</text>'
+             f'<text x="{x}" y="100" text-anchor="middle" style="fill:var(--ink)">{a}</text>'
+             f'<text x="{x}" y="118" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">{b_[0]}</text>'
+             f'<text x="{x}" y="133" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">{b_[1]}</text></g>')
+
+# ---- Fig: which rule applies
+def tree(k):
+    o = T(40, 44, 'QUAL REGRA SE APLICA AO PEDIDO?', 't-small', style='letter-spacing:.1em')
+    on = lambda i: i <= k
+    # questions (left column)
+    o += G(box(30, 70, 270, 72, 'TEM REGISTRO?', 'a Anvisa aprovou o remédio', 'paper', ctx='tree'), 'pop', d=.1)
+    o += P('M300 106H330', 'c-conc grow' if k == 0 else 'thin', style='--d:.3s') + T(315, 98, 'não', 't-small tc-conc', anchor='middle')
+    o += G(box(330, 70, 240, 72, 'TEMA 500', 'regra: não fornecer', 'conc' if k == 0 else 'grey', ctx='tree'), 'pop', d=.4)
+    o += P('M165 142V200', 'thin') + T(180, 176, 'sim', 't-small')
+    o += G(box(30, 200, 270, 72, 'ESTÁ NO SUS?', 'listas e protocolos', 'paper' if on(1) else 'grey', ctx='tree'), 'pop' if k == 1 else '', d=.1)
+    o += P('M300 236H330', 'c-dif grow' if k == 1 else 'thin', style='--d:.3s') + T(315, 228, 'sim', 't-small tc-dif', anchor='middle')
+    o += G(box(330, 200, 240, 72, 'MANDAR CUMPRIR', 'o juiz não cria nada', 'dif' if k == 1 else 'grey', ctx='tree'), 'pop' if k == 1 else '', d=.4)
+    o += P('M165 272V330', 'thin') + T(180, 306, 'não', 't-small')
+    o += G(box(30, 330, 540, 84, 'TEMA 6 · SV 61', 'regra: não fornecer; exceção com seis requisitos,', 'dif' if k == 2 else 'grey', ctx='tree', sub2='prova do autor, NatJus e aviso à Conitec'), 'pop' if k == 2 else '', d=.2)
+    o += P('M300 414V470', 'c-conc grow' if k == 3 else 'thin', style='--d:.2s')
+    o += G(box(30, 470, 540, 84, 'TEMA 1234 · SV 60', 'em qualquer caso: qual Justiça julga, quem paga', 'conc' if k == 3 else 'grey', ctx='tree', sub2='e como os entes se ressarcem (acordos homologados)'), 'pop' if k == 3 else '', d=.4)
+    return o
+
+b = ''
+b += chapter('01', 'c1', 'Um remédio, uma pessoa, um sistema', 'Na T-025, a Corte tratava de uma política inteira. Aqui, cada processo pede uma caixa de remédio. O problema estrutural aparece quando os processos são milhares.', 'dif')
+b += longform(
+    '<p>Um médico prescreve um medicamento que o SUS não fornece. O paciente pede à administração, ouve um não e vai ao Judiciário com o laudo na mão. A urgência é real, e a ordem judicial costuma vir rápido. Visto de dentro do processo, é o caso mais simples do mundo: o art. 196 diz que a saúde é direito de todos e dever do Estado.</p>',
+    '<p>Visto de fora, o quadro muda. Cada ordem retira dinheiro de um orçamento que também paga vacinas, cirurgias e remédios de quem não processou ninguém. Um juiz decide sem saber se existe alternativa na rede, se o remédio tem evidência de eficácia, ou se União, estado ou município deveria pagar. Somadas, milhares de decisões individuais corretas podem desorganizar a política que deveriam proteger. A aula de 28/09 pergunta como o STF lidou com isso, e se a resposta que ele encontrou, o <strong>diálogo institucional</strong>, é um passo atrás ou um passo à frente do Judiciário.</p>')
+
+b += bet('A União pede ao STF que suspenda uma ordem que a obriga, com o estado e o município, a fornecer um medicamento caro, registrado na Anvisa, a uma paciente com uma doença neurológica rara. Alega grave lesão à economia pública. O STF deve suspender?', [
+    ('Sim: remédios caros por ordem judicial desorganizam o SUS, e a soma dos casos ameaça o sistema.', ''),
+    ('Não: a lesão ao erário não foi demonstrada, e suspender a ordem pode causar dano irreversível à paciente.', '*STF, Plenário (STA 175-AgR, 2010)'),
+], '<p>O STF ficou com a segunda. Mas o voto que levou a esse resultado é mais interessante do que o resultado: ele tentou transformar o caso em um roteiro para todos os juízes do país.</p>')
+
+b += chapter('02', 'c2', 'A STA 175 e a audiência pública', 'O caso em que o STF usou pela primeira vez o que ouviu numa audiência pública.')
+b += longform(
+    '<p>O Tribunal Regional Federal da 5ª Região mandou a União, o Estado do Ceará e o Município de Fortaleza fornecerem o Zavesca (miglustat) a uma paciente com doença de Niemann-Pick tipo C. A União pediu ao STF a suspensão da ordem na <strong>STA 175</strong>; Fortaleza, em pedido separado, na <strong>STA 178</strong>. A suspensão de tutela antecipada não é recurso: serve para retirar os efeitos de uma decisão que cause grave lesão à ordem, à saúde, à segurança ou à economia públicas. A pergunta, portanto, era estreita.</p>',
+    '<p>Em 2009, o presidente do STF, Gilmar Mendes, havia convocado uma <strong>audiência pública sobre saúde</strong>, aberta aos diversos setores envolvidos no tema, inclusive o próprio Ministério da Saúde. Em setembro daquele ano, ao negar monocraticamente a suspensão, ele usou pela primeira vez esse material para propor parâmetros. O mais importante: se o remédio pedido <strong>já está</strong> nas políticas do SUS, o juiz que manda fornecê-lo não cria política pública, só manda cumpri-la. Se <strong>não está</strong>, é preciso descobrir por quê: omissão, decisão administrativa de não fornecer, ou vedação legal. Registro na Anvisa é exigência. O tratamento do SUS deve ser preferido, salvo prova de que não serve para aquele paciente; e os protocolos clínicos não são inquestionáveis.</p>',
+    '<p>Em 17 de março de 2010, o Plenário negou provimento ao agravo da União: não se comprovou grave lesão aos bens protegidos, e havia risco de dano inverso à paciente. É preciso separar duas coisas. O <strong>resultado</strong> colegiado é esse, e só esse. Os <strong>parâmetros</strong> são do voto do relator; o Plenário não os transformou em tese naquele dia. Eles só viraram regra vinculante catorze anos depois, e com mudanças. O próprio STF, ao fixar a tese do Tema 1234, remete à STA 175 para dizer que o laudo médico sozinho não basta.</p>')
+
+b += chapter('03', 'c3', 'Três perguntas antes de decidir', 'A regra depende de onde o remédio está no sistema.', 'dif')
+b += scrolly('Qual regra se aplica ao pedido de medicamento', [('p-tr0', tree(0), 'Sem registro'), ('p-tr1', tree(1), 'Incorporado'), ('p-tr2', tree(2), 'Não incorporado'), ('p-tr3', tree(3), 'Competência e custeio')], [
+    S('p-tr0', 'Tema 500 · RE 657.718 · 2019', 'Sem registro na Anvisa', '<p>O Estado não pode ser obrigado a fornecer remédio experimental, e a falta de registro impede, como regra, o fornecimento judicial. A exceção é estreita: <strong>mora irrazoável</strong> da Anvisa em apreciar o pedido, somada a três requisitos (pedido de registro no Brasil, salvo órfãos para doenças raras; registro em agências estrangeiras renomadas; nenhum substituto registrado aqui). A ação vai necessariamente contra a União.</p><p>O juiz não avalia a segurança do remédio no lugar da Anvisa. Controla o tempo que a agência leva para decidir.</p>', 'conc'),
+    S('p-tr1', 'STA 175 · a política existe', 'Registrado e incorporado', '<p>Se o remédio está nas listas e protocolos do SUS e mesmo assim não chegou ao paciente, a falha é de execução. Aqui vale o parâmetro mais antigo e menos polêmico: o juiz que manda entregar o que a política já promete não está criando política, está cobrando o seu cumprimento.</p>', 'dif'),
+    S('p-tr2', 'Tema 6 · RE 566.471 · 2024', 'Registrado, mas não incorporado', '<p>A regra geral é não fornecer, “independentemente do custo”. A exceção exige seis requisitos <strong>cumulativos</strong>, todos a cargo do autor: (a) negativa administrativa; (b) ilegalidade da não incorporação pela Conitec, falta de pedido ou demora na análise; (c) nenhum substituto nas listas; (d) eficácia e segurança comprovadas por evidência de alto nível (só ensaios clínicos randomizados, revisão sistemática ou meta-análise); (e) laudo fundamentado de imprescindibilidade; (f) incapacidade financeira.</p><p>E o juiz tem três deveres, sob pena de nulidade: não entrar no mérito da decisão administrativa, só na sua legalidade; consultar o NatJus ou outro apoio técnico, sem decidir apenas com o laudo do autor; e, se conceder, <strong>oficiar aos órgãos competentes</strong> para avaliarem a incorporação do remédio ao SUS.</p>', 'dif'),
+    S('p-tr3', 'Tema 1234 · RE 1.366.243 · 2024', 'Quem julga e quem paga', '<p>Qualquer que seja a resposta anterior, falta decidir a Justiça competente e a conta. Pedidos de medicamentos não incorporados (e, na redação atual, também os oncológicos), com registro na Anvisa, vão à Justiça Federal quando o tratamento anual custa <strong>210 salários mínimos ou mais</strong>, calculado pelo preço máximo de venda ao governo. Nesses casos, a União paga integralmente. Abaixo disso, na Justiça Estadual, a União ressarce estados e municípios em percentuais fixados.</p><p>O juiz também não pode mandar pagar acima do menor preço já proposto à Conitec ou praticado em compra pública. Essas regras não decidem se o paciente tem direito ao remédio; decidem o caminho do processo e do dinheiro.</p>', 'conc'),
+])
+
+b += chapter('04', 'c4', 'O Tema 1234: um acordo com força de súmula', 'O STF parou de apenas julgar e passou a sentar as partes à mesa.')
+b += longform(
+    '<p>O Tema 1234 começou como uma pergunta processual: a União deve estar no processo quando se pede um remédio não incorporado? Em 21 de setembro de 2023, o relator Gilmar Mendes fez algo diferente de responder. Criou, dentro do próprio recurso extraordinário, uma <strong>Comissão Especial</strong> de conciliação entre os entes federativos, com juízes auxiliares do seu gabinete como mediadores. A justificativa estava no despacho: buscar um compromisso autocompositivo seria uma forma de “governança judicial colaborativa”.</p>',
+    '<p>A comissão produziu três acordos interfederativos. Juntos, eles tratam da Justiça competente, do custeio e do ressarcimento entre os entes, dos limites da análise judicial e do fluxo dos pedidos, incluindo uma plataforma nacional que reúna os pedidos administrativos e judiciais de medicamentos. Em setembro de 2024, o Plenário, por unanimidade, <strong>homologou em parte</strong> os acordos, com condicionantes e adaptações, e fixou seus termos como tese de repercussão geral. Depois vieram as súmulas vinculantes.</p>',
+    lex('Súmula Vinculante 60', 'O pedido e a análise administrativos de fármacos na rede pública de saúde, a judicialização do caso, bem ainda seus desdobramentos (administrativos e jurisdicionais), devem observar os termos dos 3 (três) acordos interfederativos (e seus fluxos) homologados pelo Supremo Tribunal Federal, em governança judicial colaborativa, no tema 1.234 da sistemática da repercussão geral RE 1.366.243.'),
+    '<p>Na mesma época, o Tema 6 foi concluído (relator original Marco Aurélio, redator do acórdão Luís Roberto Barroso) e deu origem à <strong>Súmula Vinculante 61</strong>. As duas teses se encaixam: o item (a) do Tema 6 exige a negativa administrativa “nos termos do item 4 do Tema 1234”. O acordo passou a vincular não apenas a administração, que o assinou, mas todos os juízes do país, que não o assinaram.</p>',
+    '<p>O acordo continua em movimento. Em fevereiro de 2026 o Plenário referendou um ajuste para medicamentos oncológicos, construído na Comissão Intergestores Tripartite, e novos embargos sobre esse ajuste estavam em julgamento virtual na semana de 18 a 25 de setembro de 2026. O desenho é de um sistema que as partes seguem renegociando, com o STF como homologador.</p>')
+
+b += chapter('05', 'c5', 'Autocontenção ou nova intervenção?', 'O eixo da aula tem uma resposta incômoda: as duas coisas, ao mesmo tempo.', 'dif')
+b += longform(
+    eixo('O diálogo institucional representa autocontenção judicial ou uma nova forma de intervenção das Cortes nas políticas públicas?'),
+    '<p>Pelo <strong>conteúdo</strong>, as teses são autocontenção. A regra geral passou a ser não fornecer remédio sem registro ou não incorporado. O juiz não pode entrar no mérito da decisão técnica da Conitec, não pode decidir só com o laudo do médico do autor, tem de ouvir apoio técnico e respeitar preços públicos. Comparado ao juiz de 2009, que muitas vezes mandava fornecer à vista da prescrição, o de 2024 tem muito menos espaço.</p>',
+    '<p>Pela <strong>forma</strong>, é intervenção de um tipo novo. O STF não esperou o Congresso nem o Ministério da Saúde reorganizarem a judicialização: convocou os entes, mediou a negociação, reescreveu parte do que eles acordaram e deu ao resultado força de súmula vinculante. Regras sobre ressarcimento entre fundos de saúde e sobre uma plataforma nacional de dados nasceram num processo judicial. E cada decisão que concede um remédio deve ser comunicada à Conitec, o que faz o caso individual realimentar a política.</p>')
+b += wide(table(['', 'Leitura de autocontenção', 'Leitura de nova intervenção'], [
+    ['Regra geral', 'Não fornecer o que não tem registro ou não foi incorporado.', 'Quem fixou a regra foi o STF, em tese vinculante.'],
+    ['Mérito técnico', 'Fica com a Anvisa e a Conitec; o juiz controla só a legalidade.', 'O STF definiu que tipo de evidência vale como prova científica.'],
+    ['Federação', 'Os próprios entes negociaram quem paga.', 'A negociação aconteceu dentro de um recurso, sob mediação do relator.'],
+    ['Vinculação', 'O juiz segue critérios públicos, e não a própria convicção.', 'Um acordo administrativo passou a vincular todo o Judiciário.'],
+    ['Retorno', 'A decisão concedida volta à Conitec para avaliação.', 'O processo judicial virou canal permanente da política de incorporação.'],
+], hcls=['', 'dif', 'conc']))
+b += longform(
+    '<p>A comparação com a Aula 08 ajuda a formular a resposta. Na T-025, a Corte colombiana fixou deveres e prazos e voltou, auto após auto, para medir se os direitos avançavam: o diálogo era <strong>de acompanhamento</strong>, com a política como objeto. No Tema 1234, o STF organizou o fluxo pelo qual milhares de juízes decidem casos individuais: o diálogo é <strong>de desenho</strong>, com o processo como objeto. Nos dois, a Corte evita escolher o remédio ou o programa e fica com algo anterior: as regras do jogo.</p>',
+    '<p>Por isso a resposta mais precisa não é “autocontenção” nem “ativismo”. O diálogo institucional desloca o lugar da intervenção: o tribunal intervém menos no resultado de cada caso e mais na arquitetura que produz os resultados. Se isso é bom depende de duas perguntas que a prova pode explorar: quem esteve à mesa (os pacientes estavam?) e quem responde, politicamente, pelas regras que dali saíram.</p>')
+
+b += chapter('06', 'c6', 'Teste', 'Responda antes de abrir.')
+b += quiz([
+    ('O que o Plenário decidiu na STA 175-AgR (2010)?', 'Negou provimento ao agravo da União e manteve a ordem de fornecer o Zavesca: não se comprovou grave lesão à ordem, à economia, à saúde ou à segurança públicas, e havia risco de dano inverso à paciente. Os parâmetros sobre judicialização da saúde são do voto do relator, construídos a partir da audiência pública de 2009.'),
+    ('Qual a diferença entre o Tema 500 e o Tema 6?', 'O Tema 500 trata de remédio sem registro na Anvisa: regra de não fornecer, exceção por mora irrazoável da agência com três requisitos, ação contra a União. O Tema 6 trata de remédio registrado, mas não incorporado às listas do SUS: regra de não fornecer, exceção com seis requisitos cumulativos provados pelo autor.'),
+    ('Quais os três deveres do juiz no Tema 6?', 'Analisar a legalidade do ato de não incorporação ou da negativa, sem entrar no mérito administrativo; aferir os requisitos com consulta prévia ao NatJus ou a apoio técnico, sem decidir só com o laudo do autor; e, se conceder, oficiar aos órgãos competentes para avaliarem a incorporação ao SUS.'),
+    ('Como nasceram as teses do Tema 1234?', 'De uma Comissão Especial de conciliação entre os entes federativos, criada pelo relator em 2023. Os três acordos interfederativos (competência, custeio, fluxo) foram homologados em parte pelo Plenário em 2024 e referidos pela Súmula Vinculante 60, que fala em “governança judicial colaborativa”.'),
+    ('Quando o pedido vai à Justiça Federal pelo Tema 1234?', 'Quando se trata de medicamento não incorporado (ou oncológico, na redação atual) com registro na Anvisa e o tratamento anual custa 210 salários mínimos ou mais, pelo preço máximo de venda ao governo. Nesses casos, a União custeia integralmente.'),
+    ('O diálogo institucional na saúde é autocontenção ou intervenção?', 'Autocontenção quanto ao conteúdo (regra geral de não fornecer, respeito ao juízo técnico da Conitec, exigência de evidência) e intervenção quanto à forma (o STF mediou os acordos, reescreveu parte deles e lhes deu força vinculante). A intervenção se desloca do resultado do caso para a arquitetura que decide os casos.'),
+])
+
+lesson('09', 'aula-09.html', 'Saúde e diálogo institucional',
+       'Direitos sociais, políticas públicas e diálogo institucional: a STA 175 e a audiência pública de 2009, os Temas 500, 6 e 1234 do STF e as Súmulas Vinculantes 60 e 61 sobre fornecimento de medicamentos pelo SUS.',
+       'Saúde e diálogo', 'institucional',
+       'Em 2010, o STF decidia se uma paciente recebia um remédio. Em 2024, <strong class="dif">homologava acordos</strong> entre União, estados e municípios sobre como todos os juízes devem decidir. Isso é <strong class="conc">recuo ou avanço</strong> do Judiciário?',
+       hero, [('Aula', '28/09 · Saúde'), ('Leitura', '≈ 20 min'), ('Antes', 'Aula 08 · T-025'), ('Depois', 'Revisão para a atividade')], b,
+       ('aula-08.html', '← Aula 08', 'T-025 e litígio estrutural'), ('revisao-atividade.html', 'Revisão →', 'Para a atividade de 05/10'), '28/09')

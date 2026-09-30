@@ -1,33 +1,63 @@
 {
- "key": "25",
- "date": "Semanas 15–18",
- "pages": [
-  {
-   "file": "aula-25.html",
-   "h1a": "Identidade cultural",
-   "h1b": "dos povos indígenas",
-   "title": "Identidade cultural dos povos indígenas",
-   "desc": "O art. 231 como modo de vida e território, a tradicionalidade, a demarcação declaratória, o marco temporal e o regime de indenização na tese do Tema 1.031.",
-   "deck": "O art. 231 reconhece <strong class=\"dif\">um modo de vida e o território onde ele se realiza</strong>. A tese do RE 1.017.365 fixa que a demarcação declara, afasta o <strong class=\"conc\">marco temporal</strong> e separa quatro regimes de indenização.",
-   "bet": {
-    "after_chapter": 6,
-    "question": "Em ação de reintegração de posse contra uma comunidade indígena, o proprietário do imóvel alega que a demarcação administrativa ainda não terminou e que os indígenas não estavam na terra, nem em conflito por ela, em 5 de outubro de 1988. Como o STF tratou esses argumentos no Tema 1.031?",
-    "options": [
-     ["Aceitou-os: sem demarcação concluída e sem ocupação ou renitente esbulho em 1988, prevalece a posse civil do proprietário titulado.", ""],
-     ["Afastou-os: a demarcação é procedimento declaratório de direito originário que preexiste, e a proteção constitucional independe de marco temporal em 5 de outubro de 1988 e da configuração de renitente esbulho. O que conta é a ocupação tradicional, no sentido do § 1º do art. 231.", "*"],
-     ["Afastou só o argumento da demarcação, e manteve o marco temporal de 1988 como condição para que o direito exista.", ""],
-     ["Acolheu-os em parte e determinou o pagamento da terra nua ao proprietário em qualquer hipótese, com base no § 6º do art. 231.", ""]
+  "key": "25",
+  "date": "Semanas 15–18",
+  "pages": [
+    {
+      "file": "aula-25.html",
+      "h1a": "Identidade cultural",
+      "h1b": "dos povos indígenas",
+      "title": "Identidade cultural dos povos indígenas",
+      "desc": "O art. 231 como modo de vida e território, a tradicionalidade, a demarcação declaratória, o marco temporal e o regime de indenização na tese do Tema 1.031.",
+      "deck": "O art. 231 reconhece <strong class=\"dif\">um modo de vida e o território onde ele se realiza</strong>. A tese do RE 1.017.365 fixa que a demarcação declara, afasta o <strong class=\"conc\">marco temporal</strong> e separa quatro regimes de indenização.",
+      "bet": {
+        "after_chapter": 6,
+        "question": "Numa ação de reintegração de posse contra uma comunidade indígena, o proprietário do imóvel sustenta duas coisas: que a demarcação administrativa ainda não terminou e que os indígenas não estavam na terra, nem em conflito por ela, em 5 de outubro de 1988, data da promulgação da Constituição. A segunda tese é conhecida como marco temporal, com a exceção do renitente esbulho, isto é, do conflito físico ou judicial persistente pela área naquela data. No julgamento do Tema 1.031, em 2023, como o STF tratou esses argumentos à luz do art. 231?",
+        "options": [
+          [
+            "Aceitou-os: sem demarcação concluída e sem ocupação ou renitente esbulho em 1988, prevalece a posse civil do proprietário titulado.",
+            ""
+          ],
+          [
+            "Afastou-os: a demarcação é procedimento declaratório de direito originário que preexiste, e a proteção constitucional independe de marco temporal em 5 de outubro de 1988 e da configuração de renitente esbulho. O que conta é a ocupação tradicional, no sentido do § 1º do art. 231.",
+            "*"
+          ],
+          [
+            "Afastou só o argumento da demarcação, e manteve o marco temporal de 1988 como condição para que o direito exista.",
+            ""
+          ],
+          [
+            "Acolheu-os em parte e determinou o pagamento da terra nua ao proprietário em qualquer hipótese, com base no § 6º do art. 231.",
+            ""
+          ]
+        ],
+        "reveal": "<p>Nos itens I e III da tese, a demarcação apenas declara que a área é de ocupação pelo modo de viver da comunidade, e a Constituição de 1988 não é termo inicial de verificação de direitos. A data de 5 de outubro de 1988 reaparece nos itens IV e V só para definir o regime de indenização: o § 6º ressalva apenas benfeitorias de ocupação de boa-fé, e o valor da terra nua aparece no item V, sem ocupação tradicional nem renitente esbulho em 1988 e sendo inviável o reassentamento.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O que o caput do art. 231 reconhece e como se articulam titularidade e uso da terra?",
+      "Reconhece aos índios sua organização social, costumes, línguas, crenças e tradições, e os direitos originários sobre as terras que tradicionalmente ocupam: o modo de vida e o lugar em que ele se realiza. Para Barroso, 'originários' remete ao poder constituinte originário e faz o direito prevalecer sobre títulos de terceiros (§ 6º). As terras integram o domínio da União (art. 20, XI), mas são inalienáveis e indisponíveis, de posse permanente e usufruto exclusivo dos indígenas."
     ],
-    "reveal": "<p>Nos itens I e III da tese, a demarcação apenas declara que a área é de ocupação pelo modo de viver da comunidade, e a Constituição de 1988 não é termo inicial de verificação de direitos. A data de 5 de outubro de 1988 reaparece nos itens IV e V só para definir o regime de indenização: o § 6º ressalva apenas benfeitorias de ocupação de boa-fé, e o valor da terra nua aparece no item V, sem ocupação tradicional nem renitente esbulho em 1988 e sendo inviável o reassentamento.</p>"
-   }
-  }
- ],
- "quiz": [
-  ["O que o caput do art. 231 reconhece e como se articulam titularidade e uso da terra?", "Reconhece aos índios sua organização social, costumes, línguas, crenças e tradições, e os direitos originários sobre as terras que tradicionalmente ocupam: o modo de vida e o lugar em que ele se realiza. Para Barroso, 'originários' remete ao poder constituinte originário e faz o direito prevalecer sobre títulos de terceiros (§ 6º). As terras integram o domínio da União (art. 20, XI), mas são inalienáveis e indisponíveis, de posse permanente e usufruto exclusivo dos indígenas."],
-  ["Que outros dispositivos protegem a cultura indígena fora do art. 231?", "O art. 215, § 1º, protege as manifestações das culturas indígenas e afro-brasileiras; o art. 216 define patrimônio cultural, com a identidade e os modos de criar, fazer e viver, e prevê inventários, registros, tombamento e punição de danos; o art. 210, § 2º, assegura às comunidades indígenas o uso de suas línguas maternas e processos próprios de aprendizagem. Tavares, com Häberle, vê a cultura como conceito aberto que inclui as manifestações indígenas."],
-  ["Quais as categorias de terras do art. 231, § 1º, e como se prova a tradicionalidade?", "As habitadas em caráter permanente, as usadas em atividades produtivas, as imprescindíveis à preservação dos recursos ambientais necessários ao bem-estar e as necessárias à reprodução física e cultural, sempre segundo usos, costumes e tradições, o que afasta o modelo civil de ocupação. A tradicionalidade se demonstra por trabalho antropológico, e o laudo do Decreto 1.775/1996 é 'um dos elementos fundamentais', não prova única. A posse indígena espelha o habitat da comunidade, e a civil tem feição econômica."],
-  ["O que a Constituição faz com a terra tradicional nos §§ 2º a 7º do art. 231?", "Destina-a à posse permanente com usufruto exclusivo (§ 2º); exige autorização do Congresso, oitiva das comunidades e participação nos resultados para recursos hídricos e lavra (§ 3º); declara-a inalienável e indisponível, com direitos imprescritíveis (§ 4º); veda a remoção, salvo catástrofe, epidemia ou soberania, com retorno imediato (§ 5º); e anula os atos sobre ocupação, domínio e exploração, sem indenização, salvo benfeitorias de boa-fé (§ 6º)."],
-  ["Quais as teses centrais do RE 1.017.365 (Tema 1.031) sobre demarcação, marco temporal e indenização?", "A demarcação é declaratória (item I), e a proteção independe de marco temporal em 5.10.1988 e de renitente esbulho (item III). Indenização: com ocupação tradicional ou renitente esbulho em 1988, vale o § 6º, só benfeitorias (IV); sem elas, os atos perfeitos e a coisa julgada valem, e há benfeitorias e, se inviável o reassentamento, terra nua (V); casos já pacificados não geram indenização (VI); em impossibilidade absoluta de demarcar, cabem áreas reservadas (VII). A revisão de limites exige pedido em até cinco anos e erro grave e insanável (VIII)."],
-  ["Como o Tema 1.031 trata a dupla afetação ambiental, a legitimidade processual e os votos?", "A terra indígena é compatível com unidade de conservação, com exercício das atividades tradicionais (item XII). O art. 232 e o item XIII fazem povos, comunidades e organizações partes legítimas, com capacidade civil e postulatória, legitimidade concorrente da FUNAI e intervenção do Ministério Público. O recurso foi provido por maioria, relator Fachin, com Nunes Marques vencido e Toffoli e Gilmar Mendes vencidos em parte; André Mendonça não votou o mérito."]
- ]
+    [
+      "Que outros dispositivos protegem a cultura indígena fora do art. 231?",
+      "O art. 215, § 1º, protege as manifestações das culturas indígenas e afro-brasileiras; o art. 216 define patrimônio cultural, com a identidade e os modos de criar, fazer e viver, e prevê inventários, registros, tombamento e punição de danos; o art. 210, § 2º, assegura às comunidades indígenas o uso de suas línguas maternas e processos próprios de aprendizagem. Tavares, com Häberle, vê a cultura como conceito aberto que inclui as manifestações indígenas."
+    ],
+    [
+      "Quais as categorias de terras do art. 231, § 1º, e como se prova a tradicionalidade?",
+      "As habitadas em caráter permanente, as usadas em atividades produtivas, as imprescindíveis à preservação dos recursos ambientais necessários ao bem-estar e as necessárias à reprodução física e cultural, sempre segundo usos, costumes e tradições, o que afasta o modelo civil de ocupação. A tradicionalidade se demonstra por trabalho antropológico, e o laudo do Decreto 1.775/1996 é 'um dos elementos fundamentais', não prova única. A posse indígena espelha o habitat da comunidade, e a civil tem feição econômica."
+    ],
+    [
+      "O que a Constituição faz com a terra tradicional nos §§ 2º a 7º do art. 231?",
+      "Destina-a à posse permanente com usufruto exclusivo (§ 2º); exige autorização do Congresso, oitiva das comunidades e participação nos resultados para recursos hídricos e lavra (§ 3º); declara-a inalienável e indisponível, com direitos imprescritíveis (§ 4º); veda a remoção, salvo catástrofe, epidemia ou soberania, com retorno imediato (§ 5º); e anula os atos sobre ocupação, domínio e exploração, sem indenização, salvo benfeitorias de boa-fé (§ 6º)."
+    ],
+    [
+      "Quais as teses centrais do RE 1.017.365 (Tema 1.031) sobre demarcação, marco temporal e indenização?",
+      "A demarcação é declaratória (item I), e a proteção independe de marco temporal em 5.10.1988 e de renitente esbulho (item III). Indenização: com ocupação tradicional ou renitente esbulho em 1988, vale o § 6º, só benfeitorias (IV); sem elas, os atos perfeitos e a coisa julgada valem, e há benfeitorias e, se inviável o reassentamento, terra nua (V); casos já pacificados não geram indenização (VI); em impossibilidade absoluta de demarcar, cabem áreas reservadas (VII). A revisão de limites exige pedido em até cinco anos e erro grave e insanável (VIII)."
+    ],
+    [
+      "Como o Tema 1.031 trata a dupla afetação ambiental, a legitimidade processual e os votos?",
+      "A terra indígena é compatível com unidade de conservação, com exercício das atividades tradicionais (item XII). O art. 232 e o item XIII fazem povos, comunidades e organizações partes legítimas, com capacidade civil e postulatória, legitimidade concorrente da FUNAI e intervenção do Ministério Público. O recurso foi provido por maioria, relator Fachin, com Nunes Marques vencido e Toffoli e Gilmar Mendes vencidos em parte; André Mendonça não votou o mérito."
+    ]
+  ]
 }

@@ -1,0 +1,104 @@
+"""Exam review pages for the new courses (Claude, 29/09): renders review/<course>-p1.json into courses/<slug>/revisao-p1.html
+with the house components used by the Delito P1 review: past questions (bets for multiple choice, expandable model answers
+for essays), V/F items, drills, distinctions table, traps. build.py calls build_review(cname) after the lessons and links
+the page from the exam card. Content JSONs are prepared from the drafts (see review/*.json); page design lives here."""
+import html as H, json, os, re
+import kit
+import common as latam
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+CSS = ('.vf{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}.vf>div{max-width:72ch}'
+       '.vf details,.ans details{border:1.5px solid var(--ink);background:var(--paper);margin:10px 0;padding:12px 16px}'
+       '.vf summary,.ans summary{cursor:pointer;font:600 17px/1.4 var(--sans)}.vf summary::marker,.ans summary::marker{color:var(--conc)}'
+       '.vf details[open] summary,.ans details[open] summary{margin-bottom:8px}.vf .v{font:600 12px var(--mono);letter-spacing:.08em;margin-right:8px}'
+       '.vf .v.t{color:var(--dif)}.vf .v.f{color:var(--conc)}.vf p{margin:.2em 0 0;font-size:17px}'
+       '.ans{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}.ans>div{max-width:72ch}'
+       '.ans .q{font:17px/1.55 var(--serif);margin:0 0 6px}.ans .meta{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--conc);margin:22px 0 6px}'
+       '.ans ol,.ans ul{margin:.3em 0 .6em;padding-left:1.2em}.ans li{font-size:16.5px;line-height:1.5;margin:.25em 0}'
+       '.ans .thesis{font-weight:600}.ans .trap{border-left:3px solid var(--conc);padding:4px 0 4px 12px;margin:10px 0 4px;font-size:16px}'
+       '.reler{margin:12px 0 0;font:500 12px var(--mono);letter-spacing:.06em;text-transform:uppercase}'
+       '.reler a,.reler-i{color:var(--conc);text-decoration:none;border-bottom:1px solid currentColor}'
+       '.reler-i{display:inline-block;margin-left:8px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase}')
+
+def esc(t): return H.escape(t, quote=False)
+
+def reler(r):
+    rs = r if isinstance(r, list) else ([r] if r else [])
+    return ''.join(f'<p class="reler"><a href="{x["href"]}">Reler: {esc(x["label"])} →</a></p>' for x in rs if x and x.get('href'))
+
+def _p(t):
+    t = t.strip()
+    return t if t.startswith('<') else f'<p>{t}</p>'
+
+def essay(q, i):
+    o = q.get('answer_outline')
+    if o:
+        body = f'<p class="thesis">{o.get("thesis", "")}</p>'
+        if o.get('points'):
+            body += '<ol>' + ''.join(f'<li>{x}</li>' for x in o['points']) + '</ol>'
+        if o.get('trap'):
+            body += f'<p class="trap"><b>Onde se perde ponto:</b> {o["trap"]}</p>'
+    else:
+        body = _p(q.get('answer', ''))
+    if q.get('worked_example'):
+        body += '<p class="meta">Resolução passo a passo</p>' + q['worked_example']
+    return (f'<p class="meta">{esc(q.get("exam", ""))} · questão {q.get("n", i)}</p><p class="q">{q["question"]}</p>'
+            f'<details><summary>Ver resposta modelo</summary>{body}{reler(q.get("reler"))}</details>')
+
+def mc(q, correct):
+    opts = [(o, '*' if (chr(97 + k) == str(correct).lower()[:1]) else '') for k, o in enumerate(q['options'])]
+    reveal = _p(q.get('explanation') or q.get('answer', '')) + reler(q.get('reler'))
+    return latam.bet(q['question'], opts, reveal, kicker=f'{q.get("exam", "")} · questão {q.get("n", "")}')
+
+def vf(items):
+    out = ''
+    for it in items:
+        tag = '<span class="v t">VERDADEIRO</span>' if it.get('true') else '<span class="v f">FALSO</span>'
+        r = it.get('reler') or {}
+        rel = f' <a class="reler-i" href="{r["href"]}">Reler: {esc(r["label"])} →</a>' if r.get('href') else ''
+        out += f'<details><summary>{it["stmt"]}</summary><p>{tag}{it["why"]}{rel}</p></details>'
+    return f'<div class="vf"><div>{out}</div></div>\n'
+
+def build_review(cname, C, track, first_lesson):
+    p = os.path.join(HERE, 'review', f'{cname}-p1.json')
+    if not os.path.exists(p):
+        return None
+    j = json.load(open(p))
+    ex = C.get('exam') or ('Prova', '')
+    b, n = '', 1
+    def ch(title, lede, tone=''):
+        nonlocal b, n
+        b += kit.chapter(f'{n:02d}', f'c{n}', title, lede, tone); n += 1
+    ch('O que cai', j['scope'], 'dif')
+    if j.get('how_to_answer'):
+        b += latam.longform('<p>Seja dissertativa ou de múltipla escolha, a resposta certa passa pelo mesmo caminho: a regra, o artigo e a aplicação ao caso. Na prática:</p>',
+                            '<ol>' + ''.join(f'<li>{x}</li>' for x in j['how_to_answer']) + '</ol>')
+    qs = j.get('questions', [])
+    essays = [q for q in qs if q.get('type') == 'essay']
+    mcs = [q for q in qs if q.get('type') in ('mc', 'vf') and q.get('options')]
+    if qs:
+        ch('Provas anteriores, resolvidas', 'Questões de provas passadas que caem no conteúdo desta prova. Tente responder antes de abrir.', 'conc')
+        if essays:
+            b += '<div class="ans"><div>' + ''.join(essay(q, i + 1) for i, q in enumerate(essays)) + '</div></div>'
+        for q in mcs:
+            b += mc(q, q.get('correct') or q.get('answer', ''))
+    # no invented exam-style questions (owner, 29/09): only real past questions; V/F, distinctions and traps come from the lessons
+    if j.get('vf'):
+        ch('Verdadeiro ou falso', 'Afirmações que testam as confusões mais comuns.')
+        b += vf(j['vf'])
+    if j.get('distinctions'):
+        ch('As distinções que mais caem', 'Se sobrar uma hora antes da prova, é isto.', 'dif')
+        rows = j['distinctions']
+        head, body = (rows[0], rows[1:]) if rows and rows[0][0].lower().startswith('distin') else (['Distinção', 'Um lado', 'O outro'], rows)
+        b += kit.wide(kit.table(head, body))
+    if j.get('traps'):
+        ch('Armadilhas', 'O que costuma derrubar uma resposta certa.', 'conc')
+        b += latam.longform('<ul>' + ''.join(f'<li>{t}</li>' for t in j['traps']) + '</ul>')
+    date = ex[1]
+    hero = track(C['stations'], set(range(len(C['stations']))), set(), quiet=True)
+    tb = [('Prova', f'{ex[0]} · {date}'), ('Conteúdo', {'processo-civil': 'Aulas 01 a 09', 'constitucional': 'Aulas 01 a 04'}.get(cname, 'ver capítulo 01')), ('Formato', 'questões resolvidas'), ('Depois', 'Aula 01')]
+    kit.page('revisao-p1.html', 'P1', f'Revisão para a {ex[0]}', f'{C["course"]}: revisão para a {ex[0]} de {date}, com provas anteriores resolvidas, treino e as distinções que mais caem.',
+             C['kick'], 'Revisão', f'para a {ex[0]}', 'Provas anteriores resolvidas, treino no formato da prova e as distinções de véspera.', hero, tb, b,
+             ('index.html', '← Curso', C['course']), (first_lesson, 'Aula 01 →', 'Começar do início'),
+             extra_css=latam.EXTRA_CSS + CSS, toplabel=f'Revisão · {ex[0]}')
+    return 'revisao-p1.html'

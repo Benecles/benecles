@@ -26,8 +26,10 @@ import kit
 from figs import FIGS            # genre figures, keyed by (course, page file) → {after_chapter: fn}
 import common as latam            # longform(), lex(), bet(), EXTRA_CSS: the Latam lesson components
 from polish import apply_polish as _polish
+from review import build_review
+from fronts import FRONTS
 kit.apply_polish = lambda p: _polish(p, quiet=False)
-kit.VER = '20260927h'
+kit.VER = '20260929a'
 
 # ---------------------------------------------------------------- markdown → house blocks
 def inline(t):
@@ -143,6 +145,23 @@ def bet_html(b):
     return latam.bet(b['question'], [(t, '*' if w.startswith('*') else '') for t, w in b['options']], b['reveal'],
                      kicker='Antes de ler: como você decidiria?')
 
+
+# ---- course introductions (owner's standard, 29/09): "00 · O curso" opens each course's first lesson
+INTROS = '/Users/benecles/Documents/Codex/2026-09-23/you-h/work/retrofit-2026-09-29/new-courses-intros.md'
+INTRO_KEY = {'processo-civil': 'Processo Civil', 'constitucional': 'Direito Constitucional', 'metodologia': 'Metodologia'}
+def intro_html(cname):
+    try:
+        md = open(INTROS).read()
+    except OSError:
+        return ''
+    secs = re.split(r'^## ', md, flags=re.M)
+    sec = next((x for x in secs if x.startswith(INTRO_KEY.get(cname, '¬'))), None)
+    if not sec:
+        return ''
+    paras = [p.strip() for p in sec.split('\n', 1)[1].split('\n\n') if p.strip()]
+    return (kit.chapter('00', 'c00', 'O curso', 'O que a disciplina estuda, como o semestre se organiza e o que se espera saber ao final.', 'dif')
+            + latam.longform(*[f'<p>{inline(p)}</p>' for p in paras]))
+
 def body_html(blocks, spec_page, quiz=None, first_num=1, figkey=None):
     b, n = '', first_num
     figs = FIGS.get(figkey, {}) if figkey else {}
@@ -234,6 +253,7 @@ COURSES = {
             ('06', 'unit-06-reform-limits', 'draft.md', {7}, 'Reforma e seus limites'),
             ('06c', 'unit-06-reform-limits-cases', 'case-dossier.md', {7}, 'Casos: limites da reforma'),
             ('07', 'unit-07-efficacy-applicability', 'draft.md', {7}, 'Eficácia e aplicabilidade'),
+            ('07c', 'unit-07-efficacy-applicability-cases', 'case-dossier.md', {7}, 'Caso: ADI 5.316'),
             ('08', 'unit-08-rules-principles', 'draft.md', {7}, 'Regras e princípios'),
             ('09', 'unit-09-principled-application-limits', 'draft.md', {7}, 'Aplicação dos princípios'),
             ('10', 'unit-10-norms-over-time-reception', 'draft.md', {7}, 'Normas no tempo e recepção'),
@@ -242,10 +262,14 @@ COURSES = {
             ('13', 'unit-13-rights-catalogue', 'draft.md', {7}, 'O catálogo de direitos'),
             ('14', 'unit-14-rights-functions-holders', 'draft.md', {7}, 'Funções e titulares'),
             ('15', 'unit-15-rights-applicability-horizontal-effect', 'draft.md', {7}, 'Aplicabilidade e eficácia horizontal'),
+            ('15c', 'unit-15-rights-applicability-horizontal-effect-cases', 'case-dossier.md', {7}, 'Caso: ADPF 132'),
             ('16', 'unit-16-rights-limits', 'draft.md', {7}, 'Limites dos direitos'),
+            ('16c', 'unit-16-rights-limits-cases', 'case-dossier.md', {7}, 'Caso: RE 778.889'),
             ('17', 'unit-17-rights-religion-conscience', 'draft.md', {7}, 'Religião e consciência'),
             ('18', 'unit-18-rights-expression', 'draft.md', {7}, 'Liberdade de expressão'),
+            ('18c', 'unit-18-rights-expression-cases', 'case-dossier.md', {7}, 'Caso: ADPF 130'),
             ('19', 'unit-19-rights-information', 'draft.md', {7}, 'Direito à informação'),
+            ('19c', 'unit-19-rights-information-cases', 'case-dossier.md', {7}, 'Caso: ADPF 130 e informação'),
             ('20', 'unit-20-rights-property', 'draft.md', {7}, 'Propriedade'),
             ('21', 'unit-21-rights-sexual-liberty', 'draft.md', {7}, 'Liberdade sexual'),
             ('21c', 'unit-21-rights-sexual-liberty-cases', 'case-dossier.md', {7}, 'Casos: ADPF 132 e RE 778.889'),
@@ -309,6 +333,8 @@ def build(cname):
             pg = sp['pages'][pi]
             last = pi == len(files) - 1
             body, num = body_html(pblocks, pg, sp.get('quiz') if last else None, num, (cname, f))
+            if j0 := (key == C['lessons'][0][0] and pi == 0):
+                body = intro_html(cname) + body          # first lesson opens with the course introduction (owner, 29/09)
             j = next(i for i, s in enumerate(seq) if s[1] == f)
             prev = ('index.html', '← Curso', C['course']) if j == 0 else (seq[j - 1][1], '← ' + label_of(seq[j - 1]), seq[j - 1][2]['title'])
             nxt = ('index.html', 'Curso →', 'Todas as aulas') if j == len(seq) - 1 else (seq[j + 1][1], label_of(seq[j + 1]) + ' →', seq[j + 1][2]['title'])
@@ -332,13 +358,22 @@ def label_of(s):
 
 # ---------------------------------------------------------------- course front
 def front(C, index):
+    _cn = next(k for k, v in COURSES.items() if v['slug'] == C['slug'])
+    if _cn in FRONTS:
+        _svg, _note = FRONTS[_cn]()
+        front_drawing = (f'<section class="front-sheet-map" aria-label="Mapa do curso"><div class="fsm-scroll" tabindex="0" role="region" aria-label="Mapa do curso">{_svg}</div>'
+                         f'<p class="note">{_note}</p></section>')
+    else:
+        _allon = set(range(len(C['stations'])))
+        front_drawing = (f'<section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso">'
+                         f'{track(C["stations"], _allon, set(), quiet=True)}</svg></section>')
     src = open(os.path.join(SITE, 'courses', 'direito-latino-americano', 'index.html')).read()
     head = src[:src.find('<body')]
     head = re.sub(r'<title>.*?</title>', f"<title>{C['course']} · CUFRGS</title>", head, flags=re.S)
     desc = f"Guia de estudo de {C['course']} ({C['code']}), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes."
     head = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{desc}">', head)
     head = re.sub(r'<!-- FONTES:START -->.*?<!-- FONTES:END -->', '', head, flags=re.S)
-    head = head.replace('</style>', '.front-track{margin:8px auto 0;max-width:1180px;padding:0 clamp(16px,4vw,48px)}'
+    head = head.replace('</style>', '.front-sheet-map{max-width:1180px;margin:10px auto 0;padding:0 clamp(16px,4vw,48px)}.fsm-scroll{border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major);overflow-x:auto}.fsm-scroll svg{display:block;width:100%;height:auto;min-width:720px}.front-sheet-map .note{font:12px var(--mono);color:var(--ink-2);margin:10px 0 0}.fsm-scroll a:hover text{text-decoration:underline}.front-track{margin:8px auto 0;max-width:1180px;padding:0 clamp(16px,4vw,48px)}'
                         '.front-track svg{width:100%;height:auto;display:block}.front-track .note{font:12px var(--mono);color:var(--ink-2);margin:6px 0 0}'
                         '.lesson-links a.pt2{opacity:.85}</style>', 1)
     groups = {}
@@ -352,6 +387,11 @@ def front(C, index):
                   f'<p>{pages[0][1]["deck"]}</p><p class="label" style="margin-top:6px">≈ {total} min de leitura</p><div class="lesson-links">{links}</div></article>')
     n_aulas = len({re.sub(r'\D', '', k) for k, *_ in index})
     allon = set(range(len(C['stations'])))
+    cname = next(k for k, v in COURSES.items() if v['slug'] == C['slug'])
+    rv = build_review(cname, C, track, index[0][1]) if C['exam'] else None
+    review_link = f'<a href="{rv}"><span>Abrir a revisão para a {C["exam"][0]}</span><span aria-hidden="true">→</span></a>' if rv else ''
+    cards_link = ('<a href="cartoes.html"><span>Revisar com os cartões</span><span aria-hidden="true">→</span></a>'
+                  if os.path.exists(os.path.join(SITE, 'courses', C['slug'], 'cartoes.html')) else '')   # Leitner decks (cartoes.py)
     kick_exam = f" · {C['exam'][0]} em {C['exam'][1][:5]}" if C['exam'] else ''
     prof = f"<span>{C['prof']}</span>" if C['prof'] else ''
     body = f'''<body>
@@ -362,13 +402,13 @@ def front(C, index):
   <p class="deck">{C.get('deck', 'As aulas do programa, na ordem em que o curso as apresenta. Cada aula tem um teste no fim.')}</p>
 </header>
 <main>
-<section class="front-track" aria-label="Mapa do curso"><svg class="hero-fork" viewBox="0 0 1080 170" role="img" aria-label="Percurso do curso">{track(C['stations'], allon, set(), quiet=True)}</svg></section>
+{front_drawing}
 <section class="map-section front-sheet" aria-label="Avaliação">
   <aside class="exam-card" aria-labelledby="exam-title">
     <span class="exam-date">{(C['exam'][0] + ' · ' + C['exam'][1]) if C['exam'] else 'Semestre 2026/2'}</span>
     <h2 id="exam-title">{'O que cai' if C['exam'] else 'O que já está aqui'}</h2>
     <p>{C['scope']} Comece pelos testes no fim de cada aula: o que você não souber responder é o que falta ler.</p>
-    <a href="{index[0][1]}"><span>Começar pela Aula 01</span><span aria-hidden="true">→</span></a>
+    {review_link}{cards_link}<a href="{index[0][1]}"><span>Começar pela Aula 01</span><span aria-hidden="true">→</span></a>
   </aside>
 </section>
 <section class="lessons" id="aulas" aria-labelledby="lessons-title">

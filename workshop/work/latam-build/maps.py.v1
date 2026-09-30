@@ -1,0 +1,64 @@
+"""Latin America map for 600x600 kit panels, drawn in the house style.
+Country shapes come from Natural Earth 1:50m (public domain), projected and simplified once by geo/build_paths.py.
+Each page embeds the shapes once (map_defs) and panels reference them with <use>, so a four-step scrolly
+costs one copy of the geometry."""
+import json, os
+from kit import T, P, C, G
+
+_D = json.load(open(os.path.join(os.path.dirname(__file__), 'geo', 'latam_paths.json')))
+PJ, CT = _D['proj'], _D['c']
+NAMES = {'MEX': 'México', 'GTM': 'Guatemala', 'BLZ': 'Belize', 'SLV': 'El Salvador', 'HND': 'Honduras', 'NIC': 'Nicarágua',
+         'CRI': 'Costa Rica', 'PAN': 'Panamá', 'CUB': 'Cuba', 'HTI': 'Haiti', 'DOM': 'Rep. Dominicana', 'JAM': 'Jamaica',
+         'PRI': 'Porto Rico', 'COL': 'Colômbia', 'VEN': 'Venezuela', 'GUY': 'Guiana', 'SUR': 'Suriname', 'GUF': 'Guiana Fr.',
+         'ECU': 'Equador', 'PER': 'Peru', 'BRA': 'Brasil', 'BOL': 'Bolívia', 'PRY': 'Paraguai', 'CHL': 'Chile',
+         'ARG': 'Argentina', 'URY': 'Uruguai'}
+# countries too small for an inside label: label sits in open sea, joined by a short leader
+OUTSIDE = {'GTM': (120, 118, 'end'), 'SLV': (120, 146, 'end'), 'HND': (286, 146, 'start'), 'NIC': (150, 176, 'end'),
+           'CRI': (180, 204, 'end'), 'CHL': (170, 420, 'end'), 'PAN': (232, 226, 'end'), 'CUB': (262, 58, 'end'), 'HTI': (300, 70, 'middle'),
+           'DOM': (392, 84, 'start'), 'URY': (500, 470, 'start'), 'PRY': (500, 395, 'start'), 'ECU': (132, 262, 'end'),
+           'JAM': (262, 126, 'end'), 'PRI': (392, 110, 'start')}
+TONES = {'dif': 'fill:var(--dif-wash);stroke:var(--dif)', 'conc': 'fill:var(--conc-wash);stroke:var(--conc)',
+         'mix': 'fill:var(--mix-wash);stroke:var(--mix)', 'ink': 'fill:var(--ink);stroke:var(--ink)',
+         'hatch': 'fill:url(#lm-hatch);stroke:var(--ink-2)', 'base': 'fill:var(--paper);stroke:var(--grid-major)',
+         'grey': 'fill:color-mix(in srgb,var(--ink) 10%,var(--paper));stroke:var(--ink-2)'}
+
+def xy(lon, lat):
+    return (round(PJ['OX'] + (lon - PJ['LON0']) * PJ['KX'] * PJ['S'], 1), round(PJ['OY'] + (PJ['LAT1'] - lat) * PJ['S'], 1))
+
+def map_defs():
+    paths = ''.join(f'<path id="lm-{k}" d="{v["d"]}"/>' for k, v in CT.items())
+    hatch = ('<pattern id="lm-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
+             '<rect width="6" height="6" style="fill:var(--paper)"/><path d="M0 0V6" style="stroke:var(--ink-2);stroke-width:1.4"/></pattern>')
+    return f'<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>{paths}{hatch}</defs></svg>\n'
+
+def latam_map(fills=None, labels=(), pins=(), title='', note='', key=(), dim_label=False, sw=1.1):
+    """fills: {ISO: tone}; labels: ISO codes to name (inside if room, else leader to sea);
+    pins: (lon, lat, text, anchor, dx, dy); key: [(tone, text)] legend drawn bottom-left."""
+    fills = fills or {}
+    o = ''
+    if title: o += T(584, 30, title, 't-small', anchor='end', style='letter-spacing:.1em')
+    for k in CT:
+        tone = fills.get(k, 'base')
+        o += f'<use href="#lm-{k}" style="{TONES[tone]};stroke-width:{sw if tone != "base" else .8};stroke-linejoin:round"/>'
+    for k in labels:
+        cx, cy = CT[k]['c']
+        name = NAMES[k]
+        on = k in fills and fills[k] != 'base'
+        cls = 't-small' + ('' if on or not dim_label else ' t-muted')
+        if k in OUTSIDE:
+            lx, ly, anc = OUTSIDE[k]
+            ex = lx + (4 if anc == 'start' else -4 if anc == 'end' else 0)
+            o += P(f'M{cx} {cy}L{ex} {ly - 4}', 'thin', style='stroke-width:.8')
+            o += T(lx, ly, name, cls, anchor=anc)
+        else:
+            o += T(cx, cy + 4, name, cls, anchor='middle')
+    for lon, lat, text, anc, dx, dy in pins:
+        x, y = xy(lon, lat)
+        o += C(x, y, 3.2, 'f-ink')
+        if text: o += T(x + dx, y + dy, text, 't-small', anchor=anc)
+    for i, (tone, text) in enumerate(key):
+        y = 470 + i * 24
+        o += f'<rect x="24" y="{y - 11}" width="18" height="13" style="{TONES[tone]};stroke-width:1.1"/>'
+        o += T(50, y, text, 't-small')
+    if note: o += G(T(300, 585, note, 't-hand', anchor='middle'), 'fade', d=.3)
+    return o

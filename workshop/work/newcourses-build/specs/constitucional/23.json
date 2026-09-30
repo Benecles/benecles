@@ -1,63 +1,63 @@
 {
- "key": "23",
- "date": "Semanas 15–18",
- "pages": [
-  {
-   "file": "aula-23.html",
-   "h1a": "Moradia:",
-   "h1b": "posse e política urbana",
-   "title": "Direito à moradia: proteção, política urbana e posse",
-   "desc": "Moradia no art. 6º, penhora do imóvel do fiador (RE 407.688, RE 605.709 e Tema 1127), Estatuto da Cidade, art. 182 e a usucapião especial urbana do art. 183.",
-   "deck": "A moradia é direito autônomo, distinto da propriedade. Quando entra em choque com uma dívida, <strong class=\"dif\">a sequência dos precedentes importa</strong>: o resultado de 2018 <strong class=\"conc\">não é a resposta vigente</strong> para o fiador de locação comercial.",
-   "bet": {
-    "after_chapter": 2,
-    "question": "O fiador de uma locação comercial tem penhorado o único imóvel em que a família vive, e seu advogado cita o RE 605.709, em que a Primeira Turma afastou a penhora em 2018. Essa citação resolve o caso conforme o direito vigente?",
-    "options": [
-     [
-      "Sim: o RE 605.709 é o precedente mais recente e fixa que o bem de família do fiador é impenhorável em toda locação.",
-      ""
-     ],
-     [
-      "Não: em 2022, no RE 1.307.334 (Tema 1127), o Plenário fixou, por maioria, que é constitucional penhorar o bem de família do fiador em locação residencial ou comercial. O resultado de 2018 não é a resposta atual.",
-      "*"
-     ],
-     [
-      "Não: o STF sempre entendeu que o direito à moradia é irrelevante para a fiança, e o RE 605.709 confirmou a penhora.",
-      ""
-     ],
-     [
-      "Sim: o Tema 1127 só tratou de locação residencial, e para a comercial vale a orientação da Primeira Turma.",
-      ""
-     ]
+  "key": "23",
+  "date": "Semanas 15–18",
+  "pages": [
+    {
+      "file": "aula-23.html",
+      "h1a": "Moradia:",
+      "h1b": "posse e política urbana",
+      "title": "Direito à moradia: proteção, política urbana e posse",
+      "desc": "Moradia no art. 6º, penhora do imóvel do fiador (RE 407.688, RE 605.709 e Tema 1127), Estatuto da Cidade, art. 182 e a usucapião especial urbana do art. 183.",
+      "deck": "A moradia é direito autônomo, distinto da propriedade. Quando entra em choque com uma dívida, <strong class=\"dif\">a sequência dos precedentes importa</strong>: o resultado de 2018 <strong class=\"conc\">não é a resposta vigente</strong> para o fiador de locação comercial.",
+      "bet": {
+        "after_chapter": 2,
+        "question": "O fiador de uma locação comercial tem penhorado o único imóvel em que a família vive. A Lei 8.009/1990 protege o imóvel residencial da família, mas ressalva a obrigação decorrente de fiança em contrato de locação. O advogado do fiador cita decisão da Primeira Turma do STF, de 2018, que afastou a penhora em caso assim. Em 2022, o Plenário, em repercussão geral (Tema 1127), fixou tese sobre a penhora do bem de família do fiador em locação. A citação da decisão de 2018 resolve o caso conforme o direito vigente?",
+        "options": [
+          [
+            "Sim: a decisão de 2018 fixa que o bem de família do fiador é impenhorável em toda locação.",
+            ""
+          ],
+          [
+            "Não: a tese posterior do Plenário, em repercussão geral, prevalece sobre a decisão de uma Turma e considera constitucional a penhora do bem de família do fiador, tanto na locação residencial quanto na comercial.",
+            "*"
+          ],
+          [
+            "Não: o STF sempre entendeu que o direito à moradia é irrelevante para a fiança.",
+            ""
+          ],
+          [
+            "Sim: o Tema 1127 só tratou de locação residencial, e para a comercial vale a orientação da Turma.",
+            ""
+          ]
+        ],
+        "reveal": "<p>No RE 605.709, a Turma decidiu por três votos a dois, com a divergência de Rosa Weber, que a lei não distinguia locação residencial e comercial e que a moradia da família não deveria ser sacrificada à livre iniciativa. O Plenário, em 2022, com o relator Alexandre de Moraes e vencidos Fachin, Rosa Weber, Cármen Lúcia e Lewandowski, uniformizou os dois tipos de locação. O direito à moradia não torna qualquer imóvel impenhorável, mas a perda da casa também não é efeito constitucionalmente indiferente.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O direito à moradia depende da propriedade? Que critérios de adequação Sarlet reúne?",
+      "Não. A EC 26/2000 incluiu a moradia no art. 6º, antes sustentada como direito implícito ligado à dignidade, e ela é autônoma em relação à propriedade, de modo que a locatária sem título ainda invoca a posição defensiva contra remoção arbitrária. Os critérios materiais do sistema internacional são a segurança jurídica da posse, a infraestrutura que permita habitabilidade, o acesso a serviços essenciais e o respeito às peculiaridades locais, inclusive culturais."
     ],
-    "reveal": "<p>No RE 605.709, a Turma decidiu por três votos a dois, com a divergência de Rosa Weber, que a lei não distinguia locação residencial e comercial e que a moradia da família não deveria ser sacrificada à livre iniciativa. O Plenário, em 2022, com o relator Alexandre de Moraes e vencidos Fachin, Rosa Weber, Cármen Lúcia e Lewandowski, uniformizou os dois tipos de locação. O direito à moradia não torna qualquer imóvel impenhorável, mas a perda da casa também não é efeito constitucionalmente indiferente.</p>"
-   }
-  }
- ],
- "quiz": [
-  [
-   "O direito à moradia depende da propriedade? Que critérios de adequação Sarlet reúne?",
-   "Não. A EC 26/2000 incluiu a moradia no art. 6º, antes sustentada como direito implícito ligado à dignidade, e ela é autônoma em relação à propriedade, de modo que a locatária sem título ainda invoca a posição defensiva contra remoção arbitrária. Os critérios materiais do sistema internacional são a segurança jurídica da posse, a infraestrutura que permita habitabilidade, o acesso a serviços essenciais e o respeito às peculiaridades locais, inclusive culturais."
-  ],
-  [
-   "Que dimensões tem o direito à moradia?",
-   "A negativa é defesa contra privação arbitrária e sem alternativa de moradia digna, por Estado ou particulares. A positiva exige medidas públicas de proteção, organização e prestação, normativas e materiais, como infraestrutura ou política habitacional. Nomear a dimensão não resolve o pedido, que depende da norma aplicável, dos fatos e do remédio disponível."
-  ],
-  [
-   "Como evoluiu a jurisprudência do STF sobre a penhora do imóvel do fiador?",
-   "No RE 407.688 (Plenário, 2006), considerou constitucional a penhora do único imóvel do fiador de locação, sob o argumento de que a garantia amplia a oferta de imóveis, com críticas nos votos vencidos. No RE 605.709 (Primeira Turma, 2018, três votos a dois, divergência de Rosa Weber), afastou-a em locação comercial. No Tema 1127 (RE 1.307.334, Plenário, 2022), fixou por maioria que é constitucional penhorar o bem de família do fiador em locação residencial ou comercial."
-  ],
-  [
-   "Como o art. 182 organiza a política urbana e a sequência do § 4º?",
-   "Atribui a execução ao município, conforme diretrizes gerais em lei, com o plano diretor como instrumento básico, e a função social da propriedade se cumpre pelas exigências de ordenação da cidade. Para solo não edificado, subutilizado ou não utilizado, o município, por lei específica e em área do plano diretor, exige parcelamento ou edificação compulsórios, depois IPTU progressivo e por último desapropriação com títulos. Não se salta do imóvel vazio à desapropriação, e a moradia não transfere o terreno a uma família."
-  ],
-  [
-   "Que instrumentos do Estatuto da Cidade a lição menciona e o que exige o estudo de impacto de vizinhança?",
-   "As operações urbanas consorciadas juntam Poder Público e particulares em transformações estruturais de uma área. O EIV analisa os efeitos do empreendimento sobre a qualidade de vida de quem já vive na área, é exigido em lei municipal para licenças, tem documentos abertos à consulta pública e não substitui o estudo de impacto ambiental. O conteúdo inclui adensamento, equipamentos, uso do solo, valorização imobiliária, mobilidade, ventilação e iluminação, paisagem e patrimônio."
-  ],
-  [
-   "Quais os requisitos da usucapião do art. 183 e como se distinguem as outras modalidades?",
-   "Posse como sua de área urbana de até 250 m², por cinco anos, ininterruptamente e sem oposição, para moradia própria ou da família, sem ser proprietário de outro imóvel; o direito não se reconhece mais de uma vez, o título pode ser do homem, da mulher ou de ambos, e imóvel público não se adquire por usucapião (§ 3º). A usucapião coletiva do Estatuto da Cidade atende ocupação de baixa renda em que não se individualizam os lotes, e o art. 1.240-A do Código Civil tem fatos constitutivos próprios."
+    [
+      "Que dimensões tem o direito à moradia?",
+      "A negativa é defesa contra privação arbitrária e sem alternativa de moradia digna, por Estado ou particulares. A positiva exige medidas públicas de proteção, organização e prestação, normativas e materiais, como infraestrutura ou política habitacional. Nomear a dimensão não resolve o pedido, que depende da norma aplicável, dos fatos e do remédio disponível."
+    ],
+    [
+      "Como evoluiu a jurisprudência do STF sobre a penhora do imóvel do fiador?",
+      "No RE 407.688 (Plenário, 2006), considerou constitucional a penhora do único imóvel do fiador de locação, sob o argumento de que a garantia amplia a oferta de imóveis, com críticas nos votos vencidos. No RE 605.709 (Primeira Turma, 2018, três votos a dois, divergência de Rosa Weber), afastou-a em locação comercial. No Tema 1127 (RE 1.307.334, Plenário, 2022), fixou por maioria que é constitucional penhorar o bem de família do fiador em locação residencial ou comercial."
+    ],
+    [
+      "Como o art. 182 organiza a política urbana e a sequência do § 4º?",
+      "Atribui a execução ao município, conforme diretrizes gerais em lei, com o plano diretor como instrumento básico, e a função social da propriedade se cumpre pelas exigências de ordenação da cidade. Para solo não edificado, subutilizado ou não utilizado, o município, por lei específica e em área do plano diretor, exige parcelamento ou edificação compulsórios, depois IPTU progressivo e por último desapropriação com títulos. Não se salta do imóvel vazio à desapropriação, e a moradia não transfere o terreno a uma família."
+    ],
+    [
+      "Que instrumentos do Estatuto da Cidade a lição menciona e o que exige o estudo de impacto de vizinhança?",
+      "As operações urbanas consorciadas juntam Poder Público e particulares em transformações estruturais de uma área. O EIV analisa os efeitos do empreendimento sobre a qualidade de vida de quem já vive na área, é exigido em lei municipal para licenças, tem documentos abertos à consulta pública e não substitui o estudo de impacto ambiental. O conteúdo inclui adensamento, equipamentos, uso do solo, valorização imobiliária, mobilidade, ventilação e iluminação, paisagem e patrimônio."
+    ],
+    [
+      "Quais os requisitos da usucapião do art. 183 e como se distinguem as outras modalidades?",
+      "Posse como sua de área urbana de até 250 m², por cinco anos, ininterruptamente e sem oposição, para moradia própria ou da família, sem ser proprietário de outro imóvel; o direito não se reconhece mais de uma vez, o título pode ser do homem, da mulher ou de ambos, e imóvel público não se adquire por usucapião (§ 3º). A usucapião coletiva do Estatuto da Cidade atende ocupação de baixa renda em que não se individualizam os lotes, e o art. 1.240-A do Código Civil tem fatos constitutivos próprios."
+    ]
   ]
- ]
 }

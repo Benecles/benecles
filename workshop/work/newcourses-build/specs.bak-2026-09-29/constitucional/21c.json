@@ -1,0 +1,33 @@
+{
+ "key": "21c",
+ "date": "Semanas 15–18",
+ "pages": [
+  {
+   "file": "aula-21-casos.html",
+   "h1a": "ADPF 132 e",
+   "h1b": "licença da adotante",
+   "title": "Casos de liberdade sexual: ADPF 132 e RE 778.889",
+   "desc": "Fatos, questão, dispositivo, votos e limites da ADPF 132/ADI 4.277 sobre união homoafetiva e do RE 778.889 (Tema 782) sobre licença da servidora adotante.",
+   "deck": "Dois julgados ligam família, dignidade e igualdade: a <strong class=\"dif\">interpretação conforme</strong> do art. 1.723 do Código Civil e a <strong class=\"conc\">mutação constitucional</strong> do art. 7º, XVIII. Cada um tem <strong class=\"conc\">limites</strong> que a prova cobra.",
+   "bet": {
+    "after_chapter": 2,
+    "question": "Uma servidora federal obtém a guarda para adoção de uma criança de cinco anos e recebe 30 dias de licença, mais 15 de prorrogação, com base no art. 210 da Lei 8.112/1990. Ela pede o mesmo prazo concedido à servidora gestante. Como o STF decidiu essa questão no RE 778.889/PE?",
+    "options": [
+     ["Negou o pedido: o art. 7º, XVIII, fala em gestante e pressupõe gestação, e o STF não pode substituir o legislador.", ""],
+     ["Deu provimento e fixou que o prazo da licença adotante não pode ser inferior ao da gestante, nem diferir pela idade da criança, de modo que o total, computado o período gozado, chegasse a 180 dias.", "*"],
+     ["Deu provimento apenas para reduzir a diferença: a licença da adotante pode variar de acordo com a idade da criança, desde que não seja inferior a 60 dias.", ""],
+     ["Deu provimento e converteu o prazo remanescente em indenização, já que a adotante não pode mais gozar a licença.", ""]
+    ],
+    "reveal": "<p>O Plenário, por maioria e com o Ministro Marco Aurélio vencido, superou o entendimento do RE 197.807 e leu a expressão &quot;licença à gestante&quot; como comando subinclusivo, sem mudar o texto do art. 7º, XVIII. Foram declarados inconstitucionais o art. 210 da Lei 8.112/1990 e os §§ 1º e 2º do art. 3º da Resolução CJF 30/2008. A licença não gozada não se converte em indenização, e o julgado não decide o direito do pai adotante.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  ["Como a ADPF 132 chegou ao STF e como foi processada?", "O Governador do Rio de Janeiro pediu interpretação conforme de artigos do Estatuto dos Servidores (Decreto-Lei 220/1975) e a declaração de que decisões que negavam direitos a uniões homoafetivas violavam preceitos fundamentais. Uma lei fluminense de 2007 (Lei 5.034) já equiparava parceiros para fins previdenciários, e o primeiro pedido foi julgado prejudicado. O restante foi conhecido como ADI e julgado com a ADI 4.277, da PGR, contra o art. 1.723 do Código Civil. As preliminares de pertinência temática do governador e de legitimidade da PGR foram superadas por unanimidade."],
+  ["Qual o dispositivo da ADPF 132/ADI 4.277 e seus efeitos?", "O Plenário julgou procedentes as ações, por unanimidade, com eficácia erga omnes e efeito vinculante, dando ao art. 1.723 do Código Civil interpretação conforme à Constituição para excluir qualquer significado que impeça o reconhecimento da união contínua, pública e duradoura entre pessoas do mesmo sexo como entidade familiar, segundo as mesmas regras e com as mesmas consequências da união estável heteroafetiva. Os Ministros ficaram autorizados a decidir monocraticamente a mesma questão nos processos em curso."],
+  ["Como divergiram os fundamentos, apesar da unanimidade?", "O relator Ayres Britto, Fux, Cármen Lúcia, Marco Aurélio e Celso de Mello sustentam que a Constituição já contém a solução e que o art. 226, § 3º, não é óbice. Lewandowski, Gilmar Mendes e Peluso veem lacuna a preencher por analogia, com solução aberta ao Legislativo (Lewandowski fala em outra entidade familiar fora do rol do art. 226). Divergem também sobre a história da expressão 'homem e mulher' na Constituinte."],
+  ["Quais os limites da ADPF 132?", "O dispositivo trata da união estável do art. 1.723, não reescreve o art. 226, § 3º, e não integra o casamento civil. A adoção aparece só como observação lateral no voto do relator, e Gilmar Mendes diz limitar-se ao reconhecimento da união, sem tratar de filiação e conversão em casamento. A equiparação exige a prova de convivência pública, contínua e duradoura com objetivo de constituir família, e a negativa de pensão apoiada no texto excludente do art. 1.723 não se sustenta."],
+  ["Qual a tese do RE 778.889/PE (Tema 782) e sua fundamentação?", "Os prazos da licença adotante não podem ser inferiores aos da licença gestante, nem às prorrogações, e não podem variar com a idade da criança adotada. O relator Barroso recorreu à proteção integral e à igualdade entre filhos (art. 227, § 6º), à mutação constitucional que superou o RE 197.807, à proibição de proteção deficiente (a diferença falha já na adequação e desestimula a adoção tardia) e à autonomia da mulher. O Ministro Marco Aurélio divergiu: o art. 7º, XVIII, pressupõe gestação."],
+  ["Que técnicas diferentes os dois casos mostram e o que o RE 778.889 não decide?", "A ADPF 132 usa a interpretação conforme, que elimina um sentido do art. 1.723; o RE 778.889 usa a mutação constitucional, que muda o sentido de um texto que permanece igual (art. 7º, XVIII). O RE não trata de liberdade sexual, não decide o direito do pai adotante (a conversa em plenário não tem efeito de tese), não fixa indenização pelo período não gozado e registra as adoções por casais homossexuais só como nota do voto."]
+ ]
+}
