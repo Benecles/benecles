@@ -40,14 +40,15 @@ If `~/Developer` is missing, restore first:
 - The headless Codex machine is retired; Codex runs in its app; the chairman tracks usage himself.
 
 ## In flight
+- **Codex REG-1..7** (baton top entry): register data (`reg` key: exams, units for Const I/Latam, a `does` line per lesson). Check: `tools/fronts/check_register_data.py` (study-lab#15). Gate each PR: read the `does` lines (function, not description; generic = reject), then merge.
 - **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
 - ~~Tools port~~ DONE 30/09 evening: study-lab#14 merged. `tools/fronts/data` reconciled from live (drawings verbatim via `drawing.inner_html`; railway gone); `tools/check_all.sh` = regenerate fronts + assetver + FAIL on any diff + check_front. `ISSUES.md` started at #0. The relay-design d1 copy is now retired: use `tools/fronts/` only.
 - Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
 
 ## Next up (in order)
 1. **Cycle 0: the class register + specimen page**, under the mandate (signs over text: a drawn clock sign + minutes computed from word count, part ticks, the exam fold, one row per lesson, units always, a missing gist as a quiet gap). Build it once in `tools/fronts/front.py`; ship to all 7 fronts as a PR; ISSUES.md #1. Run `tools/check_all.sh` before every front PR.
-2. Write the crossed-labels Codex issue into the baton.
-3. Content cycles for Codex: gists as "what this lesson lets you do" (Controle 0/36, Delito 0/20) → units for Const I/Latam → course decks as function.
+2. Gate REG PRs as they land; then Codex LBL-1 (crossed labels, already in the baton).
+3. Course decks as function (Codex, after the register ships).
 4. The lesson-page anatomy + subpage standard; then size outliers; then the pre-mandate figure work as atomic issues.
 
 ## Open decisions for the chairman
