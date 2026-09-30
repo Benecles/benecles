@@ -23,6 +23,9 @@
     '.cu-pop button{font:600 13px Helvetica,Arial,sans-serif;padding:7px 10px;border:1.5px solid var(--ink,#1d2530);background:var(--paper,#f2eee3);color:var(--ink,#1d2530);cursor:pointer}' +
     '.cu-pop button.go{background:var(--ink,#1d2530);color:var(--paper,#f2eee3)}' +
     '.cu-pop .bar{height:4px;background:var(--grid,#d8d2c0);margin:6px 0 8px}.cu-pop .bar i{display:block;height:100%;width:0;background:var(--conc,#b4432a);transition:width .2s}' +
+    '.cu-pop .idle{margin:0 0 10px;min-height:2.9em;transition:opacity .45s}.cu-pop .idle.fade{opacity:0}' +
+    '.cu-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}' +
+    '@media (prefers-reduced-motion:reduce){.cu-pop .idle,.cu-pop .bar i{transition:none}}' +
     '.cu-pop small{display:block;color:var(--muted,#7a7566);font:11px/1.4 Menlo,monospace;margin-top:6px}' +
     '@media print{.cu-plane,.cu-pop{display:none!important}}';
   document.head.appendChild(css);
@@ -37,15 +40,46 @@
   pop.className = 'cu-pop'; pop.hidden = true; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-label', 'Modo avião');
   document.body.appendChild(btn); document.body.appendChild(pop);
 
+  // while saving, calm lines rotate instead of a file count; the bar still measures
+  var IDLE = [
+    'Pode continuar lendo enquanto isso.',
+    'Guardando as aulas, uma por uma.',
+    'Os desenhos vão junto com o texto.',
+    'Dobrando as páginas com cuidado.',
+    'Tudo fica neste aparelho, e só nele.',
+    'Depois, é só abrir, com ou sem sinal.'
+  ];
+  var idleTimer = null, idleAt = 0;
+  function stopIdle() { if (idleTimer) { clearInterval(idleTimer); idleTimer = null; } }
+  function startIdle() {
+    stopIdle();
+    idleTimer = setInterval(function () {
+      var el = pop.querySelector('.idle');
+      if (!el) { stopIdle(); return; }
+      el.classList.add('fade');
+      setTimeout(function () { idleAt = (idleAt + 1) % IDLE.length; el.textContent = IDLE[idleAt]; el.classList.remove('fade'); }, 450);
+    }, 2600);
+  }
   function view(state, extra) {
     extra = extra || {};
     btn.classList.toggle('on', get() === 'on');
+    if (state === 'busy' && pop.querySelector('.bar')) {
+      // progress tick: move the bar only, leave the phrase and the live region alone
+      pop.querySelector('.bar i').style.width = (extra.pct || 0) + '%';
+      pop.querySelector('.bar').setAttribute('aria-valuenow', String(extra.pct || 0));
+      return;
+    }
+    stopIdle();
     if (state === 'off') pop.innerHTML = '<b class="t">Modo avião</b><p>Guarda o site inteiro neste aparelho (cerca de 8 MB) para você ler sem internet: no avião, no ônibus, onde não tiver sinal. Os links continuam funcionando.</p><div class="row"><button class="go" data-a="on">Ativar</button><button data-a="close">Agora não</button></div>';
-    if (state === 'busy') pop.innerHTML = '<b class="t">Guardando o site…</b><div class="bar"><i style="width:' + (extra.pct || 0) + '%"></i></div><p>' + (extra.done || 0) + ' de ' + (extra.total || '…') + ' arquivos. Pode continuar lendo.</p>';
-    if (state === 'on') pop.innerHTML = '<b class="t">Modo avião ativo</b><p>O site está guardado neste navegador e abre mesmo sem internet. Com conexão, as páginas continuam se atualizando.</p><div class="row"><button data-a="refresh">Atualizar cópia</button><button data-a="off">Desativar</button><button data-a="close">Fechar</button></div>' + (extra.note ? '<small>' + extra.note + '</small>' : '');
-    if (state === 'error') pop.innerHTML = '<b class="t">Não deu para guardar</b><p>Precisa de conexão para baixar a cópia. Tente de novo com internet.</p><div class="row"><button class="go" data-a="on">Tentar de novo</button><button data-a="close">Fechar</button></div>';
+    if (state === 'busy') {
+      idleAt = 0;
+      pop.innerHTML = '<b class="t">Guardando o site…</b><div class="bar" role="progressbar" aria-label="Progresso" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + (extra.pct || 0) + '"><i style="width:' + (extra.pct || 0) + '%"></i></div><p class="idle" aria-hidden="true">' + IDLE[0] + '</p><span class="cu-sr" role="status">Guardando o site neste aparelho.</span>';
+      startIdle();
+    }
+    if (state === 'on') pop.innerHTML = '<span class="cu-sr" role="status">' + (extra.note ? 'Pronto. ' + extra.note : 'Modo avião ativo.') + '</span><b class="t">Modo avião ativo</b><p>O site está guardado neste navegador e abre mesmo sem internet. Com conexão, as páginas continuam se atualizando.</p><div class="row"><button data-a="refresh">Atualizar cópia</button><button data-a="off">Desativar</button><button data-a="close">Fechar</button></div>' + (extra.note ? '<small>' + extra.note + '</small>' : '');
+    if (state === 'error') pop.innerHTML = '<span class="cu-sr" role="alert">Não deu para guardar o site.</span><b class="t">Não deu para guardar</b><p>Precisa de conexão para baixar a cópia. Tente de novo com internet.</p><div class="row"><button class="go" data-a="on">Tentar de novo</button><button data-a="close">Fechar</button></div>';
   }
-  function open(v) { pop.hidden = !v; btn.setAttribute('aria-expanded', String(!!v)); }
+  function open(v) { if (!v) stopIdle(); pop.hidden = !v; btn.setAttribute('aria-expanded', String(!!v)); }
 
   function withWorker(cb) {
     navigator.serviceWorker.register(root + 'sw.js', { scope: root }).then(function () {
