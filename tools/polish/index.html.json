@@ -1,6 +1,22 @@
 [
 {
-"before": "</div>\n    <div class=\"stamp\"><span>Status<b>—</b></span><span>Programa<b>—</b></span><span>Prof.<b>—</b></span></div>\n  </div>\n",
-"after": "</div>\n    <div class=\"stamp\"><span>Status<b>–</b></span><span>Programa<b>–</b></span><span>Prof.<b>–</b></span></div>\n  </div>\n"
+"before": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}",
+"after": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf .deck{max-width:48ch}.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}"
+},
+{
+"before": "para ler</span></div>\n  <h1 class=\"sr-only\">CUFRGS · guias de estudo das disciplinas de Direito da UFRGS, 2026/2</h1>\n</header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">",
+"after": "para ler</span></div>\n  <h1>Guias por disciplina</h1>\n  <p class=\"deck\">Escolha uma disciplina para ler as aulas, consultar figuras e acessar materiais de revisão.</p>\n</header>\n\n\n\n<main class=\"shelf\" aria-label=\"Disciplinas\">\n  <a class=\"prancha\" href=\"courses/controle-de-constitucionalidade/\">"
+},
+{
+"before": "</div>\n  </a>\n  <div class=\"prancha vazia\" aria-label=\"Próximas disciplinas\">\n    <svg class=\"fig\" viewBox=\"0 0 400 180\" aria-hidden=\"true\">\n      <rect x=\"40\" y=\"30\" width=\"320\" height=\"120\" style=\"fill:none;stroke:var(--ink);stroke-width:1\" stroke-dasharray=\"6 6\"/>\n      <path d=\"M200 70v40M180 90h40\" style=\"stroke:var(--ink-2);stroke-width:1.5\"/>\n      <text x=\"136\" y=\"140\" style=\"fill:var(--ink-2)\">PRANCHA EM BRANCO</text>\n    </svg>\n    <div class=\"body\">\n      <span class=\"label\">Em preparação",
+"after": "</div>\n  </a>\n  <div class=\"prancha vazia\" aria-label=\"Próximas disciplinas\">\n    <div class=\"body\">\n      <span class=\"label\">Em preparação"
+},
+{
+"before": "Próximas disciplinas</h2>\n      <p>As outras matérias do semestre entram aqui, uma prancha por vez.</p>\n    </div>\n    <div class=\"stamp\"><span>Status<b>–</b></span><span>Programa<b>–</b></span><span>Prof.<b>–</b></span></div>\n  </div>\n</main>\n",
+"after": "Próximas disciplinas</h2>\n      <p>Outros guias entram aqui quando estiverem prontos.</p>\n    </div>\n  </div>\n</main>\n"
+},
+{
+"before": "O que mudou</h2><details class=\"note\" open><summary><span>29/09/2026</span></summary>",
+"after": "O que mudou</h2><details class=\"note\" open><summary><span>29–30/09/2026</span></summary><ul><li>Entraram os guias de sete disciplinas, com descrições das aulas e bibliografias onde havia plano de ensino. Também entraram os favoritos e Meu caderno, as frases do modo avião e figuras refeitas em Processo Civil, Contratos e Direito Latino-americano.</li></ul></details><details class=\"note\" open><summary><span>29/09/2026</span></summary>"
 }
 ]
