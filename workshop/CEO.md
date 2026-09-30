@@ -41,15 +41,14 @@ If `~/Developer` is missing, restore first:
 
 ## In flight
 - **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
-- **Tools port** (study-lab branch `tools-home`, pushed to GitHub; a WIP commit): front.py + data + shells and gates moved into `tools/`. BLOCKER: the staging `d1/data` picked up the INTERRUPTED, unapproved front-drawings-r3 output (e.g. a Processo "railway" drawing), so regenerating from it changes live fronts. Fix: reconcile `tools/fronts/data/*.json` so that regenerating reproduces live `courses/*/index.html` byte-for-byte (except asset ?v= stamps) BEFORE merging; then delete the relay-design d1 copy from use.
+- ~~Tools port~~ DONE 30/09 evening: study-lab#14 merged. `tools/fronts/data` reconciled from live (drawings verbatim via `drawing.inner_html`; railway gone); `tools/check_all.sh` = regenerate fronts + assetver + FAIL on any diff + check_front. `ISSUES.md` started at #0. The relay-design d1 copy is now retired: use `tools/fronts/` only.
 - Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
 
 ## Next up (in order)
-1. Finish the tools port (reconcile the data, see In flight) → PR → merge. Then `tools/check_all`.
-2. **Cycle 0: the class register + specimen page**, under the mandate (signs over text: a drawn clock sign + minutes computed from word count, part ticks, the exam fold, one row per lesson, units always, a missing gist as a quiet gap). Build it once in `tools/fronts/front.py`; ship to all 7 fronts as a PR; ISSUES.md #1.
-3. Write the crossed-labels Codex issue into the baton.
-4. Content cycles for Codex: gists as "what this lesson lets you do" (Controle 0/36, Delito 0/20) → units for Const I/Latam → course decks as function.
-5. The lesson-page anatomy + subpage standard; then size outliers; then the pre-mandate figure work as atomic issues.
+1. **Cycle 0: the class register + specimen page**, under the mandate (signs over text: a drawn clock sign + minutes computed from word count, part ticks, the exam fold, one row per lesson, units always, a missing gist as a quiet gap). Build it once in `tools/fronts/front.py`; ship to all 7 fronts as a PR; ISSUES.md #1. Run `tools/check_all.sh` before every front PR.
+2. Write the crossed-labels Codex issue into the baton.
+3. Content cycles for Codex: gists as "what this lesson lets you do" (Controle 0/36, Delito 0/20) → units for Const I/Latam → course decks as function.
+4. The lesson-page anatomy + subpage standard; then size outliers; then the pre-mandate figure work as atomic issues.
 
 ## Open decisions for the chairman
 - (none pending as of this handoff)
