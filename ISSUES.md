@@ -8,3 +8,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **REG-7 #18** · 30/09 · Metodologia class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
 - **REG-2 #19** · 30/09 · Delito class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
 - **REG-5 #20** · 30/09 · Processo class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
+- **#1a** · 30/09 · Repo renamed study-lab → cufrgs (site now benecles.github.io/cufrgs/; old Pages links 404 by choice) · README/links updated; Pages URL confirmed by the API.
