@@ -8,7 +8,7 @@
 <meta name="description" content="Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.">
 <link rel="stylesheet" href="courses/controle-de-constitucionalidade/assets/controle.css">
 <style>
-.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}
+.hero-shelf{padding-top:28px;padding-bottom:6px}.shelf{max-width:1180px;margin:0 auto;padding:10px clamp(16px,4vw,48px) 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:34px}
 .prancha{position:relative;display:flex;flex-direction:column;background:var(--paper);border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--grid-major);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
 a.prancha:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--grid-major)}
 a.prancha:focus-visible{outline:3px solid var(--conc);outline-offset:4px}
@@ -69,10 +69,9 @@ body{transition:background-color .35s ease,color .35s ease}
 <body>
 <nav class="topbar"><span>CUFRGS</span><span>UFRGS · Direito · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 
-<header class="hero">
+<header class="hero hero-shelf">
   <div class="kicker label"><span>Guias de estudo</span><span>Uma prancha por disciplina</span><span>Aulas para ler</span></div>
-  <h1><span class="split">O semestre,</span><span class="split">desenhado.</span></h1>
-  <p class="deck">Cada disciplina vira um guia: as aulas na ordem do programa, em texto corrido e em diagramas.</p>
+  <h1 class="sr-only">CUFRGS · guias de estudo das disciplinas de Direito da UFRGS, 2026/2</h1>
 </header>
 
 
