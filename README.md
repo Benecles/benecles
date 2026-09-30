@@ -2,7 +2,7 @@
 
 A paper-inspired reading collection for law-school study guides.
 
-Live: https://benecles.github.io/study-lab/
+Live: https://benecles.github.io/cufrgs/
 
 ## Courses
 
