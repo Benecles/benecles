@@ -2,9 +2,9 @@
    Service worker that only does anything after a reader turns on offline mode
    (assets/offline.js). It then keeps a copy of every page listed in
    offline-manifest.json so the site works without a connection. */
-const PREFIX = 'cufrgs-offline-';
-const FONT_CACHE = 'cufrgs-offline-fonts';
-const ROOT = self.registration.scope; // …/cufrgs/
+const PREFIX = 'ordenacoes-offline-';
+const FONT_CACHE = 'ordenacoes-offline-fonts';
+const ROOT = self.registration.scope; // …/ordenacoes-filipinas/
 const NAV_TIMEOUT = 3500;
 
 self.addEventListener('install', () => self.skipWaiting());

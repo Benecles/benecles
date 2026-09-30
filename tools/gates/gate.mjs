@@ -113,7 +113,7 @@ async function main() {
       const pageUrl = new URL(entry.path, options.baseUrl).href;
       for (const viewport of VIEWPORTS) for (const theme of THEMES) {
         const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height }, colorScheme: theme });
-        const seed = { ...(manifest.localStorage || {}), ...(entry.localStorage || {}), 'cufrgs-theme': theme };
+        const seed = { ...(manifest.localStorage || {}), ...(entry.localStorage || {}), 'ordenacoes-theme': theme };
         await context.addInitScript(({ values, themeName }) => {
           try { for (const [key, value] of Object.entries(values)) localStorage.setItem(key, String(value)); } catch {}
           const root = document.documentElement;
@@ -130,8 +130,8 @@ async function main() {
         if (!response || response.status() >= 400) jsErrors.push({ kind: 'navigation', message: `HTTP ${response?.status() ?? 'no response'} for ${pageUrl}` });
         await page.evaluate(async themeName => {
           try {
-            if (themeName === 'dark') localStorage.setItem('cufrgs-theme', 'dark');
-            else localStorage.setItem('cufrgs-theme', 'light');
+            if (themeName === 'dark') localStorage.setItem('ordenacoes-theme', 'dark');
+            else localStorage.setItem('ordenacoes-theme', 'light');
           } catch {}
           if (themeName === 'dark') document.documentElement.dataset.theme = 'dark';
           else delete document.documentElement.dataset.theme;

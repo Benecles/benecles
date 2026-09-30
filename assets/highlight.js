@@ -2,7 +2,7 @@
    Marks are kept in this browser only (localStorage), one list per page. */
 (function () {
   if (!window.getSelection || !document.createTreeWalker || !Element.prototype.closest) return;
-  var KEY = 'cufrgs-hl:' + location.pathname.replace(/index\.html$/, '');
+  var KEY = 'ordenacoes-hl:' + location.pathname.replace(/index\.html$/, '');
   // Only running text can be marked; interface, figures and controls cannot.
   var BLOCK = 'p,li,td,th,blockquote,figcaption,dd,dt,h2,h3,h4';
   var SKIP = 'nav,button,select,input,textarea,summary,svg,script,style,label,[contenteditable],' +
@@ -120,7 +120,7 @@
   var hl = [];
   function save() {
     try { hl.length ? localStorage.setItem(KEY, JSON.stringify(hl)) : localStorage.removeItem(KEY); } catch (e) {}
-    try { document.dispatchEvent(new CustomEvent('cufrgs:highlights-change', { detail: { highlights: hl.slice() } })); } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent('ordenacoes:highlights-change', { detail: { highlights: hl.slice() } })); } catch (e) {}
   }
   function restore() {
     var saved = [];
@@ -218,10 +218,10 @@
 // Load the chapter ribbon from this asset directory; the reader remains usable if storage is unavailable.
 (function () {
   var current = document.currentScript;
-  if (!current || !current.src || document.querySelector('script[data-cufrgs-bookmarks]')) return;
+  if (!current || !current.src || document.querySelector('script[data-ordenacoes-bookmarks]')) return;
   var loader = document.createElement('script');
   loader.src = new URL('bookmarks.js', current.src).href;
   loader.defer = true;
-  loader.setAttribute('data-cufrgs-bookmarks', '');
+  loader.setAttribute('data-ordenacoes-bookmarks', '');
   document.head.appendChild(loader);
 })();
