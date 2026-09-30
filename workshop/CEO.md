@@ -40,7 +40,7 @@ If `~/Developer` is missing, restore first:
 - The headless Codex machine is retired; Codex runs in its app; the chairman tracks usage himself.
 
 ## In flight
-- **Codex REG-1..7** (baton top entry): register data (`reg` key: exams, units for Const I/Latam, a `does` line per lesson). Check: `tools/fronts/check_register_data.py` (study-lab#15). Gate each PR: read the `does` lines (function, not description; generic = reject), then merge.
+- **Codex REG-1..7**: 2/4/5/6/7 MERGED (#16–20, fix-up #22). REG-1, REG-3 re-issued under contract v2 (#21) (baton): register data (`reg` key: exams, units for Const I/Latam, a `does` line per lesson). Check: `tools/fronts/check_register_data.py` (study-lab#15). Gate each PR: read the `does` lines (function, not description; generic = reject), then merge.
 - **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
 - ~~Tools port~~ DONE 30/09 evening: study-lab#14 merged. `tools/fronts/data` reconciled from live (drawings verbatim via `drawing.inner_html`; railway gone); `tools/check_all.sh` = regenerate fronts + assetver + FAIL on any diff + check_front. `ISSUES.md` started at #0. The relay-design d1 copy is now retired: use `tools/fronts/` only.
 - Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
@@ -63,4 +63,6 @@ If `~/Developer` is missing, restore first:
 - Big jobs fail partway: chunk to ≤6 units.
 - Never let a generator regeneration revert live edits (polish layer / SOURCES.md).
 - Never install daemons, LaunchAgents or cron jobs without the chairman's OK.
+- zsh: `"$k:codex"` parses `:c` as a modifier. Brace variables before a colon: `"${k}:codex"`. (Silently broke 5 pushes on 30/09 while the merges still ran.)
+- Codex keeps worktrees on its `codex/*` branches: gate on a local `gate/*` copy and push `gate/X:codex/X`.
 - Long sessions balloon: hand over the chair once context is large.
