@@ -4,7 +4,7 @@
    offline-manifest.json so the site works without a connection. */
 const PREFIX = 'cufrgs-offline-';
 const FONT_CACHE = 'cufrgs-offline-fonts';
-const ROOT = self.registration.scope; // …/study-lab/
+const ROOT = self.registration.scope; // …/cufrgs/
 const NAV_TIMEOUT = 3500;
 
 self.addEventListener('install', () => self.skipWaiting());
