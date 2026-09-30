@@ -56,7 +56,7 @@ strong{font-weight:600}
 .hero h1 .split{display:block}
 .hero .deck{font-size:clamp(20px,2.1vw,25px);line-height:1.45;max-width:36ch;color:var(--ink-2);margin:0}
 .hero-fork{display:block;width:100%;max-width:1080px;height:auto;margin:34px 0 0;overflow:visible}
-.hero-fork .draw{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 2.2s cubic-bezier(.6,.1,.2,1) .2s forwards}
+.hero-fork .draw{stroke-dasharray:3000;stroke-dashoffset:3000;animation:draw 2.2s cubic-bezier(.6,.1,.2,1) .2s forwards}
 .hero-fork .late{opacity:0;animation:fade .6s ease 1.9s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 @keyframes fade{to{opacity:1}}
