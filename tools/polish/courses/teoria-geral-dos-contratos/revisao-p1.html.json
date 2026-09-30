@@ -30,5 +30,9 @@
 {
 "before": "A agência que \"rouba\" o artista</summary>\n      ",
 "after": "A agência que “rouba” o artista</summary>\n      "
+},
+{
+"before": " Contratos</title>\n<meta name=\"description\" content=\"Revisão de véspera da P1 de Teoria Geral dos Contratos: o essencial de cada unidade, com os artigos, e dez casos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=05abf91a3b\">\n<style>\n.revisao{max-width:1180px;margin:0 auto;padding:0",
+"after": " Contratos</title>\n<meta name=\"description\" content=\"Revisão de véspera da P1 de Teoria Geral dos Contratos: o essencial de cada unidade, com os artigos, e dez casos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=f5998e6b38\">\n<style>\n.revisao{max-width:1180px;margin:0 auto;padding:0"
 }
 ]

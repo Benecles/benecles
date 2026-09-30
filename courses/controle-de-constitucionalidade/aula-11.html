@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sistemas de controle · Controle de Constitucionalidade</title>
 <meta name="description" content="Aula 11 · Sistemas e técnicas de controle de constitucionalidade: difuso e concentrado, exame em abstrato e em concreto, efeitos, e o modelo misto brasileiro.">
-<link rel="stylesheet" href="assets/controle.css?v=4387d5c8e9">
+<link rel="stylesheet" href="assets/controle.css?v=824d391f09">
 </head>
 <body>
 
@@ -45,6 +45,7 @@
 <div class="scrolly">
   <div class="stage" aria-hidden="true">
     <figure>
+      <style>@media(max-width:600px) and (orientation:portrait){body .stage figure svg.fig text{font-size:18.5px!important}}</style>
       <!-- EUA route -->
       <svg class="panel fig on" id="p-eua" viewBox="0 0 600 600">
         <defs><marker id="ah-dif1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker></defs>
@@ -62,7 +63,7 @@
         <defs><marker id="ah-conc1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker></defs>
         <g opacity=".3"><rect x="50" y="60" width="200" height="86" class="w-grey ink"/><text x="70" y="96" class="t-big">EUA</text><path class="c-dif" d="M150 146C150 290 240 300 268 438"/></g>
         <rect x="350" y="60" width="200" height="86" class="w-conc ink"/>
-        <text x="370" y="96" class="t-big">ALEMANHA</text><text x="370" y="124" class="t-small tc-conc">SISTEMA CONCENTRADO</text>
+        <text x="370" y="96" class="t-big">ALEMANHA</text><text x="370" y="124" class="t-small tc-conc">CONCENTRADO</text>
         <path class="c-conc grow" d="M450 146C450 290 360 300 332 438" marker-end="url(#ah-conc1)"/>
         <text x="352" y="238" class="t-mid tc-conc">concentrado</text>
         <text x="352" y="264" class="t-serif">teoria da anulabilidade</text>
@@ -83,7 +84,7 @@
         <text x="150" y="226" class="t-serif">o difuso se aproxima do concentrado</text>
         <rect x="150" y="444" width="300" height="100" stroke-width="2" style="fill:var(--mix-wash);stroke:var(--mix)"/>
         <text x="172" y="484" class="t-big tc-mix">BRASIL</text>
-        <text x="172" y="516" class="tc-mix">SISTEMA MISTO OU HÍBRIDO</text>
+        <text x="172" y="516" class="tc-mix">MISTO · HÍBRIDO</text>
       </svg>
       <figcaption><span>Fig. 1 · Origens</span><span class="stage-count">Slides 2–3</span></figcaption>
     </figure>
@@ -124,20 +125,22 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-matriz" viewBox="0 0 600 600">
-        <text x="50" y="80" class="t-small tc-muted">SISTEMAS DE CONTROLE SÃO DOIS</text>
-        <rect x="50" y="100" width="210" height="70" class="w-conc ink"/><text x="70" y="143" class="t-mid tc-conc">Concentrado</text>
-        <rect x="50" y="190" width="210" height="70" class="w-dif ink"/><text x="70" y="233" class="t-mid tc-dif">Difuso</text>
-        <path d="M280 100c22 0 22 0 22 40c0 20 10 25 22 25c-12 0-22 5-22 25c0 40 0 70-22 70" stroke-width="2" fill="none" style="stroke:var(--conc)"/>
-        <text x="340" y="160" class="t-mid tc-mix">sistema misto</text><text x="340" y="186" class="t-mid tc-mix">ou híbrido</text>
-        <text x="50" y="340" class="t-small tc-muted">AS TÉCNICAS DE EXAME SÃO DUAS</text>
-        <rect x="50" y="360" width="210" height="70" class="f-paper ink"/><text x="70" y="403" class="t-mid">Em abstrato</text>
-        <rect x="50" y="450" width="210" height="70" class="f-paper ink"/><text x="70" y="486" class="t-mid">Em concreto</text><text x="70" y="508" class="t-small tc-muted">DECLARAÇÃO INCIDENTAL</text>
-        <path class="c-conc grow" d="M260 135C420 135 420 395 262 395"/>
-        <path class="c-dif grow" d="M260 225C460 225 460 485 262 485"/>
-        <text x="444" y="300" class="t-serif">cada sistema</text><text x="444" y="326" class="t-serif">tem sua técnica</text>
-      </svg>
+  <text x="300" y="70" text-anchor="middle" class="t-small tc-muted">DOIS EIXOS DISTINTOS</text>
+  <rect x="48" y="102" width="504" height="176" class="f-paper ink"/>
+  <rect x="48" y="102" width="504" height="48" class="w-conc ink"/>
+  <text x="68" y="133" class="t-small tc-conc">QUEM CONTROLA? · SISTEMA</text>
+  <line x1="300" y1="150" x2="300" y2="278" class="thin"/>
+  <text x="78" y="192" class="t-mid tc-conc"><tspan x="78">Concentrado</tspan><tspan x="78" dy="40" class="tc-dif">Difuso</tspan></text>
+  <text x="322" y="200" class="t-small tc-mix">Misto ou híbrido</text>
+  <rect x="48" y="310" width="504" height="176" class="f-paper ink"/>
+  <rect x="48" y="310" width="504" height="48" class="w-dif ink"/>
+  <text x="68" y="341" class="t-small tc-dif">COMO SE EXAMINA? · TÉCNICA</text>
+  <line x1="300" y1="358" x2="300" y2="486" class="thin"/>
+  <text x="78" y="402" class="t-mid"><tspan x="78">Em abstrato</tspan><tspan x="78" dy="40">Em concreto</tspan></text>
+  <text x="322" y="402" class="t-small tc-muted"><tspan x="322">principal</tspan><tspan x="322" dy="40">incidental</tspan></text>
+</svg>
       <svg class="panel fig" id="p-quem" viewBox="0 0 600 600">
-        <text x="50" y="70" class="t-mid tc-dif">Difuso</text><text x="50" y="94" class="t-small">QUALQUER JUIZ OU TRIBUNAL · CONTROLE “ABERTO”</text>
+        <text x="50" y="70" class="t-mid tc-dif">Difuso</text><text x="50" y="94" class="t-small">QUALQUER JUIZ OU TRIBUNAL</text>
         <g class="f-dif">
           <circle cx="70" cy="140" r="9"/><circle cx="120" cy="160" r="9"/><circle cx="175" cy="132" r="9"/><circle cx="228" cy="170" r="9"/><circle cx="282" cy="138" r="9"/><circle cx="336" cy="165" r="9"/><circle cx="392" cy="134" r="9"/><circle cx="446" cy="168" r="9"/><circle cx="500" cy="140" r="9"/><circle cx="96" cy="205" r="9"/><circle cx="160" cy="215" r="9"/><circle cx="258" cy="212" r="9"/><circle cx="364" cy="214" r="9"/><circle cx="474" cy="210" r="9"/><circle cx="540" cy="190" r="9"/>
         </g>
@@ -146,7 +149,7 @@
         <text x="50" y="350" class="t-mid tc-conc">Concentrado</text><text x="50" y="374" class="t-small">UM OU POUCOS ÓRGÃOS · NÚMERO REDUZIDO</text>
         <rect x="236" y="410" width="128" height="80" class="w-conc" stroke-width="3" style="stroke:var(--conc)"/>
         <text x="276" y="458" class="t-mid tc-conc">STF</text>
-        <text x="170" y="520" class="t-small">COMPETÊNCIA ORIGINÁRIA · AÇÕES DIRETAS</text>
+        <text x="170" y="520" class="t-small">AÇÕES DIRETAS · STF ORIGINÁRIO</text>
         <text x="50" y="562" class="t-small tc-muted">ORIGEM GERMÂNICA</text>
       </svg>
       <figcaption><span>Fig. 2 · Vocabulário</span><span class="stage-count">Slide 8</span></figcaption>
@@ -182,27 +185,20 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-conc" viewBox="0 0 600 600">
-        <defs><marker id="ah-conc2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker></defs>
-        <rect x="160" y="46" width="280" height="62" class="w-conc" stroke-width="2.5" style="stroke:var(--conc)"/>
-        <text x="182" y="74" class="t-mid tc-conc">STF</text><text x="182" y="96" class="t-small">COMPETÊNCIA ORIGINÁRIA</text>
-        <!-- law document -->
-        <rect x="50" y="200" width="120" height="150" class="f-paper ink"/>
-        <path d="M68 232h84M68 252h84M68 272h84M68 292h60M68 312h72" class="thin"/>
-        <text x="50" y="188" class="t-small">LEI</text>
-        <!-- lens -->
-        <circle cx="300" cy="260" r="46" class="ink" stroke-width="3"/><path d="M333 293l44 44" stroke-width="7" stroke-linecap="round" style="stroke:var(--const)"/>
-        <text x="270" y="200" class="t-small">EXAME</text>
-        <!-- constitution -->
-        <rect x="430" y="190" width="120" height="170" style="fill:var(--const)"/><rect x="438" y="198" width="104" height="154" fill="none" stroke-width=".8" style="stroke:var(--paper)"/>
-        <text x="448" y="262" class="t-light t-small">CONSTITUIÇÃO</text><text x="470" y="286" class="t-light t-small">1988</text>
-        <path class="c-conc grow" d="M110 360C140 450 420 460 482 372" marker-end="url(#ah-conc2)"/>
-        <!-- no parties -->
-        <g opacity=".45"><circle cx="100" cy="470" r="11" class="ink"/><path d="M100 481v28M86 492h28" class="ink"/><circle cx="500" cy="470" r="11" class="ink"/><path d="M500 481v28M486 492h28" class="ink"/></g>
-        <path d="M80 455l40 60M120 455l-40 60M480 455l40 60M520 455l-40 60" stroke-width="2" style="stroke:var(--conc)"/>
-        <text x="190" y="492" class="t-small">NÃO HÁ RÉU NO PROCESSO</text>
-        <rect x="50" y="530" width="500" height="44" style="fill:var(--conc)"/>
-        <text x="66" y="558" class="t-light">ERGA OMNES · EX TUNC (MODULÁVEL)</text>
-      </svg>
+  <defs><marker id="ah-conc2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker></defs>
+  <text x="300" y="58" text-anchor="middle" class="t-small tc-muted">QUESTÃO É O PEDIDO PRINCIPAL?</text>
+  <path d="M300 72V104" class="thin" marker-end="url(#ah-conc2)"/>
+  <path d="M300 104l108 54-108 54-108-54z" class="w-conc" stroke-width="2" style="stroke:var(--conc)"/>
+  <text x="300" y="164" text-anchor="middle" class="t-mid tc-conc">Sim · em abstrato</text>
+  <path class="c-conc grow" d="M300 212V264" marker-end="url(#ah-conc2)"/>
+  <rect x="112" y="272" width="376" height="72" class="f-paper ink"/>
+  <text x="300" y="316" text-anchor="middle" class="t-mid">Ação direta · STF originário</text>
+  <path class="c-conc grow" d="M300 344V396" marker-end="url(#ah-conc2)"/>
+  <rect x="112" y="404" width="376" height="68" class="w-conc ink"/>
+  <text x="300" y="446" text-anchor="middle" class="t-mid tc-conc">Decisão · erga omnes</text>
+  <text x="300" y="512" text-anchor="middle" class="t-small tc-muted">EX TUNC · MODULAÇÃO POSSÍVEL</text>
+  <text x="300" y="556" text-anchor="middle" class="t-small tc-muted">NÃO · QUESTÃO INCIDENTAL/CONCRETA</text>
+</svg>
       <figcaption><span>Fig. 3 · Exame em abstrato</span><span class="stage-count">Slide 10</span></figcaption>
     </figure>
   </div>
@@ -244,28 +240,21 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-dif" viewBox="0 0 600 600">
-        <defs><marker id="ah-dif3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker></defs>
-        <!-- parties -->
-        <circle cx="80" cy="96" r="22" class="ink" stroke-width="2.2"/><path d="M80 118v76M50 146h60M80 194l-22 50M80 194l22 50" class="ink" stroke-width="2.2"/>
-        <text x="72" y="276" class="t-big">A</text>
-        <circle cx="520" cy="96" r="22" class="ink" stroke-width="2.2"/><path d="M520 118v76M490 146h60M520 194l-22 50M520 194l22 50" class="ink" stroke-width="2.2"/>
-        <text x="510" y="276" class="t-big">B</text>
-        <!-- the house: bem da vida -->
-        <path d="M230 170l70-56 70 56v84H230z" class="w-grey ink" stroke-width="2"/><rect x="286" y="206" width="28" height="48" class="ink"/>
-        <text x="236" y="286" class="t-small">BEM DA VIDA</text>
-        <path d="M122 160h96M478 160h-96" class="thin"/>
-        <text x="212" y="96" class="t-serif">pedido principal</text>
-        <!-- prejudicial question underneath -->
-        <rect x="50" y="320" width="500" height="178" fill="none" stroke-width="2" stroke-dasharray="7 6" style="stroke:var(--dif)"/>
-        <text x="66" y="346" class="t-small tc-dif">QUESTÃO PREJUDICIAL · PREMISSA LÓGICA</text>
-        <rect x="84" y="366" width="80" height="102" class="f-paper ink"/><path d="M96 386h56M96 402h56M96 418h40M96 434h50" class="thin"/>
-
-        <circle cx="300" cy="410" r="30" class="ink" stroke-width="2.5"/><path d="M321 431l26 26" stroke-width="5" stroke-linecap="round" style="stroke:var(--const)"/>
-        <rect x="436" y="360" width="84" height="114" style="fill:var(--const)"/><text x="446" y="420" class="t-light t-small">CF/88</text>
-        <path class="c-dif grow" d="M124 470C170 520 430 520 478 478" marker-end="url(#ah-dif3)"/>
-        <rect x="50" y="530" width="500" height="44" style="fill:var(--dif)"/>
-        <text x="66" y="558" class="t-light">INTER PARTES · EX TUNC</text>
-      </svg>
+  <defs><marker id="ah-dif3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker></defs>
+  <text x="300" y="60" text-anchor="middle" class="t-small tc-muted">A LEI É OBSTÁCULO AO PEDIDO?</text>
+  <path d="M300 74V108" class="thin" marker-end="url(#ah-dif3)"/>
+  <path d="M300 108l108 54-108 54-108-54z" class="w-dif" stroke-width="2" style="stroke:var(--dif)"/>
+  <text x="300" y="168" text-anchor="middle" class="t-mid tc-dif">Sim · caso A/B</text>
+  <path class="c-dif grow" d="M300 216V266" marker-end="url(#ah-dif3)"/>
+  <rect x="94" y="274" width="412" height="76" class="f-paper ink"/>
+  <text x="300" y="306" text-anchor="middle" class="t-mid">Constitucionalidade como</text>
+  <text x="300" y="332" text-anchor="middle" class="t-small tc-muted">premissa para resolver o caso</text>
+  <path class="c-dif grow" d="M300 350V392" marker-end="url(#ah-dif3)"/>
+  <rect x="94" y="400" width="412" height="70" class="w-dif ink"/>
+  <text x="300" y="444" text-anchor="middle" class="t-mid tc-dif">Exame concreto · incidental</text>
+  <text x="300" y="512" text-anchor="middle" class="t-small tc-muted">DECISÃO INTER PARTES · EX TUNC</text>
+  <text x="300" y="558" text-anchor="middle" class="t-small tc-muted">NÃO · SEM QUESTÃO CONSTITUCIONAL</text>
+</svg>
       <figcaption><span>Fig. 4 · Exame em concreto</span><span class="stage-count">Slide 14</span></figcaption>
     </figure>
   </div>
@@ -309,7 +298,7 @@
         <text x="50" y="56" class="t-small tc-dif">INSTÂNCIAS INFERIORES</text>
         <rect x="50" y="440" width="170" height="60" class="w-dif ink"/><text x="66" y="476" class="t-small">1ª INSTÂNCIA</text>
         <rect x="50" y="300" width="170" height="60" class="w-dif ink"/><text x="66" y="336" class="t-small">TRIBUNAL</text>
-        <rect x="50" y="160" width="170" height="60" class="w-dif ink"/><text x="66" y="196" class="t-small">TRIBUNAL SUPERIOR</text>
+        <rect x="50" y="160" width="246" height="60" class="w-dif ink"/><text x="66" y="196" class="t-small">TRIBUNAL SUPERIOR</text>
         <path class="c-dif grow" d="M135 440V366M135 300V226" marker-end="url(#ah-dif4)"/>
         <path d="M135 158C135 80 220 70 300 90" class="c-dif grow" marker-end="url(#ah-dif4)"/>
         <!-- STF -->
@@ -325,8 +314,8 @@
         <text x="394" y="220" class="t-small tc-conc">DEPOIS</text>
         <text x="394" y="244" class="t-mid tc-conc">erga omnes</text>
         <g class="f-conc"><circle cx="410" cy="300" r="7"/><circle cx="440" cy="316" r="7"/><circle cx="470" cy="298" r="7"/><circle cx="500" cy="318" r="7"/><circle cx="530" cy="300" r="7"/><circle cx="420" cy="342" r="7"/><circle cx="452" cy="356" r="7"/><circle cx="486" cy="344" r="7"/><circle cx="520" cy="360" r="7"/><circle cx="548" cy="336" r="7"/></g>
-        <text x="394" y="410" class="t-small">RE COM REPERCUSSÃO</text><text x="394" y="428" class="t-small">GERAL</text>
-        <text x="394" y="456" class="t-small">SÚMULAS VINCULANTES</text>
+        <text x="394" y="410" class="t-small">RE · RG</text>
+        <text x="394" y="456" class="t-small">SÚMULA VINCULANTE</text>
       </svg>
       <figcaption><span>Fig. 5 · Antes e depois do STF</span><span class="stage-count">Slide 18</span></figcaption>
     </figure>

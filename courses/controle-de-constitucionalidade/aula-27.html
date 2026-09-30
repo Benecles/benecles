@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ADI: plenário virtual · Controle de Constitucionalidade</title>
 <meta name="description" content="Aula 27 · Sistemática do plenário virtual do STF: janela de votação, destaque, pedido de vista e o caso real da ADI 6200.">
-<link rel="stylesheet" href="assets/controle.css?v=4387d5c8e9">
+<link rel="stylesheet" href="assets/controle.css?v=824d391f09">
 </head>
 <body>
 
@@ -62,40 +62,34 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-sistema" viewBox="0 0 600 600">
-        <defs><marker id="ah-s1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--accent)"/></marker></defs>
-        <text x="60" y="60" class="t-small tc-muted">QUATRO PEÇAS DO SISTEMA</text>
-        <circle cx="140" cy="340" r="64" class="w-grey ink" stroke-width="2"/>
-        <text x="140" y="345" text-anchor="middle" class="t-small">RESULTADO</text>
-        <circle cx="330" cy="190" r="54" style="fill:var(--paper);stroke:var(--accent)" stroke-width="3"/>
-        <text x="330" y="195" text-anchor="middle" class="t-small">VISTA</text>
-        <circle cx="450" cy="380" r="52" class="w-dif ink" stroke-width="2"/>
-        <text x="450" y="385" text-anchor="middle" class="t-small">VOTO</text>
-        <circle cx="470" cy="130" r="50" class="w-dif ink" stroke-width="2"/>
-        <text x="470" y="135" text-anchor="middle" class="t-small">PAUTA</text>
-        <path class="grow" d="M140 340L330 190" stroke-width="2.4" fill="none" style="stroke:var(--accent)"/>
-        <path d="M330 190L450 380" stroke-width="2.4" fill="none" style="stroke:var(--accent)"/>
-        <path d="M450 380L470 130" stroke-width="2.4" fill="none" style="stroke:var(--accent)"/>
-        <rect x="40" y="500" width="520" height="60" style="fill:var(--ink)"/>
-        <text x="60" y="528" class="t-mid t-light">IDEIA-CHAVE: É UM AMBIENTE</text>
-        <text x="60" y="550" class="t-mid t-light">ASSÍNCRONO E COLEGIADO</text>
+<style>@media (max-width:860px) and (orientation:portrait){#p-sistema text{font-size:19px!important}}</style>
+<text x="40" y="54" class="t-small tc-muted">PLANTA · QUATRO PEÇAS DO SISTEMA</text>
+<path d="M80 130H520M80 260H520M80 390H520" stroke-width="1" class="thin"/>
+<path d="M160 130V390M440 130V390" stroke-width="1" class="thin"/>
+<rect x="54" y="82" width="250" height="96" class="w-dif ink" stroke-width="2"/><text x="74" y="116" class="t-small tc-dif">01 · PAUTA</text><text x="74" y="148" class="t-small">ABRE A JANELA</text>
+<rect x="296" y="212" width="250" height="96" class="w-dif ink" stroke-width="2"/><text x="316" y="246" class="t-small tc-dif">02 · VOTO</text><text x="316" y="278" class="t-small">CADA MINISTRO</text>
+<rect x="54" y="342" width="250" height="96" style="fill:var(--paper);stroke:var(--conc)" stroke-width="2"/><text x="74" y="376" class="t-small tc-conc">03 · VISTA</text><text x="74" y="408" class="t-small">SUSPENDE CONCLUSÃO</text>
+<rect x="296" y="462" width="250" height="74" class="w-grey ink" stroke-width="2"/><text x="316" y="492" class="t-small">04 · RESULTADO</text><text x="316" y="520" class="t-small">AMBIENTE COLEGIADO</text>
+<path d="M304 130L420 212M420 308L180 342M304 390L420 462" fill="none" stroke-width="2" style="stroke:var(--dif)"/>
       </svg>
       <svg class="panel fig" id="p-carac" viewBox="0 0 600 600">
+<style>@media (max-width:860px) and (orientation:portrait){#p-carac text{font-size:19px!important}}</style>
         <rect x="40" y="60" width="520" height="130" class="f-paper ink" stroke-width="2"/>
         <rect x="40" y="60" width="8" height="130" class="w-dif"/>
         <text x="66" y="98" class="t-mid">JULGAMENTO COLEGIADO</text>
         <text x="66" y="126" class="t-small">MINISTROS INSEREM VOTOS NO SISTEMA,</text>
-        <text x="66" y="144" class="t-small">DENTRO DE UMA JANELA PREVIAMENTE ABERTA.</text>
+        <text x="66" y="154" class="t-small">NA JANELA ABERTA.</text>
         <rect x="40" y="210" width="520" height="130" class="f-paper ink" stroke-width="2"/>
         <rect x="40" y="210" width="8" height="130" class="w-dif"/>
         <text x="66" y="248" class="t-mid">AMBIENTE ASSÍNCRONO</text>
-        <text x="66" y="276" class="t-small">CADA MINISTRO VOTA EM MOMENTO PRÓPRIO,</text>
-        <text x="66" y="294" class="t-small">SEM PRESENÇA SIMULTÂNEA.</text>
+        <text x="66" y="276" class="t-small">CADA MINISTRO VOTA NO SEU TEMPO,</text>
+        <text x="66" y="304" class="t-small">SEM PRESENÇA SIMULTÂNEA.</text>
         <rect x="40" y="360" width="520" height="130" class="f-paper ink" stroke-width="2"/>
         <rect x="40" y="360" width="8" height="130" class="w-dif"/>
         <text x="66" y="398" class="t-mid">PUBLICIDADE</text>
-        <text x="66" y="426" class="t-small">RELATÓRIO, VOTOS E PLACAR PODEM SER</text>
-        <text x="66" y="444" class="t-small">ACOMPANHADOS NO PORTAL DO STF.</text>
-        <rect x="40" y="512" width="520" height="52" style="fill:var(--accent)"/>
+        <text x="66" y="426" class="t-small">RELATÓRIO, VOTOS E PLACAR</text>
+        <text x="66" y="454" class="t-small">NO PORTAL DO STF.</text>
+        <rect x="40" y="512" width="520" height="52" style="fill:var(--conc)"/>
         <text x="60" y="532" class="t-mid" style="font-size:16px">NÃO SE CONFUNDE COM SESSÃO POR</text>
         <text x="60" y="554" class="t-mid" style="font-size:16px">VIDEOCONFERÊNCIA.</text>
       </svg>
@@ -150,7 +144,8 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-sessao-a" viewBox="0 0 600 600">
-        <defs><marker id="ah-sa" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--const)"/></marker></defs>
+<style>@media (max-width:860px) and (orientation:portrait){#p-sessao-a text{font-size:19px!important}}</style>
+        <defs><marker id="ah-sa" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker></defs>
         <text x="70" y="70" class="t-small tc-muted">A JANELA DE VOTAÇÃO</text>
         <path class="grow" d="M100 190H460" stroke-width="3" fill="none" style="stroke:var(--dif)" marker-end="url(#ah-sa)"/>
         <circle cx="100" cy="190" r="38" class="w-dif ink" stroke-width="2"/>
@@ -158,37 +153,39 @@
         <rect x="230" y="160" width="180" height="60" class="w-dif ink" stroke-width="2"/>
         <text x="320" y="188" text-anchor="middle" class="t-mid">JANELA DE</text>
         <text x="320" y="208" text-anchor="middle" class="t-mid">VOTOS</text>
-        <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--const)"/>
+        <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--dif)"/>
         <text x="460" y="195" text-anchor="middle" class="t-small t-light">FIM</text>
         <text x="424" y="250" text-anchor="middle" class="t-small tc-muted">PROCLAMAÇÃO</text>
-        <text x="70" y="290" class="t-small tc-muted">6 DIAS ÚTEIS · SEM ORDEM FIXA ENTRE MINISTROS</text>
-        <text x="70" y="312" class="t-small tc-muted">VOTO PODE SER REVISTO ATÉ O FECHAMENTO</text>
+        <text x="70" y="290" class="t-small tc-muted">6 DIAS ÚTEIS · ORDEM LIVRE</text>
+        <text x="70" y="312" class="t-small tc-muted">VOTO REVISTÁVEL ATÉ O FECHO</text>
         <rect x="70" y="340" width="460" height="80" class="f-paper ink" stroke-width="2"/>
-        <text x="90" y="368" class="t-small">SILÊNCIO NÃO CONTA COMO ADESÃO AO RELATOR</text>
-        <text x="90" y="390" class="t-small">SEM QUÓRUM, O CASO PODE IR À SESSÃO SEGUINTE</text>
-        <text x="90" y="410" class="t-small tc-muted">SÓ CONTAM MANIFESTAÇÕES EXPRESSAS</text>
+        <text x="90" y="368" class="t-small">SILÊNCIO ≠ ADESÃO AO RELATOR</text>
+        <text x="90" y="390" class="t-small">SEM QUÓRUM: SESSÃO SEGUINTE</text>
+        <text x="90" y="500" class="t-small tc-muted">SÓ VALEM VOTOS EXPRESSOS</text>
       </svg>
       <svg class="panel fig" id="p-sessao-b" viewBox="0 0 600 600">
+<style>@media (max-width:860px) and (orientation:portrait){#p-sessao-b text{font-size:19px!important}}</style>
         <defs>
-          <marker id="ah-sb" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--const)"/></marker>
-          <marker id="ah-sb2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--accent)"/></marker>
+          <marker id="ah-sb" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker>
+          <marker id="ah-sb2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker>
         </defs>
         <g opacity=".5">
           <path d="M100 190H460" stroke-width="3" fill="none" style="stroke:var(--dif)" marker-end="url(#ah-sb)"/>
           <circle cx="100" cy="190" r="38" class="w-dif ink" stroke-width="2"/><text x="100" y="195" text-anchor="middle" class="t-small">INÍCIO</text>
           <rect x="230" y="160" width="180" height="60" class="w-dif ink" stroke-width="2"/><text x="320" y="188" text-anchor="middle" class="t-mid">JANELA DE</text><text x="320" y="208" text-anchor="middle" class="t-mid">VOTOS</text>
-          <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--const)"/><text x="460" y="195" text-anchor="middle" class="t-small t-light">FIM</text>
+          <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--dif)"/><text x="460" y="195" text-anchor="middle" class="t-small t-light">FIM</text>
         </g>
-        <path class="grow" d="M320 220V370" stroke-width="3" fill="none" stroke-dasharray="8 6" style="stroke:var(--accent)" marker-end="url(#ah-sb2)"/>
-        <rect x="170" y="380" width="300" height="160" style="fill:var(--paper);stroke:var(--accent)" stroke-width="3"/>
+        <path class="grow" d="M320 220V370" stroke-width="3" fill="none" stroke-dasharray="8 6" style="stroke:var(--conc)" marker-end="url(#ah-sb2)"/>
+        <rect x="170" y="380" width="300" height="160" style="fill:var(--paper);stroke:var(--conc)" stroke-width="3"/>
         <text x="320" y="412" text-anchor="middle" class="t-mid">PEDIDO DE VISTA</text>
         <text x="320" y="438" text-anchor="middle" class="t-small">SUSPENDE A CONCLUSÃO</text>
-        <text x="320" y="460" text-anchor="middle" class="t-small">DEMAIS VOTAM ATÉ FIM DA JANELA</text>
-        <text x="320" y="482" text-anchor="middle" class="t-small">90 DIAS · PRORROGÁVEIS 1 VEZ</text>
-        <text x="320" y="504" text-anchor="middle" class="t-small">FIM DO PRAZO APLICÁVEL: LIBERA AUTOMÁTICO</text>
-        <path d="M460 380C520 380 520 240 468 205" stroke-width="2.4" fill="none" stroke-dasharray="6 6" style="stroke:var(--accent)" marker-end="url(#ah-sb2)"/>
+        <text x="320" y="460" text-anchor="middle" class="t-small">DEMAIS VOTAM NA JANELA</text>
+        <text x="320" y="482" text-anchor="middle" class="t-small">90 DIAS · +1 PRORROGAÇÃO</text>
+        <text x="320" y="504" text-anchor="middle" class="t-small">FIM DO PRAZO: LIBERA</text>
+        <path d="M460 380C520 380 520 240 468 205" stroke-width="2.4" fill="none" stroke-dasharray="6 6" style="stroke:var(--conc)" marker-end="url(#ah-sb2)"/>
       </svg>
       <svg class="panel fig" id="p-sessao-c" viewBox="0 0 600 600">
+<style>@media (max-width:860px) and (orientation:portrait){#p-sessao-c text{font-size:19px!important}}</style>
         <defs>
           <marker id="ah-sc" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker>
         </defs>
@@ -196,7 +193,7 @@
           <path d="M100 190H460" stroke-width="3" fill="none" style="stroke:var(--dif)"/>
           <circle cx="100" cy="190" r="38" class="w-dif ink" stroke-width="2"/><text x="100" y="195" text-anchor="middle" class="t-small">INÍCIO</text>
           <rect x="230" y="160" width="180" height="60" class="w-dif ink" stroke-width="2"/><text x="320" y="188" text-anchor="middle" class="t-mid">JANELA DE</text><text x="320" y="208" text-anchor="middle" class="t-mid">VOTOS</text>
-          <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--const)"/><text x="460" y="195" text-anchor="middle" class="t-small t-light">FIM</text>
+          <circle cx="460" cy="190" r="38" class="ink" stroke-width="2" style="fill:var(--dif)"/><text x="460" y="195" text-anchor="middle" class="t-small t-light">FIM</text>
         </g>
         <path class="grow" d="M320 160V95" stroke-width="3" fill="none" stroke-dasharray="8 6" style="stroke:var(--conc)" marker-end="url(#ah-sc)"/>
         <rect x="190" y="35" width="280" height="55" style="fill:var(--paper);stroke:var(--conc)" stroke-width="3"/>
@@ -204,13 +201,13 @@
         <path d="M320 95C240 150 240 260 360 310" stroke-width="2.6" fill="none" style="stroke:var(--conc)" marker-end="url(#ah-sc)"/>
         <rect x="360" y="230" width="200" height="190" class="w-conc ink" stroke-width="2"/>
         <text x="460" y="262" text-anchor="middle" class="t-mid tc-conc">PRESENCIAL</text>
-        <text x="460" y="288" text-anchor="middle" class="t-small">JULGAMENTO</text>
-        <text x="460" y="306" text-anchor="middle" class="t-small">REINICIA</text>
+        <text x="460" y="288" text-anchor="middle" class="t-small">REINICIA</text>
+        <text x="460" y="306" text-anchor="middle" class="t-small"></text>
         <line x1="380" y1="322" x2="540" y2="322" class="thin"/>
-        <text x="460" y="344" text-anchor="middle" class="t-small tc-muted">EXCEÇÃO</text>
-        <text x="460" y="364" text-anchor="middle" class="t-small">MINISTRO QUE SAIU</text>
-        <text x="460" y="384" text-anchor="middle" class="t-small">DO CARGO: VOTO</text>
-        <text x="460" y="404" text-anchor="middle" class="t-small">FICA PRESERVADO</text>
+        <text x="460" y="338" text-anchor="middle" class="t-small tc-muted">EXCEÇÃO</text>
+        <text x="460" y="370" text-anchor="middle" class="t-small">SAÍDA DO CARGO</text>
+        <text x="460" y="400" text-anchor="middle" class="t-small">VOTO</text>
+        <text x="460" y="430" text-anchor="middle" class="t-small">VOTO PRESERVADO</text>
       </svg>
       <figcaption><span>Fig. 2 · Abertura, votos, vista e destaque</span></figcaption>
     </figure>
@@ -268,66 +265,28 @@
 <div class="scrolly">
   <div class="stage" aria-hidden="true">
     <figure>
-      <svg class="panel fig on" id="p-dest-quem" viewBox="0 0 600 600">
-        <defs>
-          <marker id="ah-dq1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker>
-          <marker id="ah-dq2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker>
-        </defs>
-        <rect x="190" y="30" width="220" height="70" class="w-dif ink" stroke-width="2"/>
-        <text x="300" y="60" text-anchor="middle" class="t-mid">PLENÁRIO</text>
-        <text x="300" y="82" text-anchor="middle" class="t-mid">VIRTUAL</text>
-
-        <text x="60" y="150" class="t-small tc-muted">MINISTRO</text>
-        <text x="60" y="172" class="t-small">DESTACA A QUALQUER</text>
-        <text x="60" y="192" class="t-small">MOMENTO DA SESSÃO</text>
-        <path class="grow" d="M150 145V430" stroke-width="3" fill="none" style="stroke:var(--conc)" marker-end="url(#ah-dq1)"/>
-
-        <text x="400" y="150" class="t-small tc-muted">PARTE</text>
-        <text x="400" y="172" class="t-small">PEDE ATÉ 48H ANTES</text>
-        <text x="400" y="192" class="t-small">DO INÍCIO DA SESSÃO</text>
-        <path d="M480 210V240" stroke-width="2.4" fill="none" class="ink"/>
-        <polygon points="480,240 550,300 480,360 410,300" class="f-paper ink" stroke-width="2"/>
-        <text x="480" y="294" text-anchor="middle" class="t-small">RELATOR</text>
-        <text x="480" y="314" text-anchor="middle" class="t-small">ACOLHE?</text>
-        <path d="M480 360V430" stroke-width="3" fill="none" style="stroke:var(--conc)" marker-end="url(#ah-dq1)"/>
-        <text x="494" y="400" class="t-small tc-conc">SIM</text>
-        <path d="M410 300C330 300 260 250 210 170" stroke-width="2.6" fill="none" stroke-dasharray="7 6" style="stroke:var(--dif)" marker-end="url(#ah-dq2)"/>
-        <text x="260" y="235" class="t-small tc-dif">NÃO: FICA NO VIRTUAL</text>
-
-        <rect x="170" y="430" width="260" height="120" class="w-conc ink" stroke-width="2"/>
-        <text x="300" y="462" text-anchor="middle" class="t-mid tc-conc">PRESENCIAL</text>
-        <text x="300" y="488" text-anchor="middle" class="t-small">PRESIDÊNCIA PAUTA A VOLTA</text>
-        <text x="300" y="508" text-anchor="middle" class="t-small">RELATOR NÃO DECIDE SOZINHO</text>
-        <text x="300" y="530" text-anchor="middle" class="t-small tc-muted">A PARTE NÃO PODE EXIGIR</text>
+      <svg class="panel fig on" id="p-dest-quem" viewBox="0 0 600 600"><style>@media (max-width:860px) and (orientation:portrait){#p-dest-quem text{font-size:19px!important}}</style>
+<text x="40" y="52" class="t-small tc-muted">DESTAQUE · QUEM PODE PEDIR</text>
+<rect x="40" y="88" width="220" height="94" class="w-dif ink" stroke-width="2"/><text x="60" y="124" class="t-small tc-dif">MINISTRO</text><text x="60" y="154" class="t-small">QUALQUER HORA</text>
+<rect x="340" y="88" width="220" height="94" class="w-dif ink" stroke-width="2"/><text x="360" y="124" class="t-small tc-dif">PARTE</text><text x="360" y="154" class="t-small">ATÉ 48H ANTES</text>
+<path d="M150 182V230M450 182V230" class="thin"/>
+<polygon points="300,216 410,286 300,356 190,286" class="f-paper ink" stroke-width="2"/><text x="300" y="280" text-anchor="middle" class="t-small">RELATOR</text><text x="300" y="310" text-anchor="middle" class="t-small">ACOLHE?</text>
+<path d="M190 286H110V400M410 286H490V400" fill="none" stroke-width="2.4" style="stroke:var(--ink)"/><text x="116" y="378" class="t-small tc-conc">SIM</text><text x="422" y="378" class="t-small tc-dif">NÃO</text>
+<rect x="40" y="410" width="220" height="98" class="w-conc ink" stroke-width="2"/><text x="60" y="448" class="t-small tc-conc">PRESENCIAL</text><text x="60" y="480" class="t-small">PAUTA RETORNO</text>
+<rect x="340" y="410" width="220" height="98" class="w-dif ink" stroke-width="2"/><text x="360" y="448" class="t-small tc-dif">VIRTUAL</text><text x="360" y="480" class="t-small">SEM DESTAQUE</text>
       </svg>
-      <svg class="panel fig" id="p-dest-regra" viewBox="0 0 600 600">
-        <defs><marker id="ah-dr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--accent)"/></marker></defs>
-        <text x="40" y="48" class="t-small tc-muted">VIRTUAL → DESTAQUE → PRESENCIAL</text>
-        <rect x="40" y="65" width="130" height="70" class="w-dif ink" stroke-width="2"/><text x="105" y="106" text-anchor="middle" class="t-small">VIRTUAL</text>
-        <path d="M170 100H210" stroke-width="2.4" fill="none" style="stroke:var(--accent)" marker-end="url(#ah-dr)"/>
-        <rect x="220" y="65" width="130" height="70" class="ink" stroke-width="2" style="fill:var(--paper)"/><text x="285" y="106" text-anchor="middle" class="t-small">DESTAQUE</text>
-        <path d="M350 100H390" stroke-width="2.4" fill="none" style="stroke:var(--accent)" marker-end="url(#ah-dr)"/>
-        <rect x="400" y="65" width="150" height="70" class="w-conc ink" stroke-width="2"/><text x="475" y="106" text-anchor="middle" class="t-small">PRESENCIAL</text>
-
-        <rect x="40" y="175" width="510" height="100" class="f-paper ink" stroke-width="2"/>
-        <text x="60" y="200" class="t-small tc-muted">REGRA GERAL</text>
-        <text x="60" y="226" class="t-small">O JULGAMENTO PRESENCIAL É REINICIADO;</text>
-        <text x="60" y="246" class="t-small">OS VOTOS VIRTUAIS NÃO SÃO O RESULTADO FINAL.</text>
-        <text x="60" y="266" class="t-small tc-muted">MINISTROS PODEM VOTAR NOVAMENTE</text>
-
-        <rect x="40" y="295" width="510" height="120" style="fill:var(--paper);stroke:var(--accent)" stroke-width="3"/>
-        <text x="60" y="320" class="t-small tc-muted">EXCEÇÃO · QO NA ADI 5.399</text>
-        <text x="60" y="346" class="t-small">SE O MINISTRO VOTOU E DEPOIS DEIXOU</text>
-        <text x="60" y="366" class="t-small">DEFINITIVAMENTE O CARGO, O VOTO FICA</text>
-        <text x="60" y="386" class="t-small">PRESERVADO; O SUCESSOR NÃO VOTA.</text>
-        <text x="60" y="406" class="t-small tc-muted">VALE TAMBÉM NA MIGRAÇÃO AO PRESENCIAL</text>
-
-        <circle cx="130" cy="490" r="38" class="w-dif ink" stroke-width="2"/><text x="130" y="495" text-anchor="middle" class="t-small">VOTO</text>
-        <path d="M168 490H262" stroke-width="2.4" fill="none" class="ink" marker-end="url(#ah-dr)"/>
-        <circle cx="300" cy="490" r="38" class="ink" stroke-width="2" style="fill:var(--paper)"/><text x="300" y="495" text-anchor="middle" class="t-small">SAÍDA</text>
-        <path d="M338 490H432" stroke-width="2.4" fill="none" class="ink" marker-end="url(#ah-dr)"/>
-        <circle cx="470" cy="490" r="38" class="w-conc ink" stroke-width="2"/><text x="470" y="495" text-anchor="middle" class="t-small">RETOMADA</text>
-        <text x="300" y="556" text-anchor="middle" class="t-small tc-muted">SUCESSOR NÃO SUBSTITUI VOTO JÁ PROFERIDO</text>
+      <svg class="panel fig" id="p-dest-regra" viewBox="0 0 600 600"><style>@media (max-width:860px) and (orientation:portrait){#p-dest-regra text{font-size:19px!important}}</style>
+<text x="40" y="52" class="t-small tc-muted">VIRTUAL → DESTAQUE → PRESENCIAL</text>
+<rect x="40" y="86" width="520" height="190" class="f-paper ink" stroke-width="2"/>
+<text x="64" y="122" class="t-small tc-muted">REGRA · RETOMADA PRESENCIAL</text>
+<text x="64" y="166" class="t-small">PRESENCIAL REINICIA O CASO</text>
+<text x="64" y="206" class="t-small">VOTOS VIRTUAIS NÃO SÃO FINAIS</text>
+<text x="64" y="246" class="t-small">MINISTROS PODEM VOTAR DE NOVO</text>
+<rect x="40" y="300" width="520" height="184" style="fill:var(--paper);stroke:var(--conc)" stroke-width="2"/>
+<text x="64" y="338" class="t-small tc-conc">EXCEÇÃO · QO NA ADI 5.399</text>
+<text x="64" y="382" class="t-small">MINISTRO SAI APÓS VOTAR</text>
+<text x="64" y="422" class="t-small">VOTO SEGUE VÁLIDO</text>
+<text x="64" y="462" class="t-small">SUCESSOR NÃO O SUBSTITUI</text>
       </svg>
       <figcaption><span>Fig. 3 · Quem destaca e o que acontece com os votos</span></figcaption>
     </figure>
@@ -412,6 +371,7 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-adi6200-id" viewBox="0 0 600 600">
+<style>@media (max-width:860px) and (orientation:portrait){#p-adi6200-id text{font-size:19px!important}}</style>
         <rect x="40" y="40" width="520" height="50" style="fill:var(--ink)"/>
         <text x="56" y="72" class="t-mid t-light">PORTAL DO STF</text>
         <text x="56" y="112" class="t-small tc-muted">INFORMAÇÕES · DECISÕES ·</text>
@@ -421,42 +381,43 @@
         <text x="60" y="182" class="t-big">ADI 6200</text>
         <rect x="60" y="198" width="140" height="26" class="w-dif ink" stroke-width="1.6"/><text x="130" y="216" text-anchor="middle" class="t-small">ELETRÔNICO</text>
         <rect x="208" y="198" width="90" height="26" class="w-dif ink" stroke-width="1.6"/><text x="253" y="216" text-anchor="middle" class="t-small">PÚBLICO</text>
-        <rect x="306" y="198" width="160" height="26" class="w-conc ink" stroke-width="1.6"/><text x="386" y="216" text-anchor="middle" class="t-small">MEDIDA LIMINAR</text>
+        <rect x="306" y="198" width="160" height="26" class="w-conc ink" stroke-width="1.6"/><text x="386" y="216" text-anchor="middle" class="t-small">LIMINAR</text>
         <text x="60" y="262" class="t-small">ORIGEM: GO · GOIÁS</text>
-        <text x="60" y="286" class="t-small">RELATOR(A): MIN. ALEXANDRE DE MORAES</text>
+        <text x="60" y="286" class="t-small">RELATOR(A): ALEXANDRE DE MORAES</text>
         <text x="60" y="310" class="t-small">Nº ÚNICO: 0026228-59.2019.1.00.0000</text>
-        <text x="60" y="334" class="t-small">REQTE.: ASSOC. NAC. DOS PROCURADORES DO TRABALHO</text>
+        <text x="60" y="334" class="t-small">REQTE.: ASSOC. PROC. TRABALHO</text>
         <text x="60" y="358" class="t-small">INTDO.: GOVERNADOR DO ESTADO DE GOIÁS</text>
         <rect x="60" y="384" width="480" height="56" class="w-grey ink" stroke-width="1.6"/>
-        <text x="76" y="408" class="t-small">SESSÃO VIRTUAL: 11/09/2026 – 18/09/2026</text>
-        <text x="76" y="428" class="t-small tc-muted">RETRATO HISTÓRICO · SESSÃO ENCERRADA</text>
+        <text x="76" y="406" class="t-small">SESSÃO · 11 A 18/09/2026</text>
+        <text x="76" y="442" class="t-small tc-muted">ENCERRADA</text>
       </svg>
       <svg class="panel fig" id="p-adi6200-placar" viewBox="0 0 600 600">
-        <rect x="140" y="30" width="320" height="90" style="fill:var(--paper);stroke:var(--accent)" stroke-width="3"/>
+<style>@media (max-width:860px) and (orientation:portrait){#p-adi6200-placar text{font-size:19px!important}}</style>
+        <rect x="140" y="30" width="320" height="90" style="fill:var(--paper);stroke:var(--conc)" stroke-width="3"/>
         <text x="300" y="60" text-anchor="middle" class="t-small tc-muted">RELATOR(A)</text>
-        <text x="300" y="86" text-anchor="middle" class="t-small">MIN. ALEXANDRE DE MORAES</text>
-        <text x="300" y="106" text-anchor="middle" class="t-small tc-muted">RELATÓRIO · VOTO</text>
+        <text x="300" y="92" text-anchor="middle" class="t-small">ALEXANDRE MORAES</text>
+        <text x="300" y="116" text-anchor="middle" class="t-small tc-muted">VOTO</text>
 
-        <text x="50" y="152" class="t-small tc-dif">DIVIRJO DO(A) RELATOR(A)</text>
+        <text x="50" y="152" class="t-small tc-dif">DIVERGÊNCIA</text>
         <rect x="40" y="168" width="250" height="86" class="w-dif ink" stroke-width="2"/>
         <text x="56" y="196" class="t-small">MIN. GILMAR MENDES</text>
-        <text x="56" y="218" class="t-small tc-muted">VOTO VISTA</text>
+        <text x="56" y="224" class="t-small tc-muted">VOTO VISTA</text>
         <rect x="40" y="270" width="250" height="86" class="w-dif ink" stroke-width="2"/>
         <text x="56" y="298" class="t-small">MIN. ROSA WEBER</text>
-        <text x="56" y="320" class="t-small tc-muted">VOTO VOGAL</text>
+        <text x="56" y="328" class="t-small tc-muted">VOTO VOGAL</text>
 
-        <text x="320" y="152" class="t-small tc-conc">ACOMPANHO A DIVERGÊNCIA</text>
+        <text x="320" y="152" class="t-small tc-conc">ACOMPANHAMENTO</text>
         <rect x="310" y="168" width="250" height="96" class="w-conc ink" stroke-width="2"/>
         <text x="326" y="194" class="t-small">MIN. NUNES MARQUES</text>
-        <text x="326" y="214" class="t-small tc-muted">VOTO VISTA</text>
-        <text x="326" y="234" class="t-small tc-muted">ACOMPANHA GILMAR MENDES</text>
+        <text x="326" y="224" class="t-small tc-muted">VOTO VISTA</text>
+        <text x="326" y="246" class="t-small tc-muted">ACOMPANHA GILMAR</text>
         <rect x="310" y="276" width="250" height="96" class="w-conc ink" stroke-width="2"/>
         <text x="326" y="302" class="t-small">MIN. EDSON FACHIN</text>
-        <text x="326" y="322" class="t-small tc-muted">VOTO VOGAL</text>
-        <text x="326" y="342" class="t-small tc-muted">ACOMPANHA ROSA WEBER</text>
+        <text x="326" y="334" class="t-small tc-muted">VOTO VOGAL</text>
+        <text x="326" y="358" class="t-small tc-muted">ACOMPANHA ROSA</text>
         <rect x="310" y="384" width="250" height="80" class="w-conc ink" stroke-width="2"/>
         <text x="326" y="414" class="t-small">MIN. LUIZ FUX</text>
-        <text x="326" y="436" class="t-small tc-muted">ACOMPANHA GILMAR MENDES</text>
+        <text x="326" y="436" class="t-small tc-muted">ACOMPANHA GILMAR</text>
 
         <rect x="40" y="480" width="520" height="60" style="fill:var(--ink)"/>
         <text x="56" y="506" class="t-mid t-light">REFERENDO NA MEDIDA</text>
@@ -534,24 +495,17 @@
 
 
   <figure style="margin:30px 0;border:1.5px solid var(--ink);background:var(--paper);padding:16px;box-shadow:6px 6px 0 var(--grid-major)">
-  <svg viewBox="0 0 900 300" role="img" aria-labelledby="bar-title bar-desc" style="display:block;width:100%;height:auto">
+  <svg class="fig" id="p-fig-stats" viewBox="0 0 600 320" role="img" aria-labelledby="bar-title bar-desc" style="display:block;width:100%;height:auto;font-size:14px">
+    <style>@media (max-width:860px) and (orientation:portrait){#p-fig-stats text{font-size:21px!important}}</style>
     <title id="bar-title">Processos julgados pelo Plenário, 2024–2025</title>
     <desc id="bar-desc">Em 2024, 7.632 processos virtuais (98,9%) e 82 presenciais. Em 2025, 6.116 virtuais (99,0%) e 61 presenciais.</desc>
-    <text x="40" y="45" class="t-big">2024</text>
-    <rect x="180" y="20" width="640" height="60" class="w-dif ink" stroke-width="1.6"/>
-    <rect x="800" y="20" width="20" height="60" class="w-conc ink" stroke-width="1.6"/>
-    <text x="200" y="58" class="t-mid">7.632 VIRTUAIS · 98,9%</text>
-    <text x="820" y="14" text-anchor="end" class="t-small tc-muted">82 PRESENCIAIS</text>
-
-    <text x="40" y="150" class="t-big">2025</text>
-    <rect x="180" y="125" width="640" height="60" class="w-dif ink" stroke-width="1.6"/>
-    <rect x="802" y="125" width="18" height="60" class="w-conc ink" stroke-width="1.6"/>
-    <text x="200" y="163" class="t-mid">6.116 VIRTUAIS · 99,0%</text>
-    <text x="820" y="120" text-anchor="end" class="t-small tc-muted">61 PRESENCIAIS</text>
-
-    <text x="40" y="235" class="t-small tc-muted">2024: 7.714 PROCESSOS · 74 SESSÕES PRESENCIAIS · 52 VIRTUAIS</text>
-    <text x="40" y="258" class="t-small tc-muted">2025: 6.177 PROCESSOS · 74 PRESENCIAIS · 60 VIRTUAIS (45 + 15 EXTRAORD.)</text>
-    <text x="40" y="286" class="t-small tc-muted">LEITURA: PERCENTUAL VIRTUAL = TOTAL JULGADO − CASOS PRESENCIAIS</text>
+    <text style="font-size:16px" x="34" y="56" class="t-big">2024</text><rect x="142" y="24" width="402" height="54" class="w-dif ink" stroke-width="1.6"/><rect x="539" y="24" width="5" height="54" class="w-conc ink" stroke-width="1.6"/><text style="font-size:16px" x="158" y="58" class="t-small">7.632 virtuais · 98,9%</text><text style="font-size:16px" x="544" y="27" text-anchor="end" class="t-small tc-muted">82 presenciais</text>
+    <text style="font-size:16px" x="34" y="144" class="t-big">2025</text><rect x="142" y="112" width="402" height="54" class="w-dif ink" stroke-width="1.6"/><rect x="539" y="112" width="5" height="54" class="w-conc ink" stroke-width="1.6"/><text style="font-size:16px" x="158" y="146" class="t-small">6.116 virtuais · 99,0%</text><text style="font-size:16px" x="544" y="115" text-anchor="end" class="t-small tc-muted">61 presenciais</text>
+    <text style="font-size:16px" x="34" y="183" class="t-small tc-muted">2024: 7.714 julgados, 74 sessões</text>
+    <text style="font-size:16px" x="34" y="214" class="t-small tc-muted">presenciais e 52 virtuais</text>
+    <text style="font-size:16px" x="34" y="245" class="t-small tc-muted">2025: 6.177 julgados, 74 sessões</text>
+    <text style="font-size:16px" x="34" y="276" class="t-small tc-muted">presenciais e 60 virtuais</text>
+    <text style="font-size:16px" x="34" y="307" class="t-small tc-muted">Virtual = total menos presenciais</text>
   </svg>
   </figure>
   <div class="chave"><span class="label">Dados recentes</span>Os dados mostram predominância prática do plenário virtual. Não demonstram, isoladamente, a causa da variação do acervo ou da duração dos processos.</div>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ADI: cabimento · Controle de Constitucionalidade</title>
 <meta name="description" content="Aula 20 · ADI: cabimento nas espécies normativas. O que pode e o que não pode ser objeto de ação direta de inconstitucionalidade: leis, decretos, súmulas, tratados, normas pré-constitucionais e a jurisprudência do STF.">
-<link rel="stylesheet" href="assets/controle.css?v=4387d5c8e9">
+<link rel="stylesheet" href="assets/controle.css?v=824d391f09">
 <style>
   .funil{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:24px 0;border:1.5px solid var(--ink);background:var(--paper)}
   .funil>div{padding:16px 18px;font-size:17px;line-height:1.5}
@@ -172,7 +172,8 @@
         <text x="70" y="486" class="t-mid">PRÉ-CF</text>
       </svg>
       <figcaption><span>Fig. 1 · O funil do cabimento</span><span class="stage-count"></span></figcaption>
-    </figure>
+    <style>@media (max-width:860px) and (orientation:portrait){.stage figure svg.fig text{font-size:19px!important}}</style>
+</figure>
   </div>
   <div class="steps">
     <div class="step" data-panel="p-a1"><div class="card">
@@ -305,84 +306,36 @@
   <div class="stage" aria-hidden="true">
     <figure>
       <svg class="panel fig on" id="p-b1" viewBox="0 0 600 600">
-        <defs><marker id="ah-b1a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker><marker id="ah-b1b" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker></defs>
-        <text x="50" y="60" class="t-mid tc-muted">DECRETO REGULAMENTAR</text>
-        <rect x="180" y="90" width="240" height="70" style="fill:var(--const)"/>
-        <text x="204" y="132" class="t-light t-big" style="font-size:26.5px">CONSTITUIÇÃO</text>
-        <rect x="180" y="260" width="240" height="70" class="w-conc ink" stroke-width="2"/>
-        <text x="204" y="294" class="t-big tc-conc">LEI</text>
-        <text x="206" y="318" class="t-small tc-conc">ATO PRIMÁRIO</text>
-        <rect x="180" y="430" width="240" height="70" class="w-dif ink" stroke-width="2"/>
-        <text x="204" y="464" class="t-big tc-dif">DECRETO</text>
-        <text x="206" y="488" class="t-small tc-dif">ATO SECUNDÁRIO</text>
-        <path class="c-conc grow" d="M420 130C500 150 500 250 420 285" marker-end="url(#ah-b1b)"/>
-        <path class="c-dif grow" d="M180 300C100 340 100 420 180 458" marker-end="url(#ah-b1a)"/>
-        <text x="60" y="200" class="t-small">ART. 5º, II CF · PRINCÍPIO DA LEGALIDADE</text>
-        <text x="60" y="220" class="t-small">“ninguém será obrigado... senão em virtude de lei”</text>
-        <text x="60" y="388" class="t-small">A lei retira seu fundamento de validade</text>
-        <text x="60" y="408" class="t-small">diretamente na Constituição.</text>
+<style>.fig .t-small{font-size:19px}.sheet{stroke:var(--ink);stroke-width:1.8}.top{fill:var(--dif-wash);fill-opacity:.88}.mid{fill:var(--paper);fill-opacity:.76}.low{fill:var(--conc-wash);fill-opacity:.76}.guide{fill:none;stroke:var(--grid-major);stroke-width:1.5;stroke-dasharray:5 6}</style>
+        <text x="52" y="58" class="t-mid tc-muted">CAMADAS NORMATIVAS</text><path class="guide" d="M110 182V464M490 182V464"/>
+        <rect class="sheet low" x="92" y="340" width="416" height="118"/><text x="126" y="386" class="t-mid tc-conc"><tspan x="126">DECRETO</tspan><tspan x="126" dy="34" class="t-small">ATO SECUNDÁRIO</tspan></text>
+        <rect class="sheet mid" x="76" y="236" width="416" height="118"/><text x="110" y="282" class="t-mid"><tspan x="110">LEI</tspan><tspan x="110" dy="34" class="t-small">ATO PRIMÁRIO</tspan></text>
+        <rect class="sheet top" x="60" y="132" width="416" height="118"/><text x="94" y="178" class="t-mid tc-dif"><tspan x="94">CONSTITUIÇÃO</tspan><tspan x="94" dy="34" class="t-small">FUNDAMENTO DA LEI</tspan></text>
       </svg>
       <svg class="panel fig" id="p-b2" viewBox="0 0 600 600">
-        <defs><marker id="ah-b2a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--dif)"/></marker></defs>
-        <text x="50" y="60" class="t-mid tc-muted">DECRETO EXTRAPOLA A LEI</text>
-        <rect x="180" y="90" width="240" height="70" style="fill:var(--const)" opacity=".5"/>
-        <text x="204" y="132" class="t-light t-big" opacity=".5" style="font-size:26.5px">CONSTITUIÇÃO</text>
-        <rect x="180" y="260" width="240" height="70" class="w-conc ink" stroke-width="2"/>
-        <text x="204" y="302" class="t-big tc-conc">LEI</text>
-        <rect x="180" y="430" width="240" height="70" style="fill:var(--dif-wash)" stroke-width="3" style2="stroke:var(--conc)"/>
-        <rect x="180" y="430" width="240" height="70" fill="none" stroke-width="3" style="stroke:var(--conc)"/>
-        <text x="204" y="472" class="t-big tc-dif">DECRETO</text>
-        <path class="c-dif grow" d="M180 300C90 350 90 410 180 450" marker-end="url(#ah-b2a)"/>
-        <text x="60" y="200" class="t-mid tc-conc">Comparar decreto × lei</text>
-        <text x="60" y="224" class="t-mid">PRIMEIRO, COMPARE COM A LEI</text>
-        <rect x="60" y="512" width="480" height="60" style="fill:var(--conc)"/>
-        <text x="76" y="540" class="t-light t-mid">CRISE DE LEGALIDADE</text>
-        <text x="76" y="560" class="t-light t-mid">ILEGAL ANTES DE INCONSTITUCIONAL</text>
+<style>.fig .t-small{font-size:19px}.sheet{stroke:var(--ink);stroke-width:1.8}.top{fill:var(--dif-wash);fill-opacity:.55}.mid{fill:var(--paper);fill-opacity:.9}.low{fill:var(--conc-wash);fill-opacity:.92}.guide{fill:none;stroke:var(--grid-major);stroke-width:1.5;stroke-dasharray:5 6}</style>
+        <text x="52" y="58" class="t-mid tc-muted">DECRETO EXTRAPOLA A LEI</text><path class="guide" d="M110 174V464M490 174V464"/>
+        <rect class="sheet low" x="92" y="340" width="416" height="118"/><text x="126" y="386" class="t-mid tc-conc"><tspan x="126">DECRETO</tspan><tspan x="126" dy="34" class="t-small">ULTRAPASSA A LEI</tspan></text>
+        <rect class="sheet mid" x="76" y="236" width="416" height="118"/><text x="110" y="282" class="t-mid"><tspan x="110">LEI</tspan><tspan x="110" dy="34" class="t-small">LIMITE DE VALIDADE</tspan></text>
+        <rect class="sheet top" x="60" y="132" width="416" height="118"/><text x="94" y="178" class="t-mid tc-dif"><tspan x="94">CONSTITUIÇÃO</tspan><tspan x="94" dy="34" class="t-small">OFENSA INDIRETA</tspan></text>
+        <text x="74" y="514" class="t-mid tc-conc">CRISE DE LEGALIDADE</text>
       </svg>
       <svg class="panel fig" id="p-b3" viewBox="0 0 600 600">
-        <defs><marker id="ah-b3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" style="fill:var(--conc)"/></marker></defs>
-        <text x="50" y="60" class="t-mid tc-muted">DECRETO AUTÔNOMO</text>
-        <rect x="180" y="90" width="240" height="70" style="fill:var(--const)"/>
-        <text x="204" y="132" class="t-light t-big" style="font-size:26.5px">CONSTITUIÇÃO</text>
-        <g opacity=".55">
-          <rect x="180" y="260" width="240" height="70" class="f-paper ink" stroke-width="2"/>
-          <text x="216" y="302" class="t-big">LEI</text>
-          <path d="M190 268l220 54M410 268l-220 54" stroke-width="4" style="stroke:var(--conc)"/>
-        </g>
-        <rect x="180" y="430" width="240" height="70" class="w-conc ink" stroke-width="2.4"/>
-        <text x="196" y="472" class="t-mid tc-conc">DECRETO AUTÔNOMO</text>
-        <path class="c-conc grow" d="M170 430C60 340 60 200 170 130" marker-end="url(#ah-b3)"/>
-        <text x="60" y="360" class="t-mid tc-conc">ofensa</text><text x="60" y="384" class="t-mid tc-conc">direta à CF</text>
-        <text x="60" y="200" class="t-mid">INOVA NA ORDEM JURÍDICA</text>
-        <text x="60" y="224" class="t-mid">NÃO REGULAMENTA</text>
-        <rect x="60" y="512" width="480" height="60" style="fill:var(--conc)"/>
-        <text x="76" y="540" class="t-light t-mid">CABE ADI</text>
-        <text x="76" y="560" class="t-light t-mid">OFENSA DIRETA À CONSTITUIÇÃO</text>
+<style>.fig .t-small{font-size:19px}.sheet{stroke:var(--ink);stroke-width:1.8}.top{fill:var(--dif-wash);fill-opacity:.88}.mid{fill:var(--paper-2);fill-opacity:.35}.low{fill:var(--conc-wash);fill-opacity:.88}.cross{fill:none;stroke:var(--muted);stroke-width:2.4;stroke-dasharray:7 6}</style>
+        <text x="52" y="58" class="t-mid tc-muted">DECRETO AUTÔNOMO</text>
+        <rect class="sheet top" x="70" y="126" width="460" height="120"/><text x="104" y="174" class="t-mid tc-dif"><tspan x="104">CONSTITUIÇÃO</tspan><tspan x="104" dy="34" class="t-small">FUNDAMENTO DIRETO</tspan></text>
+        <rect class="sheet mid" x="86" y="258" width="428" height="112"/><text x="120" y="304" class="t-mid"><tspan x="120">LEI</tspan><tspan x="120" dy="34" class="t-small">CAMADA NÃO PERCORRIDA</tspan></text><path class="cross" d="M98 270L502 358M502 270L98 358"/>
+        <rect class="sheet low" x="102" y="382" width="396" height="112"/><text x="136" y="428" class="t-mid tc-conc"><tspan x="136">DECRETO AUTÔNOMO</tspan><tspan x="136" dy="34" class="t-small">OFENSA DIRETA · CABE ADI</tspan></text>
       </svg>
       <svg class="panel fig" id="p-b4" viewBox="0 0 600 600">
-        <text x="50" y="70" class="t-mid tc-muted">O CRITÉRIO, EM ESCALA</text>
-        <rect x="50" y="100" width="500" height="30" class="w-dif"/>
-        <rect x="50" y="100" width="500" height="30" class="w-conc" style="clip-path:inset(0 0 0 50%)"/>
-        <path d="M300 94V136" style="stroke:var(--ink)" stroke-width="2.4"/>
-        <text x="60" y="164" class="t-mid tc-dif" style="font-size:16px">MAIS REGULAMENTAR</text>
-        <text x="60" y="188" class="t-mid" style="font-size:16px">OFENSA INDIRETA</text>
-        <text x="60" y="212" class="t-mid" style="font-size:16px">PROBLEMA DE LEGALIDADE</text>
-        <text x="60" y="250" class="t-big tc-dif">→ ADPF</text>
-        <text x="330" y="164" class="t-mid tc-conc" style="font-size:18px">AUTÔNOMO / INOVADOR</text>
-        <text x="330" y="188" class="t-mid" style="font-size:16px">OFENSA DIRETA</text>
-        <text x="330" y="212" class="t-mid" style="font-size:16px">INCONSTITUCIONAL</text>
-        <text x="330" y="250" class="t-big tc-conc">→ ADI</text>
-        <text x="50" y="300" class="t-mid tc-muted">DIFICULDADE PRÁTICA</text>
-        <text x="50" y="330" class="t-mid">A partir de qual momento um decreto</text>
-        <text x="50" y="356" class="t-mid">se torna “inovador” o bastante</text>
-        <text x="50" y="382" class="t-mid">para ser atacado por ADI?</text>
-        <text x="50" y="440" class="t-mid tc-muted">NORMAS TAMBÉM VÊM DOS OUTROS PODERES</text>
-        <text x="50" y="466" class="t-small">regulamentar (Executivo) · regimental (Judiciário)</text>
-        <text x="50" y="486" class="t-small">legislativa (Legislativo)</text>
-        <text x="50" y="520" class="t-small">Também cabe controle de atos normativos dos demais Poderes.</text>
+<style>.fig .t-small{font-size:19px}.sheet{stroke:var(--ink);stroke-width:1.8}.left{fill:var(--dif-wash)}.right{fill:var(--conc-wash)}</style>
+        <text x="52" y="58" class="t-mid tc-muted">QUAL CAMADA FOI ROMPIDA?</text>
+        <rect class="sheet left" x="54" y="116" width="222" height="328"/><text x="76" y="164" class="t-mid tc-dif"><tspan x="76">INDIRETA</tspan><tspan x="76" dy="44" class="t-small">DECRETO → LEI → CF</tspan><tspan x="76" dy="50" class="t-mid">ADPF</tspan></text>
+        <rect class="sheet right" x="324" y="116" width="222" height="328"/><text x="346" y="164" class="t-mid tc-conc"><tspan x="346">DIRETA</tspan><tspan x="346" dy="44" class="t-small">DECRETO → CF</tspan><tspan x="346" dy="50" class="t-mid">ADI</tspan></text>
       </svg>
       <figcaption><span>Fig. 2 · Constituição, Lei, Decreto</span><span class="stage-count"></span></figcaption>
-    </figure>
+    <style>@media (max-width:860px) and (orientation:portrait){.stage figure svg.fig text{font-size:19px!important}}</style>
+</figure>
   </div>
   <div class="steps">
     <div class="step" data-panel="p-b1"><div class="card">
@@ -465,7 +418,8 @@
       <div class="excecao"><span class="label">4 · Promulgação e publicação</span><p>A promulgação por decreto presidencial e a publicação do texto em português no Diário Oficial completam, em regra, sua incorporação e executoriedade interna.</p></div>
     </div>
     <figcaption><span>Fig. 3 · As quatro fases de incorporação</span><span class="stage-count"></span></figcaption>
-  </figure>
+  <style>@media (max-width:860px) and (orientation:portrait){.stage figure svg.fig text{font-size:19px!important}}</style>
+</figure>
   <p>A aprovação congressual ou o depósito internacional, isoladamente, não bastam para conferir executoriedade interna; é necessário concluir o procedimento de incorporação.</p>
 
 </div>
@@ -506,7 +460,8 @@
       <text x="92" y="526" class="t-mid tc-muted">A EMENDA PODE RETIRAR, NÃO SALVAR</text>
     </svg>
     <figcaption><span>Fig. 4 · Marco temporal e quatro cenários</span><span class="stage-count"></span></figcaption>
-  </figure></div>
+  <style>@media (max-width:860px) and (orientation:portrait){.stage figure svg.fig text{font-size:19px!important}}</style>
+</figure></div>
   <div class="steps">
     <div class="step" data-panel="p-tempo1"><div class="card"><span class="label dif">Não recepção</span><h3>Norma anterior e Constituição nova</h3><p>Para norma anterior à Constituição de 1988, não cabe ADI fundada em inconstitucionalidade superveniente: examina-se sua <strong>recepção</strong>. A norma incompatível não é recebida pela nova ordem constitucional.</p><p>O controle de norma pré-constitucional pode ocorrer por ADPF, observados seus requisitos de cabimento.</p></div></div>
     <div class="step" data-panel="p-tempo2"><div class="card"><span class="label">Quatro situações</span><h3>A emenda pode retirar a lei, mas não salvar o vício original</h3><p>O quadro distingue: (1) lei posterior incompatível desde a origem: inconstitucionalidade; (2) lei anterior incompatível com nova Constituição: não recepção; (3) lei antes válida que passa a conflitar com emenda: perda de validade/não recepção ou revogação; (4) lei que já nasceu inconstitucional não é convalidada por emenda posterior que passe a admitir seu conteúdo.</p><p>A hipótese 3 é ilustrada pela ADPF 836/RR e pelo RE 1.167.478/RJ (Tema 1.053), em contexto relacionado à EC 66/2010. A hipótese 4 aparece nas ADIs 2.158/PR e 2.189/PR, sobre contribuição previdenciária de inativos no Paraná. A lei posterior incompatível desde a origem é sujeita ao controle de constitucionalidade.</p><p>A mudança constitucional pode retirar do sistema uma lei originalmente válida, mas não convalidar uma lei que já nasceu inválida.</p></div></div>
