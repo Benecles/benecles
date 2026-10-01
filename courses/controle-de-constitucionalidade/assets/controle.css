@@ -427,3 +427,6 @@ body{transition:background-color .35s ease,color .35s ease}
   .stage figure svg.fig:not(.figkit) text{font-size:18px!important}
   .stage figure svg.hero-fork text{font-size:36px!important}
 }
+
+/* Row labels wrap at word boundaries: with overflow-wrap:anywhere the auto-width column collapsed to one letter on phones */
+.compare tbody th,.compare thead th:first-child{overflow-wrap:normal;hyphens:manual}
