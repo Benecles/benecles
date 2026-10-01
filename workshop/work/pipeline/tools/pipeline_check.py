@@ -256,7 +256,8 @@ def chapter_catalog(args, errors, validate_text):
                 continue
             actual_words = len(body.split())
             stated_words = entry.get("word_count")
-            if not isinstance(stated_words, int) or actual_words < 1 or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
+            documented_empty_source = actual_words == 0 and bool(entry.get("warning"))
+            if not isinstance(stated_words, int) or (actual_words < 1 and not documented_empty_source) or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
                 errors.append(f"{source_id}/{chapter_id}: implausible word count ({stated_words} stated, {actual_words} found)")
         for parent, spans in parent_ranges.items():
             expected = set(range(min(start for start, _ in spans), max(end for _, end in spans) + 1))
@@ -268,52 +269,52 @@ def chapter_catalog(args, errors, validate_text):
 def check_s2(args, errors):
     shelf = read_csv(args.shelf, errors)
     roles_by_source = {}
+    indexed_shelf_ids = set()
     for row in shelf:
         source_id = row.get("source_id", "")
         if source_id:
-            roles_by_source[source_id] = shelf_role(row)
-        if row.get("text_status") in {"text layer", "OCR done"}:
-            if source_id and not (args.chapters / source_id / "index.json").is_file():
-                errors.append(f"{source_id}: available shelf source has no chapter index")
+            indexed_shelf_ids.add(source_id)
+            roles_by_source[source_id] = row.get("source_role") or shelf_role(row)
+            status = row.get("text_status", row.get("text status", ""))
+            is_missing = status == "missing" or status.startswith("MISSING") or status.startswith("NOT FOUND")
+            if not is_missing and not (args.chapters / source_id / "index.json").is_file():
+                errors.append(f"{source_id}: available S2 shelf source has no chapter index")
     catalog = chapter_catalog(args, errors, True)
+    indexed_ids = {source_id for source_id, _chapter_id in catalog}
+    for source_id in sorted(indexed_ids - indexed_shelf_ids):
+        errors.append(f"{source_id}: chapter index has no source_id row in shelf")
     entries_by_path = {}
     for (source_id, chapter_id), entry in catalog.items():
         rel_path = Path(entry.get("path", "")).as_posix()
         entries_by_path[(source_id, rel_path)] = (chapter_id, entry)
 
-    # The 15k cap applies only to course-relevant section-split units in a
-    # book_base source. Whole chapters outside the course remain whole.
+    # Core-book files have a hard cap, including whole chapters. Large chapter
+    # parents may be section-split, but every child file still has to fit.
     for (source_id, rel_path), (chapter_id, entry) in entries_by_path.items():
-        if roles_by_source.get(source_id) != "book_base" or not entry.get("parent"):
+        if roles_by_source.get(source_id) != "book_base" and not source_id.startswith("BASE-"):
             continue
         text_path = args.chapters / source_id / rel_path
         try:
-            actual_words = len(text_path.read_text().split())
+            actual_words = len(MARKER.sub("", text_path.read_text()).split())
         except OSError as exc:
             errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
             continue
         if actual_words > CORE_CHAPTER_WORD_LIMIT:
             errors.append(
-                f"{source_id}/{rel_path}: section-split core chapter has {actual_words:,} words "
-                f"(limit {CORE_CHAPTER_WORD_LIMIT:,}; chapter {chapter_id}, parent {entry['parent']})"
+                f"{source_id}/{rel_path}: core-book file has {actual_words:,} words "
+                f"(limit {CORE_CHAPTER_WORD_LIMIT:,}; chapter {chapter_id})"
             )
 
     # The 100k cap applies to every chapter text file, including files not yet
-    # listed in index.json. Exemptions are the named primary source texts and
-    # four explicitly allowed non-core whole chapters.
+    # listed in index.json. Statutes are article-level atoms in this pipeline.
     for text_path in sorted(args.chapters.rglob("*.txt")):
         try:
             source_id = text_path.relative_to(args.chapters).parts[0]
         except (ValueError, IndexError):
             continue
-        if source_id in SIZE_EXEMPT_SOURCE_IDS:
-            continue
         rel_path = text_path.relative_to(args.chapters / source_id).as_posix()
-        indexed = entries_by_path.get((source_id, rel_path))
-        if indexed and (source_id, indexed[0]) in SIZE_EXEMPT_CHAPTERS:
-            continue
         try:
-            actual_words = len(text_path.read_text().split())
+            actual_words = len(MARKER.sub("", text_path.read_text()).split())
         except OSError as exc:
             errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
             continue

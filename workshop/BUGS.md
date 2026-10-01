@@ -22,7 +22,10 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 | A figure fades in a second late, or stays invisible | Its panel lacks class `on`; it waits for the scroll observer | Give the only panel of a one-step scrolly `class="… on"` | `anatomy_check` LATE-PANEL | Controle 01 Figs. 2–3, 01/10 |
 | Corners of a figure empty even after cropping (T or L shape) | Composition, not framing: the bounding box is tight but the arms are empty | Put legend / verdict / second object in the empty arms, or recompose | none yet (4×4 grid rule, Figure Library test 4) | chairman, 01/10 |
 | Labels collide after shrinking a drawing to make type bigger | Ruler narrowed 520 → 420 units: stops 84 units apart, "autorização" × "proibição" | Keep widths the kit gate passed; get size from cropping or simplifying, then re-probe | breakscan CLASH / CROSS | Controle 01, 01/10 |
+<<<<<<< HEAD
 | Breakscan says clean while a figure is visibly broken | It measured fallback fonts and local SVG boxes, missing transformed text overlap, viewBox clipping, hidden panel steps, and phone overflow | Wait for `document.fonts.ready`; compare rendered screen boxes at both widths in every `data-panel` step; report CLASH, CLIP, and OVERFLOW | breakscan fails on #65, #58, and Latam 08/09; live Controle 01 is the positive case | BRK-1, 04/10 |
+=======
+>>>>>>> 188fce4 (Prepare TGC chapter and course source atoms)
 | Two-line labels overlap; a limit line cuts a title band | Leading under 14 px (mono) / 18 px (serif); line drawn through text band | Kit leading minimums; lines skip text bands | breakscan / specimen probe 0 CROSS 0 CLASH | FIG-1, 01/10 |
 | SVG files grew +83 KB with no visible change | SVGs re-serialized through the DOM (`<path/>` → `<path></path>`) | Patch attributes in place; text outside SVGs byte-identical | `work/checks/gate_prs.sh` (svgcheck) | LBL-1, 01/10 |
 | A stroke animation stops short of the end | Path longer than its `stroke-dasharray` | Set dasharray ≥ path length | breakscan SHORT | 30/09 |
@@ -42,6 +45,7 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 | Symptom | Cause | Fix | Catches it | Seen |
 |---|---|---|---|---|
 | `check_all` FAILs on the front right after your own edit | It compares regenerated fronts against the git INDEX | `git add` your edits, then run it | n/a | 01/10 |
+<<<<<<< HEAD
 | `check_all` treats `professors.json` as a course front and reports a missing `professors.html` shell | Front enumeration treated every JSON file under `tools/fronts/data/` as a course slug | Select course-front records by their object schema (`course` key), allowing list datasets to coexist | `check_all` course-front enumeration | BIO-1, 03/10 |
 | A push in a loop silently went nowhere | zsh parses `"$k:codex"` as `$k` + `:c` modifier | Brace it: `"${k}:codex"` | none | 30/09 (5 pushes) |
 | `pkill -f <pattern>` killed your own shell/runner | Pattern matches the calling command line | Kill by pid | none | 30/09 |
@@ -58,3 +62,13 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 |---|---|---|---|---|
 | LatAm S3 rejects its documented no-textbook course or lessons with unavailable slides | The generic validator required a `basica_essencial` book and an assigned slide deck for every lesson, and compared shelf roles as exact strings despite S1 notes appended after semicolons | Detect absence of `book_base` sources, require explicit `no_book_covers` per lesson, allow mapped primary cases without a book threshold, normalize shelf role prefixes, and warn when slide decks are missing/unmapped | `pipeline_check.py s3`: empty baseline fails; the final LatAm triage is the passing regression check | Latam S3, 04/10 |
 | S0 passes a nine-page Latam map that leaves the live review outside the pipeline | S0 enumerated only `aula-*.html`; `revisao-atividade.html` was treated as auxiliary | Include a live `revisao-atividade.html` in required S0 pages and map its syllabus/class links, function and prerequisites in `lessons` | `pipeline_check.py s0`: nine-page map fails with the missing review; ten-page map passes | Latam S0, 04/10 |
+=======
+| A push in a loop silently went nowhere | zsh parses `"$k:codex"` as `$k` + `:c` modifier | Brace it: `"${k}:codex"` | none | 30/09 (5 pushes) |
+| `pkill -f <pattern>` killed your own shell/runner | Pattern matches the calling command line | Kill by pid | none | 30/09 |
+| Background reads hang / `Errno 11 Resource deadlock avoided` | iCloud evicted files (disk full) | Free space, `brctl download`; work now lives in `~/Developer` | n/a | 30/09 |
+| A Luna worker replied "done" but no file exists | Workers can claim done without acting | Every brief has a script-checked done-condition | the brief's check script | 29/09 |
+| A check passes on something visibly worse | The check never tested that failure | Run every new check against the known-bad state first | n/a | D2, 30/09 |
+| A tool-branch catalogue landed in the site repo | Workshop artifact committed to `ordenacoes-filipinas` | Workshop artifacts go in the workshop repo; site gets reader files + `tools/` | review | VIS-2, 01/10 |
+| `pipeline_check.py s2` ignores or misattributes S1 sources because `shelf.csv` has no stable `source_id` column | S2 assumed a six-column schema while TGC S1 used a five-column descriptive inventory; blank IDs bypassed required-index coverage and source roles could be overwritten by duplicate rows | Add canonical `source_id` and `source_role` metadata to S2 rows, require available S2 sources to have indexes, and preserve S1 descriptions; prefer explicit S2 roles | `pipeline_check.py s2` known-bad missing-index fixture | TGC PIPE-C S2, 01/10 |
+| S2 accepts a page-only OCR document with a positive word count although no source text appears after marker removal | The worker counted page-marker tokens as words for three near-empty exercise PDFs | Set source `word_count` to 0, add a warning explaining local text/OCR yielded no content, and let the checker accept zero only with a documented warning | `pipeline_check.py s2` word-count comparison | TGC PIPE-C S2, 01/10 |
+>>>>>>> 188fce4 (Prepare TGC chapter and course source atoms)
