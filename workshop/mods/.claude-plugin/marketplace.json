@@ -1,7 +1,0 @@
-{
-  "name": "ordenacoes",
-  "owner": { "name": "Benecles" },
-  "plugins": [
-    { "name": "chair", "source": "./chair", "description": "Context weather with a hand-over warning, and a merge guard that needs a passed figure gate." }
-  ]
-}

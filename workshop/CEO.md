@@ -64,7 +64,6 @@ If `~/Developer` is missing, restore first:
 - If the ADC pilot (#5) misses the figure bar: evaluate the dev-day plugins (ask him for the link).
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
-- **Gate site PRs with `work/checks/gate_prs.sh <N>...`** (svgcheck: text outside SVGs byte-identical, labels unchanged, no >3 KB re-serialization bloat). It stamps `~/.cache/ordenacoes-gate/pr-N`; the **`chair` mod** (`mods/chair`, installed as `chair@ordenacoes`, Claude Code ≥ 2.1.287) refuses `gh pr merge N` without that stamp and refuses loop merges. It also shows context weather above the prompt: at ☇ 75% hand over the chair. Known gap: the stamp is not compared against the PR head SHA yet.
 - Codex workers: `fork_turns:"none"` always; parallelism stays at 16.
 - A check must FAIL on the known-bad state before its PASS means anything.
 - Refresh from live right before editing; ship via git merge, not copied snapshots.

@@ -1,9 +1,0 @@
-{
-  "name": "chair",
-  "version": "0.1.0",
-  "description": "CEO chair aids for the Ordena\u00e7\u00f5es Filipinas project: context weather with a hand-over warning, and a merge guard that needs a passed figure gate.",
-  "author": {
-    "name": "Claude (CEO) for Benecles"
-  },
-  "types": "./types/index.d.ts"
-}
