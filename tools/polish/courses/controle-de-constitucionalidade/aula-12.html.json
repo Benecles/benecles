@@ -66,5 +66,9 @@
 {
 "before": "</text>\n        <text x=\"150\" y=\"356\" class=\"t-small tc-dif\">MONOCRÁTICAS</text>\n        <text x=\"360\" y=\"226\" class=\"t-small tc-conc\">COLEGIADAS</text>\n        <text x=\"50\" y=\"470\" class=\"t-serif\">93.559 ",
 "after": "</text>\n        <text x=\"150\" y=\"356\" class=\"t-small tc-dif\">MONOCRÁTICAS</text>\n        <text x=\"455\" y=\"226\" class=\"t-small tc-conc\">COLEGIADAS</text>\n        <text x=\"50\" y=\"470\" class=\"t-serif\">93.559 "
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 12 · Crítica à cumulação dos sistemas de controle: por que a soma do difuso com o concentrado sobrecarrega o STF, a abstrativização do controle difuso e o art. 52, X.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 12 · Crítica à cumulação dos sistemas de controle: por que a soma do difuso com o concentrado sobrecarrega o STF, a abstrativização do controle difuso e o art. 52, X.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
 }
 ]

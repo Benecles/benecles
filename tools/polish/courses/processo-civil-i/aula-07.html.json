@@ -1,9 +1,5 @@
 [
 {
-"before": " I-a</title>\n<meta name=\"description\" content=\"Como se conta o prazo em dias úteis, o marco inicial de cada comunicação, quando o prazo dobra ou suspende e o que exige a duração razoável do processo.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=715b8de10b\">\n<style>.longform{max-width:1180px;margin:28px auto ",
-"after": " I-a</title>\n<meta name=\"description\" content=\"Como se conta o prazo em dias úteis, o marco inicial de cada comunicação, quando o prazo dobra ou suspende e o que exige a duração razoável do processo.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=c65e19c024\">\n<style>.longform{max-width:1180px;margin:28px auto "
-},
-{
 "before": "\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><svg class=\"panel fig on\" id=\"p-cal0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Prazo dos embargos\"><defs><marker id=\"p-cal0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-cal0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/>",
 "after": "\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><svg class=\"panel fig on\" id=\"p-cal0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Prazo dos embargos\"><style>@media (max-width:860px) and (orientation:portrait){html body .stage figure svg.fig text{font-size:18.6px!important}}</style><defs><marker id=\"p-cal0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-cal0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/>"
 },
@@ -38,5 +34,9 @@
 {
 "before": "</text><rect x=\"492\" y=\"456\" width=\"73\" height=\"68\" class=\"ink\" style=\"fill:var(--grid-major);stroke:var(--ink);stroke-width:0.6\"/><text x=\"500\" y=\"476\" class=\"t-small\" style=\"font-size:14px;fill:var(--ink-2)\">12</text><text x=\"30\" y=\"552\" class=\"t-small\" style=\"font-size:13px;fill:var(--ink)\">Quinze dias úteis a partir de 16/9: vence em 06/10.</text><text x=\"30\" y=\"574\" class=\"t-small\" style=\"fill:var(--ink-2)\">Sem feriados no período (suposição do enunciado).</text></svg><figcaption><span>Fig. ",
 "after": "</text><rect x=\"492\" y=\"456\" width=\"73\" height=\"68\" class=\"ink\" style=\"fill:var(--grid-major);stroke:var(--ink);stroke-width:0.6\"/><text x=\"500\" y=\"476\" class=\"t-small\" style=\"font-size:14px;fill:var(--ink-2)\">12</text><text x=\"30\" y=\"552\" class=\"t-small\" style=\"font-size:13px;fill:var(--ink)\">15 dias úteis desde 16/9: vence 06/10.</text><text x=\"30\" y=\"574\" class=\"t-small\" style=\"fill:var(--ink-2)\">Sem feriados (hipótese da questão).</text></svg><figcaption><span>Fig. "
+},
+{
+"before": " I-a</title>\n<meta name=\"description\" content=\"Como se conta o prazo em dias úteis, o marco inicial de cada comunicação, quando o prazo dobra ou suspende e o que exige a duração razoável do processo.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=800f3e316a\">\n<style>.longform{max-width:1180px;margin:28px auto ",
+"after": " I-a</title>\n<meta name=\"description\" content=\"Como se conta o prazo em dias úteis, o marco inicial de cada comunicação, quando o prazo dobra ou suspende e o que exige a duração razoável do processo.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=85246f914b\">\n<style>.longform{max-width:1180px;margin:28px auto "
 }
 ]

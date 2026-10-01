@@ -16,10 +16,6 @@
 "after": "do contratante era indispensável à prestação.</p></section>"
 },
 {
-"before": " Contratos</title>\n<meta name=\"description\" content=\"Extinção dos contratos III: mora e inadimplemento definitivo, interesse útil, cláusula resolutiva expressa e tácita (art. 474), a escolha do art. 475 e os efeitos da resolução.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=05abf91a3b\">\n</head>\n<body>\n<nav class=\"topbar\">",
-"after": " Contratos</title>\n<meta name=\"description\" content=\"Extinção dos contratos III: mora e inadimplemento definitivo, interesse útil, cláusula resolutiva expressa e tácita (art. 474), a escolha do art. 475 e os efeitos da resolução.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=f5998e6b38\">\n</head>\n<body>\n<nav class=\"topbar\">"
-},
-{
 "before": "</section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><svg class=\"panel fig on\" id=\"p-u0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Mora\"><defs><marker id=\"p-u0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-u0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\">",
 "after": "</section>\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><style>@media (max-width:860px) and (orientation:portrait){.stage figure{width:calc(100vw - 24px)!important;max-width:none!important}.stage figure svg.fig text{font-size:19px!important}.stage figure svg#p-u0 text,.stage figure svg#p-ef0 text{font-size:20px!important}}</style><svg class=\"panel fig on\" id=\"p-u0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Mora\"><defs><marker id=\"p-u0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-u0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\">"
 },
@@ -58,5 +54,9 @@
 {
 "before": " TEMPO</text><text x=\"54\" y=\"382\" class=\"t-small\">o que foi usado não volta fisicamente;</text><text x=\"54\" y=\"398\" class=\"t-small\">acerta-se o que resta e o que é restituível</text></g><text x=\"300\" y=\"500\" class=\"t-hand\" text-anchor=\"middle\">o nome",
 "after": " TEMPO</text><text x=\"54\" y=\"382\" class=\"t-small\">o uso não volta;</text><text x=\"54\" y=\"410\" class=\"t-small\">devolve-se o que resta</text></g><text x=\"300\" y=\"500\" class=\"t-hand\" text-anchor=\"middle\">o nome"
+},
+{
+"before": " Contratos</title>\n<meta name=\"description\" content=\"Extinção dos contratos III: mora e inadimplemento definitivo, interesse útil, cláusula resolutiva expressa e tácita (art. 474), a escolha do art. 475 e os efeitos da resolução.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=2b536e36ef\">\n</head>\n<body>\n<nav class=\"topbar\">",
+"after": " Contratos</title>\n<meta name=\"description\" content=\"Extinção dos contratos III: mora e inadimplemento definitivo, interesse útil, cláusula resolutiva expressa e tácita (art. 474), a escolha do art. 475 e os efeitos da resolução.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=227aec21a6\">\n</head>\n<body>\n<nav class=\"topbar\">"
 }
 ]
