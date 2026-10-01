@@ -25,6 +25,8 @@ from pathlib import Path
 WORKSHOP = Path(__file__).resolve().parents[3]
 SITE = WORKSHOP.parent / "ordenacoes-filipinas"
 MARKER = re.compile(r"^===== p\. (.+?) \(PDF (\d+)\) =====$", re.M)
+SECTION_MARKER = re.compile(r"^===== § ([^=]+?) =====$", re.M)
+ARTICLE_MARKER = re.compile(r"^===== Art\. ([^=]+?) =====$", re.M)
 ROLES = {"primary", "supporting", "background", "unused", "no_book_covers"}
 
 
@@ -124,7 +126,40 @@ def chapter_catalog(args, errors, validate_text):
         entries = read_json(index_path, errors).get("chapters", [])
         if not entries:
             errors.append(f"{source_id}: empty chapter index")
+        # Section-split chapters can share a PDF page at a heading boundary.
+        # Treat all children with one `parent` as a single page-span unit while
+        # still validating every child's own marker sequence below.
+        parent_groups = {}
+        for entry in entries:
+            if entry.get("locator", "page") != "page" or not entry.get("parent"):
+                continue
+            parent_groups.setdefault(entry["parent"], []).append(entry)
+        page_units = []
+        seen_parents = set()
+        for entry in entries:
+            if entry.get("locator", "page") != "page":
+                continue
+            parent = entry.get("parent")
+            if parent:
+                if parent in seen_parents:
+                    continue
+                seen_parents.add(parent)
+                siblings = parent_groups[parent]
+                spans = [(e.get("pdf_start"), e.get("pdf_end")) for e in siblings]
+                spans = [(start, end) for start, end in spans if isinstance(start, int) and isinstance(end, int) and end >= start]
+                if spans:
+                    page_units.append((min(start for start, _ in spans), max(end for _, end in spans), parent))
+            else:
+                start, end = entry.get("pdf_start"), entry.get("pdf_end")
+                if isinstance(start, int) and isinstance(end, int) and end >= start:
+                    page_units.append((start, end, entry.get("id")))
         prior_end = None
+        for start, end, chapter_id in page_units:
+            if prior_end is not None and start != prior_end + 1:
+                errors.append(f"{source_id}/{chapter_id}: gap or overlap after PDF {prior_end}")
+            prior_end = end
+        parent_markers = {}
+        parent_ranges = {}
         for entry in entries:
             chapter_id = entry.get("id")
             key = (source_id, chapter_id)
@@ -134,13 +169,6 @@ def chapter_catalog(args, errors, validate_text):
             catalog[key] = entry
             if not validate_text:
                 continue
-            start, end = entry.get("pdf_start"), entry.get("pdf_end")
-            if not isinstance(start, int) or not isinstance(end, int) or end < start:
-                errors.append(f"{source_id}/{chapter_id}: invalid PDF span")
-                continue
-            if prior_end is not None and start != prior_end + 1:
-                errors.append(f"{source_id}/{chapter_id}: gap or overlap after PDF {prior_end}")
-            prior_end = end
             rel_path = entry.get("path", "")
             text_path = index_path.parent / rel_path
             try:
@@ -148,18 +176,52 @@ def chapter_catalog(args, errors, validate_text):
             except OSError as exc:
                 errors.append(f"{source_id}/{chapter_id}: cannot read text: {exc}")
                 continue
-            markers = [int(m.group(2)) for m in MARKER.finditer(content)]
-            if markers != list(range(start, end + 1)):
-                errors.append(f"{source_id}/{chapter_id}: page markers do not cover its PDF span continuously")
-            body = MARKER.sub("", content)
+            locator = entry.get("locator", "page")
+            if locator == "page":
+                start, end = entry.get("pdf_start"), entry.get("pdf_end")
+                if not isinstance(start, int) or not isinstance(end, int) or end < start:
+                    errors.append(f"{source_id}/{chapter_id}: invalid PDF span")
+                    continue
+                markers = [int(m.group(2)) for m in MARKER.finditer(content)]
+                if markers != list(range(start, end + 1)):
+                    errors.append(f"{source_id}/{chapter_id}: page markers do not cover its PDF span continuously")
+                parent = entry.get("parent")
+                if parent:
+                    parent_markers.setdefault(parent, set()).update(markers)
+                    parent_ranges.setdefault(parent, []).append((start, end))
+                body = MARKER.sub("", content)
+            elif locator == "section":
+                sections = [m.group(1).strip() for m in SECTION_MARKER.finditer(content)]
+                if sections != [str(chapter_id)]:
+                    errors.append(f"{source_id}/{chapter_id}: section marker does not match its index id")
+                body = SECTION_MARKER.sub("", content)
+            elif locator == "article":
+                if not ARTICLE_MARKER.search(content):
+                    errors.append(f"{source_id}/{chapter_id}: no article markers found")
+                body = ARTICLE_MARKER.sub("", content)
+            elif locator == "document":
+                body = content
+            else:
+                errors.append(f"{source_id}/{chapter_id}: unsupported locator {locator}")
+                continue
             actual_words = len(body.split())
             stated_words = entry.get("word_count")
-            if not isinstance(stated_words, int) or actual_words < 50 or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
+            if not isinstance(stated_words, int) or actual_words < 1 or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
                 errors.append(f"{source_id}/{chapter_id}: implausible word count ({stated_words} stated, {actual_words} found)")
+        for parent, spans in parent_ranges.items():
+            expected = set(range(min(start for start, _ in spans), max(end for _, end in spans) + 1))
+            if parent_markers.get(parent, set()) != expected:
+                errors.append(f"{source_id}/{parent}: child page markers do not cover the parent span continuously")
     return catalog
 
 
 def check_s2(args, errors):
+    shelf = read_csv(args.shelf, errors)
+    for row in shelf:
+        if row.get("text_status") in {"text layer", "OCR done"}:
+            source_id = row.get("source_id", "")
+            if source_id and not (args.chapters / source_id / "index.json").is_file():
+                errors.append(f"{source_id}: available shelf source has no chapter index")
     catalog = chapter_catalog(args, errors, True)
     return f"{len(catalog)} indexed chapters"
 
