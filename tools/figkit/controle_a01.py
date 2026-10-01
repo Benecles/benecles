@@ -15,7 +15,7 @@ def hero():
     o += r.strip(164, LEI_A[1], LEI_A[0], d=.4)
     o += r.strip(224, LEI_B[1], LEI_B[0], d=.9)
     o += r.limit_mark(250, 'limite', 'independe de autorização', d=1.3)
-    return svg('0 0 1080 258', o, cls='hero-fork figkit')
+    return svg('0 0 1080 266', o, cls='hero-fork figkit')
 
 
 def fig1():

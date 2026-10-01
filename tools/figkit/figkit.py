@@ -90,17 +90,17 @@ class Ruler:
             if self.limit is not None and i == self.limit and 0 < i < self.n:  # never under the limit line
                 a, ax = 'end', px - 7
             ls = s if isinstance(s, tuple) else (s,)
-            y0 = y + 40 if len(ls) == 2 else y + 46
+            y0 = y + 38 if len(ls) == 2 else y + 46
             beyond = self.limit is not None and i > self.limit
             for k, part in enumerate(ls):
-                o += t(ax, y0 + 12 * k, part, size=11, anchor=a, fill='var(--conc)' if beyond else 'var(--ink)',
+                o += t(ax, y0 + 14 * k, part, size=11, anchor=a, fill='var(--conc)' if beyond else 'var(--ink)',
                        weight=600 if beyond else 500)
         return f'<g>{o}</g>'
 
     def limit_mark(self, reach_to, label='', sub='', d=None):
         """The rule's own limit: a red line through the scale and down past the acts."""
         lx = self.pos(self.limit)
-        o = line(lx, self.y - 16, lx, reach_to, tone='conc', w=2.2, cls='grow' if d is not None else '', d=d)
+        o = line(lx, self.y - 16, lx, self.y, tone='conc', w=2.2) + line(lx, self.y + 20, lx, reach_to, tone='conc', w=2.2, cls='grow' if d is not None else '', d=d)
         o += f'<path d="M{lx - 6:g} {self.y - 16}H{lx + 6:g}" style="stroke:var(--conc);stroke-width:2.2"/>'
         if label:
             o += t(lx + 9, self.y - 20, label, size=10.5, fill='var(--conc)', weight=700, caps=True)
@@ -233,7 +233,7 @@ class Document:
     exactly the clauses they read.
     """
 
-    def __init__(self, uid, x, y, w, lines, lead=16, indent=78, foot=0):
+    def __init__(self, uid, x, y, w, lines, lead=18, indent=78, foot=0):
         self.uid, self.x, self.y, self.w, self.lead, self.indent = uid, x, y, w, lead, indent
         self.box, self.parts = {}, []
         cy, pad = y + 30, 16
@@ -319,7 +319,7 @@ def statute(x, y, w, art, parts, source='', tone='conc'):
         cur.append((wd, m)); cw += ln
     if cur:
         lines.append(cur)
-    h = 34 + 16 * len(lines)
+    h = 34 + 18 * len(lines)
     o = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.2"/>'
     o += f'<rect x="{x}" y="{y}" width="4" height="{h}" style="fill:{TONE[tone]}"/>'
     o += t(x + 14, y + 17, art, size=10.5, caps=True, weight=700)
@@ -340,7 +340,7 @@ def statute(x, y, w, art, parts, source='', tone='conc'):
         if any(m for _, m in ln):
             o += f'<path d="M{x + 8} {cy - 10}V{cy + 3}" style="stroke:{TONE[tone]};stroke-width:2"/>'
         o += f'<text x="{x + 14}" y="{cy}" xml:space="preserve" style="{SERIF};font-size:12px;fill:var(--ink)">{spans}</text>'
-        cy += 16
+        cy += 18
     return o, h
 
 
@@ -449,6 +449,60 @@ class Path:
             o += t(self.tx - 18, y - 3 + 15 * i - 7 * (len(q) - 1), ln, size=11.5, anchor='end', weight=700 if active else 500, fill=ink)
         c, h = self.card(self.cx, y - 18, self.cw, head, lines, tone, active)
         self.o.append(o + c)
+
+    def svg(self):
+        return ''.join(self.o)
+
+
+class Timeline:
+    """Real dates on a real axis. Events are stems above the axis (tone = what kind of event);
+    spans are bands; links are arcs below the axis that tie one event to an earlier one."""
+
+    def __init__(self, uid, x0, x1, y, a, b, step=10):
+        self.uid, self.x0, self.x1, self.y, self.a, self.b = uid, x0, x1, y, a, b
+        self.o = []
+        o = line(x0, y, x1, y, w=1.6)
+        for yr in range((a // step + 1) * step if a % step else a, b + 1, step):
+            x = self.x(yr)
+            o += line(x, y, x, y + 6, w=1)
+            o += t(x, y + 20, str(yr), size=10, anchor='middle', fill='var(--muted)')
+        self.o.append(o)
+
+    def x(self, yr):
+        return self.x0 + (self.x1 - self.x0) * (yr - self.a) / (self.b - self.a)
+
+    def event(self, yr, h, label, tone='conc', sub='', anchor='middle', mark='tri'):
+        x = self.x(yr)
+        top = self.y - h
+        o = f'<path d="M{x:g} {self.y}V{top + 6}" style="stroke:{TONE[tone]};stroke-width:2"/>'
+        if mark == 'tri':
+            o += f'<path d="M{x - 6:g} {top + 8}h12l-6 -11z" style="fill:{TONE[tone]}"/>'
+        else:
+            o += f'<circle cx="{x:g}" cy="{top + 2}" r="5" style="fill:{TONE[tone]}"/>'
+        o += t(x, top - 9, label, size=11, weight=700, anchor=anchor, fill=TONE[tone])
+        if sub:
+            o += t(x, top - 23, sub, size=10, anchor=anchor, fill='var(--ink-2)')
+        self.o.append(o)
+
+    def span(self, y0, a, b, label, tone='mix', open_end=False):
+        xa, xb = self.x(a), self.x(b)
+        o = f'<rect x="{xa:g}" y="{y0}" width="{xb - xa:g}" height="16" style="fill:{WASH[tone]};stroke:{TONE[tone]};stroke-width:1.2"/>'
+        if open_end:
+            o += f'<path d="M{xb:g} {y0 + 8}l8 -6v12z" style="fill:{TONE[tone]}"/>'
+        o += t(xa + 8, y0 + 12, label, size=10.5, weight=700, fill=TONE[tone])
+        self.o.append(o)
+
+    def link(self, from_yr, to_yr, depth, label, tone='mix', sub=''):
+        xa, xb = self.x(from_yr), self.x(to_yr)
+        y = self.y + 30
+        o = f'<path d="M{xa:g} {y}C{xa:g} {y + depth} {xb:g} {y + depth} {xb:g} {y + 6}" style="fill:none;stroke:{TONE[tone]};stroke-width:1.8;stroke-dasharray:5 3"/>'
+        o += f'<path d="M{xb:g} {y}l-5 9h10z" style="fill:{TONE[tone]}"/>'
+        o += f'<circle cx="{xa:g}" cy="{y}" r="5" style="fill:{TONE[tone]}"/>'
+        lx = (xa + xb) / 2
+        o += t(lx, y + depth * .75 + 22, label, size=10.5, weight=700, anchor='middle', fill=TONE[tone])
+        if sub:
+            o += t(lx, y + depth * .75 + 36, sub, size=10.5, anchor='middle')
+        self.o.append(o)
 
     def svg(self):
         return ''.join(self.o)
