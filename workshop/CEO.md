@@ -34,25 +34,25 @@ If `~/Developer` is missing, restore first:
 6. **Bulk/content work goes to Codex in the app** via the baton, one issue per brief, staged on a branch; the CEO gates and merges. The CEO builds design-language components personally.
 7. **The rocket line (chairman, 01/10).** Work flies in staggered waves: launch #1, finish #2, build #3, design #4, all at once. Every gate turns its findings into numbered entries in `FLIGHT-LOG.md`, and every in-flight stage applies them before its next step. Never let a stream idle waiting on a gate; the gate feeds the log, the log feeds the line.
 
-## State (01/10 ~02:00, handed over by Claude Opus 5.5)
-- **Site:** Ordenações Filipinas, https://benecles.github.io/ordenacoes-filipinas/ (repo `Benecles/ordenacoes-filipinas`, folder `~/Developer/ordenacoes-filipinas`). Workshop: `Benecles/ordenacoes-filipinas-workshop` / `~/Developer/ordenacoes-filipinas-workshop` (old `study-lab*` paths are compat symlinks).
-- **Shipped 30/09–01/10 (site PRs #14–#27):** tools port (`tools/fronts/`, `tools/check_all.sh`); register data contract v2 + data for all 7 courses (REG-1..7); rename; **class register** on all 7 fronts (#27; specimen `specimen/register.html`). `ISSUES.md` logs each.
-- **Coordination is GitHub Issues now** (workshop repo; labels `codex`, `pipeline`, `needs-gate`, `gate:approved`, `blocked`, `course:*`, `figures`). `Relay Baton.md` is FROZEN (history + Build-process lessons). `~/.codex/AGENTS.md` points Codex at `gh issue`. No Project board yet (token lacks `project` scope: chairman would run `gh auth refresh -s project`).
-- **Source Pipeline** (`protocols/CUFRGS Source Pipeline.md`): Controle pilot passed S0–S2 (course map with real prerequisites, shelf of 100 sources, 187 chapters in 8 books, slides, Moodle; Gilmar scan OCR'd). Extracted text is committed under `work/pipeline/`.
-- **Delito P1 dossier** (chairman, 01/10; P1 was 01/10): `~/Desktop/Teoria do Delito - Dossie P1 para IA.pdf` (358 pp; P1 POSTPONED, new date unknown, so the dossier carries no exam date), built by `work/dossie-delito-p1/build.py` (Latam-dossier format: AI instructions, plano, slides, past P1s, CP arts. 1–31, site guide, doctrine packets). Reuse it for the P2 (10/12) by changing scope/pages.
+## State (01/10 ~evening, handed over by Claude Opus 5.5)
+- **Site:** https://benecles.github.io/ordenacoes-filipinas/ (repo `Benecles/ordenacoes-filipinas`). Live since this chair took over: LBL-1/LBL-2 (site-wide breakscan 0/0/0), FIG-1 (#44: figure kit + hand-built figures in Controle 01 + 27, Delito u04 + u05, Contratos 01, Latam 02), and the changelog rewrite (#32, #45: a 01/10 "figuras" entry on top, the week entry, older entries collapsed). `ISSUES.md` logs each.
+- **Figures, the standard:** `protocols/CUFRGS Figure Library.md` (5-point test, genres with exemplars, anti-patterns) and `work/figure-qc/verdicts.md` (400 distinct figures judged keep / acceptable / redo by course). Kit: site `tools/figkit/figkit.py`: Ruler, Field (two-axis), Document, `statute()`, Clock, Path, Timeline, badge. Per-lesson scripts sit next to it; `inject.py` swaps SVGs by id; `specimen.py` builds `specimen/figuras.html`. Kit SVGs carry `.figkit` and are exempt from the blanket label-size CSS. **One composition for all screens** (chairman: no phone variants).
+- **Pipeline:** Controle S0–S4 done and merged (#2–#4): reading packs median 46k words; Aula 01 primary 7.9k. Contratos S0–S4 started (#12).
+- **Process:** the rocket line (mandate #7) + `FLIGHT-LOG.md` (F-001…F-010). Codex runs everything in parallel (cap 16) and never idles on gates.
+- **Forensics:** VIS-1 (`work/vis-forensics/`) showed good figures came from a kit with rounds, bad ones were hand-typed in bulk. The VIS-2 catalogue (784 thumbs) is on the SITE repo's `codex/vis-2` branch: a tool branch, never merge it.
 
-## In flight
-- **Workshop issue #2 PIPE-2b** (`codex`, not blocked): section-split the core controle chapters (Mendes ch. 160k words etc.), Lenza by §, fetch Leis 9.868/9.882/11.417, fix the S2 check. Then #3 PIPE-3 triage, #4 PIPE-4 compendia, #5 PIPE-5 Aula 30 ADC (blueprint → Sol panel → CEO reads → write). #6 LBL-1 crossed labels (not Controle/Contratos).
-- **The Codex orchestrator must be swapped (step 0 below).** The old one ran on the baton.
+## In flight (all Codex, workshop issues; gate each as it shows `needs-gate`)
+- **#10 FIG-2:** rebuild the QC redo list with the kit, all six non-Controle courses in parallel, one site PR per course. **Gate by looking at every figure** against the Figure Library and the references. Then merge, add an ISSUES line, add a patch-note line (or the CHG-1 tiles), and add flight-log entries.
+- **#11 CHG-1:** the changelog as a bento grid (Apple keynote recap, translated into the house style), with a fixed 14-tile list. Gate by eye: desktop light and dark, plus a 375 px crop.
+- **#5 PIPE-5:** Controle Aula 30 (ADC) pilot: blueprint → Sol panel → write. Its figures must come from the kit (statute cut + clock suggested). **Its gate is the main diagnostic launch:** findings go to FLIGHT-LOG, then wave 2 (#13) starts writing.
+- **#13 PIPE-W2:** Controle Aulas 02–07 blueprints now, writing after the #5 gate; wave 3 (08–13) opens when wave 2 writes.
+- **#12 PIPE-C:** Contratos S0–S4. Gate S3/S4 closely (same rules as #2–#4).
 
 ## Next up (in order)
-0. **Write the new Codex orchestrator prompt and give it to the chairman** (he closes the old instance and pastes it into a fresh one, Luna high). Draft to check and send:
-   > You are the Codex orchestrator for the Ordenações Filipinas study site. Read `~/.codex/AGENTS.md`, then `~/Developer/ordenacoes-filipinas-workshop/protocols/CUFRGS Source Pipeline.md` in full, then the "Build-process lessons" section of `~/Developer/ordenacoes-filipinas-workshop/Relay Baton.md` (the rest is frozen history). Your work queue is GitHub Issues: `gh issue list -R Benecles/ordenacoes-filipinas-workshop -l codex`. Work only issues without `blocked` or `needs-gate`; read each issue fully before starting. Delegate each stage to a worker with `fork_turns:"none"` at the model the protocol assigns (Sol high for S0 and the S5a panel; Luna xhigh for triage and writing; Luna max for blueprints; Luna high for mechanical stages). You coordinate, run checks, comment results on the issue (`gh issue comment`), add `needs-gate`, and STOP that issue until the CEO adds `gate:approved`; when a gate is approved, remove `blocked` from the next issue and continue. Never merge. Start with #2 (PIPE-2b) and, in parallel, #6 (LBL-1).
-1. **Gate PIPE-2b (#2)** when it shows `needs-gate`: check section files ≤ ~15k words for the core chapters, Lenza § split, statutes present, S2 check fails on a missing index. Then `gate:approved` + unblock #3.
-2. **Gate PIPE-3 triage (#3) closely**: each lesson gets specific sections, not whole chapters; básica essencial (Lenza, Mendes) first; background = prerequisites' primaries.
-3. **Controle Aula 01 reference rebuild by the CEO** (after #4 compendia exist): text + instrument figures, by hand; it's the bar for S5.
-4. Gate PIPE-5 (#5): read the blueprint + panel verdict; spot-check the panel's first ~10 verdicts.
-5. Next design piece: the lesson-page anatomy + subpage standard. Then course decks as function; then Contratos through the pipeline (books now on disk).
+1. Gate whatever shows `needs-gate` first (FIG-2 course PRs, CHG-1, PIPE-5, PIPE-C, PIPE-W2). Every gate ends with FLIGHT-LOG entries.
+2. **Controle Aula 01 text rebuild by the CEO** (its figures are already done in FIG-1): use its compendium (`work/pipeline/controle-de-constitucionalidade/compendium/aula-01/`, regenerate if missing: the txt files are git-ignored). It's the reference bar for S5.
+3. Kit growth: genres not built yet (statute cut is done; still to do: who-decides matrix, docket, tally, strata as components). Build each when a redo needs it, with a reference added to `specimen.py`.
+4. Next design piece: lesson-page anatomy + subpage standard. Then course decks as function.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
 - **Text:** Controle is genuinely weak: median lesson 1.25k words (other courses 2.7–3.8k); Aula 01 circles abstractions, promises an example it never gives, repeats its own summary, and ends with a "Fontes e limites" disclaimer (breaks the no-citations rule). Aula 24 is decent (concrete, statute-anchored). Contratos is equally thin (1.06k median). Cause: writers got slides plus scattered ad-hoc extracts, never per-lesson prepared sources.
@@ -62,9 +62,13 @@ If `~/Developer` is missing, restore first:
 
 ## Open decisions for the chairman
 - Optional: grant the `project` scope (`gh auth refresh -s project`) if he wants a Project board on top of the issues.
-- If the ADC pilot (#5) misses the figure bar: evaluate the dev-day plugins (ask him for the link).
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
+- **Chairman's no-list (01/10):** no self-monitoring or self-guard mods/hooks (context weather, merge guards), no phone-variant figures. He manages context himself.
+- **Gate figures by looking, and probe the specimen.** breakscan scans `courses/` only. For kit work, run the CROSS/CLASH probe on `specimen/figuras.html` in the browser (the same logic as breakscan's `probe`), and check the content bbox stays inside the viewBox.
+- **Site edits:** after injecting figures run `tools/offline_build.py`, then `git checkout -- assets/front.css specimen/register.html` (offline_build wants to change both: known debt, its own issue), then `tools/polish.py capture` and `rm -rf tools/polish/specimen`, then `git add`, then `check_all`.
+- **Saved gate check:** `work/checks/gate_prs.sh <N>…` (svgcheck: text outside SVGs byte-identical, labels unchanged, no >3 KB bloat).
+- **Codex app sessions:** give the chairman self-contained prompts for NEW windows when the old orchestrator's context is big; one-line add-ons for the running one.
 - Codex workers: `fork_turns:"none"` always; parallelism stays at 16.
 - A check must FAIL on the known-bad state before its PASS means anything.
 - Refresh from live right before editing; ship via git merge, not copied snapshots.
