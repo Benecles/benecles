@@ -12,10 +12,6 @@
 "after": "veto (art. 66 da CF)</h3>\n  <p class=\"note\" style=\"margin-bottom:18px\">O art. 66 da CF, do caput"
 },
 {
-"before": "cláusula pétrea</text>\n        <text x=\"60\" y=\"480\" class=\"t-small tc-muted\">\"DIREITO FUNÇÃO\" DO PARLAMENTAR AO",
-"after": "cláusula pétrea</text>\n        <text x=\"60\" y=\"480\" class=\"t-small tc-muted\">“DIREITO FUNÇÃO” DO PARLAMENTAR AO"
-},
-{
 "before": " a um <strong>\"direito função\"</strong> do parlamentar ",
 "after": " a um <strong>“direito função”</strong> do parlamentar "
 },
@@ -50,5 +46,9 @@
 {
 "before": " 66, § 3º, CF).</p></details>\n    <details>",
 "after": " 66, § 3º, da CF).</p></details>\n    <details>"
+},
+{
+"before": "<defs><marker id=\"ah9-1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker></defs>\n        <line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"540\" class=\"thin dash\"/>\n        <rect x=\"220\" y=\"270\" width=\"160\" height=\"60\" style=\"fill:var(--accent)\"/>\n        <text x=\"240\" y=\"305\">PUBLICAÇÃO</text>\n        <path class=\"c-dif grow\" d=\"M60 300H300\" stroke-width=\"3\"/>\n        <path class=\"dash\" d=\"M300 300H540\" stroke-width=\"3\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah9-1)\"/>\n        <text x=\"70\" y=\"380\" class=\"t-mid tc-dif\">PROCESSO LEGISLATIVO</text>",
+"after": "<defs><marker id=\"ah9-1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker></defs>\n        <line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"286\" class=\"thin dash\"/><line x1=\"300\" y1=\"324\" x2=\"300\" y2=\"540\" class=\"thin dash\"/>\n        <rect x=\"220\" y=\"270\" width=\"160\" height=\"60\" style=\"fill:var(--accent)\"/>\n        <text x=\"240\" y=\"305\">PUBLICAÇÃO</text>\n        <path class=\"c-dif grow\" d=\"M60 300H220\" stroke-width=\"3\"/>\n        <path class=\"dash\" d=\"M380 300H540\" stroke-width=\"3\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah9-1)\"/>\n        <text x=\"70\" y=\"380\" class=\"t-mid tc-dif\">PROCESSO LEGISLATIVO</text>"
 }
 ]

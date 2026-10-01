@@ -4,14 +4,6 @@
 "after": "lista de direitos fundamentais; sem o bloco,"
 },
 {
-"before": "EC</text>\n        <text x=\"352\" y=\"140\" class=\"t-small tc-mix\">TRATADO §3º</text>\n        <path class=\"grow\" d=\"M60 420C110 380 150 340 195 300\" style=\"stroke:var(--mix)\" stroke-width=\"2.5\" fill=\"none\" marker-end=\"url(#ah3)\"/>\n        <text x=\"40\" y=\"400\" class=\"t-small tc-mix\">BLOCO",
-"after": "EC</text>\n        <text x=\"352\" y=\"140\" class=\"t-small tc-mix\">TRATADO § 3º</text>\n        <path class=\"grow\" d=\"M60 420C110 380 150 340 195 300\" style=\"stroke:var(--mix)\" stroke-width=\"2.5\" fill=\"none\" marker-end=\"url(#ah3)\"/>\n        <text x=\"40\" y=\"400\" class=\"t-small tc-mix\">BLOCO"
-},
-{
-"before": "</text><text x=\"432\" y=\"404\" class=\"t-small\">ART. 5º, §3º</text><rect x=\"78\" y=\"366\" width=\"104\" height=\"50\" rx=\"14\" class=\"w-grey ink\"/><text x=\"90\" y=\"388\" class=\"t-small\">TRATADOS DH",
-"after": "</text><text x=\"432\" y=\"404\" class=\"t-small\">ART. 5º, § 3º</text><rect x=\"78\" y=\"366\" width=\"104\" height=\"50\" rx=\"14\" class=\"w-grey ink\"/><text x=\"90\" y=\"388\" class=\"t-small\">TRATADOS DH"
-},
-{
 "before": "o parâmetro formal central. Em sentido estrito,",
 "after": "o parâmetro formal principal. Em sentido estrito,"
 },
@@ -42,5 +34,13 @@
 {
 "before": "suprapositivos e uma \"ordem constitucional global\", não foi acolhida",
 "after": "suprapositivos e uma “ordem constitucional global”, não foi acolhida"
+},
+{
+"before": "</text><path d=\"M268 245H340\" class=\"c-conc\"/><path d=\"M360 368L480 120\" class=\"thin\"/><text x=\"350\" y=\"166\" class=\"t-mid tc-conc\">CONSTITUIÇÃO</text><text x=\"350\" y=\"286\" class=\"t-mid\">PARÂMETRO</text><text x=\"350\" y=\"418\" class=\"t-small tc-muted\">CONFRONTO</text></svg>",
+"after": "</text><path d=\"M268 245H340\" class=\"c-conc\"/><path d=\"M360 368L480 120\" class=\"thin\"/><text x=\"350\" y=\"166\" class=\"t-mid tc-conc\">CONSTITUIÇÃO</text><text x=\"435\" y=\"286\" class=\"t-mid\">PARÂMETRO</text><text x=\"350\" y=\"418\" class=\"t-small tc-muted\">CONFRONTO</text></svg>"
+},
+{
+"before": "<text x=\"300\" y=\"402\" text-anchor=\"middle\" class=\"t-mid\">DIREITO INTERNO</text><path d=\"M170 310L250 132L330 310Z\" class=\"w-conc ink\"/><text x=\"250\" y=\"220\" text-anchor=\"middle\" class=\"t-small tc-conc\">CONSTITUIÇÃO</text><path d=\"M306 310L362 192L418 310Z\" class=\"w-dif ink\"/><text x=\"362\" y=\"262\" text-anchor=\"middle\" class=\"t-small tc-dif\">EMENDA</text>",
+"after": "<text x=\"300\" y=\"402\" text-anchor=\"middle\" class=\"t-mid\">DIREITO INTERNO</text><path d=\"M170 310L250 132L330 310Z\" class=\"w-conc ink\"/><text x=\"250\" y=\"290\" text-anchor=\"middle\" class=\"t-small tc-conc\">CONSTITUIÇÃO</text><path d=\"M306 310L362 192L418 310Z\" class=\"w-dif ink\"/><text x=\"362\" y=\"262\" text-anchor=\"middle\" class=\"t-small tc-dif\">EMENDA</text>"
 }
 ]
