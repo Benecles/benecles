@@ -13,7 +13,7 @@ Roles: **Benecles = executive chairman** (sets direction, owns decisions listed 
 | This workshop repo (private) | `~/Developer/ordenacoes-filipinas-workshop` → Benecles/ordenacoes-filipinas-workshop |
 | Work tree: drafts, specs, generators, build tools, staging, history | `work/` here (old path `~/Documents/Codex/2026-09-23/you-h/work` is a symlink) |
 | Standards (why) | `protocols/`: CUFRGS Design Direction, Visual Genres, Writing Standard (old `~/Documents/Protocols` = symlink) |
-| Live coordination with Codex | `Relay Baton.md` here (Desktop copy = symlink) |
+| Live coordination with Codex | **GitHub Issues** on this repo (label `codex`). `Relay Baton.md` here is frozen history + Build-process lessons |
 | Agent status registry | `agents/` here (old `~/Documents/agents` = symlink) |
 Renamed 30/09 night (was `study-lab` / `study-lab-private`); compatibility symlinks at the old `~/Developer/` paths keep old scripts working. Codex worktrees were repaired with `git worktree repair`.
 Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally here but are git-ignored. Raw course material (`~/Desktop/UFRGS 2026-2`) is the chairman's and stays put.
@@ -33,31 +33,25 @@ If `~/Developer` is missing, restore first:
 5. **Atomic cycles, like clockwork**: find an issue → diagnose → iterate → document → ship. One issue = one branch = one PR = one merge (the app shows the merge card). Every merge adds a line to `ISSUES.md` (site repo) and a patch-note line. Engineers, not execs: no top-down audits, no auditing audits, no inference-heavy reviews. Cheap scripts are fine.
 6. **Bulk/content work goes to Codex in the app** via the baton, one issue per brief, staged on a branch; the CEO gates and merges. The CEO builds design-language components personally.
 
-## State (30/09 ~17:00)
-- **Out of iCloud (done):** the site is at `~/Developer/ordenacoes-filipinas` (standalone clone on main); the workshop (work/, protocols/, agents/, Relay Baton.md, CEO.md) is here. Old paths are symlinks; all verified. Codex trusts both folders.
-- **Chairman is switching off iCloud Desktop & Documents** (Keep Downloaded → toggle off → move files home). Afterwards, re-verify the symlinks (`~/Desktop/Relay Baton.md`, `~/Documents/Protocols`, `~/Documents/agents`, the old `work/` and `study-lab-publish` paths) and run a site build.
-- **Shipped today via PR** (the app shows merge cards): study-lab#13, the hero/figure line animations finish drawing (dasharray 1200 → 3000; the site-wide scan finds 0 remaining); ordenacoes-filipinas-workshop#1, the workshop move + this file. Cycles from here: branch → PR → merge.
-- Measured 30/09 (words per lesson): Contratos 1.3k · Controle 1.7k · MJ 2.6k · Latam 3.5k · Const I 5.3k · Processo 5.8k · Delito 7.3k. The class registers differ per course (units 0–11, gists 0–100%, three exam-division styles).
-- The headless Codex machine is retired; Codex runs in its app; the chairman tracks usage himself.
+## State (01/10 ~02:00, handed over by Claude Opus 5.5)
+- **Site:** Ordenações Filipinas, https://benecles.github.io/ordenacoes-filipinas/ (repo `Benecles/ordenacoes-filipinas`, folder `~/Developer/ordenacoes-filipinas`). Workshop: `Benecles/ordenacoes-filipinas-workshop` / `~/Developer/ordenacoes-filipinas-workshop` (old `study-lab*` paths are compat symlinks).
+- **Shipped 30/09–01/10 (site PRs #14–#27):** tools port (`tools/fronts/`, `tools/check_all.sh`); register data contract v2 + data for all 7 courses (REG-1..7); rename; **class register** on all 7 fronts (#27; specimen `specimen/register.html`). `ISSUES.md` logs each.
+- **Coordination is GitHub Issues now** (workshop repo; labels `codex`, `pipeline`, `needs-gate`, `gate:approved`, `blocked`, `course:*`, `figures`). `Relay Baton.md` is FROZEN (history + Build-process lessons). `~/.codex/AGENTS.md` points Codex at `gh issue`. No Project board yet (token lacks `project` scope: chairman would run `gh auth refresh -s project`).
+- **Source Pipeline** (`protocols/CUFRGS Source Pipeline.md`): Controle pilot passed S0–S2 (course map with real prerequisites, shelf of 100 sources, 187 chapters in 8 books, slides, Moodle; Gilmar scan OCR'd). Extracted text is committed under `work/pipeline/`.
+- **Delito P1 dossier** (chairman, 01/10; P1 was 01/10): `~/Desktop/Teoria do Delito - Dossie P1 01-10 para IA.pdf` (358 pp), built by `work/dossie-delito-p1/build.py` (Latam-dossier format: AI instructions, plano, slides, past P1s, CP arts. 1–31, site guide, doctrine packets). Reuse it for the P2 (10/12) by changing scope/pages.
 
 ## In flight
-- **Source Pipeline** (`protocols/CUFRGS Source Pipeline.md`, chairman's design 30/09): understand → prep → write/edit; Controle pilot = baton PIPE-0..5. Gate every stage. Aula 30 (ADC) is the first S5 edit; the CEO rebuilds Controle Aula 01 from the same compendium as the reference page. Visual Genres v2 adds "Instruments, not diagrams".
-- Site renamed **Ordenações Filipinas**: repo `Benecles/ordenacoes-filipinas`, https://benecles.github.io/ordenacoes-filipinas/ (local folder still `~/Developer/ordenacoes-filipinas`). Storage keys now `ordenacoes-*`.
-- **Codex REG-1..7**: 2/4/5/6/7 MERGED (#16–20, fix-up #22). REG-1, REG-3 re-issued under contract v2 (#21) (baton): register data (`reg` key: exams, units for Const I/Latam, a `does` line per lesson). Check: `tools/fronts/check_register_data.py` (study-lab#15). Gate each PR: read the `does` lines (function, not description; generic = reject), then merge.
-- **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
-- ~~Tools port~~ DONE 30/09 evening: study-lab#14 merged. `tools/fronts/data` reconciled from live (drawings verbatim via `drawing.inner_html`; railway gone); `tools/check_all.sh` = regenerate fronts + assetver + FAIL on any diff + check_front. `ISSUES.md` started at #0. The relay-design d1 copy is now retired: use `tools/fronts/` only.
-- Pre-mandate figure queue: the baton entry "BACK TO THE APP + BATON". Re-express as atomic issues.
+- **Workshop issue #2 PIPE-2b** (`codex`, not blocked): section-split the core controle chapters (Mendes ch. 160k words etc.), Lenza by §, fetch Leis 9.868/9.882/11.417, fix the S2 check. Then #3 PIPE-3 triage, #4 PIPE-4 compendia, #5 PIPE-5 Aula 30 ADC (blueprint → Sol panel → CEO reads → write). #6 LBL-1 crossed labels (not Controle/Contratos).
+- **The Codex orchestrator must be swapped (step 0 below).** The old one ran on the baton.
 
 ## Next up (in order)
-0a. **The PIPE-3 gate is the swap point (chairman, 01/10).** When the chairman brings "PIPE-2 done": (1) the CEO reviews PIPE-1/PIPE-2 and the PIPE-0 prerequisite fix; (2) does the GitHub migration below; (3) hands over the chair (this file). The **new CEO** then writes a fresh orchestrator prompt for the GitHub-based flow (Luna high; PIPE-3 onward; issues instead of the baton; stop at each gate), and the chairman closes the old Codex orchestrator and pastes that prompt into a new instance. Swap both together, CEO first. The old orchestrator's knowledge is all in files (course map, shelf, chapter indexes, baton log), so nothing is lost.
-0. **At the first pause where both Codex workstreams sit at a gate: move coordination to GitHub** (chairman, 30/09). The baton becomes Issues in the workshop repo (one per atomic task; labels `codex`/`gate`/`pipeline:sN`/`blocked`; PRs `Closes #n`; gates = comment + `gate:approved` label), plus a Project board; `agents/*.md` replaced by assignee + labels; `ISSUES.md` generated from closed issues. Files stay files: CEO.md, protocols/. **Everything goes to git except** third-party personal data (WhatsApp exports, classmates' notes, MP case files), secrets/machine state, and original book/scan binaries (cold storage in Drive, kept only for re-extraction). Extracted chapter text, compendia, **slide decks (small; their visuals matter for figures)** and page images of key book tables/figures DO go into the private workshop repo (un-ignore `work/pipeline/**`). End state: GitHub is the working environment; the Mac is just one place work runs. Freeze `Relay Baton.md` to its history + build lessons; point AGENTS.md and the Source Pipeline protocol at `gh issue`.
-- ~~Cycle 0 class register~~ SHIPPED 30/09 (#27): `_register()` in front.py + `.reg*` in assets/front.css; specimen `specimen/register.html` via `tools/fronts/specimen.py`. Reading time = words/180 wpm, so any lesson-page edit changes its front: regenerate fronts (front.py + assetver) in the same PR or `check_all` fails.
-1. **Controle Aula 01 reference rebuild** (after PIPE-4 lands its compendium): text + instrument figures, by hand.
-2. ~~Cycle 0~~ (done). **Next design piece:** the lesson-page anatomy + subpage standard.
-   (old) **Cycle 0: the class register + specimen page**, under the mandate (signs over text: a drawn clock sign + minutes computed from word count, part ticks, the exam fold, one row per lesson, units always, a missing gist as a quiet gap). Build it once in `tools/fronts/front.py`; ship to all 7 fronts as a PR; ISSUES.md #1. Run `tools/check_all.sh` before every front PR.
-2. Gate REG PRs as they land; then Codex LBL-1 (crossed labels, already in the baton).
-3. Course decks as function (Codex, after the register ships).
-4. The lesson-page anatomy + subpage standard; then size outliers; then the pre-mandate figure work as atomic issues.
+0. **Write the new Codex orchestrator prompt and give it to the chairman** (he closes the old instance and pastes it into a fresh one, Luna high). Draft to check and send:
+   > You are the Codex orchestrator for the Ordenações Filipinas study site. Read `~/.codex/AGENTS.md`, then `~/Developer/ordenacoes-filipinas-workshop/protocols/CUFRGS Source Pipeline.md` in full, then the "Build-process lessons" section of `~/Developer/ordenacoes-filipinas-workshop/Relay Baton.md` (the rest is frozen history). Your work queue is GitHub Issues: `gh issue list -R Benecles/ordenacoes-filipinas-workshop -l codex`. Work only issues without `blocked` or `needs-gate`; read each issue fully before starting. Delegate each stage to a worker with `fork_turns:"none"` at the model the protocol assigns (Sol high for S0 and the S5a panel; Luna xhigh for triage and writing; Luna max for blueprints; Luna high for mechanical stages). You coordinate, run checks, comment results on the issue (`gh issue comment`), add `needs-gate`, and STOP that issue until the CEO adds `gate:approved`; when a gate is approved, remove `blocked` from the next issue and continue. Never merge. Start with #2 (PIPE-2b) and, in parallel, #6 (LBL-1).
+1. **Gate PIPE-2b (#2)** when it shows `needs-gate`: check section files ≤ ~15k words for the core chapters, Lenza § split, statutes present, S2 check fails on a missing index. Then `gate:approved` + unblock #3.
+2. **Gate PIPE-3 triage (#3) closely**: each lesson gets specific sections, not whole chapters; básica essencial (Lenza, Mendes) first; background = prerequisites' primaries.
+3. **Controle Aula 01 reference rebuild by the CEO** (after #4 compendia exist): text + instrument figures, by hand; it's the bar for S5.
+4. Gate PIPE-5 (#5): read the blueprint + panel verdict; spot-check the panel's first ~10 verdicts.
+5. Next design piece: the lesson-page anatomy + subpage standard. Then course decks as function; then Contratos through the pipeline (books now on disk).
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
 - **Text:** Controle is genuinely weak: median lesson 1.25k words (other courses 2.7–3.8k); Aula 01 circles abstractions, promises an example it never gives, repeats its own summary, and ends with a "Fontes e limites" disclaimer (breaks the no-citations rule). Aula 24 is decent (concrete, statute-anchored). Contratos is equally thin (1.06k median). Cause: writers got slides plus scattered ad-hoc extracts, never per-lesson prepared sources.
@@ -66,7 +60,8 @@ If `~/Developer` is missing, restore first:
 - **Existing extracts to reuse:** `work/book-extracts/` (+ `book-extract-map.md`), `work/controle-depth/extracts/`, `work/source-intake-2026-09-28/` (Metodologia, Processo, Const I intake on the same philosophy).
 
 ## Open decisions for the chairman
-- (none pending as of this handoff)
+- Optional: grant the `project` scope (`gh auth refresh -s project`) if he wants a Project board on top of the issues.
+- If the ADC pilot (#5) misses the figure bar: evaluate the dev-day plugins (ask him for the link).
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
 - Codex workers: `fork_turns:"none"` always; parallelism stays at 16.
