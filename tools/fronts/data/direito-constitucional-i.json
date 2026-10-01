@@ -33,258 +33,466 @@
       "label": "Aula 01",
       "title": "Origens das constituições",
       "complementary": false,
-      "desc": "Limitar o governante pelo Direito não começou no século XVIII, e a Constituição escrita não é o único jeito de fazê-lo. A aula separa épocas e critérios para a comparação entre Inglaterra, Estados Unidos e França."
+      "desc": "Limitar o governante pelo Direito não começou no século XVIII, e a Constituição escrita não é o único jeito de fazê-lo. A aula separa épocas e critérios para a comparação entre Inglaterra, Estados Unidos e França.",
+      "reg": {
+        "does": "Comparar as origens e formas de limitação do poder na Inglaterra, nos EUA e na França."
+      }
     },
     {
       "href": "aula-02.html",
       "label": "Aula 02",
       "title": "Tipos de Constituição",
       "complementary": false,
-      "desc": "Cada classificação responde a uma pergunta diferente, e a prova cobra que o candidato nomeie o critério antes do rótulo. Assim uma Constituição pode ser rígida e analítica ao mesmo tempo, sem contradição."
+      "desc": "Cada classificação responde a uma pergunta diferente, e a prova cobra que o candidato nomeie o critério antes do rótulo. Assim uma Constituição pode ser rígida e analítica ao mesmo tempo, sem contradição.",
+      "reg": {
+        "does": "Classificar constituições por eixos distintos e aplicar os critérios à Carta de 1988."
+      }
     },
     {
       "href": "aula-03.html",
       "label": "Aula 03",
       "title": "Império e Primeira República",
       "complementary": false,
-      "desc": "Para 1824 e 1891 valem três perguntas: como nasceu, o que deu ou tirou ao Executivo e o que a prática fez. O parlamentarismo imperial é armadilha frequente."
+      "desc": "Para 1824 e 1891 valem três perguntas: como nasceu, o que deu ou tirou ao Executivo e o que a prática fez. O parlamentarismo imperial é armadilha frequente.",
+      "reg": {
+        "does": "Examinar a formação constitucional brasileira do Império à Primeira República."
+      }
     },
     {
       "href": "aula-03-republica.html",
       "label": "Aula 03",
       "title": "De 1930 a 1988",
       "complementary": false,
-      "desc": "Entre 1930 e 1988, acompanhe constituintes, golpes e textos outorgados. A questão de prova é identificar qual Constituição dispensou atividade constituinte de um órgão de representação popular."
+      "desc": "Entre 1930 e 1988, acompanhe constituintes, golpes e textos outorgados. A questão de prova é identificar qual Constituição dispensou atividade constituinte de um órgão de representação popular.",
+      "reg": {
+        "does": "Examinar as Constituições brasileiras de 1934 a 1988 e seus contextos políticos."
+      }
     },
     {
       "href": "aula-04.html",
       "label": "Aula 04",
       "title": "Supremacia e guarda da Constituição",
       "complementary": false,
-      "desc": "A supremacia não se executa sozinha: alguém precisa certificar a inconstitucionalidade. Esta aula compara os modelos de defesa e mostra qual ação cabe em cada situação, com as confusões clássicas entre concentrado e abstrato, ADI e ADPF."
+      "desc": "A supremacia não se executa sozinha: alguém precisa certificar a inconstitucionalidade. Esta aula compara os modelos de defesa e mostra qual ação cabe em cada situação, com as confusões clássicas entre concentrado e abstrato, ADI e ADPF.",
+      "reg": {
+        "does": "Explicar a supremacia constitucional, seus guardiões e as ações de controle brasileiras."
+      }
     },
     {
       "href": "aula-04-casos.html",
       "label": "Aula 04",
       "title": "ADI 3.345 e o número de vereadores",
       "complementary": true,
-      "desc": "O TSE aplicou às eleições de 2004 a tese do STF sobre vereadores proporcionais à população (art. 29, IV). O caso decide se isso é legislar ou explicitar uma decisão do Supremo, e o que muda com o art. 16."
+      "desc": "O TSE aplicou às eleições de 2004 a tese do STF sobre vereadores proporcionais à população (art. 29, IV). O caso decide se isso é legislar ou explicitar uma decisão do Supremo, e o que muda com o art. 16.",
+      "reg": {
+        "does": "Analisar a ADI 3.345 sobre a resolução do TSE e o número de vereadores."
+      }
     },
     {
       "href": "aula-05.html",
       "label": "Aula 05",
       "title": "Poder constituinte e poder de reforma",
       "complementary": false,
-      "desc": "Uma emenda e uma nova Constituição não têm a mesma origem nem a mesma competência. A aula separa titular, exercente e legitimidade e aponta as armadilhas sobre cláusulas pétreas e mutação."
+      "desc": "Uma emenda e uma nova Constituição não têm a mesma origem nem a mesma competência. A aula separa titular, exercente e legitimidade e aponta as armadilhas sobre cláusulas pétreas e mutação.",
+      "reg": {
+        "does": "Distinguir poder originário e reforma, titularidade popular e legitimidade constitucional."
+      }
     },
     {
       "href": "aula-06.html",
       "label": "Aula 06",
       "title": "Reforma e limites da Constituição",
       "complementary": false,
-      "desc": "Seguir o rito do art. 60 não basta para que uma emenda valha. A lição percorre limites expressos e tácitos e as armadilhas do § 4º: a forma republicana não é cláusula pétrea, e o procedimento de emenda também não está no rol."
+      "desc": "Seguir o rito do art. 60 não basta para que uma emenda valha. A lição percorre limites expressos e tácitos e as armadilhas do § 4º: a forma republicana não é cláusula pétrea, e o procedimento de emenda também não está no rol.",
+      "reg": {
+        "does": "Identificar limites expressos e tácitos à reforma constitucional e aplicar o art. 60."
+      }
     },
     {
       "href": "aula-06-casos.html",
       "label": "Aula 06",
       "title": "Limites à reforma ADI 2.096 e 5.316-MC",
       "complementary": true,
-      "desc": "Dois julgados, duas maneiras de aplicar o § 4º. Na ADI 2.096 a cláusula pétrea é invocada contra a emenda e devolvida ao autor; na ADI 5.316 a emenda é barrada em uma só expressão, por atingir o núcleo da separação dos Poderes."
+      "desc": "Dois julgados, duas maneiras de aplicar o § 4º. Na ADI 2.096 a cláusula pétrea é invocada contra a emenda e devolvida ao autor; na ADI 5.316 a emenda é barrada em uma só expressão, por atingir o núcleo da separação dos Poderes.",
+      "reg": {
+        "does": "Analisar como as ADIs 2.096 e 5.316 aplicam cláusulas pétreas ao controle de emendas."
+      }
     },
     {
       "href": "aula-06-casos-precatorios.html",
       "label": "Aula 06",
       "title": "Precatórios e a EC 30/2000",
       "complementary": true,
-      "desc": "O parcelamento de 1988 veio do constituinte originário; o de 2000, de emenda. O caso distingue os poderes e mostra por que o resultado foi cautelar, não julgamento de mérito."
+      "desc": "O parcelamento de 1988 veio do constituinte originário; o de 2000, de emenda. O caso distingue os poderes e mostra por que o resultado foi cautelar, não julgamento de mérito.",
+      "reg": {
+        "does": "Analisar as ADIs 2.356 e 2.362 sobre o parcelamento de precatórios pela EC 30."
+      }
     },
     {
       "href": "aula-07.html",
       "label": "Aula 07",
       "title": "Eficácia das normas constitucionais",
       "complementary": false,
-      "desc": "A tríade de José Afonso da Silva é a classificação que a prova mais cobra. A lição mostra como separar plena, contida e limitada, por que contida e limitada não se confundem e por que \"programática\" não serve de desculpa."
+      "desc": "A tríade de José Afonso da Silva é a classificação que a prova mais cobra. A lição mostra como separar plena, contida e limitada, por que contida e limitada não se confundem e por que \"programática\" não serve de desculpa.",
+      "reg": {
+        "does": "Classificar normas constitucionais por eficácia e função, com critérios e exemplos."
+      }
     },
     {
       "href": "aula-07-casos.html",
       "label": "Aula 07",
       "title": "ADI 5.316 e aposentadoria aos 75",
       "complementary": true,
-      "desc": "A EC 88 abriu caminho para aposentadoria aos 75 anos e criou uma regra transitória. Na ADI 5.316-MC, o STF examinou a nova sabatina e quem poderia receber esse benefício antes da lei complementar."
+      "desc": "A EC 88 abriu caminho para aposentadoria aos 75 anos e criou uma regra transitória. Na ADI 5.316-MC, o STF examinou a nova sabatina e quem poderia receber esse benefício antes da lei complementar.",
+      "reg": {
+        "does": "Explicar a cautelar na ADI 5.316 sobre nova sabatina e aposentadoria aos 75 anos."
+      }
     },
     {
       "href": "aula-08.html",
       "label": "Aula 08",
       "title": "Regras e princípios constitucionais",
       "complementary": false,
-      "desc": "Regra e princípio são tipos ideais, e a função na controvérsia pode mudar a classificação. A lição mostra por que ponderar princípios não dispensa a análise das regras e onde estão as confusões entre princípio e preceito fundamental."
+      "desc": "Regra e princípio são tipos ideais, e a função na controvérsia pode mudar a classificação. A lição mostra por que ponderar princípios não dispensa a análise das regras e onde estão as confusões entre princípio e preceito fundamental.",
+      "reg": {
+        "does": "Distinguir regras, princípios e preceitos fundamentais na argumentação constitucional."
+      }
     },
     {
       "href": "aula-09.html",
       "label": "Aula 09",
       "title": "Proporcionalidade e restrição estatal",
       "complementary": false,
-      "desc": "O teste tem três etapas e uma triagem prévia. Cada etapa faz uma pergunta diferente sobre a mesma medida, e a resposta de prova exige nomear o ganho, o sacrifício e a alternativa. O erro comum é chamar de ponderação uma conclusão sem premissas."
+      "desc": "O teste tem três etapas e uma triagem prévia. Cada etapa faz uma pergunta diferente sobre a mesma medida, e a resposta de prova exige nomear o ganho, o sacrifício e a alternativa. O erro comum é chamar de ponderação uma conclusão sem premissas.",
+      "reg": {
+        "does": "Aplicar os testes de proporcionalidade ao controle de restrições estatais."
+      }
     },
     {
       "href": "aula-10.html",
       "label": "Aula 10",
       "title": "Normas no tempo e recepção",
       "complementary": false,
-      "desc": "Constituição nova não zera o ordenamento: as normas anteriores compatíveis são novadas. A lição compara inconstitucionalidade, revogação e não recepção e mostra a ADPF 153 como aplicação do tempo às leis-medida."
+      "desc": "Constituição nova não zera o ordenamento: as normas anteriores compatíveis são novadas. A lição compara inconstitucionalidade, revogação e não recepção e mostra a ADPF 153 como aplicação do tempo às leis-medida.",
+      "reg": {
+        "does": "Analisar a recepção de leis anteriores e seus efeitos diante de uma nova Constituição."
+      }
     },
     {
       "href": "aula-11.html",
       "label": "Aula 11",
       "title": "Constituição no espaço e tratados",
       "complementary": false,
-      "desc": "Três conflitos diferentes pedem três respostas: lei estrangeira contra a Constituição de origem, contra a brasileira e tratado contra direito interno. A lição fixa a hierarquia dos tratados de direitos humanos e a armadilha do rito do § 3º."
+      "desc": "Três conflitos diferentes pedem três respostas: lei estrangeira contra a Constituição de origem, contra a brasileira e tratado contra direito interno. A lição fixa a hierarquia dos tratados de direitos humanos e a armadilha do rito do § 3º.",
+      "reg": {
+        "does": "Distinguir conflitos envolvendo lei estrangeira e hierarquia de tratados no Brasil."
+      }
     },
     {
       "href": "aula-12.html",
       "label": "Aula 12",
       "title": "Direitos humanos e direitos fundamentais",
       "complementary": false,
-      "desc": "As dimensões são cumulativas e funcionam como mapa didático, não como lei de sucessão histórica. A lição mostra o que cada dimensão acrescenta e por que é erro afirmar que uma dimensão substitui a anterior."
+      "desc": "As dimensões são cumulativas e funcionam como mapa didático, não como lei de sucessão histórica. A lição mostra o que cada dimensão acrescenta e por que é erro afirmar que uma dimensão substitui a anterior.",
+      "reg": {
+        "does": "Comparar direitos humanos e fundamentais e explicar as dimensões cumulativas."
+      }
     },
     {
       "href": "aula-13.html",
       "label": "Aula 13",
       "title": "Catálogo aberto de direitos fundamentais",
       "complementary": false,
-      "desc": "O art. 5º, § 2º, abre o catálogo, mas cada inclusão pede justificativa. A lição ensina a preencher três campos: sede, conteúdo e regime. A aprovação sem ratificação é a armadilha do tema."
+      "desc": "O art. 5º, § 2º, abre o catálogo, mas cada inclusão pede justificativa. A lição ensina a preencher três campos: sede, conteúdo e regime. A aprovação sem ratificação é a armadilha do tema.",
+      "reg": {
+        "does": "Classificar direitos no catálogo aberto por sede, conteúdo e regime constitucional."
+      }
     },
     {
       "href": "aula-14.html",
       "label": "Aula 14",
       "title": "Dimensões, funções e titulares",
       "complementary": false,
-      "desc": "Antes de perguntar se um direito é exigível, é preciso saber qual posição o titular invoca e contra quem. A titularidade de animais, do nascituro e das pessoas jurídicas é terreno de armadilhas."
+      "desc": "Antes de perguntar se um direito é exigível, é preciso saber qual posição o titular invoca e contra quem. A titularidade de animais, do nascituro e das pessoas jurídicas é terreno de armadilhas.",
+      "reg": {
+        "does": "Distinguir funções dos direitos fundamentais e identificar seus titulares."
+      }
     },
     {
       "href": "aula-15.html",
       "label": "Aula 15",
       "title": "Aplicação imediata e destinatários",
       "complementary": false,
-      "desc": "\"Aplicação imediata\" não significa eficácia idêntica para todos os direitos nem dispensa a lei. A lição decide quem está obrigado, do legislador ao particular, e como."
+      "desc": "\"Aplicação imediata\" não significa eficácia idêntica para todos os direitos nem dispensa a lei. A lição decide quem está obrigado, do legislador ao particular, e como.",
+      "reg": {
+        "does": "Explicar a aplicação imediata e identificar os destinatários dos direitos fundamentais."
+      }
     },
     {
       "href": "aula-15-casos.html",
       "label": "Aula 15",
       "title": "ADPF 132 e ADI efeito horizontal",
       "complementary": true,
-      "desc": "O STF reconheceu a união estável entre pessoas do mesmo sexo, por unanimidade e com efeito vinculante. O alcance sobre relações privadas exige separar o dispositivo dos fundamentos de cada voto."
+      "desc": "O STF reconheceu a união estável entre pessoas do mesmo sexo, por unanimidade e com efeito vinculante. O alcance sobre relações privadas exige separar o dispositivo dos fundamentos de cada voto.",
+      "reg": {
+        "does": "Analisar o alcance da decisão do STF sobre união estável homoafetiva e relações privadas."
+      }
     },
     {
       "href": "aula-16.html",
       "label": "Aula 16",
       "title": "Restrições aos direitos fundamentais",
       "complementary": false,
-      "desc": "Se todo direito pode ser restringido, o que separa restrição legítima de erosão? A resposta segue uma sequência: âmbito, limite, fundamento e limites dos limites."
+      "desc": "Se todo direito pode ser restringido, o que separa restrição legítima de erosão? A resposta segue uma sequência: âmbito, limite, fundamento e limites dos limites.",
+      "reg": {
+        "does": "Explicar limites aos direitos fundamentais, proporcionalidade e núcleo essencial."
+      }
     },
     {
       "href": "aula-16-casos.html",
       "label": "Aula 16",
       "title": "RE 778.889 e licença à adotante",
       "complementary": true,
-      "desc": "Uma servidora recebeu 45 dias após obter a guarda de uma criança com pouco mais de um ano. O Tema 782 define o prazo da licença à adotante e o limite da diferença por idade."
+      "desc": "Uma servidora recebeu 45 dias após obter a guarda de uma criança com pouco mais de um ano. O Tema 782 define o prazo da licença à adotante e o limite da diferença por idade.",
+      "reg": {
+        "does": "Analisar o RE 778.889 e a igualdade entre licenças de gestantes e adotantes."
+      }
     },
     {
       "href": "aula-17.html",
       "label": "Aula 17",
       "title": "Liberdade religiosa e objeção de consciência",
       "complementary": false,
-      "desc": "A convicção protege, mas não dispensa o dever geral: o art. 5º, VIII, liga dever, objeção e prestação alternativa. Quem recusa também a alternativa entra no art. 15, IV."
+      "desc": "A convicção protege, mas não dispensa o dever geral: o art. 5º, VIII, liga dever, objeção e prestação alternativa. Quem recusa também a alternativa entra no art. 15, IV.",
+      "reg": {
+        "does": "Examinar liberdade religiosa, objeção de consciência e conflitos entre direitos."
+      }
     },
     {
       "href": "aula-18.html",
       "label": "Aula 18",
       "title": "Expressão: âmbito e censura",
       "complementary": false,
-      "desc": "A Constituição trata de modo oposto proibir antes e responsabilizar depois. A primeira página fixa o âmbito do direito e a fronteira da censura, incluindo a classificação indicativa, o anonimato e a resposta."
+      "desc": "A Constituição trata de modo oposto proibir antes e responsabilizar depois. A primeira página fixa o âmbito do direito e a fronteira da censura, incluindo a classificação indicativa, o anonimato e a resposta.",
+      "reg": {
+        "does": "Explicar o âmbito da liberdade de expressão, a censura, o anonimato e a reparação."
+      }
     },
     {
       "href": "aula-18-limites.html",
       "label": "Aula 18",
       "title": "Discurso de ódio e sátira eleitoral",
-      "complementary": true
+      "complementary": true,
+      "reg": {
+        "does": "Analisar discurso de ódio, marcha da maconha e sátira eleitoral na ADI 4.451."
+      }
     },
     {
       "href": "aula-18-casos.html",
       "label": "Aula 18",
       "title": "ADPF 130 e liberdade de imprensa",
       "complementary": true,
-      "desc": "A ADPF 130 afastou a Lei de Imprensa de 1967 por inteiro. O julgamento proíbe que essa lei sustente censura prévia, mas preserva a análise judicial posterior de abusos e danos concretos."
+      "desc": "A ADPF 130 afastou a Lei de Imprensa de 1967 por inteiro. O julgamento proíbe que essa lei sustente censura prévia, mas preserva a análise judicial posterior de abusos e danos concretos.",
+      "reg": {
+        "does": "Examinar a ADPF 130, a não recepção da Lei de Imprensa e seus limites decisórios."
+      }
     },
     {
       "href": "aula-19.html",
       "label": "Aula 19",
       "title": "Direito à informação e acesso à informação",
       "complementary": false,
-      "desc": "Três pedidos de \"informação\" apoiam-se em três incisos diferentes do art. 5º e enfrentam recusas diferentes. Quando a Constituição permite negar é a pergunta que a prova repete."
+      "desc": "Três pedidos de \"informação\" apoiam-se em três incisos diferentes do art. 5º e enfrentam recusas diferentes. Quando a Constituição permite negar é a pergunta que a prova repete.",
+      "reg": {
+        "does": "Distinguir os direitos de informar, receber informação e acessar dados públicos."
+      }
     },
     {
       "href": "aula-19-casos.html",
       "label": "Aula 19",
       "title": "ADPF 130 e imprensa livre",
       "complementary": true,
-      "desc": "A ADPF 130 protege a circulação de notícias e o público que as recebe. O julgamento da Lei de Imprensa ajuda a distinguir informação jornalística de pedido individual de acesso a registros estatais."
+      "desc": "A ADPF 130 protege a circulação de notícias e o público que as recebe. O julgamento da Lei de Imprensa ajuda a distinguir informação jornalística de pedido individual de acesso a registros estatais.",
+      "reg": {
+        "does": "Analisar como a ADPF 130 protege a imprensa e a circulação de notícias."
+      }
     },
     {
       "href": "aula-20.html",
       "label": "Aula 20",
       "title": "Propriedade: função social e intervenção",
       "complementary": false,
-      "desc": "A Constituição protege uma posição individual já submetida a fins e limites. A prova cobra a modalidade certa de intervenção: limitação, requisição, desapropriação, expropriação ou usucapião, cada uma com requisitos próprios."
+      "desc": "A Constituição protege uma posição individual já submetida a fins e limites. A prova cobra a modalidade certa de intervenção: limitação, requisição, desapropriação, expropriação ou usucapião, cada uma com requisitos próprios.",
+      "reg": {
+        "does": "Diferenciar as intervenções na propriedade e seus requisitos constitucionais."
+      }
     },
     {
       "href": "aula-21.html",
       "label": "Aula 21",
       "title": "Liberdade sexual e a ADPF 132",
       "complementary": false,
-      "desc": "A Constituição não nomeia a liberdade sexual, e o STF a construiu passo a passo a partir de outros textos. A decisão iguala a união estável homoafetiva, mas não trata de casamento nem de adoção."
+      "desc": "A Constituição não nomeia a liberdade sexual, e o STF a construiu passo a passo a partir de outros textos. A decisão iguala a união estável homoafetiva, mas não trata de casamento nem de adoção.",
+      "reg": {
+        "does": "Reconstruir os fundamentos e limites da liberdade sexual na ADPF 132."
+      }
     },
     {
       "href": "aula-21-casos.html",
       "label": "Aula 21",
       "title": "ADPF 132 e licença da adotante",
       "complementary": true,
-      "desc": "Dois julgados ligam família, dignidade e igualdade: a interpretação conforme do art. 1.723 do Código Civil e a mutação constitucional do art. 7º, XVIII. Cada um tem limites que a prova cobra."
+      "desc": "Dois julgados ligam família, dignidade e igualdade: a interpretação conforme do art. 1.723 do Código Civil e a mutação constitucional do art. 7º, XVIII. Cada um tem limites que a prova cobra.",
+      "reg": {
+        "does": "Comparar a ADPF 132 e o RE 778.889 sobre família, igualdade e adoção."
+      }
     },
     {
       "href": "aula-22.html",
       "label": "Aula 22",
       "title": "Direitos sociais: exigibilidade",
       "complementary": false,
-      "desc": "Pedir o medicamento da lista do SUS e pedir o tratamento que nenhuma política oferece não é o mesmo problema. A página separa direito derivado e originário e testa as objeções à exigibilidade."
+      "desc": "Pedir o medicamento da lista do SUS e pedir o tratamento que nenhuma política oferece não é o mesmo problema. A página separa direito derivado e originário e testa as objeções à exigibilidade.",
+      "reg": {
+        "does": "Diferenciar direitos sociais derivados e originários e avaliar sua exigibilidade."
+      }
     },
     {
       "href": "aula-22-retrocesso.html",
       "label": "Aula 22",
       "title": "Retrocesso e o teto de gastos",
       "complementary": true,
-      "desc": "A proibição de retrocesso não impede toda mudança em direitos sociais: exige justificativa para reduzir proteções já concretizadas. O caso da EC 95/2016 aplica esse exame ao teto de gastos."
+      "desc": "A proibição de retrocesso não impede toda mudança em direitos sociais: exige justificativa para reduzir proteções já concretizadas. O caso da EC 95/2016 aplica esse exame ao teto de gastos.",
+      "reg": {
+        "does": "Avaliar a proibição de retrocesso e os efeitos do teto de gastos da EC 95/2016."
+      }
     },
     {
       "href": "aula-23.html",
       "label": "Aula 23",
       "title": "Moradia: posse e política urbana",
       "complementary": false,
-      "desc": "A moradia é direito autônomo, distinto da propriedade. Quando entra em choque com uma dívida, a sequência dos precedentes importa: o resultado de 2018 não é a resposta vigente para o fiador de locação comercial."
+      "desc": "A moradia é direito autônomo, distinto da propriedade. Quando entra em choque com uma dívida, a sequência dos precedentes importa: o resultado de 2018 não é a resposta vigente para o fiador de locação comercial.",
+      "reg": {
+        "does": "Relacionar moradia, penhora do bem de família, política urbana e usucapião especial."
+      }
     },
     {
       "href": "aula-24.html",
       "label": "Aula 24",
       "title": "Direito fundamental ao ambiente",
       "complementary": false,
-      "desc": "O art. 225 reúne direito, deveres e dimensão temporal. A lição pergunta que redução legislativa da proteção ultrapassa o limite, com a ADI 4.717 como caso de aplicação."
+      "desc": "O art. 225 reúne direito, deveres e dimensão temporal. A lição pergunta que redução legislativa da proteção ultrapassa o limite, com a ADI 4.717 como caso de aplicação.",
+      "reg": {
+        "does": "Explicar os deveres do art. 225 e avaliar a redução de áreas protegidas na ADI 4.717."
+      }
     },
     {
       "href": "aula-25.html",
       "label": "Aula 25",
       "title": "Identidade cultural dos povos indígenas",
       "complementary": false,
-      "desc": "O art. 231 reconhece um modo de vida e o território onde ele se realiza. A tese do RE 1.017.365 fixa que a demarcação declara, afasta o marco temporal e separa quatro regimes de indenização."
+      "desc": "O art. 231 reconhece um modo de vida e o território onde ele se realiza. A tese do RE 1.017.365 fixa que a demarcação declara, afasta o marco temporal e separa quatro regimes de indenização.",
+      "reg": {
+        "does": "Explicar a proteção da identidade indígena e aplicar a tese do Tema 1.031 à demarcação."
+      }
     }
-  ]
+  ],
+  "reg": {
+    "exams": [
+      {
+        "label": "Prova",
+        "date": "05/10",
+        "covers": [
+          "aula-01.html",
+          "aula-02.html",
+          "aula-03.html",
+          "aula-03-republica.html",
+          "aula-04.html",
+          "aula-04-casos.html"
+        ]
+      }
+    ],
+    "units": [
+      {
+        "label": "01",
+        "title": "Explicar as origens e a história das Constituições",
+        "lessons": [
+          "aula-01.html",
+          "aula-02.html",
+          "aula-03.html",
+          "aula-03-republica.html"
+        ]
+      },
+      {
+        "label": "02",
+        "title": "Controlar a supremacia e os limites da reforma constitucional",
+        "lessons": [
+          "aula-04.html",
+          "aula-04-casos.html",
+          "aula-05.html",
+          "aula-06.html",
+          "aula-06-casos.html",
+          "aula-06-casos-precatorios.html"
+        ]
+      },
+      {
+        "label": "03",
+        "title": "Aplicar eficácia, princípios e recepção constitucional",
+        "lessons": [
+          "aula-07.html",
+          "aula-07-casos.html",
+          "aula-08.html",
+          "aula-09.html",
+          "aula-10.html",
+          "aula-11.html"
+        ]
+      },
+      {
+        "label": "04",
+        "title": "Aplicar direitos fundamentais: catálogo, titulares e limites",
+        "lessons": [
+          "aula-12.html",
+          "aula-13.html",
+          "aula-14.html",
+          "aula-15.html",
+          "aula-15-casos.html",
+          "aula-16.html",
+          "aula-16-casos.html"
+        ]
+      },
+      {
+        "label": "05",
+        "title": "Interpretar liberdades de consciência, expressão e informação",
+        "lessons": [
+          "aula-17.html",
+          "aula-18.html",
+          "aula-18-limites.html",
+          "aula-18-casos.html",
+          "aula-19.html",
+          "aula-19-casos.html"
+        ]
+      },
+      {
+        "label": "06",
+        "title": "Aplicar propriedade, liberdade sexual e direitos sociais",
+        "lessons": [
+          "aula-20.html",
+          "aula-21.html",
+          "aula-21-casos.html",
+          "aula-22.html",
+          "aula-22-retrocesso.html"
+        ]
+      },
+      {
+        "label": "07",
+        "title": "Relacionar moradia, ambiente e identidade indígena à Constituição",
+        "lessons": [
+          "aula-23.html",
+          "aula-24.html",
+          "aula-25.html"
+        ]
+      }
+    ]
+  }
 }
