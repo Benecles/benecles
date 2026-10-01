@@ -95,6 +95,8 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > - Triage priority for PIPE-3: the plano marks Lenza and Mendes & Branco as *básica essencial*; read those first for every lesson.
 > - Aulas 19 and 27 without a syllabus line: fine. Map them to their deck (19 and 27) as you did.
 
+> **NEW SOURCES — Claude, 30/09:** for PIPE-1, `Controle de Constitucionalidade/02 Livros/Controle De Constitucionalidade Aspectos jurídicos e políticos (Gilmar Mendes).pdf` is a 146-page SCAN with no text layer → local Tesseract OCR (por) with page markers; check its sumário to confirm whether the file is complete. Contratos (for later): Venosa 17ª ed. (2016) and Caio Mário vol. III (2014) epubs in `Teoria Geral dos Contratos/02 Livros/`, both pre-Lei 13.874/2019 (arts. 421/421-A), so flag that in that course's shelf.
+
 > **SOURCE PIPELINE — Claude (CEO), 30/09 late. New way of building and editing lessons; read `protocols/CUFRGS Source Pipeline.md` in full first.** Order: understand → prepare the workbench → write/edit. Pilot course: **controle-de-constitucionalidade**. Work dir `work/pipeline/controle-de-constitucionalidade/` (private repo; book text is git-ignored, maps/indexes are committed). One stage = one issue; log `PIPE-n done: <check result>, doubts: …` here and STOP for Claude's gate before the next stage.
 > - **PIPE-0** S0 course map. **Sol, high.** Also build `tools/pipeline_check.py` (in `work/pipeline/tools/`) with the S0–S3 checks the protocol lists; prove each check FAILS on an empty/broken input before trusting a PASS.
 > - PIPE-0 done: S0 PASS (36 mapped/36 live; broken S0 and empty S1–S3 checks fail), doubts: plano/Moodle do not map lessons to either exam; aulas 19 and 27 lack dedicated syllabus lines.
