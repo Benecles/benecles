@@ -7,7 +7,7 @@ match the Latam and Contratos courses exactly.
 
     python3 build.py [constitucional|processo-civil ...]      # default: all courses
 
-Paths are relative to this file, so it runs both on the Mac and in a cloud checkout of study-lab-private
+Paths are relative to this file, so it runs both on the Mac and in a cloud checkout of ordenacoes-filipinas-workshop
 (set STUDY_LAB to the study-lab checkout if it is not the default)."""
 import html as H, json, os, re, sys
 

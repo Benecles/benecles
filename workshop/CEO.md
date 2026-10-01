@@ -9,17 +9,18 @@ Roles: **Benecles = executive chairman** (sets direction, owns decisions listed 
 ## Where everything lives (all out of iCloud as of 30/09)
 | What | Path |
 |---|---|
-| Public site repo (what readers see) | `~/Developer/study-lab` → github.com/Benecles/study-lab (`main`; push = deploy) |
-| This workshop repo (private) | `~/Developer/study-lab-private` → Benecles/study-lab-private |
+| Public site repo (what readers see) | `~/Developer/ordenacoes-filipinas` → github.com/Benecles/ordenacoes-filipinas (`main`; push = deploy) |
+| This workshop repo (private) | `~/Developer/ordenacoes-filipinas-workshop` → Benecles/ordenacoes-filipinas-workshop |
 | Work tree: drafts, specs, generators, build tools, staging, history | `work/` here (old path `~/Documents/Codex/2026-09-23/you-h/work` is a symlink) |
 | Standards (why) | `protocols/`: CUFRGS Design Direction, Visual Genres, Writing Standard (old `~/Documents/Protocols` = symlink) |
 | Live coordination with Codex | `Relay Baton.md` here (Desktop copy = symlink) |
 | Agent status registry | `agents/` here (old `~/Documents/agents` = symlink) |
+Renamed 30/09 night (was `study-lab` / `study-lab-private`); compatibility symlinks at the old `~/Developer/` paths keep old scripts working. Codex worktrees were repaired with `git worktree repair`.
 Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally here but are git-ignored. Raw course material (`~/Desktop/UFRGS 2026-2`) is the chairman's and stays put.
 
 ## After a factory reset (chairman planned one on 30/09)
 If `~/Developer` is missing, restore first:
-1. `mkdir -p ~/Developer && cd ~/Developer && gh repo clone Benecles/study-lab && gh repo clone Benecles/study-lab-private`
+1. `mkdir -p ~/Developer && cd ~/Developer && gh repo clone Benecles/ordenacoes-filipinas && gh repo clone Benecles/ordenacoes-filipinas-workshop`
 2. Restore the dotfiles per `dotfiles/README.md` (Codex config + AGENTS.md; Claude CLAUDE.md + memories).
 3. Recreate the convenience symlinks only if the old paths are wanted: `~/Desktop/Relay Baton.md` → this repo's baton; `~/Documents/Protocols` → `protocols/`; `~/Documents/agents` → `agents/`.
 4. Git-ignored binaries (source-intake exam PDFs, book extracts, page captures) come back only if the chairman restored them from his Google Drive backup; everything else is in git.
@@ -33,15 +34,15 @@ If `~/Developer` is missing, restore first:
 6. **Bulk/content work goes to Codex in the app** via the baton, one issue per brief, staged on a branch; the CEO gates and merges. The CEO builds design-language components personally.
 
 ## State (30/09 ~17:00)
-- **Out of iCloud (done):** the site is at `~/Developer/study-lab` (standalone clone on main); the workshop (work/, protocols/, agents/, Relay Baton.md, CEO.md) is here. Old paths are symlinks; all verified. Codex trusts both folders.
+- **Out of iCloud (done):** the site is at `~/Developer/ordenacoes-filipinas` (standalone clone on main); the workshop (work/, protocols/, agents/, Relay Baton.md, CEO.md) is here. Old paths are symlinks; all verified. Codex trusts both folders.
 - **Chairman is switching off iCloud Desktop & Documents** (Keep Downloaded → toggle off → move files home). Afterwards, re-verify the symlinks (`~/Desktop/Relay Baton.md`, `~/Documents/Protocols`, `~/Documents/agents`, the old `work/` and `study-lab-publish` paths) and run a site build.
-- **Shipped today via PR** (the app shows merge cards): study-lab#13, the hero/figure line animations finish drawing (dasharray 1200 → 3000; the site-wide scan finds 0 remaining); study-lab-private#1, the workshop move + this file. Cycles from here: branch → PR → merge.
+- **Shipped today via PR** (the app shows merge cards): study-lab#13, the hero/figure line animations finish drawing (dasharray 1200 → 3000; the site-wide scan finds 0 remaining); ordenacoes-filipinas-workshop#1, the workshop move + this file. Cycles from here: branch → PR → merge.
 - Measured 30/09 (words per lesson): Contratos 1.3k · Controle 1.7k · MJ 2.6k · Latam 3.5k · Const I 5.3k · Processo 5.8k · Delito 7.3k. The class registers differ per course (units 0–11, gists 0–100%, three exam-division styles).
 - The headless Codex machine is retired; Codex runs in its app; the chairman tracks usage himself.
 
 ## In flight
 - **Source Pipeline** (`protocols/CUFRGS Source Pipeline.md`, chairman's design 30/09): understand → prep → write/edit; Controle pilot = baton PIPE-0..5. Gate every stage. Aula 30 (ADC) is the first S5 edit; the CEO rebuilds Controle Aula 01 from the same compendium as the reference page. Visual Genres v2 adds "Instruments, not diagrams".
-- Site renamed **Ordenações Filipinas**: repo `Benecles/ordenacoes-filipinas`, https://benecles.github.io/ordenacoes-filipinas/ (local folder still `~/Developer/study-lab`). Storage keys now `ordenacoes-*`.
+- Site renamed **Ordenações Filipinas**: repo `Benecles/ordenacoes-filipinas`, https://benecles.github.io/ordenacoes-filipinas/ (local folder still `~/Developer/ordenacoes-filipinas`). Storage keys now `ordenacoes-*`.
 - **Codex REG-1..7**: 2/4/5/6/7 MERGED (#16–20, fix-up #22). REG-1, REG-3 re-issued under contract v2 (#21) (baton): register data (`reg` key: exams, units for Const I/Latam, a `does` line per lesson). Check: `tools/fronts/check_register_data.py` (study-lab#15). Gate each PR: read the `does` lines (function, not description; generic = reject), then merge.
 - **Label/line crossings: 47 pages** (heroes + numbered figures, all panels; mostly Controle, Contratos, Latam). Scanner: `work/checks/breakscan.mjs <site dir> <out.csv>` (serve the site on :8790 first; it reports SHORT/CROSS/CLASH; ignore SHORT hits with a dash ≤ 8, those are deliberately dashed lines). → Write this as ONE atomic Codex issue in the baton, with the scanner as the check (CROSS + CLASH = 0 on the pages it fixes; text outside SVGs unchanged).
 - ~~Tools port~~ DONE 30/09 evening: study-lab#14 merged. `tools/fronts/data` reconciled from live (drawings verbatim via `drawing.inner_html`; railway gone); `tools/check_all.sh` = regenerate fronts + assetver + FAIL on any diff + check_front. `ISSUES.md` started at #0. The relay-design d1 copy is now retired: use `tools/fronts/` only.
