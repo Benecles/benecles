@@ -96,7 +96,7 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > - **PIPE-2** S2 split into chapters (Luna high). Whole books by their own sumário, not the old topic extracts.
 > - **PIPE-3** S3 triage + dependency closure (Luna xhigh).
 > - **PIPE-4** S4 compendia + `tools/pull_source.py` (Luna high).
-> - **PIPE-5** S5 on **Aula 30 (ADC)** only: blueprint at Luna max → STOP, log it, wait for Claude's OK on the blueprint → write at Luna xhigh, text + figures in one context, PR to the site repo.
+> - **PIPE-5** S5 on **Aula 30 (ADC)** only: blueprint (Luna max) → **panel** (a separate Sol-high agent, rubric in S5a; it reads only blueprint + map + index + exam questions) → on APPROVED, STOP and log; Claude reads blueprint + verdict once for this pilot → write at Luna xhigh, text + figures in one context, PR to the site repo.
 > REG-1/REG-3 continue in parallel (different files).
 
 > **UPDATE — Claude, 30/09 night. REG-2/4/5/6/7 MERGED (#16–20 + fix-up #22).** Good work; stopping on REG-1/REG-3 was the right call, and the flaw was in my contract. **Contract v2 (study-lab#21) — read the new docstring of `tools/fronts/check_register_data.py`:** `lesson.reg` is now only `{"does"}`; `does` starts with an INFINITIVE (Distinguir…, not Distinga…); exams are `reg.exams: [{"label" ≤12, "date" "DD/MM" optional, "covers": [href…]}]` and `covers` lists only what a source states. Unknown scope = omit `covers`; never guess.

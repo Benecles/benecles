@@ -40,6 +40,8 @@ Model: Luna, high (mostly scripting). Check: `pipeline_check.py s2` (page marker
 
 ## S3 · Triage: which chapter feeds which lesson
 
+**This is one of the two stages that decide quality.** The point is precision: Aula 09 gets chapter 3 of book 2 and chapter 9 of book 3, *not* every book. A writer who reads everything reads nothing carefully. A triage that assigns a whole book to a lesson has failed.
+
 `triage.csv`: for every chapter × lesson it serves: role (`primary` | `supporting`), one line of why. Every chapter gets a verdict, including `unused` with a reason.
 **Dependency closure:** a lesson also receives the `primary` chapters of its prerequisite lessons (from S0) as `background`. A chapter that's crucial for Aula 01 rides along into Aula 09 when Aula 09 builds on Aula 01.
 
@@ -54,17 +56,33 @@ A script assembles it from S2 + S3; no model judgment involved. `tools/pull_sour
 
 Each lesson gets **one** agent, in one context, that owns both the text and every figure on the page. It edits the live page (adding, replacing, fixing) rather than writing from scratch. The same architecture produces writers for new lessons.
 
-1. **Blueprint (Luna, max).** Read the live page, the compendium index, the slides and the S0 line. Write `compendium/<lesson>/blueprint.md`: what the lesson must let the reader do; which sections stay, get replaced, or get added; the figure plan (each figure: the claim it carries, its form per Visual Genres → "Instruments, not diagrams", and what the reader *does* with it); and which compendium files support which section.
+1. **Blueprint (Luna, max). The other stage that decides quality: plan before you write, and make the plan transparent.** Read the live page, the compendium index, the slides, the S0 line and the exam questions. Write `compendium/<lesson>/blueprint.md`, the lesson's architecture from the top down:
+   - **Function:** what the lesson lets the reader do, and how they'll know they can (the closing exercises).
+   - **Sequence:** sections in order. For each: the claim it makes, why it comes there (what it needs from before, what it sets up), and the compendium files and pages it draws on. A section with no source pages has to say why.
+   - **Coverage:** every point of the syllabus line and every matching exam/exercise question, each mapped to a section; anything deliberately left out, with the reason.
+   - **Callouts and devices:** each callout (lex block, case folder, contrast, recall) and why it earns its place.
+   - **Figures:** each one gives the claim it carries, its form (Visual Genres → *Instruments, not diagrams*), what the reader does with it, and what they know afterwards.
+   - **Live page:** what stays, what gets replaced, what gets added, what gets cut, and why.
+   - **Size:** estimated words; one sitting (~2.5–4.5k), or a proposed split.
+   Then STOP for the panel (S5a).
+**S5a · The panel (Sol, high).** A separate agent judges each blueprint the way a thesis committee judges a proposal: it doesn't know the material as deeply as the author, but it can tell whether the plan is sound. It reads only the blueprint, the S0 map, the compendium index and the exam questions, never the full chapters. Its rubric:
+   1. Is the function concrete, and do the closing exercises test it?
+   2. Does every section trace to specific compendium pages, and does the order make sense (prerequisites before use)?
+   3. Is the syllabus line covered, with every matching exam question placed somewhere?
+   4. Does every figure pass the instrument test? Any box-and-arrow plan is rejected outright.
+   5. Is it one sitting, and is what gets cut from the live page defensible?
+   The verdict, in `panel.md`, is either **APPROVED** or **REVISE** with at most 5 numbered, specific points. The author revises; after a second REVISE, it escalates to Claude. Only APPROVED blueprints proceed to writing. Claude spot-checks panel verdicts, especially the first ten, to calibrate it.
+
 2. **Read.** Read the primary chapters in full. When an author points back or forward ("como visto no capítulo 3…", "ver adiante…") and that material isn't in the compendium, pull it with `pull_source.py` and log the request in `requests.md` (what, why, from where). Those requests are data: they tell us what S3 missed.
 3. **Write (Luna, xhigh).** Follow the blueprint. Text and figures in the same pass. Standards: Writing Standard, Visual Genres, Design Direction, the lesson-size mandate (one sitting, ~2.5–4.5k words). Branch `codex/<course>-<lesson>`, one PR per lesson, don't merge.
 4. **Report in the PR:** words before and after, figures replaced or added, `requests.md` summary, doubts.
 
-Gate: Claude reads the page in the browser (light and dark, 390 px), not the diff. The reference to match is the lesson Claude rebuilds by hand (Controle Aula 01).
+Gate (finished page): Claude reads the page in the browser (light and dark, 390 px), not the diff. The reference to match is the lesson Claude rebuilds by hand (Controle Aula 01).
 
 ## Models (as of 30/09; GPT-6 launch numbers)
 
 Sol costs about 20× Luna per token. At max effort Luna comes close to Sol on agentic work (DeepSWE 66.6 vs 68.8; Agents' Last Exam 50.9 vs 56.4) at 1/12–1/20 of the cost per task. Its weak spot is factual error rate: 7.6% at max vs Sol's 4.5% at xhigh. So:
-- **Sol only for S0** (small, upstream, and errors there compound);
+- **Sol only for S0 and the S5a panel** (small inputs, upstream of everything, and errors there compound);
 - **Luna for everything else**: high for mechanical stages, xhigh for triage and writing, max for blueprints;
 - factual risk is handled by the pipeline, not by the model: writers work from the compendium with page markers, and Claude's gate spot-checks claims against the cited pages.
 Revisit if the pilot shows Luna missing things Sol would catch.
