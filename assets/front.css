@@ -250,3 +250,44 @@
 /* one quiet line under a lesson title: what the lesson is for (carried over from the old fronts) */
 .front-lesson-desc { display: block; margin-top: 3px; font: 400 13px/1.45 var(--serif, Georgia, serif); color: var(--ink-2); max-width: 60ch; }
 .front-lesson-row:hover .front-lesson-desc { color: var(--ink-2); text-decoration: none; }
+
+/* ── Class register: one instrument on every course (anatomy: specimen/register.html) ── */
+.register { max-width: 980px; }
+.reg-title { font: 750 26px/1.1 var(--sans); letter-spacing: -.01em; margin: 0 0 6px; }
+.reg, .reg-rows { list-style: none; margin: 0; padding: 0; }
+.reg-unit { margin-top: 26px; }
+.reg-unit-head { display: flex; align-items: baseline; gap: 12px; padding-bottom: 6px; border-bottom: 1.5px solid var(--ink); }
+.reg-unit-n { font: 500 12px/1 var(--mono); color: var(--ink-2); letter-spacing: .06em; }
+.reg-unit-head h3 { margin: 0; font: 650 17px/1.25 var(--sans); }
+.reg-row { position: relative; display: grid; grid-template-columns: 3rem minmax(0, 1fr) auto; gap: 0 16px; padding: 13px 4px 13px 14px; border-bottom: 1px solid var(--grid-major); color: var(--ink); text-decoration: none; }
+.reg-row[data-tone]::before { content: ""; position: absolute; left: 0; top: 0; bottom: -1px; width: 3px; background: var(--tone); }
+[data-tone="conc"] { --tone: var(--conc); } [data-tone="dif"] { --tone: var(--dif); } [data-tone="mix"] { --tone: var(--mix, var(--dif)); }
+.reg-n { font: 500 21px/1.1 var(--mono); font-variant-numeric: tabular-nums; }
+.reg-body { min-width: 0; }
+.reg-t { font: 620 17px/1.3 var(--sans); }
+.reg-does { display: block; margin-top: 4px; max-width: 62ch; font: 400 15px/1.45 var(--serif, Georgia, serif); color: var(--ink-2); }
+.reg-time { display: flex; align-items: center; gap: 6px; align-self: start; padding-top: 4px; font: 12px/1 var(--mono); color: var(--ink-2); white-space: nowrap; }
+.reg-clock { width: 16px; height: 16px; flex: none; }
+.reg-clock-rim { fill: none; stroke: currentColor; stroke-width: 1; }
+.reg-clock-fill { fill: currentColor; opacity: .5; }
+.reg-parts { display: inline-flex; gap: 3px; margin-left: 9px; vertical-align: middle; }
+.reg-parts i { width: 11px; height: 3px; background: var(--grid-major); }
+.reg-parts i.on { background: var(--ink); }
+.reg-row.is-complementary .reg-n { color: transparent; -webkit-text-stroke: .8px var(--ink-2); }
+.reg-row.is-complementary .reg-t { font-weight: 480; color: var(--ink-2); }
+.reg-n-none::before { content: "·"; color: var(--ink-2); -webkit-text-stroke: 0; }
+.reg-row:hover .reg-t, .reg-row:focus-visible .reg-t { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.reg-row:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.reg-fold { position: relative; display: flex; align-items: center; height: 34px; }
+.reg-fold::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1.5px dashed var(--tone); }
+.reg-fold-tag { position: relative; margin-left: 12px; padding: 0 8px; background: var(--paper); font: 650 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--tone); }
+.reg-fold-date { font-weight: 400; margin-left: 6px; }
+@media (max-width: 600px) {
+  .reg-row { grid-template-columns: 2.3rem minmax(0, 1fr); gap: 0 10px; padding-left: 12px; }
+  .reg-n { font-size: 17px; }
+  .reg-time { grid-column: 2; padding-top: 8px; }
+}
+@media print { .reg-row[data-tone]::before { print-color-adjust: exact; -webkit-print-color-adjust: exact; } }
+.reg-unit.is-solo { margin-top: 0; border-top: 1.5px solid var(--ink); }
+.reg-unit.is-solo + .reg-unit.is-solo { margin-top: 0; }
+.reg-unit:not(.is-solo) + .reg-unit.is-solo, .reg-unit.is-solo + .reg-unit:not(.is-solo) { margin-top: 26px; }

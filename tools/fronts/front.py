@@ -147,6 +147,104 @@ def _lessons(data: dict[str, Any]) -> str:
             '<div class="front-unit-grid">' + "".join(cards) + '</div></section>')
 
 
+# ── The class register: one shared instrument on every course front ──────────────────────
+# Anatomy and the reason for each state: specimen/register.html (rendered from SPECIMEN below).
+WPM = 180                     # dense legal prose, read to learn
+EXAM_TONES = ("conc", "dif", "mix")
+
+
+def _words(page: Path) -> int:
+    s = page.read_text(encoding="utf-8")
+    m = re.search(r"<main\b.*?</main>", s, re.S)
+    s = m.group(0) if m else s
+    s = re.sub(r"<(script|style|svg|figure|nav|aside)\b.*?</\1>", " ", s, flags=re.S | re.I)
+    return len(html.unescape(re.sub(r"<[^>]+>", " ", s)).split())
+
+
+def _minutes(slug: str, href: str) -> int | None:
+    page = R / "courses" / slug / href
+    if not page.is_file():
+        return None
+    return max(5, round(_words(page) / WPM / 5) * 5)
+
+
+def _clock(minutes: int) -> str:
+    """A clock face whose filled sector is the reading time (60 min = full face)."""
+    import math
+    frac = min(minutes, 60) / 60
+    a = 2 * math.pi * frac
+    x, y = 8 + 6.4 * math.sin(a), 8 - 6.4 * math.cos(a)
+    sector = ('<circle cx="8" cy="8" r="6.4" class="reg-clock-fill"/>' if frac >= 1 else
+              f'<path d="M8 8V1.6A6.4 6.4 0 {1 if frac > .5 else 0} 1 {x:.2f} {y:.2f}Z" class="reg-clock-fill"/>')
+    return (f'<svg class="reg-clock" viewBox="0 0 16 16" aria-hidden="true">{sector}'
+            '<circle cx="8" cy="8" r="7" class="reg-clock-rim"/></svg>')
+
+
+def _units_for_register(data: dict[str, Any]) -> list[dict[str, Any]]:
+    if data.get("units"):
+        return [{"title": u.get("title") or "", "lessons": u.get("lessons", [])} for u in data["units"]]
+    by_href = {l["href"]: l for l in data.get("lessons", [])}
+    reg_units = (data.get("reg") or {}).get("units")
+    if reg_units:
+        return [{"title": u.get("title") or "", "lessons": [by_href[h] for h in u["lessons"] if h in by_href]} for u in reg_units]
+    return [{"title": "", "lessons": data.get("lessons", [])}]
+
+
+def _register(data: dict[str, Any], slug: str) -> str:
+    exams = (data.get("reg") or {}).get("exams") or []
+    exam_of: dict[str, int] = {}
+    for i, e in enumerate(exams):
+        for h in e.get("covers", []):
+            exam_of.setdefault(h, i)
+    units = _units_for_register(data)
+    order = [l["href"] for u in units for l in u["lessons"]]
+    last_of = {i: max(order.index(h) for h in e["covers"] if h in order) for i, e in enumerate(exams) if any(h in order for h in e.get("covers", []))}
+    fold_after = {order[pos]: i for i, pos in last_of.items()}
+    parts: dict[str, list[str]] = {}
+    for u in units:  # a lesson's parts are its own pages; complementary readings that share its label are not parts
+        for l in u["lessons"]:
+            if not l.get("complementary"):
+                parts.setdefault(l.get("label", ""), []).append(l["href"])
+
+    def fold(i: int) -> str:
+        e = exams[i]
+        when = f' <span class="reg-fold-date">{_esc(e["date"])}</span>' if e.get("date") else ""
+        return (f'<li class="reg-fold" data-tone="{EXAM_TONES[i % 3]}" aria-label="Fim da matéria de {_esc(e["label"])}">'
+                f'<span class="reg-fold-tag">{_esc(e["label"])}{when}</span></li>')
+
+    out = []
+    for ui, unit in enumerate(units, 1):
+        rows = []
+        for l in unit["lessons"]:
+            h = l["href"]; lab = l.get("label", "")
+            num = re.search(r"\d+", lab)
+            n = f'<span class="reg-n">{num.group(0).zfill(2)}</span>' if num else '<span class="reg-n reg-n-none" aria-hidden="true"></span>'
+            sib = parts.get(lab, [h])
+            ticks = ""
+            if len(sib) > 1 and num and h in sib:
+                k = sib.index(h)
+                ticks = ('<span class="reg-parts" aria-label="parte ' + str(k + 1) + ' de ' + str(len(sib)) + '">' +
+                         "".join(f'<i{" class=on" if j == k else ""}></i>' for j in range(len(sib))) + "</span>")
+            does = (l.get("reg") or {}).get("does")
+            does_html = f'<span class="reg-does">{_esc(does)}</span>' if does else ""
+            mins = l.get("_minutes") or _minutes(slug, h)  # _minutes: specimen only
+            time = (f'<span class="reg-time" title="cerca de {mins} min de leitura">{_clock(mins)}<span>{mins}′</span></span>'
+                    if mins else '<span class="reg-time"></span>')
+            ex = exam_of.get(h)
+            attrs = f' data-tone="{EXAM_TONES[ex % 3]}"' if ex is not None else ""
+            cls = "reg-row" + (" is-complementary" if l.get("complementary") else "")
+            rows.append(f'<li><a class="{cls}"{attrs} href="{_esc(h)}">{n}<span class="reg-body"><span class="reg-t">{_esc(l.get("title"))}{ticks}</span>'
+                        f'{does_html}</span>{time}</a></li>')
+            if h in fold_after:
+                rows.append(fold(fold_after[h]))
+        head = (f'<div class="reg-unit-head"><span class="reg-unit-n">{ui:02d}</span><h3>{_esc(unit["title"])}</h3></div>'
+                if unit["title"] and len(unit["lessons"]) > 1 else "")  # a one-lesson unit's head would repeat its row
+        out.append(f'<li class="reg-unit{"" if head else " is-solo"}">{head}<ol class="reg-rows">{"".join(rows)}</ol></li>')
+    return ('<section class="front-lessons register" id="aulas" aria-labelledby="front-lessons-title">'
+            '<h2 id="front-lessons-title" class="reg-title">Aulas</h2>'
+            f'<ol class="reg">{"".join(out)}</ol></section>')
+
+
 def _bibliografia(data: dict[str, Any]) -> str:
     bib = data.get("bibliografia")
     if not bib:
@@ -173,7 +271,7 @@ def render(data: dict[str, Any], slug: str | None = None) -> str:
     if inline_drawing_css:
         page_head = page_head.replace("</head>", inline_drawing_css + "\n</head>")
     body = (f'{doc_open}{page_head}\n<body>\n{_topbar(old, data)}\n{_title(data)}\n<main class="front-main">'
-            f'{_drawing(data)}{_exam(data, old)}{_lessons(data)}{_bibliografia(data)}'
+            f'{_drawing(data)}{_exam(data, old)}{_register(data, course)}{_bibliografia(data)}'
             f'</main>\n<p class="endnote">{data.get("endnote_html") or ""}</p>\n{_scripts(old)}\n</body>\n</html>')
     return body
 
