@@ -13,6 +13,9 @@ A figure doesn't have to look like its exemplar. It has to be *as good as* it.
 2. **Is it a real object or real data?** A month, a map, a petition, a vote, a ruler, a page. Not sentences poured into shapes.
 3. **Delete the paragraph next to it.** If the figure now says nothing new, it was restating the text. It fails.
 4. **Does it fill its frame?** Every mark carries content. One box on a 600×600 canvas fails. A deliberate single-object facsimile (the glossed page) passes.
+   - **The frame fits the drawing.** Crop the viewBox to the drawing plus a ~16-unit margin; a panel alone in its scrolly takes the drawing's own proportions (the stage no longer forces a square for it). Aula 01 shipped with half of every frame blank (01/10, chairman). `anatomy_check` fails a kit panel left at `0 0 600 600` in a one-panel scrolly.
+   - **Negative space never dominates.** A tight bounding box isn't enough: a T- or L-shaped drawing leaves the corners under the crossbar empty. Put content there (the legend, the verdict, the second object, the case's facts), or recompose so the masses balance. Empty space is allowed as a gutter or as a deliberate pause, never as the largest region of the frame. Probe: split the frame into a 4×4 grid; at least 10 of 16 cells must hold a mark.
+   - **Type keeps pace with the page.** Labels must read at the size the frame renders. If the kit's 10.5-unit labels come out below ~10 px, the drawing is too wide for its frame: shorten it or simplify it, and re-run `breakscan` (narrowing the Aula 01 rulers to 420 units made labels collide; the probe caught it).
 5. **Craft:**
    - Labels sit in gutters, never on a line.
    - Colour means one thing, with a key when it isn't obvious.
@@ -43,6 +46,7 @@ Facts from VIS-1 (`work/vis-forensics/`): every exemplar below was **built with 
 | **Sentences in boxes** | ![](figure-library/ctl-a15-s5.png) `ctl-a15-s5` · ![](figure-library/tgc-a09-s14.png) `tgc-a09-s14` · ![](figure-library/ctl-a10-s17.png) `ctl-a10-s17` | The boxes restate the paragraph. Delete the text and the figure adds nothing. | Find the object the sentence is about (the statute, the month, the form) and draw that. |
 | **Shape without data** | ![](figure-library/ctl-a01-s1.png) `ctl-a01-s1` · ![](figure-library/ctl-a04-s5.png) `ctl-a04-s5` | A triangle or mountains standing for "hierarchy". Swap the labels and it means anything. | Use an instrument that holds the relation: the ruler, a tally, a section with named layers. |
 | **One thing on an empty canvas** | ![](figure-library/tdl-s20-s3.png) `tdl-s20-s3` | A single box on 600×600. | Either merge it into the previous panel or give it the object it points at. |
+| **Frame bigger than the drawing** | Controle 01, Figs. 1–3 before 01/10 (600×600 squares, drawing in the top half) | The drawing shrinks to fit a square it doesn't use; labels shrink with it; the eye reads blank paper. | Crop the viewBox; recompose T/L shapes so the empty arms carry content. |
 | **Real data, weak form** | ![](figure-library/ctl-a27-s11.png) `ctl-a27-s11` | The right content (virtual vs in-person sessions, 2024–25) set as text in boxes. | Bars or dots on a shared axis: the data is already there. |
 
 ## Genres not built yet (to add as the kit grows)
