@@ -54,5 +54,17 @@
 {
 "before": "exceção.</p></details>\n    <details><summary> qual concepção é considerada",
 "after": "exceção.</p></details>\n    <details><summary>Qual concepção é considerada"
+},
+{
+"before": "D</text>\n        <path class=\"c-dif\" d=\"M300 220 160 270\"/><path class=\"c-conc\" d=\"M300 220 440 270\"/><path class=\"c-conc\" d=\"M300 220 160 390\"/><path class=\"c-dif\" d=\"M300 220 440 390\"/>\n        <text x=\"60\" y=\"530\" class=\"t-serif\">o mesmo ",
+"after": "D</text>\n        <path class=\"c-dif\" d=\"M300 220 160 270\"/><path class=\"c-conc\" d=\"M300 220 440 270\"/><path class=\"c-conc\" d=\"M300 220 160 390\"/><path class=\"c-dif\" d=\"M300 220 560 250 560 390 540 390\"/>\n        <text x=\"60\" y=\"530\" class=\"t-serif\">o mesmo "
+},
+{
+"before": "<path d=\"M300 380 A90 90 0 1 1 214 335 L300 380Z\" class=\"w-dif ink\" stroke-width=\"1.5\"/>\n        <path d=\"M300 380 A90 90 0 0 1 214 335\" class=\"w-conc ink\" stroke-width=\"1.5\" fill=\"none\"/>\n        <circle cx=\"300\" cy=\"380\" r=\"55\" class=\"f-paper ink\" stroke-width=\"1.5\"/>\n        <text x=\"255\" y=\"376\" class=\"t-small\">85.201</text><text x=\"262\" y=\"402\" class=\"t-small\">TOTAL</text>\n        <text x=\"420\" y=\"330\" class=\"t-mid tc-conc\">38%</text>",
+"after": "<path d=\"M300 380 A90 90 0 1 1 214 335 L300 380Z\" class=\"w-dif ink\" stroke-width=\"1.5\"/>\n        <path d=\"M300 380 A90 90 0 0 1 214 335\" class=\"w-conc ink\" stroke-width=\"1.5\" fill=\"none\"/>\n        <circle cx=\"300\" cy=\"380\" r=\"55\" class=\"f-paper ink\" stroke-width=\"1.5\"/>\n        <text x=\"318\" y=\"376\" class=\"t-small\">85.201</text><text x=\"310\" y=\"402\" class=\"t-small\">TOTAL</text>\n        <text x=\"420\" y=\"330\" class=\"t-mid tc-conc\">38%</text>"
+},
+{
+"before": "</text>\n        <text x=\"150\" y=\"356\" class=\"t-small tc-dif\">MONOCRÁTICAS</text>\n        <text x=\"360\" y=\"226\" class=\"t-small tc-conc\">COLEGIADAS</text>\n        <text x=\"50\" y=\"470\" class=\"t-serif\">93.559 ",
+"after": "</text>\n        <text x=\"150\" y=\"356\" class=\"t-small tc-dif\">MONOCRÁTICAS</text>\n        <text x=\"455\" y=\"226\" class=\"t-small tc-conc\">COLEGIADAS</text>\n        <text x=\"50\" y=\"470\" class=\"t-serif\">93.559 "
 }
 ]

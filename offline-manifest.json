@@ -1,5 +1,5 @@
 {
-"version": "adc5f9ad9ee6",
+"version": "da09f0f21144",
 "files": [
 "a-terra-muda-de-dono.html",
 "assets/bookmarks.js",
@@ -260,6 +260,7 @@
 "index-folio-teoria.html",
 "index.html",
 "./",
-"prototype-folio.html"
+"prototype-folio.html",
+"specimen/register.html"
 ]
 }
