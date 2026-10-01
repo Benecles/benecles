@@ -4,10 +4,6 @@
 "after": "\n<section class=\"chapter\" aria-labelledby=\"c2\"><span class=\"num dif\" aria-hidden=\"true\">02</span><h2 id=\"c2\">O que foi transferido"
 },
 {
-"before": " Contratos</title>\n<meta name=\"description\" content=\"Cessão da posição contratual: cedente, cessionário e cedido; consentimento; cessão de crédito e assunção de dívida; alcance da transferência.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=05abf91a3b\">\n</head>\n<body>\n<nav class=\"topbar\">",
-"after": " Contratos</title>\n<meta name=\"description\" content=\"Cessão da posição contratual: cedente, cessionário e cedido; consentimento; cessão de crédito e assunção de dívida; alcance da transferência.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=f5998e6b38\">\n</head>\n<body>\n<nav class=\"topbar\">"
-},
-{
 "before": " / 5</span></figcaption></figure></div>\n <div class=\"steps\">\n<div class=\"step\" data-panel=\"p-sw0\">",
 "after": " / 5</span></figcaption><style>@media (max-width:860px) and (orientation:portrait){figure svg.fig text,.stage figure svg.fig text{font-size:19px!important}}</style>\n</figure></div>\n <div class=\"steps\">\n<div class=\"step\" data-panel=\"p-sw0\">"
 },
@@ -28,51 +24,15 @@
 "after": " / 1</span></figcaption><style>@media (max-width:860px) and (orientation:portrait){figure svg.fig text,.stage figure svg.fig text{font-size:19px!important}}</style>\n</figure></div>\n <div class=\"steps\">\n<div class=\"step\" data-panel=\"p-lease\">"
 },
 {
-"before": "@media(max-width:860px) and (orientation:portrait){#p-sw0 text,#p-sw1 text,#p-sw2 text,#p-rl0 text,#p-rl1",
-"after": "@media(max-width:860px) and (orientation:portrait){#p-sw0 text{font-size:20px!important}#p-sw1 text,#p-sw2 text,#p-rl0 text,#p-rl1"
+"before": "<g class=\"pop\" style=\"--d:.5s;opacity:.45\"><circle cx=\"160\" cy=\"45\" r=\"26\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"160\" y=\"51\" text-anchor=\"middle\" style=\"font:600 16px var(--sans);fill:var(--ink)\">A</text></g><path class=\"draw\" style=\"--d:.9s;stroke:var(--conc);stroke-width:2.5;fill:none\" d=\"M150 140C200 140 230 100 262 90\"/><g class=\"pop\" style=\"--d:1.2s\"><circle cx=\"264\" cy=\"85\" r=\"32\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:2\"/><text x=\"264\" y=\"92\" text-anchor=\"middle\" style=\"font:600 18px var(--sans);fill:var(--conc)\">B</text></g>",
+"after": "<g class=\"pop\" style=\"--d:.5s;opacity:.45\"><circle cx=\"160\" cy=\"45\" r=\"26\" style=\"fill:var(--paper);stroke:var(--ink);stroke-width:2;stroke-dasharray:5 4\"/><text x=\"160\" y=\"51\" text-anchor=\"middle\" style=\"font:600 16px var(--sans);fill:var(--ink)\">A</text></g><path class=\"draw\" style=\"--d:.9s;stroke:var(--conc);stroke-width:2.5;fill:none\" d=\"M150 140C190 140 210 115 232 100\"/><g class=\"pop\" style=\"--d:1.2s\"><circle cx=\"264\" cy=\"85\" r=\"32\" style=\"fill:var(--conc-wash);stroke:var(--conc);stroke-width:2\"/><text x=\"264\" y=\"92\" text-anchor=\"middle\" style=\"font:600 18px var(--sans);fill:var(--conc)\">B</text></g>"
 },
 {
-"before": "</text><text x=\"130\" y=\"454\" class=\"t-small\" text-anchor=\"middle\">CESSIONÁRIO</text><path d=\"M130 206V364\" class=\"c-conc grow\" style=\"stroke-width:3\"/><g class=\"pop\" style=\"--d:0.5s\"><rect x=\"150\" y=\"260\" width=\"170\" height=\"50\" class=\"w-conc ink\"/><text x=\"235\" y=\"290\" class=\"t-small tc-conc\" text-anchor=\"middle\">ACORDO DE CESSÃO",
-"after": "</text><text x=\"130\" y=\"454\" class=\"t-small\" text-anchor=\"middle\">CESSIONÁRIO</text><path d=\"M130 206V364\" class=\"c-conc grow\" style=\"stroke-width:3\"/><g class=\"pop\" style=\"--d:0.5s\"><rect x=\"125\" y=\"260\" width=\"220\" height=\"50\" class=\"w-conc ink\"/><text x=\"235\" y=\"290\" class=\"t-small tc-conc\" text-anchor=\"middle\">ACORDO DE CESSÃO"
+"before": "<text x=\"130\" y=\"408\" class=\"t-mid tc-conc\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"454\" class=\"t-small\" text-anchor=\"middle\">CESSIONÁRIO</text><path d=\"M130 206V364\" class=\"c-conc grow\" style=\"stroke-width:3\"/><g class=\"pop\" style=\"--d:0.5s\"><rect x=\"150\" y=\"260\" width=\"170\" height=\"50\" class=\"w-conc ink\"/><text x=\"235\" y=\"290\" class=\"t-small tc-conc\" text-anchor=\"middle\">ACORDO DE",
+"after": "<text x=\"130\" y=\"408\" class=\"t-mid tc-conc\" text-anchor=\"middle\">B</text><text x=\"130\" y=\"454\" class=\"t-small\" text-anchor=\"middle\">CESSIONÁRIO</text><path d=\"M130 230V364\" class=\"c-conc grow\" style=\"stroke-width:3\"/><g class=\"pop\" style=\"--d:0.5s\"><rect x=\"150\" y=\"260\" width=\"170\" height=\"50\" class=\"w-conc ink\"/><text x=\"235\" y=\"290\" class=\"t-small tc-conc\" text-anchor=\"middle\">ACORDO DE"
 },
 {
-"before": "<g class=\"pop\" style=\"--d:0.7s\"><text x=\"560\" y=\"90\" class=\"t-small tc-dif\" text-anchor=\"end\">CONSENTE</text></g><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"40\" y=\"480\" width=\"520\" height=\"80\" class=\"w-conc ink\"/><text x=\"54\" y=\"516\" class=\"t-mid tc-conc\">A POSIÇÃO INTEIRA MUDOU DE MÃOS</text><text x=\"54\" y=\"536\" class=\"t-small\">direitos, deveres, poderes e encargos do lado de ",
-"after": "<g class=\"pop\" style=\"--d:0.7s\"><text x=\"560\" y=\"90\" class=\"t-small tc-dif\" text-anchor=\"end\">CONSENTE</text></g><g class=\"pop\" style=\"--d:1.0s\"><rect x=\"40\" y=\"480\" width=\"520\" height=\"94\" class=\"w-conc ink\"/><text x=\"54\" y=\"496\" class=\"t-mid tc-conc\">A POSIÇÃO INTEIRA MUDOU DE MÃOS</text><text x=\"54\" y=\"526\" class=\"t-small\">direitos, deveres, poderes e encargos</text><text x=\"54\" y=\"550\" class=\"t-small\">do lado de "
-},
-{
-"before": " LIBERADA</text></g><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"100\" class=\"w-dif ink\"/><text x=\"54\" y=\"486\" class=\"t-mid tc-dif\">SE CAIO ACEITOU LIBERAR</text><text x=\"54\" y=\"506\" class=\"t-small\">Ana não responde ",
-"after": " LIBERADA</text></g><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"100\" class=\"w-dif ink\"/><text x=\"54\" y=\"478\" class=\"t-mid tc-dif\">SE CAIO ACEITOU LIBERAR</text><text x=\"54\" y=\"511\" class=\"t-small\">Ana não responde "
-},
-{
-"before": "</g><path d=\"M300 294V190\" class=\"c-conc grow\" style=\"stroke-dasharray:6 5;--d:.5s\"/><text x=\"310\" y=\"250\" class=\"t-small tc-conc\">garante</text><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"100\" class=\"w-conc ink\"/><text x=\"54\" y=\"477\" class=\"t-mid tc-conc\">SE CAIO CONDICIONOU</text><text x=\"54\" y=\"497\" class=\"t-small\">Ana continua respondendo subsidiariamente;</text><text x=\"54\" y=\"513\" class=\"t-small\">solidariedade não nasce da cessão sozinha</text></g></svg><figcaption><span>",
-"after": "</g><path d=\"M300 294V190\" class=\"c-conc grow\" style=\"stroke-dasharray:6 5;--d:.5s\"/><text x=\"310\" y=\"250\" class=\"t-small tc-conc\">garante</text><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"150\" class=\"w-conc ink\"/><text x=\"54\" y=\"470\" class=\"t-mid tc-conc\">SE CAIO CONDICIONOU</text><text x=\"54\" y=\"500\" class=\"t-small\">Ana continua respondendo</text><text x=\"54\" y=\"524\" class=\"t-small\">subsidiariamente;</text><text x=\"54\" y=\"548\" class=\"t-small\">solidariedade não nasce da cessão</text><text x=\"54\" y=\"572\" class=\"t-small\">sozinha</text></g></svg><figcaption><span>"
-},
-{
-"before": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"398\" class=\"t-small\">notificar o devedor ",
-"after": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"388\" class=\"t-small\">notificar o devedor "
-},
-{
-"before": " valer contra ele (art. 290)</text>\n<rect x=\"42\" y=\"438\" width=\"516\" height=\"72\" class=\"f-paper ink\"/>",
-"after": " valer contra ele</text><text x=\"58\" y=\"412\" class=\"t-small\">(art. 290)</text>\n<rect x=\"42\" y=\"438\" width=\"516\" height=\"72\" class=\"f-paper ink\"/>"
-},
-{
-"before": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"398\" class=\"t-small\">consentimento expresso do credor; silêncio após prazo ",
-"after": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"388\" class=\"t-small\">consentimento expresso do credor;</text><text x=\"58\" y=\"412\" class=\"t-small\">silêncio após prazo "
-},
-{
-"before": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"398\" class=\"t-small\">consentimento do cedido; o cedente só ",
-"after": " DA OPERAÇÃO</text><path d=\"M42 366H558\" class=\"thin\"/><text x=\"58\" y=\"388\" class=\"t-small\">consentimento do cedido;</text><text x=\"58\" y=\"412\" class=\"t-small\">o cedente só "
-},
-{
-"before": "@media(max-width:860px) and (orientation:portrait){#p-lease text{font-size:19px!important}}</style><svg class=\"panel fig on\" id=\"p-lease\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Leasing\"><defs><marker id=\"p-lease-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker>",
-"after": "@media(max-width:860px) and (orientation:portrait){#p-lease text{font-size:20px!important}}</style><svg class=\"panel fig on\" id=\"p-lease\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Leasing\"><defs><marker id=\"p-lease-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker>"
-},
-{
-"before": "</text><text x=\"460\" y=\"230\" class=\"t-small\" text-anchor=\"middle\">futuras</text><path d=\"M360 200C300 140 150 140 80 200\" class=\"c-dif grow\" marker-end=\"url(#p-lease-d)\" style=\"--d:.6s\"/><g class=\"fade\" style=\"--d:1s\"><text x=\"220\" y=\"130\" class=\"t-hand\" text-anchor=\"middle\">o instrumento alcançava</text><text x=\"220\" y=\"105\" class=\"t-small tc-dif\" text-anchor=\"middle\">direitos anteriores, atuais ",
-"after": "</text><text x=\"460\" y=\"230\" class=\"t-small\" text-anchor=\"middle\">futuras</text><path d=\"M360 200C300 140 150 140 80 200\" class=\"c-dif grow\" marker-end=\"url(#p-lease-d)\" style=\"--d:.6s\"/><g class=\"fade\" style=\"--d:1s\"><text x=\"300\" y=\"130\" class=\"t-hand\" text-anchor=\"middle\">o instrumento alcançava</text><text x=\"300\" y=\"105\" class=\"t-small tc-dif\" text-anchor=\"middle\">direitos anteriores, atuais "
-},
-{
-"before": " futuros</text></g><g class=\"pop\" style=\"--d:1.3s\"><rect x=\"40\" y=\"360\" width=\"520\" height=\"110\" class=\"w-dif ink\"/><text x=\"54\" y=\"402\" class=\"t-mid tc-dif\">LEGITIMIDADE RECONHECIDA</text><text x=\"54\" y=\"422\" class=\"t-small\">a sucessora pôde discutir as parcelas</text><text x=\"54\" y=\"438\" class=\"t-small\">pagas pela empresa ",
-"after": " futuros</text></g><g class=\"pop\" style=\"--d:1.3s\"><rect x=\"40\" y=\"360\" width=\"520\" height=\"110\" class=\"w-dif ink\"/><text x=\"54\" y=\"397\" class=\"t-mid tc-dif\">LEGITIMIDADE RECONHECIDA</text><text x=\"54\" y=\"423\" class=\"t-small\">a sucessora pôde discutir as parcelas</text><text x=\"54\" y=\"447\" class=\"t-small\">pagas pela empresa "
+"before": " · SUBSIDIÁRIA</text></g><path d=\"M300 294V190\" class=\"c-conc grow\" style=\"stroke-dasharray:6 5;--d:.5s\"/><text x=\"310\" y=\"250\" class=\"t-small tc-conc\">garante</text><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"100\" class=\"w-conc ink\"/><text x=\"54\" y=\"477\" class=\"t-mid tc-conc\">",
+"after": " · SUBSIDIÁRIA</text></g><path d=\"M300 294V190\" class=\"c-conc grow\" style=\"stroke-dasharray:110 5;--d:.5s\"/><text x=\"310\" y=\"250\" class=\"t-small tc-conc\">garante</text><g class=\"pop\" style=\"--d:0.7s\"><rect x=\"40\" y=\"440\" width=\"520\" height=\"100\" class=\"w-conc ink\"/><text x=\"54\" y=\"477\" class=\"t-mid tc-conc\">"
 }
 ]
