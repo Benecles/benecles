@@ -4,7 +4,7 @@ import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from figkit import Field, Timeline, svg, t, line, TONE, WASH
 
-IDS = ['p-tese', 'p-arve', 'p-clco', 'p-br']
+IDS = ['p-ax0', 'p-ax1', 'p-ax2', 'p-ax3']
 LABELS = ['Dois grupos', 'Argentina e Venezuela', 'Chile e Colômbia: cooptação', 'Brasil: nomeação política, corte forte']
 
 

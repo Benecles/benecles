@@ -38,5 +38,9 @@
 {
 "before": "é o juízo apresentado na regra geral?</summary><p>",
 "after": "é o juízo da regra geral?</summary><p>"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 07 · Direito pré-constitucional, juízo de recepção e não recepção, regra da não existência de inconstitucionalidade superveniente e exceção do vício formal originário.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 07 · Direito pré-constitucional, juízo de recepção e não recepção, regra da não existência de inconstitucionalidade superveniente e exceção do vício formal originário.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n<nav class=\"topbar\">"
 }
 ]
