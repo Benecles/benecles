@@ -168,11 +168,23 @@
 "after": "\n  <p>O critério é a persistência "
 },
 {
-"before": " EM FORMA</text>\n        <rect x=\"50\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"66\" y=\"342\" class=\"t-mid tc-dif\">PEC</text><text x=\"66\" y=\"366\" class=\"t-small\" style=\"font-size:9.9px\">MERA PROPOSTA · AINDA NÃO É EC</text>\n        <path d=\"M60 320l200 60M260 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"342\" class=\"t-mid tc-dif\">LEI MUNICIPAL</text><text x=\"346\" y=\"366\" class=\"t-small\">NÃO CABE ADI NO STF</text>\n        <path d=\"M340 320l200 60M540 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO",
-"after": " EM FORMA</text>\n        <rect x=\"50\" y=\"310\" width=\"220\" height=\"96\" class=\"w-dif ink\"/>\n        <text x=\"66\" y=\"340\" class=\"t-mid tc-dif\">PEC</text><text x=\"66\" y=\"365\" class=\"t-small\" style=\"font-size:9.9px\"><tspan x=\"66\">MERA PROPOSTA ·</tspan><tspan x=\"66\" dy=\"16\">AINDA NÃO É EC</tspan></text>\n        <path d=\"M60 320l200 60M260 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"96\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"336\" class=\"t-mid tc-dif\">LEI MUNICIPAL</text><text x=\"346\" y=\"366\" class=\"t-small\"><tspan x=\"346\">NÃO CABE ADI</tspan><tspan x=\"346\" dy=\"16\">NO STF</tspan></text>\n        <path d=\"M340 320l200 60M540 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO"
+"before": " É EC</text>\n        <path d=\"M60 320l200 60M260 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"342\" class=\"t-mid tc-dif\">LEI ",
+"after": " É EC</text>\n        <path d=\"M60 314l200 20M260 314l-200 20\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <rect x=\"330\" y=\"310\" width=\"220\" height=\"70\" class=\"w-dif ink\"/>\n        <text x=\"346\" y=\"342\" class=\"t-mid tc-dif\">LEI "
 },
 {
-"before": "só pelo parlamentar,</text><text x=\"50\" y=\"532\" class=\"t-small\">contra vício do ",
-"after": "só pelo parlamentar,</text><text x=\"50\" y=\"540\" class=\"t-small\">contra vício do "
+"before": " NO STF</text>\n        <path d=\"M340 320l200 60M540 320l-200 60\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO PONTUAL</text>",
+"after": " NO STF</text>\n        <path d=\"M340 314l200 20M540 314l-200 20\" stroke-width=\"2.4\" style=\"stroke:var(--dif)\"/>\n        <text x=\"50\" y=\"430\" class=\"t-mid tc-muted\">EXCEÇÃO PONTUAL</text>"
+},
+{
+"before": "\n        <text x=\"52\" y=\"58\" class=\"t-mid tc-muted\">CAMADAS NORMATIVAS</text><path class=\"guide\" d=\"M110 182V464M490 182V464\"/>\n        <rect class=\"sheet low\" x=\"92\" y=\"340\" width=\"416\" height=\"118\"/><text x=\"126\" y=\"386\" class=\"t-mid tc-conc\"><tspan x=\"126\">DECRETO</tspan>",
+"after": "\n        <text x=\"52\" y=\"58\" class=\"t-mid tc-muted\">CAMADAS NORMATIVAS</text><path class=\"guide\" d=\"M45 182V464M515 182V464\"/>\n        <rect class=\"sheet low\" x=\"92\" y=\"340\" width=\"416\" height=\"118\"/><text x=\"126\" y=\"386\" class=\"t-mid tc-conc\"><tspan x=\"126\">DECRETO</tspan>"
+},
+{
+"before": "EXTRAPOLA A LEI</text><path class=\"guide\" d=\"M110 174V464M490 174V464\"/>\n        <rect class=\"sheet low\" x=\"92\" y=\"340\" width=\"416\" height=\"118\"/><text x=\"126\" y=\"386\" class=\"t-mid tc-conc\"><tspan x=\"126\">DECRETO</tspan>",
+"after": "EXTRAPOLA A LEI</text><path class=\"guide\" d=\"M45 174V464M515 174V464\"/>\n        <rect class=\"sheet low\" x=\"92\" y=\"340\" width=\"416\" height=\"118\"/><text x=\"126\" y=\"386\" class=\"t-mid tc-conc\"><tspan x=\"126\">DECRETO</tspan>"
+},
+{
+"before": " NÃO PERCORRIDA</tspan></text><path class=\"cross\" d=\"M98 270L502 358M502 270L98 358\"/>\n        <rect class=\"sheet low\" x=\"102\" y=\"382\" width=\"396\" height=\"112\"/><text x=\"136\" y=\"428\" class=\"t-mid tc-conc\"><tspan x=\"136\">DECRETO ",
+"after": " NÃO PERCORRIDA</tspan></text><path class=\"cross\" d=\"M430 270L490 350M490 270L430 350\"/>\n        <rect class=\"sheet low\" x=\"102\" y=\"382\" width=\"396\" height=\"112\"/><text x=\"136\" y=\"428\" class=\"t-mid tc-conc\"><tspan x=\"136\">DECRETO "
 }
 ]
