@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02
+import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, metodologia_a04
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -31,6 +31,9 @@ ENTRIES = [
     ('Linha do tempo · e plano', 'ordenar', 'Latam · Aula 02 · Fig. 1 (4 passos)',
      'A tese num plano (o Brasil fora da diagonal); a Argentina numa linha do tempo de golpes validados, com o expurgo de 1947 ligado ao golpe de 1930; a cooptação como um circuito fechado; o ativismo brasileiro em três faixas.',
      'substitui dla-a02-s2+3 (livros-razão)', latam_a02.panels(), 'direito-latino-americano'),
+    ('Documento · anatomia', 'ler', 'Metodologia · Aula 04 · regra limenha',
+     'A síntese da regra limenha põe lado a lado o atendimento paroquial, o limiar para prover pároco e a reunião de comunidades pelo prelado.',
+     'substitui met-a04-s4', [metodologia_a04.panel()], 'metodologia-juridica'),
 ]
 
 
@@ -53,7 +56,10 @@ h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--s
 .s{{border:1.5px solid var(--ink);background:var(--paper);padding:6px}}
 .s svg{{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important}}</style></head><body>
 <h1>Figuras · referências</h1><p class="lede">Uma referência feita à mão por gênero, cada uma refazendo uma figura real do site. É o padrão contra o qual as outras são julgadas.</p>
-{''.join(out)}</body></html>'''
+{''.join(out)}<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
+</body></html>'''
 
 
 if __name__ == '__main__':
