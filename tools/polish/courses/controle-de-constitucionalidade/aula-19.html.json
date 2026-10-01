@@ -18,5 +18,13 @@
 {
 "before": "2º, e 103-A, CF, indicam como ",
 "after": "2º, e 103-A, da CF, indicam como "
+},
+{
+"before": " REAÇÃO LEGISLATIVA?</text>\n      <path d=\"M300 220V275H160V332M300 275H440V332\" class=\"ink\" fill=\"none\" stroke-width=\"2.5\"/>\n      <text x=\"95\" y=\"310\" class=\"t-small tc-conc\">LEI ORDINÁRIA</text><text x=\"385\" y=\"310\" class=\"t-small tc-dif\">EMENDA</text>\n      <rect x=\"52\" y=\"350\" width=\"216\" height=\"112\" class=\"w-conc ink\"/>\n      <text x=\"75\" y=\"392\" class=\"t-mid tc-conc\">",
+"after": " REAÇÃO LEGISLATIVA?</text>\n      <path d=\"M300 220V275H160V300M300 275H440V300\" class=\"ink\" fill=\"none\" stroke-width=\"2.5\"/>\n      <text x=\"95\" y=\"326\" class=\"t-small tc-conc\">LEI ORDINÁRIA</text><text x=\"385\" y=\"326\" class=\"t-small tc-dif\">EMENDA</text>\n      <rect x=\"52\" y=\"350\" width=\"216\" height=\"112\" class=\"w-conc ink\"/>\n      <text x=\"75\" y=\"392\" class=\"t-mid tc-conc\">"
+},
+{
+"before": " DIÁLOGO INSTITUCIONAL</text>\n      <line x1=\"150\" y1=\"140\" x2=\"550\" y2=\"140\" class=\"thin\"/><line x1=\"150\" y1=\"155\" x2=\"550\" y2=\"155\" class=\"thin\"/>\n      <line x1=\"150\" y1=\"300\" x2=\"550\" y2=\"300\" class=\"thin\"/><line x1=\"150\" y1=\"315\" x2=\"550\" y2=\"315\" class=\"thin\"/>\n      <line x1=\"150\" y1=\"460\" x2=\"550\" y2=\"460\" class=\"thin\"/><line x1=\"150\" y1=\"475\" x2=\"550\" y2=\"475\" class=\"thin\"/>\n      <text x=\"50\" y=\"150\" class=\"t-small tc-dif\">STF</text><text x=\"50\" y=\"310\" class=\"t-small tc-conc\">CONGRESSO",
+"after": " DIÁLOGO INSTITUCIONAL</text>\n      <line x1=\"190\" y1=\"140\" x2=\"550\" y2=\"140\" class=\"thin\"/><line x1=\"190\" y1=\"155\" x2=\"550\" y2=\"155\" class=\"thin\"/>\n      <line x1=\"190\" y1=\"300\" x2=\"550\" y2=\"300\" class=\"thin\"/><line x1=\"190\" y1=\"315\" x2=\"550\" y2=\"315\" class=\"thin\"/>\n      <line x1=\"190\" y1=\"460\" x2=\"550\" y2=\"460\" class=\"thin\"/><line x1=\"190\" y1=\"475\" x2=\"550\" y2=\"475\" class=\"thin\"/>\n      <text x=\"50\" y=\"150\" class=\"t-small tc-dif\">STF</text><text x=\"50\" y=\"310\" class=\"t-small tc-conc\">CONGRESSO"
 }
 ]

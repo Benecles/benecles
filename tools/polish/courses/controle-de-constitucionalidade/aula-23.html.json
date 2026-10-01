@@ -126,5 +126,9 @@
 {
 "before": "leitura então vigente, \"classe\" era entendida como",
 "after": "leitura então vigente, “classe” era entendida como"
+},
+{
+"before": " DA ADI</text>\n        <path d=\"M280 300l20 26 40-56\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\" class=\"ink\"/>\n        <rect x=\"70\" y=\"360\" width=\"460\" height=\"100\" style=\"fill:var(--ink)\"/>\n        <text x=\"90\" y=\"396\" class=\"t-light t-mid\">PERTINÊNCIA ",
+"after": " DA ADI</text>\n        <path d=\"M280 350l20 26 40-56\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" fill=\"none\" class=\"ink\"/>\n        <rect x=\"70\" y=\"360\" width=\"460\" height=\"100\" style=\"fill:var(--ink)\"/>\n        <text x=\"90\" y=\"396\" class=\"t-light t-mid\">PERTINÊNCIA "
 }
 ]
