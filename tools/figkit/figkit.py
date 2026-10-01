@@ -342,3 +342,113 @@ def statute(x, y, w, art, parts, source='', tone='conc'):
         o += f'<text x="{x + 14}" y="{cy}" xml:space="preserve" style="{SERIF};font-size:12px;fill:var(--ink)">{spans}</text>'
         cy += 16
     return o, h
+
+
+class Clock:
+    """A procedural clock: real days as columns, scenarios as lanes, incidents as marks on the day they happen.
+
+    days: list of (name, label, workday). Lanes are drawn top to bottom; each lane is a thin line
+    with marks placed at day indexes (fractions allowed). Weekend columns are shaded through every lane.
+    """
+
+    def __init__(self, uid, x0, x1, y0, days, pre=None):
+        self.uid, self.x0, self.x1, self.y0, self.days, self.pre = uid, x0, x1, y0, days, pre
+        self.cw = (x1 - x0) / len(days)
+        self.o, self.lanes_y = [], []
+
+    def cx(self, d):
+        return self.x0 + self.cw * (d + .5)
+
+    def header(self, bottom):
+        o = ''
+        for i, (name, lab, work) in enumerate(self.days):
+            x = self.x0 + i * self.cw
+            if not work:
+                o += f'<rect x="{x:g}" y="{self.y0}" width="{self.cw:g}" height="{bottom - self.y0}" style="fill:var(--paper-2);opacity:.9"/>'
+            o += f'<rect x="{x:g}" y="{self.y0}" width="{self.cw:g}" height="40" style="fill:none;stroke:var(--ink);stroke-width:1"/>'
+            o += t(x + self.cw / 2, self.y0 + 16, name, size=10, anchor='middle', caps=True, fill='var(--ink-2)')
+            o += t(x + self.cw / 2, self.y0 + 32, lab, size=11.5, anchor='middle', weight=700, fill='var(--ink)' if work else 'var(--muted)')
+        if self.pre:
+            px0 = self.x0 - self.pre[0]
+            o += f'<rect x="{px0}" y="{self.y0}" width="{self.pre[0]}" height="40" style="fill:var(--conc-wash);stroke:var(--conc);stroke-width:1"/>'
+            o += t(px0 + self.pre[0] / 2, self.y0 + 25, self.pre[1], size=11, anchor='middle', weight=700, fill='var(--conc)')
+        self.o.insert(0, o)
+
+    def lane(self, y, title, sub=''):
+        o = t(self.x0, y - 20, title, size=10.5, caps=True, weight=700)
+        if sub:
+            o += t(self.x1, y - 20, sub, size=10, anchor='end', fill='var(--ink-2)')
+        o += line(self.x0, y, self.x1, y, tone='muted', w=1)
+        self.o.append(o)
+
+    def votes(self, y, at, hollow=(), tone='ink'):
+        """at: list of day indexes, one per vote; several on a day stack sideways."""
+        seen = {}
+        o = ''
+        for d in at:
+            k = seen.get(d, 0); seen[d] = k + 1
+            x = self.cx(d) - self.cw / 2 + 8 + (k % 5) * 9
+            yy = y - 6 + (k // 5) * 12
+            o += f'<circle cx="{x:g}" cy="{yy}" r="3.6" style="fill:{TONE[tone]}"/>'
+        for d in hollow:
+            x = self.cx(d) + self.cw / 2 - 12
+            o += f'<circle cx="{x:g}" cy="{y - 6}" r="4.2" style="fill:var(--paper);stroke:{TONE["conc"]};stroke-width:1.6"/>'
+        self.o.append(o)
+
+    def event(self, y, d, label, sub='', tone='conc', below=24, anchor='middle'):
+        x = self.cx(d)
+        o = f'<path d="M{x:g} {y - 14}V{y + 8}" style="stroke:{TONE[tone]};stroke-width:2.4"/>'
+        o += f'<path d="M{x - 5:g} {y - 14}h10l-5 7z" style="fill:{TONE[tone]}"/>'
+        o += t(x, y + below, label, size=10.5, weight=700, caps=True, fill=TONE[tone], anchor=anchor)
+        if sub:
+            o += t(x, y + below + 14, sub, size=10.5, anchor=anchor)
+        self.o.append(o)
+
+    def run(self, y, d0, x_end, label, tone='mix', dash=False):
+        x = self.cx(d0)
+        da = ';stroke-dasharray:6 4' if dash else ''
+        o = f'<path d="M{x:g} {y}H{x_end - 8:g}" style="stroke:{TONE[tone]};stroke-width:3{da}"/><path d="M{x_end:g} {y}l-9 -5v10z" style="fill:{TONE[tone]}"/>'
+        o += t(x_end, y - 8, label, size=10.5, anchor='end', weight=700, fill=TONE[tone])
+        self.o.append(o)
+
+    def svg(self):
+        return ''.join(self.o)
+
+
+class Path:
+    """A decision path: questions on a trunk, each exit a named legal consequence.
+
+    Questions sit left of the trunk (right-aligned); exits leave to the right and end in a card;
+    the 'continue' answer is written beside the trunk. The active question is inked, the rest muted.
+    """
+
+    def __init__(self, uid, trunk=232, card_x=330, card_w=240):
+        self.uid, self.tx, self.cx, self.cw = uid, trunk, card_x, card_w
+        self.o = []
+
+    def card(self, x, y, w, head, lines, tone, active=True):
+        c = TONE[tone] if active else 'var(--ink-2)'
+        h = 26 + 15 * len(lines)
+        o = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" style="fill:{WASH[tone] if active else "var(--paper)"};stroke:{c};stroke-width:1.4"/>'
+        o += t(x + 12, y + 18, head, size=10.5, caps=True, weight=700, fill=c)
+        for i, ln in enumerate(lines):
+            o += t(x + 12, y + 34 + 15 * i, ln, size=10.5, fill='var(--ink)' if active else 'var(--ink-2)')
+        return o, h
+
+    def question(self, y, q, exit_label, head, lines, tone='conc', go='', active=True, next_y=None):
+        ink = 'var(--ink)' if active else 'var(--ink-2)'
+        o = ''
+        if next_y is not None:
+            o += line(self.tx, y + 9, self.tx, next_y - 9, w=2.2 if active else 1.4)
+            if go:
+                o += t(self.tx - 14, y + 36, go, size=10.5, anchor='end', weight=700 if active else 500, fill=ink)
+        o += line(self.tx + 9, y, self.cx, y, tone=tone if active else 'muted', w=2 if active else 1.2)
+        o += t(self.tx + 14, y - 8, exit_label, size=10.5, weight=700, fill=TONE[tone] if active else 'var(--ink-2)')
+        o += f'<circle cx="{self.tx}" cy="{y}" r="9" style="fill:{"var(--ink)" if active else "var(--paper)"};stroke:var(--ink);stroke-width:2"/>'
+        for i, ln in enumerate(q):
+            o += t(self.tx - 18, y - 3 + 15 * i - 7 * (len(q) - 1), ln, size=11.5, anchor='end', weight=700 if active else 500, fill=ink)
+        c, h = self.card(self.cx, y - 18, self.cw, head, lines, tone, active)
+        self.o.append(o + c)
+
+    def svg(self):
+        return ''.join(self.o)
