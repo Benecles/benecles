@@ -1,0 +1,1203 @@
+id,course,page,svg_index,kind,caption,bytes,element_count,distinct_colours,text_count,generator,genre_guess
+"ctl-a03-s8","controle-de-constitucionalidade","aula-03.html","8","panel","FIG. 3 · IDA E VOLTA, PRIMEIRAS RODADAS","1508","14","9","5","inline","comparison"
+"ctl-a05-s8","controle-de-constitucionalidade","aula-05.html","8","panel","FIG. 3 · O PARADOXO E AS DUAS NORMAS EM CONFLITO","1628","18","6","12","inline","comparison"
+"ctl-a12-s8","controle-de-constitucionalidade","aula-12.html","8","panel","FIG. 3 · CONSTITUIÇÃO SINTÉTICA E CARGA SELETIVA","2350","41","5","13","inline","comparison"
+"ctl-a22-s8","controle-de-constitucionalidade","aula-22.html","8","other","FIG. 3 · UNIVERSAIS X ESPECIAIS, ART. 103 DA CF · (A DIVISÃO UNIVERSAL/ESPECIAL E A PERTINÊNCIA TEMÁTICA SÃO ANTECIPADAS AQUI E DESENVOLVIDAS NA AULA 23)","1374","14","6","11","inline","comparison"
+"ctl-a27-s11","controle-de-constitucionalidade","aula-27.html","11","other","","1966","18","5","11","inline","comparison"
+"dla-a02-s6","direito-latino-americano","aula-02.html","6","panel","FIG. 1 · ONDE CADA CORTE FICOU
+1 / 4","1079","19","5","5","inline","comparison"
+"dla-a08-s1","direito-latino-americano","aula-08.html","1","hero","","1972","19","9","7","inline","comparison"
+"pci-a06-citacao-s2","processo-civil-i","aula-06-citacao.html","2","panel","FIG. 1 · CITAÇÃO, INTIMAÇÃO E CARTAS: TRÊS CAMINHOS
+1 / 3","5107","53","7","21","inline","comparison"
+"pci-a06-citacao-s3","processo-civil-i","aula-06-citacao.html","3","panel","FIG. 1 · CITAÇÃO, INTIMAÇÃO E CARTAS: TRÊS CAMINHOS
+1 / 3","3308","36","6","11","inline","comparison"
+"pci-a09-s2","processo-civil-i","aula-09.html","2","panel","FIG. 1 · NULIDADE: DA FINALIDADE AO ALCANCE
+1 / 3","3757","39","7","14","inline","comparison"
+"pci-a09-s3","processo-civil-i","aula-09.html","3","panel","FIG. 1 · NULIDADE: DA FINALIDADE AO ALCANCE
+1 / 3","3583","38","8","12","inline","comparison"
+"tdl-revisao-p1-s1","teoria-do-delito","revisao-p1.html","1","hero","","2564","27","8","12","inline","comparison"
+"tdl-s16-s1","teoria-do-delito","suplemento-16.html","1","hero","","943","12","4","7","inline","comparison"
+"tdl-s18-s2","teoria-do-delito","suplemento-18.html","2","panel","FIG. 1 · DUAS TÉCNICAS DE DETERMINAÇÃO
+1 / 2","2194","27","9","10","inline","comparison"
+"tdl-s18-s3","teoria-do-delito","suplemento-18.html","3","panel","FIG. 1 · DUAS TÉCNICAS DE DETERMINAÇÃO
+1 / 2","2191","27","9","10","inline","comparison"
+"tdl-u01-s7","teoria-do-delito","unidade-01.html","7","other","O fato não se qualifica sozinho: é a norma que recorta o que importa","2368","29","6","15","inline","comparison"
+"tdl-u11-reprovacao-s1","teoria-do-delito","unidade-11-reprovacao.html","1","hero","","1291","16","3","7","inline","comparison"
+"tdl-u11-reprovacao-s2","teoria-do-delito","unidade-11-reprovacao.html","2","panel","FIG. 1 · TRÊS REGISTROS DA FUNDAMENTAÇÃO
+1 / 3","2706","33","9","11","inline","comparison"
+"tdl-u11-reprovacao-s3","teoria-do-delito","unidade-11-reprovacao.html","3","panel","FIG. 1 · TRÊS REGISTROS DA FUNDAMENTAÇÃO
+1 / 3","2703","33","9","11","inline","comparison"
+"tdl-u11-reprovacao-s4","teoria-do-delito","unidade-11-reprovacao.html","4","panel","FIG. 1 · TRÊS REGISTROS DA FUNDAMENTAÇÃO
+1 / 3","2703","33","9","11","inline","comparison"
+"tdl-u11-s1","teoria-do-delito","unidade-11.html","1","hero","","1291","16","3","7","inline","comparison"
+"tgc-a03-s10","teoria-geral-dos-contratos","aula-03.html","10","panel","FIG. 2 · BOA-FÉ OBJETIVA
+1 / 5","1212","14","5","7","inline","comparison"
+"tgc-a07-s1","teoria-geral-dos-contratos","aula-07.html","1","hero","","1733","19","6","9","inline","comparison"
+"ctl-a05-s3","controle-de-constitucionalidade","aula-05.html","3","panel","FIG. 1 · “UM PASSO PARA TRÁS”","2408","27","6","13","inline","flow-or-decision"
+"ctl-a09-s3","controle-de-constitucionalidade","aula-09.html","3","panel","FIG. 1 · DOIS MOMENTOS","1476","18","6","9","inline","flow-or-decision"
+"ctl-a11-s7","controle-de-constitucionalidade","aula-11.html","7","panel","FIG. 3 · EXAME EM ABSTRATO","1418","15","6","6","inline","flow-or-decision"
+"ctl-a11-s8","controle-de-constitucionalidade","aula-11.html","8","panel","FIG. 4 · EXAME EM CONCRETO","1503","16","6","7","inline","flow-or-decision"
+"ctl-a11-s9","controle-de-constitucionalidade","aula-11.html","9","panel","FIG. 5 · ANTES E DEPOIS DO STF","2526","36","7","13","inline","flow-or-decision"
+"ctl-a19-s2","controle-de-constitucionalidade","aula-19.html","2","panel","FIG. 1 · DUAS VIAS DE REAÇÃO, DOIS TESTES","1402","18","7","11","inline","flow-or-decision"
+"ctl-a20-s2","controle-de-constitucionalidade","aula-20.html","2","panel","FIG. 1 · O FUNIL DO CABIMENTO","2686","33","7","15","inline","flow-or-decision"
+"ctl-a24-s2","controle-de-constitucionalidade","aula-24.html","2","panel","FIG. 1 · RITO ORDINÁRIO E RITO ABREVIADO","1504","19","5","8","inline","flow-or-decision"
+"ctl-a24-s9","controle-de-constitucionalidade","aula-24.html","9","panel","FIG. 3 · DA REGRA AO CONTRASTE COM FATOS","1466","17","5","7","inline","flow-or-decision"
+"ctl-a25-s11","controle-de-constitucionalidade","aula-25.html","11","panel","FIG. 4 · EFEITOS: CONCESSÃO E INDEFERIMENTO","1350","15","6","8","inline","flow-or-decision"
+"ctl-a26-s5","controle-de-constitucionalidade","aula-26.html","5","panel","FIG. 1 · REPRISTINAÇÃO E EFEITO REPRISTINATÓRIO DA CAUTELAR","1236","14","7","7","inline","flow-or-decision"
+"met-a05-s1","metodologia-juridica","aula-05.html","1","other","DA INFORMAÇÃO À DECISÃO","1996","19","7","7","inline","flow-or-decision"
+"pci-a02-s2","processo-civil-i","aula-02.html","2","panel","FIG. 1 · O CAMINHO DA INICIAL ATÉ A AUDIÊNCIA
+1 / 3","5304","53","12","23","inline","flow-or-decision"
+"pci-a02-s4","processo-civil-i","aula-02.html","4","panel","FIG. 1 · O CAMINHO DA INICIAL ATÉ A AUDIÊNCIA
+1 / 3","4381","45","12","21","inline","flow-or-decision"
+"pci-a04-s4","processo-civil-i","aula-04.html","4","panel","FIG. 1 · ASSISTÊNCIA: O VÍNCULO E O ALCANCE DA SENTENÇA
+1 / 3","3502","35","12","17","inline","flow-or-decision"
+"tdl-index-s1","teoria-do-delito","index.html","1","front","Planta do curso: a análise do crime como perguntas em sequência; cada resposta negativa encerra o caso com seu resultado; as unidades ficam ao lado da pergunta que estudam","10885","157","10","49","front build","flow-or-decision"
+"tdl-s17-s4","teoria-do-delito","suplemento-17.html","4","panel","FIG. 1 · DA SEPARAÇÃO À SÍNTESE
+1 / 4","2269","28","10","9","inline","flow-or-decision"
+"tdl-s18-s4","teoria-do-delito","suplemento-18.html","4","panel","FIG. 2 · ONDE A OMISSÃO ENCONTRA O TIPO
+1 / 4","2315","31","9","7","inline","flow-or-decision"
+"tdl-s18-s5","teoria-do-delito","suplemento-18.html","5","panel","FIG. 2 · ONDE A OMISSÃO ENCONTRA O TIPO
+1 / 4","2315","31","10","7","inline","flow-or-decision"
+"tdl-s18-s6","teoria-do-delito","suplemento-18.html","6","panel","FIG. 2 · ONDE A OMISSÃO ENCONTRA O TIPO
+1 / 4","2315","31","10","7","inline","flow-or-decision"
+"tdl-s18-s7","teoria-do-delito","suplemento-18.html","7","panel","FIG. 2 · ONDE A OMISSÃO ENCONTRA O TIPO
+1 / 4","2309","31","9","7","inline","flow-or-decision"
+"tdl-u02-funcionalismo-s2","teoria-do-delito","unidade-02-funcionalismo.html","2","panel","FIG. 2 · A FICHA DE DECISÃO POLÍTICO-CRIMINAL
+1 / 3","2159","29","9","8","inline","flow-or-decision"
+"tdl-u02-funcionalismo-s3","teoria-do-delito","unidade-02-funcionalismo.html","3","panel","FIG. 2 · A FICHA DE DECISÃO POLÍTICO-CRIMINAL
+1 / 3","2156","29","9","8","inline","flow-or-decision"
+"tdl-u02-funcionalismo-s4","teoria-do-delito","unidade-02-funcionalismo.html","4","panel","FIG. 2 · A FICHA DE DECISÃO POLÍTICO-CRIMINAL
+1 / 3","2156","29","9","8","inline","flow-or-decision"
+"tdl-u04-dolo-s2","teoria-do-delito","unidade-04-dolo.html","2","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3165","41","8","15","inline","flow-or-decision"
+"tdl-u04-dolo-s3","teoria-do-delito","unidade-04-dolo.html","3","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3169","41","9","15","inline","flow-or-decision"
+"tdl-u04-dolo-s4","teoria-do-delito","unidade-04-dolo.html","4","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3167","41","9","15","inline","flow-or-decision"
+"tdl-u04-dolo-s5","teoria-do-delito","unidade-04-dolo.html","5","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3167","41","9","15","inline","flow-or-decision"
+"tdl-u04-dolo-s6","teoria-do-delito","unidade-04-dolo.html","6","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3161","41","9","15","inline","flow-or-decision"
+"tdl-u04-dolo-s7","teoria-do-delito","unidade-04-dolo.html","7","panel","FIG. 2 · LOCALIZAR O VÍNCULO EXIGIDO PELO TIPO
+1 / 6","3169","41","9","15","inline","flow-or-decision"
+"tdl-u07-s2","teoria-do-delito","unidade-07.html","2","panel","FIG. 1 · CADEIA CAUSAL E CONCAUSAS
+1 / 4","2197","28","9","9","inline","flow-or-decision"
+"tdl-u07-s3","teoria-do-delito","unidade-07.html","3","panel","FIG. 1 · CADEIA CAUSAL E CONCAUSAS
+1 / 4","2199","28","9","9","inline","flow-or-decision"
+"tdl-u07-s4","teoria-do-delito","unidade-07.html","4","panel","FIG. 1 · CADEIA CAUSAL E CONCAUSAS
+1 / 4","2756","36","11","13","inline","flow-or-decision"
+"tdl-u07-s5","teoria-do-delito","unidade-07.html","5","panel","FIG. 1 · CADEIA CAUSAL E CONCAUSAS
+1 / 4","2917","38","11","14","inline","flow-or-decision"
+"tdl-u09-casos-s2","teoria-do-delito","unidade-09-casos.html","2","panel","FIG. 2 · DOSSIÊ TEMPORAL DA PERMISSÃO
+1 / 4","2488","34","9","10","inline","flow-or-decision"
+"tdl-u09-casos-s3","teoria-do-delito","unidade-09-casos.html","3","panel","FIG. 2 · DOSSIÊ TEMPORAL DA PERMISSÃO
+1 / 4","2486","34","9","10","inline","flow-or-decision"
+"tdl-u09-casos-s4","teoria-do-delito","unidade-09-casos.html","4","panel","FIG. 2 · DOSSIÊ TEMPORAL DA PERMISSÃO
+1 / 4","2483","34","9","10","inline","flow-or-decision"
+"tdl-u09-casos-s5","teoria-do-delito","unidade-09-casos.html","5","panel","FIG. 2 · DOSSIÊ TEMPORAL DA PERMISSÃO
+1 / 4","2483","34","9","10","inline","flow-or-decision"
+"tdl-u12-s2","teoria-do-delito","unidade-12.html","2","panel","FIG. 1 · DECISÃO SOBRE CAPACIDADE
+1 / 4","2479","29","7","9","inline","flow-or-decision"
+"tdl-u12-s3","teoria-do-delito","unidade-12.html","3","panel","FIG. 1 · DECISÃO SOBRE CAPACIDADE
+1 / 4","2485","29","7","9","inline","flow-or-decision"
+"tdl-u12-s4","teoria-do-delito","unidade-12.html","4","panel","FIG. 1 · DECISÃO SOBRE CAPACIDADE
+1 / 4","2494","29","7","9","inline","flow-or-decision"
+"tdl-u12-s5","teoria-do-delito","unidade-12.html","5","panel","FIG. 1 · DECISÃO SOBRE CAPACIDADE
+1 / 4","2477","29","7","9","inline","flow-or-decision"
+"tdl-u15-s2","teoria-do-delito","unidade-15.html","2","panel","FIG. 1 · FOLHA DE DECISÃO DA PARTICIPAÇÃO
+1 / 5","3381","52","11","18","inline","flow-or-decision"
+"tdl-u15-s3","teoria-do-delito","unidade-15.html","3","panel","FIG. 1 · FOLHA DE DECISÃO DA PARTICIPAÇÃO
+1 / 5","3402","52","11","18","inline","flow-or-decision"
+"tdl-u15-s4","teoria-do-delito","unidade-15.html","4","panel","FIG. 1 · FOLHA DE DECISÃO DA PARTICIPAÇÃO
+1 / 5","3424","52","11","18","inline","flow-or-decision"
+"tdl-u15-s5","teoria-do-delito","unidade-15.html","5","panel","FIG. 1 · FOLHA DE DECISÃO DA PARTICIPAÇÃO
+1 / 5","3435","52","11","18","inline","flow-or-decision"
+"tdl-u15-s6","teoria-do-delito","unidade-15.html","6","panel","FIG. 1 · FOLHA DE DECISÃO DA PARTICIPAÇÃO
+1 / 5","3463","52","11","18","inline","flow-or-decision"
+"ctl-index-s1","controle-de-constitucionalidade","index.html","1","front","","11654","163","10","65","front build","map"
+"dla-a01-s1","direito-latino-americano","aula-01.html","1","hero","","119744","595","13","30","inline","map"
+"dla-index-s2","direito-latino-americano","index.html","2","front","Mapa do curso: países e cortes estudados","13938","237","12","26","front build","map"
+"met-a01-s5","metodologia-juridica","aula-01.html","5","other","Bolonha: a escola dos glosadores inicia o ensino do direito justinianeu.","432434","270","7","7","inline","map"
+"met-a02-s2","metodologia-juridica","aula-02.html","2","other","A formação portuguesa se conecta a Salamanca, Bolonha e Toulouse.","432432","270","7","7","inline","map"
+"met-a04-s2","metodologia-juridica","aula-04.html","2","other","Em Lima, as assembleias provinciais de 1582 e 1583 situam o concílio.","432434","270","7","7","inline","map"
+"met-a06-s1","metodologia-juridica","aula-06.html","1","other","Salamanca — Lima: carreira de Solórzano, 1610.","432433","270","7","7","inline","map"
+"met-a14-s1","metodologia-juridica","aula-14.html","1","other","Os Estatutos de Coimbra chegam aos cursos de São Paulo e Olinda em 1827.","432432","270","7","7","inline","map"
+"met-index-s1","metodologia-juridica","index.html","1","front","Mapa do curso: o percurso do direito comum, de Bolonha à Península Ibérica e daí às Índias e ao Brasil; cada lugar leva à aula que o estuda","167370","832","10","27","front build","map"
+"tdl-s19-s2","teoria-do-delito","suplemento-19.html","2","panel","FIG. 1 · A MATRIZ DE CASOS E PRINCÍPIOS
+1 / 5","3339","41","9","18","inline","map"
+"tdl-s19-s3","teoria-do-delito","suplemento-19.html","3","panel","FIG. 1 · A MATRIZ DE CASOS E PRINCÍPIOS
+1 / 5","3336","41","9","18","inline","map"
+"tdl-s19-s4","teoria-do-delito","suplemento-19.html","4","panel","FIG. 1 · A MATRIZ DE CASOS E PRINCÍPIOS
+1 / 5","3336","41","9","18","inline","map"
+"tdl-s19-s5","teoria-do-delito","suplemento-19.html","5","panel","FIG. 1 · A MATRIZ DE CASOS E PRINCÍPIOS
+1 / 5","3336","41","9","18","inline","map"
+"tdl-s19-s6","teoria-do-delito","suplemento-19.html","6","panel","FIG. 1 · A MATRIZ DE CASOS E PRINCÍPIOS
+1 / 5","3336","41","9","18","inline","map"
+"tgc-a15-s2","teoria-geral-dos-contratos","aula-15.html","2","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","2085","34","6","7","inline","map"
+"dci-a04-s2","direito-constitucional-i","aula-04.html","2","panel","FIG. 1 · OS DOIS MODELOS E O SISTEMA BRASILEIRO
+1 / 3","4344","42","10","19","inline","matrix-or-table"
+"dci-a04-s3","direito-constitucional-i","aula-04.html","3","panel","FIG. 1 · OS DOIS MODELOS E O SISTEMA BRASILEIRO
+1 / 3","4338","42","10","19","inline","matrix-or-table"
+"dci-a04-s4","direito-constitucional-i","aula-04.html","4","panel","FIG. 1 · OS DOIS MODELOS E O SISTEMA BRASILEIRO
+1 / 3","4269","42","9","19","inline","matrix-or-table"
+"dla-a01-s12","direito-latino-americano","aula-01.html","12","panel","FIG. 3 · CORTE ESTRATIGRÁFICO DO CONSTITUCIONALISMO LATINO-AMERICANO
+1 / 4","2285","23","9","4","inline","matrix-or-table"
+"dla-a01-s13","direito-latino-americano","aula-01.html","13","panel","FIG. 3 · CORTE ESTRATIGRÁFICO DO CONSTITUCIONALISMO LATINO-AMERICANO
+1 / 4","5414","31","11","4","inline","matrix-or-table"
+"dla-a01-s14","direito-latino-americano","aula-01.html","14","panel","FIG. 3 · CORTE ESTRATIGRÁFICO DO CONSTITUCIONALISMO LATINO-AMERICANO
+1 / 4","7093","38","13","6","inline","matrix-or-table"
+"dla-a01-s15","direito-latino-americano","aula-01.html","15","panel","FIG. 3 · CORTE ESTRATIGRÁFICO DO CONSTITUCIONALISMO LATINO-AMERICANO
+1 / 4","4642","42","13","7","inline","matrix-or-table"
+"dla-a02-s1","direito-latino-americano","aula-02.html","1","hero","","1583","15","9","7","inline","matrix-or-table"
+"pci-a01-s2","processo-civil-i","aula-01.html","2","panel","FIG. 1 · A PETIÇÃO INICIAL ANOTADA
+1 / 3","4949","52","11","22","inline","matrix-or-table"
+"pci-a07-s2","processo-civil-i","aula-07.html","2","panel","FIG. 1 · A CONTAGEM DA QUESTÃO DE 2025, DIA A DIA
+1 / 3","12466","118","11","57","inline","matrix-or-table"
+"pci-a07-s3","processo-civil-i","aula-07.html","3","panel","FIG. 1 · A CONTAGEM DA QUESTÃO DE 2025, DIA A DIA
+1 / 3","12234","116","11","56","inline","matrix-or-table"
+"pci-a07-s4","processo-civil-i","aula-07.html","4","panel","FIG. 1 · A CONTAGEM DA QUESTÃO DE 2025, DIA A DIA
+1 / 3","12077","114","11","55","inline","matrix-or-table"
+"tdl-u14-dominio-s2","teoria-do-delito","unidade-14-dominio.html","2","panel","FIG. 2 · FICHA DE PROVA E LIMITES
+1 / 4","3225","46","9","25","inline","matrix-or-table"
+"tdl-u14-dominio-s3","teoria-do-delito","unidade-14-dominio.html","3","panel","FIG. 2 · FICHA DE PROVA E LIMITES
+1 / 4","3222","46","9","25","inline","matrix-or-table"
+"tdl-u14-dominio-s4","teoria-do-delito","unidade-14-dominio.html","4","panel","FIG. 2 · FICHA DE PROVA E LIMITES
+1 / 4","3222","46","9","25","inline","matrix-or-table"
+"tdl-u14-dominio-s5","teoria-do-delito","unidade-14-dominio.html","5","panel","FIG. 2 · FICHA DE PROVA E LIMITES
+1 / 4","3222","46","9","25","inline","matrix-or-table"
+"tdl-u14-s2","teoria-do-delito","unidade-14.html","2","panel","FIG. 1 · FICHA DE IMPUTAÇÃO INDIVIDUAL
+1 / 5","3460","55","11","17","inline","matrix-or-table"
+"tdl-u14-s3","teoria-do-delito","unidade-14.html","3","panel","FIG. 1 · FICHA DE IMPUTAÇÃO INDIVIDUAL
+1 / 5","3456","55","11","17","inline","matrix-or-table"
+"tdl-u14-s4","teoria-do-delito","unidade-14.html","4","panel","FIG. 1 · FICHA DE IMPUTAÇÃO INDIVIDUAL
+1 / 5","3457","55","11","17","inline","matrix-or-table"
+"tdl-u14-s5","teoria-do-delito","unidade-14.html","5","panel","FIG. 1 · FICHA DE IMPUTAÇÃO INDIVIDUAL
+1 / 5","3456","55","11","17","inline","matrix-or-table"
+"tdl-u14-s6","teoria-do-delito","unidade-14.html","6","panel","FIG. 1 · FICHA DE IMPUTAÇÃO INDIVIDUAL
+1 / 5","3457","55","11","17","inline","matrix-or-table"
+"tdl-u15-casos-s2","teoria-do-delito","unidade-15-casos.html","2","panel","FIG. 2 · QUADRO DE ATRIBUIÇÃO POR PESSOA
+1 / 3","3293","48","10","16","inline","matrix-or-table"
+"tdl-u15-casos-s3","teoria-do-delito","unidade-15-casos.html","3","panel","FIG. 2 · QUADRO DE ATRIBUIÇÃO POR PESSOA
+1 / 3","3293","48","10","16","inline","matrix-or-table"
+"tdl-u15-casos-s4","teoria-do-delito","unidade-15-casos.html","4","panel","FIG. 2 · QUADRO DE ATRIBUIÇÃO POR PESSOA
+1 / 3","3293","48","10","16","inline","matrix-or-table"
+"tgc-a01-s10","teoria-geral-dos-contratos","aula-01.html","10","panel","FIG. 3 · DESTINAÇÃO FINAL
+1 / 3","1330","17","5","8","inline","matrix-or-table"
+"tgc-a02-s5","teoria-geral-dos-contratos","aula-02.html","5","panel","FIG. 2 · O VÍNCULO
+1 / 2","913","12","5","8","inline","matrix-or-table"
+"tgc-a05-s4","teoria-geral-dos-contratos","aula-05.html","4","panel","FIG. 1 · A PROPOSTA
+1 / 4","2596","29","8","18","inline","matrix-or-table"
+"tgc-a05-s5","teoria-geral-dos-contratos","aula-05.html","5","panel","FIG. 1 · A PROPOSTA
+1 / 4","3041","39","6","21","inline","matrix-or-table"
+"tgc-a06-s7","teoria-geral-dos-contratos","aula-06.html","7","panel","FIG. 3 · QUEM RESPONDE PELA PROMESSA
+1 / 2","2088","25","8","15","inline","matrix-or-table"
+"tgc-a06-s11","teoria-geral-dos-contratos","aula-06.html","11","panel","FIG. 5 · DO PRELIMINAR AO DEFINITIVO
+1 / 2","2458","29","8","19","inline","matrix-or-table"
+"tgc-a10-s6","teoria-geral-dos-contratos","aula-10.html","6","panel","FIG. 2 · O PONTO OMITIDO
+1 / 2","869","12","6","5","inline","matrix-or-table"
+"tgc-a13-s9","teoria-geral-dos-contratos","aula-13.html","9","panel","FIG. 2 · QUATRO CAMINHOS
+1 / 4","1391","19","6","10","inline","matrix-or-table"
+"tgc-a13-s10","teoria-geral-dos-contratos","aula-13.html","10","panel","FIG. 2 · QUATRO CAMINHOS
+1 / 4","1391","19","6","10","inline","matrix-or-table"
+"tgc-a13-s11","teoria-geral-dos-contratos","aula-13.html","11","panel","FIG. 2 · QUATRO CAMINHOS
+1 / 4","1394","19","6","10","inline","matrix-or-table"
+"tgc-a13-s12","teoria-geral-dos-contratos","aula-13.html","12","panel","FIG. 2 · QUATRO CAMINHOS
+1 / 4","1391","19","6","10","inline","matrix-or-table"
+"tgc-a17-s9","teoria-geral-dos-contratos","aula-17.html","9","panel","FIG. 4 · EFEITOS DA RESOLUÇÃO
+1 / 2","3224","44","9","8","inline","matrix-or-table"
+"tgc-index-s1","teoria-geral-dos-contratos","index.html","1","front","Planta do curso: a vida de um contrato, das tratativas à extinção, com as aulas no momento que governam","9148","140","8","40","front build","matrix-or-table"
+"ctl-a01-s1","controle-de-constitucionalidade","aula-01.html","1","hero","","707","7","5","3","inline","other"
+"ctl-a02-s1","controle-de-constitucionalidade","aula-02.html","1","hero","","915","9","5","3","inline","other"
+"ctl-a02-s2","controle-de-constitucionalidade","aula-02.html","2","panel","FIG. 1 · SUPREMACIA E RIGIDEZ","1515","15","9","7","inline","other"
+"ctl-a02-s3","controle-de-constitucionalidade","aula-02.html","3","panel","FIG. 2 · QUEM GUARDA A CONSTITUIÇÃO?","1663","15","6","5","inline","other"
+"ctl-a03-s1","controle-de-constitucionalidade","aula-03.html","1","hero","","906","8","5","3","inline","other"
+"ctl-a03-s4","controle-de-constitucionalidade","aula-03.html","4","panel","FIG. 2 · KELSEN CONTRA SCHMITT","1664","12","7","6","inline","other"
+"ctl-a03-s5","controle-de-constitucionalidade","aula-03.html","5","panel","FIG. 2 · KELSEN CONTRA SCHMITT","2026","16","7","6","inline","other"
+"ctl-a03-s6","controle-de-constitucionalidade","aula-03.html","6","panel","FIG. 3 · IDA E VOLTA, PRIMEIRAS RODADAS","1499","14","9","5","inline","other"
+"ctl-a03-s7","controle-de-constitucionalidade","aula-03.html","7","panel","FIG. 3 · IDA E VOLTA, PRIMEIRAS RODADAS","1508","14","9","5","inline","other"
+"ctl-a03-s9","controle-de-constitucionalidade","aula-03.html","9","panel","FIG. 3 · IDA E VOLTA, PRIMEIRAS RODADAS","1493","14","9","5","inline","other"
+"ctl-a03-s10","controle-de-constitucionalidade","aula-03.html","10","panel","FIG. 4 · DECISIONISMO E A TRANSIÇÃO PARA O BRASIL","1497","14","9","5","inline","other"
+"ctl-a03-s11","controle-de-constitucionalidade","aula-03.html","11","panel","FIG. 4 · DECISIONISMO E A TRANSIÇÃO PARA O BRASIL","1497","14","9","5","inline","other"
+"ctl-a03-s12","controle-de-constitucionalidade","aula-03.html","12","panel","FIG. 4 · DECISIONISMO E A TRANSIÇÃO PARA O BRASIL","1487","14","9","5","inline","other"
+"ctl-a03-s13","controle-de-constitucionalidade","aula-03.html","13","other","FIG. 5 · JUSTIÇA, ESCUDO, CONSTITUIÇÃO","1176","10","2","4","inline","other"
+"ctl-a03-s14","controle-de-constitucionalidade","aula-03.html","14","other","FIG. 6 · REGRESSÃO INFINITA","1564","16","6","5","inline","other"
+"ctl-a04-s3","controle-de-constitucionalidade","aula-04.html","3","panel","FIG. 1 · PIRÂMIDE CLÁSSICA","858","11","5","8","inline","other"
+"ctl-a04-s4","controle-de-constitucionalidade","aula-04.html","4","panel","FIG. 2 · PARÂMETRO AMPLIADO","864","9","8","6","inline","other"
+"ctl-a04-s5","controle-de-constitucionalidade","aula-04.html","5","panel","FIG. 2 · PARÂMETRO AMPLIADO","804","10","6","5","inline","other"
+"ctl-a04-s6","controle-de-constitucionalidade","aula-04.html","6","panel","FIG. 3 · ANTES / AGORA","823","9","5","6","inline","other"
+"ctl-a04-s7","controle-de-constitucionalidade","aula-04.html","7","panel","FIG. 3 · ANTES / AGORA","905","10","6","7","inline","other"
+"ctl-a05-s1","controle-de-constitucionalidade","aula-05.html","1","hero","","1405","13","6","5","inline","other"
+"ctl-a05-s5","controle-de-constitucionalidade","aula-05.html","5","panel","FIG. 2 · FLUXOGRAMA E PIRÂMIDE","1090","12","6","8","inline","other"
+"ctl-a05-s7","controle-de-constitucionalidade","aula-05.html","7","panel","FIG. 3 · O PARADOXO E AS DUAS NORMAS EM CONFLITO","1461","17","7","10","inline","other"
+"ctl-a06-s1","controle-de-constitucionalidade","aula-06.html","1","hero","","915","8","5","3","inline","other"
+"ctl-a06-s2","controle-de-constitucionalidade","aula-06.html","2","panel","FIG. 1 · QUANTO À CONDUTA","1036","14","7","7","inline","other"
+"ctl-a06-s3","controle-de-constitucionalidade","aula-06.html","3","panel","FIG. 2 · FORMAL (AZUL) × MATERIAL (VERMELHÃO)","1300","17","7","12","inline","other"
+"ctl-a06-s4","controle-de-constitucionalidade","aula-06.html","4","panel","FIG. 2 · FORMAL (AZUL) × MATERIAL (VERMELHÃO)","1146","14","7","9","inline","other"
+"ctl-a06-s6","controle-de-constitucionalidade","aula-06.html","6","panel","FIG. 3 · TRÊS SUBESPÉCIES DO VÍCIO FORMAL","1030","11","6","7","inline","other"
+"ctl-a06-s7","controle-de-constitucionalidade","aula-06.html","7","panel","FIG. 3 · TRÊS SUBESPÉCIES DO VÍCIO FORMAL","1025","13","5","7","inline","other"
+"ctl-a06-s8","controle-de-constitucionalidade","aula-06.html","8","panel","FIG. 3 · TRÊS SUBESPÉCIES DO VÍCIO FORMAL","1028","13","5","6","inline","other"
+"ctl-a07-s1","controle-de-constitucionalidade","aula-07.html","1","hero","","1211","11","6","3","inline","other"
+"ctl-a07-s2","controle-de-constitucionalidade","aula-07.html","2","panel","FIG. 1 · O PORTÃO DA CF/1988","1463","17","10","7","inline","other"
+"ctl-a07-s3","controle-de-constitucionalidade","aula-07.html","3","panel","FIG. 1 · O PORTÃO DA CF/1988","1451","17","9","7","inline","other"
+"ctl-a07-s5","controle-de-constitucionalidade","aula-07.html","5","other","","1270","14","9","6","inline","other"
+"ctl-a08-s1","controle-de-constitucionalidade","aula-08.html","1","hero","","793","7","5","3","inline","other"
+"ctl-a09-s1","controle-de-constitucionalidade","aula-09.html","1","hero","","1029","11","5","7","inline","other"
+"ctl-a09-s2","controle-de-constitucionalidade","aula-09.html","2","panel","FIG. 1 · DOIS MOMENTOS","1052","13","7","10","inline","other"
+"ctl-a10-s1","controle-de-constitucionalidade","aula-10.html","1","hero","","863","8","5","4","inline","other"
+"ctl-a10-s2","controle-de-constitucionalidade","aula-10.html","2","panel","FIG. 1 · DEFINIÇÃO E MARCO TEMPORAL","812","9","7","5","inline","other"
+"ctl-a10-s4","controle-de-constitucionalidade","aula-10.html","4","panel","FIG. 1 · DEFINIÇÃO E MARCO TEMPORAL","970","12","6","7","inline","other"
+"ctl-a10-s5","controle-de-constitucionalidade","aula-10.html","5","panel","FIG. 2 · A REGRA E SUA ÚNICA EXCEÇÃO INTERNA","966","15","5","7","inline","other"
+"ctl-a10-s6","controle-de-constitucionalidade","aula-10.html","6","panel","FIG. 2 · A REGRA E SUA ÚNICA EXCEÇÃO INTERNA","1005","15","5","7","inline","other"
+"ctl-a10-s7","controle-de-constitucionalidade","aula-10.html","7","panel","FIG. 2 · A REGRA E SUA ÚNICA EXCEÇÃO INTERNA","989","15","5","7","inline","other"
+"ctl-a10-s9","controle-de-constitucionalidade","aula-10.html","9","panel","FIG. 3 · A EXCEÇÃO PELO LEGISLATIVO","1005","15","5","7","inline","other"
+"ctl-a10-s12","controle-de-constitucionalidade","aula-10.html","12","panel","FIG. 4 · DETALHAMENTO E REGULAMENTAÇÃO","963","15","5","7","inline","other"
+"ctl-a10-s13","controle-de-constitucionalidade","aula-10.html","13","panel","FIG. 4 · DETALHAMENTO E REGULAMENTAÇÃO","1003","15","5","7","inline","other"
+"ctl-a10-s14","controle-de-constitucionalidade","aula-10.html","14","panel","FIG. 4 · DETALHAMENTO E REGULAMENTAÇÃO","980","15","5","7","inline","other"
+"ctl-a10-s15","controle-de-constitucionalidade","aula-10.html","15","panel","FIG. 4 · DETALHAMENTO E REGULAMENTAÇÃO","989","15","5","7","inline","other"
+"ctl-a11-s1","controle-de-constitucionalidade","aula-11.html","1","hero","","948","8","5","3","inline","other"
+"ctl-a11-s2","controle-de-constitucionalidade","aula-11.html","2","panel","FIG. 1 · ORIGENS","1118","15","7","7","inline","other"
+"ctl-a11-s3","controle-de-constitucionalidade","aula-11.html","3","panel","FIG. 1 · ORIGENS","1314","17","8","8","inline","other"
+"ctl-a11-s4","controle-de-constitucionalidade","aula-11.html","4","panel","FIG. 1 · ORIGENS","1554","18","8","8","inline","other"
+"ctl-a11-s6","controle-de-constitucionalidade","aula-11.html","6","panel","FIG. 2 · VOCABULÁRIO","1573","26","6","8","inline","other"
+"ctl-a12-s1","controle-de-constitucionalidade","aula-12.html","1","hero","","948","9","5","4","inline","other"
+"ctl-a12-s2","controle-de-constitucionalidade","aula-12.html","2","panel","FIG. 1 · SEPARAÇÃO × CUMULAÇÃO","1451","18","7","8","inline","other"
+"ctl-a12-s4","controle-de-constitucionalidade","aula-12.html","4","panel","FIG. 1 · SEPARAÇÃO × CUMULAÇÃO","832","9","5","8","inline","other"
+"ctl-a12-s5","controle-de-constitucionalidade","aula-12.html","5","panel","FIG. 2 · A CUMULAÇÃO EM NÚMEROS E EM UM CASO REAL","2310","43","6","8","inline","other"
+"ctl-a12-s6","controle-de-constitucionalidade","aula-12.html","6","panel","FIG. 2 · A CUMULAÇÃO EM NÚMEROS E EM UM CASO REAL","1587","21","7","12","inline","other"
+"ctl-a12-s7","controle-de-constitucionalidade","aula-12.html","7","panel","FIG. 3 · CONSTITUIÇÃO SINTÉTICA E CARGA SELETIVA","1596","21","6","14","inline","other"
+"ctl-a12-s9","controle-de-constitucionalidade","aula-12.html","9","panel","FIG. 4 · O VOLUME DECISÓRIO DO STF","1529","20","8","14","inline","other"
+"ctl-a12-s10","controle-de-constitucionalidade","aula-12.html","10","panel","FIG. 4 · O VOLUME DECISÓRIO DO STF","841","9","6","7","inline","other"
+"ctl-a12-s11","controle-de-constitucionalidade","aula-12.html","11","panel","FIG. 5 · CONCEPÇÃO MAIS SEGURA × MENOS SEGURA","1226","16","5","12","inline","other"
+"ctl-a13-s1","controle-de-constitucionalidade","aula-13.html","1","hero","","1029","10","4","4","inline","other"
+"ctl-a13-s2","controle-de-constitucionalidade","aula-13.html","2","panel","FIG. 1 · DE ONDE VEM O INSTITUTO","1036","11","7","8","inline","other"
+"ctl-a13-s5","controle-de-constitucionalidade","aula-13.html","5","panel","FIG. 3 · A LÓGICA DO ECI SE ESPALHA","1195","13","4","9","inline","other"
+"ctl-a14-s1","controle-de-constitucionalidade","aula-14.html","1","hero","","655","7","4","3","inline","other"
+"ctl-a14-s2","controle-de-constitucionalidade","aula-14.html","2","panel","FIG. 1 · A EXTENSÃO ACOMPANHA A DEPENDÊNCIA","1539","15","7","5","inline","other"
+"ctl-a14-s3","controle-de-constitucionalidade","aula-14.html","3","panel","FIG. 1 · A EXTENSÃO ACOMPANHA A DEPENDÊNCIA","1581","14","6","7","inline","other"
+"ctl-a15-s1","controle-de-constitucionalidade","aula-15.html","1","hero","","1148","10","5","4","inline","other"
+"ctl-a15-s3","controle-de-constitucionalidade","aula-15.html","3","panel","FIG. 1 · O QUE SOBRA DA NORMA","981","15","5","7","inline","other"
+"ctl-a15-s6","controle-de-constitucionalidade","aula-15.html","6","panel","FIG. 2 · ÚLTIMA PALAVRA E ESPAÇO DE APRECIAÇÃO","980","15","5","7","inline","other"
+"ctl-a16-s1","controle-de-constitucionalidade","aula-16.html","1","hero","","1284","12","5","5","inline","other"
+"ctl-a16-s2","controle-de-constitucionalidade","aula-16.html","2","panel","FIG. 1 · A NORMA “AINDA CONSTITUCIONAL”","1171","11","5","8","inline","other"
+"ctl-a16-s3","controle-de-constitucionalidade","aula-16.html","3","panel","FIG. 1 · A NORMA “AINDA CONSTITUCIONAL”","1675","16","6","7","inline","other"
+"ctl-a16-s4","controle-de-constitucionalidade","aula-16.html","4","panel","FIG. 2 · O PARADOXO E O EXEMPLO DA PANDEMIA","1488","16","7","10","inline","other"
+"ctl-a16-s5","controle-de-constitucionalidade","aula-16.html","5","panel","FIG. 2 · O PARADOXO E O EXEMPLO DA PANDEMIA","1291","16","8","8","inline","other"
+"ctl-a16-s7","controle-de-constitucionalidade","aula-16.html","7","panel","FIG. 3 · A CRÍTICA E AS ALTERNATIVAS","1498","16","4","12","inline","other"
+"ctl-a17-s1","controle-de-constitucionalidade","aula-17.html","1","hero","","1023","10","5","4","inline","other"
+"ctl-a18-s1","controle-de-constitucionalidade","aula-18.html","1","hero","","947","8","5","3","inline","other"
+"ctl-a18-s2","controle-de-constitucionalidade","aula-18.html","2","panel","FIG. 1 · O TEXTO FIXO E O SENTIDO EM MOVIMENTO","1379","13","4","8","inline","other"
+"ctl-a18-s4","controle-de-constitucionalidade","aula-18.html","4","panel","FIG. 2 · O LIMITE DA MUTAÇÃO","1214","11","6","3","inline","other"
+"ctl-a18-s5","controle-de-constitucionalidade","aula-18.html","5","panel","FIG. 2 · O LIMITE DA MUTAÇÃO","1551","15","4","4","inline","other"
+"ctl-a19-s1","controle-de-constitucionalidade","aula-19.html","1","hero","","882","8","5","3","inline","other"
+"ctl-a19-s3","controle-de-constitucionalidade","aula-19.html","3","panel","FIG. 1 · DUAS VIAS DE REAÇÃO, DOIS TESTES","1046","13","6","10","inline","other"
+"ctl-a19-s4","controle-de-constitucionalidade","aula-19.html","4","panel","FIG. 3 · PODERES EM DIÁLOGO E A CRÍTICA JURISCÊNTRICA","1432","19","7","8","inline","other"
+"ctl-a19-s5","controle-de-constitucionalidade","aula-19.html","5","panel","FIG. 3 · PODERES EM DIÁLOGO E A CRÍTICA JURISCÊNTRICA","826","9","5","7","inline","other"
+"ctl-a20-s1","controle-de-constitucionalidade","aula-20.html","1","hero","","1126","10","5","4","inline","other"
+"ctl-a20-s3","controle-de-constitucionalidade","aula-20.html","3","panel","FIG. 1 · O FUNIL DO CABIMENTO","1995","24","8","16","inline","other"
+"ctl-a20-s4","controle-de-constitucionalidade","aula-20.html","4","panel","FIG. 1 · O FUNIL DO CABIMENTO","1610","21","8","11","inline","other"
+"ctl-a20-s9","controle-de-constitucionalidade","aula-20.html","9","panel","FIG. 4 · MARCO TEMPORAL E QUATRO CENÁRIOS","1648","20","6","14","inline","other"
+"ctl-a20-s10","controle-de-constitucionalidade","aula-20.html","10","panel","FIG. 4 · MARCO TEMPORAL E QUATRO CENÁRIOS","1448","14","5","10","inline","other"
+"ctl-a21-s1","controle-de-constitucionalidade","aula-21.html","1","hero","","1130","10","6","4","inline","other"
+"ctl-a21-s2","controle-de-constitucionalidade","aula-21.html","2","panel","FIG. 1 · PROCESSAMENTO DA ADI/ADC","1105","12","6","7","inline","other"
+"ctl-a21-s3","controle-de-constitucionalidade","aula-21.html","3","panel","FIG. 1 · PROCESSAMENTO DA ADI/ADC","2274","26","8","9","inline","other"
+"ctl-a22-s1","controle-de-constitucionalidade","aula-22.html","1","hero","","1356","12","5","3","inline","other"
+"ctl-a22-s2","controle-de-constitucionalidade","aula-22.html","2","panel","FIG. 1 · BRASIL X ALEMANHA","1672","26","7","9","inline","other"
+"ctl-a22-s3","controle-de-constitucionalidade","aula-22.html","3","panel","FIG. 1 · BRASIL X ALEMANHA","1239","14","7","10","inline","other"
+"ctl-a22-s4","controle-de-constitucionalidade","aula-22.html","4","panel","FIG. 1 · BRASIL X ALEMANHA","1213","14","7","10","inline","other"
+"ctl-a22-s5","controle-de-constitucionalidade","aula-22.html","5","panel","FIG. 2 · CAPACIDADE POSTULATÓRIA","1374","21","6","4","inline","other"
+"ctl-a22-s6","controle-de-constitucionalidade","aula-22.html","6","panel","FIG. 2 · CAPACIDADE POSTULATÓRIA","1142","15","7","6","inline","other"
+"ctl-a23-s1","controle-de-constitucionalidade","aula-23.html","1","hero","","1246","14","5","3","inline","other"
+"ctl-a23-s2","controle-de-constitucionalidade","aula-23.html","2","panel","FIG. 1 · DUAS PORTAS DO ART. 103","1522","19","6","11","inline","other"
+"ctl-a23-s4","controle-de-constitucionalidade","aula-23.html","4","panel","FIG. 2 · OS CINCO CONDICIONANTES","1730","23","5","16","inline","other"
+"ctl-a23-s5","controle-de-constitucionalidade","aula-23.html","5","panel","FIG. 3 · DA LEITURA TRADICIONAL À LEITURA FUNCIONAL","956","10","5","7","inline","other"
+"ctl-a23-s6","controle-de-constitucionalidade","aula-23.html","6","panel","FIG. 3 · DA LEITURA TRADICIONAL À LEITURA FUNCIONAL","1610","19","4","8","inline","other"
+"ctl-a23-s7","controle-de-constitucionalidade","aula-23.html","7","panel","FIG. 3 · DA LEITURA TRADICIONAL À LEITURA FUNCIONAL","1307","13","6","10","inline","other"
+"ctl-a23-s8","controle-de-constitucionalidade","aula-23.html","8","panel","RESULTADOS DOS JULGAMENTOS","1310","16","5","9","inline","other"
+"ctl-a23-s9","controle-de-constitucionalidade","aula-23.html","9","panel","RESULTADOS DOS JULGAMENTOS","1448","16","4","9","inline","other"
+"ctl-a23-s10","controle-de-constitucionalidade","aula-23.html","10","panel","RESULTADOS DOS JULGAMENTOS","1298","14","3","10","inline","other"
+"ctl-a24-s1","controle-de-constitucionalidade","aula-24.html","1","hero","","1156","12","4","5","inline","other"
+"ctl-a24-s3","controle-de-constitucionalidade","aula-24.html","3","panel","FIG. 1 · RITO ORDINÁRIO E RITO ABREVIADO","1866","23","5","12","inline","other"
+"ctl-a24-s4","controle-de-constitucionalidade","aula-24.html","4","panel","FIG. 1 · RITO ORDINÁRIO E RITO ABREVIADO","1928","27","4","13","inline","other"
+"ctl-a24-s5","controle-de-constitucionalidade","aula-24.html","5","panel","FIG. 2 · A PORTA FECHADA E A EXCEÇÃO DO AMICUS CURIAE","774","10","4","4","inline","other"
+"ctl-a24-s6","controle-de-constitucionalidade","aula-24.html","6","panel","FIG. 2 · A PORTA FECHADA E A EXCEÇÃO DO AMICUS CURIAE","989","13","5","6","inline","other"
+"ctl-a24-s7","controle-de-constitucionalidade","aula-24.html","7","panel","FIG. 2 · A PORTA FECHADA E A EXCEÇÃO DO AMICUS CURIAE","788","9","3","5","inline","other"
+"ctl-a24-s8","controle-de-constitucionalidade","aula-24.html","8","panel","FIG. 2 · A PORTA FECHADA E A EXCEÇÃO DO AMICUS CURIAE","783","10","4","4","inline","other"
+"ctl-a24-s10","controle-de-constitucionalidade","aula-24.html","10","panel","FIG. 3 · DA REGRA AO CONTRASTE COM FATOS","1106","15","7","7","inline","other"
+"ctl-a25-s1","controle-de-constitucionalidade","aula-25.html","1","hero","","932","8","4","3","inline","other"
+"ctl-a25-s3","controle-de-constitucionalidade","aula-25.html","3","panel","FIG. 1 · FUNDAMENTO E REQUISITOS","1387","16","8","10","inline","other"
+"ctl-a25-s4","controle-de-constitucionalidade","aula-25.html","4","panel","FIG. 1 · FUNDAMENTO E REQUISITOS","1303","14","8","8","inline","other"
+"ctl-a25-s6","controle-de-constitucionalidade","aula-25.html","6","panel","FIG. 2 · FLUXO DA ADI/ADC","1107","12","6","7","inline","other"
+"ctl-a25-s7","controle-de-constitucionalidade","aula-25.html","7","panel","FIG. 3 · OS DOIS QUÓRUNS","961","14","4","4","inline","other"
+"ctl-a25-s8","controle-de-constitucionalidade","aula-25.html","8","panel","FIG. 3 · OS DOIS QUÓRUNS","869","12","5","4","inline","other"
+"ctl-a25-s9","controle-de-constitucionalidade","aula-25.html","9","panel","FIG. 3 · OS DOIS QUÓRUNS","893","10","3","4","inline","other"
+"ctl-a25-s10","controle-de-constitucionalidade","aula-25.html","10","panel","FIG. 4 · EFEITOS: CONCESSÃO E INDEFERIMENTO","1165","13","7","9","inline","other"
+"ctl-a26-s1","controle-de-constitucionalidade","aula-26.html","1","hero","","1028","11","4","3","inline","other"
+"ctl-a26-s2","controle-de-constitucionalidade","aula-26.html","2","panel","FIG. 1 · REPRISTINAÇÃO E EFEITO REPRISTINATÓRIO DA CAUTELAR","724","8","5","5","inline","other"
+"ctl-a26-s3","controle-de-constitucionalidade","aula-26.html","3","panel","FIG. 1 · REPRISTINAÇÃO E EFEITO REPRISTINATÓRIO DA CAUTELAR","1383","17","7","9","inline","other"
+"ctl-a26-s4","controle-de-constitucionalidade","aula-26.html","4","panel","FIG. 1 · REPRISTINAÇÃO E EFEITO REPRISTINATÓRIO DA CAUTELAR","1328","15","6","7","inline","other"
+"ctl-a27-s1","controle-de-constitucionalidade","aula-27.html","1","hero","","894","8","5","3","inline","other"
+"ctl-a27-s2","controle-de-constitucionalidade","aula-27.html","2","panel","FIG. 1 · O SISTEMA E SUAS CARACTERÍSTICAS","1463","17","8","9","inline","other"
+"ctl-a27-s4","controle-de-constitucionalidade","aula-27.html","4","panel","FIG. 2 · ABERTURA, VOTOS, VISTA E DESTAQUE","1895","20","6","11","inline","other"
+"ctl-a27-s5","controle-de-constitucionalidade","aula-27.html","5","panel","FIG. 2 · ABERTURA, VOTOS, VISTA E DESTAQUE","2308","23","6","9","inline","other"
+"ctl-a27-s6","controle-de-constitucionalidade","aula-27.html","6","panel","FIG. 2 · ABERTURA, VOTOS, VISTA E DESTAQUE","2453","26","8","12","inline","other"
+"ctl-a27-s7","controle-de-constitucionalidade","aula-27.html","7","panel","FIG. 3 · QUEM DESTACA E O QUE ACONTECE COM OS VOTOS","1653","21","8","13","inline","other"
+"ctl-a27-s8","controle-de-constitucionalidade","aula-27.html","8","panel","FIG. 3 · QUEM DESTACA E O QUE ACONTECE COM OS VOTOS","1112","12","5","9","inline","other"
+"ctl-a27-s9","controle-de-constitucionalidade","aula-27.html","9","panel","FIG. 4 · RETRATO HISTÓRICO DA VOTAÇÃO NA ADI 6200","2053","22","8","14","inline","other"
+"ctl-a27-s10","controle-de-constitucionalidade","aula-27.html","10","panel","FIG. 4 · RETRATO HISTÓRICO DA VOTAÇÃO NA ADI 6200","2388","27","8","19","inline","other"
+"ctl-a28-s1","controle-de-constitucionalidade","aula-28.html","1","hero","","906","8","5","3","inline","other"
+"ctl-a28-s2","controle-de-constitucionalidade","aula-28.html","2","panel","FIG. 1 · ART. 27 DA LEI 9.868/1999","802","11","5","5","inline","other"
+"ctl-a29-s1","controle-de-constitucionalidade","aula-29.html","1","hero","","1148","11","5","3","inline","other"
+"dci-a01-s1","direito-constitucional-i","aula-01.html","1","hero","","3376","35","6","16","inline","other"
+"dci-a02-s1","direito-constitucional-i","aula-02.html","1","hero","","3465","36","6","16","inline","other"
+"dci-a03-republica-s1","direito-constitucional-i","aula-03-republica.html","1","hero","","3726","39","5","16","inline","other"
+"dci-a03-republica-s2","direito-constitucional-i","aula-03-republica.html","2","panel","FIG. 1 · DE 1930 A 1988
+1 / 2","4085","44","10","24","inline","other"
+"dci-a03-republica-s3","direito-constitucional-i","aula-03-republica.html","3","panel","FIG. 1 · DE 1930 A 1988
+1 / 2","3992","43","10","23","inline","other"
+"dci-a03-s1","direito-constitucional-i","aula-03.html","1","hero","","3463","36","6","16","inline","other"
+"dci-a03-s2","direito-constitucional-i","aula-03.html","2","panel","FIG. 1 · IMPÉRIO E PRIMEIRA REPÚBLICA
+1 / 2","3976","43","10","23","inline","other"
+"dci-a03-s3","direito-constitucional-i","aula-03.html","3","panel","FIG. 1 · IMPÉRIO E PRIMEIRA REPÚBLICA
+1 / 2","3978","43","10","23","inline","other"
+"dci-a04-casos-s1","direito-constitucional-i","aula-04-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a04-s1","direito-constitucional-i","aula-04.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a05-s1","direito-constitucional-i","aula-05.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a06-casos-precatorios-s1","direito-constitucional-i","aula-06-casos-precatorios.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a06-casos-s1","direito-constitucional-i","aula-06-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a06-s1","direito-constitucional-i","aula-06.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a07-casos-s1","direito-constitucional-i","aula-07-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a07-s1","direito-constitucional-i","aula-07.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a08-s1","direito-constitucional-i","aula-08.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a09-s1","direito-constitucional-i","aula-09.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a10-s1","direito-constitucional-i","aula-10.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a11-s1","direito-constitucional-i","aula-11.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a12-s1","direito-constitucional-i","aula-12.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a13-s1","direito-constitucional-i","aula-13.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a14-s1","direito-constitucional-i","aula-14.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a15-casos-s1","direito-constitucional-i","aula-15-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a15-s1","direito-constitucional-i","aula-15.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a16-casos-s1","direito-constitucional-i","aula-16-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a16-s1","direito-constitucional-i","aula-16.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a17-s1","direito-constitucional-i","aula-17.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a18-casos-s1","direito-constitucional-i","aula-18-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a18-limites-s1","direito-constitucional-i","aula-18-limites.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a18-s1","direito-constitucional-i","aula-18.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a19-casos-s1","direito-constitucional-i","aula-19-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a19-s1","direito-constitucional-i","aula-19.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a20-s1","direito-constitucional-i","aula-20.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a21-casos-s1","direito-constitucional-i","aula-21-casos.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a21-s1","direito-constitucional-i","aula-21.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a22-retrocesso-s1","direito-constitucional-i","aula-22-retrocesso.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a22-s1","direito-constitucional-i","aula-22.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a23-s1","direito-constitucional-i","aula-23.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a24-s1","direito-constitucional-i","aula-24.html","1","hero","","3338","35","5","16","inline","other"
+"dci-a25-s1","direito-constitucional-i","aula-25.html","1","hero","","3338","35","5","16","inline","other"
+"dci-revisao-p1-s1","direito-constitucional-i","revisao-p1.html","1","hero","","3147","33","4","16","inline","other"
+"dla-a01-s4","direito-latino-americano","aula-01.html","4","panel","FIG. 1 · A CRISE DE 1808 E AS RESPOSTAS CONSTITUCIONAIS (FRONTEIRAS ATUAIS)
+1 / 4","22091","223","10","7","inline","other"
+"dla-a01-s5","direito-latino-americano","aula-01.html","5","panel","FIG. 1 · A CRISE DE 1808 E AS RESPOSTAS CONSTITUCIONAIS (FRONTEIRAS ATUAIS)
+1 / 4","21935","221","11","7","inline","other"
+"dla-a01-s7","direito-latino-americano","aula-01.html","7","panel","FIG. 2 · OS PROJETOS FUNDACIONAIS E SUAS FUSÕES
+1 / 4","1127","22","5","6","inline","other"
+"dla-a01-s8","direito-latino-americano","aula-01.html","8","panel","FIG. 2 · OS PROJETOS FUNDACIONAIS E SUAS FUSÕES
+1 / 4","1007","18","5","5","inline","other"
+"dla-a01-s9","direito-latino-americano","aula-01.html","9","panel","FIG. 2 · OS PROJETOS FUNDACIONAIS E SUAS FUSÕES
+1 / 4","995","18","5","5","inline","other"
+"dla-a01-s10","direito-latino-americano","aula-01.html","10","panel","FIG. 2 · OS PROJETOS FUNDACIONAIS E SUAS FUSÕES
+1 / 4","968","18","5","5","inline","other"
+"dla-a02-s7","direito-latino-americano","aula-02.html","7","panel","FIG. 2 · AS CORTES CONSTITUCIONAIS DA REGIÃO (FRONTEIRAS ATUAIS)
+1 / 2","15640","242","14","25","inline","other"
+"dla-a02-s8","direito-latino-americano","aula-02.html","8","panel","FIG. 2 · AS CORTES CONSTITUCIONAIS DA REGIÃO (FRONTEIRAS ATUAIS)
+1 / 2","15901","242","15","25","inline","other"
+"dla-a03-s1","direito-latino-americano","aula-03.html","1","hero","","1023","10","6","5","inline","other"
+"dla-a03-s3","direito-latino-americano","aula-03.html","3","panel","FIG. 1 · DUAS LEITURAS DE “CONEXOS”
+1 / 2","1354","23","5","6","inline","other"
+"dla-a03-s4","direito-latino-americano","aula-03.html","4","panel","FIG. 1 · DUAS LEITURAS DE “CONEXOS”
+1 / 2","1261","23","5","6","inline","other"
+"dla-a03-s5","direito-latino-americano","aula-03.html","5","panel","FIG. 2 · O JULGAMENTO
+1 / 1","3585","54","8","17","inline","other"
+"dla-a03-s6","direito-latino-americano","aula-03.html","6","panel","FIG. 3 · DO ARAGUAIA A SAN JOSÉ
+1 / 2","11202","211","10","5","inline","other"
+"dla-a03-s7","direito-latino-americano","aula-03.html","7","panel","FIG. 3 · DO ARAGUAIA A SAN JOSÉ
+1 / 2","11488","214","11","5","inline","other"
+"dla-a04-s1","direito-latino-americano","aula-04.html","1","hero","","3216","37","5","24","inline","other"
+"dla-a05-s1","direito-latino-americano","aula-05.html","1","hero","","2630","31","5","18","inline","other"
+"dla-a05-s6","direito-latino-americano","aula-05.html","6","panel","FIG. 1 · A GRADAÇÃO DEMOCRÁTICA
+1 / 4","21147","421","13","15","inline","other"
+"dla-a06-s1","direito-latino-americano","aula-06.html","1","hero","","1022","10","6","5","inline","other"
+"dla-a06-s3","direito-latino-americano","aula-06.html","3","panel","FIG. 1 · TRÊS USOS DA CONVENÇÃO
+1 / 3","12029","173","9","1","inline","other"
+"dla-a06-s4","direito-latino-americano","aula-06.html","4","panel","FIG. 1 · TRÊS USOS DA CONVENÇÃO
+1 / 3","9087","171","9","1","inline","other"
+"dla-a06-s5","direito-latino-americano","aula-06.html","5","panel","FIG. 1 · TRÊS USOS DA CONVENÇÃO
+1 / 3","11863","171","9","1","inline","other"
+"dla-a07-s2","direito-latino-americano","aula-07.html","2","panel","FIG. 1 · DOIS REMÉDIOS ESTRUTURAIS
+1 / 2","2531","32","9","9","inline","other"
+"dla-a07-s3","direito-latino-americano","aula-07.html","3","panel","FIG. 1 · DOIS REMÉDIOS ESTRUTURAIS
+1 / 2","2904","40","9","13","inline","other"
+"dla-a08-s2","direito-latino-americano","aula-08.html","2","panel","FIG. 1 · AS ORDENS DA T-025 NO TEMPO
+1 / 4","738","13","3","5","inline","other"
+"dla-a08-s3","direito-latino-americano","aula-08.html","3","panel","FIG. 1 · AS ORDENS DA T-025 NO TEMPO
+1 / 4","739","13","3","5","inline","other"
+"dla-a08-s4","direito-latino-americano","aula-08.html","4","panel","FIG. 1 · AS ORDENS DA T-025 NO TEMPO
+1 / 4","729","13","3","5","inline","other"
+"dla-a08-s5","direito-latino-americano","aula-08.html","5","panel","FIG. 1 · AS ORDENS DA T-025 NO TEMPO
+1 / 4","725","13","3","5","inline","other"
+"dla-a08-s7","direito-latino-americano","aula-08.html","7","panel","FIG. 2 · AUTO 176: O QUE O CRONOGRAMA TINHA DE MOSTRAR
+1 / 2","551","7","4","1","inline","other"
+"dla-a09-s1","direito-latino-americano","aula-09.html","1","hero","","3220","37","5","24","inline","other"
+"dla-a09-s2","direito-latino-americano","aula-09.html","2","panel","FIG. 1 · QUAL REGRA SE APLICA AO PEDIDO DE MEDICAMENTO
+1 / 4","1256","22","5","6","inline","other"
+"dla-a09-s3","direito-latino-americano","aula-09.html","3","panel","FIG. 1 · QUAL REGRA SE APLICA AO PEDIDO DE MEDICAMENTO
+1 / 4","1252","22","5","6","inline","other"
+"dla-a09-s4","direito-latino-americano","aula-09.html","4","panel","FIG. 1 · QUAL REGRA SE APLICA AO PEDIDO DE MEDICAMENTO
+1 / 4","1055","16","6","5","inline","other"
+"dla-a09-s5","direito-latino-americano","aula-09.html","5","panel","FIG. 1 · QUAL REGRA SE APLICA AO PEDIDO DE MEDICAMENTO
+1 / 4","1255","20","6","5","inline","other"
+"dla-revisao-atividade-s1","direito-latino-americano","revisao-atividade.html","1","hero","","2799","32","5","19","inline","other"
+"met-a01-s1","metodologia-juridica","aula-01.html","1","hero","","3421","35","6","16","inline","other"
+"met-a01-s2","metodologia-juridica","aula-01.html","2","panel","FIG. 1 · DO TEXTO À GLOSA, DA GLOSA AO COMENTÁRIO
+1 / 3","3250","32","9","3","inline","other"
+"met-a01-s4","metodologia-juridica","aula-01.html","4","panel","FIG. 1 · DO TEXTO À GLOSA, DA GLOSA AO COMENTÁRIO
+1 / 3","3934","43","10","7","inline","other"
+"met-a02-s1","metodologia-juridica","aula-02.html","1","hero","","3417","35","6","16","inline","other"
+"met-a03-s1","metodologia-juridica","aula-03.html","1","hero","","3411","35","6","16","inline","other"
+"met-a04-s1","metodologia-juridica","aula-04.html","1","hero","","3405","35","6","16","inline","other"
+"met-a04-s4","metodologia-juridica","aula-04.html","4","other","O limiar orienta a provisão paroquial; abaixo dele, cabe ao prelado reunir comunidades.","1412","15","6","5","inline","other"
+"met-a14-s3","metodologia-juridica","aula-14.html","3","other","PROJETO, ESTATUTOS E LEI","1532","18","8","6","inline","other"
+"met-a15-s1","metodologia-juridica","aula-15.html","1","other","DO ESTADO AO FUNDAMENTO DO DIREITO POSITIVO","2002","23","7","7","inline","other"
+"pci-a01-s1","processo-civil-i","aula-01.html","1","hero","","3021","31","6","14","inline","other"
+"pci-a01-s3","processo-civil-i","aula-01.html","3","panel","FIG. 1 · A PETIÇÃO INICIAL ANOTADA
+1 / 3","4529","47","12","26","inline","other"
+"pci-a01-s4","processo-civil-i","aula-01.html","4","panel","FIG. 1 · A PETIÇÃO INICIAL ANOTADA
+1 / 3","3612","36","12","15","inline","other"
+"pci-a02-s1","processo-civil-i","aula-02.html","1","hero","","3017","31","6","14","inline","other"
+"pci-a02-s3","processo-civil-i","aula-02.html","3","panel","FIG. 1 · O CAMINHO DA INICIAL ATÉ A AUDIÊNCIA
+1 / 3","4126","41","12","17","inline","other"
+"pci-a03-s1","processo-civil-i","aula-03.html","1","hero","","3011","31","6","14","inline","other"
+"pci-a04-s1","processo-civil-i","aula-04.html","1","hero","","3011","31","6","14","inline","other"
+"pci-a04-s2","processo-civil-i","aula-04.html","2","panel","FIG. 1 · ASSISTÊNCIA: O VÍNCULO E O ALCANCE DA SENTENÇA
+1 / 3","3159","31","11","10","inline","other"
+"pci-a04-s3","processo-civil-i","aula-04.html","3","panel","FIG. 1 · ASSISTÊNCIA: O VÍNCULO E O ALCANCE DA SENTENÇA
+1 / 3","3032","30","11","9","inline","other"
+"pci-a05-casos-s1","processo-civil-i","aula-05-casos.html","1","hero","","3011","31","6","14","inline","other"
+"pci-a05-s1","processo-civil-i","aula-05.html","1","hero","","3011","31","6","14","inline","other"
+"pci-a05-s2","processo-civil-i","aula-05.html","2","panel","FIG. 1 · QUE INTERVENÇÃO CORRESPONDE AO VÍNCULO?
+1 / 5","4478","48","10","17","inline","other"
+"pci-a05-s3","processo-civil-i","aula-05.html","3","panel","FIG. 1 · QUE INTERVENÇÃO CORRESPONDE AO VÍNCULO?
+1 / 5","2820","32","7","8","inline","other"
+"pci-a05-s4","processo-civil-i","aula-05.html","4","panel","FIG. 1 · QUE INTERVENÇÃO CORRESPONDE AO VÍNCULO?
+1 / 5","2618","26","7","9","inline","other"
+"pci-a05-s5","processo-civil-i","aula-05.html","5","panel","FIG. 1 · QUE INTERVENÇÃO CORRESPONDE AO VÍNCULO?
+1 / 5","2640","26","7","9","inline","other"
+"pci-a05-s6","processo-civil-i","aula-05.html","6","panel","FIG. 1 · QUE INTERVENÇÃO CORRESPONDE AO VÍNCULO?
+1 / 5","2381","23","7","8","inline","other"
+"pci-a06-citacao-s1","processo-civil-i","aula-06-citacao.html","1","hero","","3005","31","6","14","inline","other"
+"pci-a06-citacao-s4","processo-civil-i","aula-06-citacao.html","4","panel","FIG. 1 · CITAÇÃO, INTIMAÇÃO E CARTAS: TRÊS CAMINHOS
+1 / 3","4185","43","9","16","inline","other"
+"pci-a06-s1","processo-civil-i","aula-06.html","1","hero","","3005","31","6","14","inline","other"
+"pci-a07-preclusao-s1","processo-civil-i","aula-07-preclusao.html","1","hero","","3005","31","6","14","inline","other"
+"pci-a07-s1","processo-civil-i","aula-07.html","1","hero","","3005","31","6","14","inline","other"
+"pci-a08-revelia-s1","processo-civil-i","aula-08-revelia.html","1","hero","","2999","31","6","14","inline","other"
+"pci-a08-s1","processo-civil-i","aula-08.html","1","hero","","2999","31","6","14","inline","other"
+"pci-a08-s3","processo-civil-i","aula-08.html","3","panel","FIG. 1 · DOSSIÊ DE CONTESTAÇÃO
+1 / 3","3198","29","7","11","inline","other"
+"pci-a08-s4","processo-civil-i","aula-08.html","4","panel","FIG. 1 · DOSSIÊ DE CONTESTAÇÃO
+1 / 3","2830","27","6","10","inline","other"
+"pci-a09-s1","processo-civil-i","aula-09.html","1","hero","","2993","31","6","14","inline","other"
+"pci-a09-s4","processo-civil-i","aula-09.html","4","panel","FIG. 1 · NULIDADE: DA FINALIDADE AO ALCANCE
+1 / 3","3685","37","8","14","inline","other"
+"pci-a10-estabilizacao-s1","processo-civil-i","aula-10-estabilizacao.html","1","hero","","2993","31","6","14","inline","other"
+"pci-a10-s1","processo-civil-i","aula-10.html","1","hero","","2993","31","6","14","inline","other"
+"pci-a11-merito-s1","processo-civil-i","aula-11-merito.html","1","hero","","2989","31","5","14","inline","other"
+"pci-a11-s1","processo-civil-i","aula-11.html","1","hero","","2989","31","5","14","inline","other"
+"pci-revisao-p1-s1","processo-civil-i","revisao-p1.html","1","hero","","2798","29","4","14","inline","other"
+"tdl-s17-s1","teoria-do-delito","suplemento-17.html","1","hero","","465","8","2","6","inline","other"
+"tdl-s17-s2","teoria-do-delito","suplemento-17.html","2","panel","FIG. 1 · DA SEPARAÇÃO À SÍNTESE
+1 / 4","2121","25","10","8","inline","other"
+"tdl-s17-s3","teoria-do-delito","suplemento-17.html","3","panel","FIG. 1 · DA SEPARAÇÃO À SÍNTESE
+1 / 4","1992","24","10","7","inline","other"
+"tdl-s17-s5","teoria-do-delito","suplemento-17.html","5","panel","FIG. 1 · DA SEPARAÇÃO À SÍNTESE
+1 / 4","2144","25","10","7","inline","other"
+"tdl-s20-s2","teoria-do-delito","suplemento-20.html","2","panel","FIG. 1 · AS PERGUNTAS DA RESPONSABILIDADE
+1 / 3","1612","17","8","2","inline","other"
+"tdl-s20-s3","teoria-do-delito","suplemento-20.html","3","panel","FIG. 1 · AS PERGUNTAS DA RESPONSABILIDADE
+1 / 3","1591","17","8","2","inline","other"
+"tdl-s20-s4","teoria-do-delito","suplemento-20.html","4","panel","FIG. 1 · AS PERGUNTAS DA RESPONSABILIDADE
+1 / 3","1537","16","8","2","inline","other"
+"tdl-u01-casos-s2","teoria-do-delito","unidade-01-casos.html","2","panel","FIG. 1 · ONDE CADA CASO É DECIDIDO
+1 / 5","3552","53","10","18","inline","other"
+"tdl-u01-casos-s3","teoria-do-delito","unidade-01-casos.html","3","panel","FIG. 1 · ONDE CADA CASO É DECIDIDO
+1 / 5","3551","53","10","18","inline","other"
+"tdl-u01-casos-s4","teoria-do-delito","unidade-01-casos.html","4","panel","FIG. 1 · ONDE CADA CASO É DECIDIDO
+1 / 5","3557","53","10","18","inline","other"
+"tdl-u01-casos-s5","teoria-do-delito","unidade-01-casos.html","5","panel","FIG. 1 · ONDE CADA CASO É DECIDIDO
+1 / 5","3553","53","10","18","inline","other"
+"tdl-u01-casos-s6","teoria-do-delito","unidade-01-casos.html","6","panel","FIG. 1 · ONDE CADA CASO É DECIDIDO
+1 / 5","3561","53","10","18","inline","other"
+"tdl-u01-s2","teoria-do-delito","unidade-01.html","2","panel","FIG. 1 · A CASCATA COM SAÍDAS
+1 / 5","3318","50","8","17","inline","other"
+"tdl-u01-s3","teoria-do-delito","unidade-01.html","3","panel","FIG. 1 · A CASCATA COM SAÍDAS
+1 / 5","3365","50","10","17","inline","other"
+"tdl-u01-s4","teoria-do-delito","unidade-01.html","4","panel","FIG. 1 · A CASCATA COM SAÍDAS
+1 / 5","3359","50","10","17","inline","other"
+"tdl-u01-s5","teoria-do-delito","unidade-01.html","5","panel","FIG. 1 · A CASCATA COM SAÍDAS
+1 / 5","3357","50","10","17","inline","other"
+"tdl-u01-s6","teoria-do-delito","unidade-01.html","6","panel","FIG. 1 · A CASCATA COM SAÍDAS
+1 / 5","3356","50","9","17","inline","other"
+"tdl-u03-elementos-s2","teoria-do-delito","unidade-03-elementos.html","2","panel","FIG. 1 · A ANATOMIA DOS ELEMENTOS OBJETIVOS
+1 / 3","2094","25","10","7","inline","other"
+"tdl-u03-elementos-s3","teoria-do-delito","unidade-03-elementos.html","3","panel","FIG. 1 · A ANATOMIA DOS ELEMENTOS OBJETIVOS
+1 / 3","2066","25","10","7","inline","other"
+"tdl-u03-elementos-s4","teoria-do-delito","unidade-03-elementos.html","4","panel","FIG. 1 · A ANATOMIA DOS ELEMENTOS OBJETIVOS
+1 / 3","2089","25","10","7","inline","other"
+"tdl-u03-s2","teoria-do-delito","unidade-03.html","2","panel","FIG. 1 · A TIPICIDADE POR CAMADAS
+1 / 3","2096","25","10","7","inline","other"
+"tdl-u03-s3","teoria-do-delito","unidade-03.html","3","panel","FIG. 1 · A TIPICIDADE POR CAMADAS
+1 / 3","2111","26","10","7","inline","other"
+"tdl-u03-s4","teoria-do-delito","unidade-03.html","4","panel","FIG. 1 · A TIPICIDADE POR CAMADAS
+1 / 3","1840","21","9","5","inline","other"
+"tdl-u04-aplicacoes-s2","teoria-do-delito","unidade-04-aplicacoes.html","2","panel","FIG. 3 · PROVAR POR INFERÊNCIA CONTROLÁVEL
+1 / 5","2638","33","8","11","inline","other"
+"tdl-u04-aplicacoes-s3","teoria-do-delito","unidade-04-aplicacoes.html","3","panel","FIG. 3 · PROVAR POR INFERÊNCIA CONTROLÁVEL
+1 / 5","2640","33","9","11","inline","other"
+"tdl-u04-aplicacoes-s4","teoria-do-delito","unidade-04-aplicacoes.html","4","panel","FIG. 3 · PROVAR POR INFERÊNCIA CONTROLÁVEL
+1 / 5","2681","33","9","11","inline","other"
+"tdl-u04-aplicacoes-s5","teoria-do-delito","unidade-04-aplicacoes.html","5","panel","FIG. 3 · PROVAR POR INFERÊNCIA CONTROLÁVEL
+1 / 5","2642","33","9","11","inline","other"
+"tdl-u04-aplicacoes-s6","teoria-do-delito","unidade-04-aplicacoes.html","6","panel","FIG. 3 · PROVAR POR INFERÊNCIA CONTROLÁVEL
+1 / 5","2645","33","8","11","inline","other"
+"tdl-u05-s2","teoria-do-delito","unidade-05.html","2","panel","FIG. 1 · DA REPRESENTAÇÃO À CONSEQUÊNCIA
+1 / 3","1501","17","8","2","inline","other"
+"tdl-u06-omissao-s2","teoria-do-delito","unidade-06-omissao.html","2","panel","FIG. 1 · AS SAÍDAS DO ART. 13, § 2º
+1 / 4","1706","20","9","4","inline","other"
+"tdl-u06-s2","teoria-do-delito","unidade-06.html","2","panel","FIG. 1 · REPRESENTAÇÃO E ATITUDE DIANTE DO RESULTADO
+1 / 5","2085","26","9","9","inline","other"
+"tdl-u06-s3","teoria-do-delito","unidade-06.html","3","panel","FIG. 1 · REPRESENTAÇÃO E ATITUDE DIANTE DO RESULTADO
+1 / 5","2114","26","9","9","inline","other"
+"tdl-u06-s4","teoria-do-delito","unidade-06.html","4","panel","FIG. 1 · REPRESENTAÇÃO E ATITUDE DIANTE DO RESULTADO
+1 / 5","2133","26","9","9","inline","other"
+"tdl-u06-s5","teoria-do-delito","unidade-06.html","5","panel","FIG. 1 · REPRESENTAÇÃO E ATITUDE DIANTE DO RESULTADO
+1 / 5","2126","26","9","9","inline","other"
+"tdl-u06-s6","teoria-do-delito","unidade-06.html","6","panel","FIG. 1 · REPRESENTAÇÃO E ATITUDE DIANTE DO RESULTADO
+1 / 5","1840","20","9","4","inline","other"
+"tdl-u07-imputacao-s2","teoria-do-delito","unidade-07-imputacao.html","2","panel","FIG. 2 · OS TRÊS PASSOS DO RISCO
+1 / 3","2224","28","9","9","inline","other"
+"tdl-u07-imputacao-s3","teoria-do-delito","unidade-07-imputacao.html","3","panel","FIG. 2 · OS TRÊS PASSOS DO RISCO
+1 / 3","2342","30","10","10","inline","other"
+"tdl-u07-imputacao-s4","teoria-do-delito","unidade-07-imputacao.html","4","panel","FIG. 2 · OS TRÊS PASSOS DO RISCO
+1 / 3","2463","32","9","11","inline","other"
+"tdl-u08-tentativa-s2","teoria-do-delito","unidade-08-tentativa.html","2","panel","FIG. 2 · FORMULÁRIO DE CLASSIFICAÇÃO DA INTERRUPÇÃO
+1 / 5","1726","20","8","4","inline","other"
+"tdl-u08-tentativa-s3","teoria-do-delito","unidade-08-tentativa.html","3","panel","FIG. 2 · FORMULÁRIO DE CLASSIFICAÇÃO DA INTERRUPÇÃO
+1 / 5","1731","20","8","4","inline","other"
+"tdl-u08-tentativa-s4","teoria-do-delito","unidade-08-tentativa.html","4","panel","FIG. 2 · FORMULÁRIO DE CLASSIFICAÇÃO DA INTERRUPÇÃO
+1 / 5","1813","20","8","4","inline","other"
+"tdl-u08-tentativa-s5","teoria-do-delito","unidade-08-tentativa.html","5","panel","FIG. 2 · FORMULÁRIO DE CLASSIFICAÇÃO DA INTERRUPÇÃO
+1 / 5","1835","20","8","4","inline","other"
+"tdl-u08-tentativa-s6","teoria-do-delito","unidade-08-tentativa.html","6","panel","FIG. 2 · FORMULÁRIO DE CLASSIFICAÇÃO DA INTERRUPÇÃO
+1 / 5","1753","20","8","4","inline","other"
+"tdl-u08-s6","teoria-do-delito","unidade-08.html","6","other","","2118","29","3","7","inline","other"
+"tdl-u09-s2","teoria-do-delito","unidade-09.html","2","panel","FIG. 1 · QUATRO RELAÇÕES ENTRE TIPICIDADE E ILICITUDE
+1 / 4","1610","18","8","3","inline","other"
+"tdl-u09-s3","teoria-do-delito","unidade-09.html","3","panel","FIG. 1 · QUATRO RELAÇÕES ENTRE TIPICIDADE E ILICITUDE
+1 / 4","1623","18","8","3","inline","other"
+"tdl-u09-s4","teoria-do-delito","unidade-09.html","4","panel","FIG. 1 · QUATRO RELAÇÕES ENTRE TIPICIDADE E ILICITUDE
+1 / 4","1606","18","8","3","inline","other"
+"tdl-u09-s5","teoria-do-delito","unidade-09.html","5","panel","FIG. 1 · QUATRO RELAÇÕES ENTRE TIPICIDADE E ILICITUDE
+1 / 4","1627","18","8","3","inline","other"
+"tdl-u12-erro-proibicao-s2","teoria-do-delito","unidade-12-erro-proibicao.html","2","panel","FIG. 2 · ÁRVORE DE CLASSIFICAÇÃO DO ERRO
+1 / 4","2462","29","8","9","inline","other"
+"tdl-u12-erro-proibicao-s3","teoria-do-delito","unidade-12-erro-proibicao.html","3","panel","FIG. 2 · ÁRVORE DE CLASSIFICAÇÃO DO ERRO
+1 / 4","2463","29","8","9","inline","other"
+"tdl-u12-erro-proibicao-s4","teoria-do-delito","unidade-12-erro-proibicao.html","4","panel","FIG. 2 · ÁRVORE DE CLASSIFICAÇÃO DO ERRO
+1 / 4","2467","29","8","9","inline","other"
+"tdl-u12-erro-proibicao-s5","teoria-do-delito","unidade-12-erro-proibicao.html","5","panel","FIG. 2 · ÁRVORE DE CLASSIFICAÇÃO DO ERRO
+1 / 4","2463","29","8","9","inline","other"
+"tgc-a01-s1","teoria-geral-dos-contratos","aula-01.html","1","hero","","889","9","5","3","inline","other"
+"tgc-a01-s2","teoria-geral-dos-contratos","aula-01.html","2","panel","FIG. 1 · OS FATOS JURÍDICOS
+1 / 4","2642","32","9","9","inline","other"
+"tgc-a01-s3","teoria-geral-dos-contratos","aula-01.html","3","panel","FIG. 1 · OS FATOS JURÍDICOS
+1 / 4","2625","32","9","9","inline","other"
+"tgc-a01-s4","teoria-geral-dos-contratos","aula-01.html","4","panel","FIG. 1 · OS FATOS JURÍDICOS
+1 / 4","2611","32","9","9","inline","other"
+"tgc-a01-s6","teoria-geral-dos-contratos","aula-01.html","6","panel","FIG. 2 · TRÊS LEITURAS DO CONTRATO
+1 / 4","1292","16","5","10","inline","other"
+"tgc-a01-s7","teoria-geral-dos-contratos","aula-01.html","7","panel","FIG. 2 · TRÊS LEITURAS DO CONTRATO
+1 / 4","1297","16","5","10","inline","other"
+"tgc-a01-s8","teoria-geral-dos-contratos","aula-01.html","8","panel","FIG. 2 · TRÊS LEITURAS DO CONTRATO
+1 / 4","1475","19","5","12","inline","other"
+"tgc-a01-s9","teoria-geral-dos-contratos","aula-01.html","9","panel","FIG. 2 · TRÊS LEITURAS DO CONTRATO
+1 / 4","1305","16","5","10","inline","other"
+"tgc-a01-s11","teoria-geral-dos-contratos","aula-01.html","11","panel","FIG. 3 · DESTINAÇÃO FINAL
+1 / 3","1365","18","5","10","inline","other"
+"tgc-a01-s12","teoria-geral-dos-contratos","aula-01.html","12","panel","FIG. 3 · DESTINAÇÃO FINAL
+1 / 3","1193","15","5","8","inline","other"
+"tgc-a02-s1","teoria-geral-dos-contratos","aula-02.html","1","hero","","1342","15","5","5","inline","other"
+"tgc-a02-s2","teoria-geral-dos-contratos","aula-02.html","2","panel","FIG. 1 · LIBERDADE E SEUS LIMITES
+1 / 3","991","14","5","8","inline","other"
+"tgc-a02-s3","teoria-geral-dos-contratos","aula-02.html","3","panel","FIG. 1 · LIBERDADE E SEUS LIMITES
+1 / 3","1090","15","5","10","inline","other"
+"tgc-a02-s4","teoria-geral-dos-contratos","aula-02.html","4","panel","FIG. 1 · LIBERDADE E SEUS LIMITES
+1 / 3","919","12","5","8","inline","other"
+"tgc-a02-s6","teoria-geral-dos-contratos","aula-02.html","6","panel","FIG. 2 · O VÍNCULO
+1 / 2","1072","15","5","10","inline","other"
+"tgc-a02-s7","teoria-geral-dos-contratos","aula-02.html","7","panel","FIG. 3 · DENTRO E FORA DO CONTRATO
+1 / 3","1763","21","7","10","inline","other"
+"tgc-a02-s8","teoria-geral-dos-contratos","aula-02.html","8","panel","FIG. 3 · DENTRO E FORA DO CONTRATO
+1 / 3","1693","20","7","10","inline","other"
+"tgc-a02-s9","teoria-geral-dos-contratos","aula-02.html","9","panel","FIG. 3 · DENTRO E FORA DO CONTRATO
+1 / 3","1767","21","7","10","inline","other"
+"tgc-a03-s1","teoria-geral-dos-contratos","aula-03.html","1","hero","","1068","12","7","6","inline","other"
+"tgc-a03-s2","teoria-geral-dos-contratos","aula-03.html","2","panel","FIG. 1 · FUNÇÃO SOCIAL
+1 / 4","953","12","4","5","inline","other"
+"tgc-a03-s3","teoria-geral-dos-contratos","aula-03.html","3","panel","FIG. 1 · FUNÇÃO SOCIAL
+1 / 4","734","10","3","4","inline","other"
+"tgc-a03-s4","teoria-geral-dos-contratos","aula-03.html","4","panel","FIG. 1 · FUNÇÃO SOCIAL
+1 / 4","1151","14","4","11","inline","other"
+"tgc-a03-s5","teoria-geral-dos-contratos","aula-03.html","5","panel","FIG. 1 · FUNÇÃO SOCIAL
+1 / 4","1001","13","4","7","inline","other"
+"tgc-a03-s6","teoria-geral-dos-contratos","aula-03.html","6","panel","FIG. 2 · BOA-FÉ OBJETIVA
+1 / 5","917","12","4","6","inline","other"
+"tgc-a03-s7","teoria-geral-dos-contratos","aula-03.html","7","panel","FIG. 2 · BOA-FÉ OBJETIVA
+1 / 5","1037","13","3","6","inline","other"
+"tgc-a03-s8","teoria-geral-dos-contratos","aula-03.html","8","panel","FIG. 2 · BOA-FÉ OBJETIVA
+1 / 5","962","13","4","7","inline","other"
+"tgc-a03-s9","teoria-geral-dos-contratos","aula-03.html","9","panel","FIG. 2 · BOA-FÉ OBJETIVA
+1 / 5","896","12","3","6","inline","other"
+"tgc-a03-s11","teoria-geral-dos-contratos","aula-03.html","11","panel","FIG. 3 · EQUILÍBRIO
+1 / 2","937","11","4","8","inline","other"
+"tgc-a03-s12","teoria-geral-dos-contratos","aula-03.html","12","panel","FIG. 3 · EQUILÍBRIO
+1 / 2","1338","18","4","9","inline","other"
+"tgc-a04-s1","teoria-geral-dos-contratos","aula-04.html","1","hero","","1433","19","4","6","inline","other"
+"tgc-a04-s2","teoria-geral-dos-contratos","aula-04.html","2","panel","FIG. 1 · O CONTRATO COMO PROCESSO
+1 / 4","2999","45","10","13","inline","other"
+"tgc-a04-s3","teoria-geral-dos-contratos","aula-04.html","3","panel","FIG. 1 · O CONTRATO COMO PROCESSO
+1 / 4","2902","43","9","12","inline","other"
+"tgc-a04-s4","teoria-geral-dos-contratos","aula-04.html","4","panel","FIG. 1 · O CONTRATO COMO PROCESSO
+1 / 4","2999","45","9","13","inline","other"
+"tgc-a04-s5","teoria-geral-dos-contratos","aula-04.html","5","panel","FIG. 1 · O CONTRATO COMO PROCESSO
+1 / 4","3023","45","10","13","inline","other"
+"tgc-a04-s6","teoria-geral-dos-contratos","aula-04.html","6","panel","FIG. 2 · QUANDO A RUPTURA GERA RESPONSABILIDADE
+1 / 3","1202","16","4","8","inline","other"
+"tgc-a04-s7","teoria-geral-dos-contratos","aula-04.html","7","panel","FIG. 2 · QUANDO A RUPTURA GERA RESPONSABILIDADE
+1 / 3","1065","14","4","11","inline","other"
+"tgc-a04-s8","teoria-geral-dos-contratos","aula-04.html","8","panel","FIG. 2 · QUANDO A RUPTURA GERA RESPONSABILIDADE
+1 / 3","1043","13","4","10","inline","other"
+"tgc-a05-s1","teoria-geral-dos-contratos","aula-05.html","1","hero","","782","9","4","3","inline","other"
+"tgc-a05-s6","teoria-geral-dos-contratos","aula-05.html","6","panel","FIG. 2 · A ACEITAÇÃO
+1 / 5","2695","30","9","9","inline","other"
+"tgc-a05-s7","teoria-geral-dos-contratos","aula-05.html","7","panel","FIG. 2 · A ACEITAÇÃO
+1 / 5","3331","44","10","10","inline","other"
+"tgc-a05-s8","teoria-geral-dos-contratos","aula-05.html","8","panel","FIG. 2 · A ACEITAÇÃO
+1 / 5","2726","34","9","11","inline","other"
+"tgc-a06-s1","teoria-geral-dos-contratos","aula-06.html","1","hero","","1263","14","6","5","inline","other"
+"tgc-a06-s2","teoria-geral-dos-contratos","aula-06.html","2","panel","FIG. 1 · O TERCEIRO NO CONTRATO
+1 / 3","1101","13","4","10","inline","other"
+"tgc-a06-s3","teoria-geral-dos-contratos","aula-06.html","3","panel","FIG. 1 · O TERCEIRO NO CONTRATO
+1 / 3","1104","13","3","10","inline","other"
+"tgc-a06-s4","teoria-geral-dos-contratos","aula-06.html","4","panel","FIG. 1 · O TERCEIRO NO CONTRATO
+1 / 3","987","11","4","9","inline","other"
+"tgc-a06-s5","teoria-geral-dos-contratos","aula-06.html","5","panel","FIG. 2 · A ESTIPULAÇÃO
+1 / 2","1255","15","4","11","inline","other"
+"tgc-a06-s8","teoria-geral-dos-contratos","aula-06.html","8","panel","FIG. 3 · QUEM RESPONDE PELA PROMESSA
+1 / 2","1008","11","5","7","inline","other"
+"tgc-a06-s9","teoria-geral-dos-contratos","aula-06.html","9","panel","FIG. 4 · A NOMEAÇÃO
+1 / 1","1235","13","5","7","inline","other"
+"tgc-a06-s12","teoria-geral-dos-contratos","aula-06.html","12","panel","FIG. 6 · O DESTINO DO SINAL
+1 / 2","1609","18","6","13","inline","other"
+"tgc-a06-s13","teoria-geral-dos-contratos","aula-06.html","13","panel","FIG. 6 · O DESTINO DO SINAL
+1 / 2","1480","17","6","12","inline","other"
+"tgc-a07-s2","teoria-geral-dos-contratos","aula-07.html","2","panel","FIG. 1 · A GRADE DE CLASSIFICAÇÃO
+1 / 3","1041","13","3","7","inline","other"
+"tgc-a07-s3","teoria-geral-dos-contratos","aula-07.html","3","panel","FIG. 1 · A GRADE DE CLASSIFICAÇÃO
+1 / 3","1033","13","3","7","inline","other"
+"tgc-a07-s4","teoria-geral-dos-contratos","aula-07.html","4","panel","FIG. 1 · A GRADE DE CLASSIFICAÇÃO
+1 / 3","1026","13","3","7","inline","other"
+"tgc-a07-s5","teoria-geral-dos-contratos","aula-07.html","5","panel","FIG. 2 · AS DEFESAS DO CONTRATO BILATERAL
+1 / 3","799","9","3","5","inline","other"
+"tgc-a07-s6","teoria-geral-dos-contratos","aula-07.html","6","panel","FIG. 2 · AS DEFESAS DO CONTRATO BILATERAL
+1 / 3","769","9","3","5","inline","other"
+"tgc-a07-s7","teoria-geral-dos-contratos","aula-07.html","7","panel","FIG. 2 · AS DEFESAS DO CONTRATO BILATERAL
+1 / 3","796","9","3","5","inline","other"
+"tgc-a07-s8","teoria-geral-dos-contratos","aula-07.html","8","panel","FIG. 3 · ONEROSIDADE E EVICÇÃO
+1 / 3","1072","12","5","8","inline","other"
+"tgc-a07-s9","teoria-geral-dos-contratos","aula-07.html","9","panel","FIG. 3 · ONEROSIDADE E EVICÇÃO
+1 / 3","1125","13","5","8","inline","other"
+"tgc-a07-s10","teoria-geral-dos-contratos","aula-07.html","10","panel","FIG. 3 · ONEROSIDADE E EVICÇÃO
+1 / 3","1091","13","3","7","inline","other"
+"tgc-a07-s11","teoria-geral-dos-contratos","aula-07.html","11","panel","FIG. 4 · AS TRÊS FIGURAS DO CONTRATO ALEATÓRIO
+1 / 3","791","9","3","5","inline","other"
+"tgc-a07-s12","teoria-geral-dos-contratos","aula-07.html","12","panel","FIG. 4 · AS TRÊS FIGURAS DO CONTRATO ALEATÓRIO
+1 / 3","770","9","3","5","inline","other"
+"tgc-a07-s13","teoria-geral-dos-contratos","aula-07.html","13","panel","FIG. 4 · AS TRÊS FIGURAS DO CONTRATO ALEATÓRIO
+1 / 3","803","9","3","5","inline","other"
+"tgc-a08-s1","teoria-geral-dos-contratos","aula-08.html","1","hero","","1920","21","5","5","inline","other"
+"tgc-a08-s2","teoria-geral-dos-contratos","aula-08.html","2","panel","FIG. 1 · COMO O CONTRATO SE FORMA
+1 / 3","1093","11","5","5","inline","other"
+"tgc-a08-s3","teoria-geral-dos-contratos","aula-08.html","3","panel","FIG. 1 · COMO O CONTRATO SE FORMA
+1 / 3","1080","11","5","5","inline","other"
+"tgc-a08-s4","teoria-geral-dos-contratos","aula-08.html","4","panel","FIG. 1 · COMO O CONTRATO SE FORMA
+1 / 3","1436","15","5","7","inline","other"
+"tgc-a08-s5","teoria-geral-dos-contratos","aula-08.html","5","panel","FIG. 2 · EXECUÇÃO
+1 / 4","3416","49","7","6","inline","other"
+"tgc-a08-s6","teoria-geral-dos-contratos","aula-08.html","6","panel","FIG. 2 · EXECUÇÃO
+1 / 4","3410","49","7","6","inline","other"
+"tgc-a08-s7","teoria-geral-dos-contratos","aula-08.html","7","panel","FIG. 2 · EXECUÇÃO
+1 / 4","3552","49","7","6","inline","other"
+"tgc-a08-s8","teoria-geral-dos-contratos","aula-08.html","8","panel","FIG. 2 · EXECUÇÃO
+1 / 4","3737","52","8","6","inline","other"
+"tgc-a08-s9","teoria-geral-dos-contratos","aula-08.html","9","panel","FIG. 3 · QUEM DEFINE AS CLÁUSULAS
+1 / 2","1107","11","3","6","inline","other"
+"tgc-a08-s10","teoria-geral-dos-contratos","aula-08.html","10","panel","FIG. 3 · QUEM DEFINE AS CLÁUSULAS
+1 / 2","1768","24","3","9","inline","other"
+"tgc-a08-s11","teoria-geral-dos-contratos","aula-08.html","11","panel","FIG. 4 · A ESTRUTURA DO VÍNCULO
+1 / 3","1145","13","3","7","inline","other"
+"tgc-a08-s12","teoria-geral-dos-contratos","aula-08.html","12","panel","FIG. 4 · A ESTRUTURA DO VÍNCULO
+1 / 3","1467","18","3","10","inline","other"
+"tgc-a08-s13","teoria-geral-dos-contratos","aula-08.html","13","panel","FIG. 4 · A ESTRUTURA DO VÍNCULO
+1 / 3","1504","18","3","10","inline","other"
+"tgc-a08-s14","teoria-geral-dos-contratos","aula-08.html","14","panel","FIG. 5 · RELAÇÃO E FUNÇÃO
+1 / 2","1019","10","3","5","inline","other"
+"tgc-a08-s15","teoria-geral-dos-contratos","aula-08.html","15","panel","FIG. 5 · RELAÇÃO E FUNÇÃO
+1 / 2","1585","18","3","9","inline","other"
+"tgc-a09-s1","teoria-geral-dos-contratos","aula-09.html","1","hero","","1087","12","5","4","inline","other"
+"tgc-a09-s2","teoria-geral-dos-contratos","aula-09.html","2","panel","FIG. 1 · LER EM CAMADAS
+1 / 4","596","7","3","4","inline","other"
+"tgc-a09-s7","teoria-geral-dos-contratos","aula-09.html","7","panel","FIG. 2 · DOIS CASOS
+1 / 2","2824","36","8","12","inline","other"
+"tgc-a09-s8","teoria-geral-dos-contratos","aula-09.html","8","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","794","10","5","5","inline","other"
+"tgc-a09-s9","teoria-geral-dos-contratos","aula-09.html","9","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","790","10","5","5","inline","other"
+"tgc-a09-s10","teoria-geral-dos-contratos","aula-09.html","10","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","793","10","5","5","inline","other"
+"tgc-a09-s11","teoria-geral-dos-contratos","aula-09.html","11","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","794","10","5","5","inline","other"
+"tgc-a09-s12","teoria-geral-dos-contratos","aula-09.html","12","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","806","10","5","5","inline","other"
+"tgc-a09-s14","teoria-geral-dos-contratos","aula-09.html","14","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","846","12","4","6","inline","other"
+"tgc-a10-s5","teoria-geral-dos-contratos","aula-10.html","5","panel","FIG. 1 · QUAL REGRA ESPECIAL INCIDE
+1 / 4","3108","43","10","14","inline","other"
+"tgc-a10-s7","teoria-geral-dos-contratos","aula-10.html","7","panel","FIG. 2 · O PONTO OMITIDO
+1 / 2","1228","19","6","7","inline","other"
+"tgc-a11-s1","teoria-geral-dos-contratos","aula-11.html","1","hero","","934","10","4","3","inline","other"
+"tgc-a11-s2","teoria-geral-dos-contratos","aula-11.html","2","panel","FIG. 1 · ONDE ESTÁ O DEFEITO
+1 / 5","2138","25","7","7","inline","other"
+"tgc-a11-s3","teoria-geral-dos-contratos","aula-11.html","3","panel","FIG. 1 · ONDE ESTÁ O DEFEITO
+1 / 5","2121","25","7","7","inline","other"
+"tgc-a11-s5","teoria-geral-dos-contratos","aula-11.html","5","panel","FIG. 1 · ONDE ESTÁ O DEFEITO
+1 / 5","2152","25","7","7","inline","other"
+"tgc-a11-s6","teoria-geral-dos-contratos","aula-11.html","6","panel","FIG. 1 · ONDE ESTÁ O DEFEITO
+1 / 5","2165","25","7","7","inline","other"
+"tgc-a11-s7","teoria-geral-dos-contratos","aula-11.html","7","panel","FIG. 2 · A BALANÇA DO DISTRATO
+1 / 1","2871","36","10","10","inline","other"
+"tgc-a12-s1","teoria-geral-dos-contratos","aula-12.html","1","hero","","771","10","3","3","inline","other"
+"tgc-a12-s2","teoria-geral-dos-contratos","aula-12.html","2","panel","FIG. 1 · COMECE PELO RISCO
+1 / 3","2209","24","8","5","inline","other"
+"tgc-a12-s3","teoria-geral-dos-contratos","aula-12.html","3","panel","FIG. 1 · COMECE PELO RISCO
+1 / 3","2408","27","8","6","inline","other"
+"tgc-a12-s5","teoria-geral-dos-contratos","aula-12.html","5","panel","FIG. 2 · QUAL PORTA ABRIR
+1 / 4","2185","27","8","5","inline","other"
+"tgc-a12-s6","teoria-geral-dos-contratos","aula-12.html","6","panel","FIG. 2 · QUAL PORTA ABRIR
+1 / 4","2280","29","8","5","inline","other"
+"tgc-a12-s7","teoria-geral-dos-contratos","aula-12.html","7","panel","FIG. 2 · QUAL PORTA ABRIR
+1 / 4","2236","28","8","5","inline","other"
+"tgc-a12-s8","teoria-geral-dos-contratos","aula-12.html","8","panel","FIG. 2 · QUAL PORTA ABRIR
+1 / 4","2312","29","8","5","inline","other"
+"tgc-a13-s2","teoria-geral-dos-contratos","aula-13.html","2","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","3130","45","12","16","inline","other"
+"tgc-a13-s3","teoria-geral-dos-contratos","aula-13.html","3","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2258","27","8","5","inline","other"
+"tgc-a13-s4","teoria-geral-dos-contratos","aula-13.html","4","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2339","29","8","6","inline","other"
+"tgc-a13-s13","teoria-geral-dos-contratos","aula-13.html","13","panel","FIG. 3 · LEASING E CÂMBIO
+1 / 2","2028","26","9","5","inline","other"
+"tgc-a13-s15","teoria-geral-dos-contratos","aula-13.html","15","panel","FIG. 4 · TRÊS LEITURAS DE UM FECHAMENTO
+1 / 3","1242","16","7","9","inline","other"
+"tgc-a13-s16","teoria-geral-dos-contratos","aula-13.html","16","panel","FIG. 4 · TRÊS LEITURAS DE UM FECHAMENTO
+1 / 3","1270","16","6","9","inline","other"
+"tgc-a13-s17","teoria-geral-dos-contratos","aula-13.html","17","panel","FIG. 4 · TRÊS LEITURAS DE UM FECHAMENTO
+1 / 3","1276","16","6","9","inline","other"
+"tgc-a14-s1","teoria-geral-dos-contratos","aula-14.html","1","hero","","1505","17","7","6","inline","other"
+"tgc-a14-s2","teoria-geral-dos-contratos","aula-14.html","2","panel","FIG. 1 · A POSIÇÃO MUDA DE MÃOS
+1 / 5","2259","28","10","8","inline","other"
+"tgc-a14-s3","teoria-geral-dos-contratos","aula-14.html","3","panel","FIG. 1 · A POSIÇÃO MUDA DE MÃOS
+1 / 5","2502","31","9","10","inline","other"
+"tgc-a14-s4","teoria-geral-dos-contratos","aula-14.html","4","panel","FIG. 1 · A POSIÇÃO MUDA DE MÃOS
+1 / 5","2757","34","10","10","inline","other"
+"tgc-a14-s5","teoria-geral-dos-contratos","aula-14.html","5","panel","FIG. 1 · A POSIÇÃO MUDA DE MÃOS
+1 / 5","2388","29","10","9","inline","other"
+"tgc-a14-s6","teoria-geral-dos-contratos","aula-14.html","6","panel","FIG. 1 · A POSIÇÃO MUDA DE MÃOS
+1 / 5","2580","32","10","11","inline","other"
+"tgc-a14-s7","teoria-geral-dos-contratos","aula-14.html","7","panel","FIG. 2 · CRÉDITO, DÍVIDA OU POSIÇÃO
+1 / 3","1170","14","7","9","inline","other"
+"tgc-a14-s8","teoria-geral-dos-contratos","aula-14.html","8","panel","FIG. 2 · CRÉDITO, DÍVIDA OU POSIÇÃO
+1 / 3","1182","14","7","9","inline","other"
+"tgc-a14-s9","teoria-geral-dos-contratos","aula-14.html","9","panel","FIG. 2 · CRÉDITO, DÍVIDA OU POSIÇÃO
+1 / 3","1174","14","7","9","inline","other"
+"tgc-a14-s10","teoria-geral-dos-contratos","aula-14.html","10","panel","FIG. 3 · O ALCANCE DA CESSÃO
+1 / 1","3211","42","9","10","inline","other"
+"tgc-a15-s1","teoria-geral-dos-contratos","aula-15.html","1","hero","","1767","22","4","5","inline","other"
+"tgc-a15-s8","teoria-geral-dos-contratos","aula-15.html","8","panel","FIG. 2 · IMPOSSIBILIDADE SUPERVENIENTE
+1 / 3","2616","35","11","10","inline","other"
+"tgc-a15-s9","teoria-geral-dos-contratos","aula-15.html","9","panel","FIG. 2 · IMPOSSIBILIDADE SUPERVENIENTE
+1 / 3","2439","30","9","9","inline","other"
+"tgc-a15-s10","teoria-geral-dos-contratos","aula-15.html","10","panel","FIG. 2 · IMPOSSIBILIDADE SUPERVENIENTE
+1 / 3","2795","38","9","12","inline","other"
+"tgc-a16-s1","teoria-geral-dos-contratos","aula-16.html","1","hero","","990","11","4","2","inline","other"
+"tgc-a16-s2","teoria-geral-dos-contratos","aula-16.html","2","panel","FIG. 1 · DUAS FORMAS DE SAIR
+1 / 2","1194","22","4","4","inline","other"
+"tgc-a16-s3","teoria-geral-dos-contratos","aula-16.html","3","panel","FIG. 1 · DUAS FORMAS DE SAIR
+1 / 2","1193","22","4","4","inline","other"
+"tgc-a16-s4","teoria-geral-dos-contratos","aula-16.html","4","panel","FIG. 2 · O DISTRATO QUE NÃO FOI ASSINADO
+1 / 1","3165","44","10","12","inline","other"
+"tgc-a16-s5","teoria-geral-dos-contratos","aula-16.html","5","panel","FIG. 3 · ART. 473, PARÁGRAFO ÚNICO
+1 / 2","2232","28","8","6","inline","other"
+"tgc-a16-s6","teoria-geral-dos-contratos","aula-16.html","6","panel","FIG. 3 · ART. 473, PARÁGRAFO ÚNICO
+1 / 2","2614","34","9","9","inline","other"
+"tgc-a16-s7","teoria-geral-dos-contratos","aula-16.html","7","panel","FIG. 4 · MAIORIA E VOTO VENCIDO
+1 / 2","3256","44","10","16","inline","other"
+"tgc-a16-s8","teoria-geral-dos-contratos","aula-16.html","8","panel","FIG. 4 · MAIORIA E VOTO VENCIDO
+1 / 2","3231","44","9","16","inline","other"
+"tgc-a17-s1","teoria-geral-dos-contratos","aula-17.html","1","hero","","1029","14","4","4","inline","other"
+"tgc-a17-s2","teoria-geral-dos-contratos","aula-17.html","2","panel","FIG. 1 · MORA OU INADIMPLEMENTO DEFINITIVO
+1 / 3","2246","29","9","8","inline","other"
+"tgc-a17-s3","teoria-geral-dos-contratos","aula-17.html","3","panel","FIG. 1 · MORA OU INADIMPLEMENTO DEFINITIVO
+1 / 3","2430","32","8","9","inline","other"
+"tgc-a17-s4","teoria-geral-dos-contratos","aula-17.html","4","panel","FIG. 1 · MORA OU INADIMPLEMENTO DEFINITIVO
+1 / 3","2240","29","8","8","inline","other"
+"tgc-a17-s8","teoria-geral-dos-contratos","aula-17.html","8","panel","FIG. 4 · EFEITOS DA RESOLUÇÃO
+1 / 2","2629","32","10","11","inline","other"
+"tgc-revisao-p1-s1","teoria-geral-dos-contratos","revisao-p1.html","1","hero","","2448","28","5","11","inline","other"
+"tgc-revisao-p2-s1","teoria-geral-dos-contratos","revisao-p2.html","1","hero","","2016","23","5","9","inline","other"
+"ctl-a02-s4","controle-de-constitucionalidade","aula-02.html","4","panel","FIG. 3 · UMA CRÍTICA À ALTERAÇÃO CASUÍSTICA","832","11","5","7","inline","route-or-line"
+"ctl-a05-s2","controle-de-constitucionalidade","aula-05.html","2","panel","FIG. 1 · “UM PASSO PARA TRÁS”","1497","18","4","8","inline","route-or-line"
+"ctl-a07-s4","controle-de-constitucionalidade","aula-07.html","4","panel","FIG. 1 · O PORTÃO DA CF/1988","1467","17","9","7","inline","route-or-line"
+"ctl-a08-s2","controle-de-constitucionalidade","aula-08.html","2","panel","FIG. 1 · VÍCIO ORIGINÁRIO","1152","12","6","8","inline","route-or-line"
+"ctl-a08-s3","controle-de-constitucionalidade","aula-08.html","3","panel","FIG. 2 · EFEITOS E TEMPO","1317","13","5","8","inline","route-or-line"
+"ctl-a17-s2","controle-de-constitucionalidade","aula-17.html","2","panel","FIG. 1 · DA FORMA AO EFEITO","1552","18","8","11","inline","route-or-line"
+"ctl-a17-s3","controle-de-constitucionalidade","aula-17.html","3","panel","FIG. 1 · DA FORMA AO EFEITO","1328","15","7","7","inline","route-or-line"
+"ctl-a17-s4","controle-de-constitucionalidade","aula-17.html","4","other","FIG. 2 · O TEXTO NÃO MOSTRA TODO O FUNCIONAMENTO","1008","10","7","5","inline","route-or-line"
+"ctl-a18-s6","controle-de-constitucionalidade","aula-18.html","6","panel","FIG. 3 · REAÇÃO, NÃO VEREDITO","1423","17","6","8","inline","route-or-line"
+"ctl-a28-s3","controle-de-constitucionalidade","aula-28.html","3","panel","FIG. 2 · REGRA E EXCEÇÃO NO TEMPO","1442","17","6","5","inline","route-or-line"
+"ctl-a28-s4","controle-de-constitucionalidade","aula-28.html","4","panel","FIG. 2 · REGRA E EXCEÇÃO NO TEMPO","2009","21","6","5","inline","route-or-line"
+"dla-a01-s6","direito-latino-americano","aula-01.html","6","panel","FIG. 1 · A CRISE DE 1808 E AS RESPOSTAS CONSTITUCIONAIS (FRONTEIRAS ATUAIS)
+1 / 4","21243","219","10","7","inline","route-or-line"
+"dla-a02-s4","direito-latino-americano","aula-02.html","4","panel","FIG. 1 · ONDE CADA CORTE FICOU
+1 / 4","1253","23","5","6","inline","route-or-line"
+"dla-a08-s6","direito-latino-americano","aula-08.html","6","panel","FIG. 2 · AUTO 176: O QUE O CRONOGRAMA TINHA DE MOSTRAR
+1 / 2","606","8","4","1","inline","route-or-line"
+"met-a01-s3","metodologia-juridica","aula-01.html","3","panel","FIG. 1 · DO TEXTO À GLOSA, DA GLOSA AO COMENTÁRIO
+1 / 3","8876","87","9","6","inline","route-or-line"
+"tdl-u10-excesso-s2","teoria-do-delito","unidade-10-excesso.html","2","panel","FIG. 2 · O INSTANTE EM QUE A PERMISSÃO TERMINA
+1 / 5","2850","42","8","8","inline","route-or-line"
+"tdl-u10-excesso-s3","teoria-do-delito","unidade-10-excesso.html","3","panel","FIG. 2 · O INSTANTE EM QUE A PERMISSÃO TERMINA
+1 / 5","2847","42","8","8","inline","route-or-line"
+"tdl-u10-excesso-s4","teoria-do-delito","unidade-10-excesso.html","4","panel","FIG. 2 · O INSTANTE EM QUE A PERMISSÃO TERMINA
+1 / 5","2847","42","8","8","inline","route-or-line"
+"tdl-u10-excesso-s5","teoria-do-delito","unidade-10-excesso.html","5","panel","FIG. 2 · O INSTANTE EM QUE A PERMISSÃO TERMINA
+1 / 5","2847","42","8","8","inline","route-or-line"
+"tdl-u10-excesso-s6","teoria-do-delito","unidade-10-excesso.html","6","panel","FIG. 2 · O INSTANTE EM QUE A PERMISSÃO TERMINA
+1 / 5","2847","42","8","8","inline","route-or-line"
+"tdl-u11-s2","teoria-do-delito","unidade-11.html","2","panel","FIG. 1 · A MUDANÇA DE LUGAR DO DOLO E DA CULPA
+1 / 4","3769","43","9","15","inline","route-or-line"
+"tdl-u11-s3","teoria-do-delito","unidade-11.html","3","panel","FIG. 1 · A MUDANÇA DE LUGAR DO DOLO E DA CULPA
+1 / 4","3765","43","9","15","inline","route-or-line"
+"tdl-u11-s4","teoria-do-delito","unidade-11.html","4","panel","FIG. 1 · A MUDANÇA DE LUGAR DO DOLO E DA CULPA
+1 / 4","3764","43","9","15","inline","route-or-line"
+"tdl-u11-s5","teoria-do-delito","unidade-11.html","5","panel","FIG. 1 · A MUDANÇA DE LUGAR DO DOLO E DA CULPA
+1 / 4","3763","43","9","15","inline","route-or-line"
+"ctl-a04-s8","controle-de-constitucionalidade","aula-04.html","8","panel","FIG. 4 · DUAS RÉGUAS","728","9","6","6","inline","scale"
+"ctl-a04-s9","controle-de-constitucionalidade","aula-04.html","9","panel","FIG. 4 · DUAS RÉGUAS","896","11","8","7","inline","scale"
+"ctl-a10-s3","controle-de-constitucionalidade","aula-10.html","3","panel","FIG. 1 · DEFINIÇÃO E MARCO TEMPORAL","848","10","6","5","inline","scale"
+"ctl-a11-s5","controle-de-constitucionalidade","aula-11.html","5","panel","FIG. 2 · VOCABULÁRIO","1259","19","9","7","inline","scale"
+"dci-a01-s2","direito-constitucional-i","aula-01.html","2","panel","FIG. 1 · DA LIMITAÇÃO DO PODER À CONSTITUIÇÃO ESCRITA
+1 / 3","3483","40","10","18","inline","scale"
+"dci-a01-s3","direito-constitucional-i","aula-01.html","3","panel","FIG. 1 · DA LIMITAÇÃO DO PODER À CONSTITUIÇÃO ESCRITA
+1 / 3","3717","45","10","21","inline","scale"
+"dci-a01-s4","direito-constitucional-i","aula-01.html","4","panel","FIG. 1 · DA LIMITAÇÃO DO PODER À CONSTITUIÇÃO ESCRITA
+1 / 3","3984","49","10","23","inline","scale"
+"dci-a02-s2","direito-constitucional-i","aula-02.html","2","panel","FIG. 1 · CLASSIFICAR SEM MISTURAR OS EIXOS
+1 / 2","5190","46","9","17","inline","scale"
+"dci-a02-s3","direito-constitucional-i","aula-02.html","3","panel","FIG. 1 · CLASSIFICAR SEM MISTURAR OS EIXOS
+1 / 2","5515","48","9","19","inline","scale"
+"dla-a02-s3","direito-latino-americano","aula-02.html","3","panel","FIG. 1 · ONDE CADA CORTE FICOU
+1 / 4","1401","27","5","7","inline","scale"
+"dla-a05-s8","direito-latino-americano","aula-05.html","8","panel","FIG. 2 · O MAPA DO DEBATE
+1 / 4","1597","21","5","6","inline","scale"
+"pci-a03-s2","processo-civil-i","aula-03.html","2","panel","FIG. 1 · NECESSIDADE E UNITARIEDADE
+1 / 4","3332","31","10","9","inline","scale"
+"pci-a03-s3","processo-civil-i","aula-03.html","3","panel","FIG. 1 · NECESSIDADE E UNITARIEDADE
+1 / 4","3325","31","10","9","inline","scale"
+"pci-a03-s4","processo-civil-i","aula-03.html","4","panel","FIG. 1 · NECESSIDADE E UNITARIEDADE
+1 / 4","3327","31","10","9","inline","scale"
+"pci-a03-s5","processo-civil-i","aula-03.html","5","panel","FIG. 1 · NECESSIDADE E UNITARIEDADE
+1 / 4","3325","31","10","9","inline","scale"
+"tdl-s16-s2","teoria-do-delito","suplemento-16.html","2","panel","FIG. 1 · MATRIZ COMPARATIVA DOS MODELOS DE CONDUTA
+1 / 4","4297","58","11","30","inline","scale"
+"tdl-s16-s3","teoria-do-delito","suplemento-16.html","3","panel","FIG. 1 · MATRIZ COMPARATIVA DOS MODELOS DE CONDUTA
+1 / 4","4230","58","11","30","inline","scale"
+"tdl-s16-s4","teoria-do-delito","suplemento-16.html","4","panel","FIG. 1 · MATRIZ COMPARATIVA DOS MODELOS DE CONDUTA
+1 / 4","4231","58","11","30","inline","scale"
+"tdl-s16-s5","teoria-do-delito","suplemento-16.html","5","panel","FIG. 1 · MATRIZ COMPARATIVA DOS MODELOS DE CONDUTA
+1 / 4","4236","58","11","30","inline","scale"
+"tdl-u04-s2","teoria-do-delito","unidade-04.html","2","panel","FIG. 1 · DOLO E CULPA: REPRESENTAÇÃO E VONTADE
+1 / 5","3184","41","9","18","inline","scale"
+"tdl-u04-s3","teoria-do-delito","unidade-04.html","3","panel","FIG. 1 · DOLO E CULPA: REPRESENTAÇÃO E VONTADE
+1 / 5","3181","41","9","18","inline","scale"
+"tdl-u04-s4","teoria-do-delito","unidade-04.html","4","panel","FIG. 1 · DOLO E CULPA: REPRESENTAÇÃO E VONTADE
+1 / 5","3222","41","9","18","inline","scale"
+"tdl-u04-s5","teoria-do-delito","unidade-04.html","5","panel","FIG. 1 · DOLO E CULPA: REPRESENTAÇÃO E VONTADE
+1 / 5","3183","41","9","18","inline","scale"
+"tdl-u04-s6","teoria-do-delito","unidade-04.html","6","panel","FIG. 1 · DOLO E CULPA: REPRESENTAÇÃO E VONTADE
+1 / 5","3175","41","9","18","inline","scale"
+"tgc-a11-s4","teoria-geral-dos-contratos","aula-11.html","4","panel","FIG. 1 · ONDE ESTÁ O DEFEITO
+1 / 5","2128","25","7","7","inline","scale"
+"ctl-a01-s2","controle-de-constitucionalidade","aula-01.html","2","panel","FIG. 1 · A RELAÇÃO VERTICAL","1014","13","7","5","inline","strata-or-stack"
+"ctl-a01-s3","controle-de-constitucionalidade","aula-01.html","3","panel","FIG. 2 · CONFORMIDADE OU INCOMPATIBILIDADE","1388","21","7","5","inline","strata-or-stack"
+"ctl-a01-s4","controle-de-constitucionalidade","aula-01.html","4","panel","FIG. 3 · QUAL É O PARÂMETRO?","1205","17","8","6","inline","strata-or-stack"
+"ctl-a03-s2","controle-de-constitucionalidade","aula-03.html","2","panel","FIG. 1 · O TRIBUNAL E A GUARDA","2480","21","7","5","inline","strata-or-stack"
+"ctl-a03-s3","controle-de-constitucionalidade","aula-03.html","3","panel","FIG. 1 · O TRIBUNAL E A GUARDA","2280","20","6","6","inline","strata-or-stack"
+"ctl-a09-s4","controle-de-constitucionalidade","aula-09.html","4","panel","FIG. 2 · A REGRA: LEGISLATIVO E EXECUTIVO","1347","22","7","5","inline","strata-or-stack"
+"ctl-a09-s5","controle-de-constitucionalidade","aula-09.html","5","panel","FIG. 2 · A REGRA: LEGISLATIVO E EXECUTIVO","1164","17","8","4","inline","strata-or-stack"
+"ctl-a09-s6","controle-de-constitucionalidade","aula-09.html","6","panel","FIG. 3 · A EXCEÇÃO PELO JUDICIÁRIO","1087","16","7","3","inline","strata-or-stack"
+"ctl-a09-s7","controle-de-constitucionalidade","aula-09.html","7","panel","FIG. 3 · A EXCEÇÃO PELO JUDICIÁRIO","865","11","7","3","inline","strata-or-stack"
+"ctl-a09-s8","controle-de-constitucionalidade","aula-09.html","8","panel","FIG. 3 · A EXCEÇÃO PELO JUDICIÁRIO","967","12","8","4","inline","strata-or-stack"
+"ctl-a09-s9","controle-de-constitucionalidade","aula-09.html","9","panel","FIG. 3 · A EXCEÇÃO PELO JUDICIÁRIO","964","12","8","4","inline","strata-or-stack"
+"ctl-a10-s8","controle-de-constitucionalidade","aula-10.html","8","panel","FIG. 2 · A REGRA E SUA ÚNICA EXCEÇÃO INTERNA","985","15","5","7","inline","strata-or-stack"
+"ctl-a10-s10","controle-de-constitucionalidade","aula-10.html","10","panel","FIG. 3 · A EXCEÇÃO PELO LEGISLATIVO","795","9","8","5","inline","strata-or-stack"
+"ctl-a10-s11","controle-de-constitucionalidade","aula-10.html","11","panel","FIG. 3 · A EXCEÇÃO PELO LEGISLATIVO","820","9","8","5","inline","strata-or-stack"
+"ctl-a10-s16","controle-de-constitucionalidade","aula-10.html","16","panel","FIG. 5 · A MATRIZ CONSTITUIÇÃO–LEI–DECRETO","884","11","7","5","inline","strata-or-stack"
+"ctl-a10-s17","controle-de-constitucionalidade","aula-10.html","17","panel","FIG. 5 · A MATRIZ CONSTITUIÇÃO–LEI–DECRETO","900","11","7","5","inline","strata-or-stack"
+"ctl-a10-s18","controle-de-constitucionalidade","aula-10.html","18","panel","FIG. 5 · A MATRIZ CONSTITUIÇÃO–LEI–DECRETO","916","11","8","5","inline","strata-or-stack"
+"ctl-a10-s19","controle-de-constitucionalidade","aula-10.html","19","panel","FIG. 5 · A MATRIZ CONSTITUIÇÃO–LEI–DECRETO","910","11","8","5","inline","strata-or-stack"
+"ctl-a12-s3","controle-de-constitucionalidade","aula-12.html","3","panel","FIG. 1 · SEPARAÇÃO × CUMULAÇÃO","864","9","6","6","inline","strata-or-stack"
+"ctl-a13-s3","controle-de-constitucionalidade","aula-13.html","3","panel","FIG. 2 · O QUE CONFIGURA, O QUE DESENCADEIA","1371","15","8","6","inline","strata-or-stack"
+"ctl-a13-s4","controle-de-constitucionalidade","aula-13.html","4","panel","FIG. 2 · O QUE CONFIGURA, O QUE DESENCADEIA","1338","14","8","7","inline","strata-or-stack"
+"ctl-a13-s6","controle-de-constitucionalidade","aula-13.html","6","panel","FIG. 3 · A LÓGICA DO ECI SE ESPALHA","960","9","5","6","inline","strata-or-stack"
+"ctl-a15-s2","controle-de-constitucionalidade","aula-15.html","2","panel","FIG. 1 · O QUE SOBRA DA NORMA","975","12","9","6","inline","strata-or-stack"
+"ctl-a15-s4","controle-de-constitucionalidade","aula-15.html","4","panel","FIG. 1 · O QUE SOBRA DA NORMA","1079","14","8","6","inline","strata-or-stack"
+"ctl-a15-s5","controle-de-constitucionalidade","aula-15.html","5","panel","FIG. 2 · ÚLTIMA PALAVRA E ESPAÇO DE APRECIAÇÃO","894","10","8","6","inline","strata-or-stack"
+"ctl-a16-s6","controle-de-constitucionalidade","aula-16.html","6","panel","FIG. 3 · A CRÍTICA E AS ALTERNATIVAS","1954","22","7","13","inline","strata-or-stack"
+"ctl-a18-s3","controle-de-constitucionalidade","aula-18.html","3","panel","FIG. 1 · O TEXTO FIXO E O SENTIDO EM MOVIMENTO","1651","18","4","5","inline","strata-or-stack"
+"ctl-a20-s5","controle-de-constitucionalidade","aula-20.html","5","panel","FIG. 2 · CONSTITUIÇÃO, LEI, DECRETO","1201","15","9","4","inline","strata-or-stack"
+"ctl-a20-s6","controle-de-constitucionalidade","aula-20.html","6","panel","FIG. 2 · CONSTITUIÇÃO, LEI, DECRETO","1284","16","9","5","inline","strata-or-stack"
+"ctl-a20-s7","controle-de-constitucionalidade","aula-20.html","7","panel","FIG. 2 · CONSTITUIÇÃO, LEI, DECRETO","1236","15","8","4","inline","strata-or-stack"
+"ctl-a20-s8","controle-de-constitucionalidade","aula-20.html","8","panel","FIG. 2 · CONSTITUIÇÃO, LEI, DECRETO","886","12","7","3","inline","strata-or-stack"
+"ctl-a21-s4","controle-de-constitucionalidade","aula-21.html","4","panel","FIG. 2 · PARÂMETRO ABERTO, OBJETO FECHADO","1095","15","6","5","inline","strata-or-stack"
+"ctl-a21-s5","controle-de-constitucionalidade","aula-21.html","5","panel","FIG. 2 · PARÂMETRO ABERTO, OBJETO FECHADO","1350","20","7","6","inline","strata-or-stack"
+"ctl-a21-s6","controle-de-constitucionalidade","aula-21.html","6","panel","FIG. 2 · PARÂMETRO ABERTO, OBJETO FECHADO","1206","15","9","6","inline","strata-or-stack"
+"ctl-a22-s7","controle-de-constitucionalidade","aula-22.html","7","panel","FIG. 2 · CAPACIDADE POSTULATÓRIA","1257","15","8","6","inline","strata-or-stack"
+"ctl-a23-s3","controle-de-constitucionalidade","aula-23.html","3","panel","FIG. 1 · DUAS PORTAS DO ART. 103","1145","13","8","6","inline","strata-or-stack"
+"ctl-a25-s2","controle-de-constitucionalidade","aula-25.html","2","panel","FIG. 1 · FUNDAMENTO E REQUISITOS","1048","11","7","6","inline","strata-or-stack"
+"ctl-a25-s5","controle-de-constitucionalidade","aula-25.html","5","panel","FIG. 2 · FLUXO DA ADI/ADC","991","12","8","5","inline","strata-or-stack"
+"ctl-a27-s3","controle-de-constitucionalidade","aula-27.html","3","panel","FIG. 1 · O SISTEMA E SUAS CARACTERÍSTICAS","1698","19","5","11","inline","strata-or-stack"
+"ctl-a29-s2","controle-de-constitucionalidade","aula-29.html","2","panel","FIG. 1 · DISPOSITIVO E FUNDAMENTOS","945","11","8","6","inline","strata-or-stack"
+"ctl-a30-s1","controle-de-constitucionalidade","aula-30.html","1","hero","Uma lei federal aplicada de modos conflitantes chega ao Supremo para receber uma resposta constitucional única","1532","12","6","6","inline","strata-or-stack"
+"ctl-a31-s1","controle-de-constitucionalidade","aula-31.html","1","hero","A ausência de norma abre dois caminhos: ADO para omissão inconstitucional objetiva e mandado de injunção para direito cujo exercício foi impedido","1564","12","6","6","inline","strata-or-stack"
+"dla-a01-s3","direito-latino-americano","aula-01.html","3","panel","FIG. 1 · A CRISE DE 1808 E AS RESPOSTAS CONSTITUCIONAIS (FRONTEIRAS ATUAIS)
+1 / 4","23002","221","12","7","inline","strata-or-stack"
+"dla-a04-s2","direito-latino-americano","aula-04.html","2","panel","FIG. 1 · A CORTE E A TRANSIÇÃO
+1 / 3","917","12","5","5","inline","strata-or-stack"
+"dla-a04-s3","direito-latino-americano","aula-04.html","3","panel","FIG. 1 · A CORTE E A TRANSIÇÃO
+1 / 3","828","12","5","5","inline","strata-or-stack"
+"dla-a04-s4","direito-latino-americano","aula-04.html","4","panel","FIG. 1 · A CORTE E A TRANSIÇÃO
+1 / 3","835","12","5","5","inline","strata-or-stack"
+"dla-a05-s3","direito-latino-americano","aula-05.html","3","panel","FIG. 1 · A GRADAÇÃO DEMOCRÁTICA
+1 / 4","20169","411","11","11","inline","strata-or-stack"
+"dla-a05-s4","direito-latino-americano","aula-05.html","4","panel","FIG. 1 · A GRADAÇÃO DEMOCRÁTICA
+1 / 4","20595","415","11","13","inline","strata-or-stack"
+"dla-a05-s5","direito-latino-americano","aula-05.html","5","panel","FIG. 1 · A GRADAÇÃO DEMOCRÁTICA
+1 / 4","20922","418","13","14","inline","strata-or-stack"
+"dla-a05-s7","direito-latino-americano","aula-05.html","7","panel","FIG. 2 · O MAPA DO DEBATE
+1 / 4","1682","21","5","6","inline","strata-or-stack"
+"dla-a05-s9","direito-latino-americano","aula-05.html","9","panel","FIG. 2 · O MAPA DO DEBATE
+1 / 4","1521","21","5","6","inline","strata-or-stack"
+"dla-a05-s10","direito-latino-americano","aula-05.html","10","panel","FIG. 2 · O MAPA DO DEBATE
+1 / 4","1508","21","5","6","inline","strata-or-stack"
+"dla-a07-s1","direito-latino-americano","aula-07.html","1","hero","","5580","48","7","3","inline","strata-or-stack"
+"pci-a08-s2","processo-civil-i","aula-08.html","2","panel","FIG. 1 · DOSSIÊ DE CONTESTAÇÃO
+1 / 3","3311","30","6","10","inline","strata-or-stack"
+"pci-a10-s2","processo-civil-i","aula-10.html","2","other","ROTEAMENTO DO MÉRITO POR PARCELA","1643","15","8","6","inline","strata-or-stack"
+"tdl-s18-s1","teoria-do-delito","suplemento-18.html","1","hero","","1141","14","5","6","inline","strata-or-stack"
+"tdl-s19-s1","teoria-do-delito","suplemento-19.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-s20-s1","teoria-do-delito","suplemento-20.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u01-casos-s1","teoria-do-delito","unidade-01-casos.html","1","hero","","2414","24","4","6","inline","strata-or-stack"
+"tdl-u01-s1","teoria-do-delito","unidade-01.html","1","hero","","2414","24","4","6","inline","strata-or-stack"
+"tdl-u02-funcionalismo-s1","teoria-do-delito","unidade-02-funcionalismo.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u02-s1","teoria-do-delito","unidade-02.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u03-elementos-s1","teoria-do-delito","unidade-03-elementos.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u03-s1","teoria-do-delito","unidade-03.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u04-aplicacoes-s1","teoria-do-delito","unidade-04-aplicacoes.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u04-dolo-s1","teoria-do-delito","unidade-04-dolo.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u04-s1","teoria-do-delito","unidade-04.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u05-fronteiras-s1","teoria-do-delito","unidade-05-fronteiras.html","1","hero","","585","9","3","4","inline","strata-or-stack"
+"tdl-u05-fronteiras-s2","teoria-do-delito","unidade-05-fronteiras.html","2","panel","FIG. 2 · FATO, PROIBIÇÃO E SUBSUNÇÃO
+1 / 3","1895","22","9","6","inline","strata-or-stack"
+"tdl-u05-fronteiras-s3","teoria-do-delito","unidade-05-fronteiras.html","3","panel","FIG. 2 · FATO, PROIBIÇÃO E SUBSUNÇÃO
+1 / 3","1892","22","9","6","inline","strata-or-stack"
+"tdl-u05-fronteiras-s4","teoria-do-delito","unidade-05-fronteiras.html","4","panel","FIG. 2 · FATO, PROIBIÇÃO E SUBSUNÇÃO
+1 / 3","1892","22","9","6","inline","strata-or-stack"
+"tdl-u05-s1","teoria-do-delito","unidade-05.html","1","hero","","585","9","3","4","inline","strata-or-stack"
+"tdl-u05-s3","teoria-do-delito","unidade-05.html","3","panel","FIG. 1 · DA REPRESENTAÇÃO À CONSEQUÊNCIA
+1 / 3","1950","23","10","6","inline","strata-or-stack"
+"tdl-u05-s4","teoria-do-delito","unidade-05.html","4","panel","FIG. 1 · DA REPRESENTAÇÃO À CONSEQUÊNCIA
+1 / 3","1903","22","10","6","inline","strata-or-stack"
+"tdl-u05-s5","teoria-do-delito","unidade-05.html","5","panel","FIG. 2 · DOSSIÊ · MOCHILA IDÊNTICA
+1 / 3","1852","21","9","3","inline","strata-or-stack"
+"tdl-u05-s6","teoria-do-delito","unidade-05.html","6","panel","FIG. 2 · DOSSIÊ · MOCHILA IDÊNTICA
+1 / 3","1902","21","9","3","inline","strata-or-stack"
+"tdl-u05-s7","teoria-do-delito","unidade-05.html","7","panel","FIG. 2 · DOSSIÊ · MOCHILA IDÊNTICA
+1 / 3","1845","21","9","3","inline","strata-or-stack"
+"tdl-u06-omissao-s1","teoria-do-delito","unidade-06-omissao.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u06-omissao-s3","teoria-do-delito","unidade-06-omissao.html","3","panel","FIG. 1 · AS SAÍDAS DO ART. 13, § 2º
+1 / 4","1947","24","10","6","inline","strata-or-stack"
+"tdl-u06-omissao-s4","teoria-do-delito","unidade-06-omissao.html","4","panel","FIG. 1 · AS SAÍDAS DO ART. 13, § 2º
+1 / 4","2159","26","11","8","inline","strata-or-stack"
+"tdl-u06-omissao-s5","teoria-do-delito","unidade-06-omissao.html","5","panel","FIG. 1 · AS SAÍDAS DO ART. 13, § 2º
+1 / 4","1929","23","10","6","inline","strata-or-stack"
+"tdl-u06-s1","teoria-do-delito","unidade-06.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u07-imputacao-s1","teoria-do-delito","unidade-07-imputacao.html","1","hero","","737","7","3","3","inline","strata-or-stack"
+"tdl-u07-s1","teoria-do-delito","unidade-07.html","1","hero","","737","7","3","3","inline","strata-or-stack"
+"tdl-u08-tentativa-s1","teoria-do-delito","unidade-08-tentativa.html","1","hero","","1790","24","4","10","inline","strata-or-stack"
+"tdl-u08-s1","teoria-do-delito","unidade-08.html","1","hero","","1790","24","4","10","inline","strata-or-stack"
+"tdl-u08-s2","teoria-do-delito","unidade-08.html","2","panel","FIG. 1 · DO PROJETO À CONSUMAÇÃO
+1 / 4","2435","32","10","10","inline","strata-or-stack"
+"tdl-u08-s3","teoria-do-delito","unidade-08.html","3","panel","FIG. 1 · DO PROJETO À CONSUMAÇÃO
+1 / 4","2431","32","11","10","inline","strata-or-stack"
+"tdl-u08-s4","teoria-do-delito","unidade-08.html","4","panel","FIG. 1 · DO PROJETO À CONSUMAÇÃO
+1 / 4","2427","32","11","10","inline","strata-or-stack"
+"tdl-u08-s5","teoria-do-delito","unidade-08.html","5","panel","FIG. 1 · DO PROJETO À CONSUMAÇÃO
+1 / 4","2427","32","10","10","inline","strata-or-stack"
+"tdl-u09-casos-s1","teoria-do-delito","unidade-09-casos.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u09-s1","teoria-do-delito","unidade-09.html","1","hero","","2551","25","4","7","inline","strata-or-stack"
+"tdl-u10-excesso-s1","teoria-do-delito","unidade-10-excesso.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u10-s1","teoria-do-delito","unidade-10.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u12-erro-proibicao-s1","teoria-do-delito","unidade-12-erro-proibicao.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u12-s1","teoria-do-delito","unidade-12.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u13-casos-s1","teoria-do-delito","unidade-13-casos.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u13-casos-s2","teoria-do-delito","unidade-13-casos.html","2","panel","FIG. 1 · FICHA DECISÓRIA DO ART. 22
+1 / 4","3018","30","10","10","inline","strata-or-stack"
+"tdl-u13-casos-s3","teoria-do-delito","unidade-13-casos.html","3","panel","FIG. 1 · FICHA DECISÓRIA DO ART. 22
+1 / 4","3023","30","10","10","inline","strata-or-stack"
+"tdl-u13-casos-s4","teoria-do-delito","unidade-13-casos.html","4","panel","FIG. 1 · FICHA DECISÓRIA DO ART. 22
+1 / 4","3028","30","11","10","inline","strata-or-stack"
+"tdl-u13-casos-s5","teoria-do-delito","unidade-13-casos.html","5","panel","FIG. 1 · FICHA DECISÓRIA DO ART. 22
+1 / 4","3014","30","11","10","inline","strata-or-stack"
+"tdl-u13-s1","teoria-do-delito","unidade-13.html","1","hero","","2495","25","4","7","inline","strata-or-stack"
+"tdl-u13-s2","teoria-do-delito","unidade-13.html","2","panel","FIG. 1 · FLUXO DA PRESSÃO E DA EXIGIBILIDADE
+1 / 3","2442","24","9","6","inline","strata-or-stack"
+"tdl-u13-s3","teoria-do-delito","unidade-13.html","3","panel","FIG. 1 · FLUXO DA PRESSÃO E DA EXIGIBILIDADE
+1 / 3","2443","24","10","6","inline","strata-or-stack"
+"tdl-u13-s4","teoria-do-delito","unidade-13.html","4","panel","FIG. 1 · FLUXO DA PRESSÃO E DA EXIGIBILIDADE
+1 / 3","2456","24","10","6","inline","strata-or-stack"
+"tdl-u14-dominio-s1","teoria-do-delito","unidade-14-dominio.html","1","hero","","2406","24","4","6","inline","strata-or-stack"
+"tdl-u14-s1","teoria-do-delito","unidade-14.html","1","hero","","2406","24","4","6","inline","strata-or-stack"
+"tdl-u15-casos-s1","teoria-do-delito","unidade-15-casos.html","1","hero","","2406","24","4","6","inline","strata-or-stack"
+"tdl-u15-s1","teoria-do-delito","unidade-15.html","1","hero","","2406","24","4","6","inline","strata-or-stack"
+"tgc-a01-s5","teoria-geral-dos-contratos","aula-01.html","5","panel","FIG. 1 · OS FATOS JURÍDICOS
+1 / 4","2748","34","10","10","inline","strata-or-stack"
+"tgc-a05-s2","teoria-geral-dos-contratos","aula-05.html","2","panel","FIG. 1 · A PROPOSTA
+1 / 4","2092","22","6","14","inline","strata-or-stack"
+"tgc-a05-s3","teoria-geral-dos-contratos","aula-05.html","3","panel","FIG. 1 · A PROPOSTA
+1 / 4","1706","18","8","11","inline","strata-or-stack"
+"tgc-a05-s9","teoria-geral-dos-contratos","aula-05.html","9","panel","FIG. 2 · A ACEITAÇÃO
+1 / 5","2619","33","9","6","inline","strata-or-stack"
+"tgc-a05-s10","teoria-geral-dos-contratos","aula-05.html","10","panel","FIG. 2 · A ACEITAÇÃO
+1 / 5","2612","33","9","6","inline","strata-or-stack"
+"tgc-a06-s6","teoria-geral-dos-contratos","aula-06.html","6","panel","FIG. 2 · A ESTIPULAÇÃO
+1 / 2","1700","19","8","12","inline","strata-or-stack"
+"tgc-a06-s10","teoria-geral-dos-contratos","aula-06.html","10","panel","FIG. 5 · DO PRELIMINAR AO DEFINITIVO
+1 / 2","1532","17","8","11","inline","strata-or-stack"
+"tgc-a07-s14","teoria-geral-dos-contratos","aula-07.html","14","panel","FIG. 5 · O DEFEITO OCULTO
+1 / 2","1146","12","4","7","inline","strata-or-stack"
+"tgc-a07-s15","teoria-geral-dos-contratos","aula-07.html","15","panel","FIG. 5 · O DEFEITO OCULTO
+1 / 2","1452","16","4","9","inline","strata-or-stack"
+"tgc-a09-s3","teoria-geral-dos-contratos","aula-09.html","3","panel","FIG. 1 · LER EM CAMADAS
+1 / 4","800","9","5","5","inline","strata-or-stack"
+"tgc-a09-s4","teoria-geral-dos-contratos","aula-09.html","4","panel","FIG. 1 · LER EM CAMADAS
+1 / 4","992","10","7","5","inline","strata-or-stack"
+"tgc-a09-s5","teoria-geral-dos-contratos","aula-09.html","5","panel","FIG. 1 · LER EM CAMADAS
+1 / 4","1049","12","7","6","inline","strata-or-stack"
+"tgc-a09-s6","teoria-geral-dos-contratos","aula-09.html","6","panel","FIG. 2 · DOIS CASOS
+1 / 2","3147","45","11","8","inline","strata-or-stack"
+"tgc-a09-s13","teoria-geral-dos-contratos","aula-09.html","13","panel","FIG. 3 · OS CRITÉRIOS DO § 1º
+1 / 7","1186","17","3","7","inline","strata-or-stack"
+"tgc-a10-s1","teoria-geral-dos-contratos","aula-10.html","1","hero","","1360","16","5","4","inline","strata-or-stack"
+"tgc-a10-s2","teoria-geral-dos-contratos","aula-10.html","2","panel","FIG. 1 · QUAL REGRA ESPECIAL INCIDE
+1 / 4","2606","33","10","8","inline","strata-or-stack"
+"tgc-a10-s3","teoria-geral-dos-contratos","aula-10.html","3","panel","FIG. 1 · QUAL REGRA ESPECIAL INCIDE
+1 / 4","2612","33","10","8","inline","strata-or-stack"
+"tgc-a10-s4","teoria-geral-dos-contratos","aula-10.html","4","panel","FIG. 1 · QUAL REGRA ESPECIAL INCIDE
+1 / 4","2615","33","10","8","inline","strata-or-stack"
+"tgc-a12-s4","teoria-geral-dos-contratos","aula-12.html","4","panel","FIG. 1 · COMECE PELO RISCO
+1 / 3","3168","45","10","10","inline","strata-or-stack"
+"tgc-a13-s1","teoria-geral-dos-contratos","aula-13.html","1","hero","","1587","18","9","5","inline","strata-or-stack"
+"tgc-a13-s5","teoria-geral-dos-contratos","aula-13.html","5","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2543","29","9","5","inline","strata-or-stack"
+"tgc-a13-s6","teoria-geral-dos-contratos","aula-13.html","6","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2528","29","9","5","inline","strata-or-stack"
+"tgc-a13-s7","teoria-geral-dos-contratos","aula-13.html","7","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2523","29","9","5","inline","strata-or-stack"
+"tgc-a13-s8","teoria-geral-dos-contratos","aula-13.html","8","panel","FIG. 1 · DA PRESSUPOSIÇÃO À BASE
+1 / 7","2508","29","9","5","inline","strata-or-stack"
+"tgc-a13-s14","teoria-geral-dos-contratos","aula-13.html","14","panel","FIG. 3 · LEASING E CÂMBIO
+1 / 2","2184","28","10","6","inline","strata-or-stack"
+"tgc-a13-s18","teoria-geral-dos-contratos","aula-13.html","18","panel","FIG. 5 · TRÊS CLÁUSULAS DE ADAPTAÇÃO
+1 / 3","1250","15","4","9","inline","strata-or-stack"
+"tgc-a13-s19","teoria-geral-dos-contratos","aula-13.html","19","panel","FIG. 5 · TRÊS CLÁUSULAS DE ADAPTAÇÃO
+1 / 3","1233","15","4","9","inline","strata-or-stack"
+"tgc-a13-s20","teoria-geral-dos-contratos","aula-13.html","20","panel","FIG. 5 · TRÊS CLÁUSULAS DE ADAPTAÇÃO
+1 / 3","1247","16","6","9","inline","strata-or-stack"
+"tgc-a15-s3","teoria-geral-dos-contratos","aula-15.html","3","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","2054","34","7","7","inline","strata-or-stack"
+"tgc-a15-s4","teoria-geral-dos-contratos","aula-15.html","4","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","2060","34","6","7","inline","strata-or-stack"
+"tgc-a15-s5","teoria-geral-dos-contratos","aula-15.html","5","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","2061","34","7","7","inline","strata-or-stack"
+"tgc-a15-s6","teoria-geral-dos-contratos","aula-15.html","6","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","2051","34","6","7","inline","strata-or-stack"
+"tgc-a15-s7","teoria-geral-dos-contratos","aula-15.html","7","panel","FIG. 1 · O EVENTO ESCOLHE A REGRA
+1 / 6","1298","20","7","5","inline","strata-or-stack"
+"tgc-a15-s11","teoria-geral-dos-contratos","aula-15.html","11","panel","FIG. 3 · DUAS PRESTAÇÕES, DUAS ANÁLISES
+1 / 3","1352","23","5","4","inline","strata-or-stack"
+"tgc-a15-s12","teoria-geral-dos-contratos","aula-15.html","12","panel","FIG. 3 · DUAS PRESTAÇÕES, DUAS ANÁLISES
+1 / 3","1348","23","5","4","inline","strata-or-stack"
+"tgc-a15-s13","teoria-geral-dos-contratos","aula-15.html","13","panel","FIG. 3 · DUAS PRESTAÇÕES, DUAS ANÁLISES
+1 / 3","1347","23","5","4","inline","strata-or-stack"
+"tgc-a17-s5","teoria-geral-dos-contratos","aula-17.html","5","panel","FIG. 2 · DUAS ROTAS PARA RESOLVER
+1 / 2","1408","21","6","6","inline","strata-or-stack"
+"tgc-a17-s6","teoria-geral-dos-contratos","aula-17.html","6","panel","FIG. 2 · DUAS ROTAS PARA RESOLVER
+1 / 2","1365","21","7","6","inline","strata-or-stack"
+"tgc-a17-s7","teoria-geral-dos-contratos","aula-17.html","7","panel","FIG. 3 · A ESCOLHA DO ART. 475
+1 / 1","1495","21","7","7","inline","strata-or-stack"
+"ctl-a04-s1","controle-de-constitucionalidade","aula-04.html","1","hero","","1314","12","4","3","inline","tree"
+"ctl-a04-s2","controle-de-constitucionalidade","aula-04.html","2","panel","FIG. 1 · PIRÂMIDE CLÁSSICA","826","9","4","3","inline","tree"
+"ctl-a05-s4","controle-de-constitucionalidade","aula-05.html","4","panel","FIG. 2 · FLUXOGRAMA E PIRÂMIDE","1795","23","9","9","inline","tree"
+"ctl-a05-s6","controle-de-constitucionalidade","aula-05.html","6","panel","FIG. 2 · FLUXOGRAMA E PIRÂMIDE","884","10","8","7","inline","tree"
+"ctl-a05-s9","controle-de-constitucionalidade","aula-05.html","9","panel","FIG. 4 · “PARALISA” E A METÁFORA DO ADAPTADOR","1140","12","7","7","inline","tree"
+"ctl-a05-s10","controle-de-constitucionalidade","aula-05.html","10","panel","FIG. 4 · “PARALISA” E A METÁFORA DO ADAPTADOR","1332","17","9","4","inline","tree"
+"ctl-a06-s5","controle-de-constitucionalidade","aula-06.html","5","panel","FIG. 3 · TRÊS SUBESPÉCIES DO VÍCIO FORMAL","1192","17","4","6","inline","tree"
+"ctl-a29-s3","controle-de-constitucionalidade","aula-29.html","3","panel","FIG. 2 · TRANSCENDÊNCIA DOS MOTIVOS DETERMINANTES","1138","16","8","6","inline","tree"
+"dla-a02-s5","direito-latino-americano","aula-02.html","5","panel","FIG. 1 · ONDE CADA CORTE FICOU
+1 / 4","1214","23","5","6","inline","tree"
+"tdl-u01-s8","teoria-do-delito","unidade-01.html","8","other","Coação física e reflexo tiram a conduta; a coação moral, não: ela vai para a culpabilidade","3373","42","8","23","inline","tree"
+"tdl-u02-s2","teoria-do-delito","unidade-02.html","2","panel","FIG. 1 · A GENEALOGIA DOS MODELOS
+1 / 4","3453","55","11","19","inline","tree"
+"tdl-u02-s3","teoria-do-delito","unidade-02.html","3","panel","FIG. 1 · A GENEALOGIA DOS MODELOS
+1 / 4","3449","55","11","19","inline","tree"
+"tdl-u02-s4","teoria-do-delito","unidade-02.html","4","panel","FIG. 1 · A GENEALOGIA DOS MODELOS
+1 / 4","3450","55","11","19","inline","tree"
+"tdl-u02-s5","teoria-do-delito","unidade-02.html","5","panel","FIG. 1 · A GENEALOGIA DOS MODELOS
+1 / 4","3449","55","11","19","inline","tree"
+"tdl-u10-s2","teoria-do-delito","unidade-10.html","2","panel","FIG. 1 · A TRIAGEM DAS CAUSAS DE JUSTIFICAÇÃO
+1 / 4","2668","34","9","13","inline","tree"
+"tdl-u10-s3","teoria-do-delito","unidade-10.html","3","panel","FIG. 1 · A TRIAGEM DAS CAUSAS DE JUSTIFICAÇÃO
+1 / 4","2665","34","9","13","inline","tree"
+"tdl-u10-s4","teoria-do-delito","unidade-10.html","4","panel","FIG. 1 · A TRIAGEM DAS CAUSAS DE JUSTIFICAÇÃO
+1 / 4","2665","34","9","13","inline","tree"
+"tdl-u10-s5","teoria-do-delito","unidade-10.html","5","panel","FIG. 1 · A TRIAGEM DAS CAUSAS DE JUSTIFICAÇÃO
+1 / 4","2667","34","8","13","inline","tree"
