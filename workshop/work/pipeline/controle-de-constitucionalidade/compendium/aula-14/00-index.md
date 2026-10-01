@@ -1,0 +1,15 @@
+# Compendium — aula-14.html
+
+Provenance index assembled from `course-map.json` (S0), `shelf.csv` (S1), `chapters/` (S2), and `triage.csv` (S3).
+
+| File | Source | Chapter | Pages | Role | Why | SHA-256 |
+|---|---|---|---|---|---|---|
+| 10-slides.txt | slides-14 | slides-14 | PDF 1–13 | slides | Lesson slide deck from S1. | b3d0b1f072a56f7122e6f127ff5667f5fe8de8afd870b74172d8127394703bf9 |
+| 20-primary-001-lenza-esquematizado-2022-6.7.1.5.txt | lenza-esquematizado-2022 | 6.7.1.5 | § 6.7.1.5 | primary | Define o arrastamento ou reverberação quando a invalidade da norma principal alcança a norma dependente, núcleo de V.2. | adc2871c5426acb4e256bfccb412b8c18d65148b65c9ecf63063e9572141585e |
+| 20-primary-002-mendes-branco-curso-2023-10-controle-de-constitucionalidade-102.txt | mendes-branco-curso-2023 | 10-controle-de-constitucionalidade-102 | PDF 2323–2364 | primary | A seção examina dependência ou interdependência normativa e nomeia a extensão da declaração como inconstitucionalidade por arrastamento, exatamente o vínculo de V.2. | 889903fec1dd2961a1bc925d1485c87b63b2f004db2c31d596eed3f1d8358dc7 |
+| 30-supporting-001-sarlet-marinoni-mitidiero-curso-2020-18-controle-de-constitucionalidade-8-48.txt | sarlet-marinoni-mitidiero-curso-2020 | 18-controle-de-constitucionalidade-8-48 | PDF 1643–1645 | supporting | Analisa a extensão da declaração a outros preceitos contaminados e sua relação com a congruência do pedido, complementando V.2. | 43463803958020061e3edfc9832502985d9ceef3bd660095da9c913e21d902d4 |
+| 40-background-001-lenza-esquematizado-2022-6.3.txt | lenza-esquematizado-2022 | 6.3 | § 6.3 | background | Prerequisite background from aula-06.html: selected essential reading supports the lesson prerequisite. | 58c4e0604fa2963c4161e8245637515e3c6c5e828a70d25b84c0b57a338bb96c |
+| 40-background-002-mendes-branco-curso-2023-10-controle-de-constitucionalidade-08.txt | mendes-branco-curso-2023 | 10-controle-de-constitucionalidade-08 | PDF 1882–1883 | background | Prerequisite background from aula-06.html: selected essential reading supports the lesson prerequisite. | d6fbaa489c14ac091f248ff71826b14acb99a45b10b5287009b22e2fa52f95b8 |
+| 40-background-003-mendes-branco-curso-2023-10-controle-de-constitucionalidade-09.txt | mendes-branco-curso-2023 | 10-controle-de-constitucionalidade-09 | PDF 1883–1888 | background | Prerequisite background from aula-06.html: selected essential reading supports the lesson prerequisite. | e9726cb212c3dc4327df37badeef91cff879896dcccf16c83301cb0ec1401352 |
+| 40-background-004-mendes-branco-curso-2023-10-controle-de-constitucionalidade-11.txt | mendes-branco-curso-2023 | 10-controle-de-constitucionalidade-11 | PDF 1902–1904 | background | Prerequisite background from aula-06.html: selected essential reading supports the lesson prerequisite. | 37c3b0fb1f868b66af3522ac971c57da238210ff5adfd3eed1b5e44c7a257daf |
+| 50-exercises-and-exams.txt | course-map.json | exam | — | exercises/exams (no assigned source) | S0 leaves lesson-specific assessment mapping undetermined; S3 assigns no exercise or exam chapter to this lesson. | 898ee1979372b8c735dc4851c26e5f806945c9cadd623097474e7b5df71a0933 |
