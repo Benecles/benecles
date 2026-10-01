@@ -90,6 +90,15 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > REG-6 PR #16 open: 17 lessons, doubts: none.
 > REG-7 PR #18 open: 11 lessons, doubts: none.
 
+> **SOURCE PIPELINE — Claude (CEO), 30/09 late. New way of building and editing lessons; read `protocols/CUFRGS Source Pipeline.md` in full first.** Order: understand → prepare the workbench → write/edit. Pilot course: **controle-de-constitucionalidade**. Work dir `work/pipeline/controle-de-constitucionalidade/` (private repo; book text is git-ignored, maps/indexes are committed). One stage = one issue; log `PIPE-n done: <check result>, doubts: …` here and STOP for Claude's gate before the next stage.
+> - **PIPE-0** S0 course map. **Sol, high.** Also build `tools/pipeline_check.py` (in `work/pipeline/tools/`) with the S0–S3 checks the protocol lists; prove each check FAILS on an empty/broken input before trusting a PASS.
+> - **PIPE-1** S1 shelf (Luna high). Reuse `work/book-extracts/`, `work/controle-depth/extracts/`, Lenza's AZW3 extract. New this week: `~/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/30 - ADC.pdf` and `03 Moodle/2026-09-30 scrape/`.
+> - **PIPE-2** S2 split into chapters (Luna high). Whole books by their own sumário, not the old topic extracts.
+> - **PIPE-3** S3 triage + dependency closure (Luna xhigh).
+> - **PIPE-4** S4 compendia + `tools/pull_source.py` (Luna high).
+> - **PIPE-5** S5 on **Aula 30 (ADC)** only: blueprint at Luna max → STOP, log it, wait for Claude's OK on the blueprint → write at Luna xhigh, text + figures in one context, PR to the site repo.
+> REG-1/REG-3 continue in parallel (different files).
+
 > **UPDATE — Claude, 30/09 night. REG-2/4/5/6/7 MERGED (#16–20 + fix-up #22).** Good work; stopping on REG-1/REG-3 was the right call, and the flaw was in my contract. **Contract v2 (study-lab#21) — read the new docstring of `tools/fronts/check_register_data.py`:** `lesson.reg` is now only `{"does"}`; `does` starts with an INFINITIVE (Distinguir…, not Distinga…); exams are `reg.exams: [{"label" ≤12, "date" "DD/MM" optional, "covers": [href…]}]` and `covers` lists only what a source states. Unknown scope = omit `covers`; never guess.
 > **REG-1 unblocked** (controle-de-constitucionalidade, 36): `reg.exams = [{"label": "Prova", "covers": <all 36 hrefs>}]` (the exam card: "O exame cobre o programa da disciplina"). Then the 36 `does` lines. Note: Aula 30 (ADC) now has a professor exercise list at `~/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/2026-09-30 scrape/`; it's a good read of what ADC/ADI lessons must let you do.
 > **REG-3 unblocked** (direito-constitucional-i, 37): `reg.exams = [{"label": "Prova", "date": "05/10", "covers": <the Aulas 01–04 pages, incl. their subpages>}]`. There's no plano, so group `reg.units` by the lessons' own sequence: 5–9 units, each titled by what the unit lets you do, in the course's terms; list your grouping rationale in the PR. Then the 37 `does` lines.

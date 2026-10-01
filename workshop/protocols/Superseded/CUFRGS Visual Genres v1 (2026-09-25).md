@@ -1,4 +1,4 @@
-# CUFRGS Visual Genres (v2, 2026-09-30)
+# CUFRGS Visual Genres (v1, 2026-09-25)
 
 Owner: Claude (design authority, per Benecles). Codex builds to this; Claude refines.
 Companion to `CUFRGS Writing Standard.md`. Code: `~/Documents/Codex/2026-09-23/you-h/work/latam-build/maps.py`, `contract-build/generators/kit.py`.
@@ -27,7 +27,7 @@ Sometimes the right answer is good text on a good sheet. If the reader ends up s
 | **what descended from what** | genealogy, stemma | branches; adopt / distinguish / narrow / overrule marks |
 | **how parts make a whole** | blueprint, exploded patent drawing | numbered parts, leaders, sections, dimensions |
 | **what is inside what** | anatomical plate, cutaway | systems isolated one at a time |
-| **what happens if** | decision instrument, decision table, form | the reader answers the conditions and the consequence appears; a static box-and-arrow flowchart is not an option (see *Instruments, not diagrams*) |
+| **what happens if** | flowchart, decision table, form | nodes; conditions × consequences; boxes to tick |
 | **what balances against what** | ledger | two columns, running balance, a total that does or doesn't close |
 | **what must happen by when** | calendar, docket | dated boxes, deadlines, entries, disposition |
 | **many actors at once over time** | score (musical, orchestral) | parallel staves, synchronised bars |
@@ -39,25 +39,6 @@ Sometimes the right answer is good text on a good sheet. If the reader ends up s
 | **navigating uncertainty** | nautical chart | safe channel, shoals (open questions), lighthouse (leading case), soundings |
 | **how variables decide an outcome** | nomogram | aligned scales; a ruler across them gives the answer |
 | **an atomic concept to recall** | index card | the Cartões deck; cards file and sort themselves |
-
-## Instruments, not diagrams (v2, Benecles 30/09)
-
-**The failure we're killing:** labelled rectangles (or a triangle) joined by arrows. They name parts and show nothing: the reader learns the words were related, which the text already said. Every Controle figure today is one of these. A shape with words on it isn't a figure.
-
-**The test (before drawing anything):** *what does the reader do with it, and what do they know afterwards that the text alone didn't give them?* If the answer is "look at it", it's not done.
-
-**Three ways to pass:**
-1. **It's the real object.** Show the thing law actually produces: the statute with its text, a petição's required parts, a decision with its dispositivo, the STF plenário with eleven seats, the docket with dates. Real artefacts beat abstractions of them.
-2. **It's an instrument.** The reader sets an input and the law answers: pick the legitimado → see if pertinência temática applies; count votes → the quorum closes or doesn't; move a norm's date before or after 1988 → ADI or ADPF; flip ADI ↔ ADC on the same norm → the verdict mirrors ("sinal trocado"). The behaviour *is* the concept (Level 3, above) and needs no caption.
-3. **It's a measured picture.** Position, length, count and time carry the meaning: a real timeline to scale, 11 seats with 6 filled, a 30-day prazo against a 15-day one. If positions are arbitrary, it's decoration.
-
-**Use the whole platform.** HTML and CSS are first-class tools, not just SVG: real text in real layout; `<input type="range">`, radio groups and `<details>` as controls; CSS grid for seat plans and dockets; `:has()` and custom properties so a control restyles the figure without script; view transitions and scroll-driven animation where the motion is the behaviour. SVG is for geometry: maps, measured lines. Every instrument still works without JS (it falls back to its default state), at 390 px, in both themes, and in print.
-
-**Labels sit in clear space.** No label crossing a line or edge (the breakscan finds CROSS and CLASH). Leaders go out into empty space.
-
-**Who draws it:** the same agent, in the same context, that wrote the text it serves (Source Pipeline S5). A figure is planned in the lesson's blueprint from the claim it carries, never bolted on afterwards.
-
-**Bar:** the Latam atlas plates (real geography, real data, measured) show the level. Controle Aula 01, rebuilt by Claude, is the reference instrument page.
 
 ## Physical ontology (keep it consistent across the site)
 
