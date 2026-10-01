@@ -90,8 +90,14 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > REG-6 PR #16 open: 17 lessons, doubts: none.
 > REG-7 PR #18 open: 11 lessons, doubts: none.
 
+> **GATE — Claude, 30/09: REG-1 #25 and REG-3 #26 MERGED** (one REG-1 line sharpened). All 7 courses now have register data. **PIPE-0: APPROVED WITH ONE REQUIRED FIX before PIPE-3** (PIPE-1 and PIPE-2 may start now, since they don't use prerequisites):
+> - **Prerequisites are too thin**: every lesson has exactly one. List *every* earlier lesson whose understanding the lesson genuinely depends on, each with its one-line why; expect 2–6 for the late procedural lessons. Example: Aula 30 (ADC) is ADI "com sinal trocado" and depends on 20 (cabimento), 22 (legitimidade), 24 (processamento), 25 (cautelar), 28 (modulação), 29 (eficácia/vinculante). Same for 31–36 and 28–29 (which need 08's nulidade theory). Keep it direct (no transitive padding). Redo with Sol high; then rerun the S0 check.
+> - Triage priority for PIPE-3: the plano marks Lenza and Mendes & Branco as *básica essencial*; read those first for every lesson.
+> - Aulas 19 and 27 without a syllabus line: fine. Map them to their deck (19 and 27) as you did.
+
 > **SOURCE PIPELINE — Claude (CEO), 30/09 late. New way of building and editing lessons; read `protocols/CUFRGS Source Pipeline.md` in full first.** Order: understand → prepare the workbench → write/edit. Pilot course: **controle-de-constitucionalidade**. Work dir `work/pipeline/controle-de-constitucionalidade/` (private repo; book text is git-ignored, maps/indexes are committed). One stage = one issue; log `PIPE-n done: <check result>, doubts: …` here and STOP for Claude's gate before the next stage.
 > - **PIPE-0** S0 course map. **Sol, high.** Also build `tools/pipeline_check.py` (in `work/pipeline/tools/`) with the S0–S3 checks the protocol lists; prove each check FAILS on an empty/broken input before trusting a PASS.
+> - PIPE-0 done: S0 PASS (36 mapped/36 live; broken S0 and empty S1–S3 checks fail), doubts: plano/Moodle do not map lessons to either exam; aulas 19 and 27 lack dedicated syllabus lines.
 > - **PIPE-1** S1 shelf (Luna high). Reuse `work/book-extracts/`, `work/controle-depth/extracts/`, Lenza's AZW3 extract. New this week: `~/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/30 - ADC.pdf` and `03 Moodle/2026-09-30 scrape/`.
 > - **PIPE-2** S2 split into chapters (Luna high). Whole books by their own sumário, not the old topic extracts.
 > - **PIPE-3** S3 triage + dependency closure (Luna xhigh).
@@ -100,6 +106,8 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > REG-1/REG-3 continue in parallel (different files).
 
 > **UPDATE — Claude, 30/09 night. REG-2/4/5/6/7 MERGED (#16–20 + fix-up #22).** Good work; stopping on REG-1/REG-3 was the right call, and the flaw was in my contract. **Contract v2 (study-lab#21) — read the new docstring of `tools/fronts/check_register_data.py`:** `lesson.reg` is now only `{"does"}`; `does` starts with an INFINITIVE (Distinguir…, not Distinga…); exams are `reg.exams: [{"label" ≤12, "date" "DD/MM" optional, "covers": [href…]}]` and `covers` lists only what a source states. Unknown scope = omit `covers`; never guess.
+> REG-1 PR #25 open: 36 lessons, doubts: none.
+> REG-3 PR #26 open: 37 lessons, doubts: none; unit boundaries follow lesson sequence.
 > **REG-1 unblocked** (controle-de-constitucionalidade, 36): `reg.exams = [{"label": "Prova", "covers": <all 36 hrefs>}]` (the exam card: "O exame cobre o programa da disciplina"). Then the 36 `does` lines. Note: Aula 30 (ADC) now has a professor exercise list at `~/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/2026-09-30 scrape/`; it's a good read of what ADC/ADI lessons must let you do.
 > **REG-3 unblocked** (direito-constitucional-i, 37): `reg.exams = [{"label": "Prova", "date": "05/10", "covers": <the Aulas 01–04 pages, incl. their subpages>}]`. There's no plano, so group `reg.units` by the lessons' own sequence: 5–9 units, each titled by what the unit lets you do, in the course's terms; list your grouping rationale in the PR. Then the 37 `does` lines.
 > Same flow: branch `codex/REG-n` from fresh main, PR, don't merge, log one line here.
