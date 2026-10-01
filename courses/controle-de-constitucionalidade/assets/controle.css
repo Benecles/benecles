@@ -430,3 +430,6 @@ body{transition:background-color .35s ease,color .35s ease}
 
 /* Row labels wrap at word boundaries: with overflow-wrap:anywhere the auto-width column collapsed to one letter on phones */
 .compare tbody th,.compare thead th:first-child{overflow-wrap:normal;hyphens:manual}
+/* A figure alone in its scrolly takes the drawing's proportions (viewBox cropped to content), not a forced square */
+.scrolly:has(.step:only-child) .stage figure{aspect-ratio:auto;max-height:none}
+.scrolly:has(.step:only-child) .panel{position:relative;inset:auto;height:auto;display:block}

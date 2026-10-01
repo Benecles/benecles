@@ -2,6 +2,7 @@
 # Cheap site-wide checks. Run from anywhere; exits non-zero on any FAIL.
 # 1. Fronts are reproducible: regenerating from tools/fronts/data must not change committed courses/*/index.html.
 # 2. check_front: macro order, dead/missing lesson links, bibliografia.
+# 3. anatomy_check: loose prose, late panels, uncropped kit squares (FLIGHT-LOG F-014..F-016).
 cd "$(dirname "$0")/.." || exit 2
 slugs=$(ls tools/fronts/data | sed 's/\.json$//')
 python3 tools/fronts/front.py $slugs >/dev/null && python3 -c "import sys; sys.path.insert(0, 'tools'); import assetver; assetver.run()" >/dev/null || exit 1
@@ -13,5 +14,6 @@ for s in $slugs; do
 done
 python3 tools/fronts/check_front.py $slugs | grep -v '^WARN' || fail=1
 python3 tools/fronts/check_register_data.py $slugs | grep FAIL && fail=1
+python3 tools/anatomy_check.py | tail -1 | grep -q PASS || { python3 tools/anatomy_check.py | grep -v "^anatomy"; echo "FAIL anatomy (tools/anatomy_check.py)"; fail=1; }
 [ $fail = 0 ] && echo "check_all: PASS" || echo "check_all: FAIL"
 exit $fail
