@@ -1,13 +1,5 @@
 [
 {
-"before": "ART. 102, I, \"P\"</text>\n        <path class=\"c-conc grow\" d=\"M300 150V208\" marker-end=\"url(#ah25a)\"/>\n        <rect x=\"160\" y=\"218\" width=\"280\" height=\"80\" class=\"w-conc\" stroke-width=\"2.5\" style=\"stroke:var(--conc)\"/>\n        ",
-"after": "ART. 102, I, “P”</text>\n        <path class=\"c-conc grow\" d=\"M300 150V208\" marker-end=\"url(#ah25a)\"/>\n        <rect x=\"160\" y=\"218\" width=\"280\" height=\"80\" class=\"w-conc\" stroke-width=\"2.5\" style=\"stroke:var(--conc)\"/>\n        "
-},
-{
-"before": "\n        <rect x=\"50\" y=\"530\" width=\"500\" height=\"44\" style=\"fill:var(--conc)\"/>\n        <text x=\"66\" y=\"558\" class=\"t-light\">OBJETIVO: \"ACAUTELAR\" O PROCESSO</text>\n      ",
-"after": "\n        <rect x=\"50\" y=\"530\" width=\"500\" height=\"44\" style=\"fill:var(--conc)\"/>\n        <text x=\"66\" y=\"558\" class=\"t-light\">OBJETIVO: “ACAUTELAR” O PROCESSO</text>\n      "
-},
-{
 "before": "e julgar, originariamente, \"o pedido de <strong>",
 "after": "e julgar, originariamente, “o pedido de <strong>"
 },
@@ -32,16 +24,8 @@
 "after": "\n  <p class=\"lede\">A Lei 9.868/1999 organiza a ADI"
 },
 {
-"before": "ADI/ADC · LEI 9.868/99</text>\n        <path class=\"ink grow\" d=\"M90 120H500\" marker-end=\"url(#ah25d)\"/>\n        <circle cx=\"90\" cy=\"120\" r=\"11\" class=\"f-ink\"/>\n        ",
-"after": "ADI/ADC · LEI 9.868/1999</text>\n        <path class=\"ink grow\" d=\"M90 120H500\" marker-end=\"url(#ah25d)\"/>\n        <circle cx=\"90\" cy=\"120\" r=\"11\" class=\"f-ink\"/>\n        "
-},
-{
 "before": "\n      <p>A Lei 9.868/99 organiza o processamento",
 "after": "\n      <p>A Lei 9.868/1999 organiza o processamento"
-},
-{
-"before": "ART. 22, LEI 9.868/99: \"A DECISÃO SOMENTE",
-"after": "ART. 22, LEI 9.868/1999: \"A DECISÃO SOMENTE"
 },
 {
 "before": "22 da Lei 9.868/99 exige que estejam",
@@ -74,10 +58,6 @@
 {
 "before": "11 da Lei 9.868/99 fixa os efeitos",
 "after": "11 da Lei 9.868/1999 fixa os efeitos"
-},
-{
-"before": "§ 1º, LEI 9.868/99</text>\n        <rect x=\"60\" y=\"110\" width=\"480\" height=\"70\" class=\"f-paper ink\"/>\n        <text x=\"80\" y=\"153\" class=\"t-mid\">EFICÁCIA",
-"after": "§ 1º, LEI 9.868/1999</text>\n        <rect x=\"60\" y=\"110\" width=\"480\" height=\"70\" class=\"f-paper ink\"/>\n        <text x=\"80\" y=\"153\" class=\"t-mid\">EFICÁCIA"
 },
 {
 "before": "</h3>\n      <blockquote class=\"law\"><cite>Lei 9.868/99, art. 11, §",
@@ -114,5 +94,9 @@
 {
 "before": "os dois quóruns \"tem aplicação muito reduzida\".</p></details>\n  </div>\n</div>",
 "after": "os dois quóruns “tem aplicação muito reduzida”.</p></details>\n  </div>\n</div>"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 25 · ADI: medida cautelar. Fundamento constitucional, requisitos, quóruns, efeitos e o procedimento da Lei 9.868/99.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 25 · ADI: medida cautelar. Fundamento constitucional, requisitos, quóruns, efeitos e o procedimento da Lei 9.868/99.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
 }
 ]
