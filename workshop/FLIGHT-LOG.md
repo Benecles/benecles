@@ -6,6 +6,8 @@ Diagnostics from every launch (a shipped or gated piece of work), turned into ru
 
 **Every agent, every stage:** read the entries newer than your last read before starting a stage. If an entry applies to work you already did and haven't shipped, fix it now. Don't wait for a gate to tell you.
 
+**Bugs:** before debugging anything, search `BUGS.md` (same folder) by the symptom you see. When you fix a bug that isn't there, add a row (symptom → cause → fix → what catches it) in the same commit as the fix.
+
 **After every gate:** the CEO adds entries here: what failed or worked, the rule, which stages it applies to. One entry per finding, numbered, newest last. Rules here outrank older text in briefs.
 
 Stages: `S0–S4` (sources), `S5a` (blueprint), `S5` (writing), `FIG` (figures, kit), `SHIP` (PRs, checks), `ALL`.
@@ -29,3 +31,4 @@ Stages: `S0–S4` (sources), `S5a` (blueprint), `S5` (writing), `FIG` (figures, 
 | F-015 | 01/10 | Chairman, Aula 01 | Figs. 2–3 faded in late: only Fig. 1's panel had class `on` | The only panel of a one-step scrolly carries `on`. Checked by `anatomy_check` (LATE-PANEL) | FIG, S5 |
 | F-016 | 01/10 | Chairman, Aula 01 | Kit panels drawn in the top half of a 600×600 square: frame twice the drawing, labels tiny | Crop the viewBox to the drawing (+~16 units); a one-panel scrolly takes the drawing's proportions (controle.css). Checked by `anatomy_check` (SQUARE-KIT). Figure Library test 4 | FIG |
 | F-017 | 01/10 | Chairman | Negative space dominating the frame (T/L shapes leave whole corners empty even when cropped) | Fill the empty arms with content or recompose; empty space is a gutter or a pause, never the largest region. Gate: 4×4 grid, ≥ 10/16 cells hold a mark. Narrowing a drawing to enlarge type must re-pass breakscan | FIG |
+| F-018 | 01/10 | Chairman | Bugs were fixed and forgotten: each agent rediscovered them | `BUGS.md` is the bug catalogue, indexed by symptom. Search it before debugging; add a row with every new fix, in the same commit | ALL |
