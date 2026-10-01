@@ -28,6 +28,20 @@ MARKER = re.compile(r"^===== p\. (.+?) \(PDF (\d+)\) =====$", re.M)
 SECTION_MARKER = re.compile(r"^===== § ([^=]+?) =====$", re.M)
 ARTICLE_MARKER = re.compile(r"^===== Art\. ([^=]+?) =====$", re.M)
 ROLES = {"primary", "supporting", "background", "unused", "no_book_covers"}
+SIZE_EXEMPT_SOURCE_IDS = {
+    "constituicao-federal-1988",
+    "lei-9868-1999",
+    "lei-9882-1999",
+    "lei-11417-2006",
+}
+SIZE_EXEMPT_CHAPTERS = {
+    ("mendes-branco-curso-2023", "04-direitos-fundamentais-em-especie"),
+    ("mendes-branco-curso-2023", "11-tributacao-financas-publicas-e-controle-da-atividade-finance"),
+    ("tavares-curso-2020", "61-chapter-lx-das-fun-es-essenciais-justi-a-e-da-pol-cia-judici-ria"),
+    ("sarlet-marinoni-mitidiero-curso-2020", "14-direitos-fundamentais-em-especie"),
+}
+CORE_CHAPTER_WORD_LIMIT = 15_000
+CHAPTER_WORD_LIMIT = 100_000
 
 
 def read_json(path, errors):
@@ -217,12 +231,61 @@ def chapter_catalog(args, errors, validate_text):
 
 def check_s2(args, errors):
     shelf = read_csv(args.shelf, errors)
+    roles_by_source = {}
     for row in shelf:
+        source_id = row.get("source_id", "")
+        if source_id:
+            roles_by_source[source_id] = row.get("role", "")
         if row.get("text_status") in {"text layer", "OCR done"}:
-            source_id = row.get("source_id", "")
             if source_id and not (args.chapters / source_id / "index.json").is_file():
                 errors.append(f"{source_id}: available shelf source has no chapter index")
     catalog = chapter_catalog(args, errors, True)
+    entries_by_path = {}
+    for (source_id, chapter_id), entry in catalog.items():
+        rel_path = Path(entry.get("path", "")).as_posix()
+        entries_by_path[(source_id, rel_path)] = (chapter_id, entry)
+
+    # The 15k cap applies only to course-relevant section-split units in a
+    # book_base source. Whole chapters outside the course remain whole.
+    for (source_id, rel_path), (chapter_id, entry) in entries_by_path.items():
+        if roles_by_source.get(source_id) != "book_base" or not entry.get("parent"):
+            continue
+        text_path = args.chapters / source_id / rel_path
+        try:
+            actual_words = len(text_path.read_text().split())
+        except OSError as exc:
+            errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
+            continue
+        if actual_words > CORE_CHAPTER_WORD_LIMIT:
+            errors.append(
+                f"{source_id}/{rel_path}: section-split core chapter has {actual_words:,} words "
+                f"(limit {CORE_CHAPTER_WORD_LIMIT:,}; chapter {chapter_id}, parent {entry['parent']})"
+            )
+
+    # The 100k cap applies to every chapter text file, including files not yet
+    # listed in index.json. Exemptions are the named primary source texts and
+    # four explicitly allowed non-core whole chapters.
+    for text_path in sorted(args.chapters.rglob("*.txt")):
+        try:
+            source_id = text_path.relative_to(args.chapters).parts[0]
+        except (ValueError, IndexError):
+            continue
+        if source_id in SIZE_EXEMPT_SOURCE_IDS:
+            continue
+        rel_path = text_path.relative_to(args.chapters / source_id).as_posix()
+        indexed = entries_by_path.get((source_id, rel_path))
+        if indexed and (source_id, indexed[0]) in SIZE_EXEMPT_CHAPTERS:
+            continue
+        try:
+            actual_words = len(text_path.read_text().split())
+        except OSError as exc:
+            errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
+            continue
+        if actual_words > CHAPTER_WORD_LIMIT:
+            errors.append(
+                f"{source_id}/{rel_path}: chapter text has {actual_words:,} words "
+                f"(limit {CHAPTER_WORD_LIMIT:,})"
+            )
     return f"{len(catalog)} indexed chapters"
 
 
