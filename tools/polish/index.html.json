@@ -8,10 +8,6 @@
 "after": "Próximas disciplinas</h2>\n      <p>Outros guias entram aqui quando estiverem prontos.</p>\n    </div>\n  </div>\n</main>\n"
 },
 {
-"before": "O que mudou</h2><details class=\"note\" open><summary><span>29/09/2026</span></summary>",
-"after": "O que mudou</h2><details class=\"note\" open><summary><span>30/09/2026</span></summary><ul><li>O site passa a se chamar Ordenações Filipinas, em <a href=\"https://benecles.github.io/ordenacoes-filipinas/\">benecles.github.io/ordenacoes-filipinas</a>. Favoritos, marca-texto e o tema começam do zero; quem usava o modo avião precisa salvar o site de novo.</li><li>Todos os cursos listam as aulas do mesmo jeito: o que cada aula deixa você fazer, quanto tempo leva para ler e o que cai em cada prova.</li></ul></details><details class=\"note\" open><summary><span>29–30/09/2026</span></summary><ul><li>Entraram os guias de sete disciplinas, com descrições das aulas e bibliografias onde havia plano de ensino. Também entraram os favoritos e Meu caderno, as frases do modo avião e figuras refeitas em Processo Civil, Contratos e Direito Latino-americano.</li></ul></details><details class=\"note\" open><summary><span>29/09/2026</span></summary>"
-},
-{
 "before": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding-top:28px;padding-bottom:6px}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf",
 "after": "<meta name=\"description\" content=\"Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.\">\n<link rel=\"stylesheet\" href=\"courses/controle-de-constitucionalidade/assets/controle.css\">\n<style>\n.hero-shelf{padding:0;height:0;overflow:hidden}.hero-shelf h1{font-size:clamp(40px,6.2vw,76px);line-height:.98;max-width:20ch;margin:24px 0 12px}.hero-shelf"
 },
@@ -34,5 +30,9 @@
 {
 "before": "Metodologia Jurídica</h2>\n      <p>A tradição do direito comum, o casuísmo e o sistema no direito indiano, o ensino jurídico no Brasil do século XIX e a relação entre",
 "after": "Metodologia Jurídica</h2>\n      <p>O guia relaciona a tradição do direito comum e o debate entre casuísmo e sistema no direito indiano ao ensino jurídico brasileiro do século XIX. Também examina a relação entre"
+},
+{
+"before": " o mesmo padrão.</li><li>Nenhuma figura ",
+"after": " o mesmo padrão.</li><li><b><a href=\"courses/controle-de-constitucionalidade/aula-01.html\">Controle, Aula 01</a></b> reescrita, com o triplo do texto: monta o roteiro do curso (objeto, parâmetro, vínculo, controlador) sobre uma única lei de passeatas, mostra por que a Constituição mede as leis e o que acontece com a lei que não cabe nela, e termina com um caso resolvido do começo ao fim.</li><li>Nenhuma figura "
 }
 ]
