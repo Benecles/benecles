@@ -38,5 +38,9 @@
 {
 "before": "com a Constituição: a aula propõe, como hipótese, uso para prejudicar",
 "after": "com a Constituição: propõe-se, como hipótese, o uso para prejudicar"
+},
+{
+"before": "</text>\n<path d=\"M110 168H254M346 168H490\" class=\"thin\"/>\n<path d=\"M254 150L346 186M346 150L254 186\" class=\"c-conc\"/>\n<text x=\"300\" y=\"190\" text-anchor=\"middle\" class=\"t-small tc-conc\">ROTA DIRETA · ",
+"after": "</text>\n<path d=\"M110 168H254M346 168H490\" class=\"thin\"/>\n<path d=\"M254 150L346 186M346 150L254 186\" class=\"c-conc\"/>\n<text x=\"300\" y=\"210\" text-anchor=\"middle\" class=\"t-small tc-conc\">ROTA DIRETA · "
 }
 ]
