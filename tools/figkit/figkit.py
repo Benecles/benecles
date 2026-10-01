@@ -139,3 +139,206 @@ def svg(view, inner, cls='', label='', ident=''):
     c = f' class="{cls}"' if cls else ''
     a = f' role="img" aria-label="{label}"' if label else ' aria-hidden="true"'
     return f'<svg{i}{c} viewBox="{view}"{a}>{inner}</svg>'
+
+
+class Field:
+    """A two-axis classifier: locate a case by two questions at once.
+
+    x / y: lists of (position, (line1, line2)) ticks on the bottom and left axes.
+    Regions and a border split the plane into legal categories; marks are the doctrinal forms
+    (points or bars) and cases (ranges that may straddle the border). Label placement is
+    explicit per mark (dx, dy, anchor): the kit draws, the author composes.
+    """
+
+    def __init__(self, uid, x0=200, x1=570, y0=100, y1=470):
+        self.uid, self.x0, self.x1, self.y0, self.y1 = uid, x0, x1, y0, y1
+        self.o = []
+
+    def axes(self, xticks, yticks, xtitle='', ytitle=''):
+        x0, x1, y0, y1 = self.x0, self.x1, self.y0, self.y1
+        o = line(x0, y0 - 10, x0, y1) + line(x0, y1, x1 + 10, y1)
+        o += f'<path d="M{x1 + 10} {y1}l-7 -4v8z" style="fill:var(--ink)"/><path d="M{x0} {y0 - 10}l-4 7h8z" style="fill:var(--ink)"/>'
+        for px, (a, b) in xticks:
+            o += line(px, y1, px, y1 + 6, w=1.2)
+            o += t(px, y1 + 22, a, size=10.5, anchor='middle') + t(px, y1 + 35, b, size=10.5, anchor='middle', fill='var(--ink-2)')
+        for py, (a, b) in yticks:
+            o += line(x0 - 6, py, x0, py, w=1.2)
+            o += t(x0 - 12, py - 2, a, size=10.5, anchor='end') + t(x0 - 12, py + 11, b, size=10.5, anchor='end', fill='var(--ink-2)')
+        if xtitle:
+            o += t((x0 + x1) / 2, y1 + 62, xtitle, size=10.5, anchor='middle', caps=True, weight=700, fill='var(--ink-2)')
+        if ytitle:
+            o += t(x0 - 12, y0 - 26, ytitle, size=10.5, anchor='end', caps=True, weight=700, fill='var(--ink-2)')
+        self.o.append(o)
+
+    def region(self, ya, yb, tone, opacity=.5):
+        self.o.insert(0, f'<rect x="{self.x0}" y="{ya}" width="{self.x1 - self.x0}" height="{yb - ya}" '
+                         f'style="fill:{WASH[tone]};opacity:{opacity}"/>')
+
+    def border(self, y, above, below, tone='conc'):
+        o = line(self.x0, y, self.x1, y, tone=tone, w=1.6, dash='6 4')
+        o += t(self.x0 + 8, y - 7, above, size=10.5, weight=700, fill=TONE[tone], caps=True)
+        o += t(self.x0 + 8, y + 15, below, size=10.5, weight=700, fill='var(--dif)', caps=True)
+        self.o.append(o)
+
+    def point(self, x, y, label, active=False, tone='ink', dx=12, dy=4, anchor='start', sub=''):
+        c = TONE[tone]
+        fill = c if active else 'var(--paper)'
+        o = f'<circle cx="{x}" cy="{y}" r="{8 if active else 6.5}" style="fill:{fill};stroke:{c};stroke-width:1.8"/>'
+        o += t(x + dx, y + dy, label, size=11, weight=700 if active else 500, caps=True,
+               fill=c if active else 'var(--ink-2)', anchor=anchor)
+        if sub and active:
+            o += t(x + dx, y + dy + 14, sub, size=10.5, anchor=anchor, fill='var(--ink)')
+        self.o.append(o)
+
+    def bar(self, xa, xb, y, label, active=False, tone='ink', dy=-14, sub=''):
+        c = TONE[tone]
+        o = f'<rect x="{xa}" y="{y - 5}" width="{xb - xa}" height="10" rx="5" style="fill:{c if active else "var(--paper)"};stroke:{c};stroke-width:1.8"/>'
+        o += t((xa + xb) / 2, y + dy, label, size=11, weight=700 if active else 500, caps=True,
+               fill=c if active else 'var(--ink-2)', anchor='middle')
+        if sub and active:
+            o += t((xa + xb) / 2, y + 22, sub, size=10.5, anchor='middle')
+        self.o.append(o)
+
+    def range(self, x, ya, yb, l1, l2, tone='mix', dx=12):
+        c = TONE[tone]
+        o = f'<path d="M{x} {ya}V{yb}" style="stroke:{c};stroke-width:4;stroke-linecap:round;opacity:.85"/>'
+        o += f'<path d="M{x - 7} {ya}h14M{x - 7} {yb}h14" style="stroke:{c};stroke-width:2"/>'
+        o += t(x + dx, (ya + yb) / 2 + 14, l1, size=10.5, weight=700, fill=c, caps=True)
+        o += t(x + dx, (ya + yb) / 2 + 27, l2, size=10.5, fill=c)
+        self.o.append(o)
+
+    def svg(self):
+        return ''.join(self.o)
+
+
+SERIF = "font-family:var(--serif,serif)"
+SCH = 6.25  # serif 12px, px per character (wrap estimate)
+
+
+def wrap(s, width, ch=SCH):
+    words, lines, cur = s.split(), [], ''
+    for w in words:
+        if cur and (len(cur) + 1 + len(w)) * ch > width:
+            lines.append(cur); cur = w
+        else:
+            cur = f'{cur} {w}'.strip()
+    return lines + ([cur] if cur else [])
+
+
+class Document:
+    """A real legal document drawn as paper: the object the law produces, opened up.
+
+    lines: (kind, text, key) with kind in title | party | clause | place | sign.
+    After layout, self.box[key] = (x0, y0, x1, y1) so steps can bracket, highlight or stamp
+    exactly the clauses they read.
+    """
+
+    def __init__(self, uid, x, y, w, lines, lead=16, indent=78, foot=0):
+        self.uid, self.x, self.y, self.w, self.lead, self.indent = uid, x, y, w, lead, indent
+        self.box, self.parts = {}, []
+        cy, pad = y + 30, 16
+        for kind, text, key in lines:
+            if kind == 'title':
+                self.parts.append(t(x + w / 2, cy, text, size=11.5, anchor='middle', caps=True, weight=700, ls='.12em'))
+                self.box[key] = (x + pad, cy - 12, x + w - pad, cy + 4); cy += 26
+            elif kind == 'sign':
+                a, b = text
+                cy += 18
+                half = (w - 3 * pad) / 2
+                for i, name in enumerate((a, b)):
+                    sx = x + pad + i * (half + pad)
+                    self.parts.append(line(sx, cy, sx + half, cy, w=1))
+                    self.parts.append(t(sx + half / 2, cy + 14, name, size=10, anchor='middle', fill='var(--ink-2)'))
+                    self.box[f'{key}{i}'] = (sx, cy - 18, sx + half, cy + 18)
+                cy += 26
+            else:
+                label, body = text if isinstance(text, tuple) else ('', text)
+                y0 = cy - 11
+                indent = 0
+                if label:
+                    self.parts.append(t(x + pad, cy, label, size=10, weight=700, caps=True, fill='var(--ink-2)'))
+                    indent = self.indent
+                for i, ln in enumerate(wrap(body, w - 2 * pad - indent)):
+                    st = f"{SERIF};font-size:12px;fill:var(--ink)" + (';font-style:italic' if kind == 'place' else '')
+                    self.parts.append(f'<text x="{x + pad + indent:g}" y="{cy:g}" style="{st}">{ln}</text>')
+                    cy += self.lead
+                self.box[key] = (x + pad, y0, x + w - pad, cy - self.lead + 5)
+                cy += 6 if kind == 'clause' else 4
+        self.h = cy - y + 8 + foot
+
+    def paper(self):
+        x, y, w, h = self.x, self.y, self.w, self.h
+        return (f'<path d="M{x} {y}H{x + w - 18}L{x + w} {y + 18}V{y + h}H{x}Z" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.5"/>'
+                f'<path d="M{x + w - 18} {y}V{y + 18}H{x + w}" style="fill:var(--paper-2);stroke:var(--ink);stroke-width:1"/>')
+
+    def highlight(self, keys, tone='conc'):
+        o = ''
+        for k in keys:
+            x0, y0, x1, y1 = self.box[k]
+            o += f'<rect x="{x0 - 5:g}" y="{y0 - 3:g}" width="{x1 - x0 + 10:g}" height="{y1 - y0 + 6:g}" style="fill:{WASH[tone]};stroke:none"/>'
+        return o
+
+    def bracket(self, keys, side, label, sub='', tone='conc', gap=12):
+        ys = [self.box[k][1] for k in keys] + [self.box[k][3] for k in keys]
+        y0, y1 = min(ys) - 2, max(ys) + 2
+        c = TONE[tone]
+        if side == 'left':
+            bx = self.x - gap
+            o = f'<path d="M{bx + 6} {y0}H{bx}V{y1}H{bx + 6}" style="fill:none;stroke:{c};stroke-width:1.8"/>'
+            o += t(bx - 8, (y0 + y1) / 2, label, size=10.5, anchor='end', caps=True, weight=700, fill=c)
+            if sub:
+                o += t(bx - 8, (y0 + y1) / 2 + 14, sub, size=10, anchor='end', fill='var(--ink-2)')
+        else:
+            bx = self.x + self.w + gap
+            o = f'<path d="M{bx - 6} {y0}H{bx}V{y1}H{bx - 6}" style="fill:none;stroke:{c};stroke-width:1.8"/>'
+            o += t(bx + 8, (y0 + y1) / 2, label, size=10.5, caps=True, weight=700, fill=c)
+            if sub:
+                o += t(bx + 8, (y0 + y1) / 2 + 14, sub, size=10, fill='var(--ink-2)')
+        return o
+
+    def stamp(self, text, cx, cy, tone='dif', angle=-8):
+        c = TONE[tone]
+        wpx = len(text) * 9.6 + 24
+        return (f'<g transform="rotate({angle} {cx} {cy})"><rect x="{cx - wpx / 2:g}" y="{cy - 17}" width="{wpx:g}" height="30" rx="3" '
+                f'style="fill:none;stroke:{c};stroke-width:2.2;opacity:.9"/>'
+                f'<text x="{cx}" y="{cy + 5}" text-anchor="middle" style="{MONO};font-size:15px;font-weight:700;letter-spacing:.14em;fill:{c};opacity:.9">{text}</text></g>')
+
+
+def statute(x, y, w, art, parts, source='', tone='conc'):
+    """A statute cut: the article's own words, with the operative phrase marked.
+    parts: list of (text, marked) runs, wrapped together."""
+    words = []
+    for txt, marked in parts:
+        words += [(wd, marked) for wd in txt.split()]
+    lines, cur, cw = [], [], 0
+    width = w - 24
+    for wd, m in words:
+        ln = (len(wd) + 1) * SCH
+        if cur and cw + ln > width:
+            lines.append(cur); cur, cw = [], 0
+        cur.append((wd, m)); cw += ln
+    if cur:
+        lines.append(cur)
+    h = 34 + 16 * len(lines)
+    o = f'<rect x="{x}" y="{y}" width="{w}" height="{h}" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.2"/>'
+    o += f'<rect x="{x}" y="{y}" width="4" height="{h}" style="fill:{TONE[tone]}"/>'
+    o += t(x + 14, y + 17, art, size=10.5, caps=True, weight=700)
+    if source:
+        o += t(x + w - 10, y + 17, source, size=10, anchor='end', fill='var(--ink-2)')
+    cy = y + 36
+    for ln in lines:
+        runs, prev = [], None
+        for wd, m in ln:
+            if runs and runs[-1][1] == m:
+                runs[-1][0].append(wd)
+            else:
+                runs.append(([wd], m))
+        spans = ''
+        for k, (wds, m) in enumerate(runs):
+            txt = (' ' if k else '') + ' '.join(wds)
+            spans += (f'<tspan style="fill:{TONE[tone]};font-weight:700">{txt}</tspan>' if m else f'<tspan>{txt}</tspan>')
+        if any(m for _, m in ln):
+            o += f'<path d="M{x + 8} {cy - 10}V{cy + 3}" style="stroke:{TONE[tone]};stroke-width:2"/>'
+        o += f'<text x="{x + 14}" y="{cy}" xml:space="preserve" style="{SERIF};font-size:12px;fill:var(--ink)">{spans}</text>'
+        cy += 16
+    return o, h
