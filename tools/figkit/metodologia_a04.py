@@ -12,7 +12,7 @@ LINES = [
     ('party', ('Fonte', 'III Concílio de Lima'), 'source'),
     ('clause', ('Atendimento', 'Paróquias indígenas com atendimento suficiente.'), 'attendance'),
     ('clause', ('Prover pároco', 'Povoado com trezentos indígenas (ou mesmo duzentos).'), 'threshold'),
-    ('clause', ('Se o número não fosse alcançado',
+    ('clause', ('Se não atingido',
                'O prelado reuniria comunidades onde pudessem ser governadas com comodidade.'), 'grouping'),
     ('clause', ('Efeito', 'Organização territorial e distribuição de ministros.'), 'effect'),
 ]
