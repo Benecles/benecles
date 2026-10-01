@@ -612,7 +612,8 @@ def check_s4(args, errors, warnings):
     check_s3(args, errors, warnings, run_policy=False)
     lessons = course_map(args.map, errors)
     catalog = chapter_catalog(args, errors, False)
-    triage_rows = read_csv(args.triage, errors)
+    assignment_path = args.s4_assignments if args.s4_assignments.is_file() else args.triage
+    triage_rows = read_csv(assignment_path, errors)
     shelf = read_csv(args.shelf, errors)
     shelf_by_id = {row.get("source_id", ""): row for row in shelf if row.get("source_id")}
     lesson_ids = {lesson.get("id") for lesson in lessons}
@@ -711,6 +712,8 @@ def check_s4(args, errors, warnings):
                     errors.append(f"{lesson_id}: S4 exercise file {file_name} does not contain its assigned source atom")
             elif source_bytes != generated_bytes:
                 errors.append(f"{lesson_id}: S4 file {file_name} differs from source atom {source_id}/{chapter_id}")
+            if "exercises/exams" in role_cell.casefold():
+                continue
             policy_assignments.append({
                 "source_id": source_id,
                 "chapter_id": chapter_id,
@@ -753,6 +756,7 @@ def main():
     parser.add_argument("--shelf", type=Path)
     parser.add_argument("--chapters", type=Path)
     parser.add_argument("--triage", type=Path)
+    parser.add_argument("--s4-assignments", type=Path)
     parser.add_argument("--compendium", type=Path)
     parser.add_argument("--site", type=Path, default=SITE)
     args = parser.parse_args()
@@ -761,6 +765,7 @@ def main():
     args.shelf = args.shelf or root / "shelf.csv"
     args.chapters = args.chapters or root / "chapters"
     args.triage = args.triage or root / "triage.csv"
+    args.s4_assignments = args.s4_assignments or root / "s4-assignments.csv"
     args.compendium = args.compendium or root / "compendium"
     errors = []
     warnings = []

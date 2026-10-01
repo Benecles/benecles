@@ -2,6 +2,7 @@
 """Append one S2 source chapter or PDF-page range to a lesson compendium."""
 
 import argparse
+import csv
 import json
 import re
 from pathlib import Path
@@ -59,14 +60,30 @@ def pull(course, lesson, source_id, chapter_or_pages, why):
     if not index_path.is_file():
         raise FileNotFoundError(f"missing {index_path}; build S4 compendia first")
     catalog = chapter_catalog(root / "chapters")
-    output_content = ""
-    provenance = []
+    with (root / "shelf.csv").open(newline="", encoding="utf-8-sig") as handle:
+        shelf_rows = list(csv.DictReader(handle))
+    shelf_roles = {row.get("source_id", ""): row.get("role", "") for row in shelf_rows}
+    legal_source = source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_roles.get(source_id) == "statute"
     selector = chapter_or_pages.strip()
-    exact = (source_id, selector)
-    if exact in catalog:
-        entry, text_path = catalog[exact]
-        output_content = text_path.read_text(encoding="utf-8")
-        provenance = [(selector, page_label(entry))]
+    if legal_source:
+        selectors = [part.strip() for part in selector.split(",") if part.strip()]
+        if not selectors:
+            raise ValueError("legal sources require one or more exact article selectors, for example 'Art. 13, Art. 14'")
+        selected = []
+        for article_id in selectors:
+            key = (source_id, article_id)
+            if key not in catalog:
+                raise ValueError(f"legal source selector must be an exact indexed article: {source_id}/{article_id}")
+            entry, text_path = catalog[key]
+            if entry.get("locator") != "article" or article_id == "whole":
+                raise ValueError(f"legal sources may only be pulled by article; rejected {source_id}/{article_id}")
+            selected.append((article_id, entry, text_path))
+        assignments = [(article_id, page_label(entry), text_path.read_text(encoding="utf-8")) for article_id, entry, text_path in selected]
+    elif (source_id, selector) in catalog:
+        entry, text_path = catalog[(source_id, selector)]
+        if entry.get("locator") == "document":
+            raise ValueError("whole-document pulls are not allowed; select a bounded S2 atom")
+        assignments = [(selector, page_label(entry), text_path.read_text(encoding="utf-8"))]
     else:
         match = PAGE_RANGE.fullmatch(selector)
         if not match:
@@ -76,32 +93,34 @@ def pull(course, lesson, source_id, chapter_or_pages, why):
         if last < first:
             raise ValueError("page range end must be greater than or equal to its start")
         output_content, contributors = extract_page_range(source_id, first, last, catalog)
-        provenance = [(chapter_id, pages) for chapter_id, pages in contributors]
-        if not provenance:
+        if legal_source:
+            raise ValueError("legal sources may only be pulled by exact article IDs")
+        if not contributors:
             raise ValueError(f"no S2 text found for {source_id} PDF {first}-{last}")
-
-    existing = list(compendium_dir.glob("30-pulled-*.txt"))
-    sequence = len(existing) + 1
-    file_name = f"30-pulled-{sequence:03d}-{safe_name(source_id)}-{safe_name(selector)}.txt"
-    destination = compendium_dir / file_name
-    if destination.exists():
-        raise FileExistsError(destination)
-    destination.write_text(output_content, encoding="utf-8")
+        assignments = [(chapter_id, pages, output_content) for chapter_id, pages in contributors]
 
     index = index_path.read_text(encoding="utf-8")
     rows = []
-    for chapter_id, pages in provenance:
+    existing = list(compendium_dir.glob("30-pulled-*.txt"))
+    sequence = len(existing) + 1
+    for chapter_id, pages, content in assignments:
+        file_name = f"30-pulled-{sequence:03d}-{safe_name(source_id)}-{safe_name(chapter_id)}.txt"
+        sequence += 1
+        destination = compendium_dir / file_name
+        if destination.exists():
+            raise FileExistsError(destination)
+        destination.write_text(content, encoding="utf-8")
         record = make_record(destination, source_id, chapter_id, pages, "supporting (pulled)", why)
         rows.append(table_row(record))
     index_path.write_text(index.rstrip() + "\n" + "\n".join(rows) + "\n", encoding="utf-8")
-    print(f"Appended {destination.relative_to(root)} and one provenance row to {index_path.relative_to(root)}")
+    print(f"Appended {len(assignments)} selected source atom(s) and {len(rows)} article-level provenance row(s) to {index_path.relative_to(root)}")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("lesson", help="S0 lesson id, for example aula-30 or aula-30.html")
     parser.add_argument("source_id", help="S1 source id whose S2 chapter text is requested")
-    parser.add_argument("chapter_or_pages", help="S2 chapter id or PDF page range such as PDF 12-14")
+    parser.add_argument("chapter_or_pages", help="S2 atom ID, PDF range, or comma-separated exact article IDs for a legal source")
     parser.add_argument("why", help="Reason this material is needed")
     parser.add_argument("--course", default="controle-de-constitucionalidade")
     args = parser.parse_args()

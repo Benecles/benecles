@@ -53,7 +53,9 @@ def page_label(entry):
     locator = entry.get("locator", "page")
     if locator == "article":
         chapter_id = entry.get("id", "")
-        return "whole document" if chapter_id == "whole" else f"Art. {chapter_id}"
+        if chapter_id == "whole":
+            return "whole document"
+        return chapter_id if str(chapter_id).startswith(("Art. ", "ADCT Art. ")) else f"Art. {chapter_id}"
     if locator == "section":
         return f"§ {entry.get('id', '')}"
     return "whole document"
@@ -108,7 +110,8 @@ def build(course):
 
     course_map = json.loads(map_path.read_text(encoding="utf-8"))
     shelf_rows = read_csv(shelf_path)
-    triage_rows = read_csv(triage_path)
+    s4_assignments_path = root / "s4-assignments.csv"
+    triage_rows = read_csv(s4_assignments_path if s4_assignments_path.is_file() else triage_path)
     catalog = chapter_catalog(chapters_root)
     shelf_by_id = {row["source_id"]: row for row in shelf_rows if row.get("source_id")}
     compendium = root / "compendium"
@@ -164,6 +167,9 @@ def build(course):
             if key not in catalog:
                 raise ValueError(f"S3 references unknown chapter {source_id}/{chapter_id}")
             entry, text_path = catalog[key]
+            if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_by_id.get(source_id, {}).get("role") == "statute":
+                if entry.get("locator") != "article" or chapter_id == "whole":
+                    raise ValueError(f"S4 legal sources must be assembled by article: {source_id}/{chapter_id}")
             shelf_role = shelf_by_id.get(source_id, {}).get("role", "")
             is_exercise = shelf_role in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
             if is_exercise:
