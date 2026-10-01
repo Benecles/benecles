@@ -12,5 +12,6 @@ for s in $slugs; do
   fi
 done
 python3 tools/fronts/check_front.py $slugs | grep -v '^WARN' || fail=1
+python3 tools/fronts/check_register_data.py $slugs | grep FAIL && fail=1
 [ $fail = 0 ] && echo "check_all: PASS" || echo "check_all: FAIL"
 exit $fail
