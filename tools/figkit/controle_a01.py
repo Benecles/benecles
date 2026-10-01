@@ -42,13 +42,13 @@ def fig3():
     stops = ['ninguém', ('devedor de', 'alimentos'), ('depositário', 'infiel'), ('qualquer', 'devedor')]
     lei = (('CC, art. 652', 'prende o depositário'), 2)
     cf = Ruler('f301', 30, 70, 540, stops, title='Quem pode ser preso por dívida?', source='CF · art. 5º, LXVII', limit=2)
-    pacto = Ruler('f302', 30, 330, 540, stops, title='Quem pode ser preso por dívida?', source='Pacto de San José · 7.7', limit=1)
+    pacto = Ruler('f302', 30, 350, 540, stops, title='Quem pode ser preso por dívida?', source='Pacto de San José · 7.7', limit=1)
     o = f'<defs>{cf.defs()}{pacto.defs()}</defs>'
     o += t(30, 52, 'Constitucionalidade', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
     o += cf.body() + cf.strip(214, lei[1], lei[0], note='cabe na Constituição', d=.2)
-    o += t(30, 312, 'Convencionalidade · tratado supralegal', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
-    o += pacto.body() + pacto.strip(474, lei[1], lei[0], note='não cabe no tratado', d=.6)
-    o += pacto.limit_mark(500, 'limite', 'só alimentos', d=1)
+    o += t(30, 300, 'Convencionalidade · tratado supralegal', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
+    o += pacto.body() + pacto.strip(494, lei[1], lei[0], note='não cabe no tratado', d=.6)
+    o += pacto.limit_mark(520, 'limite', 'só alimentos', d=1)
     return svg('0 0 600 600', o, cls='panel fig', ident='p-parametro', label='Qual é o parâmetro?')
 
 
