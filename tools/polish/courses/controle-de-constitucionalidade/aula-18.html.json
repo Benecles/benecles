@@ -34,5 +34,13 @@
 {
 "before": "cunhou a expressão \"inconstitucionalidade chapada\", e o que",
 "after": "cunhou a expressão “inconstitucionalidade chapada”, e o que"
+},
+{
+"before": "</text>\n        <path class=\"grow\" d=\"M370 310H490\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n        <path d=\"M478 296l16 16-16 16\" fill=\"none\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n        <text x=\"410\" y=\"360\" class=\"t-small tc-conc\">ULTRAPASSAR:</text>\n        <text x=\"410\" y=\"382\" class=\"t-small tc-conc\">NÃO PERMITIDO</text>\n        <rect x=\"60\" y=\"560\" width=\"480\" height=\"34\" style=\"fill:var(--conc)\"/>\n        <text x=\"76\" y=\"583\" class=\"t-light t-small\">ALÉM DOS LIMITES ",
+"after": "</text>\n        <path class=\"grow\" d=\"M370 310H490\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n        <path d=\"M478 296l16 16-16 16\" fill=\"none\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n        <text x=\"470\" y=\"360\" class=\"t-small tc-conc\">ULTRAPASSAR:</text>\n        <text x=\"470\" y=\"382\" class=\"t-small tc-conc\">NÃO PERMITIDO</text>\n        <rect x=\"60\" y=\"560\" width=\"480\" height=\"34\" style=\"fill:var(--conc)\"/>\n        <text x=\"170\" y=\"583\" class=\"t-light t-small\">ALÉM DOS LIMITES "
+},
+{
+"before": " DECISÃO INTERPRETATIVA</text>\n  <line x1=\"154\" y1=\"148\" x2=\"536\" y2=\"148\" class=\"thin\"/>\n  <rect x=\"194\" y=\"128\" width=\"184\" height=\"40\" class=\"w-conc ink\"/>\n  <text x=\"208\" y=\"154\" class=\"t-small tc-conc\">DECISÃO</text>\n  <text x=\"154\" y=\"222\" class=\"t-small tc-muted\">SOCIEDADE · BACKLASH</text>\n  <line x1=\"154\" y1=\"238\" x2=\"536\" y2=\"238\" class=\"thin\"/>\n  <path d=\"M282 220v36M296 220v36M310 220v36\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n  <text x=\"326\" y=\"246\" class=\"t-mid tc-conc\">REAÇÃO</text>\n  <text x=\"154\" y=\"312\" class=\"t-small tc-muted\">CORREÇÃO ",
+"after": " DECISÃO INTERPRETATIVA</text>\n  <line x1=\"154\" y1=\"180\" x2=\"536\" y2=\"180\" class=\"thin\"/>\n  <rect x=\"194\" y=\"128\" width=\"184\" height=\"40\" class=\"w-conc ink\"/>\n  <text x=\"208\" y=\"154\" class=\"t-small tc-conc\">DECISÃO</text>\n  <text x=\"90\" y=\"222\" class=\"t-small tc-muted\">SOCIEDADE · BACKLASH</text>\n  <line x1=\"154\" y1=\"238\" x2=\"536\" y2=\"238\" class=\"thin\"/>\n  <path d=\"M282 220v36M296 220v36M310 220v36\" stroke-width=\"3\" style=\"stroke:var(--conc)\"/>\n  <text x=\"326\" y=\"266\" class=\"t-mid tc-conc\">REAÇÃO</text>\n  <text x=\"154\" y=\"312\" class=\"t-small tc-muted\">CORREÇÃO "
 }
 ]
