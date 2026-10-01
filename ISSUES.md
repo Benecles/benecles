@@ -10,3 +10,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **REG-5 #20** · 30/09 · Processo class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
 - **#1a** · 30/09 · Repo renamed study-lab → cufrgs (site now benecles.github.io/cufrgs/; old Pages links 404 by choice) · README/links updated; Pages URL confirmed by the API.
 - **#1b** · 30/09 · Site renamed Ordenações Filipinas (repo ordenacoes-filipinas; benecles.github.io/ordenacoes-filipinas/); visible name, links and storage keys (cufrgs-* → ordenacoes-*) switched; patch note added · `check_all` PASS; polish check: no new unlocatable edits (70 pre-existing).
+- **REG-1** · 30/09 · Controle class-register data: a `does` line per lesson + exam coverage · `check_register_data.py` PASS, `check_all` PASS (no live change).
