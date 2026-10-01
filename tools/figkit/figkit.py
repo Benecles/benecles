@@ -125,7 +125,7 @@ class Ruler:
         if over:  # the part that the rule does not allow
             lx = self.pos(self.limit)
             o += f'<rect x="{lx:g}" y="{sy}" width="{x1 - lx:g}" height="14" style="fill:var(--conc);stroke:var(--conc);stroke-width:1.3"/>'
-        o += f'<path{anim} d="M{x1:g} {sy - 4}V{self.y + self.h}" style="fill:none;stroke:{TONE[tone]};stroke-width:1.2;stroke-dasharray:3 3{dl}"/>'
+        o += f'<path d="M{x1:g} {sy - 4}V{self.y + self.h}" style="fill:none;stroke:{TONE[tone]};stroke-width:1.2;stroke-dasharray:3 3"/>'
         o += f'<circle cx="{x1:g}" cy="{self.y + self.h}" r="3.2" style="fill:{TONE[tone]}"/>'
         if reading:
             o += badge(x1 + 22, sy + 7, not over)
@@ -136,7 +136,8 @@ class Ruler:
 
 def svg(view, inner, cls='', label='', ident=''):
     i = f' id="{ident}"' if ident else ''
-    c = f' class="{cls}"' if cls else ''
+    cls = f'{cls} figkit'.strip()  # kit figures opt out of the course's blanket label-size override
+    c = f' class="{cls}"'
     a = f' role="img" aria-label="{label}"' if label else ' aria-hidden="true"'
     return f'<svg{i}{c} viewBox="{view}"{a}>{inner}</svg>'
 

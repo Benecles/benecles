@@ -7,7 +7,7 @@ DAYS = [('sex', 'D1', True), ('sáb', '', False), ('dom', '', False), ('seg', 'D
         ('ter', 'D3', True), ('qua', 'D4', True), ('qui', 'D5', True), ('sex', 'D6', True)]
 
 
-def panel():
+def panel(k=None):
     c = Clock('a27', 132, 570, 40, DAYS, pre=(88, '−48 h'))
     c.header(560)
     o = t(42, 112, 'pedido de', size=10, fill='var(--conc)') + t(42, 125, 'sustentação', size=10, fill='var(--conc)') + t(42, 138, 'oral ou de', size=10, fill='var(--conc)') + t(42, 151, 'destaque', size=10, fill='var(--conc)') + t(42, 164, 'pela parte', size=10, fill='var(--conc)')
@@ -29,4 +29,16 @@ def panel():
     c.lane(480, 'Ministro que não vota')
     c.votes(480, [0, 0, 3, 3, 4, 5, 6, 6, 7, 7], hollow=[7])
     o2 = t(570, 506, 'silêncio não é adesão ao relator', size=10.5, anchor='end', weight=700, fill='var(--conc)')
-    return svg('0 0 600 600', c.svg() + o + o2, cls='panel fig on', ident='p-a27-relogio', label='Plenário virtual: a janela e seus incidentes')
+    o2 += t(570, 30, 'sex 11h → sex 23h59', size=10, anchor='end', fill='var(--ink-2)')
+    dim = ''
+    if k is not None:  # light one lane per step: 0 janela (+ silêncio), 1 vista, 2 destaque
+        bands = {0: [(206, 330), (330, 446)], 1: [(96, 206), (330, 446), (446, 530)], 2: [(96, 206), (206, 330), (446, 530)]}[k]
+        dim = ''.join(f'<rect x="20" y="{a}" width="565" height="{b - a}" style="fill:var(--paper);opacity:.72"/>' for a, b in bands)
+    ids, labels = ['p-sessao-a', 'p-sessao-b', 'p-sessao-c'], ['A janela', 'Vista', 'Destaque']
+    if k is None:
+        return svg('0 0 600 600', c.svg() + o + o2, cls='panel fig on', ident='p-a27-relogio', label='Plenário virtual: a janela e seus incidentes')
+    return svg('0 0 600 600', c.svg() + o + o2 + dim, cls='panel fig on' if k == 0 else 'panel fig', ident=ids[k], label=labels[k])
+
+
+def panels():
+    return [panel(k) for k in range(3)]

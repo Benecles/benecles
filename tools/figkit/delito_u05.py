@@ -27,7 +27,7 @@ def panel(k):
         for i, (s, b) in enumerate([('caso · o casaco', True), ('A leva um casaco que', False), ('pensa ser seu: erra sobre', False),
                                     ('"coisa alheia" (essencial).', False), ('Furto não tem forma', False), ('culposa: fato atípico.', True)]):
             o += t(30, 488 + 15 * i, s, size=10.5 if not b else 10.5, weight=700 if b else 500, caps=(i == 0), fill='var(--mix)' if b else 'var(--ink)')
-    return svg('0 0 600 600', o, cls='panel fig on' if k == 0 else 'panel fig', ident=f'u05-sp-{k}', label=STEPS[k])
+    return svg('0 0 600 600', o, cls='panel fig on' if k == 0 else 'panel fig', ident=f'u05-e{k}', label=STEPS[k])
 
 
 def panels():

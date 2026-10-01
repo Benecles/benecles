@@ -4,18 +4,6 @@
 "after": "Plenário, a Lei 9.868/1999 traça um caminho"
 },
 {
-"before": "ART. 12 LEI 9.868/99</text>\n        <rect x=\"50\" y=\"60\" width=\"300\" height=\"66\" class=\"f-paper ink\"/><text x=\"70\" y=\"102\" class=\"t-mid\">Ajuizamento</text>",
-"after": "ART. 12 LEI 9.868/1999</text>\n        <rect x=\"50\" y=\"60\" width=\"300\" height=\"66\" class=\"f-paper ink\"/><text x=\"70\" y=\"102\" class=\"t-mid\">Ajuizamento</text>"
-},
-{
-"before": "cautelar isolada, de \"única cabeça\",</text>\n        <text x=\"50\" y=\"578\" class=\"t-serif\">pode ser",
-"after": "cautelar isolada, de “única cabeça”,</text>\n        <text x=\"50\" y=\"578\" class=\"t-serif\">pode ser"
-},
-{
-"before": "na ADC</text>\n        <text x=\"104\" y=\"418\" class=\"t-small tc-muted\">\"AÇÕES COM SINAL TROCADO\"</text>\n        <line x1=\"50\" y1=\"460\" x2=\"550\" y2=\"460\" class=\"thin dash\"/>\n        <text x=\"50\" y=\"500\" class=\"t-serif\">O",
-"after": "na ADC</text>\n        <text x=\"104\" y=\"418\" class=\"t-small tc-muted\">“AÇÕES COM SINAL TROCADO”</text>\n        <line x1=\"50\" y1=\"460\" x2=\"550\" y2=\"460\" class=\"thin dash\"/>\n        <text x=\"50\" y=\"500\" class=\"t-serif\">O"
-},
-{
 "before": "</p>\n      <blockquote class=\"law\"><cite>Art. 12, Lei 9.868/99</cite>\"…poderá, após a prestação",
 "after": "</p>\n      <blockquote class=\"law\"><cite>Art. 12 da Lei 9.868/1999</cite>“…poderá, após a prestação"
 },
@@ -38,10 +26,6 @@
 {
 "before": "infraconstitucional da Lei 9.868/99. Como ADI e",
 "after": "infraconstitucional da Lei 9.868/1999. Como ADI e"
-},
-{
-"before": "§ 2º, LEI 9.868/99</text>\n      </svg>\n      <svg class=\"panel fig\" id=\"p-prerrogativas\" viewBox=\"0 0 600 600\">\n        ",
-"after": "§ 2º, LEI 9.868/1999</text>\n      </svg>\n      <svg class=\"panel fig\" id=\"p-prerrogativas\" viewBox=\"0 0 600 600\">\n        "
 },
 {
 "before": "ambas da Lei 9.868/99.</p>\n      <p>A própria",
@@ -146,5 +130,9 @@
 {
 "before": "plenário do art. 97, CF.</p></details>\n  </div>",
 "after": "plenário do art. 97 da CF.</p></details>\n  </div>"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 24 · O rito da ADI/ADC: rito ordinário e rito abreviado, o papel do PGR e da AGU, o amicus curiae, a instrução probatória excepcional, quóruns e o desfecho do julgamento.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 24 · O rito da ADI/ADC: rito ordinário e rito abreviado, o papel do PGR e da AGU, o amicus curiae, a instrução probatória excepcional, quóruns e o desfecho do julgamento.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
 }
 ]

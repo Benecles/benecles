@@ -12,10 +12,6 @@
 "after": "27 da Lei 9.868/1999 não obriga o"
 },
 {
-"before": "ART. 27, LEI 9.868/99</text>\n        <rect x=\"50\" y=\"80\" width=\"500\" height=\"230\" class=\"f-paper ink\" stroke-width=\"2\"/>\n        <text x=\"70\" y=\"116\" class=\"t-serif\">“Ao",
-"after": "ART. 27, LEI 9.868/1999</text>\n        <rect x=\"50\" y=\"80\" width=\"500\" height=\"230\" class=\"f-paper ink\" stroke-width=\"2\"/>\n        <text x=\"70\" y=\"116\" class=\"t-serif\">“Ao"
-},
-{
 "before": "1 · Art. 27, Lei 9.868/99</span></figcaption>\n    </figure>\n  </div>",
 "after": "1 · Art. 27 da Lei 9.868/1999</span></figcaption>\n    </figure>\n  </div>"
 },
@@ -58,5 +54,9 @@
 {
 "before": "27 da Lei 9.868/99.</p></details>\n    <details><summary>O",
 "after": "27 da Lei 9.868/1999.</p></details>\n    <details><summary>O"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 28 · ADI: modulação dos efeitos. A regra da retroatividade (ex tunc) e a exceção do art. 27 da Lei 9.868/99: efeitos ex nunc ou diferidos, por maioria de 2/3.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 28 · ADI: modulação dos efeitos. A regra da retroatividade (ex tunc) e a exceção do art. 27 da Lei 9.868/99: efeitos ex nunc ou diferidos, por maioria de 2/3.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
 }
 ]

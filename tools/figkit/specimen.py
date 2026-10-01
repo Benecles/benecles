@@ -24,7 +24,7 @@ ENTRIES = [
      'substitui tgc-a01-s10+2', contratos_a01.panels3(), 'teoria-geral-dos-contratos'),
     ('Relógio processual', 'contar', 'Controle · Aula 27 · Plenário virtual',
      'Dias reais em colunas, cenários em faixas: a janela de seis dias úteis, a vista que suspende, o destaque que reinicia no presencial (com a janela ainda aberta) e o silêncio que não conta como voto.',
-     'substitui ctl-a27-s11', [controle_a27.panel()], 'controle-de-constitucionalidade'),
+     'substitui p-sessao-a/b/c (ctl-a27)', controle_a27.panels(), 'controle-de-constitucionalidade'),
     ('Caminho de decisão', 'decidir', 'Delito · Unidade 05 · Fig. 1 (3 passos)',
      'Três perguntas num tronco; cada saída é uma consequência jurídica com seu artigo. No último passo, o caso do casaco percorre o caminho inteiro e termina atípico, porque o furto não tem forma culposa.',
      'substitui tdl-u05-s2+2', delito_u05.panels(), 'teoria-do-delito'),

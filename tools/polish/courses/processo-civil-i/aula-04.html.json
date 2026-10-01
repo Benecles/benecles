@@ -1,9 +1,5 @@
 [
 {
-"before": " I-a</title>\n<meta name=\"description\" content=\"Quando um terceiro pode intervir como assistente, a diferença entre assistência simples e litisconsorcial e o que o assistente pode fazer diante do assistido.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=715b8de10b\">\n<style>.longform{max-width:1180px;margin:28px auto ",
-"after": " I-a</title>\n<meta name=\"description\" content=\"Quando um terceiro pode intervir como assistente, a diferença entre assistência simples e litisconsorcial e o que o assistente pode fazer diante do assistido.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=c65e19c024\">\n<style>.longform{max-width:1180px;margin:28px auto "
-},
-{
 "before": "\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><svg class=\"panel fig on\" id=\"p-as0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Relação conexa\"><defs><marker id=\"p-as0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-as0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/>",
 "after": "\n<div class=\"scrolly\">\n <div class=\"stage\" aria-hidden=\"true\"><figure><svg class=\"panel fig on\" id=\"p-as0\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Relação conexa\"><style>@media (max-width:860px) and (orientation:portrait){html body .stage figure svg.fig text{font-size:18.6px!important}}</style><defs><marker id=\"p-as0-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker><marker id=\"p-as0-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--dif)\"/>"
 },
@@ -22,5 +18,9 @@
 {
 "before": " ARTS. 121–122</text><text x=\"42\" y=\"430\" class=\"t-mid\" style=\"font-size:12.5px;font-weight:500\">Pode alegar, provar e recorrer; supre omissão do assistido. Não prevalece</text><text x=\"42\" y=\"446\" class=\"t-mid\" style=\"font-size:12.5px;font-weight:500\">contra ato dispositivo expresso, como renúncia",
 "after": " ARTS. 121–122</text><text x=\"42\" y=\"430\" class=\"t-mid\" style=\"font-size:12.5px;font-weight:500\">Alega, prova e supre omissão do assistido.</text><text x=\"42\" y=\"456\" class=\"t-mid\" style=\"font-size:12.5px;font-weight:500\">Salvo ato expresso, como renúncia"
+},
+{
+"before": " I-a</title>\n<meta name=\"description\" content=\"Quando um terceiro pode intervir como assistente, a diferença entre assistência simples e litisconsorcial e o que o assistente pode fazer diante do assistido.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=800f3e316a\">\n<style>.longform{max-width:1180px;margin:28px auto ",
+"after": " I-a</title>\n<meta name=\"description\" content=\"Quando um terceiro pode intervir como assistente, a diferença entre assistência simples e litisconsorcial e o que o assistente pode fazer diante do assistido.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=85246f914b\">\n<style>.longform{max-width:1180px;margin:28px auto "
 }
 ]

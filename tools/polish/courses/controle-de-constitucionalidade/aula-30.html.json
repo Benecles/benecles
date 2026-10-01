@@ -10,5 +10,9 @@
 {
 "before": "<p class=\"caso\"><span class=\"label\">Exemplo trabalhado</span>Imagine que uma lei federal institua um critério de",
 "after": "<p class=\"caso\"><span class=\"label\">Exemplo trabalhado</span>Uma lei federal institui um critério de"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 30 · A ação declaratória de constitucionalidade: cabimento, controvérsia judicial, procedimento, cautelar e efeitos do julgamento.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=81b19dd9ce\">\n</head>\n<body>\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 30 · A ação declaratória de constitucionalidade: cabimento, controvérsia judicial, procedimento, cautelar e efeitos do julgamento.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=a029c008b3\">\n</head>\n<body>\n<nav class=\"topbar\">"
 }
 ]
