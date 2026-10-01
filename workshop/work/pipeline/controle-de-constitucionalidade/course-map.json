@@ -1,0 +1,878 @@
+{
+  "course": "controle-de-constitucionalidade",
+  "course_code": "DIR03027",
+  "term": "2026/2",
+  "ordering_note": "Unidades I–IX do plano. Dentro da unidade V, mutação/backlash precede inconstitucionalidade progressiva e por ato interposto, conforme a sequência do programa; na unidade VII, a eficácia das decisões precede as demais técnicas processuais. Aulas 19 e 27 não têm linha própria no plano.",
+  "assessment_note": "Plano: duas avaliações, sem divisão de conteúdo. Moodle: lacunas nos campos de data e corte da prova 1 e da prova 2; não atribuir aula a prova específica. Recuperação abrange o semestre, para estudantes elegíveis.",
+  "sources": {
+    "plano": "/Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/00 Plano de Ensino - DIR03027 (2026-2).pdf",
+    "moodle": "/Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/Página do Moodle - DIR03027 Turma U (2026-2).webarchive",
+    "slide_decks": "/Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/",
+    "live_index": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/index.html"
+  },
+  "bibliography": {
+    "base": {
+      "basica_essencial": [
+        "LENZA, Pedro. Direito constitucional esquematizado. São Paulo: Saraiva, 2025. ISBN 8553628132.",
+        "MENDES, Gilmar Ferreira; BRANCO, Paulo Gustavo Gonet. Curso de direito constitucional. São Paulo: Saraiva, 2026. ISBN 6551771807."
+      ],
+      "basica": [
+        "BARROSO, Luís Roberto. O controle de constitucionalidade no direito brasileiro. Exposição sistemática da doutrina e análise crítica da jurisprudência. São Paulo: Saraiva, 2026. ISBN 6551772137.",
+        "BONAVIDES, Paulo. Curso de direito constitucional. São Paulo: Malheiros, 2013. ISBN 853920181X.",
+        "DIMOULIS, Dimitri, LUNARDI, Soraya. Curso de processo constitucional: controle de constitucionalidade e remédios constitucionais. São Paulo: Tirant, 2025. ISBN 8594777000.",
+        "SARLET, Ingo Wolfgang. MARINONI, Luiz Guilherme; MITIDIERO, Daniel.. Curso de direito constitucional. São Paulo: Saraiva, 2025. ISBN 8553626873.",
+        "SILVA, José Afonso da. Curso de direito constitucional positivo. Salvador: JusPodivm, 2022. ISBN 655860034X.",
+        "TAVARES, Andre Ramos. Curso de direito constitucional. São Paulo: Saraiva, 2026. ISBN 6551770703."
+      ]
+    },
+    "supplementary": [
+      "DIAS, Mateus Nunes dos Santos Ferreira. O Controle de Constitucionalidade de Decretos Presidenciais. Curitiba: Juruá, 2026. ISBN 6526319610.",
+      "DUQUE, Marcelo Schenk. Eficácia Horizontal dos Direitos Fundamentais e Jurisdição Constitucional. São Paulo: Editora dos Editores, 2019. ISBN 978-85-85162-16-0.",
+      "JUNIOR, Dirley da Cunha. O controle de constitucionalidade no Brasil e no direito comparado. Salvador: JusPodivm, 2026. ISBN 8544269117.",
+      "MENDES, Gilmar Ferreira. Controle de Constitucionalidade: Aspectos Jurídicos e Políticos. São Paulo: Saraiva, 2024. ISBN 8553628477.",
+      "MENDES, Gilmar Ferreira; RODRIGUES, Maria Isabel Diniz Gallotti; ALVIM, Teresa Arruda. O novo perfil do controle difuso de constitucionalidade: estudos em homenagem ao Professor Bruno Dantas nos 20 anos da repercussão geral. Belo Horizonte: Fórum, 2025. ISBN 6555188987.",
+      "SILVA, André Luiz Will. Controle de Constitucionalidade do Processo Legislativo. A atuação dos partidos políticos perante o Supremo Tribunal Federal. São Paulo: Dialética, 2025. ISBN 6527050852."
+    ]
+  },
+  "lessons": [
+    {
+      "id": "aula-01.html",
+      "unit": "I",
+      "syllabus_ref": "I.1",
+      "syllabus_line": "1. Conceito",
+      "learning_outcome": "Explicar o que é controle de constitucionalidade e identificar norma controlada, parâmetro e órgão controlador.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [],
+      "live_title": "A Constituição como régua"
+    },
+    {
+      "id": "aula-02.html",
+      "unit": "I",
+      "syllabus_ref": "I.2",
+      "syllabus_line": "2. Pressupostos",
+      "learning_outcome": "Verificar se supremacia, rigidez e órgão competente tornam possível o controle em um caso.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-01.html",
+          "reason": "A definição de controle apresenta a norma, o parâmetro e o órgão cujas condições serão examinadas."
+        }
+      ],
+      "live_title": "Três condições para controlar"
+    },
+    {
+      "id": "aula-03.html",
+      "unit": "I",
+      "syllabus_ref": "I.3–4",
+      "syllabus_line": "3. Natureza do Tribunal Constitucional: guarda da constituição; 4. Debate: quem deve ser o guarda da Constituição? Teorias Hans Kelsen X Carl Schmitt",
+      "learning_outcome": "Comparar a guarda judicial da Constituição com a alternativa política no debate Kelsen–Schmitt.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-02.html",
+          "reason": "A discussão sobre quem guarda a Constituição parte da função do órgão controlador."
+        }
+      ],
+      "live_title": "Quem guarda a Constituição?"
+    },
+    {
+      "id": "aula-04.html",
+      "unit": "I",
+      "syllabus_ref": "I.5",
+      "syllabus_line": "5. Bloco de constitucionalidade e ampliação do parâmetro de controle: constitucionalidade x convencionalidade",
+      "learning_outcome": "Distinguir os parâmetros constitucional e convencional e decidir qual parâmetro uma alegação invoca.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-01.html",
+          "reason": "A ampliação do bloco só faz sentido depois de identificar o parâmetro do controle."
+        }
+      ],
+      "live_title": "Bloco de constitucionalidade"
+    },
+    {
+      "id": "aula-05.html",
+      "unit": "I",
+      "syllabus_ref": "I.6",
+      "syllabus_line": "6. Hierarquia dos tratados internacionais e parâmetro de controle",
+      "learning_outcome": "Classificar a posição de um tratado e dizer se ele pode servir de parâmetro de controle.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-04.html",
+          "reason": "A posição dos tratados determina se entram no parâmetro constitucional ampliado."
+        }
+      ],
+      "live_title": "Tratados e hierarquia"
+    },
+    {
+      "id": "aula-06.html",
+      "unit": "I",
+      "syllabus_ref": "I.7–8",
+      "syllabus_line": "7. Natureza do vício de inconstitucionalidade (formal e material); 8. Espécies de vício de inconstitucionalidade (por ação e por omissão)",
+      "learning_outcome": "Classificar um vício como formal ou material e como decorrente de ação ou omissão.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-01.html",
+          "reason": "Classificar o vício exige reconhecer a incompatibilidade entre norma e Constituição."
+        }
+      ],
+      "live_title": "Como a lei nasceu, ou o que ela diz."
+    },
+    {
+      "id": "aula-07.html",
+      "unit": "I",
+      "syllabus_ref": "I.9",
+      "syllabus_line": "9. Juízo de não- recepção x inconstitucionalidade",
+      "learning_outcome": "Distinguir a não recepção de lei anterior da inconstitucionalidade de norma posterior.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "Distinguir não recepção de inconstitucionalidade exige reconhecer o vício da norma posterior."
+        }
+      ],
+      "live_title": "Uma Constituição muda. E as leis antigas?"
+    },
+    {
+      "id": "aula-08.html",
+      "unit": "II",
+      "syllabus_ref": "II.1–1.3",
+      "syllabus_line": "1. Teorias clássica e moderna: 1.1 nulidade; 1.2 anulabilidade/nulificabilidade; 1.3 superação da teoria clássica do sistema difuso à luz da jurisprudência do STF",
+      "learning_outcome": "Comparar nulidade e anulabilidade e explicar como cada teoria altera os efeitos da decisão.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "Nulidade e anulabilidade tratam das consequências do vício de inconstitucionalidade."
+        }
+      ],
+      "live_title": "Nula desde o começo?"
+    },
+    {
+      "id": "aula-09.html",
+      "unit": "III",
+      "syllabus_ref": "III.1.1",
+      "syllabus_line": "1. Formas (momentos) de controle: 1.1 Preventivo",
+      "learning_outcome": "Identificar quem pode controlar um projeto antes de sua promulgação e por qual via.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-01.html",
+          "reason": "O controle preventivo aplica a comparação constitucional à norma ainda em formação."
+        }
+      ],
+      "live_title": "A lei ainda não existe."
+    },
+    {
+      "id": "aula-10.html",
+      "unit": "III",
+      "syllabus_ref": "III.1.2–2.4",
+      "syllabus_line": "1.2 Repressivo; 2. Órgãos de controle: político, judiciário, Tribunal de Contas e decretos do Poder Executivo",
+      "learning_outcome": "Escolher o órgão e a via de controle após o ingresso da norma no ordenamento, inclusive para decretos.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-02.html",
+          "reason": "A escolha do órgão de controle retoma a exigência de um controlador competente."
+        },
+        {
+          "id": "aula-09.html",
+          "reason": "O marco da publicação separa o controle repressivo do preventivo."
+        }
+      ],
+      "live_title": "A lei já existe. Agora quem controla?"
+    },
+    {
+      "id": "aula-11.html",
+      "unit": "IV",
+      "syllabus_ref": "IV.1–2",
+      "syllabus_line": "1. Controle concentrado (natureza objetiva, via principal, exame abstrato, erga omnes); 2. Controle difuso (natureza subjetiva, via de defesa, exame concreto, interpartes)",
+      "learning_outcome": "Distinguir controle concentrado e difuso por via, objeto, técnica e efeito tradicional.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-08.html",
+          "reason": "Os efeitos tradicionais das vias de controle retomam nulidade e anulabilidade."
+        },
+        {
+          "id": "aula-10.html",
+          "reason": "As vias difusa e concentrada são modalidades do controle repressivo judicial."
+        }
+      ],
+      "live_title": "Sistemas de controle"
+    },
+    {
+      "id": "aula-12.html",
+      "unit": "IV",
+      "syllabus_ref": "IV.3–5",
+      "syllabus_line": "3. Análise crítica do modelo misto; 4. papel do Senado Federal; 5. Abstrativização do controle difuso",
+      "learning_outcome": "Avaliar a combinação brasileira de vias e o alcance atual do controle difuso.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-11.html",
+          "reason": "A crítica ao modelo misto depende das diferenças entre controle difuso e concentrado."
+        }
+      ],
+      "live_title": "Crítica à cumulação"
+    },
+    {
+      "id": "aula-13.html",
+      "unit": "V",
+      "syllabus_ref": "V.1",
+      "syllabus_line": "1. Estado de coisas inconstitucional",
+      "learning_outcome": "Reconhecer os requisitos de uma violação estrutural e a função da declaração de estado de coisas inconstitucional.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "A omissão estatal estrutural é avaliada como incompatibilidade constitucional."
+        },
+        {
+          "id": "aula-11.html",
+          "reason": "A ADPF 347 exemplifica uma resposta objetiva no controle concentrado."
+        }
+      ],
+      "live_title": "Estado de coisas inconstitucional"
+    },
+    {
+      "id": "aula-14.html",
+      "unit": "V",
+      "syllabus_ref": "V.2",
+      "syllabus_line": "2. Inconstitucionalidade por arrastamento ou por reverberação",
+      "learning_outcome": "Determinar quando a invalidade de uma norma alcança outra que dela depende.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "O arrastamento pressupõe um vício na norma principal e sua dependência normativa."
+        }
+      ],
+      "live_title": "Uma norma cai. A dependente pode cair."
+    },
+    {
+      "id": "aula-15.html",
+      "unit": "V",
+      "syllabus_ref": "V.3",
+      "syllabus_line": "3. Interpretação conforme a Constituição",
+      "learning_outcome": "Selecionar, entre leituras possíveis de uma norma, a compatível com a Constituição.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-04.html",
+          "reason": "A interpretação conforme escolhe um sentido compatível com o parâmetro constitucional."
+        },
+        {
+          "id": "aula-06.html",
+          "reason": "A técnica preserva a norma ao afastar a leitura materialmente incompatível."
+        }
+      ],
+      "live_title": "Salvar a lei, sem reescrevê-la."
+    },
+    {
+      "id": "aula-18.html",
+      "unit": "V",
+      "syllabus_ref": "V.5–6",
+      "syllabus_line": "5. Mutação constitucional; 6. Efeito backlash",
+      "learning_outcome": "Distinguir alteração do sentido constitucional sem mudança textual e reação institucional a decisões.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-04.html",
+          "reason": "A mutação altera o sentido do parâmetro constitucional sem mudar o texto."
+        },
+        {
+          "id": "aula-11.html",
+          "reason": "O backlash reage a decisões de controle judicial cuja via e alcance já foram apresentados."
+        }
+      ],
+      "live_title": "O texto não muda. O sentido, sim."
+    },
+    {
+      "id": "aula-16.html",
+      "unit": "V",
+      "syllabus_ref": "V.7–8",
+      "syllabus_line": "7. Inconstitucionalidade progressiva; 8. Inconstitucionalidade circunstancial",
+      "learning_outcome": "Distinguir invalidade progressiva de invalidade ligada às circunstâncias e aplicar cada critério.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "A progressividade e a circunstância qualificam o juízo sobre o vício constitucional."
+        },
+        {
+          "id": "aula-08.html",
+          "reason": "A distinção temporal exige separar validade da norma e efeitos de sua invalidação."
+        }
+      ],
+      "live_title": "Progressiva e circunstancial"
+    },
+    {
+      "id": "aula-17.html",
+      "unit": "V",
+      "syllabus_ref": "V.9",
+      "syllabus_line": "9. Inconstitucionalidade por ato interposto",
+      "learning_outcome": "Distinguir ofensa direta à Constituição de incompatibilidade que passa por norma interposta.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-04.html",
+          "reason": "A ofensa indireta depende de distinguir Constituição e norma interposta como parâmetros."
+        },
+        {
+          "id": "aula-06.html",
+          "reason": "É preciso identificar o tipo de incompatibilidade atribuído ao ato interposto."
+        }
+      ],
+      "live_title": "Ato interposto"
+    },
+    {
+      "id": "aula-19.html",
+      "unit": "V",
+      "syllabus_ref": "Sem linha própria",
+      "syllabus_line": "Tema do deck 19: Presunção de constitucionalidade e reação legislativa (desdobramento de IV.3–5 e V.5–6)",
+      "learning_outcome": "Explicar como a presunção de validade e a reação legislativa interagem com decisões de controle.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-11.html",
+          "reason": "A reação legislativa depende de conhecer o alcance das decisões de controle."
+        },
+        {
+          "id": "aula-18.html",
+          "reason": "A reação legislativa retoma o backlash como resposta institucional à decisão judicial."
+        }
+      ],
+      "live_title": "Presunção e reação legislativa"
+    },
+    {
+      "id": "aula-20.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade e modulação dos efeitos das decisões — cabimento",
+      "learning_outcome": "Identificar quando uma norma pode ser impugnada por ação direta de inconstitucionalidade.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-07.html",
+          "reason": "O cabimento da ADI exclui leis anteriores à Constituição que exigem juízo de recepção."
+        },
+        {
+          "id": "aula-11.html",
+          "reason": "A ADI é ação principal de controle concentrado e abstrato."
+        },
+        {
+          "id": "aula-17.html",
+          "reason": "O cabimento exige separar ofensa constitucional direta da mediada por lei."
+        }
+      ],
+      "live_title": "ADI: cabimento"
+    },
+    {
+      "id": "aula-21.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — requisitos de ajuizamento",
+      "learning_outcome": "Redigir a estrutura de uma petição de ADI com objeto, parâmetro e pedido pertinentes.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-14.html",
+          "reason": "O arrastamento explica a exceção aos limites do pedido examinada na inicial."
+        },
+        {
+          "id": "aula-20.html",
+          "reason": "A petição deve delimitar objeto e parâmetro de uma ADI cabível."
+        }
+      ],
+      "live_title": "ADI: requisitos da petição"
+    },
+    {
+      "id": "aula-22.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — legitimidade ativa",
+      "learning_outcome": "Identificar os legitimados constitucionais para propor ADI.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-20.html",
+          "reason": "A legitimidade ativa identifica quem pode propor a ADI cujo cabimento já foi delimitado."
+        }
+      ],
+      "live_title": "Quem pode propor ADI"
+    },
+    {
+      "id": "aula-23.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — pertinência temática",
+      "learning_outcome": "Decidir quando um legitimado especial deve demonstrar pertinência temática.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-22.html",
+          "reason": "A pertinência temática só incide sobre certos legitimados do art. 103."
+        }
+      ],
+      "live_title": "Pertinência temática"
+    },
+    {
+      "id": "aula-24.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — processamento e instrução",
+      "learning_outcome": "Ordenar as etapas da ADI da petição à decisão de mérito.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-21.html",
+          "reason": "O processamento começa pela petição e pelos seus requisitos."
+        },
+        {
+          "id": "aula-23.html",
+          "reason": "A admissibilidade do autor especial exige examinar a pertinência temática."
+        }
+      ],
+      "live_title": "Da petição ao acórdão."
+    },
+    {
+      "id": "aula-25.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — medida cautelar",
+      "learning_outcome": "Avaliar a possibilidade e os efeitos imediatos de cautelar em ADI.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-08.html",
+          "reason": "Os efeitos temporais da cautelar precisam ser distinguidos dos efeitos da invalidação definitiva."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "A cautelar integra o fluxo processual da ADI antes do julgamento de mérito."
+        }
+      ],
+      "live_title": "Suspensão provisória da norma."
+    },
+    {
+      "id": "aula-26.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — efeito repristinatório da cautelar",
+      "learning_outcome": "Determinar quando a suspensão cautelar reativa a norma anterior.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-08.html",
+          "reason": "Distinguir suspensão provisória de nulidade definitiva evita confundir seus efeitos no tempo."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "A suspensão cautelar da norma é o fato que pode reativar a norma anterior."
+        }
+      ],
+      "live_title": "A cautelar suspende. O que volta?"
+    },
+    {
+      "id": "aula-27.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1",
+      "syllabus_line": "1. Ação direta de inconstitucionalidade — julgamento em Plenário Virtual",
+      "learning_outcome": "Explicar como a ADI é julgada no Plenário Virtual e quando há deslocamento ao presencial.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-24.html",
+          "reason": "A votação virtual é uma modalidade da etapa de julgamento da ADI."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "A cautelar pode ser deliberada nesse fluxo e tem quórum e urgência próprios."
+        }
+      ],
+      "live_title": "Plenário virtual"
+    },
+    {
+      "id": "aula-28.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1; VII.4",
+      "syllabus_line": "VI.1 Ação direta de inconstitucionalidade e modulação dos efeitos; VII.4 Declaração de inconstitucionalidade sem pronúncia de nulidade (modulação de efeitos)",
+      "learning_outcome": "Avaliar quando modular os efeitos temporais de uma decisão de inconstitucionalidade.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-08.html",
+          "reason": "A modulação altera a consequência temporal da teoria da nulidade."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "A escolha do marco temporal ocorre na decisão de mérito da ação."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "É preciso distinguir modulação final dos efeitos provisórios da cautelar."
+        }
+      ],
+      "live_title": "Quando a decisão começa a valer?"
+    },
+    {
+      "id": "aula-29.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.1; VII.1",
+      "syllabus_line": "VI.1 Ação direta de inconstitucionalidade; VII.1 Eficácia contra todos e efeito vinculante",
+      "learning_outcome": "Distinguir eficácia contra todos de efeito vinculante em decisão definitiva do STF.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-08.html",
+          "reason": "A nulidade da norma e os efeitos da decisão são planos distintos a separar."
+        },
+        {
+          "id": "aula-11.html",
+          "reason": "O alcance geral da decisão depende da diferença entre as vias de controle."
+        },
+        {
+          "id": "aula-12.html",
+          "reason": "A resolução do Senado no controle difuso é contrastada com a eficácia geral da ADI."
+        },
+        {
+          "id": "aula-15.html",
+          "reason": "A lei estende os efeitos à interpretação conforme, técnica estudada antes."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "Eficácia e vinculação pressupõem a decisão definitiva de mérito da ADI."
+        }
+      ],
+      "live_title": "Eficácia e efeito vinculante"
+    },
+    {
+      "id": "aula-30.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.2",
+      "syllabus_line": "2. Ação declaratória de constitucionalidade",
+      "learning_outcome": "Identificar quando cabe ADC e comparar seus pressupostos e efeitos com os da ADI.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-20.html",
+          "reason": "A ADC é comparada à ADI quanto ao objeto e ao cabimento."
+        },
+        {
+          "id": "aula-22.html",
+          "reason": "A ADC usa o rol constitucional de legitimados das ações diretas."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "Seu processamento é comparado ao rito e ao julgamento da ADI."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "A cautelar da ADC é entendida em contraste com a cautelar da ADI."
+        },
+        {
+          "id": "aula-28.html",
+          "reason": "A declaração final pode exigir examinar a modulação temporal dos efeitos."
+        },
+        {
+          "id": "aula-29.html",
+          "reason": "O resultado da ADC produz eficácia contra todos e efeito vinculante."
+        }
+      ],
+      "live_title": "Quando uma lei precisa de resposta única?"
+    },
+    {
+      "id": "aula-31.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.3",
+      "syllabus_line": "3. Ação direta de inconstitucionalidade por omissão e diferenças em relação ao mandado de Injunção",
+      "learning_outcome": "Distinguir ADO e mandado de injunção diante de uma omissão normativa.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "A ADO e o MI respondem ao vício por omissão normativa."
+        },
+        {
+          "id": "aula-11.html",
+          "reason": "A comparação exige distinguir processo objetivo de tutela subjetiva."
+        },
+        {
+          "id": "aula-22.html",
+          "reason": "O legitimado da ADO vem do mesmo rol do art. 103 estudado na ADI."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "A inicial e a instrução da ADO seguem a lógica da ação direta."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "A cautelar da ADO é comparada à proteção provisória da ADI."
+        },
+        {
+          "id": "aula-29.html",
+          "reason": "O alcance da decisão objetiva deve ser distinguido do efeito entre as partes do MI."
+        }
+      ],
+      "live_title": "A Constituição mandou. E a norma não veio."
+    },
+    {
+      "id": "aula-32.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.4",
+      "syllabus_line": "4. Arguição de descumprimento de preceito fundamental",
+      "learning_outcome": "Avaliar o cabimento subsidiário da ADPF diante de lesão a preceito fundamental.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-07.html",
+          "reason": "A ADPF pode alcançar lei anterior à Constituição, após o juízo de não recepção."
+        },
+        {
+          "id": "aula-20.html",
+          "reason": "A subsidiariedade exige testar primeiro se a ADI é via adequada."
+        },
+        {
+          "id": "aula-22.html",
+          "reason": "A ADPF utiliza os legitimados constitucionais das ações diretas."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "O percurso da ADPF é comparado ao processamento da ação direta."
+        },
+        {
+          "id": "aula-25.html",
+          "reason": "A cautelar na ADPF exige compreender a proteção provisória no controle abstrato."
+        },
+        {
+          "id": "aula-29.html",
+          "reason": "A decisão em ADPF tem alcance geral e vinculante que precisa ser distinguido."
+        }
+      ],
+      "live_title": "Quando a Constituição precisa de uma via residual?"
+    },
+    {
+      "id": "aula-33.html",
+      "unit": "VI",
+      "syllabus_ref": "VI.5",
+      "syllabus_line": "5. Intervenção federal e representação de inconstitucionalidade interventiva",
+      "learning_outcome": "Distinguir intervenção federal e representação interventiva e apontar seus pressupostos.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-11.html",
+          "reason": "A representação interventiva é examinada como modalidade concentrada de controle."
+        },
+        {
+          "id": "aula-20.html",
+          "reason": "Seu cabimento precisa ser separado do cabimento da ADI comum."
+        },
+        {
+          "id": "aula-22.html",
+          "reason": "A legitimidade exclusiva do PGR contrasta com o rol amplo da ADI."
+        },
+        {
+          "id": "aula-24.html",
+          "reason": "O rito da representação é comparado ao processamento da ação direta."
+        }
+      ],
+      "live_title": "Quem protege a ordem federativa?"
+    },
+    {
+      "id": "aula-34.html",
+      "unit": "VII",
+      "syllabus_ref": "VII.1–5",
+      "syllabus_line": "1. Eficácia contra todos e efeito vinculante; 2–4. Técnicas de declaração parcial e modulação; 5. Reclamação constitucional",
+      "learning_outcome": "Escolher a técnica de decisão e identificar quando cabe reclamação para preservar sua autoridade.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-06.html",
+          "reason": "A técnica decisória varia conforme o vício atinge texto, sentido ou aplicação."
+        },
+        {
+          "id": "aula-08.html",
+          "reason": "A nulidade é o ponto de partida para avaliar preservação excepcional da norma."
+        },
+        {
+          "id": "aula-15.html",
+          "reason": "A distinção entre interpretação conforme e exclusão de sentidos retoma essa técnica."
+        },
+        {
+          "id": "aula-28.html",
+          "reason": "A escolha do momento dos efeitos exige os requisitos da modulação."
+        },
+        {
+          "id": "aula-29.html",
+          "reason": "A reclamação depende do alcance vinculante da decisão que se quer preservar."
+        }
+      ],
+      "live_title": "Técnicas de decisão"
+    },
+    {
+      "id": "aula-35.html",
+      "unit": "VIII",
+      "syllabus_ref": "VIII.1–2",
+      "syllabus_line": "1. ADI estadual (art. 125, § 2º CF); 2. Recurso extraordinário em ADI estadual sob norma de reprodução obrigatória",
+      "learning_outcome": "Explicar o parâmetro da ADI estadual e quando sua decisão admite recurso extraordinário.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-04.html",
+          "reason": "A ADI estadual exige separar o parâmetro constitucional estadual do federal."
+        },
+        {
+          "id": "aula-20.html",
+          "reason": "O modelo federal de ADI serve de comparação para objeto e competência estaduais."
+        },
+        {
+          "id": "aula-22.html",
+          "reason": "A legitimidade da ação estadual é contrastada com o rol da ADI federal."
+        },
+        {
+          "id": "aula-32.html",
+          "reason": "A ADPF é a alternativa abstrata para lei municipal confrontada com a Constituição Federal."
+        }
+      ],
+      "live_title": "Controle estadual"
+    },
+    {
+      "id": "aula-36.html",
+      "unit": "IX",
+      "syllabus_ref": "IX.1–4",
+      "syllabus_line": "1. Incidente de inconstitucionalidade; 2. Reserva de plenário; 3. Repercussão geral no recurso extraordinário; 4. Súmula vinculante",
+      "learning_outcome": "Aplicar reserva de plenário e repercussão geral ao percurso de uma questão constitucional no tribunal.",
+      "exam": {
+        "assessment": "undetermined",
+        "reason": "O plano prevê duas avaliações; o Moodle não informa o corte de conteúdo por avaliação."
+      },
+      "prerequisites": [
+        {
+          "id": "aula-11.html",
+          "reason": "O incidente nasce de uma questão constitucional no controle difuso."
+        },
+        {
+          "id": "aula-12.html",
+          "reason": "A relação entre decisões difusas e sua força além do caso informa o sistema de precedentes."
+        },
+        {
+          "id": "aula-29.html",
+          "reason": "É preciso distinguir os vínculos de decisões em ações diretas e de súmulas vinculantes."
+        },
+        {
+          "id": "aula-34.html",
+          "reason": "A reclamação e os limites do precedente são retomados no exame da repercussão geral."
+        }
+      ],
+      "live_title": "Controle difuso nos tribunais"
+    }
+  ]
+}

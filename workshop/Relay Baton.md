@@ -1,5 +1,7 @@
 # Relay Baton
 
+> **FROZEN 01/10/2026. Coordination moved to GitHub Issues: https://github.com/Benecles/ordenacoes-filipinas-workshop/issues.** Don't log here anymore. This file keeps the history below and the standing "Build-process lessons" section (still required reading). New process lessons go in `~/.codex/AGENTS.md`.
+
 Shared handoff between Claude Code and Codex for Benecles's ongoing projects. Read this before taking over a project, then update it before passing the work back. Keep entries short, factual, and current. This file is a coordination note, not a substitute for reading the actual files and checking their state.
 
 ## Why this exists
@@ -100,8 +102,11 @@ Measured lessons about *how* we build. Each entry is a rule, followed by the evi
 > **SOURCE PIPELINE — Claude (CEO), 30/09 late. New way of building and editing lessons; read `protocols/CUFRGS Source Pipeline.md` in full first.** Order: understand → prepare the workbench → write/edit. Pilot course: **controle-de-constitucionalidade**. Work dir `work/pipeline/controle-de-constitucionalidade/` (private repo; book text is git-ignored, maps/indexes are committed). One stage = one issue; log `PIPE-n done: <check result>, doubts: …` here and STOP for Claude's gate before the next stage.
 > - **PIPE-0** S0 course map. **Sol, high.** Also build `tools/pipeline_check.py` (in `work/pipeline/tools/`) with the S0–S3 checks the protocol lists; prove each check FAILS on an empty/broken input before trusting a PASS.
 > - PIPE-0 done: S0 PASS (36 mapped/36 live; broken S0 and empty S1–S3 checks fail), doubts: plano/Moodle do not map lessons to either exam; aulas 19 and 27 lack dedicated syllabus lines.
+> - PIPE-0 prerequisite fix done: S0 PASS (36 mapped/36 live; Aula 29 placed after 28 to preserve the 30→29 dependency), doubts: none.
 > - **PIPE-1** S1 shelf (Luna high). Reuse `work/book-extracts/`, `work/controle-depth/extracts/`, Lenza's AZW3 extract. New this week: `~/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/30 - ADC.pdf` and `03 Moodle/2026-09-30 scrape/`.
+> - PIPE-1 done: S1 PASS (100 shelf sources; Gilmar OCR done locally in Portuguese), doubts: catalog lists 296 pages vs 292 scanned book-page sides; TOC/references reach the end, but the four-page count difference is unresolved.
 > - **PIPE-2** S2 split into chapters (Luna high). Whole books by their own sumário, not the old topic extracts.
+> - PIPE-2 done: S2 PASS (187 indexed chapters across 8 books and 30 slide decks, plus 1 Moodle exercise list; no past exams found), doubts: Lenza AZW3 has text but no printed/PDF page mapping so its index is missing; Gilmar catalog count is 296 pages vs 292 scanned book-page sides.
 > - **PIPE-3** S3 triage + dependency closure (Luna xhigh).
 > - **PIPE-4** S4 compendia + `tools/pull_source.py` (Luna high).
 > - **PIPE-5** S5 on **Aula 30 (ADC)** only: blueprint (Luna max) → **panel** (a separate Sol-high agent, rubric in S5a; it reads only blueprint + map + index + exam questions) → on APPROVED, STOP and log; Claude reads blueprint + verdict once for this pilot → write at Luna xhigh, text + figures in one context, PR to the site repo.

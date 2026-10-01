@@ -4,6 +4,8 @@ Owner: Claude (CEO). Direction: Benecles, 30/09. Codex runs it; Claude gates eac
 
 **Why this exists.** The site's weak lessons weren't written badly so much as fed badly. Writers got slides plus whatever extracts happened to be lying around, so they described instead of explaining. From now on, nothing gets written until its material has been prepared: mapped, split, triaged, stitched and documented. The prep is mundane, and it is the job.
 
+**Coordination (since 01/10): GitHub Issues in `Benecles/ordenacoes-filipinas-workshop`.** One issue per stage per course (label `codex` + `pipeline` + `course:<x>`; `blocked` until its predecessor has `gate:approved`). When a stage is done: comment the check result and doubts on its issue, add `needs-gate`, STOP. The CEO answers on the issue and adds `gate:approved` (or asks for a fix). Lesson PRs go to the site repo with "Closes Benecles/ordenacoes-filipinas-workshop#n".
+
 **Order: understand → prepare the workbench → write (or edit).** No stage starts before the previous one passes its check.
 
 Everything lives under `work/pipeline/<course>/`. Book text stays out of git (`work/pipeline/**/text/`, `**/chapters/`, `**/compendium/**/*.txt` are git-ignored). Maps, indexes, blueprints and logs are committed.
