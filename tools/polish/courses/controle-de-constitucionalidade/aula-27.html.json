@@ -22,5 +22,29 @@
 {
 "before": "no plenário virtual? SIM.</strong> Até o ",
 "after": "no plenário virtual? Sim.</strong> Até o "
+},
+{
+"before": " SISTEMA</text>\n<path d=\"M80 130H520M80 260H520M80 390H520\" stroke-width=\"1\" class=\"thin\"/>\n<path d=\"M160 130V390M440 130V390\" stroke-width=\"1\" class=\"thin\"/>\n<rect x=\"54\" y=\"82\" width=\"250\" height=\"96\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"74\" y=\"116\" class=\"t-small tc-dif\">01 ·",
+"after": " SISTEMA</text>\n<path d=\"M80 130H520M80 260H520M80 390H520\" stroke-width=\"1\" class=\"thin\"/>\n<path d=\"M270 130V390M440 130V390\" stroke-width=\"1\" class=\"thin\"/>\n<rect x=\"54\" y=\"82\" width=\"250\" height=\"96\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"74\" y=\"116\" class=\"t-small tc-dif\">01 ·"
+},
+{
+"before": " DE VOTAÇÃO</text>\n        <path class=\"grow\" d=\"M100 190H460\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\" marker-end=\"url(#ah-sa)\"/>\n        <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/>\n        <text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>",
+"after": " DE VOTAÇÃO</text>\n        <path class=\"grow\" d=\"M138 190H230M410 190H422\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\" marker-end=\"url(#ah-sa)\"/>\n        <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/>\n        <text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>"
+},
+{
+"before": "</marker>\n        </defs>\n        <g opacity=\".5\">\n          <path d=\"M100 190H460\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\" marker-end=\"url(#ah-sb)\"/>\n          <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>\n          ",
+"after": "</marker>\n        </defs>\n        <g opacity=\".5\">\n          <path d=\"M138 190H230M410 190H422\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\" marker-end=\"url(#ah-sb)\"/>\n          <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>\n          "
+},
+{
+"before": "<text x=\"460\" y=\"195\" text-anchor=\"middle\" class=\"t-small t-light\">FIM</text>\n        </g>\n        <path class=\"grow\" d=\"M320 220V370\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"8 6\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah-sb2)\"/>\n        <rect x=\"170\" y=\"380\" width=\"300\" height=\"160\" style=\"fill:var(--paper);stroke:var(--conc)\" stroke-width=\"3\"/>\n        <text x=\"320\" y=\"412\" text-anchor=\"middle\" class=\"t-mid\">PEDIDO ",
+"after": "<text x=\"460\" y=\"195\" text-anchor=\"middle\" class=\"t-small t-light\">FIM</text>\n        </g>\n        <path class=\"grow\" d=\"M320 220V370\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"160 6\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah-sb2)\"/>\n        <rect x=\"170\" y=\"380\" width=\"300\" height=\"160\" style=\"fill:var(--paper);stroke:var(--conc)\" stroke-width=\"3\"/>\n        <text x=\"320\" y=\"412\" text-anchor=\"middle\" class=\"t-mid\">PEDIDO "
+},
+{
+"before": "</marker>\n        </defs>\n        <g opacity=\".45\">\n          <path d=\"M100 190H460\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\"/>\n          <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>\n          ",
+"after": "</marker>\n        </defs>\n        <g opacity=\".45\">\n          <path d=\"M138 190H230M410 190H422\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\"/>\n          <circle cx=\"100\" cy=\"190\" r=\"38\" class=\"w-dif ink\" stroke-width=\"2\"/><text x=\"100\" y=\"195\" text-anchor=\"middle\" class=\"t-small\">INÍCIO</text>\n          "
+},
+{
+"before": "<text x=\"460\" y=\"195\" text-anchor=\"middle\" class=\"t-small t-light\">FIM</text>\n        </g>\n        <path class=\"grow\" d=\"M320 160V95\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"8 6\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah-sc)\"/>\n        <rect x=\"190\" y=\"35\" width=\"280\" height=\"55\" style=\"fill:var(--paper);stroke:var(--conc)\" stroke-width=\"3\"/>\n        <text x=\"330\" y=\"68\" text-anchor=\"middle\" class=\"t-mid tc-conc\">DESTAQUE</text>",
+"after": "<text x=\"460\" y=\"195\" text-anchor=\"middle\" class=\"t-small t-light\">FIM</text>\n        </g>\n        <path class=\"grow\" d=\"M320 160V95\" stroke-width=\"3\" fill=\"none\" stroke-dasharray=\"70 6\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah-sc)\"/>\n        <rect x=\"190\" y=\"35\" width=\"280\" height=\"55\" style=\"fill:var(--paper);stroke:var(--conc)\" stroke-width=\"3\"/>\n        <text x=\"330\" y=\"68\" text-anchor=\"middle\" class=\"t-mid tc-conc\">DESTAQUE</text>"
 }
 ]
