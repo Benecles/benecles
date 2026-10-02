@@ -44,6 +44,7 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 | A push in a loop silently went nowhere | zsh parses `"$k:codex"` as `$k` + `:c` modifier | Brace it: `"${k}:codex"` | none | 30/09 (5 pushes) |
 | `pkill -f <pattern>` killed your own shell/runner | Pattern matches the calling command line | Kill by pid | none | 30/09 |
 | Background reads hang / `Errno 11 Resource deadlock avoided` | iCloud evicted files (disk full) | Free space, `brctl download`; work now lives in `~/Developer` | n/a | 30/09 |
+| Your commit landed on a `codex/*` branch (or a pull says "commit or stash") | Codex switched the shared workshop checkout to its own branch | `git status -sb` before every commit; if wrong, cherry-pick onto `main` and `git push --force-with-lease origin <prev>:<codex-branch>` | none | 01/10 (Claude, F-019 commit) |
 | A Luna worker replied "done" but no file exists | Workers can claim done without acting | Every brief has a script-checked done-condition | the brief's check script | 29/09 |
 | A check passes on something visibly worse | The check never tested that failure | Run every new check against the known-bad state first | n/a | D2, 30/09 |
 | A tool-branch catalogue landed in the site repo | Workshop artifact committed to `ordenacoes-filipinas` | Workshop artifacts go in the workshop repo; site gets reader files + `tools/` | review | VIS-2, 01/10 |

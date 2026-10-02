@@ -18,6 +18,7 @@ HARD = {
     'atribuição vaga': r'\b(?:especialistas (?:apontam|afirmam|destacam)|muitos autores|a doutrina moderna|há quem (?:diga|sustente|defenda)|alguns críticos)\b',
     'fala com o leitor': r'\b(?:você já deve ter percebido|não se preocupe|pense nisso|perceba que|repare:?)\b',
     'calque de IA': r'\b(?:no cenário (?:atual|jurídico|brasileiro)|navegar (?:por|pel[oa]s?)|abordagem holística|robust[oa]s?|(?-i:jornada)(?! (?:de trabalho|limitada|diária|semanal|máxima))|mergulh(?:ar|amos|e) (?:em|n[oa]s?))\b',
+    'bastidores na página (fonte, plano, padrão)': r'\b(?:(?:os|nos|dos|pelos|segundo os?) slides?|materia(?:l|is) da disciplina|nest[ae] leitura|dest[ae] leitura|prática autoral|relatad[oa]s? por|localizador(?:es)?|fontes e (?:limites|localizadores)|(?-i:C\d{1,2})\b|A[1-9] (?:do|da) blueprint|blueprint|cerca desta)',
     'tríade de efeito ("X, Y e, sobretudo, Z")': r'\b(?:e, sobretudo,|e, acima de tudo,)',
 }
 LIMIT = {  # pattern, max per lesson
@@ -42,6 +43,7 @@ def text_of(path):
     s = open(path, encoding='utf-8', errors='ignore').read()
     if path.endswith('.html'):
         s = re.sub(r'(?is)<(script|style|svg|head|nav)\b.*?</\1>', ' ', s)
+        s = re.sub(r'(?is)<div hidden\b.*?(?=</body>)', ' ', s)  # hidden source archive is allowed backstage
         s = re.sub(r'(?i)<br\s*/?>|</(?:p|li|h\d|td|th|div|figcaption|summary)>', '\n', s)
         s = html.unescape(re.sub(r'<[^>]+>', ' ', s))
     return re.sub(r'[ \t]+', ' ', s)
