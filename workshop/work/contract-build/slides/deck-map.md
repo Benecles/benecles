@@ -1,6 +1,6 @@
 # Slide text corpus and lesson crosswalk
 
-Extracted on 2026-09-24 with `pdftotext -layout`. The source PDFs in `/Users/benecles/Desktop/UFRGS 2026-2/Teoria Geral dos Contratos/` were read only. Each UTF-8 text file contains every selectable-text page, headed with the original PDF filename and its 1-based PDF page number.
+Extracted on 2026-09-24 with `pdftotext -layout`. The source PDFs in `/Users/benecles/Documents/UFRGS 2026-2/Teoria Geral dos Contratos/` were read only. Each UTF-8 text file contains every selectable-text page, headed with the original PDF filename and its 1-based PDF page number.
 
 ## Deck inventory
 

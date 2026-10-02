@@ -287,7 +287,7 @@ Plano: duas avaliações, sem divisão de conteúdo. Moodle: lacunas nos campos 
 
 ## Fontes consultadas
 
-- plano: /Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/00 Plano de Ensino - DIR03027 (2026-2).pdf
-- moodle: /Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/Página do Moodle - DIR03027 Turma U (2026-2).webarchive
-- slide_decks: /Users/benecles/Desktop/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/
+- plano: /Users/benecles/Documents/UFRGS 2026-2/Controle de Constitucionalidade/00 Plano de Ensino - DIR03027 (2026-2).pdf
+- moodle: /Users/benecles/Documents/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/Página do Moodle - DIR03027 Turma U (2026-2).webarchive
+- slide_decks: /Users/benecles/Documents/UFRGS 2026-2/Controle de Constitucionalidade/01 Slides/
 - live_index: /Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/index.html

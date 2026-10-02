@@ -4,7 +4,7 @@
     python3 rewrite_paths.py MAP.json ROOT [ROOT ...] [--dry-run]
 
 MAP.json is a list of [old, new] pairs of path fragments, e.g.
-    [["Desktop/New moodle scrape", "Desktop/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/2026-09-20 scrape"]]
+    [["Desktop/New moodle scrape", "Documents/UFRGS 2026-2/Controle de Constitucionalidade/03 Moodle/2026-09-20 scrape"]]
 Use fragments that start at a stable anchor such as "Desktop/" or "Documents/", which covers both
 "~/Desktop/..." and "/Users/<name>/Desktop/...".
 
