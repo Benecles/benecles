@@ -17,13 +17,13 @@ Roles: **Benecles = executive chairman** (sets direction, owns decisions listed 
 | Bug catalogue (symptom → cause → fix → check) | `BUGS.md` here; every fix adds a row |
 | Agent status registry | `agents/` here (old `~/Documents/agents` = symlink) |
 Renamed 30/09 night (was `study-lab` / `study-lab-private`); compatibility symlinks at the old `~/Developer/` paths keep old scripts working. Codex worktrees were repaired with `git worktree repair`.
-Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally here but are git-ignored. Raw course material (`~/Desktop/UFRGS 2026-2`) is the chairman's and stays put.
+Binaries (PDFs, screenshots, node_modules, geo caches over 5 MB) live locally here but are git-ignored. Raw course material (`~/Documents/UFRGS 2026-2`, moved off the Desktop 02/10) is the chairman's: read it, never reorganise it. **The Desktop holds only Felipe and Mark** (work files); put nothing else there.
 
 ## After a factory reset (chairman planned one on 30/09)
 If `~/Developer` is missing, restore first:
 1. `mkdir -p ~/Developer && cd ~/Developer && gh repo clone Benecles/ordenacoes-filipinas && gh repo clone Benecles/ordenacoes-filipinas-workshop`
 2. Restore the dotfiles per `dotfiles/README.md` (Codex config + AGENTS.md; Claude CLAUDE.md + memories).
-3. Recreate the convenience symlinks only if the old paths are wanted: `~/Desktop/Relay Baton.md` → this repo's baton; `~/Documents/Protocols` → `protocols/`; `~/Documents/agents` → `agents/`.
+3. Don't recreate Desktop shortcuts (chairman, 02/10). Optional: `~/Documents/Protocols` → `protocols/`; `~/Documents/agents` → `agents/`.
 4. Git-ignored binaries (source-intake exam PDFs, book extracts, page captures) come back only if the chairman restored them from his Google Drive backup; everything else is in git.
 
 ## The mandate (chairman's direction, 30/09; read this twice)
