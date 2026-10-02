@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02
+import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -31,6 +31,9 @@ ENTRIES = [
     ('Linha do tempo · e plano', 'ordenar', 'Latam · Aula 02 · Fig. 1 (4 passos)',
      'A tese num plano; a linha argentina liga a validação dos golpes por acordada à destituição de 1947 e à troca da Corte; o painel venezuelano põe regras descumpridas e origem de quase metade na magistratura lado a lado; seguem o circuito de cooptação e as três faixas brasileiras.',
      'substitui dla-a02-s3 (Argentina e Venezuela)', latam_a02.panels(), 'direito-latino-americano'),
+    ('Plano · dois eixos', 'comparar', 'Const. I · Aula 04 · Fig. 1 (3 passos)',
+     'A mesma grade separa quem controla de como o controle ocorre: a Itália concentra a decisão sem torná-la abstrata; o Brasil reúne os dois modelos.',
+     'substitui dci-a04-s2+2 (caixas)', consti_a04.panels(), 'direito-constitucional-i'),
 ]
 
 
