@@ -58,7 +58,7 @@ A script assembles it from S2 + S3; no model judgment involved. `tools/pull_sour
 
 Each lesson gets **one** agent, in one context, that owns both the text and every figure on the page. It edits the live page (adding, replacing, fixing) rather than writing from scratch. The same architecture produces writers for new lessons.
 
-1. **Blueprint (Luna, max). The other stage that decides quality: plan before you write, and make the plan transparent.** Read the live page, the compendium index, the slides, the S0 line and the exam questions. Write `compendium/<lesson>/blueprint.md`, the lesson's architecture from the top down:
+1. **Blueprint (Luna, max). The other stage that decides quality: plan before you write, and make the plan transparent.** Read the live page, the compendium index, the slides, the S0 line and the exam questions. **Start from the template `protocols/templates/Lesson Blueprint.md` and model every field on the reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (its Method notes say how to decide each field), then read the reference page `courses/controle-de-constitucionalidade/aula-01.html` and its `REF ·` comments.** Write `compendium/<lesson>/blueprint.md`, the lesson's architecture from the top down:
    - **Function:** what the lesson lets the reader do, and how they'll know they can (the closing exercises).
    - **Sequence:** sections in order. For each: the claim it makes, why it comes there (what it needs from before, what it sets up), and the compendium files and pages it draws on. A section with no source pages has to say why.
    - **Coverage:** every point of the syllabus line and every matching exam/exercise question, each mapped to a section; anything deliberately left out, with the reason.
@@ -73,6 +73,8 @@ Each lesson gets **one** agent, in one context, that owns both the text and ever
    3. Is the syllabus line covered, with every matching exam question placed somewhere?
    4. Does every figure pass the instrument test? Any box-and-arrow plan is rejected outright.
    5. Is it one sitting, and is what gets cut from the live page defensible?
+   6. Is there ONE real thread, tested against every section (A5)? Fictional settings are rejected outright (F-022).
+   7. Is the scope fence marked planning-only, with no section planning meta-text about other lessons, sources or slides (F-019, F-020)? Is each trap placed once and tested once (F-021)?
    The verdict, in `panel.md`, is either **APPROVED** or **REVISE** with at most 5 numbered, specific points. The author revises; after a second REVISE, it escalates to Claude. Only APPROVED blueprints proceed to writing. Claude spot-checks panel verdicts, especially the first ten, to calibrate it.
 
 2. **Read.** Read the primary chapters in full. When an author points back or forward ("como visto no capítulo 3…", "ver adiante…") and that material isn't in the compendium, pull it with `pull_source.py` and log the request in `requests.md` (what, why, from where). Those requests are data: they tell us what S3 missed.

@@ -42,6 +42,7 @@ TERMS = r'\b(?:direitos? fundamenta(?:l|is)|princípios? fundamenta(?:l|is)|prec
 def text_of(path):
     s = open(path, encoding='utf-8', errors='ignore').read()
     if path.endswith('.html'):
+        s = re.sub(r'(?s)<!--.*?-->', ' ', s)  # agent notes (REF comments) are not page text
         s = re.sub(r'(?is)<(script|style|svg|head|nav)\b.*?</\1>', ' ', s)
         s = re.sub(r'(?is)<div hidden\b.*?(?=</body>)', ' ', s)  # hidden source archive is allowed backstage
         s = re.sub(r'(?i)<br\s*/?>|</(?:p|li|h\d|td|th|div|figcaption|summary)>', '\n', s)
