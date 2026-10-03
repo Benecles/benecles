@@ -12,7 +12,7 @@
 | Exercises / exams (`50-exercises-and-exams.txt`) | No assigned questions | S0 leaves this lesson's exam cut undetermined and S3 assigns no question file. Traps therefore come from distinctions defended in the primary chapters and the slide contrasts, not a claimed past exam. |
 | Live Aula 11 (before) | About 1,850 reader-visible words; 8 numbered sections plus recap | Kept as useful material: the two-axis distinction, standard profiles, and the MS-versus-ADI teaching opportunity. Rebuild: opening, ordering, example, effects, and figures. Cut: the origin story as the main route, repeated examples, the “Confuso” result, duplicated definitions, and the oversimplified “until the STF” effect rule. |
 
-Assigned source text totals about 19,658 words by the chapter-index counts, including the deck, statutory units, and the art. 5º, XVI excerpt. At a 3,260-word target, the ratio is **6.0:1**. The actual PDF and book files are in `/Users/benecles/Documents/UFRGS 2026-2/Controle de Constitucionalidade`; the source-stage chapter files and their section/page markers are in this checkout. Lenza's section files lack page spans, so their § identifiers are the available precise locators.
+Assigned source text totals about 19,658 words by the chapter-index counts, including the deck, statutory units, and the art. 5º, XVI excerpt. At a 3,340-word target, the ratio is **5.9:1**. The actual PDF and book files are in `/Users/benecles/Documents/UFRGS 2026-2/Controle de Constitucionalidade`; the source-stage chapter files and their section/page markers are in this checkout. Lenza's section files lack page spans, so their § identifiers are the available precise locators.
 
 ## A1. Reader brief
 - **Already knows:** the basic idea of constitutional review; Aula 08's distinction between nullity and annulability; Aula 10's preventive/repressive timing and judicial control.
@@ -21,7 +21,7 @@ Assigned source text totals about 19,658 words by the chapter-index counts, incl
   2. Explain why a law tested as a necessary premise in an individual claim is a diffuse/concrete/incidental case, and identify the ordinary reach of that decision.
   3. Explain why an ADI makes the law's validity the principal issue in an abstract, objective proceeding, and identify its statutory reach.
   4. Classify Brazil as a mixed model while recognizing that the familiar diffuse/incidental and concentrated/principal pairings are tendencies, not definitions that erase exceptions.
-- **One sitting:** about 3,260 words, about 25 min.
+- **One sitting:** about 3,340 words, about 25 min.
 
 ## A2. Exam traps
 | # | Trap | Why students fall for it | Where the page defuses it (one place) | Tested in (one item) |
@@ -58,7 +58,7 @@ Aula 12 → Senate art. 52, X, critique of Brazil's mixed system, repercussão g
 ## A5. The thread
 **Chosen:** the real constitutional text of CF art. 5º, XVI (“independentemente de autorização”), tested through a hypothetical state statute that requires prior authorization for peaceful public meetings. The fictional statute is only a variation on the real constitutional text (F-022); the lesson presents two procedural routes for the same incompatibility, not a fictional constitutional system.
 
-| Candidate | §00 | §01 | §02 | §03 | §04 | §05 case | Verdict |
+| Candidate | §00 | §01 | §02 | §03 | §04 | §06 case | Verdict |
 |---|---|---|---|---|---|---|---|
 | Art. 5º, XVI + hypothetical state authorization rule | ✓ concrete dispute | ✓ same object across both axes | ✓ claimant seeks specific relief | ✓ same law is the ADI object | ✓ compare reach and exception | ✓ permits a real-text variation in two routes | **Chosen:** only candidate that survives both routes without changing the legal limit |
 | RE 197.917 (Mira Estrela) | ~ | ✓ diffuse/concrete | ✓ real case path | ✗ no matching abstract ADI path in the source packet | ✓ useful effect boundary | ~ | Keep as short supporting real case, not the lesson's thread |
@@ -68,16 +68,17 @@ Aula 12 → Senate art. 52, X, critique of Brazil's mixed system, repercussão g
 | § | h2 (names the content) | The question it answers | Claims (A4 #) | Carrier | Form (figure / prose-only / table / case) | Words | Hands to the next § |
 |---|---|---|---|---|---|---:|---|
 | hero | A mesma lei, duas rotas | What changes when the Constitution tests a law? | 1, 6 | Hypothetical state authorization rule grounded in art. 5º, XVI | Hero text only | 80 | The legal limit is the same; first ask what “system” and “technique” classify |
-| 00 | A lei que barra a reunião | What exactly is being tested? | 1, 15 | Art. 5º, XVI and the state's prior-authorization rule | Concrete opening in prose; no overview of the course | 220 | The same constitutional issue can sit in different places in a proceeding |
-| 01 | Quem controla e onde fica a questão | What do system and technique classify? | 2, 3, 6, 7 | Same hypothetical statute | Prose plus a genuinely parallel two-axis comparison table | 440 | With the axes separate, follow the path that begins in a concrete request |
-| 02 | Quando a lei é premissa do pedido | Why is this route diffuse and incidental? | 2, 4, 6, 9, 15 | A meeting organizer seeks concrete relief after denial; the law is the necessary premise | Prose; then the shared case jacket enters Fig. 1 | 530 | The constitutional issue helps decide the request; now compare a route where validity itself is requested |
-| 03 | Quando a validade da lei é o pedido | Why is this route concentrated and principal? | 3, 5, 6, 11, 15, 16 | Same state statute in an ADI; CF art. 102, I, “a”, and § 2º | Figure-first: Fig. 1, then short prose and statute cut | 530 | The paired routes reveal what each traditional effect reaches |
-| 04 | O que o alcance revela — e o que não revela | What do inter partes and erga omnes say, and what are they not? | 7–8, 10–14 | Diffuse ruling; ADI ruling; original-jurisdiction STF MS as one exception; RE 197.917 as a real boundary | Prose-only; compact two-column table separates reach from time | 660 | Re-run the same statute once without the table and show the facts-to-route link |
-| 05 | A autorização em dois processos | Can the reader classify one incompatibility under either route? | 2–6, 9–12, 15–16 | Organizer's MS contrasted with an ADI against the same state statute; assume cabimento without teaching standing | `p.caso` followed by run-in steps: objeto, questão, via, técnica, efeito | 680 | The final test changes one procedural fact at a time |
+| 00 | A lei que barra a reunião | What exactly is being tested? | 1, 15 | Art. 5º, XVI and the state's prior-authorization rule | Concrete opening in prose; no overview of the course | 320 | The same constitutional issue can sit in different places in a proceeding |
+| 01 | Quem controla e onde fica a questão | What do system and technique classify? | 2, 3, 6, 7 | Same hypothetical statute | Prose plus a genuinely parallel two-axis comparison table | 420 | With the axes separate, follow the path that begins in a concrete request |
+| 02 | Quando a lei é premissa do pedido | Why is this route diffuse and incidental? | 2, 4, 6, 9, 15 | A meeting organizer seeks concrete relief after denial; the law is the necessary premise | Prose; then the shared case jacket enters Fig. 1 | 470 | The constitutional issue helps decide the request; now compare a route where validity itself is requested |
+| 03 | Quando a validade da lei é o pedido | Why is this route concentrated and principal? | 3, 5, 6, 11, 15, 16 | Same state statute in an ADI; CF art. 102, I, “a”, and § 2º | Figure-first: Fig. 1, then short prose and statute cut | 470 | The paired routes reveal what each traditional effect reaches |
+| 04 | O que o alcance revela — e o que não revela | What do inter partes and erga omnes say, and what are they not? | 10–12 | Diffuse ruling and ADI ruling | Prose-only; compact two-column table separates reach from time | 470 | The limits of a traditional rule lead to the lesson's exceptions |
+| 05 | Onde a regra encontra exceções | Which comparisons need a qualification? | 7–8, 13–14 | Concentrated-incidental STF MS as one exception; RE 197.917 as a real boundary | Prose-only; two short exception cards | 400 | Re-run the same statute as a worked case |
+| 06 | A autorização em dois processos | Can the reader classify one incompatibility under either route? | 2–6, 9–12, 15–16 | Organizer's MS contrasted with an ADI against the same state statute; assume cabimento without teaching standing | `p.caso` followed by run-in steps: objeto, questão, via, técnica, efeito | 450 | The final test changes one procedural fact at a time |
 | ↺ | Teste de rota | Can the reader keep the axes and effects separate? | T1–T5 | Five quiz items keyed one-to-one to A2 | Chave in one breath + five retrieval questions with short answers | 260 | — |
-|  |  |  |  | **Total** |  | **3,400** |  |
+|  |  |  |  | **Total** |  | **3,340** |  |
 
-The worked case adds a specific contrast: in the organizer's MS, a real individual request depends on setting the statute aside for that case; in the ADI, the requested decision concerns the statute in the abstract. Do not invent case numbers, an actual litigant, a date, or a holding. This is an instructional variation on the text of art. 5º, XVI, not a claim about a historical lawsuit.
+The seven sections follow the reference density guide, each with a 250–550-word budget. The worked case adds a specific contrast: in the organizer's MS, a real individual request depends on setting the statute aside for that case; in the ADI, the requested decision concerns the statute in the abstract. Do not invent case numbers, an actual litigant, a date, or a holding. This is an instructional variation on the text of art. 5º, XVI, not a claim about a historical lawsuit.
 
 ## A7. Figures: the cast (protocols/CUFRGS Visual Casting.md)
 | Fig | Move | Cast (chosen) | Rejected casts and why | The sheet, described | Card claims |
