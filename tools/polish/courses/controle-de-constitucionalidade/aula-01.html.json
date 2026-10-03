@@ -32,10 +32,6 @@
 "after": "<div class=\"titleblock label\" role=\"list\"><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes"
 },
 {
-"before": " de Constitucionalidade</title><meta name=\"description\" content=\"Aula 1 · Conceito: Controle de constitucionalidade: parâmetro, objeto e compatibilidade.\"><link rel=\"stylesheet\" href=\"assets/controle.css?v=70181350f9\"></head><body><nav class=\"topbar\"><a href=\"index.html\">← ",
-"after": " de Constitucionalidade</title><meta name=\"description\" content=\"Aula 1 · Conceito: Controle de constitucionalidade: parâmetro, objeto e compatibilidade.\"><link rel=\"stylesheet\" href=\"assets/controle.css?v=870499967f\"></head><body><nav class=\"topbar\"><a href=\"index.html\">← "
-},
-{
 "before": "as aulas.</p></section>\n<div class=\"prosa\">\n<p>Uma lei",
 "after": "as aulas.</p></section>\n<div class=\"wide\"><div class=\"prosa\">\n<p>Uma lei"
 },
@@ -118,5 +114,9 @@
 {
 "before": " modelo difuso.</p>\n</div>\n\n<section class=\"chapter\" aria-labelledby=\"recap\"><span class=\"num\" aria-hidden=\"true\">↺</span>",
 "after": " modelo difuso.</p>\n</div></div>\n\n<section class=\"chapter\" aria-labelledby=\"recap\"><span class=\"num\" aria-hidden=\"true\">↺</span>"
+},
+{
+"before": " de Constitucionalidade</title><meta name=\"description\" content=\"Aula 1 · Conceito: Controle de constitucionalidade: parâmetro, objeto e compatibilidade.\"><link rel=\"stylesheet\" href=\"assets/controle.css?v=870499967f\"></head><body><nav class=\"topbar\"><a href=\"index.html\">← ",
+"after": " de Constitucionalidade</title><meta name=\"description\" content=\"Aula 1 · Conceito: Controle de constitucionalidade: parâmetro, objeto e compatibilidade.\"><link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\"></head><body><nav class=\"topbar\"><a href=\"index.html\">← "
 }
 ]

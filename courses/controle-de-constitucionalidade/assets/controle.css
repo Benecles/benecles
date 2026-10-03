@@ -433,3 +433,8 @@ body{transition:background-color .35s ease,color .35s ease}
 /* A figure alone in its scrolly takes the drawing's proportions (viewBox cropped to content), not a forced square */
 .scrolly:has(.step:only-child) .stage figure{aspect-ratio:auto;max-height:none}
 .scrolly:has(.step:only-child) .panel{position:relative;inset:auto;height:auto;display:block}
+/* Prose-only stretch (no figure right before or after): the reading column is centred and a little wider,
+   and its chapter heading moves to the same column. Text stays left-aligned inside the column. */
+.wide:has(> .prosa:only-child):not(.scrolly + .wide):not(:has(+ .scrolly)) > .prosa{max-width:720px;margin-inline:auto}
+section.chapter:has(+ .wide > .prosa:only-child):not(:has(+ .wide + .scrolly)) > *{max-width:720px;margin-inline:auto}
+section.chapter:has(+ .wide > .prosa:only-child):not(:has(+ .wide + .scrolly)) > .num{display:block}
