@@ -44,19 +44,19 @@ If `~/Developer` is missing, restore first:
 - **Memory of mistakes:** `BUGS.md` (Codex adds rows), `FLIGHT-LOG.md` F-001…F-024. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban; ignores HTML comments), breakscan.
 - **Desktop holds only Felipe + Mark.** Course material: `~/Documents/UFRGS 2026-2`.
 
-## In flight (Codex; gate each at `needs-gate`)
-- **S5 writing PAUSED (F-023)** until the prototype passes: **Controle Aula 08** revision (site #59). Gate it hard: slop_lint 0 hard, then READ against Aula 01; then its verdict goes to every other lesson PR (#52 A02, #53 A04, #54 A05, #55 A07, #60 A09, plus A03, A06, A30).
-- **#17 CAST-1:** casting ledger + cast every in-flight figure redo before drawing.
-- **#10 FIG-2 (gated 03/10):** #48 kit MERGED, #56 Latam A02 MERGED (the batch bar). #51 Delito U01, #57 Const I A04, #58 Processo A01 REVISE (verdicts on each PR; F-025, F-026). Contratos A01: no PR yet; hero removal approved despite svgcheck. Gate by looking, against Visual Casting.
-- **#18 REG-H1:** register whole-row hover brief (wash + clock wind), filed 03/10.
-- **#11 CHG-1 (#47):** rebase; must keep the CHG-2 toggle.
-- **#16 BIO-1:** professor bios data (Codex researches; CEO then briefs the pop-up).
-- **#14 TBL-1**, **#12 PIPE-C** (S3 batches), **#15** blueprints A10–A13 to redo with the template.
+## In flight (Codex; gate each at `needs-gate`) — updated 03/10 midday
+- **S5 writing PAUSED (F-023)** until **Controle Aula 08 (site #59)** passes. v2 gated 03/10: REVISE, close (F-019/020 fixed; F-021 repetition is the fault; exact cut list on the PR). When it passes, its verdict goes to #52 A02, #53 A04, #54 A05, #55 A07, #60 A09 (+ A03, A06, A30).
+- **FIG-2 (#10):** merged #48 kit, #56 Latam A02, #57 Const I A04. **#58 Processo A01:** approve on 2 fixes (clipped labels + rebase); merge on sight. **#65 Contratos A01:** REVISE (6 panels visibly broken while breakscan said clean: F-027; p-est/p-sub/p-esp recast). **#51 Delito U01:** REVISE (F-025), not redone yet.
+- **#47 CHG-1 changelog bento:** approve on 3 fixes (grid holes, drop the "0 rótulos" QA tile, scale "Um contrato" miniature); merge on sight.
+- **#18 REG-H1** register hover brief; **#22 BIO-2** professor card brief (bios to be normalised in it). Not started.
+- **TBL-1 (#14):** Codex was blocked on file:// checks; told to use http://localhost:8790.
+- Done 03/10: BIO-1 data (#66), CAST-1 ledger (ws #19; 395 rows, live count authoritative), BUGS row (ws #20), blueprints A10–A13 (ws #21, approved with notes).
 
 ## Next up (in order)
-1. Gate whatever is `needs-gate`, Aula 08 first.
-2. **Write master briefs (not code)** for: ~~the class-register hover~~ (done, #18; rareui was a passing Twitter find, not a spec), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
-3. Write the remaining course-world pages for Visual Casting (drafts exist inside the doc) as the course redos come up.
+1. Gate whatever is `needs-gate`: Aula 08 v3 first, then #58 / #47 (merge on sight if fixed), #65, #51.
+2. Breakscan must FAIL on #65's panels (text×text, past-viewBox) before its PASS counts again (F-027); check Codex fixed it.
+3. Ask the chairman: show the hero drawing on phones? (CEO: yes, scaled). Then brief it.
+4. Course-world pages for Visual Casting as course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
 - **Text:** Controle is genuinely weak: median lesson 1.25k words (other courses 2.7–3.8k); Aula 01 circles abstractions, promises an example it never gives, repeats its own summary, and ends with a "Fontes e limites" disclaimer (breaks the no-citations rule). Aula 24 is decent (concrete, statute-anchored). Contratos is equally thin (1.06k median). Cause: writers got slides plus scattered ad-hoc extracts, never per-lesson prepared sources.
