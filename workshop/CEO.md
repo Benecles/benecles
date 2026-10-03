@@ -65,7 +65,7 @@ If `~/Developer` is missing, restore first:
 - **Existing extracts to reuse:** `work/book-extracts/` (+ `book-extract-map.md`), `work/controle-depth/extracts/`, `work/source-intake-2026-09-28/` (Metodologia, Processo, Const I intake on the same philosophy).
 
 ## Open decisions for the chairman
-- Hero composition (https://benecles.github.io/ordenacoes-filipinas/specimen/hero.html; always give the chairman full live URLs) and whether the hero drawing shows on phones.
+- Hero composition: **decided 03/10, chairman picked "Atual"** (no rollout needed; the live layout stays). Still open: the hero drawing is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in controle.css, a 30/09 rule); the chairman saw the specimen with no drawing and objected. Show it there too (scaled, no phone variant per F-009)? Always give the chairman full live URLs.
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
 - **Search `BUGS.md` by symptom before debugging; add a row with every fix.**
