@@ -41,6 +41,7 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 | Symptom | Cause | Fix | Catches it | Seen |
 |---|---|---|---|---|
 | `check_all` FAILs on the front right after your own edit | It compares regenerated fronts against the git INDEX | `git add` your edits, then run it | n/a | 01/10 |
+| `check_all` treats `professors.json` as a course front and reports a missing `professors.html` shell | Front enumeration treated every JSON file under `tools/fronts/data/` as a course slug | Select course-front records by their object schema (`course` key), allowing list datasets to coexist | `check_all` course-front enumeration | BIO-1, 03/10 |
 | A push in a loop silently went nowhere | zsh parses `"$k:codex"` as `$k` + `:c` modifier | Brace it: `"${k}:codex"` | none | 30/09 (5 pushes) |
 | `pkill -f <pattern>` killed your own shell/runner | Pattern matches the calling command line | Kill by pid | none | 30/09 |
 | Background reads hang / `Errno 11 Resource deadlock avoided` | iCloud evicted files (disk full) | Free space, `brctl download`; work now lives in `~/Developer` | n/a | 30/09 |
