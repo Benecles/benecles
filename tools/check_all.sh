@@ -4,7 +4,18 @@
 # 2. check_front: macro order, dead/missing lesson links, bibliografia.
 # 3. anatomy_check: loose prose, late panels, uncropped kit squares (FLIGHT-LOG F-014..F-016).
 cd "$(dirname "$0")/.." || exit 2
-slugs=$(ls tools/fronts/data | sed 's/\.json$//')
+slugs=$(python3 - <<'PY'
+import json
+from pathlib import Path
+
+# `data/` also holds non-course datasets (for example professors.json).
+# Only course-front records have the course object schema.
+for path in sorted(Path("tools/fronts/data").glob("*.json")):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict) and "course" in data:
+        print(path.stem)
+PY
+)
 python3 tools/fronts/front.py $slugs >/dev/null && python3 -c "import sys; sys.path.insert(0, 'tools'); import assetver; assetver.run()" >/dev/null || exit 1
 fail=0
 for s in $slugs; do
