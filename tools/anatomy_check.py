@@ -3,6 +3,7 @@
   LOOSE-PROSA  a .prosa block not inside .wide (or a chapter/card): it renders at x=0, off the page grid
   LATE-PANEL   the only panel of a one-step scrolly lacks class "on": it fades in late, or never
   SQUARE-KIT   a kit panel alone in its scrolly keeps the default 600x600 viewBox: crop it to the drawing
+  REF-LEAK     a page other than the reference lesson carries `REF ·` agent comments: they were copied, delete them
 
 Run: python3 tools/anatomy_check.py [files...]   (default: every courses/*/*.html). Exit 1 on any hit.
 """
@@ -54,9 +55,15 @@ class Page(HTMLParser):
             self.scrolly = None
 
 
+REFERENCE = os.path.join('courses', 'controle-de-constitucionalidade', 'aula-01.html')
+
+
 def check(path):
+    src = open(path, encoding='utf-8').read()
     p = Page()
-    p.feed(open(path, encoding='utf-8').read())
+    p.feed(src)
+    if not os.path.abspath(path).endswith(REFERENCE) and re.search(r'<!--\s*REF ·', src):
+        p.hits.append('REF-LEAK: agent comments copied from the reference lesson; remove every <!-- REF · … --> block')
     return p.hits
 
 
