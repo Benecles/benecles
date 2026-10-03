@@ -8,9 +8,9 @@
 
 ## Fontes consultadas
 
-- **plano:** `/Users/benecles/Desktop/UFRGS 2026-2/Teoria Geral dos Contratos/Teoria Geral dos Contratos - GVB - 2026.2.pdf`
-- **moodle:** `/Users/benecles/Desktop/UFRGS 2026-2/Teoria Geral dos Contratos/Curso: DIR02023 - Teoria Geral Dos Contratos - Turma D (2026:2) | Moodle - UFRGS.webarchive`
-- **slide_decks:** `/Users/benecles/Desktop/UFRGS 2026-2/Teoria Geral dos Contratos/`
+- **plano:** `/Users/benecles/Documents/UFRGS 2026-2/Teoria Geral dos Contratos/Teoria Geral dos Contratos - GVB - 2026.2.pdf`
+- **moodle:** `/Users/benecles/Documents/UFRGS 2026-2/Teoria Geral dos Contratos/Curso: DIR02023 - Teoria Geral Dos Contratos - Turma D (2026:2) | Moodle - UFRGS.webarchive`
+- **slide_decks:** `/Users/benecles/Documents/UFRGS 2026-2/Teoria Geral dos Contratos/`
 - **live_index:** `/Users/benecles/Developer/ordenacoes-filipinas/courses/teoria-geral-dos-contratos/index.html`
 - **live_register_data:** `/Users/benecles/Developer/ordenacoes-filipinas/tools/fronts/data/teoria-geral-dos-contratos.json`
 

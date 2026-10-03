@@ -5,11 +5,15 @@ Usage: pipeline_check.py {s0,s1,s2,s3,s4} COURSE [--workspace-root PATH]
        [--map PATH] [--shelf PATH] [--chapters PATH] [--triage PATH]
        [--compendium PATH] [--site PATH]
 
-S1 shelf.csv columns: source_id, role, path, sha256, format, text_status,
-and optional lesson_id (for a slide deck). A missing source uses text_status=missing.
+S1 shelf.csv columns: source_id, role (or source_role), path, sha256, format,
+text_status (or `text status`), and optional lesson_id (for a slide deck). A
+missing source uses text_status=missing. Repeat a slide row when one deck serves
+multiple lessons so the association remains explicit.
 S2 chapters/<source_id>/index.json has a chapters list; each item has id,
 path, pdf_start, pdf_end, word_count. Text uses ===== p. N (PDF M) =====.
-S3 triage.csv columns: source_id, chapter_id, lesson_id, role, why.
+S3 triage.csv columns: source_id, chapter_id, lesson_id, role, why. Every
+indexed chapter has a base verdict for every lesson; prerequisite-primary
+background rows may overlay that cell.
 Roles are primary, supporting, background, unused, no_book_covers. The
 no_book_covers row has lesson_id but no chapter_id; unused has chapter_id but
 no lesson_id. A background row must be exactly the closure of prerequisite
@@ -93,6 +97,21 @@ def read_csv(path, errors):
     except OSError as exc:
         errors.append(f"cannot read CSV {path}: {exc}")
         return []
+
+
+def shelf_role(row):
+    """Read either the canonical source_role or the original role column."""
+    return row.get("source_role") or row.get("role", "")
+
+
+def shelf_text_status(row):
+    """Accept both pipeline text_status and the TGC shelf's `text status`."""
+    return row.get("text_status") or row.get("text status", "")
+
+
+def shelf_source_is_available(row):
+    status = shelf_text_status(row).strip().casefold()
+    return not (status.startswith("missing") or status.startswith("not found"))
 
 
 def course_map(path, errors):
@@ -576,7 +595,9 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
     if not rows:
         errors.append("triage has no rows")
     verdicts = set()
+    base_cells = set()
     primary = {lesson_id: set() for lesson_id in ids}
+    supporting = {lesson_id: set() for lesson_id in ids}
     background = {lesson_id: set() for lesson_id in ids}
     no_book = set()
     for n, row in enumerate(rows, 2):
@@ -596,8 +617,13 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
             errors.append(f"triage row {n}: unknown chapter {key}")
             continue
         if role == "unused":
-            if lesson_id:
-                errors.append(f"triage row {n}: unused chapter must have blank lesson_id")
+            if lesson_id and lesson_id not in ids:
+                errors.append(f"triage row {n}: unknown lesson {lesson_id}")
+            elif lesson_id:
+                cell = (key, lesson_id)
+                if cell in base_cells:
+                    errors.append(f"triage row {n}: duplicate base verdict for {key} / {lesson_id}")
+                base_cells.add(cell)
             verdicts.add(key)
             continue
         if lesson_id not in ids:
@@ -605,8 +631,14 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
             continue
         if role in {"primary", "supporting"}:
             verdicts.add(key)
+            cell = (key, lesson_id)
+            if cell in base_cells:
+                errors.append(f"triage row {n}: duplicate base verdict for {key} / {lesson_id}")
+            base_cells.add(cell)
         if role == "primary":
             primary[lesson_id].add(key)
+        elif role == "supporting":
+            supporting[lesson_id].add(key)
         if role == "background":
             background[lesson_id].add(key)
     if require_full_coverage:
@@ -652,8 +684,9 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
         if not primary[lesson_id] and lesson_id not in no_book:
             errors.append(f"{lesson_id}: no primary book chapter or no_book_covers note")
         expected = set().union(*(primary.get(p.get("id"), set()) for p in lesson.get("prerequisites", [])))
-        if background[lesson_id] != expected:
-            errors.append(f"{lesson_id}: background differs from prerequisite primaries")
+        expected_background = expected - primary[lesson_id] - supporting[lesson_id]
+        if background[lesson_id] != expected_background:
+            errors.append(f"{lesson_id}: background differs from prerequisite primaries after direct assignments")
     assignments = triage_assignments(args, catalog, rows, errors)
     if run_policy:
         check_assignment_policy(args, lessons, assignments, shelf, errors)
