@@ -44,9 +44,10 @@ Source ratio: <source words> : <target words> = <x>:1 (target 2:1 to 6:1).
 |---|---|---|---|---|---|---|---|
 Total words: <2.5–4.5k>. Alternate figure and prose-only sections.
 
-## A7. Figures
-| Fig | Verb | Instrument (kit component + script) | The card claims | Frame fit + 4×4 grid |
-|---|---|---|---|---|
+## A7. Figures: the cast (protocols/CUFRGS Visual Casting.md)
+For each figure: **the move** (one sentence) · **cast list** (≥3 candidates from different form families, from the course's world) · **uniqueness tests** (swap, ledger, object, verb) per candidate · **the choice** and the one sentence that sells it · **the sheet, described** top to bottom with real labels and numbers, and which ink is the tested term.
+| Fig | Move | Cast (chosen) | Rejected casts and why | The sheet, described | Card claims |
+|---|---|---|---|---|---|
 
 ## A8. Cut list (and why)
 -
