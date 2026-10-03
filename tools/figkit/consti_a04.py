@@ -50,8 +50,8 @@ def model_field(k):
         f.o.append(line(225, 390, 445, 245, tone='mix', w=2.2))
         f.point(225, 390, 'RE', active=True, tone='conc', dx=-12, dy=23,
                 anchor='end')
-        f.point(445, 245, 'ADI', active=True, tone='dif', dx=12, dy=18,
-                sub='EC 16/1965')
+        f.point(445, 245, 'EC 16/1965', active=True, tone='dif', dx=12, dy=-14,
+                anchor='start', sub='Depois de 1988')
 
     o = f.svg()
     o += historical_strip()
