@@ -128,6 +128,19 @@ def read_csv(path):
         return list(csv.DictReader(handle))
 
 
+def shelf_role(row):
+    return row.get("source_role") or row.get("role", "")
+
+
+def shelf_text_status(row):
+    return row.get("text_status") or row.get("text status", "")
+
+
+def shelf_source_is_available(row):
+    status = shelf_text_status(row).strip().casefold()
+    return not (status.startswith("missing") or status.startswith("not found"))
+
+
 def safe_name(value):
     value = re.sub(r"[^A-Za-z0-9._-]+", "-", str(value)).strip("-._")
     value = value or "source"
@@ -282,7 +295,7 @@ def build(course, site=DEFAULT_SITE):
 
         slide_rows = [
             row for row in shelf_rows
-            if row.get("role", "").split(";", 1)[0].strip().lower() == "slides"
+            if shelf_role(row) == "slides"
             and lesson_id in mapped_lessons(row)
         ]
         slide_texts = []
@@ -290,7 +303,7 @@ def build(course, site=DEFAULT_SITE):
         for row in slide_rows:
             source_id = row["source_id"]
             matches = sorted((key, item) for key, item in catalog.items() if key[0] == source_id)
-            if row.get("text_status") in {"text layer", "OCR done"} and matches:
+            if shelf_source_is_available(row) and matches:
                 for (matched_source, chapter_id), (entry, text_path) in matches:
                     slide_texts.append(text_path.read_text(encoding="utf-8"))
                     slide_meta.append((matched_source, chapter_id, page_label(entry)))
@@ -306,8 +319,8 @@ def build(course, site=DEFAULT_SITE):
         slides_path = output_dir / "10-slides.txt"
         slides_path.write_text("\n\n".join(text.rstrip() for text in slide_texts) + "\n", encoding="utf-8")
         for source_id, chapter_id, pages in slide_meta:
-            status = shelf_by_id.get(source_id, {}).get("text_status", "")
-            why = "Lesson slide deck from S1." if status in {"text layer", "OCR done"} else f"S1 records `{source_id}` as missing; placeholder documents the source gap."
+            status = shelf_text_status(shelf_by_id.get(source_id, {}))
+            why = "Lesson slide deck from S1." if shelf_source_is_available(shelf_by_id.get(source_id, {})) else f"S1 records `{source_id}` as missing; placeholder documents the source gap."
             records.append(make_record(slides_path, source_id, chapter_id, pages, "slides", why))
 
         assigned = [
@@ -324,7 +337,7 @@ def build(course, site=DEFAULT_SITE):
             if key not in catalog:
                 raise ValueError(f"S3 references unknown chapter {source_id}/{chapter_id}")
             entry, text_path = catalog[key]
-            shelf_role = shelf_by_id.get(source_id, {}).get("role", "").split(";", 1)[0].strip().lower()
+            shelf_role = shelf_role(shelf_by_id.get(source_id, {}))
             if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_role == "statute":
                 if entry.get("locator") != "article" or chapter_id == "whole":
                     raise ValueError(f"S4 legal sources must be assembled by article: {source_id}/{chapter_id}")

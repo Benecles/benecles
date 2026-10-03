@@ -62,7 +62,7 @@ def pull(course, lesson, source_id, chapter_or_pages, why):
     catalog = chapter_catalog(root / "chapters")
     with (root / "shelf.csv").open(newline="", encoding="utf-8-sig") as handle:
         shelf_rows = list(csv.DictReader(handle))
-    shelf_roles = {row.get("source_id", ""): row.get("role", "") for row in shelf_rows}
+    shelf_roles = {row.get("source_id", ""): row.get("source_role") or row.get("role", "") for row in shelf_rows}
     legal_source = source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_roles.get(source_id) == "statute"
     selector = chapter_or_pages.strip()
     if legal_source:
