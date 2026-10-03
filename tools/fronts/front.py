@@ -157,6 +157,7 @@ def _words(page: Path) -> int:
     s = page.read_text(encoding="utf-8")
     m = re.search(r"<main\b.*?</main>", s, re.S)
     s = m.group(0) if m else s
+    s = re.sub(r"<!--.*?-->", " ", s, flags=re.S)  # agent notes (REF comments) are not reading time
     s = re.sub(r"<(script|style|svg|figure|nav|aside)\b.*?</\1>", " ", s, flags=re.S | re.I)
     return len(html.unescape(re.sub(r"<[^>]+>", " ", s)).split())
 
