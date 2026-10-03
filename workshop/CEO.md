@@ -55,7 +55,7 @@ If `~/Developer` is missing, restore first:
 
 ## Next up (in order)
 1. Gate whatever is `needs-gate`, Aula 08 first.
-2. **Write master briefs (not code)** for: ~~the class-register hover~~ (done, #18; rareui.com was down, so ask the chairman which effect he meant), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
+2. **Write master briefs (not code)** for: ~~the class-register hover~~ (done, #18; rareui was a passing Twitter find, not a spec), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
 3. Write the remaining course-world pages for Visual Casting (drafts exist inside the doc) as the course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
@@ -65,7 +65,7 @@ If `~/Developer` is missing, restore first:
 - **Existing extracts to reuse:** `work/book-extracts/` (+ `book-extract-map.md`), `work/controle-depth/extracts/`, `work/source-intake-2026-09-28/` (Metodologia, Processo, Const I intake on the same philosophy).
 
 ## Open decisions for the chairman
-- Hero composition (`specimen/hero.html`) and whether the hero drawing shows on phones.
+- Hero composition (https://benecles.github.io/ordenacoes-filipinas/specimen/hero.html; always give the chairman full live URLs) and whether the hero drawing shows on phones.
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
 - **Search `BUGS.md` by symptom before debugging; add a row with every fix.**
