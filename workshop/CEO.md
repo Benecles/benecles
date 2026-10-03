@@ -47,14 +47,15 @@ If `~/Developer` is missing, restore first:
 ## In flight (Codex; gate each at `needs-gate`)
 - **S5 writing PAUSED (F-023)** until the prototype passes: **Controle Aula 08** revision (site #59). Gate it hard: slop_lint 0 hard, then READ against Aula 01; then its verdict goes to every other lesson PR (#52 A02, #53 A04, #54 A05, #55 A07, #60 A09, plus A03, A06, A30).
 - **#17 CAST-1:** casting ledger + cast every in-flight figure redo before drawing.
-- **#10 FIG-2:** kit PR #48 (clean) → #51 Delito U01 (clean) → #56/#57/#58 (conflicts; rebase). Contratos A01: approved the deliberate hero removal despite svgcheck. Gate by looking, against Visual Casting.
+- **#10 FIG-2 (gated 03/10):** #48 kit MERGED, #56 Latam A02 MERGED (the batch bar). #51 Delito U01, #57 Const I A04, #58 Processo A01 REVISE (verdicts on each PR; F-025, F-026). Contratos A01: no PR yet; hero removal approved despite svgcheck. Gate by looking, against Visual Casting.
+- **#18 REG-H1:** register whole-row hover brief (wash + clock wind), filed 03/10.
 - **#11 CHG-1 (#47):** rebase; must keep the CHG-2 toggle.
 - **#16 BIO-1:** professor bios data (Codex researches; CEO then briefs the pop-up).
 - **#14 TBL-1**, **#12 PIPE-C** (S3 batches), **#15** blueprints A10–A13 to redo with the template.
 
 ## Next up (in order)
 1. Gate whatever is `needs-gate`, Aula 08 first.
-2. **Write master briefs (not code)** for: the class-register hover (whole-row affordance; inspiration rareui.com), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
+2. **Write master briefs (not code)** for: ~~the class-register hover~~ (done, #18; rareui.com was down, so ask the chairman which effect he meant), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
 3. Write the remaining course-world pages for Visual Casting (drafts exist inside the doc) as the course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
