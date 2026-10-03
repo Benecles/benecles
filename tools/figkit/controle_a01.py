@@ -26,7 +26,7 @@ def fig1():
     o += t(40, 318, 'Objeto · o ato medido', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
     o += r.strip(372, LEI_A[1], LEI_A[0], note='cabe na régua', d=.2)
     o += r.limit_mark(400, 'limite', 'independe de autorização')
-    return svg('0 0 600 600', o, cls='panel fig on', ident='p-piramide', label='A relação vertical')
+    return svg('16 72 568 352', o, cls='panel fig on', ident='p-piramide', label='A relação vertical')
 
 
 def fig2():
@@ -35,7 +35,7 @@ def fig2():
     o += r.strip(310, LEI_A[1], LEI_A[0], note='compatível · válida', d=.2)
     o += r.strip(410, LEI_B[1], LEI_B[0], note='incompatível · vício', d=.6)
     o += r.limit_mark(450, 'limite', 'independe de autorização', d=1)
-    return svg('0 0 600 600', o, cls='panel fig', ident='p-contraste', label='Conformidade ou incompatibilidade')
+    return svg('16 72 568 398', o, cls='panel fig on', ident='p-contraste', label='Conformidade ou incompatibilidade')
 
 
 def fig3():
@@ -49,7 +49,7 @@ def fig3():
     o += t(30, 300, 'Convencionalidade · tratado supralegal', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
     o += pacto.body() + pacto.strip(494, lei[1], lei[0], note='não cabe no tratado', d=.6)
     o += pacto.limit_mark(520, 'limite', 'só alimentos', d=1)
-    return svg('0 0 600 600', o, cls='panel fig', ident='p-parametro', label='Qual é o parâmetro?')
+    return svg('14 26 572 520', o, cls='panel fig on', ident='p-parametro', label='Qual é o parâmetro?')
 
 
 if __name__ == '__main__':
