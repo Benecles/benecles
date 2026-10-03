@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Marcelo Schenk Duque",
+    "courses": [
+      "controle-de-constitucionalidade"
+    ],
+    "title": "Professor de Direito Constitucional, UFRGS",
+    "bio": "Doutor em Direito do Estado pela UFRGS, em cotutela com a Ruprecht-Karls-Universität Heidelberg. Sua produção inclui estudos sobre jurisdição constitucional e supremacia da Constituição.",
+    "sources": [
+      "https://www.escavador.com/sobre/1420535/marcelo-schenk-duque",
+      "https://esars.org.br/noticia/coloquio-de-direitos-fundamentais-o-caso-das-biografias-nao-autorizadas/14796",
+      "https://seer.ufrgs.br/ppgdir/article/download/43496/27374"
+    ],
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Giovana Benetti",
+    "courses": [
+      "teoria-geral-dos-contratos"
+    ],
+    "title": "Professora de Direito Privado, UFRGS",
+    "bio": "Doutora em Direito Civil pela USP, fez pós-doutorado na mesma universidade e é graduada em Direito pela UFRGS. Sua produção em Direito Privado inclui uma obra sobre dolo civil e estudos sobre dever de informar e contratos.",
+    "sources": [
+      "https://www.cmaa.org.br/wp-content/uploads/2024/08/CV-resumido-Giovana-Benetti-PT-13.05.24.pdf"
+    ],
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Orlando Faccini Neto",
+    "courses": [
+      "teoria-do-delito"
+    ],
+    "title": "Professor de Direito Penal, UFRGS",
+    "bio": "É mestre em Direito Público pela Unisinos e doutor em Ciências Jurídico-Criminais pela Universidade de Lisboa. Sua produção inclui Teoria Geral do Crime e estudos de Direito Penal.",
+    "sources": [
+      "https://ajuris.org.br/perfil-orlando-faccini-neto-presidente-da-ajuris/"
+    ],
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Roberta Camineiro Baggio",
+    "courses": [
+      "direito-latino-americano",
+      "direito-constitucional-i"
+    ],
+    "title": "Professora de Direito, UFRGS",
+    "bio": "Roberta Camineiro Baggio é professora adjunta da graduação e do Programa de Pós-Graduação em Direito da UFRGS. É graduada em Direito pela Universidade Federal de Uberlândia, mestre em Direito pela Universidade do Vale do Rio dos Sinos e doutora em Direito pela Universidade Federal de Santa Catarina; atua em direitos humanos e constitucionalismo na América Latina.",
+    "sources": [
+      "https://periodicos.ufsc.br/index.php/sequencia/article/view/2177-7055.2019v41n83p193"
+    ],
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Eduardo Kochenborger Scarparo",
+    "courses": [
+      "processo-civil-i"
+    ],
+    "title": "Professor de Direito Processual Civil, UFRGS",
+    "bio": "Eduardo Kochenborger Scarparo é professor adjunto de Direito Processual Civil na graduação e professor permanente do PPGD-UFRGS. Doutor em Direito pela UFRGS (2011) e graduado em Ciências Jurídicas e Sociais pela mesma universidade (2005), atua em processo civil.",
+    "sources": [
+      "https://scarparo.adv.br/eduardo-scarparo/"
+    ],
+    "checked": "2026-10-03"
+  },
+  {
+    "name": "Alfredo de Jesus Dal Molin Flores",
+    "courses": [
+      "metodologia-juridica"
+    ],
+    "title": "Professor de Metodologia Jurídica, UFRGS",
+    "bio": "Alfredo de Jesus Dal Molin Flores é professor associado de Metodologia Jurídica na UFRGS e professor permanente do PPGDir-UFRGS. Doutor em Direito e Filosofia pela Universitat de València (2004), pesquisa Teoria e História do Direito, metodologia jurídica, filosofia do direito e retórica jurídica.",
+    "sources": [
+      "https://revistas.ufpr.br/historiadodireito/article/view/89165"
+    ],
+    "checked": "2026-10-03"
+  }
+]
