@@ -36,26 +36,26 @@ If `~/Developer` is missing, restore first:
 8. **The CEO is the master prompter (chairman, 03/10; the most important rule here).** We already have more building agency than we can use; doing the work yourself, or asking agents to emulate you, is not the lever. The CEO's job is the WHAT: take the chairman's thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator's. Priorities, in order: (1) what it is and what it's for, (2) what it looks and feels like, in detail, (3) implementation hints, only if they matter. The CEO keeps final say at the gate. Example: "airplane mode" is not a button to build; it's a brief: an orange plane in an orange ring, bottom left, what it does, what the reader sees offline, which words it uses.
 7. **The rocket line (chairman, 01/10).** Work flies in staggered waves: launch #1, finish #2, build #3, design #4, all at once. Every gate turns its findings into numbered entries in `FLIGHT-LOG.md`, and every in-flight stage applies them before its next step. Never let a stream idle waiting on a gate; the gate feeds the log, the log feeds the line.
 
-## State (01/10 night, handed over by Claude Opus 5.5)
-- **Site:** https://benecles.github.io/ordenacoes-filipinas/. Shipped this chair: TXT-1 (#46, Controle Aula 01 rebuilt as the S5 reference bar, 940 → 3.1k words; `.compare` row labels fixed on phones), TXT-1b (#49, Aula 01 figures cropped to their drawings, prose on the grid, panels `on`, new `tools/anatomy_check.py` in `check_all`), HERO-0 (#50, `specimen/hero.html`: three lesson-opening compositions, awaiting the chairman's pick). Earlier: LBL-1/2, FIG-1, changelog. `ISSUES.md` logs each.
-- **Reference bar:** live Controle Aula 01 + `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md`.
-- **Memory of mistakes:** `BUGS.md` (symptom → cause → fix → check; Codex already adds rows) and `FLIGHT-LOG.md` F-001…F-022. Checks that enforce them: `anatomy_check` (in `check_all`), `slop_lint` (now hard-bans backstage talk: slides, materiais da disciplina, nesta leitura, standard ids, visible sources), breakscan.
-- **Figures, the standard:** `protocols/CUFRGS Figure Library.md` (test 4 now covers frame fit, negative space with a 4×4 grid ≥ 10/16, type keeping pace). Kit: site `tools/figkit/`.
-- **Codex hit its usage limit on 01/10 night**; it resumes after the reset.
+## State (03/10, handed over by Claude Opus 5.5)
+- **Read mandate #8 first: the CEO is the master prompter (WHAT, not HOW).** Turn the chairman's ideas into detailed master briefs via GitHub issues; build only trivial fixes; keep final say at the gate.
+- **Site shipped this chair:** TXT-1/1b (#46, #49: Aula 01 rebuilt, figures fit, anatomy_check), HERO-0 (#50 specimen), DESK-1 (#61 paths), CHG-2 (#62 changelog open/close all), LAY-1 (#63 prose-only stretches centred, 720 px), REF-1 (#64 Aula 01 annotated with 22 `REF ·` agent notes; REF-LEAK guard).
+- **Reference set:** live Controle Aula 01 + its REF comments; reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (Method notes); template `protocols/templates/Lesson Blueprint.md`.
+- **Figures:** `protocols/CUFRGS Visual Casting.md` governs (house vs role, course worlds, casting steps, ledger, six example casts). Figure Library = craft and tests.
+- **Memory of mistakes:** `BUGS.md` (Codex adds rows), `FLIGHT-LOG.md` F-001…F-024. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban; ignores HTML comments), breakscan.
+- **Desktop holds only Felipe + Mark.** Course material: `~/Documents/UFRGS 2026-2`.
 
-## In flight (all Codex, workshop issues; gate each as it shows `needs-gate`)
-- **Lesson PRs, REVISE posted 01/10 night** (site #52 A02, #53 A04, #54 A05, #55 A07, #59 A08, #60 A09; issues #13 W2, #15 W3). Length and structure are right; the text breaks F-019..F-022 (backstage talk, scope fence copied onto the page, writing to the gate, fictional carrier in A02). Re-gate when `needs-gate` returns: `slop_lint` 0 hard hits first, then READ the page against Aula 01.
-- **FIG-2 (#10), not gated yet:** site #48 kit components (clean, check_all PASS; gate on the specimen first, the others rebase on it), #51 Delito U01 (clean), #56 Latam 02, #57 Const I 04, #58 Processo 01 (all three CONFLICT with main: rebase). Gate by looking at every figure (Figure Library, incl. the new negative-space test).
-- **CHG-1 (#11), site #47:** CONFLICT with main (both touched `index.html`); rebase, then gate desktop light + dark + 375 px.
-- **#5 PIPE-5** (Aula 30 ADC), **#12 PIPE-C** (Contratos S0–S4, S2 was running), **#14 TBL-1** (table labels in six courses): no gate requests yet.
+## In flight (Codex; gate each at `needs-gate`)
+- **S5 writing PAUSED (F-023)** until the prototype passes: **Controle Aula 08** revision (site #59). Gate it hard: slop_lint 0 hard, then READ against Aula 01; then its verdict goes to every other lesson PR (#52 A02, #53 A04, #54 A05, #55 A07, #60 A09, plus A03, A06, A30).
+- **#17 CAST-1:** casting ledger + cast every in-flight figure redo before drawing.
+- **#10 FIG-2:** kit PR #48 (clean) → #51 Delito U01 (clean) → #56/#57/#58 (conflicts; rebase). Contratos A01: approved the deliberate hero removal despite svgcheck. Gate by looking, against Visual Casting.
+- **#11 CHG-1 (#47):** rebase; must keep the CHG-2 toggle.
+- **#16 BIO-1:** professor bios data (Codex researches; CEO then briefs the pop-up).
+- **#14 TBL-1**, **#12 PIPE-C** (S3 batches), **#15** blueprints A10–A13 to redo with the template.
 
 ## Next up (in order)
-1. Gate FIG-2 #48 (kit) → #51 → rebase/gate #56–#58; then CHG-1 #47. Re-gate lesson PRs as they return.
-2. **Hero:** the chairman picks Atual / Desenho à frente / Cartaz on `specimen/hero.html` (CEO recommends Desenho à frente). Then roll it out to every lesson in one change (`assets` CSS per course + check). Open question to him: show the hero drawing on phones too (it's `display:none` under 860 px today).
-3. **Class register hover:** the whole row is clickable but only a thin underline shows. Build a stronger whole-row hover (no box) in `tools/fronts/front.py` + `assets/front.css` + register specimen. Inspiration the chairman sent: rareui.com (animated React components: tactile hovers, folder, gravity letters). Ideas only, our site is static HTML.
-4. **Professor pop-up:** a short bio on hover/click of the professor's name in each lesson kicker, written from public sources (faculty/CV pages). Mock it on one course first.
-5. **Recompose Aula 01 Fig. 1** under the negative-space rule (it's a T: the empty corners under the ruler need content), and lift its label size.
-6. Kit growth (who-decides matrix, docket, tally, strata) as redos need them; lesson-page anatomy + subpage standard; course decks as function.
+1. Gate whatever is `needs-gate`, Aula 08 first.
+2. **Write master briefs (not code)** for: the class-register hover (whole-row affordance; inspiration rareui.com), the professor pop-up (after BIO-1 data), the hero rollout (once the chairman picks on `specimen/hero.html`; CEO recommends "Desenho à frente"), and the phone hero decision.
+3. Write the remaining course-world pages for Visual Casting (drafts exist inside the doc) as the course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
 - **Text:** Controle is genuinely weak: median lesson 1.25k words (other courses 2.7–3.8k); Aula 01 circles abstractions, promises an example it never gives, repeats its own summary, and ends with a "Fontes e limites" disclaimer (breaks the no-citations rule). Aula 24 is decent (concrete, statute-anchored). Contratos is equally thin (1.06k median). Cause: writers got slides plus scattered ad-hoc extracts, never per-lesson prepared sources.
@@ -64,9 +64,7 @@ If `~/Developer` is missing, restore first:
 - **Existing extracts to reuse:** `work/book-extracts/` (+ `book-extract-map.md`), `work/controle-depth/extracts/`, `work/source-intake-2026-09-28/` (Metodologia, Processo, Const I intake on the same philosophy).
 
 ## Open decisions for the chairman
-- Hero composition (specimen/hero.html) and whether the hero drawing shows on phones.
-- Professor bios: OK to write them from public faculty/CV pages?
-- Optional: grant the `project` scope (`gh auth refresh -s project`) if he wants a Project board on top of the issues.
+- Hero composition (`specimen/hero.html`) and whether the hero drawing shows on phones.
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
 - **Search `BUGS.md` by symptom before debugging; add a row with every fix.**
