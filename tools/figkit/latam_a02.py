@@ -25,18 +25,43 @@ def tese(active=None):
 
 
 def argentina():
-    tl = Timeline('a02-ar', 50, 560, 300, 1925, 1985)
-    o = t(50, 44, 'Argentina · a Corte valida golpes por acordada', size=10.5, caps=True, weight=700, fill='var(--ink-2)')
-    for yr, h in ((1930, 90), (1943, 130), (1955, 90), (1962, 130), (1966, 170), (1976, 90)):
-        tl.event(yr, h, str(yr), tone='conc')
-    tl.span(72, 1947, 1985, 'cada troca de governo troca a Corte inteira', tone='ink', open_end=True)
-    tl.link(1947, 1930, 70, '1947 · Perón destitui 4 dos 5 ministros', sub='por terem validado o golpe de 1930')
+    # The dated marks are the Argentine coups listed in the lesson. The Timeline
+    # supplies their positions; the lesson's text supplies the labels and links.
+    tl = Timeline('a02-ar', 50, 550, 240, 1930, 1976, step=1000)
+    for yr, h in ((1930, 82), (1943, 44), (1955, 82), (1962, 44), (1966, 82), (1976, 44)):
+        tl.event(yr, h, '', tone='conc')
+    tl.link(1930, 1947, 32, '', tone='mix')
+    tl.span(406, 1947, 1976, '', tone='mix', open_end=True)
+
+    o = t(50, 60, 'Argentina · golpes validados por acordadas', size=14, caps=True, weight=700, fill='var(--ink-2)')
+    o += t(50, 92, 'cada marca = um golpe', size=14, weight=600, fill='var(--conc)')
+    event_rows = [(1930, 82, 'start'), (1943, 44, 'middle'), (1955, 82, 'middle'),
+                  (1962, 44, 'end'), (1966, 82, 'start'), (1976, 44, 'end')]
+    for yr, h, anchor in event_rows:
+        x = tl.x(yr)
+        o += t(x, tl.y - h - 10, str(yr), size=14, anchor=anchor, weight=700, fill='var(--conc)')
+
     o += tl.svg()
-    o += f'<path d="M50 486h12l-6 -11z" style="fill:var(--conc)"/>' + t(70, 486, 'golpe validado por acordada da Corte', size=10.5)
-    o += line(50, 506, 560, 506, tone='muted', w=.8)
-    o += t(50, 528, 'Venezuela', size=10.5, caps=True, weight=700)
-    o += t(50, 544, 'regras de recrutamento descumpridas; nomeações em regimes de exceção.', size=10.5)
-    o += t(50, 559, 'Quase metade dos ministros veio da magistratura, e isso não bastou.', size=10.5, fill='var(--ink-2)')
+    o += t(50, 330, '1947 · Perón destitui', size=14, weight=700, fill='var(--mix)')
+    o += t(50, 348, '4 de 5 ministros por', size=14, fill='var(--ink)')
+    o += t(50, 366, 'terem validado o golpe', size=14, fill='var(--ink)')
+    o += t(50, 384, 'de 1930', size=14, fill='var(--ink)')
+    o += t(tl.x(1947) + 55, 330, 'desde 1947', size=14, weight=700, fill='var(--mix)')
+    o += t(tl.x(1947) + 55, 348, 'cada troca de governo', size=14, fill='var(--ink)')
+    o += t(tl.x(1947) + 55, 366, 'troca a Corte inteira', size=14, fill='var(--ink)')
+
+    o += line(40, 436, 560, 436, tone='muted', w=1)
+    o += t(50, 464, 'Venezuela', size=14, caps=True, weight=700, fill='var(--ink-2)')
+    o += t(50, 494, 'regras de recrutamento', size=14, weight=700)
+    o += t(50, 512, 'descumpridas', size=14, fill='var(--conc)')
+    o += t(50, 540, 'nomeações', size=14, weight=700)
+    o += t(50, 558, 'em regimes de exceção', size=14, fill='var(--conc)')
+    o += t(322, 494, 'origem profissional', size=14, caps=True, weight=700, fill='var(--ink-2)')
+    o += t(322, 514, 'quase metade dos ministros', size=14, weight=700, fill='var(--dif)')
+    o += line(322, 532, 542, 532, tone='muted', w=3)
+    o += line(322, 532, 420, 532, tone='dif', w=7)
+    o += t(322, 560, 'veio da magistratura', size=14, fill='var(--ink)')
+    o += t(322, 588, 'e isso não bastou', size=14, weight=700, fill='var(--conc)')
     return o
 
 
@@ -87,4 +112,5 @@ def brasil():
 
 def panels():
     bodies = [tese(), argentina(), cooptacao(), brasil()]
-    return [svg('0 0 600 600', b, cls='panel fig on' if k == 0 else 'panel fig', ident=IDS[k], label=LABELS[k]) for k, b in enumerate(bodies)]
+    views = ['0 0 600 600', '34 30 540 575', '0 0 600 600', '0 0 600 600']
+    return [svg(views[k], b, cls='panel fig on' if k == 0 else 'panel fig', ident=IDS[k], label=LABELS[k]) for k, b in enumerate(bodies)]

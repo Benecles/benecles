@@ -29,8 +29,8 @@ ENTRIES = [
      'Três perguntas num tronco; cada saída é uma consequência jurídica com seu artigo. No último passo, o caso do casaco percorre o caminho inteiro e termina atípico, porque o furto não tem forma culposa.',
      'substitui tdl-u05-s2+2', delito_u05.panels(), 'teoria-do-delito'),
     ('Linha do tempo · e plano', 'ordenar', 'Latam · Aula 02 · Fig. 1 (4 passos)',
-     'A tese num plano (o Brasil fora da diagonal); a Argentina numa linha do tempo de golpes validados, com o expurgo de 1947 ligado ao golpe de 1930; a cooptação como um circuito fechado; o ativismo brasileiro em três faixas.',
-     'substitui dla-a02-s2+3 (livros-razão)', latam_a02.panels(), 'direito-latino-americano'),
+     'A tese num plano; a linha argentina liga a validação dos golpes por acordada à destituição de 1947 e à troca da Corte; o painel venezuelano põe regras descumpridas e origem de quase metade na magistratura lado a lado; seguem o circuito de cooptação e as três faixas brasileiras.',
+     'substitui dla-a02-s3 (Argentina e Venezuela)', latam_a02.panels(), 'direito-latino-americano'),
 ]
 
 
