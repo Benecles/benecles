@@ -21,7 +21,7 @@ Then read each issue below in full, comments included: the latest CEO comment is
 - No backstage on reader pages (F-019/F-020), no fictional carriers (F-022), each trap once (F-021), figures are instruments, not text tables (F-025/F-026).
 
 ## Stream A: start now, highest priority (tomorrow 05/10 is the chairman's Latam activity)
-**A1 · LAT-1 (workshop #25): rebuild Direito Latino-americano on the full pipeline.** Start S0–S4 immediately. Blueprints for all ten pages + panel follow. Write all ten pages; Aula 05 (Gelman) first so its lessons feed the rest, but don't wait on anything. Reuse `work/latam-prep/` (digests, ADPF 153 OCR, official decision copies, inventories). Official sources only.
+**A1 · LAT-1 (workshop #25): rebuild Direito Latino-americano on the full pipeline.** Start S0–S4 immediately. Blueprints for all ten pages + panel follow. Write all ten pages; Aula 05 (Gelman) first so its lessons feed the rest, but don't wait on anything. **Rebuild on the live pages, never from scratch:** keep by default, cut only with a reason in the PR (see the 04/10 comment on #25). Reuse `work/latam-prep/` (digests, ADPF 153 OCR, official decision copies, inventories). Official sources only.
 **A2 · BRK-1 (workshop #23): breakscan sees what the reader sees.** Fonts loaded, 1280 + 375, every panel step, CLIP + OVERFLOW, portable paths. It must FAIL on #65, Latam 08/09 at 375 and #58 before it counts. Every figure gate depends on this.
 
 ## Stream B: close out prior work (in parallel with A)
