@@ -6,6 +6,17 @@ You are the orchestrator for the CUFRGS study site (site repo `~/Developer/orden
 
 > **WIDE, NOT LONG (chairman, 04/10).** Fan out to the maximum parallelism the app allows (16 workers) from the first minute and keep every slot busy until the work is gone. Never run a stream on one or two long-lived workers. Cut work into small units (one lesson, one stage, one PR, one decision ≤ ~1 h of work each) and give each its own worker. When a worker finishes, hand its slot the next unit at once. Within LAT-1: S1/S2 per source in parallel; S3 per lesson; one blueprint worker + one panel per page (10 at once); one writer per page (10 at once). Stream B items each get their own worker alongside. You orchestrate: read, split, dispatch, merge. Don't do unit work in your own context. Post a status line on the issue every time a batch lands, with how many workers are running.
 
+> **MODELS FOR LAT-1 (chairman, 04/10):** Sol for the S0 course map, **Sol for the ten S5 blueprints** (no gates → the blueprint is the last real judgment; long Spanish decisions; only ten of them), Sol for the S5a panel. Luna for everything else: high for S1/S2/S4, xhigh for S3 triage and for writing.
+
+> **PIPELINE, NOT WAVES (chairman, 04/10).** No stage waits for the whole previous stage to finish. Each unit moves forward the moment its own inputs exist:
+> - **S1 → S2 per source.** A decision is split as soon as it's on the shelf; don't wait for the full shelf.
+> - **S3 per lesson.** Triage a lesson once the sources its syllabus line names are split. Late sources (a gap that's finally fetched) are appended later as new verdicts, not by redoing triage.
+> - **S4 per lesson,** the moment that lesson's triage is in (it's a script, so seconds).
+> - **Blueprint → panel → write → checks → merge per lesson.** Aula 05 can be in writing while Aula 09 is still in triage. A REVISE goes straight back to that lesson's author while every other lesson keeps moving.
+> - **Stream B never waits on Stream A,** and vice versa.
+> **The only deliberate serial points**, kept small: (1) **one merge queue** (one worker merges PRs one at a time: merge main, rebuild the offline manifest/fronts, check_all, merge), because parallel merges conflict in the manifest and fronts; (2) **one writer per page** (never split a page across writers: the text and its figures need one mind); (3) **cards, front register and revisão regenerate after the last lesson merges**, then once more if a later fix touches cases. Everything else runs in parallel.
+> **Diminishing returns:** don't cut units below ~15 min of work (overhead beats gains), don't run more than 16 at once, and don't parallelise anything that would need a merge of judgment (one blueprint = one author).
+
 ## Read first (in this order, in full)
 1. `CEO.md` (mandate, state, gotchas), then `FLIGHT-LOG.md` (F-001…F-027: every entry is a rule you must apply) and `BUGS.md` (search by symptom before debugging).
 2. `protocols/CUFRGS Source Pipeline.md`, `protocols/templates/Lesson Blueprint.md`, and the reference pair: `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` with its Method notes, plus live `courses/controle-de-constitucionalidade/aula-01.html` and its `REF ·` comments.
