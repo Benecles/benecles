@@ -36,26 +36,30 @@ If `~/Developer` is missing, restore first:
 8. **The CEO is the master prompter (chairman, 03/10; the most important rule here).** We already have more building agency than we can use; doing the work yourself, or asking agents to emulate you, is not the lever. The CEO's job is the WHAT: take the chairman's thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator's. Priorities, in order: (1) what it is and what it's for, (2) what it looks and feels like, in detail, (3) implementation hints, only if they matter. The CEO keeps final say at the gate. Example: "airplane mode" is not a button to build; it's a brief: an orange plane in an orange ring, bottom left, what it does, what the reader sees offline, which words it uses.
 7. **The rocket line (chairman, 01/10).** Work flies in staggered waves: launch #1, finish #2, build #3, design #4, all at once. Every gate turns its findings into numbered entries in `FLIGHT-LOG.md`, and every in-flight stage applies them before its next step. Never let a stream idle waiting on a gate; the gate feeds the log, the log feeds the line.
 
-## State (03/10, handed over by Claude Opus 5.5)
+## State (04/10, handed over by Claude Opus 5.5)
 - **Read mandate #8 first: the CEO is the master prompter (WHAT, not HOW).** Turn the chairman's ideas into detailed master briefs via GitHub issues; build only trivial fixes; keep final say at the gate.
-- **Site shipped this chair:** TXT-1/1b (#46, #49: Aula 01 rebuilt, figures fit, anatomy_check), HERO-0 (#50 specimen), DESK-1 (#61 paths), CHG-2 (#62 changelog open/close all), LAY-1 (#63 prose-only stretches centred, 720 px), REF-1 (#64 Aula 01 annotated with 22 `REF ·` agent notes; REF-LEAK guard).
-- **Reference set:** live Controle Aula 01 + its REF comments; reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (Method notes); template `protocols/templates/Lesson Blueprint.md`.
-- **Figures:** `protocols/CUFRGS Visual Casting.md` governs (house vs role, course worlds, casting steps, ledger, six example casts). Figure Library = craft and tests.
-- **Memory of mistakes:** `BUGS.md` (Codex adds rows), `FLIGHT-LOG.md` F-001…F-024. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban; ignores HTML comments), breakscan.
+- **This chair (03/10) was a gating chair.** Merged: #48 figure kit (Map/Tally/Calendar/Strata), #56 Latam A02, #57 Const I A04 (two-axis Field: the FIG-2 bar, with #56), #66 BIO-1 data, ws #19 CAST-1 ledger (395 rows; live DOM count is authoritative, not the old 400), ws #20 BUGS row, ws #21 blueprints A10–A13 (approved with writer notes on the PR). Briefs filed: **#18 REG-H1** (register hover) and **#22 BIO-2** (professor card).
+- **New FLIGHT-LOG rules:** F-025 (a redo keeps its predecessor's claim; a figure never restates adjacent text), F-026 (text in ruled cells is a table, not a figure; delete-the-text test), F-027 (a clean probe is not a look: crops of every changed panel in the PR body).
+- **Reference set:** live Controle Aula 01 + its REF comments; reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (Method notes); template `protocols/templates/Lesson Blueprint.md`. Best new blueprint: `compendium/aula-10/blueprint.md` (real 2025 IOF thread, casts with rejected alternatives).
+- **Figures:** `protocols/CUFRGS Visual Casting.md` governs. Figure Library = craft and tests.
+- **Memory of mistakes:** `BUGS.md`, `FLIGHT-LOG.md` F-001…F-027. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban), breakscan (**currently unreliable, see Next up #2**).
+- **New machine (04/10):** the chairman moved to a new Mac (`MacBook-Air-2`). `gh` is authed as Benecles (keyring, HTTPS); git identity set globally to `Benecles <[email]>`. Repos + Codex worktree folders are in `~/Developer`.
 - **Desktop holds only Felipe + Mark.** Course material: `~/Documents/UFRGS 2026-2`.
 
-## In flight (Codex; gate each at `needs-gate`) — updated 03/10 midday
-- **S5 writing PAUSED (F-023)** until **Controle Aula 08 (site #59)** passes. v2 gated 03/10: REVISE, close (F-019/020 fixed; F-021 repetition is the fault; exact cut list on the PR). When it passes, its verdict goes to #52 A02, #53 A04, #54 A05, #55 A07, #60 A09 (+ A03, A06, A30).
-- **FIG-2 (#10):** merged #48 kit, #56 Latam A02, #57 Const I A04. **#58 Processo A01:** approve on 2 fixes (clipped labels + rebase); merge on sight. **#65 Contratos A01:** REVISE (6 panels visibly broken while breakscan said clean: F-027; p-est/p-sub/p-esp recast). **#51 Delito U01:** REVISE (F-025), not redone yet.
-- **#47 CHG-1 changelog bento:** approve on 3 fixes (grid holes, drop the "0 rótulos" QA tile, scale "Um contrato" miniature); merge on sight.
-- **#18 REG-H1** register hover brief; **#22 BIO-2** professor card brief (bios to be normalised in it). Not started.
-- **TBL-1 (#14):** Codex was blocked on file:// checks; told to use http://localhost:8790.
-- Done 03/10: BIO-1 data (#66), CAST-1 ledger (ws #19; 395 rows, live count authoritative), BUGS row (ws #20), blueprints A10–A13 (ws #21, approved with notes).
+## In flight (Codex; gate each at `needs-gate`). As of 04/10 morning nothing has moved since the 03/10 verdicts
+- **S5 writing PAUSED (F-023)** until **Controle Aula 08 (site #59)** passes. v2 verdict: REVISE, close. F-019/020 fixed; the fault is F-021 repetition (the "modulation ≠ anulabilidade" trap said ~8 times), plus 3 off-lesson paragraphs, plus one missing fact (why 11 vereadores was unconstitutional, if the sources say). The exact cut list is on the PR. Also conflicting with main. When it passes, its verdict goes to #52 A02, #53 A04, #54 A05, #55 A07, #60 A09 (+ A03, A06, A30).
+- **#58 Processo A01** (petição as a document): approve on 2 fixes (two labels clip at the viewBox edge; rebase). Merge on sight.
+- **#47 CHG-1 changelog bento:** approve on 3 fixes (holes at the end of the grid; drop the "0 rótulos cortados" QA tile; scale the "Um contrato de verdade" miniature). Merge on sight.
+- **#65 Contratos A01:** REVISE. 6 of 11 panels visibly broken (text×text, clipped) while breakscan said clean; p-est recast (F-026), p-sub + p-esp merged into one "roupagem" drawing. Keep p-lad, p-nor, p-dest, p-teo, p-cas once fixed.
+- **#51 Delito U01:** REVISE (F-025: restore the one-fact-two-norms fork with the art. 13 § 2º duty contrast). Not redone yet.
+- **#18 REG-H1**, **#22 BIO-2:** briefs, not started. BIO-2 also normalises the BIO-1 bios (three voices today).
+- **TBL-1 (#14):** Latam Aulas 08/09 overflow 16 px at 375 px. Codex was told to stop computer-use checks and extend breakscan instead (Next up #2).
+- **#12 PIPE-C**, **#16** (data merged; superseded by #22), **#17 CAST-1** (ledger merged; recasting continues per FIG-2 verdicts).
 
 ## Next up (in order)
-1. Gate whatever is `needs-gate`: Aula 08 v3 first, then #58 / #47 (merge on sight if fixed), #65, #51.
-2. Breakscan must FAIL on #65's panels (text×text, past-viewBox) before its PASS counts again (F-027); check Codex fixed it.
-3. Ask the chairman: show the hero drawing on phones? (CEO: yes, scaled). Then brief it.
+1. **Gate whatever is `needs-gate`:** Aula 08 v3 first (read it in full against the #59 cut list and Aula 01), then #58 / #47 (merge on sight if the listed fixes are in), #65, #51. Use `work/checks/gate_prs.sh` and look at every panel yourself.
+2. **Breakscan fix (asked of Codex 03/10):** `work/checks/breakscan.mjs` runs at 1280 only, has no page-overflow check, and measures before webfonts load (`waitUntil:'load'`, no `document.fonts.ready`), which likely explains why #65 passed. Wanted: `--width` (1280 + 375), an OVERFLOW finding (`scrollWidth > innerWidth`), and a wait on `document.fonts.ready`. It must FAIL on #65's panels and Latam 08/09 at 375 before its PASS counts again. Gate that PR first: it unblocks honest figure gates.
+3. **Ask the chairman again:** show the hero drawing on phones? It is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in `controle.css`, a 30/09 rule); he saw the specimen without it and objected ("none of them have a graph"). CEO recommends yes (scaled, no phone variant, F-009). He hasn't answered; if yes, it's a one-line brief.
 4. Course-world pages for Visual Casting as course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
@@ -68,6 +72,13 @@ If `~/Developer` is missing, restore first:
 - Hero composition: **decided 03/10, chairman picked "Atual"** (no rollout needed; the live layout stays). Still open: the hero drawing is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in controle.css, a 30/09 rule); the chairman saw the specimen with no drawing and objected. Show it there too (scaled, no phone variant per F-009)? Always give the chairman full live URLs.
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
+- **Talk to the chairman in full live URLs** (e.g. https://benecles.github.io/ordenacoes-filipinas/specimen/hero.html). A repo path means nothing to him. GitHub Pages serves `main`.
+- **Gate workflow that worked (03/10):** a worktree in your scratchpad (`git worktree add <sp>/site origin/codex/X`), merge `origin/main` into it, serve it with a `gate` entry in `~/.claude/launch.json` (port 8793, `python3 -m http.server --directory <sp>/site`), and look panel by panel: scroll each `[data-panel]` step into view, wait ~2.5 s (the crossfade is slow; an earlier screenshot shows ghosts or the previous step), then screenshot. A ship script for merging (merge main, rebuild manifest on conflict, ISSUES line, check_all, push to `codex/X`, `gh pr merge`) is easy to rewrite; offline-manifest is the usual conflict, and taking main's side + `offline_build.py` resolves it.
+- **When FIG-2 PRs stack, merge one and the others conflict** in `specimen/figuras.html`, `tools/figkit/inject.py`, `tools/figkit/specimen.py`. Ask Codex to rebase and keep both entries; don't hand-merge generator code.
+- **The workshop checkout is shared with Codex:** untracked files can block your `git pull`. Diff them against `origin/main` before removing; never delete files that differ.
+- **Codex orchestrator vs computer use:** it reached for browser driving for a 7-page table check (workers can't see its browser, so it did bulk work itself). Route checks into scripts (breakscan) that any worker can run.
+- `slop_lint` lives in the workshop (not `tools/editorial/` in the site repo); run it from there.
+- rareui.com (cited for the register hover) was a passing Twitter find, not a spec. Don't chase it.
 - **Search `BUGS.md` by symptom before debugging; add a row with every fix.**
 - **`git status -sb` before committing in the workshop:** Codex switches the shared checkout to its `codex/*` branches (01/10 a commit landed on `codex/chg-1-bugs`).
 - **zsh `:c` again (01/10):** `"origin/codex/x-$n:courses/..."` broke a gate loop. Always `${n}` before a colon.
