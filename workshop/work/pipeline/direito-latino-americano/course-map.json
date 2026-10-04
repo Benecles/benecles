@@ -5,7 +5,7 @@
   "teacher": "Profa. Dra. Roberta Camineiro Baggio",
   "course_function": "Responder a uma questão sobre Cortes latino-americanas com casos: tribunal, ano, decisão, fundamentos, divergências e como cada caso sustenta a resposta ao eixo de discussão.",
   "method": "A teoria emerge do estudo comparado de casos, com contraste Brasil–Colômbia e intervenções do sistema interamericano; partir do zero nas noções de jurisdição constitucional, sem presumir outras disciplinas concluídas (transcrição de 10/08).",
-  "ordering_note": "Ordem do programa e do índice vivo. 17/08 → 01/02; 24/08 → 03/04; 31/08 → 05/06; 14/09 → 07; 21/09 → 08; 28/09 → 09. Prerequisitos são dependências conceituais diretas, não um requisito de matrícula nem uma atribuição de aulas adicionais.",
+  "ordering_note": "Ordem do programa e do índice vivo. 17/08 → 01/02; 24/08 → 03/04; 31/08 → 05/06; 14/09 → 07; 21/09 → 08; 28/09 → 09. Prerequisitos são dependências conceituais diretas, não um requisito de matrícula nem uma atribuição de aulas adicionais. Após as nove lições, revisao-atividade.html integra o mapa como síntese avaliativa de 05/10, dependente das Aulas 02–09.",
   "assessment_note": "Atividade escrita em aula em 05/10/2026: Aulas 02–09 por issue #25. O programa/dossiê descreve o bloco de temas 17/08–28/09; Aula 01 é a contextualização histórica desse bloco. Prova em 30/11, 50 pontos, sem corte de conteúdo explícito; recuperação em 14/12.",
   "sources": {
     "inputs": [
@@ -416,9 +416,7 @@
       "source_locator": "Dossiê Parte 1 / programa: 28/09; Moodle: seção 28/09",
       "availability_note": "Sem arquivo separado no Moodle capturado. A falta é da captura/dossiê; S1 deve reutilizar as fontes oficiais obtidas depois em work/latam-prep/sources-public/.",
       "later_cases_note": "Tema 1234 é identificação operacional do issue #25 para as decisões posteriores mencionadas genericamente pelo programa; S1–S3 confirmam os acórdãos e seus recortes."
-    }
-  ],
-  "auxiliary_pages": [
+    },
     {
       "id": "revisao-atividade.html",
       "status": "live",
@@ -479,8 +477,77 @@
           "reason": "Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade."
         }
       ],
-      "exam": "Atividade de 05/10/2026."
-    },
+      "exam": {
+        "activity_2026_10_05": true,
+        "activity_scope_source": "Dossiê Parte 0–2 e issue #25: atividade escrita em aula, Aulas 02–09.",
+        "date": "2026-10-05",
+        "assessment": "Atividade avaliativa"
+      },
+      "date": "2026-10-05",
+      "syllabus_date": "05/10",
+      "syllabus_order": 8,
+      "live_title": "Revisão para a atividade",
+      "syllabus_line": "05/10 — Atividade avaliativa. Síntese das aulas de 17/08 a 28/09 (Aulas 02–09 em escopo no issue #25).",
+      "syllabus_description": "Workbench dos eixos do bloco já ensinado: uma resposta com tese, casos, fundamentos, divergência e posição; inclui uma comparação entre duas ou mais lições.",
+      "learning_outcome": "Responder por escrito aos eixos com tese → casos → divergência → posição, identificando tribunal, ano, decisão e fundamentos; resolver uma questão transversal com casos de duas ou mais lições.",
+      "class_mapping": [
+        {
+          "syllabus_date": "17/08",
+          "lesson_ids": [
+            "aula-02.html"
+          ],
+          "syllabus_line": "17/08 — Cortes constitucionais e democratização na América Latina.",
+          "eixo_de_discussao": null
+        },
+        {
+          "syllabus_date": "24/08",
+          "lesson_ids": [
+            "aula-03.html",
+            "aula-04.html"
+          ],
+          "syllabus_line": "24/08 — Justiça de transição: as Cortes diante do passado autoritário.",
+          "eixo_de_discussao": "A justiça de transição envolve obrigações internacionais de direitos humanos?"
+        },
+        {
+          "syllabus_date": "31/08",
+          "lesson_ids": [
+            "aula-05.html",
+            "aula-06.html"
+          ],
+          "syllabus_line": "31/08 — Soberania popular, democracia e direitos humanos.",
+          "eixo_de_discussao": "Pode uma decisão majoritária afastar direitos protegidos constitucional e internacionalmente? Quais são os limites da soberania popular?"
+        },
+        {
+          "syllabus_date": "14/09",
+          "lesson_ids": [
+            "aula-07.html"
+          ],
+          "syllabus_line": "14/09 — A negação estrutural de direitos: o Estado de Coisas Inconstitucional.",
+          "eixo_de_discussao": "Quando uma violação individual revela uma falha estrutural do Estado, qual deve ser o papel de uma Corte constitucional?"
+        },
+        {
+          "syllabus_date": "21/09",
+          "lesson_ids": [
+            "aula-08.html"
+          ],
+          "syllabus_line": "21/09 — Litígio estrutural e diálogos institucionais.",
+          "eixo_de_discussao": "O litígio estrutural representa uma forma de ativismo judicial ou uma estratégia de diálogo e coordenação institucional?"
+        },
+        {
+          "syllabus_date": "28/09",
+          "lesson_ids": [
+            "aula-09.html"
+          ],
+          "syllabus_line": "28/09 — Direitos sociais, políticas públicas e diálogo institucional: o direito à saúde.",
+          "eixo_de_discussao": "O diálogo institucional representa autocontenção judicial ou uma nova forma de intervenção das Cortes nas políticas públicas?"
+        }
+      ],
+      "closing_exercise": "Comparar a maioria em Gelman, a anistia em ADPF 153/Gomes Lund e a seleção penal em C-579/2013, construindo uma posição com decisões de pelo menos duas lições (issue #25).",
+      "mapping_note": "Página viva de síntese, exigida pelo plano end-to-end e issue #25; pertence às dez páginas do pipeline. Não cria novo eixo nem novo conteúdo agendado. 17/08 não tem eixo em forma de pergunta no programa.",
+      "source_locator": "Dossiê Partes 0–2: escopo 17/08–28/09 e atividade 05/10; programa/Moodle: 05/10; issue #25: Revisão para a atividade como eixo workbench."
+    }
+  ],
+  "auxiliary_pages": [
     {
       "id": "cartoes.html",
       "status": "live",

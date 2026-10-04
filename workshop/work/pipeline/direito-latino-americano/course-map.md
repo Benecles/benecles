@@ -12,7 +12,7 @@ Ordem do programa e do índice vivo. 17/08 → 01/02; 24/08 → 03/04; 31/08 →
 
 Atividade escrita em aula em 05/10/2026: Aulas 02–09 por issue #25. O programa/dossiê descreve o bloco de temas 17/08–28/09; Aula 01 é a contextualização histórica desse bloco. Prova em 30/11, 50 pontos, sem corte de conteúdo explícito; recuperação em 14/12.
 
-## Lições vivas — programa, função e dependências
+## Dez páginas vivas — programa, função e dependências
 
 ### aula-01.html · Constitucionalismo latino-americano
 
@@ -228,15 +228,43 @@ Tema 1234 é identificação operacional do issue #25 para as decisões posterio
 
 **Localizador:** Dossiê Parte 1 / programa: 28/09; Moodle: seção 28/09.
 
+### revisao-atividade.html · Revisão para a atividade
+
+**Programa e data:** 05/10 — Atividade avaliativa. Síntese das aulas de 17/08 a 28/09 (Aulas 02–09 em escopo no issue #25).
+
+**Função verificável:** Responder por escrito aos eixos com tese → casos → divergência → posição, identificando tribunal, ano, decisão e fundamentos; resolver uma questão transversal com casos de duas ou mais lições.
+
+**Atividade 05/10:** em escopo. Workbench de síntese; não acrescenta tema agendado.
+
+**Mapeamento às aulas:**
+
+| Data do programa | Páginas em escopo | Eixo verbatim |
+|---|---|---|
+| 17/08 | aula-02.html | Não há pergunta de eixo indicada para 17/08. |
+| 24/08 | aula-03.html, aula-04.html | A justiça de transição envolve obrigações internacionais de direitos humanos? |
+| 31/08 | aula-05.html, aula-06.html | Pode uma decisão majoritária afastar direitos protegidos constitucional e internacionalmente? Quais são os limites da soberania popular? |
+| 14/09 | aula-07.html | Quando uma violação individual revela uma falha estrutural do Estado, qual deve ser o papel de uma Corte constitucional? |
+| 21/09 | aula-08.html | O litígio estrutural representa uma forma de ativismo judicial ou uma estratégia de diálogo e coordenação institucional? |
+| 28/09 | aula-09.html | O diálogo institucional representa autocontenção judicial ou uma nova forma de intervenção das Cortes nas políticas públicas? |
+
+**Pré-requisitos conceituais:**
+
+- aula-02.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-03.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-04.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-05.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-06.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-07.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-08.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+- aula-09.html: Fornece casos, distinções e fundamentos necessários à resposta dos eixos da atividade.
+
+**Exercício de fechamento:** Comparar a maioria em Gelman, a anistia em ADPF 153/Gomes Lund e a seleção penal em C-579/2013, construindo uma posição com decisões de pelo menos duas lições (issue #25).
+
+Página viva de síntese, exigida pelo plano end-to-end e issue #25; pertence às dez páginas do pipeline. Não cria novo eixo nem novo conteúdo agendado. 17/08 não tem eixo em forma de pergunta no programa.
+
+**Localizador:** Dossiê Partes 0–2: escopo 17/08–28/09 e atividade 05/10; programa/Moodle: 05/10; issue #25: Revisão para a atividade como eixo workbench..
+
 ## Apoios vivos
-
-### revisao-atividade.html
-
-Organizar respostas aos eixos com tese → casos → divergência → posição e resolver uma comparação que exija duas lições.
-
-Pré-requisitos: aula-02.html, aula-03.html, aula-04.html, aula-05.html, aula-06.html, aula-07.html, aula-08.html, aula-09.html.
-
-Atividade de 05/10/2026.
 
 ### cartoes.html
 
