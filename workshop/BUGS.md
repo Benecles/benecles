@@ -50,3 +50,9 @@ Search this file by what you SEE before you debug anything. Every agent (Claude,
 | A Luna worker replied "done" but no file exists | Workers can claim done without acting | Every brief has a script-checked done-condition | the brief's check script | 29/09 |
 | A check passes on something visibly worse | The check never tested that failure | Run every new check against the known-bad state first | n/a | D2, 30/09 |
 | A tool-branch catalogue landed in the site repo | Workshop artifact committed to `ordenacoes-filipinas` | Workshop artifacts go in the workshop repo; site gets reader files + `tools/` | review | VIS-2, 01/10 |
+
+## Source Pipeline
+
+| Symptom | Cause | Fix | Catches it | Seen |
+|---|---|---|---|---|
+| S0 passes a nine-page Latam map that leaves the live review outside the pipeline | S0 enumerated only `aula-*.html`; `revisao-atividade.html` was treated as auxiliary | Include a live `revisao-atividade.html` in required S0 pages and map its syllabus/class links, function and prerequisites in `lessons` | `pipeline_check.py s0`: nine-page map fails with the missing review; ten-page map passes | Latam S0, 04/10 |
