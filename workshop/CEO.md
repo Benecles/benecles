@@ -57,9 +57,10 @@ If `~/Developer` is missing, restore first:
 - **#12 PIPE-C**, **#16** (data merged; superseded by #22), **#17 CAST-1** (ledger merged; recasting continues per FIG-2 verdicts).
 
 ## Next up (in order)
+0. **04/10 chairman direction: LAT-1 (#25) rebuilds Latam on the full pipeline, prototype Aula 05 Gelman; the activity is 05/10 (Aulas 02–09).** One orchestrator prompt covering everything open: `work/briefs/2026-10-04-orchestrator-prompt.md`. Gate LAT-1 S0 fast.
 1. **Gate whatever is `needs-gate`:** Aula 08 v3 first (read it in full against the #59 cut list and Aula 01), then #58 / #47 (merge on sight if the listed fixes are in), #65, #51. Use `work/checks/gate_prs.sh` and look at every panel yourself.
 2. **Breakscan fix: now brief BRK-1, workshop #23 (filed 04/10; was only a comment before).** `work/checks/breakscan.mjs` runs at 1280 only, has no page-overflow check, and measures before webfonts load (`waitUntil:'load'`, no `document.fonts.ready`), which likely explains why #65 passed. Wanted: `--width` (1280 + 375), an OVERFLOW finding (`scrollWidth > innerWidth`), and a wait on `document.fonts.ready`. It must FAIL on #65's panels and Latam 08/09 at 375 before its PASS counts again. Gate that PR first: it unblocks honest figure gates.
-3. **Ask the chairman again:** show the hero drawing on phones? It is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in `controle.css`, a 30/09 rule); he saw the specimen without it and objected ("none of them have a graph"). CEO recommends yes (scaled, no phone variant, F-009). He hasn't answered; if yes, it's a one-line brief.
+3. ~~Ask the chairman about the hero on phones~~ **Decided 04/10: upright phones get the same drawings re-laid out; sideways = desktop. Brief PHN-1, workshop #24.** (Old note:) show the hero drawing on phones? It is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in `controle.css`, a 30/09 rule); he saw the specimen without it and objected ("none of them have a graph"). CEO recommends yes (scaled, no phone variant, F-009). He hasn't answered; if yes, it's a one-line brief.
 4. Course-world pages for Visual Casting as course redos come up.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
