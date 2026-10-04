@@ -43,7 +43,7 @@ If `~/Developer` is missing, restore first:
 - **Reference set:** live Controle Aula 01 + its REF comments; reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (Method notes); template `protocols/templates/Lesson Blueprint.md`. Best new blueprint: `compendium/aula-10/blueprint.md` (real 2025 IOF thread, casts with rejected alternatives).
 - **Figures:** `protocols/CUFRGS Visual Casting.md` governs. Figure Library = craft and tests.
 - **Memory of mistakes:** `BUGS.md`, `FLIGHT-LOG.md` F-001…F-027. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban), breakscan (**currently unreliable, see Next up #2**).
-- **New machine (04/10):** the chairman moved to a new Mac (`MacBook-Air-2`). `gh` is authed as Benecles (keyring, HTTPS); git identity set globally to `Benecles <[email]>`. Repos + Codex worktree folders are in `~/Developer`.
+- **New machine (04/10):** the chairman moved to the 15" MacBook Air (`MacBook-Air-2`), migrated from the 13", which is being erased (a Claude2 device-reset run owns that). `gh` is authed as Benecles (keyring, HTTPS); git identity set globally to `Benecles <[email]>`. Repos + Codex worktree folders are in `~/Developer`.
 - **Desktop holds only Felipe + Mark.** Course material: `~/Documents/UFRGS 2026-2`.
 
 ## In flight (Codex; gate each at `needs-gate`). As of 04/10 morning nothing has moved since the 03/10 verdicts
