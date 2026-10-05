@@ -102,5 +102,21 @@
 {
 "before": "</td></tr><tr><th scope=\"row\">Venezuela</th><td>Sala Constitucional do TSJ</td><td>Sala</td><td>7*</td><td>Assembleia Nacional</td><td>Concentrado + amplo</td>",
 "after": "</td></tr><tr><th scope=\"row\">Venezuela</th><td data-label=\"Órgão\">Sala Constitucional do TSJ</td><td data-label=\"Modelo\">Sala</td><td data-label=\"Nº\">7*</td><td data-label=\"Quem escolhe\">Assembleia Nacional</td><td data-label=\"Traço da jurisdição\">Concentrado + amplo</td>"
+},
+{
+"before": "</div><div role=\"listitem\">Leitura<b>≈ 18 min</b></div><div role=\"listitem\">Antes",
+"after": "</div><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes"
+},
+{
+"before": "cheias de direitos. A segunda metade da aula de 17/08 pergunta o que aconteceu",
+"after": "cheias de direitos. Resta saber o que aconteceu"
+},
+{
+"before": "</section>\n<div class=\"longform\"><div><p class=\"eixo\"><b>Tema da aula de 17/08</b>Cortes constitucionais, separação",
+"after": "</section>\n<div class=\"longform\"><div><p class=\"eixo\"><b>O tema</b>Cortes constitucionais, separação"
+},
+{
+"before": "posições, casos e distinções para a atividade.</p></section>\n<div class=\"longform\"><div><h3>",
+"after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
 }
 ]
