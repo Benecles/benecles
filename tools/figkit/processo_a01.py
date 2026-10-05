@@ -43,7 +43,7 @@ def serif(x, y, text, size=16, fill='var(--ink-2)', weight=400):
 
 def panel():
     # A facsimile rather than a ruled list: incisos point to their real positions in the pleading.
-    d = Document('pci-a01', 28, 28, 360, PETITION, lead=22, indent=0, foot=10)
+    d = Document('pci-a01', 28, 28, 360, PETITION, lead=24, indent=0, foot=10)
     attachment_y = d.y + d.h - 58
     # Art. 320's sheet is physically behind the pleading and shows in the exposed lower corner.
     back = (f'<path d="M250 {attachment_y}H572L588 {attachment_y + 16}V{attachment_y + 115}H250Z" '
@@ -60,7 +60,7 @@ def panel():
     o += t(d.x + d.w / 2, d.box['title'][1] + 13, 'PETIÇÃO INICIAL · ART. 319', size=18,
            fill='var(--ink)', anchor='middle', weight=700, caps=True)
     o += serif(d.x + 16, d.box['juizo'][1] + 12, 'Excelentíssimo Senhor Juiz de Direito', 16)
-    o += serif(d.x + 16, d.box['juizo'][1] + 34, 'da __ Vara Cível', 14)
+    o += serif(d.x + 16, d.box['juizo'][1] + 36, 'da __ Vara Cível', 14)
     for key, label in [('fatos', 'DOS FATOS'), ('direito', 'DO DIREITO'),
                        ('pedido', 'DOS PEDIDOS'), ('valor', 'VALOR DA CAUSA'),
                        ('provas', 'PROVAS'), ('audiencia', 'AUDIÊNCIA')]:
@@ -70,7 +70,7 @@ def panel():
         yy = d.box[key][1] + 12
         cpf = 'CPF [campo]' if key == 'partes_a' else 'CPF __________'
         o += serif(d.x + 16, yy, f'{role}: [nome] · {cpf}', 15)
-        o += serif(d.x + 16, yy + 22, 'endereço: [endereço]', 15)
+        o += serif(d.x + 16, yy + 24, 'endereço: [endereço]', 15)
     # The facts that turn “sou credor” into a pleaded cause are the tested mark.
     for key, phrase in [('fatos_a', 'Empréstimo de R$ 12 mil.'),
                         ('fatos_b', 'Vencimento sem pagamento.')]:
@@ -100,7 +100,8 @@ def panel():
     o += line(d.x + d.w - 30, qy + 4, 408, qy + 4, tone='dif', w=1.1, dash='3 3')
     o += t(417, qy + 25, '§ 2º · AINDA CITÁVEL', size=16, fill='var(--dif)', weight=700)
 
-    return svg(f'12 18 576 {d.h + 75}', o, cls='panel fig on', ident='p-pi0',
+    # The inciso margin notes reach x≈635; leave 15 units of clearance at the right edge.
+    return svg(f'12 18 638 {d.h + 75}', o, cls='panel fig on', ident='p-pi0',
                label='Petição inicial em sua ordem real, com os incisos do art. 319 e contrato anexo do art. 320')
 
 
