@@ -35,6 +35,16 @@ Codex ran out of credits on 05/10. The CEO (Claude) carried the work in the mean
 - Run breakscan at **both** widths on every changed page (`node work/checks/breakscan.mjs <root-with-touched-pages> out.csv --width 1280 --width 375 --base-url ...`).
 - Look at every panel yourself, but only through a worker that returns crops.
 
+## Update, 05/10 night (CEO, final turn of the day)
+- **Aula 06 is also rebuilt and merged** (site #75), from its APPROVED blueprint. It is now canonical alongside Aula 05: don't rewrite it.
+- **Blueprints on disk, committed** (workshop f61a83d), with panel verdicts:
+  - **APPROVED:** 01, 08 → write them.
+  - **REVISE:** 04, 07, 09 → apply the panel's points, then write.
+  - **No panel yet:** 02, 03 → panel first.
+  - **None yet:** the revisão.
+- **Course-wide sweep done:** backstage lines removed on A01–A04 and A07–A09, and hero reading times aligned. Writers must not reintroduce "a professora…", "a aula de dd/mm…" or "para a atividade" on reader pages.
+- **Port 8793 is held by a Codex http.server** serving `ordenacoes-filipinas-delito-u01`. A breakscan pointed at it silently tests the wrong checkout. Serve each checkout on its own port and pass `--base-url` explicitly.
+
 ## What's left, in order (wide, not long: same operating rules as below)
 1. **LAT-1 · the other nine pages.** Blueprint (Sol) → panel (Sol) → write (Luna xhigh) → checks → merge, for Aulas 03, 04, 06, 07, 08, 09, 02, 01 and the revisão.
    - Build on the live pages, which now include the canonical figures.
