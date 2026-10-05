@@ -60,17 +60,6 @@
         },
         {
           "size": "sq",
-          "title": "Rótulos sem cortes",
-          "sub": "",
-          "href": "index.html",
-          "visual": {
-            "type": "stat",
-            "value": "0",
-            "label": "rótulos cortados por linha, em 784 figuras"
-          }
-        },
-        {
-          "size": "sq",
           "title": "Aulas da semana",
           "sub": "",
           "href": "index.html",
