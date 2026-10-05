@@ -56,6 +56,7 @@
 
 #patch-notes-bento .patch-tile--wide { grid-column: span 2; }
 #patch-notes-bento .patch-tile--tall { grid-row: span 2; }
+#patch-notes-bento .patch-tile:last-child { grid-column: span 4; }
 #patch-notes-bento .patch-tile--sq .patch-tile__title {
   font-size: clamp(17px, 1.5vw, 19px);
 }
@@ -150,6 +151,14 @@
 #patch-notes-bento .patch-tile--hero .patch-tile__visual svg,
 #patch-notes-bento .patch-tile--tall .patch-tile__visual svg {
   max-height: 230px;
+}
+
+#patch-notes-bento .patch-tile--tall .patch-tile__visual > svg.panel {
+  width: 125%;
+  max-width: none;
+  height: auto;
+  max-height: 230px;
+  align-self: center;
 }
 
 #patch-notes-bento .patch-tile__visual strong,
@@ -275,6 +284,14 @@
   #patch-notes-bento .patch-tile__visual > svg.panel {
     height: 124px;
     max-height: 124px;
+  }
+  #patch-notes-bento .patch-tile:last-child { grid-column: span 2; }
+  #patch-notes-bento .patch-tile--tall .patch-tile__visual > svg.panel {
+    width: 125%;
+    max-width: none;
+    height: auto;
+    max-height: 180px;
+    align-self: center;
   }
   #patch-notes-bento .patch-tile--hero .patch-tile__visual svg,
   #patch-notes-bento .patch-tile--tall .patch-tile__visual svg { max-height: 180px; }
