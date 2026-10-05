@@ -73,6 +73,14 @@ If `~/Developer` is missing, restore first:
 - **Reference set (unchanged):** Controle Aula 01 + REF comments; reference blueprint and template; FLIGHT-LOG F-001…F-027; BUGS.md; Visual Casting; Writing Standard.
 - **Machine:** the 15" MacBook Air; `gh` authed as Benecles. **Desktop holds only Felipe + Mark.** Course material is in `~/Documents/UFRGS 2026-2`.
 
+## Since 05/10 evening (Claude Opus 5.5, second session)
+- **MAP-L1 merged (site #78):** Latam front map gets its colour washes and engraved coasts back; A01 hero labels re-placed by a measured search and routes drawn whole; A01 Fig. 1 legend words restored; A02 Fig. 2 legend realigned; dotted meridians dropped. Scripts + reusable tools in `work/latam-maps/` (`labeler.js`: `placeLabels`, `probe`, `nudge`, run in the browser; `run.sh SITE` rebuilds from main). Breakscan 1280 = 0 on the three pages.
+- **Chairman rule, 05/10: desktop first.** No phone work (375 breakscans, phone label fixes) until desktop is perfect. Phone findings are logged debt only.
+- **Writing Standard Part D extended** (preamble on what slop is + D9 density limits + D10 the chairman's five pathologies: fake disagreement, circular causal explanation, unnecessary restatement, excessive sectioning, reflexive qualification). Old copy in `protocols/Superseded/`.
+- **Briefs filed for Codex** (`work/briefs/2026-10-05-anti-slop-pipeline.md`): workshop #57 SLOP-2 (STYLE.md, PT linter rates, corpus discovery, span-level critic, AGENTS.md wiring) and #58 TXT-L1 (AP Stylebook + deslop on Latam front/A01/A02; AP source `~/Downloads/ap-stylebook.pdf`, 2000 ed.). The chairman wants Codex to do this engineering to save CEO tokens.
+- **After #58 lands: the CEO's final aesthetics QA** on the Latam front, A01, A02 (chairman: "things need to look spectacular"). Known desktop items to look at: the A02 atlas sits small in its panel with empty space bottom-right; the front map column could be larger; the A01 hero crops Spain at the top edge.
+- Aula 08 rebuild was started and parked (sources read and verified, no script written). The facts are checked: 108 tutelas/1,150 families; Sala Tercera (Cepeda, Córdoba Triviño, Escobar Gil); Auto 008 Sala Segunda; budget 103,491→70,783 million; "no superação parcial" is Auto 008 considerando 34, not ordinal 1º.
+
 ## In flight (Codex, when it has credits)
 - **Codex is out of credits as of 05/10 night.** Its handoff is the **RESUME HERE** section at the top of `work/briefs/2026-10-04-orchestrator-prompt.md` (kept current through 05/10 night). The paste message for a fresh Codex window is in that file's history; it says: pull both repos, read that file starting at RESUME HERE, and execute "What's left".
 - **Open site PRs:**
@@ -84,6 +92,7 @@ If `~/Developer` is missing, restore first:
 - **`RUN-0410.md`** (the run ledger the plan requires) was never created by Codex; the resume section asks for it.
 
 ## Next up (in order)
+0. **Codex: #58 TXT-L1, then #57 SLOP-2. CEO: final aesthetics QA of Latam front/A01/A02 once #58 merges.**
 1. **Finish LAT-1, one lesson at a time:**
    - **08** (blueprint APPROVED);
    - **04, 07, 09:** apply panel.md's REVISE points to the blueprint first;
@@ -106,6 +115,10 @@ If `~/Developer` is missing, restore first:
 ## Open decisions for the chairman
 - **Gates or no gates going forward?** The 04/10 override ("ship as you go, CEO reviews after") is still in force. It has worked for speed. The cost is that faults ship before anyone reads them; the 05/10 QA sweep found backstage text on seven pages.
 - **The four legacy Latam maps:** are their phone label crossings (haloed, legible) acceptable, or redraw them on `Frame('courts')`?
+
+## Gotchas
+- **Map labels: measure, don't nudge by eye.** Load `work/latam-maps/labeler.js` into the page and use `placeLabels`/`probe`; old route paths may have holes cut where old labels sat (join them when labels move).
+- **`latam-build/maps.py` needs `PYTHONPATH=../contract-build/generators`** for its `kit` import.
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
 - **Port 8793 can be Codex's `http.server` serving another checkout** (05/10 it served `ordenacoes-filipinas-delito-u01`). A breakscan pointed at it silently tests the wrong pages. Serve your checkout on its own port (the CEO's gate config now uses 8795 in `~/.claude/launch.json`) and pass `--base-url` explicitly. Check with `curl …/aula-NN.html | grep "≈"` that you're seeing your build.

@@ -262,13 +262,6 @@ Benecles's rule of thumb (2026-09-25): **every visual element must explain somet
 
 Hard bans get zero tolerance. Limits are per lesson. Terms of art are always allowed (see D6).
 
-**What slop is (05/10, from the 2026 evidence: SlopBench, Shaib et al., Paech et al. *Antislop*, Pew, the Nature Human Behaviour homogenization study, bheijden/slop's matched-corpus audit).** Slop is rhetorical machinery standing in for information: the shape of analysis (a contrast, a triad, a concession, a reveal, a moral) produced where the content asked for none. Each of these is ordinary Portuguese once; the model's fault is frequency, so most limits below are densities, not bans. Three findings change how we edit:
-- **Varying vocabulary does not help.** Every model tested was *more* lexically diverse than its human reference. Never thesaurus a repeated term of art; repeat the right word.
-- **Em dashes are not a tell.** Four independent measurements find human prose uses as many or more. Ours are limited by C10 for house style, not as slop.
-- **Full rewrites re-impose the house style.** LLM rewrites cut variance in writing complexity by 21–50%, and even human post-edits of LLM drafts stay closer to LLM style. Fix the flagged span; never "rewrite the paragraph to be cleaner".
-
-The order of priority when editing: (1) maximize propositions per sentence and delete machinery that carries none; (2) impose no structure the content did not ask for (no automatic contrast, triad, summary, section, concession, reveal or closing moral); (3) never manufacture nuance: if the obvious reading is right, state it; a distinction exists because the law has it; (4) allow asymmetry: a point gets the sentences it needs, lists the items they have, paragraphs the length their job takes; (5) explain by mechanism (who did what, under which rule, with which effect), not by relabelling; (6) judge known tells by density; (7) never "humanize": no fragments, slang, fake opinions, invented anecdotes or planted errors.
-
 ### D1. Negative parallelism (hard ban)
 - "não é X, é Y" / "não é X, e sim Y" / "não se trata de X, mas de Y" / "mais do que X, Y" / "X, não Y" used as a flourish.
 - **Legal exception:** a genuine legal distinction may use "não… mas" when both halves carry law: "A resposta tardia não forma contrato, mas vale como nova proposta." The test: if you delete the "não" half, is law lost? If not, delete it.
@@ -309,26 +302,6 @@ The order of priority when editing: (1) maximize propositions per sentence and d
 - No horizontal rules as decoration.
 
 ---
-
-### D9. Density limits (structural tells; per lesson unless stated)
-Counted by `slop_lint` where marked ⚙; read for the rest. A hit over the limit is a reason to look, not an automatic edit.
-- ⚙ **Colon reveals** (claim, colon, expansion in the same sentence): ≤ 2.5 per 1,000 words. Humans in the matched corpus never exceeded 2.7; 14 of 18 AI documents were ≥ 3.0.
-- ⚙ **Denial; restatement** ("não reduziu o dano; deslocou o ônus"): 0 as a flourish. D1's legal test applies.
-- ⚙ **"em vez de / ao invés de / em lugar de"**: ≤ 1 per 1,000 words and never twice in a paragraph (the measured flagship tell is the rate).
-- ⚙ **Triads** ("X, Y e Z" lists of short items): ≤ 4 per 1,000 words; a run of two triads in one paragraph is a finding. Two items are often the honest count.
-- ⚙ **Stance adverbs**: "meramente, simplesmente, genuinamente, verdadeiramente, efetivamente, justamente, precisamente, silenciosamente" as emphasis: 0 (D6 counts real intensifiers separately).
-- ⚙ **Negation chains** ("sem X, sem Y, sem Z" / "Não X. Não Y."): 0 outside an enumeration of legal requirements.
-- ⚙ **Same-opener runs**: three consecutive sentences starting with the same word or skeleton.
-- **Uniform paragraphs**: five or more consecutive paragraphs of near-equal length (±15%) in a long-prose section; reshape around the argument, never to a quota.
-- **Nominalization pile-ups** ("a implementação da verificação da execução"): turn the nouns back into verbs with an actor (C1).
-- **Participial tails** (D2): any sentence-final gerund clause that comments instead of adding a fact.
-
-### D10. The five pathologies generic guides miss (chairman, 05/10; hard bans)
-1. **Fake disagreement.** Staging an opposing view nobody in the sources holds, so the text can refute it. Only named positions with reasons (C6) are disputed.
-2. **Circular causal explanation.** The "because" clause restates the effect ("a Corte interveio porque havia necessidade de intervenção"). Test: does the reason name a fact, a rule or an actor not already in the claim? If not, find the cause in the sources or cut the "because".
-3. **Unnecessary restatement.** A sentence, paragraph or section summary that repeats what the reader just read. Delete-test: if removing it loses no proposition, remove it. Chapter ledes state the question, not a preview of the answer.
-4. **Excessive sectioning.** A heading for every two paragraphs, a list where three sentences reason. One page answers one question (A0); a section exists when the question changes.
-5. **Reflexive qualification.** A hedge, caveat or "em certa medida" attached by habit. C7 governs: hedge once, where the doubt is, with its reason. A concession that changes nothing is cut.
 
 ## Part E. Sources and copyright
 
