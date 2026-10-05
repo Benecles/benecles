@@ -38,6 +38,14 @@ import sys
 import unicodedata
 from pathlib import Path
 
+from build_compendia import (
+    DOSSIER_INSTRUCTIONS_ID,
+    DOSSIER_SOURCE_ID,
+    eixo_markdown,
+    dossier_answer_instruction,
+    visible_page_text,
+)
+
 WORKSHOP = Path(__file__).resolve().parents[3]
 SITE = WORKSHOP.parent / "ordenacoes-filipinas"
 MARKER = re.compile(r"^===== p\. (.+?) \(PDF (\d+)\) =====$", re.M)
@@ -559,11 +567,11 @@ def triage_assignments(args, catalog, rows, errors):
     return assignments
 
 
-def check_s3(args, errors, warnings, run_policy=True):
+def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_full_coverage=True):
     lessons = course_map(args.map, errors)
     ids = {lesson.get("id") for lesson in lessons}
     catalog = chapter_catalog(args, errors, False)
-    rows = read_csv(args.triage, errors)
+    rows = triage_rows if triage_rows is not None else read_csv(args.triage, errors)
     if not rows:
         errors.append("triage has no rows")
     verdicts = set()
@@ -600,8 +608,9 @@ def check_s3(args, errors, warnings, run_policy=True):
             primary[lesson_id].add(key)
         if role == "background":
             background[lesson_id].add(key)
-    for key in catalog.keys() - verdicts:
-        errors.append(f"chapter {key} has no primary/supporting/unused verdict")
+    if require_full_coverage:
+        for key in catalog.keys() - verdicts:
+            errors.append(f"chapter {key} has no primary/supporting/unused verdict")
     shelf = read_csv(args.shelf, errors)
     def slide_lesson_ids(row):
         mapped = [value.strip() for value in row.get("lesson_ids", "").split(";") if value.strip()]
@@ -659,14 +668,27 @@ def s4_role(role_cell):
     return match.group(1) if match else ""
 
 
+def s4_triage_rows(args, lessons, errors):
+    """Use the merged S3 file when present, otherwise the lesson-owned inputs."""
+    if args.s4_assignments.is_file():
+        return read_csv(args.s4_assignments, errors)
+    if args.triage.is_file():
+        return read_csv(args.triage, errors)
+    triage_dir = args.triage.parent / "triage"
+    paths = [triage_dir / f"{Path(lesson.get('id', '')).stem}.csv" for lesson in lessons]
+    missing = [path.name for path in paths if not path.is_file()]
+    if missing:
+        errors.append("missing per-lesson S3 triage: " + ", ".join(missing))
+    return [row for path in paths if path.is_file() for row in read_csv(path, errors)]
+
+
 def check_s4(args, errors, warnings):
     # Structural S3 checks remain prerequisites for S4, while the shared policy
     # below runs over the generated compendium atoms themselves.
-    check_s3(args, errors, warnings, run_policy=False)
     lessons = course_map(args.map, errors)
+    triage_rows = s4_triage_rows(args, lessons, errors)
+    check_s3(args, errors, warnings, run_policy=False, triage_rows=triage_rows, require_full_coverage=args.triage.is_file() or args.s4_assignments.is_file())
     catalog = chapter_catalog(args, errors, False)
-    assignment_path = args.s4_assignments if args.s4_assignments.is_file() else args.triage
-    triage_rows = read_csv(assignment_path, errors)
     shelf = read_csv(args.shelf, errors)
     shelf_by_id = {row.get("source_id", ""): row for row in shelf if row.get("source_id")}
     lesson_ids = {lesson.get("id") for lesson in lessons}
@@ -682,6 +704,17 @@ def check_s4(args, errors, warnings):
     policy_assignments = []
     checked_manifests = 0
     manifest_rows = 0
+    latam_workbench = args.course == "direito-latino-americano"
+    answer_instruction = ""
+    if latam_workbench:
+        try:
+            answer_instruction = dossier_answer_instruction(args.chapters)
+        except (OSError, ValueError) as exc:
+            errors.append(f"cannot read authoritative dossier answer instruction: {exc}")
+            answer_instruction = ""
+        dossier_key = (DOSSIER_SOURCE_ID, DOSSIER_INSTRUCTIONS_ID)
+        if dossier_key not in catalog:
+            errors.append("course map's dossier answer-instruction chapter is missing from S2")
     for lesson in lessons:
         lesson_id = lesson.get("id", "")
         slug = Path(lesson_id).stem
@@ -696,10 +729,29 @@ def check_s4(args, errors, warnings):
             errors.append(f"{lesson_id}: cannot read S4 manifest: {exc}")
             continue
         checked_manifests += 1
+        if latam_workbench:
+            eixo_path = lesson_dir / "05-eixo.md"
+            live_text_path = lesson_dir / "60-live-page.txt"
+            expected_eixo = eixo_markdown(lesson, answer_instruction)
+            try:
+                if eixo_path.read_text(encoding="utf-8") != expected_eixo:
+                    errors.append(f"{lesson_id}: 05-eixo.md differs from the S0 eixo and dossier instruction")
+            except OSError as exc:
+                errors.append(f"{lesson_id}: cannot read 05-eixo.md: {exc}")
+            live_html_path = args.site / "courses" / args.course / lesson_id
+            try:
+                expected_live_text = visible_page_text(live_html_path)
+                if live_text_path.read_text(encoding="utf-8") != expected_live_text:
+                    errors.append(f"{lesson_id}: 60-live-page.txt differs from visible text on the current live page")
+            except OSError as exc:
+                errors.append(f"{lesson_id}: cannot read current live page or 60-live-page.txt: {exc}")
         if not lines or lines[0] != f"# Compendium — {lesson_id}":
             errors.append(f"{lesson_id}: S4 manifest title does not match the course map")
         table_header = None
         found_slide_record = False
+        found_eixo_map_record = False
+        found_eixo_dossier_record = False
+        found_live_page_record = False
         listed_files = set()
         observed = {}
         for line in lines:
@@ -736,6 +788,17 @@ def check_s4(args, errors, warnings):
             actual_digest = hashlib.sha256(generated_bytes).hexdigest()
             if stated_digest != actual_digest:
                 errors.append(f"{lesson_id}: SHA-256 mismatch for {file_name}")
+            if role_cell.strip() == "workbench metadata":
+                if file_name != "05-eixo.md" or source_id not in {"course-map.json", DOSSIER_SOURCE_ID}:
+                    errors.append(f"{lesson_id}: malformed workbench metadata provenance row")
+                found_eixo_map_record |= source_id == "course-map.json" and chapter_id == "eixo_de_discussao"
+                found_eixo_dossier_record |= source_id == DOSSIER_SOURCE_ID and chapter_id == DOSSIER_INSTRUCTIONS_ID
+                continue
+            if role_cell.strip() == "live page snapshot":
+                if (file_name, source_id, chapter_id) != ("60-live-page.txt", "live-page", lesson_id):
+                    errors.append(f"{lesson_id}: malformed live-page provenance row")
+                found_live_page_record = True
+                continue
             if role_cell.strip() == "slides":
                 found_slide_record = True
             role = s4_role(role_cell)
@@ -783,6 +846,10 @@ def check_s4(args, errors, warnings):
             errors.append(f"{lesson_id}: S4 manifest has no provenance table")
         if not found_slide_record:
             errors.append(f"{lesson_id}: S4 manifest has no slide provenance row")
+        if latam_workbench and (not found_eixo_map_record or not found_eixo_dossier_record):
+            errors.append(f"{lesson_id}: S4 manifest lacks course-map or dossier provenance for 05-eixo.md")
+        if latam_workbench and not found_live_page_record:
+            errors.append(f"{lesson_id}: S4 manifest has no live-page snapshot provenance row")
         for assignment_key, expected_count in expected[lesson_id].items():
             actual_count = observed.get(assignment_key, 0)
             if actual_count != expected_count:
