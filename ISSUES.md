@@ -2,6 +2,8 @@
 
 One line per merged issue: number · date · what changed · the check that proves it.
 
+- **#60 (PR open)** · 05/10 · Controle Aula 09 distinguishes the preventive stage, the legislative and presidential routes, and the narrow parliamentary mandado de segurança; five practice items retained · `slop_lint` PASS, `check_all` PASS, 1280 breakscan: 0 findings on Aula 09 (47 elsewhere).
+
 - **#0** · 30/09 · Front generator + gates moved into `tools/`; fronts regenerate byte-identical to live (drawings kept verbatim, unapproved Processo railway dropped, stale front.css cache stamp fixed) · `tools/check_all.sh` PASS, FAILs on a changed data file.
 - **REG-6 #16** · 30/09 · Contratos class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
 - **REG-4 #17** · 30/09 · Latam class-register data: a `does` line per lesson (what it lets you do) + exam coverage; normalized to contract v2 in the fix-up PR · `check_register_data.py` PASS, `check_all` PASS (no live change).
