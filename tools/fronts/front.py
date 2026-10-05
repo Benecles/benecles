@@ -170,13 +170,10 @@ def _minutes(slug: str, href: str) -> int | None:
 
 
 def _clock(minutes: int) -> str:
-    """A clock face whose filled sector is the reading time (60 min = full face)."""
-    import math
-    frac = min(minutes, 60) / 60
-    a = 2 * math.pi * frac
-    x, y = 8 + 6.4 * math.sin(a), 8 - 6.4 * math.cos(a)
-    sector = ('<circle cx="8" cy="8" r="6.4" class="reg-clock-fill"/>' if frac >= 1 else
-              f'<path d="M8 8V1.6A6.4 6.4 0 {1 if frac > .5 else 0} 1 {x:.2f} {y:.2f}Z" class="reg-clock-fill"/>')
+    """A clock sector that winds to the reading time (60 min = full face)."""
+    fill = f"{min(minutes, 60) / 60 * 100:.4f}".rstrip("0").rstrip(".")
+    sector = (f'<circle cx="8" cy="8" r="4" pathLength="100" transform="rotate(-90 8 8)" '
+              f'class="reg-clock-fill" style="--clock-fill:{fill}"/>')
     return (f'<svg class="reg-clock" viewBox="0 0 16 16" aria-hidden="true">{sector}'
             '<circle cx="8" cy="8" r="7" class="reg-clock-rim"/></svg>')
 
@@ -229,7 +226,7 @@ def _register(data: dict[str, Any], slug: str) -> str:
             does = (l.get("reg") or {}).get("does")
             does_html = f'<span class="reg-does">{_esc(does)}</span>' if does else ""
             mins = l.get("_minutes") or _minutes(slug, h)  # _minutes: specimen only
-            time = (f'<span class="reg-time" title="cerca de {mins} min de leitura">{_clock(mins)}<span>{mins}′</span></span>'
+            time = (f'<span class="reg-time">{_clock(mins)}<span>{mins}′</span></span>'
                     if mins else '<span class="reg-time"></span>')
             ex = exam_of.get(h)
             attrs = f' data-tone="{EXAM_TONES[ex % 3]}"' if ex is not None else ""
