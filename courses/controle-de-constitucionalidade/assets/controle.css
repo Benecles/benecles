@@ -438,3 +438,6 @@ body{transition:background-color .35s ease,color .35s ease}
 .wide:has(> .prosa:only-child):not(.scrolly + .wide):not(:has(+ .scrolly)) > .prosa{max-width:720px;margin-inline:auto}
 section.chapter:has(+ .wide > .prosa:only-child):not(:has(+ .wide + .scrolly)) > *{max-width:720px;margin-inline:auto}
 section.chapter:has(+ .wide > .prosa:only-child):not(:has(+ .wide + .scrolly)) > .num{display:block}
+
+/* Wide prose on desktop (CEO, 05/10): standalone text with no figure beside it runs a little wider. */
+@media (min-width:1100px){body .longform>div,body .prose p,body .prose ul,body .prose ol,body .prose blockquote,body .prosa{max-width:76ch}}
