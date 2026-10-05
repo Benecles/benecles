@@ -366,8 +366,8 @@ def concrete_explanation(text):
 
 
 def shelf_role(row):
-    """Return the normalized role before any semicolon-delimited source note."""
-    return row.get("role", "").split(";", 1)[0].strip().lower()
+    """Return the normalized canonical role before any descriptive note."""
+    return (row.get("source_role") or row.get("role", "")).split(";", 1)[0].strip().lower()
 
 
 def bibliography_authors(reference):

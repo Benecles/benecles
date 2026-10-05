@@ -337,11 +337,11 @@ def build(course, site=DEFAULT_SITE):
             if key not in catalog:
                 raise ValueError(f"S3 references unknown chapter {source_id}/{chapter_id}")
             entry, text_path = catalog[key]
-            shelf_role = shelf_role(shelf_by_id.get(source_id, {}))
-            if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_role == "statute":
+            source_role = shelf_role(shelf_by_id.get(source_id, {}))
+            if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or source_role == "statute":
                 if entry.get("locator") != "article" or chapter_id == "whole":
                     raise ValueError(f"S4 legal sources must be assembled by article: {source_id}/{chapter_id}")
-            is_exercise = shelf_role in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
+            is_exercise = source_role in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
             if is_exercise:
                 exercise_pieces.append(f"===== {source_id} / {chapter_id} =====\n\n{text_path.read_text(encoding='utf-8').rstrip()}\n")
                 exercise_meta.append((source_id, chapter_id, page_label(entry), row["role"], row["why"]))
