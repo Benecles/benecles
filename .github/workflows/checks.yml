@@ -1,0 +1,48 @@
+# Site checks on every PR and every push to main (CI-1).
+# Advisory for now: a red X tells you something is wrong, but it does not block a merge.
+# Anything that needs a browser (breakscan, screenshots) still runs locally.
+name: checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check_all:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Fronts regenerate byte-identical, links, register data, anatomy (FLIGHT-LOG F-014..F-016).
+      - name: tools/check_all.sh
+        run: sh tools/check_all.sh
+
+      # The committed tree must already be what offline_build.py produces:
+      # manifest lists exactly the committed files, every page has its scripts,
+      # sanitize/landscape/assetver have nothing left to change.
+      - name: offline build is up to date
+        if: ${{ !cancelled() }}
+        run: |
+          git checkout -- .
+          python3 tools/offline_build.py > /dev/null
+          if ! git diff --quiet; then
+            echo "::error::Run 'python3 tools/offline_build.py' and commit the result. It would change:"
+            git diff --stat
+            git diff -- offline-manifest.json | head -60
+            exit 1
+          fi
+          echo "offline build: up to date"
