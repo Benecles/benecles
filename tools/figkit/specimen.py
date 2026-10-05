@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04
+import figkit, controle_a01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -34,6 +34,9 @@ ENTRIES = [
     ('Plano · dois eixos', 'comparar', 'Const. I · Aula 04 · Fig. 1 (3 passos)',
      'A mesma grade separa quem controla de como o controle ocorre: a Itália concentra a decisão sem torná-la abstrata; o Brasil reúne os dois modelos.',
      'substitui dci-a04-s2+2 (caixas)', consti_a04.panels(), 'direito-constitucional-i'),
+    ('Documento · anatomia', 'ler', 'Processo · Aula 01 · petição inicial',
+     'A petição como peça real: ler os incisos do art. 319 nos campos onde aparecem e localizar o contrato anexo do art. 320.',
+     'substitui pci-a01-s2', [processo_a01.panel()], 'processo-civil-i'),
 ]
 
 
