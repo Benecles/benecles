@@ -13,17 +13,17 @@ S3 triage.csv columns: source_id, chapter_id, lesson_id, role, why.
 Roles are primary, supporting, background, unused, no_book_covers. The
 no_book_covers row has lesson_id but no chapter_id; unused has chapter_id but
 no lesson_id. A background row must be exactly the closure of prerequisite
-lessons' primary chapter rows. Slide coverage comes from shelf.csv.
+lessons' primary chapter rows. Unavailable or unmapped slides are warnings.
 
 S3/S4 policy: supporting units are capped at 10,000 words each and 30,000
 supporting words per lesson. An over-10,000-word supporting unit requires a
-concrete `Specific need: ...` clause in `why`. Every lesson must receive at
-least 5,000 primary words from the sources listed in bibliography.base.
-basica_essencial; a shortfall requires a concrete lesson-level
-`thin_primary_reason` in course-map.json. Primary rationales must connect to
-the mapped syllabus line or learning outcome. Course maps may set
-`policy.basica_essencial_source_ids` to exact shelf IDs; when absent, the
-checker matches bibliography authors/titles to book_base shelf rows.
+concrete `Specific need: ...` clause in `why`. When basic-essential books
+exist, each lesson needs 5,000 primary words from them or a concrete
+`thin_primary_reason`. A course with no `book_base` sources instead needs a
+`no_book_covers` row for every lesson; its mapped cases may still be primary.
+Primary rationales must connect to the mapped syllabus or outcome. Maps may
+set `policy.basica_essencial_source_ids`; otherwise references are matched to
+book_base shelf rows.
 S4 also checks each generated 00-index.md, its file hashes and copied source
 atoms. `--workspace-root` points to a checkout containing work/pipeline/ and
 lets this checker validate a separate checkout without changing defaults.
@@ -337,6 +337,11 @@ def concrete_explanation(text):
     return len(normalized_words(text) - filler) >= 5
 
 
+def shelf_role(row):
+    """Return the normalized role before any semicolon-delimited source note."""
+    return row.get("role", "").split(";", 1)[0].strip().lower()
+
+
 def bibliography_authors(reference):
     author_line = reference.split(".", 1)[0]
     surnames = set()
@@ -360,14 +365,18 @@ def essential_source_ids(args, shelf_rows, errors):
     policy = course.get("policy", {}) if isinstance(course, dict) else {}
     explicit = policy.get("basica_essencial_source_ids") if isinstance(policy, dict) else None
     shelf_by_id = {row.get("source_id", ""): row for row in shelf_rows if row.get("source_id")}
+    book_base_rows = [row for row in shelf_rows if shelf_role(row) == "book_base"]
     if explicit is not None:
-        if not isinstance(explicit, list) or not explicit or not all(isinstance(item, str) and item for item in explicit):
-            errors.append("policy.basica_essencial_source_ids must be a non-empty list of shelf source IDs")
+        if not isinstance(explicit, list) or not all(isinstance(item, str) and item for item in explicit):
+            errors.append("policy.basica_essencial_source_ids must be a list of shelf source IDs")
+            return set()
+        if not explicit and book_base_rows:
+            errors.append("policy.basica_essencial_source_ids is empty but the shelf contains book_base sources")
             return set()
         for source_id in explicit:
             if source_id not in shelf_by_id:
                 errors.append(f"policy.basica_essencial_source_ids references unknown shelf source {source_id}")
-            elif shelf_by_id[source_id].get("role") != "book_base":
+            elif shelf_role(shelf_by_id[source_id]) != "book_base":
                 errors.append(f"policy.basica_essencial_source_ids source {source_id} is not a book_base shelf item")
         return set(explicit)
 
@@ -375,6 +384,8 @@ def essential_source_ids(args, shelf_rows, errors):
     base = bibliography.get("base", {}) if isinstance(bibliography, dict) else {}
     references = base.get("basica_essencial", []) if isinstance(base, dict) else []
     if not isinstance(references, list) or not references:
+        if not book_base_rows:
+            return set()
         errors.append("course map has no bibliography.base.basica_essencial list")
         return set()
 
@@ -386,7 +397,7 @@ def essential_source_ids(args, shelf_rows, errors):
         title_tokens = normalized_words(title) - generic - authors
         candidates = []
         for row in shelf_rows:
-            if row.get("role") != "book_base":
+            if shelf_role(row) != "book_base":
                 continue
             source_id = row.get("source_id", "")
             identity = normalized_words(source_id + " " + Path(row.get("path", "")).name)
@@ -451,7 +462,17 @@ def validate_legal_atom(assignment, errors):
 def check_assignment_policy(args, lessons, assignments, shelf_rows, errors):
     essential_ids = essential_source_ids(args, shelf_rows, errors)
     lesson_by_id = {lesson.get("id"): lesson for lesson in lessons}
-    shelf_roles = {row.get("source_id", ""): row.get("role", "") for row in shelf_rows}
+    shelf_roles = {row.get("source_id", ""): shelf_role(row) for row in shelf_rows}
+    no_book_lessons = {
+        row.get("lesson_id", "")
+        for row in read_csv(args.triage, errors)
+        if row.get("role") == "no_book_covers"
+    }
+    no_book_course = not essential_ids and not any(shelf_role(row) == "book_base" for row in shelf_rows)
+    if no_book_course:
+        for lesson_id in lesson_by_id:
+            if lesson_id not in no_book_lessons:
+                errors.append(f"{lesson_id}: no_book_covers note required because the shelf has no basic-essential book")
     support_totals = {lesson_id: 0 for lesson_id in lesson_by_id}
     primary_totals = {lesson_id: 0 for lesson_id in lesson_by_id}
     checked_legal_atoms = set()
@@ -482,7 +503,10 @@ def check_assignment_policy(args, lessons, assignments, shelf_rows, errors):
                         f"{lesson_id}: supporting item {source_id}/{chapter_id} has {words:,} words; over {MAX_SUPPORTING_ITEM_WORDS:,} requires `Specific need:` plus a concrete explanation"
                     )
         elif role == "primary":
-            if source_id not in essential_ids:
+            if no_book_course and lesson_id in no_book_lessons:
+                if not primary_matches_syllabus(lesson_by_id.get(lesson_id, {}), assignment):
+                    errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} rationale/title does not match the mapped syllabus")
+            elif source_id not in essential_ids:
                 errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} is not matched to bibliography.base.basica_essencial")
             elif not primary_matches_syllabus(lesson_by_id.get(lesson_id, {}), assignment):
                 errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} rationale/title does not match the mapped syllabus")
@@ -494,6 +518,8 @@ def check_assignment_policy(args, lessons, assignments, shelf_rows, errors):
             errors.append(f"{lesson_id}: supporting assignments total {total:,} words (limit {MAX_SUPPORTING_TOTAL_WORDS:,})")
     for lesson in lessons:
         lesson_id = lesson.get("id", "unknown lesson")
+        if no_book_course and lesson_id in no_book_lessons:
+            continue
         total = primary_totals.get(lesson_id, 0)
         if total >= MIN_PRIMARY_WORDS:
             continue
@@ -577,17 +603,30 @@ def check_s3(args, errors, warnings, run_policy=True):
     for key in catalog.keys() - verdicts:
         errors.append(f"chapter {key} has no primary/supporting/unused verdict")
     shelf = read_csv(args.shelf, errors)
-    slides = {row.get("lesson_id") for row in shelf if row.get("role") == "slides" and row.get("text_status") != "missing"}
-    slide_rows = {row.get("lesson_id") for row in shelf if row.get("role") == "slides"}
+    def slide_lesson_id(row):
+        lesson_id = row.get("lesson_id", "")
+        if lesson_id in ids:
+            return lesson_id
+        match = re.search(r"aula-(\d{1,2})", row.get("source_id", ""), re.I)
+        if match:
+            return f"aula-{int(match.group(1)):02d}.html"
+        return ""
+
+    slide_rows = {
+        slide_lesson_id(row)
+        for row in shelf
+        if shelf_role(row) == "slides" and slide_lesson_id(row)
+    }
+    slides = {
+        slide_lesson_id(row)
+        for row in shelf
+        if shelf_role(row) == "slides" and row.get("text_status") != "missing" and slide_lesson_id(row)
+    }
     for lesson in lessons:
         lesson_id = lesson.get("id")
         if lesson_id not in slides:
-            lesson_number = re.search(r"aula-(\d+)", str(lesson_id))
-            if lesson_number and 31 <= int(lesson_number.group(1)) <= 36:
-                status = "missing slide source row" if lesson_id not in slide_rows else "slide deck marked unavailable"
-                warnings.append(f"{lesson_id}: {status}; slide absence is permitted with warning")
-            else:
-                errors.append(f"{lesson_id}: no available slide deck in shelf")
+            status = "slide deck marked unavailable" if lesson_id in slide_rows else "no slide deck mapped in shelf"
+            warnings.append(f"{lesson_id}: {status}; S3 proceeds without a slide source")
         if not primary[lesson_id] and lesson_id not in no_book:
             errors.append(f"{lesson_id}: no primary book chapter or no_book_covers note")
         expected = set().union(*(primary.get(p.get("id"), set()) for p in lesson.get("prerequisites", [])))
