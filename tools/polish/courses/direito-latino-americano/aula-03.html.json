@@ -122,5 +122,17 @@
 {
 "before": " Pará</text></g></svg><svg class=\"panel fig\" id=\"p-gl1\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Dois tribunais\"><style>@media (max-width:860px) and (orientation:portrait){.stage figure svg.fig text{font-size:19px!important}}</style><defs><marker id=\"p-gl1-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"></path></marker><marker id=\"p-gl1-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\">",
 "after": " Pará</text></g></svg><svg class=\"panel fig\" id=\"p-gl1\" viewBox=\"0 0 600 600\" role=\"img\" aria-label=\"Dois tribunais\"><defs><marker id=\"p-gl1-c\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"></path></marker><marker id=\"p-gl1-d\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\">"
+},
+{
+"before": "</div><div role=\"listitem\">Leitura<b>≈ 18 min</b></div><div role=\"listitem\">Antes",
+"after": "</div><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes"
+},
+{
+"before": "</p><p>A comparação que a professora propõe com a Colômbia ",
+"after": "</p><p>A comparação com a Colômbia "
+},
+{
+"before": "posições, casos e distinções para a atividade.</p></section>\n<div class=\"longform\"><div><h3>",
+"after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
 }
 ]
