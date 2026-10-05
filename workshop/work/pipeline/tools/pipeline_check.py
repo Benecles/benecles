@@ -5,11 +5,15 @@ Usage: pipeline_check.py {s0,s1,s2,s3,s4} COURSE [--workspace-root PATH]
        [--map PATH] [--shelf PATH] [--chapters PATH] [--triage PATH]
        [--compendium PATH] [--site PATH]
 
-S1 shelf.csv columns: source_id, role, path, sha256, format, text_status,
-and optional lesson_id (for a slide deck). A missing source uses text_status=missing.
+S1 shelf.csv columns: source_id, role (or source_role), path, sha256, format,
+text_status (or `text status`), and optional lesson_id (for a slide deck). A
+missing source uses text_status=missing. Repeat a slide row when one deck serves
+multiple lessons so the association remains explicit.
 S2 chapters/<source_id>/index.json has a chapters list; each item has id,
 path, pdf_start, pdf_end, word_count. Text uses ===== p. N (PDF M) =====.
-S3 triage.csv columns: source_id, chapter_id, lesson_id, role, why.
+S3 triage.csv columns: source_id, chapter_id, lesson_id, role, why. Every
+indexed chapter has a base verdict for every lesson; prerequisite-primary
+background rows may overlay that cell.
 Roles are primary, supporting, background, unused, no_book_covers. The
 no_book_covers row has lesson_id but no chapter_id; unused has chapter_id but
 no lesson_id. A background row must be exactly the closure of prerequisite
@@ -93,6 +97,21 @@ def read_csv(path, errors):
     except OSError as exc:
         errors.append(f"cannot read CSV {path}: {exc}")
         return []
+
+
+def shelf_role(row):
+    """Read either the canonical source_role or the original role column."""
+    return row.get("source_role") or row.get("role", "")
+
+
+def shelf_text_status(row):
+    """Accept both pipeline text_status and the TGC shelf's `text status`."""
+    return row.get("text_status") or row.get("text status", "")
+
+
+def shelf_source_is_available(row):
+    status = shelf_text_status(row).strip().casefold()
+    return not (status.startswith("missing") or status.startswith("not found"))
 
 
 def course_map(path, errors):
@@ -256,7 +275,8 @@ def chapter_catalog(args, errors, validate_text):
                 continue
             actual_words = len(body.split())
             stated_words = entry.get("word_count")
-            if not isinstance(stated_words, int) or actual_words < 1 or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
+            documented_empty_source = actual_words == 0 and bool(entry.get("warning"))
+            if not isinstance(stated_words, int) or (actual_words < 1 and not documented_empty_source) or abs(actual_words - stated_words) > max(10, actual_words * 0.1):
                 errors.append(f"{source_id}/{chapter_id}: implausible word count ({stated_words} stated, {actual_words} found)")
         for parent, spans in parent_ranges.items():
             expected = set(range(min(start for start, _ in spans), max(end for _, end in spans) + 1))
@@ -268,52 +288,52 @@ def chapter_catalog(args, errors, validate_text):
 def check_s2(args, errors):
     shelf = read_csv(args.shelf, errors)
     roles_by_source = {}
+    indexed_shelf_ids = set()
     for row in shelf:
         source_id = row.get("source_id", "")
         if source_id:
-            roles_by_source[source_id] = shelf_role(row)
-        if row.get("text_status") in {"text layer", "OCR done"}:
-            if source_id and not (args.chapters / source_id / "index.json").is_file():
-                errors.append(f"{source_id}: available shelf source has no chapter index")
+            indexed_shelf_ids.add(source_id)
+            roles_by_source[source_id] = row.get("source_role") or shelf_role(row)
+            status = row.get("text_status", row.get("text status", ""))
+            is_missing = status == "missing" or status.startswith("MISSING") or status.startswith("NOT FOUND")
+            if not is_missing and not (args.chapters / source_id / "index.json").is_file():
+                errors.append(f"{source_id}: available S2 shelf source has no chapter index")
     catalog = chapter_catalog(args, errors, True)
+    indexed_ids = {source_id for source_id, _chapter_id in catalog}
+    for source_id in sorted(indexed_ids - indexed_shelf_ids):
+        errors.append(f"{source_id}: chapter index has no source_id row in shelf")
     entries_by_path = {}
     for (source_id, chapter_id), entry in catalog.items():
         rel_path = Path(entry.get("path", "")).as_posix()
         entries_by_path[(source_id, rel_path)] = (chapter_id, entry)
 
-    # The 15k cap applies only to course-relevant section-split units in a
-    # book_base source. Whole chapters outside the course remain whole.
+    # Core-book files have a hard cap, including whole chapters. Large chapter
+    # parents may be section-split, but every child file still has to fit.
     for (source_id, rel_path), (chapter_id, entry) in entries_by_path.items():
-        if roles_by_source.get(source_id) != "book_base" or not entry.get("parent"):
+        if roles_by_source.get(source_id) != "book_base" and not source_id.startswith("BASE-"):
             continue
         text_path = args.chapters / source_id / rel_path
         try:
-            actual_words = len(text_path.read_text().split())
+            actual_words = len(MARKER.sub("", text_path.read_text()).split())
         except OSError as exc:
             errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
             continue
         if actual_words > CORE_CHAPTER_WORD_LIMIT:
             errors.append(
-                f"{source_id}/{rel_path}: section-split core chapter has {actual_words:,} words "
-                f"(limit {CORE_CHAPTER_WORD_LIMIT:,}; chapter {chapter_id}, parent {entry['parent']})"
+                f"{source_id}/{rel_path}: core-book file has {actual_words:,} words "
+                f"(limit {CORE_CHAPTER_WORD_LIMIT:,}; chapter {chapter_id})"
             )
 
     # The 100k cap applies to every chapter text file, including files not yet
-    # listed in index.json. Exemptions are the named primary source texts and
-    # four explicitly allowed non-core whole chapters.
+    # listed in index.json. Statutes are article-level atoms in this pipeline.
     for text_path in sorted(args.chapters.rglob("*.txt")):
         try:
             source_id = text_path.relative_to(args.chapters).parts[0]
         except (ValueError, IndexError):
             continue
-        if source_id in SIZE_EXEMPT_SOURCE_IDS:
-            continue
         rel_path = text_path.relative_to(args.chapters / source_id).as_posix()
-        indexed = entries_by_path.get((source_id, rel_path))
-        if indexed and (source_id, indexed[0]) in SIZE_EXEMPT_CHAPTERS:
-            continue
         try:
-            actual_words = len(text_path.read_text().split())
+            actual_words = len(MARKER.sub("", text_path.read_text()).split())
         except OSError as exc:
             errors.append(f"{source_id}/{rel_path}: cannot read text for size gate: {exc}")
             continue
@@ -346,8 +366,8 @@ def concrete_explanation(text):
 
 
 def shelf_role(row):
-    """Return the normalized role before any semicolon-delimited source note."""
-    return row.get("role", "").split(";", 1)[0].strip().lower()
+    """Return the normalized canonical role before any descriptive note."""
+    return (row.get("source_role") or row.get("role", "")).split(";", 1)[0].strip().lower()
 
 
 def bibliography_authors(reference):
@@ -575,7 +595,9 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
     if not rows:
         errors.append("triage has no rows")
     verdicts = set()
+    base_cells = set()
     primary = {lesson_id: set() for lesson_id in ids}
+    supporting = {lesson_id: set() for lesson_id in ids}
     background = {lesson_id: set() for lesson_id in ids}
     no_book = set()
     for n, row in enumerate(rows, 2):
@@ -595,8 +617,13 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
             errors.append(f"triage row {n}: unknown chapter {key}")
             continue
         if role == "unused":
-            if lesson_id:
-                errors.append(f"triage row {n}: unused chapter must have blank lesson_id")
+            if lesson_id and lesson_id not in ids:
+                errors.append(f"triage row {n}: unknown lesson {lesson_id}")
+            elif lesson_id:
+                cell = (key, lesson_id)
+                if cell in base_cells:
+                    errors.append(f"triage row {n}: duplicate base verdict for {key} / {lesson_id}")
+                base_cells.add(cell)
             verdicts.add(key)
             continue
         if lesson_id not in ids:
@@ -604,8 +631,14 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
             continue
         if role in {"primary", "supporting"}:
             verdicts.add(key)
+            cell = (key, lesson_id)
+            if cell in base_cells:
+                errors.append(f"triage row {n}: duplicate base verdict for {key} / {lesson_id}")
+            base_cells.add(cell)
         if role == "primary":
             primary[lesson_id].add(key)
+        elif role == "supporting":
+            supporting[lesson_id].add(key)
         if role == "background":
             background[lesson_id].add(key)
     if require_full_coverage:
@@ -651,8 +684,9 @@ def check_s3(args, errors, warnings, run_policy=True, triage_rows=None, require_
         if not primary[lesson_id] and lesson_id not in no_book:
             errors.append(f"{lesson_id}: no primary book chapter or no_book_covers note")
         expected = set().union(*(primary.get(p.get("id"), set()) for p in lesson.get("prerequisites", [])))
-        if background[lesson_id] != expected:
-            errors.append(f"{lesson_id}: background differs from prerequisite primaries")
+        expected_background = expected - primary[lesson_id] - supporting[lesson_id]
+        if background[lesson_id] != expected_background:
+            errors.append(f"{lesson_id}: background differs from prerequisite primaries after direct assignments")
     assignments = triage_assignments(args, catalog, rows, errors)
     if run_policy:
         check_assignment_policy(args, lessons, assignments, shelf, errors)
