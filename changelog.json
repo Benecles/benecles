@@ -4,6 +4,17 @@
       "label": "05/10/2026 · atualizações da semana",
       "tiles": [
         {
+          "size": "sq",
+          "title": "Siglas primeiro por extenso",
+          "sub": "Direito Latino-americano · front e Aula 02",
+          "href": "courses/direito-latino-americano/index.html",
+          "visual": {
+            "type": "stat",
+            "value": "SCJ · TCP",
+            "label": "identificadas na primeira menção"
+          }
+        },
+        {
           "size": "hero",
           "title": "Figuras que são instrumentos",
           "sub": "meça a lei contra a Constituição",
