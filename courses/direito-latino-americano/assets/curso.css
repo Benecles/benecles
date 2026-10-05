@@ -450,3 +450,19 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
   .stage figure svg.fig:not(.figkit) text{font-size:18px!important}
   .stage figure svg.hero-fork text{font-size:36px!important}
 }
+/* Map and legacy figure labels sit on a paper halo, so a coastline or rule passing under a word never cuts it (Design Direction §3.2). */
+.stage figure svg.fig:not(.figkit) text{paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+/* Upright phones: a comparison table becomes stacked cards, one per row; the column name rides above each cell. Same content, no sideways scroll (PHN-1). */
+@media (max-width:860px) and (orientation:portrait){
+  .table-wrap{overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare th,table.compare td{display:block;width:auto}
+  table.compare thead{display:none}
+  table.compare{border:0;background:none;margin:24px 0 8px;font-size:16px}
+  table.compare tbody tr{border:1.5px solid var(--ink);background:var(--paper);margin:0 0 14px;box-shadow:4px 4px 0 var(--grid-major)}
+  table.compare tbody th{padding:10px 14px 8px;border-bottom:1.5px solid var(--ink);width:auto}
+  table.compare td{padding:10px 14px 12px;border-left:0!important}
+  table.compare td::before{content:attr(data-label);display:block;font:700 13px var(--sans);margin-bottom:3px;color:var(--ink)}
+  table.compare td[data-tone="conc"]::before{color:var(--conc)}
+  table.compare td[data-tone="dif"]::before{color:var(--dif)}
+  table.compare tr td:last-child{border-bottom:0}
+}
