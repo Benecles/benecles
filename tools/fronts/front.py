@@ -11,6 +11,7 @@ from typing import Any
 
 HERE = Path(__file__).resolve().parent          # tools/fronts
 R = HERE.parents[1]                              # repo root (the live site)
+import professor_card
 
 
 def _esc(value: Any) -> str:
@@ -34,6 +35,8 @@ def _head(old: str) -> str:
     ver = hashlib.sha1((R / "assets" / "front.css").read_bytes()).hexdigest()[:10]
     head = re.sub(r'<link rel="stylesheet" href="\.\./\.\./assets/front\.css[^"]*">\n?', "", head)
     head = re.sub(r"</head\s*>", f'<link rel="stylesheet" href="../../assets/front.css?v={ver}">\n</head>', head, flags=re.I)
+    if "professor-card.css" not in head:
+        head = re.sub(r"</head\s*>", professor_card.stylesheet_link("../../") + "\n</head>", head, flags=re.I)
     return head
 
 
@@ -69,12 +72,14 @@ def _scripts(old: str) -> str:
         if re.search(r"assets/(?:curso|course)\.js|assets/(?:offline|highlight)", script, re.I):
             if script not in selected:
                 selected.append(script)
-    return "\n".join(selected)
+    shared = professor_card.script_tags("../../")
+    return "\n".join(selected + [shared])
 
 
-def _title(data: dict[str, Any]) -> str:
+def _title(data: dict[str, Any], course: str) -> str:
     return (f'<header class="front-title"><div class="front-kicker">'
-            f'<span>Guia de estudo · {_esc(data.get("area"))} · {_esc(data.get("n_aulas"))} aulas · {_esc(data.get("prof"))}</span></div>'
+            f'<span>Guia de estudo · {_esc(data.get("area"))} · {_esc(data.get("n_aulas"))} aulas · '
+            f'{professor_card.name_slot(course, str(data.get("prof") or "Professor"), "../../")}</span></div>'
             f'<h1>{_esc(data.get("title"))}</h1><p class="front-deck">{_esc(data.get("deck"))}</p></header>')
 
 
@@ -268,7 +273,7 @@ def render(data: dict[str, Any], slug: str | None = None) -> str:
     page_head = _head(old)
     if inline_drawing_css:
         page_head = page_head.replace("</head>", inline_drawing_css + "\n</head>")
-    body = (f'{doc_open}{page_head}\n<body>\n{_topbar(old, data)}\n{_title(data)}\n<main class="front-main">'
+    body = (f'{doc_open}{page_head}\n<body>\n{_topbar(old, data)}\n{_title(data, course)}\n<main class="front-main">'
             f'{_drawing(data)}{_exam(data, old)}{_register(data, course)}{_bibliografia(data)}'
             f'</main>\n<p class="endnote">{data.get("endnote_html") or ""}</p>\n{_scripts(old)}\n</body>\n</html>')
     return body

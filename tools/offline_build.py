@@ -15,6 +15,8 @@ import landscape
 landscape.run()   # a sideways phone gets the desktop layout: narrow rules also require portrait
 import assetver
 assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach cached phones
+import professors
+professors.run() # refresh the shared professor data and generated-page include
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')

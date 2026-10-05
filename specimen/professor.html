@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Perfil do docente · Ordenações Filipinas</title>
+  <link rel="stylesheet" href="../courses/controle-de-constitucionalidade/assets/controle.css">
+  <link rel="stylesheet" href="../assets/front.css">
+  <link rel="stylesheet" href="../assets/professor-card.css?v=37c4f537a4">
+  <style>
+    .specimen-head,.samples{width:min(100% - 32px,1120px);margin-inline:auto;box-sizing:border-box}
+    .specimen-head{padding:38px 0 24px;border-bottom:1.5px solid var(--ink)}
+    .specimen-head .eyebrow,.sample-state{font:500 11px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2)}
+    .specimen-head h1{margin:8px 0;font:750 clamp(34px,5vw,58px)/1 var(--sans);color:var(--ink)}
+    .specimen-head>p:not(.eyebrow){font:18px/1.45 var(--serif);color:var(--ink-2)}
+    #theme-toggle{padding:7px 10px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);font:500 11px var(--mono);cursor:pointer}
+    .samples{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:18px;padding:24px 0 60px}
+    .sample{min-height:188px;padding:16px;border:1px solid var(--ink);background:var(--paper);box-shadow:5px 5px 0 var(--grid-major);box-sizing:border-box}
+    .sample-state{margin:0 0 18px}
+    .sample-content{position:relative;min-height:48px;padding:14px 0 6px;font:500 11px/1.5 var(--mono);color:var(--ink-2)}
+    .reason{margin:25px 0 0;border-top:1px solid var(--grid-major);padding-top:10px;font:14px/1.45 var(--serif);color:var(--ink-2)}
+    .phone-sample{width:375px;max-width:100%;grid-column:span 1}
+    .phone-sample .sample-content{min-height:170px;padding:14px 16px 6px}
+    .phone-sample .professor-card{width:343px;max-width:calc(100vw - 32px)}
+    .dark-sample{color-scheme:dark;--paper:#14171d;--paper-2:#1e2229;--grid-major:#252a32;--ink:#e5e3da;--ink-2:#a3a6a6;--muted:#868a8e;--conc:#dd8b6b;--conc-wash:#372824;--dif:#7fb0dd;--dif-wash:#1e2c3b;--mix:#b99ad0;--mix-wash:#2b2635}
+    .dark-sample .sample-content{padding:14px 12px 6px;background:var(--paper-2)}
+    @media(max-width:480px) and (orientation:portrait){.phone-sample .professor-card{width:calc(100vw - 32px)}}
+  </style>
+</head>
+<body>
+<header class="specimen-head"><p class="eyebrow">COMPONENTE · PERFIL DO DOCENTE</p><h1>Uma ficha sob o nome</h1>
+<p>A ficha abre junto ao nome e deixa a leitura no lugar.</p><button id="theme-toggle" type="button" aria-pressed="false">Alternar tema escuro</button></header>
+<main class="samples">
+<article class="sample " data-state="closed"><p class="sample-state">01 · Fechada</p><div class="sample-content"><span class="professor-fallback" data-professor-course="controle-de-constitucionalidade" data-professor-root="../">Prof. Marcelo Schenk Duque</span></div><p class="reason">O nome continua discreto no kicker e o foco de teclado fica visível.</p></article>
+<article class="sample " data-state="open"><p class="sample-state">02 · Aberta</p><div class="sample-content"><span class="professor-anchor"><button id="professor-demo-button-open" class="professor-name" type="button" aria-label="Roberta Camineiro Baggio, abre perfil" aria-expanded="true" aria-controls="professor-demo-card-open">Profa. Roberta Baggio</button><section id="professor-demo-card-open" class="professor-card is-open" role="region" aria-labelledby="professor-demo-card-open-name"><div id="professor-demo-card-open-name" class="professor-card-name" role="heading" aria-level="2">Roberta Camineiro Baggio</div><p class="professor-card-title">Professora de Direito, UFRGS</p><p class="professor-card-bio">Pesquisa direitos humanos e constitucionalismo na América Latina. Doutora em Direito pela UFSC, é professora adjunta na graduação e na pós-graduação da UFRGS.</p></section></span></div><p class="reason">A ficha abre abaixo do nome, sem deslocar o título.</p></article>
+<article class="sample phone-sample" data-state="phone"><p class="sample-state">03 · Telefone · 375 px</p><div class="sample-content"><span class="professor-anchor"><button id="professor-demo-button-phone" class="professor-name" type="button" aria-label="Eduardo Kochenborger Scarparo, abre perfil" aria-expanded="true" aria-controls="professor-demo-card-phone">Prof. Eduardo Scarparo</button><section id="professor-demo-card-phone" class="professor-card is-open" role="region" aria-labelledby="professor-demo-card-phone-name"><div id="professor-demo-card-phone-name" class="professor-card-name" role="heading" aria-level="2">Eduardo Kochenborger Scarparo</div><p class="professor-card-title">Professor de Direito Processual Civil, UFRGS</p><p class="professor-card-bio">Na pesquisa em Processo e Argumento, aproxima reflexão teórica e prática forense. Doutor em Direito pela UFRGS, é professor adjunto na graduação e permanente no PPGD.</p></section></span></div><p class="reason">A largura cabe entre duas margens de 16 px.</p></article>
+<article class="sample " data-state="two-course" id="course-two"><p class="sample-state">04 · Duas disciplinas</p><div class="sample-content"><span class="professor-anchor"><button id="professor-demo-button-multi" class="professor-name" type="button" aria-label="Pessoa docente de demonstração, abre perfil" aria-expanded="true" aria-controls="professor-demo-card-multi">Pessoa docente de demonstração</button><section id="professor-demo-card-multi" class="professor-card is-open" role="region" aria-labelledby="professor-demo-card-multi-name"><div id="professor-demo-card-multi-name" class="professor-card-name" role="heading" aria-level="2">Pessoa docente de demonstração</div><p class="professor-card-title">EXEMPLO · DUAS DISCIPLINAS</p><p class="professor-card-bio">Perfil fictício usado para mostrar a lista de disciplinas.</p><p class="professor-card-courses">Também: <a href="#course-two">Curso de demonstração II</a></p></section></span></div><p class="reason">Exemplo estrutural fictício: demonstra o link adicional sem atribuir dois cursos a alguém real.</p></article>
+<article class="sample dark-sample" data-state="dark"><p class="sample-state">05 · Tema escuro</p><div class="sample-content"><span class="professor-anchor"><button id="professor-demo-button-dark" class="professor-name" type="button" aria-label="Giovana Benetti, abre perfil" aria-expanded="true" aria-controls="professor-demo-card-dark">Profa. Giovana Benetti</button><section id="professor-demo-card-dark" class="professor-card is-open" role="region" aria-labelledby="professor-demo-card-dark-name"><div id="professor-demo-card-dark-name" class="professor-card-name" role="heading" aria-level="2">Giovana Benetti</div><p class="professor-card-title">Professora de Direito Privado, UFRGS</p><p class="professor-card-bio">Sua produção em Direito Privado examina o dolo por omissão e o dever de informar. Doutora em Direito Civil pela USP, leciona Direito Privado na UFRGS.</p></section></span></div><p class="reason">A borda e o papel acompanham as cores do tema.</p></article>
+</main>
+<script src="../assets/professors-data.js?v=a51882c1dc" defer></script>
+<script src="../assets/professor-card.js?v=9e6e8b42f2" defer></script>
+<script>
+  document.getElementById('theme-toggle').addEventListener('click', function () {
+    const dark = document.documentElement.dataset.theme !== 'dark';
+    if (dark) document.documentElement.dataset.theme = 'dark';
+    else delete document.documentElement.dataset.theme;
+    this.setAttribute('aria-pressed', String(dark));
+  });
+</script>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
+</body>
+</html>

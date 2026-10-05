@@ -65,3 +65,13 @@ repository root. It renders the authored lesson from `tools/editorial/unit08.jso
 and the diagram template, refreshes asset references, and records hashes of its
 editorial input, renderer and output in course provenance. The original reading
 is generated separately; do not replace it with the authored adaptation.
+
+## Professor cards
+
+Professor copy and private source/check metadata live in
+`tools/fronts/data/professors.json`. `tools/fronts/front.py` renders the shared
+slot on course fronts; `tools/professors.py` decorates generated lesson kickers
+and the home cards from that same data. `tools/offline_build.py` runs the shared
+decorator and includes its public profile asset in the offline manifest. The
+public asset omits `sources` and `checked`; when a course has no profile record,
+its instructor remains plain text.

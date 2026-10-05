@@ -24,10 +24,11 @@
 .deck-bar{height:4px;background:var(--grid);margin:0 0 16px}.deck-bar i{display:block;height:100%;background:var(--conc);width:0;transition:width .3s}
 .deck-done{padding:28px 22px;font-size:18px}.kbd{font:10px var(--mono);letter-spacing:.06em;color:var(--muted);margin-top:12px}
 @media(max-width:560px) and (orientation:portrait){.deck-tools{gap:8px}.card-box{min-height:300px}.card-box .q{padding:20px 18px 10px}.card-box .r{margin:0 18px 16px}}
-</style></head>
+</style><link rel="stylesheet" href="../../assets/professor-card.css?v=37c4f537a4">
+</head>
 <body>
 <nav class="topbar"><a href="index.html">← Processo Civil I-a</a><span>Cartões</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
-<header class="hero"><div class="kicker label"><span>Modo prova</span><span>90 perguntas das aulas</span><span>Processo Civil I-a</span></div><h1><span class="split">Cartões</span><span class="split">de estudo</span></h1><p class="deck">Leia a pergunta, responda de cabeça, abra a resposta e marque se acertou. O intervalo cresce quando você acerta e recomeça quando erra.</p></header>
+<header class="hero"><div class="kicker label"><span>Modo prova</span><span class="professor-fallback" data-professor-course="processo-civil-i" data-professor-root="../../">Prof. Eduardo Scarparo</span><span>90 perguntas das aulas</span><span>Processo Civil I-a</span></div><h1><span class="split">Cartões</span><span class="split">de estudo</span></h1><p class="deck">Leia a pergunta, responda de cabeça, abra a resposta e marque se acertou. O intervalo cresce quando você acerta e recomeça quando erra.</p></header>
 <div class="deck-wrap"><div class="deck-tools"><select id="aula" aria-label="Filtrar por aula"><option value="">Todas as aulas</option></select><button type="button" id="shuffle">Embaralhar</button><button type="button" id="reset">Zerar progresso</button><span class="count" id="count" aria-live="polite"></span></div>
 <div class="deck-bar" aria-hidden="true"><i id="bar"></i></div><div class="card-box" aria-live="polite"><div class="meta"><span id="where"></span><span id="pos"></span></div><div class="q" id="q"></div><div class="r" id="r" hidden></div><div class="acts"><button type="button" id="show">Mostrar resposta</button><button type="button" class="no" id="no" hidden>Errei · rever depois</button><button type="button" class="ok" id="ok" hidden>Acertei</button></div></div>
 <p class="kbd">Atalhos: espaço mostra a resposta · 1 errei · 2 acertei</p></div>
@@ -52,4 +53,6 @@ document.addEventListener('keydown',function(e){if(e.target.tagName==='SELECT'||
 </script><script src="../../assets/offline.js" defer></script>
 <script src="../../assets/highlight.js" defer></script>
 <script src="../../assets/highlight-panel.js" defer></script>
+<script src="../../assets/professors-data.js?v=a51882c1dc" defer></script>
+<script src="../../assets/professor-card.js?v=9e6e8b42f2" defer></script>
 </body></html>
