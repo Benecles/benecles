@@ -100,6 +100,8 @@ def check_s0(args, errors):
     lessons = course_map(args.map, errors)
     live = args.site / "courses" / args.course
     pages = {p.name for p in live.glob("aula-*.html")}
+    if (live / "revisao-atividade.html").is_file():
+        pages.add("revisao-atividade.html")
     if not pages:
         errors.append(f"no live lesson pages found in {live}")
     ids = [lesson.get("id") for lesson in lessons]
