@@ -336,13 +336,16 @@ Counted by `slop_lint` where marked ⚙; read for the rest. A hit over the limit
 - Read the passage, close it, write the claim in your own sentence and your own order, then check it against the source for accuracy.
 - Paraphrasing sentence by sentence while the source is open produces close paraphrase. Close paraphrase is still copying (the structure is also protected), and it reads badly.
 
-### E2. What can be quoted
-- Statutes and judicial decisions are not protected by copyright in Brazil (Lei 9.610/98, art. 8º, IV). Quote the wording of an article or a key passage of an ementa when the wording is what matters: the exam turns on "salvo se", "imediatamente", "dentro do prazo".
-- Doctrine (books, articles): no quotations on the page. Paraphrase, and name the author when the position is identified with them.
+### E2. Source blocks: the books and decisions speak for themselves (chairman, 05/10; replaces "no doctrine quotations")
+- When a book, decision, statute or treaty says the thing better than our paraphrase, the prose **stops** at that point and a **source block** opens right there: the passage itself, as long as it earns (a paragraph, or several hundred words of a key stretch). The prose resumes below without "como vimos" or a recap.
+- **No lead-in attribution in the prose** ("segundo X", "como afirma Y"). The block carries its own header: author, *work*, chapter/page; or court, case, date.
+- Choose stretches that do something paraphrase can't: the author's argument in their own order, a definition the professor uses, the court's actual reasoning, the operative words of an article. Don't quote what a sentence of ours says as well.
+- Decisions stay in their original language (Spanish, Portuguese); a translation toggle sits under non-Portuguese blocks.
+- Quote exactly from the source file on disk (book extract, decision text). Never quote from model memory; a block whose text can't be matched to the source file doesn't ship.
 
-### E3. No visible sourcing
-- No page numbers, footnotes, "segundo o slide", or provenance on the page.
-- The private ledger keeps every locator (A2), so every claim stays auditable.
+### E3. Our own prose still never talks about sources
+- Outside source blocks: no page numbers, footnotes, "segundo o slide", or provenance talk in the prose.
+- The private ledger keeps every locator (A2); source blocks show theirs in the header.
 
 ### E4. Depth comes from the sources, not from the model
 If the sources don't support a claim, it doesn't go in. Don't fill gaps with plausible general knowledge. If a gap matters, flag it in the plan for Claude.
