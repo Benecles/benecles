@@ -122,5 +122,17 @@
 {
 "before": "acolhida na maioria.</td><td>Centro do sistema: ",
 "after": "acolhida na maioria.</td><td data-label=\"Colômbia · C-579, C-694, C-674\" data-tone=\"dif\">Centro do sistema: "
+},
+{
+"before": "</div><div role=\"listitem\">Leitura<b>≈ 22 min</b></div><div role=\"listitem\">Antes",
+"after": "</div><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes"
+},
+{
+"before": "posições, casos e distinções para a atividade.</p></section>\n<div class=\"longform\"><div><h3>",
+"after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
+},
+{
+"before": "uma frase, como a professora compara o papel",
+"after": "uma frase, como se compara o papel"
 }
 ]
