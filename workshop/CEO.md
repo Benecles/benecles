@@ -92,7 +92,7 @@ If `~/Developer` is missing, restore first:
 - **`RUN-0410.md`** (the run ledger the plan requires) was never created by Codex; the resume section asks for it.
 
 ## Next up (in order)
-0. **Codex: #58 TXT-L1, then #57 SLOP-2 (+ addendum), then #59 MOT-1 (interaction motion after fluidfunctionalism.com; CEO gates the feel). CEO: final aesthetics QA of Latam front/A01/A02 once #58 merges.**
+0. **Codex: #58 TXT-L1, then #57 SLOP-2 (+ addendum), then #59 MOT-1 (interaction motion after fluidfunctionalism.com; CEO gates the feel); #60 SRC-1 source blocks (chairman 05/10: long inline quotes from books and decisions; Writing Standard E2/E3 rewritten; noindex instead of access control). CEO: final aesthetics QA of Latam front/A01/A02 once #58 merges.**
 1. **Finish LAT-1, one lesson at a time:**
    - **08** (blueprint APPROVED);
    - **04, 07, 09:** apply panel.md's REVISE points to the blueprint first;
