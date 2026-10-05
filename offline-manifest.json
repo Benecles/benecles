@@ -1,7 +1,6 @@
 {
-"version": "2fac01505c56",
+"version": "678df78fc4ef",
 "files": [
-"_tmp/labeler.js",
 "a-terra-muda-de-dono.html",
 "assets/bookmarks.js",
 "assets/caderno.css",
@@ -16,6 +15,8 @@
 "assets/front.css",
 "assets/highlight-panel.js",
 "assets/highlight.js",
+"assets/motion.css",
+"assets/motion.js",
 "assets/offline.js",
 "assets/plate.css",
 "assets/unit08/diagram.html",
@@ -267,6 +268,7 @@
 "specimen/figkit-controle-a01.html",
 "specimen/figuras.html",
 "specimen/hero.html",
+"specimen/motion.html",
 "specimen/register.html"
 ]
 }
