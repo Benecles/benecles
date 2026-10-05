@@ -66,5 +66,13 @@
 {
 "before": "Conitec para avaliação.</td><td>O processo judicial ",
 "after": "Conitec para avaliação.</td><td data-label=\"Leitura de nova intervenção\" data-tone=\"conc\">O processo judicial "
+},
+{
+"before": "deveriam proteger. A aula de 28/09 pergunta como o STF",
+"after": "deveriam proteger. A pergunta é como o STF"
+},
+{
+"before": "posições, casos e distinções para a atividade.</p></section>\n<div class=\"longform\"><div><h3>",
+"after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
 }
 ]

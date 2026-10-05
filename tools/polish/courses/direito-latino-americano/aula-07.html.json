@@ -98,5 +98,25 @@
 {
 "before": "<tr><th scope=\"row\">O acompanhamento</th><td>Usa dados públicos e admite correções.</td><td>Não há critério ",
 "after": "<tr><th scope=\"row\">O acompanhamento</th><td data-label=\"Constitucionalismo dialógico\" data-tone=\"dif\">Usa dados públicos e admite correções.</td><td data-label=\"Sinais de monólogo\" data-tone=\"conc\">Não há critério "
+},
+{
+"before": "</div><div role=\"listitem\">Leitura<b>≈ 22 min</b></div><div role=\"listitem\">Antes",
+"after": "</div><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes"
+},
+{
+"before": "e funcionamento institucional. A professora resume seus elementos assim: a violação",
+"after": "e funcionamento institucional. Seus elementos se resumem assim: a violação"
+},
+{
+"before": "organizada da superlotação. A pergunta final da professora serve de roteiro:",
+"after": "organizada da superlotação. Uma pergunta serve de roteiro:"
+},
+{
+"before": " estrutural?</p><p>A aula de 21/09 continua exatamente daqui:",
+"after": " estrutural?</p><p>A Aula 08 continua exatamente daqui:"
+},
+{
+"before": "posições, casos e distinções para a atividade.</p></section>\n<div class=\"longform\"><div><h3>",
+"after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
 }
 ]
