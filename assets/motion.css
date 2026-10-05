@@ -1,0 +1,29 @@
+/* Interaction motion: one preview slab per list. Position/opacity are the only animated properties. */
+[data-motion-list]{position:relative;isolation:isolate}
+[data-motion-slab]{position:absolute;z-index:0;left:0;top:0;width:1px;height:1px;list-style:none;margin:0;padding:0;opacity:0;pointer-events:none;background:var(--paper-2,#e9e3d3);transform-origin:top left;will-change:transform,opacity}
+[data-motion-target]{position:relative;z-index:1}
+.reg-row[data-motion-target]::after,.reg-row[data-motion-target]:hover::after,.reg-row[data-motion-target]:focus-visible::after{opacity:0!important;animation:none!important;clip-path:none!important}
+.reg-row[data-motion-target]:hover .reg-clock-fill,.reg-row[data-motion-target]:focus-visible .reg-clock-fill{animation:none!important}
+[data-motion-target] .reg-t,
+[data-motion-target].dlg a,
+[data-motion-target] .dlg-cases,
+[data-motion-target] summary,
+[data-motion-target].bet-opts button,
+[data-motion-target].endnav a{transition:font-weight .22s linear(0, .18 12%, .52 36%, .83 66%, 1 100%)}
+.reg-row[data-motion-target] .reg-t{font-weight:620}
+[data-motion-target] strong{font-weight:600}
+[data-motion-target][data-motion-active] strong{font-weight:650}
+.dialogues [data-motion-target] .dlg-cases{font-weight:650}
+.quiz [data-motion-target] summary{font-weight:600}
+.bet-opts [data-motion-target]{font-weight:500}
+.endnav [data-motion-target]{font-weight:600}
+[data-motion-target][data-motion-active] .reg-t{font-weight:660}
+.dialogues [data-motion-target][data-motion-active] .dlg-cases{font-weight:690}
+.quiz [data-motion-target][data-motion-active] summary{font-weight:650}
+.bet-opts [data-motion-target][data-motion-active]{font-weight:550}
+.endnav [data-motion-target][data-motion-active]{font-weight:650}
+[data-motion-list][data-motion-speed="fast"] [data-motion-slab]{--motion-k:1000}
+[data-motion-list][data-motion-speed="moderate"] [data-motion-slab]{--motion-k:560}
+[data-motion-list][data-motion-speed="slow"] [data-motion-slab]{--motion-k:280}
+@media(prefers-reduced-motion:reduce){[data-motion-slab]{transition:none!important;will-change:auto}}
+@media print{[data-motion-slab]{display:none!important}}

@@ -230,6 +230,8 @@ def _register(data: dict[str, Any], slug: str) -> str:
                     if mins else '<span class="reg-time"></span>')
             ex = exam_of.get(h)
             attrs = f' data-tone="{EXAM_TONES[ex % 3]}"' if ex is not None else ""
+            if len(sib) > 1 and h in sib:
+                attrs += f' data-motion-group="aula-{num.group(0).zfill(2) if num else lab}"'
             cls = "reg-row" + (" is-complementary" if l.get("complementary") else "")
             rows.append(f'<li><a class="{cls}"{attrs} href="{_esc(h)}">{n}<span class="reg-body"><span class="reg-t">{_esc(l.get("title"))}{ticks}</span>'
                         f'{does_html}</span>{time}</a></li>')
