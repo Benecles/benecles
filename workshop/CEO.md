@@ -58,8 +58,8 @@ If `~/Developer` is missing, restore first:
 
 ## Next up (in order)
 0. **05/10 night state (LAT-1):**
-   - Live and CEO-built: Aulas 05 and 06, the front, and every Latam figure (site #70–#75).
-   - Blueprints: 01 and 08 APPROVED; 04, 07, 09 REVISE; 02, 03 unpaneled; revisão not started.
+   - Live and CEO-built: Aulas 01, 05 and 06, the front, and every Latam figure (site #70–#75).
+   - Blueprints: 08 APPROVED; 04, 07, 09 REVISE; 02, 03 unpaneled; revisão not started.
    - The resume section at the top of `work/briefs/2026-10-04-orchestrator-prompt.md` is the handoff to Codex.
    - Gotcha: port 8793 may be Codex's server for another checkout.
 0b. **Chairman 04/10: no gates. Codex ships straight to the live site (merges its own PRs after its checks); the CEO reviews what landed on GitHub/live afterwards and fixes, edits, forks, bugfixes from there.** Master plan: `work/briefs/2026-10-04-orchestrator-prompt.md`; run ledger: `work/pipeline/direito-latino-americano/RUN-0410.md`.

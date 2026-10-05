@@ -36,9 +36,9 @@ Codex ran out of credits on 05/10. The CEO (Claude) carried the work in the mean
 - Look at every panel yourself, but only through a worker that returns crops.
 
 ## Update, 05/10 night (CEO, final turn of the day)
-- **Aula 06 is also rebuilt and merged** (site #75), from its APPROVED blueprint. It is now canonical alongside Aula 05: don't rewrite it.
+- **Aulas 01 and 06 are also rebuilt and merged** (site #75, #76), from its APPROVED blueprint. It is now canonical alongside Aula 05: don't rewrite it.
 - **Blueprints on disk, committed** (workshop f61a83d), with panel verdicts:
-  - **APPROVED:** 01, 08 → write them.
+  - **APPROVED:** 08 → write it (01 is done).
   - **REVISE:** 04, 07, 09 → apply the panel's points, then write.
   - **No panel yet:** 02, 03 → panel first.
   - **None yet:** the revisão.
