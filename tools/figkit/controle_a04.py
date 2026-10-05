@@ -22,17 +22,17 @@ def panel():
                 sub='parâmetro CF')
     field.point(340, 160, '§ 3º', active=True, tone='ink', dx=-10, dy=-4,
                 anchor='end', sub='equivale a emenda')
-    field.point(340, 270, 'C14', active=True, tone='conc', dx=-10, dy=-4,
-                anchor='end', sub='convencionalidade')
+    field.point(340, 270, 'CADH', active=True, tone='conc', dx=-10, dy=-4,
+                anchor='end', sub='art. 7.7 · parâmetro')
 
     doc = Document(
         'a04-c14-record', x=20, y=394, w=380,
         lines=[
-            ('title', 'C14 · RE 466.343', 'case'),
+            ('title', 'RE 466.343', 'case'),
             ('clause', ('Objeto', 'prisão civil do depositário infiel'), 'object'),
-            ('clause', ('Norma / status', 'direito humano · supralegal'), 'standard'),
+            ('clause', ('Norma / status', 'CADH · supralegal'), 'standard'),
             ('clause', ('Comparação', 'controle difuso de convencionalidade'), 'control'),
-            ('clause', ('Limite', 'o trecho não informa o resultado'), 'limit'),
+            ('clause', ('Desfecho', 'não indicado'), 'limit'),
             ('sign', ('Outro objeto / norma', 'Status / comparação'), 'transfer'),
         ], lead=17, indent=122)
 
@@ -42,7 +42,7 @@ def panel():
     inner += ''.join(field.o)
     inner += doc.paper() + ''.join(doc.parts)
     return svg('4 10 412 600', inner, cls='panel fig on', ident='p-caso-c14',
-               label='Ficha de classificação: Constituição e tratado de direitos humanos por estatuto, com RE 466.343 marcado como tratado supralegal e campo para novo caso')
+               label='Ficha de classificação: Constituição e Convenção Americana por estatuto, com a Convenção marcada como tratado supralegal e campo para novo caso do RE 466.343')
 
 
 def specimen_page():
