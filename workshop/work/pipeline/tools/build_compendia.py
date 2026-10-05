@@ -4,12 +4,123 @@
 import argparse
 import csv
 import hashlib
+from html.parser import HTMLParser
 import json
 import re
 from pathlib import Path
 
 
 PIPELINE_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_SITE = PIPELINE_ROOT.parents[1].parent / "ordenacoes-filipinas"
+DOSSIER_SOURCE_ID = "dossier-atividade-05-10"
+DOSSIER_INSTRUCTIONS_ID = "01-00-instrucoes"
+ANSWER_INSTRUCTION = re.compile(
+    r"Ao treinar o aluno, proponha perguntas no formato dos eixos e cobre respostas que usem os casos: "
+    r"tribunal, ano, o que foi decidido, por quê, quem divergiu e como o caso responde ao eixo\."
+)
+
+
+class VisibleTextParser(HTMLParser):
+    """Extract deterministic, reader-visible text from a lesson HTML page."""
+
+    BLOCK_TAGS = {
+        "address", "article", "blockquote", "br", "dd", "details", "div", "dl", "dt",
+        "figcaption", "figure", "footer", "h1", "h2", "h3", "h4", "h5", "h6", "header",
+        "hr", "li", "main", "nav", "ol", "p", "section", "summary", "table", "td", "th", "tr", "ul",
+    }
+    SKIP_TAGS = {"head", "script", "style", "noscript", "template"}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.hidden = 0
+        self.closed_details = []
+
+    @staticmethod
+    def attrs_dict(attrs):
+        return {key.lower(): (value or "") for key, value in attrs}
+
+    def handle_starttag(self, tag, attrs):
+        tag = tag.lower()
+        attr = self.attrs_dict(attrs)
+        if tag == "summary" and self.closed_details:
+            self.closed_details[-1]["summary"] = True
+        explicitly_hidden = (
+            "hidden" in attr
+            or attr.get("aria-hidden", "").lower() == "true"
+            or bool(re.search(r"(?:^|;)\s*(?:display\s*:\s*none|visibility\s*:\s*hidden)", attr.get("style", ""), re.I))
+        )
+        if tag == "details":
+            self.closed_details.append({"open": "open" in attr, "summary": False})
+        if tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+        elif tag in {"span", "strong", "em", "b", "i", "a", "text"}:
+            self.parts.append(" ")
+        if self.hidden or tag in self.SKIP_TAGS or explicitly_hidden:
+            self.hidden += 1
+
+    def handle_endtag(self, tag):
+        tag = tag.lower()
+        if tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+        elif tag in {"span", "strong", "em", "b", "i", "a", "text"}:
+            self.parts.append(" ")
+        if tag in self.SKIP_TAGS:
+            self.hidden = max(0, self.hidden - 1)
+        elif self.hidden:
+            self.hidden -= 1
+        if tag == "details" and self.closed_details:
+            self.closed_details.pop()
+        if tag == "summary" and self.closed_details:
+            self.closed_details[-1]["summary"] = False
+
+    def handle_data(self, data):
+        if self.hidden:
+            return
+        if any(not item["open"] and not item["summary"] for item in self.closed_details):
+            return
+        self.parts.append(data)
+
+    def text(self):
+        lines = []
+        for line in "".join(self.parts).splitlines():
+            line = re.sub(r"\s+", " ", line).strip()
+            if line and (not lines or lines[-1] != line):
+                lines.append(line)
+        return "\n".join(lines).strip() + "\n"
+
+
+def visible_page_text(path):
+    parser = VisibleTextParser()
+    parser.feed(path.read_text(encoding="utf-8"))
+    parser.close()
+    return parser.text()
+
+
+def dossier_answer_instruction(chapters_root):
+    source = chapters_root / DOSSIER_SOURCE_ID / f"{DOSSIER_INSTRUCTIONS_ID}.txt"
+    normalized = " ".join(source.read_text(encoding="utf-8").split())
+    match = ANSWER_INSTRUCTION.search(normalized)
+    if not match:
+        raise ValueError(f"dossier answer-evaluation instruction not found in {source}")
+    return match.group(0)
+
+
+def eixo_markdown(lesson, answer_instruction):
+    lines = [f"# Eixo de discussão — {lesson['id']}", ""]
+    axes = lesson.get("eixos_verbatim", [])
+    if axes:
+        lines.extend(["## Eixos retomados", ""])
+        for item in axes:
+            axis = item.get("eixo_de_discussao", "") if isinstance(item, dict) else str(item)
+            if axis:
+                lines.extend([f"- {axis}", ""])
+    elif lesson.get("eixo_de_discussao"):
+        lines.extend(["## Eixo", "", lesson["eixo_de_discussao"], ""])
+    else:
+        lines.extend(["## Eixo", "", "O programa não designa um eixo de discussão em forma de pergunta para este encontro.", ""])
+    lines.extend(["## Instrução de avaliação do dossiê", "", answer_instruction, ""])
+    return "\n".join(lines)
 
 
 def read_csv(path):
@@ -30,7 +141,7 @@ def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def chapter_catalog(chapters_root):
+def chapter_catalog(chapters_root, require_text=True):
     catalog = {}
     for index_path in sorted(chapters_root.glob("*/index.json")):
         source_id = index_path.parent.name
@@ -40,7 +151,7 @@ def chapter_catalog(chapters_root):
             if not key[1] or key in catalog:
                 raise ValueError(f"missing or duplicate chapter id: {source_id}/{key[1]}")
             text_path = index_path.parent / entry["path"]
-            if not text_path.is_file():
+            if require_text and not text_path.is_file():
                 raise FileNotFoundError(text_path)
             catalog[key] = (entry, text_path)
     return catalog
@@ -98,27 +209,38 @@ def make_record(path, source_id, chapter_id, pages, role, why):
     }
 
 
-def build(course):
+def build(course, site=DEFAULT_SITE):
     root = PIPELINE_ROOT / course
     map_path = root / "course-map.json"
     shelf_path = root / "shelf.csv"
     triage_path = root / "triage.csv"
     chapters_root = root / "chapters"
-    for required in (map_path, shelf_path, triage_path):
+    for required in (map_path, shelf_path):
         if not required.is_file():
             raise FileNotFoundError(required)
 
     course_map = json.loads(map_path.read_text(encoding="utf-8"))
     shelf_rows = read_csv(shelf_path)
     s4_assignments_path = root / "s4-assignments.csv"
-    triage_rows = read_csv(s4_assignments_path if s4_assignments_path.is_file() else triage_path)
-    catalog = chapter_catalog(chapters_root)
+    if s4_assignments_path.is_file():
+        triage_rows = read_csv(s4_assignments_path)
+    elif triage_path.is_file():
+        triage_rows = read_csv(triage_path)
+    else:
+        lesson_triage_dir = root / "triage"
+        triage_paths = sorted(lesson_triage_dir.glob("*.csv"))
+        if not triage_paths:
+            raise FileNotFoundError(triage_path)
+        triage_rows = [row for path in triage_paths for row in read_csv(path)]
+    catalog = chapter_catalog(chapters_root, require_text=False)
     shelf_by_id = {row["source_id"]: row for row in shelf_rows if row.get("source_id")}
     compendium = root / "compendium"
     compendium.mkdir(parents=True, exist_ok=True)
     lesson_count = 0
     file_count = 0
     provenance_count = 0
+    is_latam = course == "direito-latino-americano"
+    answer_instruction = dossier_answer_instruction(chapters_root) if is_latam else ""
 
     for lesson in course_map.get("lessons", []):
         lesson_id = lesson["id"]
@@ -126,6 +248,30 @@ def build(course):
         output_dir = compendium / slug
         output_dir.mkdir(parents=True, exist_ok=True)
         records = preserved_pulls(output_dir / "00-index.md")
+
+        if is_latam:
+            eixo_path = output_dir / "05-eixo.md"
+            eixo_path.write_text(eixo_markdown(lesson, answer_instruction), encoding="utf-8")
+            records.append(make_record(
+                eixo_path, "course-map.json", "eixo_de_discussao", "—", "workbench metadata",
+                "Verbatim eixo(s) from the S0 course map, paired with the dossier's answer-evaluation instruction.",
+            ))
+            dossier_entry = catalog.get((DOSSIER_SOURCE_ID, DOSSIER_INSTRUCTIONS_ID))
+            if dossier_entry:
+                records.append(make_record(
+                    eixo_path, DOSSIER_SOURCE_ID, DOSSIER_INSTRUCTIONS_ID,
+                    page_label(dossier_entry[0]), "workbench metadata",
+                    "Exact answer-evaluation instruction reproduced from dossier Part 0, item 2.",
+                ))
+            page_path = site / "courses" / course / lesson_id
+            if not page_path.is_file():
+                raise FileNotFoundError(f"current live lesson page not found: {page_path}; pass --site")
+            live_path = output_dir / "60-live-page.txt"
+            live_path.write_text(visible_page_text(page_path), encoding="utf-8")
+            records.append(make_record(
+                live_path, "live-page", lesson_id, "—", "live page snapshot",
+                "Visible text extracted from the current live lesson page.",
+            ))
 
         def mapped_lessons(row):
             values = [value.strip() for value in row.get("lesson_ids", "").split(";") if value.strip()]
@@ -236,8 +382,9 @@ def build(course):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("course", nargs="?", default="controle-de-constitucionalidade")
+    parser.add_argument("--site", type=Path, default=DEFAULT_SITE, help="current site checkout used for live-page snapshots")
     args = parser.parse_args()
-    build(args.course)
+    build(args.course, site=args.site)
 
 
 if __name__ == "__main__":
