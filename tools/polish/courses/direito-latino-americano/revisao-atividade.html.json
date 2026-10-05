@@ -8,10 +8,6 @@
 "after": "construção de vagas. O acompanhamento fraco é o limite desse modelo."
 },
 {
-"before": " medidas imediatas.</td><td>A aula registra supervisão limitada; ordem",
-"after": " medidas imediatas.</td><td>Registra-se supervisão limitada; ordem"
-},
-{
 "before": "153 é a fonte direta; não atribua",
 "after": "153 é a referência direta; não atribua"
 },
@@ -20,7 +16,135 @@
 "after": "construção e reforma; o acompanhamento limitado é o problema. Na ADPF"
 },
 {
-"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=800f3e316a\">\n<style>.prob{max-width:1180px;margin:0 auto ",
-"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=85246f914b\">\n<style>.prob{max-width:1180px;margin:0 auto "
+"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=85246f914b\">\n<style>.prob{max-width:1180px;margin:0 auto ",
+"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=7057d47b5e\">\n<style>.prob{max-width:1180px;margin:0 auto "
+},
+{
+"before": "era o conflito?</th><td>Alcance da anistia ",
+"after": "era o conflito?</th><td data-label=\"Brasil · ADPF 153\">Alcance da anistia "
+},
+{
+"before": "ligados à repressão.</td><td>Como conciliar paz, ",
+"after": "ligados à repressão.</td><td data-label=\"Colômbia · C-579/13, C-694/15 e C-674/17\">Como conciliar paz, "
+},
+{
+"before": "e na JEP.</td><td>Efeitos da Lei ",
+"after": "e na JEP.</td><td data-label=\"Uruguai · Gelman e Sentencia 20/2013\">Efeitos da Lei "
+},
+{
+"before": "<tr><th scope=\"row\">Resposta majoritária</th><td>STF manteve a ",
+"after": "<tr><th scope=\"row\">Resposta majoritária</th><td data-label=\"Brasil · ADPF 153\">STF manteve a "
+},
+{
+"before": "parte da transição.</td><td>A Corte aceitou ",
+"after": "parte da transição.</td><td data-label=\"Colômbia · C-579/13, C-694/15 e C-674/17\">A Corte aceitou "
+},
+{
+"before": "e juiz natural.</td><td>Corte IDH declarou ",
+"after": "e juiz natural.</td><td data-label=\"Uruguai · Gelman e Sentencia 20/2013\">Corte IDH declarou "
+},
+{
+"before": "Posições em tensão</th><td>Lewandowski propôs exame ",
+"after": "Posições em tensão</th><td data-label=\"Brasil · ADPF 153\">Lewandowski propôs exame "
+},
+{
+"before": "hediondos e equiparados.</td><td>González Cuervo rejeitou ",
+"after": "hediondos e equiparados.</td><td data-label=\"Colômbia · C-579/13, C-694/15 e C-674/17\">González Cuervo rejeitou "
+},
+{
+"before": "modalidades de sanção.</td><td>A Corte IDH ",
+"after": "modalidades de sanção.</td><td data-label=\"Uruguai · Gelman e Sentencia 20/2013\">A Corte IDH "
+},
+{
+"before": "Limite de leitura</th><td>A ADPF 153 ",
+"after": "Limite de leitura</th><td data-label=\"Brasil · ADPF 153\">A ADPF 153 "
+},
+{
+"before": "Gomes Lund</em>.</td><td>Priorização não equivale ",
+"after": "Gomes Lund</em>.</td><td data-label=\"Colômbia · C-579/13, C-694/15 e C-674/17\">Priorização não equivale "
+},
+{
+"before": "todo o regime.</td><td>A Sentencia 20/2013 ",
+"after": "todo o regime.</td><td data-label=\"Uruguai · Gelman e Sentencia 20/2013\">A Sentencia 20/2013 "
+},
+{
+"before": "<em>Gelman</em> (2011)</th><td>Corte IDH, caso ",
+"after": "<em>Gelman</em> (2011)</th><td data-label=\"Quem interpreta e em que contexto?\">Corte IDH, caso "
+},
+{
+"before": "de Caducidade uruguaia.</td><td>Limita a maioria ",
+"after": "de Caducidade uruguaia.</td><td data-label=\"Operação com a Convenção\">Limita a maioria "
+},
+{
+"before": "de graves violações.</td><td>Ordena remover obstáculos ",
+"after": "de graves violações.</td><td data-label=\"Efeito e limite\">Ordena remover obstáculos "
+},
+{
+"before": "<tr><th scope=\"row\">SCP 0084/2017</th><td>TCP boliviano, ação ",
+"after": "<tr><th scope=\"row\">SCP 0084/2017</th><td data-label=\"Quem interpreta e em que contexto?\">TCP boliviano, ação "
+},
+{
+"before": "limites à reeleição.</td><td>Usa o art. ",
+"after": "limites à reeleição.</td><td data-label=\"Operação com a Convenção\">Usa o art. "
+},
+{
+"before": "preferente da Convenção.</td><td>Libera candidatura na ",
+"after": "preferente da Convenção.</td><td data-label=\"Efeito e limite\">Libera candidatura na "
+},
+{
+"before": "<tr><th scope=\"row\">OC-28/21 (2021)</th><td>Corte IDH, consulta ",
+"after": "<tr><th scope=\"row\">OC-28/21 (2021)</th><td data-label=\"Quem interpreta e em que contexto?\">Corte IDH, consulta "
+},
+{
+"before": "reeleição presidencial indefinida.</td><td>Interpreta a Convenção ",
+"after": "reeleição presidencial indefinida.</td><td data-label=\"Operação com a Convenção\">Interpreta a Convenção "
+},
+{
+"before": "a democracia representativa.</td><td>Opinião consultiva posterior, ",
+"after": "a democracia representativa.</td><td data-label=\"Efeito e limite\">Opinião consultiva posterior, "
+},
+{
+"before": "· prisões colombianas</th><td>Superlotação e violações ",
+"after": "· prisões colombianas</th><td data-label=\"Diagnóstico/escala\">Superlotação e violações "
+},
+{
+"before": "os autores individuais.</td><td>Ordens mais diretas, ",
+"after": "os autores individuais.</td><td data-label=\"Ordem e escolha dos meios\">Ordens mais diretas, "
+},
+{
+"before": "e medidas imediatas.</td><td>Registra-se supervisão limitada; ",
+"after": "e medidas imediatas.</td><td data-label=\"Acompanhamento e limite\">Registra-se supervisão limitada; "
+},
+{
+"before": "· deslocamento colombiano</th><td>Violações repetidas a ",
+"after": "· deslocamento colombiano</th><td data-label=\"Diagnóstico/escala\">Violações repetidas a "
+},
+{
+"before": "e várias autoridades.</td><td>Planejamento, coordenação, orçamento, ",
+"after": "e várias autoridades.</td><td data-label=\"Ordem e escolha dos meios\">Planejamento, coordenação, orçamento, "
+},
+{
+"before": "de suas competências.</td><td>Autos de seguimento ",
+"after": "de suas competências.</td><td data-label=\"Acompanhamento e limite\">Autos de seguimento "
+},
+{
+"before": "· prisões brasileiras</th><td>Violações massivas no sistema prisional nacional.</td><td>STF reconhece ECI ",
+"after": "· prisões brasileiras</th><td data-label=\"Diagnóstico/escala\">Violações massivas no sistema prisional nacional.</td><td data-label=\"Ordem e escolha dos meios\">STF reconhece ECI "
+},
+{
+"before": "de execução penal.</td><td>Monitoramento pelo DMF/CNJ ",
+"after": "de execução penal.</td><td data-label=\"Acompanhamento e limite\">Monitoramento pelo DMF/CNJ "
+},
+{
+"before": "1234 · medicamentos</th><td>Judicialização de pedidos ",
+"after": "1234 · medicamentos</th><td data-label=\"Diagnóstico/escala\">Judicialização de pedidos "
+},
+{
+"before": "declaração de ECI.</td><td>Comissão especial de ",
+"after": "declaração de ECI.</td><td data-label=\"Ordem e escolha dos meios\">Comissão especial de "
+},
+{
+"before": "e tese vinculante.</td><td>A SV 60 ",
+"after": "e tese vinculante.</td><td data-label=\"Acompanhamento e limite\">A SV 60 "
 }
 ]
