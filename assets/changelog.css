@@ -258,13 +258,13 @@
   break-inside: avoid;
 }
 
-@media (max-width: 900px) and (orientation:portrait) {
+@media (max-width:1099px) and (orientation:portrait){
   #patch-notes-bento .patch-bento-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 560px) and (orientation:portrait) {
+@media (max-width:1099px) and (orientation:portrait){
   #patch-notes-bento {
     padding-inline: 16px;
   }
@@ -298,7 +298,7 @@
   #patch-notes-bento .patch-history .lessons-added { column-count: 1; }
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce){
   #patch-notes-bento .patch-tile { transition: none; }
 }
 

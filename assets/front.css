@@ -283,7 +283,7 @@
 .reg-row.is-complementary:focus-visible::after { background: transparent; outline: 1px dashed var(--tone); outline-offset: -2px; }
 .reg-row.is-complementary:focus-visible .reg-n { color: transparent; -webkit-text-stroke-color: var(--tone); }
 .reg-row:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
-@media (hover: hover) {
+@media (hover: hover){
   .reg-row[href]:hover::after { animation: reg-wash-pass .18s ease-out forwards; opacity: 1; }
   .reg-row[href]:hover .reg-n { color: var(--tone); }
   .reg-row[href]:hover .reg-clock-fill { animation: reg-clock-wind .18s ease-out forwards; opacity: .5; }
@@ -292,12 +292,12 @@
   .reg-rows:has(.reg-row[href]:hover) .reg-row[href]:not(:hover)::after { opacity: 0; transition: none; animation: none; clip-path: inset(0); }
   .reg-rows:has(.reg-row[href]:hover) .reg-row[href]:not(:hover) .reg-clock-fill { opacity: 0; transition: none; }
 }
-@media (hover: hover) and (prefers-reduced-motion: reduce) {
+@media (hover: hover) and (prefers-reduced-motion: reduce){
   .reg-row[href]:hover::after { animation: none; clip-path: inset(0); opacity: 1; transition: none; }
   .reg-row[href]:hover .reg-n { transition: none; }
   .reg-row[href]:hover .reg-clock-fill { animation: none; stroke-dasharray: var(--clock-fill) 100; opacity: .5; }
 }
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce){
   .reg-row:focus-visible::after { animation: none; clip-path: inset(0); opacity: 1; transition: none; }
   .reg-row:focus-visible .reg-n { transition: none; }
   .reg-row:focus-visible .reg-clock-fill { animation: none; stroke-dasharray: var(--clock-fill) 100; opacity: .5; }
@@ -331,4 +331,4 @@
 .reg-row.is-demo-focus { outline: 2px solid var(--ink); outline-offset: 2px; }
 .reg-state-note { margin: 5px 0 0 14px; color: var(--ink-2); font: 400 13px/1.4 var(--serif, Georgia, serif); }
 .reg-state-note strong { font: 500 11px/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; }
-@media (max-width: 600px) { .reg-state-list { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width:1099px) and (orientation:portrait){ .reg-state-list { grid-template-columns: minmax(0, 1fr); } }

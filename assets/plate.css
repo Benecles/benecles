@@ -70,6 +70,10 @@
 
   .plate__drawing { height: auto; }
   .plate__svg--desktop { height: auto; }
+  .plate--map .plate__drawing { overflow-x: auto; overscroll-behavior-x: contain; }
+  .plate--map .plate__drawing:focus-visible { outline: 3px solid var(--conc); outline-offset: 3px; }
+  .plate--map .plate__svg--desktop { width: 900px; min-width: 900px; max-width: none; }
+  .plate--map .plate__title::after { content: " · DESLIZE NA HORIZONTAL PARA PERCORRER"; }
   .plate__caption { font-size: 15px; }
 }
 
