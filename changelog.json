@@ -150,6 +150,17 @@
             "value": "5",
             "label": "listas com prévia por ponteiro ou foco"
           }
+        },
+        {
+          "size": "wide",
+          "title": "O mesmo fato, dois recortes",
+          "sub": "com e sem dever de garante",
+          "href": "courses/teoria-do-delito/unidade-01.html",
+          "visual": {
+            "type": "figure",
+            "page": "courses/teoria-do-delito/unidade-01.html",
+            "panel": "tdl-u01-s7"
+          }
         }
       ]
     }
