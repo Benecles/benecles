@@ -5,7 +5,7 @@ Run: python3 tools/figkit/inject.py        (then offline_build, polish capture/c
 """
 import os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import controle_a01, controle_a27, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04
+import controle_a01, controle_a02, controle_a27, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
