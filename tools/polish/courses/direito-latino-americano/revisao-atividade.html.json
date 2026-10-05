@@ -16,10 +16,6 @@
 "after": "construção e reforma; o acompanhamento limitado é o problema. Na ADPF"
 },
 {
-"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=85246f914b\">\n<style>.prob{max-width:1180px;margin:0 auto ",
-"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=7057d47b5e\">\n<style>.prob{max-width:1180px;margin:0 auto "
-},
-{
 "before": "era o conflito?</th><td>Alcance da anistia ",
 "after": "era o conflito?</th><td data-label=\"Brasil · ADPF 153\">Alcance da anistia "
 },
@@ -146,5 +142,9 @@
 {
 "before": "e tese vinculante.</td><td>A SV 60 ",
 "after": "e tese vinculante.</td><td data-label=\"Acompanhamento e limite\">A SV 60 "
+},
+{
+"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=7057d47b5e\">\n<style>.prob{max-width:1180px;margin:0 auto ",
+"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Revisão para a atividade avaliativa de 05/10 de Direito Latino-americano: os oito eixos de discussão com respostas, três quadros comparativos e dez problemas mistos resolvidos.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=f59ff8a271\">\n<style>.prob{max-width:1180px;margin:0 auto "
 }
 ]

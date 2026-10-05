@@ -56,7 +56,7 @@
 "after": "<text x=\"76\" y=\"296\" class=\"t-small tc-dif\">APLICADA</text>\n        <rect x=\"225\" y=\"260\" width=\"150\" height=\"60\" fill=\"none\" stroke-width=\"2\" stroke-dasharray=\"5 5\" style=\"stroke:var(--conc)\"/>\n        <path d=\"M230 264l12 10M242 264l-12 10M358 264l12 10M370 264l-12 10\" style=\"stroke:var(--conc)\" stroke-width=\"1.4\"/>\n        <text x=\"240\" y=\"296\" class=\"t-small tc-conc\">SUSPENSA</text>\n        <rect x=\"390\" y=\"260\" width=\"150\" height=\"60\" class=\"w-dif ink\"/>"
 },
 {
-"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 16 · a norma 'ainda constitucional' da inconstitucionalidade progressiva, e a controvérsia sobre o rótulo 'inconstitucionalidade circunstancial'.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=870499967f\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
-"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 16 · a norma 'ainda constitucional' da inconstitucionalidade progressiva, e a controvérsia sobre o rótulo 'inconstitucionalidade circunstancial'.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 16 · a norma 'ainda constitucional' da inconstitucionalidade progressiva, e a controvérsia sobre o rótulo 'inconstitucionalidade circunstancial'.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 16 · a norma 'ainda constitucional' da inconstitucionalidade progressiva, e a controvérsia sobre o rótulo 'inconstitucionalidade circunstancial'.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=8f0e7e0aa3\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
 }
 ]

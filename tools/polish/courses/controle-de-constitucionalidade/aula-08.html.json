@@ -1,9 +1,5 @@
 [
 {
-"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=870499967f\">\n</head>\n<body>\n<nav class=\"topbar\">",
-"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\">\n</head>\n<body>\n<nav class=\"topbar\">"
-},
-{
 "before": "\n\n    <div role=\"listitem\">Leitura<b>≈ 20 min</b></div>\n    <div role=\"listitem\">",
 "after": "\n\n    <div role=\"listitem\">Leitura<b>≈ 15 min</b></div>\n    <div role=\"listitem\">"
 },
@@ -94,5 +90,9 @@
 {
 "before": "prazo para reapreciação legislativa; isso não redefine, por si só, a teoria geral da nulidade.</p></details>\n    <details><summary>A aplicação de uma lei antes do julgamento prova que era constitucional até então ou que a anulabilidade passou a reger todos os casos?</summary><p>Não. O cumprimento anterior mostra que a lei produziu efeitos de fato, mas não decide a validade que a teoria lhe atribui. O RE 197.917 resolveu o marco temporal de um caso concreto.</p></details>\n  </div>\n</div>",
 "after": "prazo para reapreciação legislativa.</p></details>\n    <details><summary>A fixação de efeitos futuros no RE 197.917 tornou a anulabilidade a regra geral no Brasil?</summary><p>Não. O STF limitou os efeitos por analogia ao art. 27 diante do risco ao sistema legislativo vigente; a decisão não substituiu a nulidade como regra brasileira.</p></details>\n  </div>\n</div>"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\">\n</head>\n<body>\n<nav class=\"topbar\">",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=8f0e7e0aa3\">\n</head>\n<body>\n<nav class=\"topbar\">"
 }
 ]
