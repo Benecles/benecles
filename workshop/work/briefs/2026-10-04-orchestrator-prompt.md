@@ -36,11 +36,11 @@ Codex ran out of credits on 05/10. The CEO (Claude) carried the work in the mean
 - Look at every panel yourself, but only through a worker that returns crops.
 
 ## Update, 05/10 night (CEO, final turn of the day)
-- **Aulas 01 and 06 are also rebuilt and merged** (site #75, #76), from its APPROVED blueprint. It is now canonical alongside Aula 05: don't rewrite it.
+- **Aulas 01, 02 and 06 are also rebuilt and merged** (site #75, #76, #77), and 01/02 had a Writing Standard Part D deslop pass (`work/latam-rebuild/deslop_01_02.py` shows the patterns to avoid), from its APPROVED blueprint. It is now canonical alongside Aula 05: don't rewrite it.
 - **Blueprints on disk, committed** (workshop f61a83d), with panel verdicts:
   - **APPROVED:** 08 → write it (01 is done).
   - **REVISE:** 04, 07, 09 → apply the panel's points, then write.
-  - **No panel yet:** 02, 03 → panel first.
+  - **No panel yet:** 03 → panel first (02 is done).
   - **None yet:** the revisão.
 - **Course-wide sweep done:** backstage lines removed on A01–A04 and A07–A09, and hero reading times aligned. Writers must not reintroduce "a professora…", "a aula de dd/mm…" or "para a atividade" on reader pages.
 - **Port 8793 is held by a Codex http.server** serving `ordenacoes-filipinas-delito-u01`. A breakscan pointed at it silently tests the wrong checkout. Serve each checkout on its own port and pass `--base-url` explicitly.
