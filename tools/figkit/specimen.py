@@ -26,7 +26,7 @@ ENTRIES = [
      'Dias reais em colunas, cenários em faixas: a janela de seis dias úteis, a vista que suspende, o destaque que reinicia no presencial (com a janela ainda aberta) e o silêncio que não conta como voto.',
      'substitui p-sessao-a/b/c (ctl-a27)', controle_a27.panels(), 'controle-de-constitucionalidade'),
     ('Dossiê de caso', 'classificar', 'Delito · Unidade 01 · fato, norma e juízo',
-     'Separar o relato, a norma relevante e os pontos que ainda faltam demonstrar num caso de omissão.',
+     'Aplicar dois recortes normativos ao mesmo fato de cuidado e comparar os juízos provisórios sobre o resultado.',
      'substitui tdl-u01-s7 (comparison)', delito_u01.panels(), 'teoria-do-delito'),
     ('Caminho de decisão', 'decidir', 'Delito · Unidade 05 · Fig. 1 (3 passos)',
      'Três perguntas num tronco; cada saída é uma consequência jurídica com seu artigo. No último passo, o caso do casaco percorre o caminho inteiro e termina atípico, porque o furto não tem forma culposa.',
