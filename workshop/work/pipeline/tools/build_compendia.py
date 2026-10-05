@@ -127,7 +127,18 @@ def build(course):
         output_dir.mkdir(parents=True, exist_ok=True)
         records = preserved_pulls(output_dir / "00-index.md")
 
-        slide_rows = [row for row in shelf_rows if row.get("role") == "slides" and row.get("lesson_id") == lesson_id]
+        def mapped_lessons(row):
+            values = [value.strip() for value in row.get("lesson_ids", "").split(";") if value.strip()]
+            if values:
+                return values
+            legacy = row.get("lesson_id", "").strip()
+            return [legacy] if legacy else []
+
+        slide_rows = [
+            row for row in shelf_rows
+            if row.get("role", "").split(";", 1)[0].strip().lower() == "slides"
+            and lesson_id in mapped_lessons(row)
+        ]
         slide_texts = []
         slide_meta = []
         for row in slide_rows:
@@ -167,10 +178,10 @@ def build(course):
             if key not in catalog:
                 raise ValueError(f"S3 references unknown chapter {source_id}/{chapter_id}")
             entry, text_path = catalog[key]
-            if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_by_id.get(source_id, {}).get("role") == "statute":
+            shelf_role = shelf_by_id.get(source_id, {}).get("role", "").split(";", 1)[0].strip().lower()
+            if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or shelf_role == "statute":
                 if entry.get("locator") != "article" or chapter_id == "whole":
                     raise ValueError(f"S4 legal sources must be assembled by article: {source_id}/{chapter_id}")
-            shelf_role = shelf_by_id.get(source_id, {}).get("role", "")
             is_exercise = shelf_role in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
             if is_exercise:
                 exercise_pieces.append(f"===== {source_id} / {chapter_id} =====\n\n{text_path.read_text(encoding='utf-8').rstrip()}\n")

@@ -263,7 +263,7 @@ def check_s2(args, errors):
     for row in shelf:
         source_id = row.get("source_id", "")
         if source_id:
-            roles_by_source[source_id] = row.get("role", "")
+            roles_by_source[source_id] = shelf_role(row)
         if row.get("text_status") in {"text layer", "OCR done"}:
             if source_id and not (args.chapters / source_id / "index.json").is_file():
                 errors.append(f"{source_id}: available shelf source has no chapter index")
@@ -603,25 +603,37 @@ def check_s3(args, errors, warnings, run_policy=True):
     for key in catalog.keys() - verdicts:
         errors.append(f"chapter {key} has no primary/supporting/unused verdict")
     shelf = read_csv(args.shelf, errors)
-    def slide_lesson_id(row):
-        lesson_id = row.get("lesson_id", "")
-        if lesson_id in ids:
-            return lesson_id
-        match = re.search(r"aula-(\d{1,2})", row.get("source_id", ""), re.I)
-        if match:
-            return f"aula-{int(match.group(1)):02d}.html"
-        return ""
+    def slide_lesson_ids(row):
+        mapped = [value.strip() for value in row.get("lesson_ids", "").split(";") if value.strip()]
+        if not mapped:
+            legacy = row.get("lesson_id", "").strip()
+            if legacy:
+                mapped = [legacy]
+            else:
+                match = re.search(r"aula-(\d{1,2})", row.get("source_id", ""), re.I)
+                if match:
+                    mapped = [f"aula-{int(match.group(1)):02d}.html"]
+        unknown = [lesson_id for lesson_id in mapped if lesson_id not in ids]
+        for lesson_id in unknown:
+            warnings.append(
+                f"{row.get('source_id', 'unknown slide source')}: slide deck maps to unknown lesson {lesson_id}"
+            )
+        return [lesson_id for lesson_id in mapped if lesson_id in ids]
 
-    slide_rows = {
-        slide_lesson_id(row)
-        for row in shelf
-        if shelf_role(row) == "slides" and slide_lesson_id(row)
-    }
-    slides = {
-        slide_lesson_id(row)
-        for row in shelf
-        if shelf_role(row) == "slides" and row.get("text_status") != "missing" and slide_lesson_id(row)
-    }
+    slide_rows = set()
+    slides = set()
+    for row in shelf:
+        if shelf_role(row) != "slides":
+            continue
+        mapped = slide_lesson_ids(row)
+        if not mapped:
+            warnings.append(
+                f"{row.get('source_id', 'unknown slide source')}: slide deck is unmapped; S3 proceeds without it"
+            )
+            continue
+        slide_rows.update(mapped)
+        if row.get("text_status") != "missing":
+            slides.update(mapped)
     for lesson in lessons:
         lesson_id = lesson.get("id")
         if lesson_id not in slides:
@@ -747,7 +759,7 @@ def check_s4(args, errors, warnings):
             except (OSError, UnicodeDecodeError) as exc:
                 errors.append(f"{lesson_id}: cannot read source atom {source_id}/{chapter_id}: {exc}")
                 continue
-            is_exercise = shelf_by_id.get(source_id, {}).get("role") in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
+            is_exercise = shelf_role(shelf_by_id.get(source_id, {})) in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
             if is_exercise:
                 if source_text not in generated_text:
                     errors.append(f"{lesson_id}: S4 exercise file {file_name} does not contain its assigned source atom")
