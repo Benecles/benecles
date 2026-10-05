@@ -85,9 +85,6 @@ def _drawing(data: dict[str, Any]) -> str:
     if "inner_html" in drawing:  # reconciled from the live front: markup kept verbatim
         return f'<section class="front-drawing" aria-label="Desenho do curso">{drawing["inner_html"]}</section>'
     art = drawing.get("html", "")
-    phone = drawing.get("phone_html") or ""
-    if phone:
-        art = f'<div class="front-art-desktop">{art}</div><div class="front-art-phone">{phone}</div>'
     # Several preserved drawings already own a framed sheet in their markup/CSS.
     # Keep the shared frame for unframed art only so the new standard adds no second shadow.
     css = drawing.get("css", "")

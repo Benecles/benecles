@@ -1,23 +1,32 @@
 #!/usr/bin/env python3
-"""Landscape = desktop (owner, 2026-09-29), run by offline_build.py before every publish.
-A phone turned sideways is wider than it is tall, and should get the desktop layout rather than a squashed copy of the
-portrait one. Every narrow-screen rule (@media … max-width …) therefore also requires (orientation:portrait), in every
-stylesheet and every page's inline <style>, whatever generator wrote it. JS media checks use the same condition."""
+"""Normalize narrow layouts so portrait screens stack and landscape stays desktop.
+
+The site-wide portrait breakpoint is 1099px. Every max-width query uses the same
+cutoff; the orientation clause keeps a sideways phone on the desktop layout.
+"""
 import os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude', 'experiments'}
-MEDIA = re.compile(r'@media([^{;]*)\{')
-JSMQ = re.compile(r"matchMedia\('(\(max-width:\d+px\))'\)")
+MEDIA = re.compile(r'@media([^{};]*)\{')
+JSMQ = re.compile(r"matchMedia\(['\"]\(max-width:\s*\d+px\)(?:\s+and\s+\(orientation:\s*portrait\))?['\"]\)")
+BREAKPOINT = 1099
+
+def _media_query(q):
+    parts = []
+    for part in q.split(','):
+        part = part.strip()
+        if 'max-width' in part and 'print' not in part:
+            part = re.sub(r'max-width\s*:\s*\d+\s*px', f'max-width:{BREAKPOINT}px', part)
+            if 'orientation' not in part:
+                part += ' and (orientation:portrait)'
+        parts.append(part)
+    return ', '.join(parts)
 
 def fix(s):
-    def one(m):
-        q = m.group(1)
-        if 'max-width' not in q or 'orientation' in q or 'print' in q or ',' in q:
-            return m.group(0)
-        return f'@media{q.rstrip()} and (orientation:portrait){" " if q.endswith(" ") else ""}{{'
-    s = MEDIA.sub(one, s)
-    return JSMQ.sub(lambda m: f"matchMedia('{m.group(1)} and (orientation:portrait)')", s)
+    s = MEDIA.sub(lambda m: '@media ' + _media_query(m.group(1)) + '{', s)
+    s = JSMQ.sub(f"matchMedia('(max-width:{BREAKPOINT}px) and (orientation:portrait)')", s)
+    return s
 
 def run():
     n = 0
@@ -30,4 +39,4 @@ def run():
     return n
 
 if __name__ == '__main__':
-    print('landscape: portrait-only narrow rules in', run(), 'files')
+    print('landscape: normalized portrait layouts in', run(), 'files')

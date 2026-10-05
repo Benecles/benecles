@@ -143,7 +143,7 @@ body { background: #f8f6ef; }
 .note.rose h3 { color: #824337; }
 .note.rose .label { color: #824337; }
 .clip { background: linear-gradient(90deg,#fff0,#fff9 35%,#fff0 65%); box-shadow: 2px 3px 2px #4e4b4b55; }
-@media(max-width:650px) and (orientation:portrait) {
+@media (max-width:1099px) and (orientation:portrait){
   .cover-board { width:calc(100% - 16px); margin-bottom:25px; padding:10px 9px 18px 13px; }
   .cover-board::before { left:4px; inset-block:5px; }
   .folio { width:100%; margin:0; }
@@ -155,17 +155,17 @@ body { background: #f8f6ef; }
   h1 { font-size:clamp(44px,12.5vw,53px); }
   .finding { margin-top:14px; }
 }
-@media print {
+@media print{
   .cover-board { background:none;border:0;box-shadow:none;padding:0;width:100%; }
   .cover-board::before { display:none; }
   .folio,.note,.finding,.drawing-paper { box-shadow:none; }
 }
 /* Mid-width compositions need a full title measure rather than a squeezed spread. */
-@media (min-width:651px) and (max-width:900px) and (orientation:portrait) {
+@media (min-width:651px) and (max-width:1099px) and (orientation:portrait){
   .title-row { display:block; }
   h1 { font-size:68px; }
   .opening { margin:28px 0 20px 34px; font-size:27px; }
-  .opening svg { display:none; }
+  .opening svg { display:block; width:min(130px,100%); margin-left:0; }
   .section-caption { display:block; }
   .section-caption h2 { margin-top:10px; }
   .notes-spread { grid-template-columns:1fr; max-width:510px; margin-inline:auto; }
@@ -173,7 +173,7 @@ body { background: #f8f6ef; }
 }
 .phase-sheet { background-image:linear-gradient(#fbf8e999,#fbf8e999),var(--fibre); }
 .drawing-paper { min-width:0; }
-@media (min-width:651px) and (max-width:900px) and (orientation:portrait) {
+@media (min-width:651px) and (max-width:1099px) and (orientation:portrait){
   .phases { grid-template-columns:repeat(5,minmax(0,1fr)); }
   .phases li { padding-inline:8px; }
   .phases h3 { font-size:20px; }

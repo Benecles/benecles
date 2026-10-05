@@ -28,7 +28,7 @@ a.prancha:focus-visible{outline:3px solid var(--conc);outline-offset:4px}
 .about h3{font:700 22px var(--sans);margin:0 0 8px}
 .about p{margin:0;font-size:17px;color:var(--ink-2)}
 .foot{max-width:1180px;margin:0 auto;padding:20px clamp(16px,4vw,48px) 50px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
-@media(max-width:760px) and (orientation:portrait){.about{grid-template-columns:1fr;gap:20px}}
+@media (max-width:1099px) and (orientation:portrait){.about{grid-template-columns:1fr;gap:20px}}
 
 /* modo noite: mesmas cores de Teoria Geral dos Contratos */
 :root[data-theme="dark"]{
@@ -62,7 +62,7 @@ body{transition:background-color .35s ease,color .35s ease}
 .tt-track{position:relative;width:30px;height:16px;border:1.5px solid currentColor;border-radius:9px}
 .tt-knob{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:var(--conc);transition:transform .3s cubic-bezier(.2,1.25,.4,1),background-color .3s}
 .theme-toggle[aria-pressed="true"] .tt-knob{transform:translateX(14px);background:var(--dif)}
-@media (max-width:560px) and (orientation:portrait){.tt-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media (max-width:1099px) and (orientation:portrait){.tt-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 .topbar>span:first-child{margin-left:0}
 </style>
 </head>

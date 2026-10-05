@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PHN-1 · responsive specimens</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;padding:20px;background:#f2eee3;color:#1d2530;font:16px/1.45 system-ui,sans-serif}
+    h1{font-size:clamp(25px,4vw,40px);margin:0 0 8px}p{max-width:68ch;margin:0 0 24px}
+    .specimen{margin:24px 0 40px;padding-top:15px;border-top:2px solid #1d2530}
+    .devices{display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap}
+    .device{margin:0;padding:9px;background:#d8d2c0;border:1px solid #1d2530;box-shadow:4px 4px 0 #c9c1aa}
+    .device figcaption{font:11px/1.4 ui-monospace,monospace;text-transform:uppercase;margin:0 0 8px}
+    iframe{display:block;border:0;background:#f2eee3}
+    .portrait iframe{width:min(390px,calc(100vw - 60px));height:844px}
+    .landscape iframe{width:844px;height:390px}
+    @media (max-width:1099px) and (orientation:portrait){body{padding:14px}.landscape{display:none}.portrait iframe{height:min(844px,calc(100vh - 120px))}}
+  </style>
+</head>
+<body>
+  <h1>PHN-1 · one drawing, two orientations</h1>
+  <p>The preview frames load the same course front and lesson. Portrait places the existing drawing after its text; landscape keeps the desktop arrangement.</p>
+  <section class="specimen" aria-labelledby="front-title">
+    <h2 id="front-title">Course front · Teoria do Delito</h2>
+    <div class="devices">
+      <figure class="device portrait"><figcaption>Upright · 390 × 844</figcaption><iframe title="Course front in portrait orientation" src="../courses/teoria-do-delito/index.html"></iframe></figure>
+      <figure class="device landscape"><figcaption>Sideways · 844 × 390</figcaption><iframe title="Course front in landscape orientation" src="../courses/teoria-do-delito/index.html"></iframe></figure>
+    </div>
+  </section>
+  <section class="specimen" aria-labelledby="lesson-title">
+    <h2 id="lesson-title">Lesson figure · Unit 01</h2>
+    <div class="devices">
+      <figure class="device portrait"><figcaption>Upright · 390 × 844</figcaption><iframe title="Lesson figure in portrait orientation" src="../courses/teoria-do-delito/unidade-01.html"></iframe></figure>
+      <figure class="device landscape"><figcaption>Sideways · 844 × 390</figcaption><iframe title="Lesson figure in landscape orientation" src="../courses/teoria-do-delito/unidade-01.html"></iframe></figure>
+    </div>
+  </section>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
+</body>
+</html>

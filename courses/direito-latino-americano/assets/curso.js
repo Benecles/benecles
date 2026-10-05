@@ -1,25 +1,60 @@
 // Scrollytelling: each .step names the figure panel it needs (data-panel).
-// Without JS the first panel of each stage stays visible and the text reads normally.
+// Portrait layout moves the existing SVG node under its prose step; it never duplicates a drawing.
 (function () {
-  if (!('IntersectionObserver' in window)) return;
+  var mq = matchMedia('(max-width:1099px) and (orientation:portrait)');
   document.querySelectorAll('.scrolly').forEach(function (block) {
-    var panels = block.querySelectorAll('.panel');
-    var caption = block.querySelector('.stage-count');
+    var stage = block.querySelector('.stage');
+    var sourceFigure = stage && stage.querySelector('figure');
+    var sourceCaption = sourceFigure && sourceFigure.querySelector('figcaption');
+    var panels = Array.prototype.slice.call(block.querySelectorAll('.panel'));
     var steps = Array.prototype.slice.call(block.querySelectorAll('.step'));
+    var caption = block.querySelector('.stage-count');
+    var mobileHosts = [];
+    var arranged = false;
+
+    function portraitLayout(on) {
+      if (on && !arranged && sourceFigure) {
+        panels.forEach(function (panel) {
+          var step = steps.find(function (candidate) { return candidate.getAttribute('data-panel') === panel.id; });
+          if (!step) return;
+          var host = document.createElement('figure');
+          host.className = 'step-figure';
+          var card = step.querySelector('.card');
+          step.insertBefore(host, card ? card.nextSibling : null);
+          host.appendChild(panel);
+          if (sourceCaption) host.appendChild(sourceCaption.cloneNode(true));
+          mobileHosts.push({ panel: panel, host: host });
+        });
+        arranged = true;
+      }
+      if (!on && arranged && sourceFigure) {
+        mobileHosts.forEach(function (entry) {
+          sourceFigure.insertBefore(entry.panel, sourceCaption || null);
+          entry.host.remove();
+        });
+        mobileHosts = [];
+        arranged = false;
+      }
+      block.classList.toggle('scrolly-portrait', on);
+    }
+
+    portraitLayout(mq.matches);
+    (mq.addEventListener ? mq.addEventListener('change', function (event) { portraitLayout(event.matches); }) : mq.addListener(function (event) { portraitLayout(event.matches); }));
+
+    if (!('IntersectionObserver' in window)) return;
     function show(step) {
       steps.forEach(function (s) { s.classList.toggle('on', s === step); });
       var id = step.getAttribute('data-panel');
       panels.forEach(function (p) {
         var on = p.id === id;
         if (on && !p.classList.contains('on')) {
-          // restart draw-on strokes each time a panel comes back
           p.querySelectorAll('.grow,.pop,.fade,.pulse').forEach(function (g) { g.style.animation = 'none'; g.getBoundingClientRect(); g.style.animation = ''; });
         }
         p.classList.toggle('on', on);
       });
       if (caption) caption.textContent = step.getAttribute('data-slides') || '';
-      var counter = block.querySelector('.stage-step');
-      if (counter) counter.textContent = (steps.indexOf(step) + 1) + ' / ' + steps.length;
+      var current = (steps.indexOf(step) + 1) + ' / ' + steps.length;
+      block.querySelectorAll('.stage-step').forEach(function (counter) { counter.textContent = current; });
     }
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting) show(e.target); });
@@ -134,7 +169,7 @@
 
 // Phone: tap a pinned figure to tuck it up for more reading room; tap again to bring it back. One setting for the page.
 (function () {
-  var mq = matchMedia('(max-width:860px) and (orientation:portrait)');
+  var mq = matchMedia('(max-width:1099px) and (orientation:portrait)');
   var stages = document.querySelectorAll('.scrolly .stage');
   function mark() {
     stages.forEach(function (st) {

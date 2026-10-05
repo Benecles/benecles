@@ -204,14 +204,13 @@ dl.termos dd{font-size:17px}
 .prosa{max-width:70ch;font-size:19px}
 .prosa p{margin:0 0 16px}
 
-@media (max-width:860px) and (orientation:portrait){
+@media (max-width:1099px) and (orientation:portrait){
   .par{grid-template-columns:1fr}.par>div+div{border-left:0;border-top:1.5px solid var(--ink)}
   dl.termos{grid-template-columns:1fr}dl.termos dt{border-bottom:0;padding-bottom:0}
 }
 
-/* phone: figure pins to the top third, text scrolls beneath */
-@media (max-width:860px) and (orientation:portrait){
-  .hero-fork{display:none}
+/* Portrait pages put each step's existing figure directly after its text. */
+@media (max-width:1099px) and (orientation:portrait){
   body{font-size:18px}
   .scrolly{grid-template-columns:1fr;gap:0}
   .stage{height:auto;top:0;z-index:2;padding:10px 0 34px;background:linear-gradient(var(--paper) 88%,transparent)}
@@ -240,7 +239,7 @@ dl.termos dd{font-size:17px}
    as an internal audit trail (see the digests / build notes) but are never displayed. */
 .src,.stage-count,details.provenance,body:has(.src) .titleblock div:first-child{display:none!important}
 .titleblock{grid-template-columns:repeat(4,auto)}body:has(.src) .titleblock{grid-template-columns:repeat(3,auto)}
-@media (max-width:860px) and (orientation:portrait){.titleblock{grid-template-columns:1fr 1fr}}
+@media (max-width:1099px) and (orientation:portrait){.titleblock{grid-template-columns:1fr 1fr}}
 
 /* ---------- motion vocabulary for figures (Contratos) ---------- */
 .panel.on .grow{animation-delay:var(--d,0s)}
@@ -296,7 +295,7 @@ body{transition:background-color .35s ease,color .35s ease}
 .tt-track{position:relative;width:30px;height:16px;border:1.5px solid currentColor;border-radius:9px}
 .tt-knob{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:var(--conc);transition:transform .3s cubic-bezier(.2,1.25,.4,1),background-color .3s}
 .theme-toggle[aria-pressed="true"] .tt-knob{transform:translateX(14px);background:var(--dif)}
-@media (max-width:560px) and (orientation:portrait){.tt-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media (max-width:1099px) and (orientation:portrait){.tt-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 .read-progress{position:fixed;top:0;left:0;right:0;height:3px;background:var(--conc);transform:scaleX(0);transform-origin:0 50%;z-index:60;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.read-progress{display:none}}
 
@@ -363,9 +362,9 @@ svg [data-lk].on>rect:first-child,svg [data-lk].on>path:first-child{stroke-width
 .glosa svg path{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 @media (max-width:1099px) and (orientation:portrait){
   .glosa{float:none;width:auto;margin:6px 0 16px;padding:2px 0 2px 12px;border-left:2px solid currentColor;display:block}
-  .glosa svg{display:none}
+  .glosa svg{position:static;display:inline-block;vertical-align:middle;margin-right:6px}
 }
-@media print{.glosa{float:none;width:auto;margin:4px 0 10px}.glosa svg{display:none}}
+@media print{.glosa{float:none;width:auto;margin:4px 0 10px}.glosa svg{position:static;display:inline-block;vertical-align:middle;margin-right:6px}}
 
 /* ---- glosa ↔ its phrase light up together; whole-paragraph glosas get a bar on the glosa's side ---- */
 .mk{transition:background-color .15s}
@@ -393,7 +392,6 @@ p.gp.gp-conc{border-right-color:var(--conc)}p.gp.gp-mix{border-right-color:var(-
 @media print{.idle-flow{display:none}}
 
 /* ---- glosa markers: the same small letter ends the marked phrase and opens its glosa ---- */
-.glosa>svg{display:none}
 .gmark{font:600 11px/1 var(--mono);color:var(--dif);letter-spacing:0}
 sup.gmark{margin-left:1px;vertical-align:super}
 b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1px}
@@ -419,7 +417,7 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
 .hero h1{-webkit-hyphens:auto;hyphens:auto}
 
 .hero-fork.hero-map{margin-top:28px;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}
-@media (max-width:860px) and (orientation:portrait){.hero-fork.hero-map{display:block}}
+@media (max-width:1099px) and (orientation:portrait){.hero-fork.hero-map{display:block}}
 .hero-fork.hero-map{overflow:hidden}
 
 /* hero-fork mirrors .fig */
@@ -431,7 +429,7 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
 .titleblock>div{min-width:0}.titleblock b{overflow-wrap:anywhere}
 
 /* phone: tap a pinned figure to tuck it up (only its bottom edge and caption stay), tap again to bring it back */
-@media (max-width:860px) and (orientation:portrait){
+@media (max-width:1099px) and (orientation:portrait){
   .stage.tuckable{--fw:min(calc(100vw - 2 * clamp(16px,4vw,48px)),46vh);transition:top .35s ease}
   .stage.tuckable figure{cursor:pointer;-webkit-tap-highlight-color:transparent}
   .stage.tuckable figure:focus-visible{outline:2px solid var(--conc);outline-offset:3px}
@@ -446,7 +444,18 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
   .stage figure svg.fig:not(.figkit) text{font-size:14px!important}
   .stage figure svg.hero-fork text{font-size:16px!important}
 }
-@media (max-width:860px) and (orientation:portrait){
+@media (max-width:1099px) and (orientation:portrait){
   .stage figure svg.fig:not(.figkit) text{font-size:18px!important}
   .stage figure svg.hero-fork text{font-size:36px!important}
+}
+
+/* Portrait: put the same inline figure after the step it illustrates. */
+@media (max-width:1099px) and (orientation:portrait){
+  .scrolly.scrolly-portrait{display:block;grid-template-columns:1fr;gap:0}
+  .scrolly.scrolly-portrait .stage{display:none}
+  .scrolly.scrolly-portrait .steps{padding:0}
+  .scrolly.scrolly-portrait .step{min-height:0;justify-content:flex-start;gap:14px;padding:18px 0}
+  .scrolly.scrolly-portrait .step-figure{position:relative;display:block;width:min(100%,58vh);max-height:none;aspect-ratio:auto;margin:12px auto 22px;background:var(--paper);border:1.5px solid var(--ink);box-shadow:4px 4px 0 var(--grid-major);overflow:visible}
+  .scrolly.scrolly-portrait .step-figure .panel{position:relative;inset:auto;display:block;flex:none;width:100%;height:auto;opacity:1!important;transition:none}
+  .scrolly.scrolly-portrait .step-figure figcaption{position:static;display:flex;justify-content:space-between;gap:8px;margin-top:8px;padding:6px 8px;border:1px solid var(--ink);background:var(--paper);font-size:9px}
 }

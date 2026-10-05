@@ -109,17 +109,17 @@ body{
     rgba(88,68,38,0) 100%);
   transform:translateX(-32px);
 }
-@media (max-width:899px) and (orientation:portrait){ .gutter{ display:none; } }
+@media (max-width:1099px) and (orientation:portrait){ .gutter{ display:none; } }
 
 .spread{
   position:relative; z-index:2;
   display:grid; grid-template-columns:38% 62%;
   max-width:1440px; margin:0 auto; min-height:100vh;
 }
-@media (max-width:899px) and (orientation:portrait){ .spread{ grid-template-columns:1fr; } }
+@media (max-width:1099px) and (orientation:portrait){ .spread{ grid-template-columns:1fr; } }
 
 .folio{ position:relative; padding:clamp(26px,4.4vh,54px) clamp(20px,3vw,46px) clamp(40px,7vh,80px); }
-@media (max-width:899px) and (orientation:portrait){ .folio-l{ padding-bottom:18px; } .folio-r{ padding-top:8px; } }
+@media (max-width:1099px) and (orientation:portrait){ .folio-l{ padding-bottom:18px; } .folio-r{ padding-top:8px; } }
 /* filete vermelho de margem — a marca mais reconhecível de um
    livro de registro, e a única cor saturada da página fora dos
    espécimes e das abas. */
@@ -130,7 +130,7 @@ body{
   border-left:1px solid var(--redline); border-right:1px solid rgba(163,63,42,.22);
   width:4px; pointer-events:none;
 }
-@media (max-width:899px) and (orientation:portrait){ .folio-r::before{ display:none; } }
+@media (max-width:1099px) and (orientation:portrait){ .folio-r::before{ display:none; } }
 
 .mono{ font-family:'Courier Prime', ui-monospace, monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; }
 
@@ -179,7 +179,7 @@ body{
   padding-bottom:8px; border-bottom:2px solid var(--ink); margin:0 0 2px;
 }
 .reg-head .fill{ flex:1; height:1px; background:var(--rule-strong); }
-@media (max-width:639px) and (orientation:portrait){ .reg-head .opt{ display:none; } }
+@media (max-width:1099px) and (orientation:portrait){ .reg-head .opt{ display:none; } }
 
 .entries{ display:block; }
 
@@ -198,7 +198,7 @@ body{
    tabela: a linha vira bloco, e o espécime encolhe para selo.
    Verificado em 390px — com 76px+1fr a coluna de texto ficava
    com ~28ch e o "desc" virava uma tira estreita. */
-@media (max-width:639px) and (orientation:portrait){
+@media (max-width:1099px) and (orientation:portrait){
   .entry{ grid-template-columns:1fr; gap:12px; }
   /* especificidade de propósito: a regra genérica .specimen{width:100%}
      vem DEPOIS deste bloco no arquivo e ganharia no empate. */
@@ -252,7 +252,7 @@ body{
   text-transform:uppercase; color:var(--ink-soft);
   border-bottom:1px dotted rgba(42,37,29,.3); padding-bottom:3px;
 }
-@media (max-width:639px) and (orientation:portrait){ .tech{ flex-direction:row; flex-wrap:wrap; gap:5px 12px; } .tech span{ border:0; } }
+@media (max-width:1099px) and (orientation:portrait){ .tech{ flex-direction:row; flex-wrap:wrap; gap:5px 12px; } .tech span{ border:0; } }
 
 /* ---------- índice de polegar na borda direita ----------
    Abas de papel tingido saindo da margem, uma por entrada.
