@@ -2,7 +2,7 @@
 
 **Owner: Claude.** Codex and Luna apply this standard. They do not change it; they propose changes in the Relay Baton and Claude decides. Version 1.5, 2026-09-25 (A0 page-size guide; C15: no glosas, no decorative motion).
 **Applies to:** everything that reaches a CUFRGS page (lessons, reviews, deep pages, cards) and every draft on the way there.
-**Companion tool:** `~/Documents/Protocols/tools/slop_lint.py` (Part G).
+**Companion tool:** `protocols/tools/slop_lint.py` (Part G).
 
 The standard has four jobs:
 1. Make long pieces coherent by forcing a plan before any prose (Part A).
@@ -90,7 +90,7 @@ What the sources contain that you will **not** use, and why ("digressão histór
    - If a paragraph's point isn't in A2, cut it or add it to A2 on purpose.
 2. **Craft pass:** Part B. Read each section for rhythm, term definitions, paragraph method and the concrete-before-abstract order. This is the pass that turns correct text into good text.
 3. **Prose pass:** Part C.
-4. **Lint pass:** run `slop_lint.py`. Zero hard hits; soft hits under their limits (Part G).
+4. **Lint pass:** run `slop_lint.py`. Resolve hard findings unless the match is a documented legal false positive; review density findings in context and apply only an explicit task budget (Part G).
 5. **Fact pass:** check every article number, date, vote count, case name and quantity against the source locator.
 
 ### A9. Hand-in
@@ -262,10 +262,12 @@ Benecles's rule of thumb (2026-09-25): **every visual element must explain somet
 
 Hard bans get zero tolerance. Limits are per lesson. Terms of art are always allowed (see D6).
 
-**What slop is (05/10; reported findings, under verification in workshop #57: SlopBench, Shaib et al., Paech et al. *Antislop*, Pew, the Nature Human Behaviour homogenization study. Only bheijden/slop's matched-corpus audit has been checked first-hand. Numbers below stand until #57 confirms or corrects them).** Slop is rhetorical machinery standing in for information: the shape of analysis (a contrast, a triad, a concession, a reveal, a moral) produced where the content asked for none. Each of these is ordinary Portuguese once; the model's fault is frequency, so most limits below are densities, not bans. Three findings change how we edit:
-- **Varying vocabulary does not help.** Every model tested was *more* lexically diverse than its human reference. Never thesaurus a repeated term of art; repeat the right word.
-- **Em dashes are not a tell.** Four independent measurements find human prose uses as many or more. Ours are limited by C10 for house style, not as slop.
-- **Full rewrites re-impose the house style.** LLM rewrites cut variance in writing complexity by 21–50%, and even human post-edits of LLM drafts stay closer to LLM style. Fix the flagged span; never "rewrite the paragraph to be cleaner".
+**What slop is.** Slop is rhetorical machinery standing in for information: a contrast, triad, concession, reveal, or moral produced where the content asked for none. These are ordinary Portuguese structures; frequency and function matter more than isolated occurrence. Research also cautions against a single objective slop label: judgments vary across people and domains, so this standard treats findings as dimensions for editorial review, not authorship evidence ([Shaib et al.](https://arxiv.org/html/2509.19163)).
+
+Three findings shape this policy:
+- **Vocabulary variety is not a target.** In SlopBench's 18-model, English benchmark, models were more lexically diverse than human references; its composite rankings changed with metric weights and did not track crowd Elo reliably ([SlopBench](https://arxiv.org/html/2609.33905)). Repeat the precise legal term rather than thesaurus it. This result is not a Portuguese legal-writing measurement.
+- **No punctuation mark proves slop.** Pew's 490,000-page English Common Crawl study used an AI detector and cautions that a page can be misclassified; punctuation alone is not proof ([Pew report](https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/)). Em dashes are limited here by C10 as house style, not as evidence of AI.
+- **Full rewrites can flatten variation.** Across seven datasets and more than 880,000 texts, one study reports that LLM polishing/rewriting reduced writing-complexity variance by 21–50% ([Sourati et al.](https://www.nature.com/articles/s41562-026-02550-0)). Human post-editing also did not erase all measured LLM-style traces in one personal-writing study ([Baumler et al.](https://aclanthology.org/2026.acl-long.2030/)). These results do not predict effects on our pages; they support local, span-level edits over automatic full-draft rewrites.
 
 The order of priority when editing: (1) maximize propositions per sentence and delete machinery that carries none; (2) impose no structure the content did not ask for (no automatic contrast, triad, summary, section, concession, reveal or closing moral); (3) never manufacture nuance: if the obvious reading is right, state it; a distinction exists because the law has it; (4) allow asymmetry: a point gets the sentences it needs, lists the items they have, paragraphs the length their job takes; (5) explain by mechanism (who did what, under which rule, with which effect), not by relabelling; (6) judge known tells by density; (7) never "humanize": no fragments, slang, fake opinions, invented anecdotes or planted errors.
 
@@ -380,10 +382,7 @@ Before hand-in:
 
 1. The plan file exists and matches the text (Part A).
 2. The reverse outline passes: every paragraph has a stateable point that appears in A2.
-3. `python3 ~/Documents/Protocols/tools/slop_lint.py <files>` reports:
-   - 0 hard hits;
-   - soft hits within their limits;
-   - 0 em dashes.
+3. `python3 protocols/tools/slop_lint.py <files>` reports line, rule, matched span, suggested fix, and a per-page density summary. Findings prompt review; they do not fail by themselves. Use `--json` for agent output and `--max-per-1000 N` only when a task sets an explicit finding-density budget. The linter does not treat em dashes as slop; C10 remains a house-style rule.
 4. The fact pass is complete, with every locator in the ledger.
 5. **Read-aloud test on three random paragraphs.** Any sentence you can't say in one breath gets split. Any sentence that sounds like an advert gets rewritten.
 6. Figures: each adjacent paragraph states a claim, never a description (C12).
@@ -394,8 +393,9 @@ The linter is a floor, not a judge. Passing it proves the absence of listed tics
 
 ## Sources for this standard
 
-- Wikipedia, "Signs of AI writing": catalogue of LLM tells (puffery, negative parallelism, rule of three, copula avoidance, -ing significance clauses).
-- Paech et al., "Antislop" (ICLR 2026): "it's not X, it's Y" and similar patterns appear in LLM text at many times the human rate.
+- Shaib et al., “Measuring AI ‘Slop’ in Text” (2026): dimensions vary by task and human binary judgments have low agreement; see `work/slop-bench/RESOURCES.md`.
+- SlopBench (2026): English benchmark dimensions and model rankings vary with weights; the study does not validate Portuguese legal-writing thresholds; see `work/slop-bench/RESOURCES.md`.
+- Paech et al., “Antislop” (ICLR 2026): English creative-writing suppression/training experiments; see `work/slop-bench/RESOURCES.md` for scope and transfer limits.
 - NousResearch autonovel, ANTI-SLOP.md: structural tells (uniform sentences and paragraphs, transition openers, list abuse).
 - Bai et al., "LongWriter / AgentWrite" (ICLR 2025): plan with per-section content and length, then write serially.
 - Shao et al., STORM (2024), and recursive-planning follow-ups (arXiv 2503.08275): research-grounded outlines; re-plan when writing reveals new structure.
