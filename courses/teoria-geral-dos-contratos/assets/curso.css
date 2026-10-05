@@ -425,5 +425,5 @@ b.gmark{display:inline-block;margin-right:6px;font-style:normal;vertical-align:1
   .stage figure svg.hero-fork text{font-size:36px!important}
 }
 
-/* Wide prose on desktop (CEO, 05/10): standalone text with no figure beside it runs a little wider. */
-@media (min-width:1100px){body .longform>div,body .prose p,body .prose ul,body .prose ol,body .prose blockquote,body .prosa{max-width:76ch}}
+/* Reading column on desktop (CEO, 05/10): standalone text with no figure beside it is wider and centred; a chapter heading that leads straight into such text moves with it. */
+@media (min-width:1100px){body .longform>div,body .prose p,body .prose ul,body .prose ol,body .prose blockquote,body .prosa{max-width:76ch;margin-left:auto;margin-right:auto}body .chapter:has(+ .longform)>*,body .chapter:has(+ .wide>.prosa:first-child)>*,body .chapter:has(>.prosa):not(:has(.scrolly,figure,svg.fig))>:not(.prosa){margin-left:calc((100% - 722px)/2)}}
