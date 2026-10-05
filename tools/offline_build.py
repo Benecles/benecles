@@ -21,6 +21,20 @@ KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg'
 SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude'}
 SKIP_FILES = {'offline-manifest.json', 'sw.js'}
 
+# Retired prototypes and alternate homepages kept for the design archive (Issue #80).
+# Readers in modo avião do not need to download these (~240 KB).
+ARCHIVE_PAGES = {
+    'index-alt-a.html',
+    'index-alt-b.html',
+    'index-alt-c.html',
+    'index-before-folio.html',
+    'prototype-folio.html',
+    'a-terra-muda-de-dono.html',
+    'bifurcacao-constitucional.html',
+    'dossie-do-delito.html',
+    'glossario-ancorado.html',
+}
+
 def public_files():
     out = []
     for d, dirs, files in os.walk(ROOT):
@@ -28,7 +42,10 @@ def public_files():
         for f in files:
             if f.startswith('.') or f in SKIP_FILES or not f.lower().endswith(KEEP):
                 continue
-            out.append(os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, '/'))
+            rel = os.path.relpath(os.path.join(d, f), ROOT).replace(os.sep, '/')
+            if rel in ARCHIVE_PAGES:
+                continue
+            out.append(rel)
     return sorted(out)
 
 SCRIPTS = ('assets/offline.js', 'assets/highlight.js', 'assets/highlight-panel.js')
