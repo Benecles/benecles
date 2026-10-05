@@ -36,38 +36,66 @@ If `~/Developer` is missing, restore first:
 8. **The CEO is the master prompter (chairman, 03/10; the most important rule here).** We already have more building agency than we can use; doing the work yourself, or asking agents to emulate you, is not the lever. The CEO's job is the WHAT: take the chairman's thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator's. Priorities, in order: (1) what it is and what it's for, (2) what it looks and feels like, in detail, (3) implementation hints, only if they matter. The CEO keeps final say at the gate. Example: "airplane mode" is not a button to build; it's a brief: an orange plane in an orange ring, bottom left, what it does, what the reader sees offline, which words it uses.
 7. **The rocket line (chairman, 01/10).** Work flies in staggered waves: launch #1, finish #2, build #3, design #4, all at once. Every gate turns its findings into numbered entries in `FLIGHT-LOG.md`, and every in-flight stage applies them before its next step. Never let a stream idle waiting on a gate; the gate feeds the log, the log feeds the line.
 
-## State (04/10, handed over by Claude Opus 5.5)
-- **Read mandate #8 first: the CEO is the master prompter (WHAT, not HOW).** Turn the chairman's ideas into detailed master briefs via GitHub issues; build only trivial fixes; keep final say at the gate.
-- **This chair (03/10) was a gating chair.** Merged: #48 figure kit (Map/Tally/Calendar/Strata), #56 Latam A02, #57 Const I A04 (two-axis Field: the FIG-2 bar, with #56), #66 BIO-1 data, ws #19 CAST-1 ledger (395 rows; live DOM count is authoritative, not the old 400), ws #20 BUGS row, ws #21 blueprints A10–A13 (approved with writer notes on the PR). Briefs filed: **#18 REG-H1** (register hover) and **#22 BIO-2** (professor card).
-- **New FLIGHT-LOG rules:** F-025 (a redo keeps its predecessor's claim; a figure never restates adjacent text), F-026 (text in ruled cells is a table, not a figure; delete-the-text test), F-027 (a clean probe is not a look: crops of every changed panel in the PR body).
-- **Reference set:** live Controle Aula 01 + its REF comments; reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (Method notes); template `protocols/templates/Lesson Blueprint.md`. Best new blueprint: `compendium/aula-10/blueprint.md` (real 2025 IOF thread, casts with rejected alternatives).
-- **Figures:** `protocols/CUFRGS Visual Casting.md` governs. Figure Library = craft and tests.
-- **Memory of mistakes:** `BUGS.md`, `FLIGHT-LOG.md` F-001…F-027. Enforced by `anatomy_check` (in check_all), `slop_lint` (backstage ban), breakscan (**currently unreliable, see Next up #2**).
-- **New machine (04/10):** the chairman moved to the 15" MacBook Air (`MacBook-Air-2`), migrated from the 13", which is being erased (a Claude2 device-reset run owns that). `gh` is authed as Benecles (keyring, HTTPS); git identity set globally to `Benecles <[email]>`. Repos + Codex worktree folders are in `~/Developer`.
-- **Desktop holds only Felipe + Mark.** Course material: `~/Documents/UFRGS 2026-2`.
+## State (05/10 night, handed over by Claude Opus 5.5)
+- **Read mandate #8 first** (the CEO writes the WHAT; the orchestrator owns the HOW). **But note the chairman's 04/10 override, still in force: no gates.** Codex merges its own PRs after its checks; the CEO reviews what landed on the live site and fixes from there. When Codex is out of credits, the CEO builds directly (the chairman asked for that on 05/10).
+- **LAT-1 (workshop #25): rebuilding Direito Latino-americano is the active project.**
+  - **Done, live and CEO-built** (site #70–#77):
+    - Aulas **01, 02, 05, 06**, each rebuilt from its blueprint, with Aula 05 as the density reference;
+    - the **course front** "Quem respondeu a quem" (map of the five courts plus a list of dialogues; generator `work/latam-build/front_courts.py`);
+    - **every Latam figure** recast as an instrument (generators in `work/latam-rebuild/`);
+    - a **phone pass** (no forced 19 px, no full-bleed hack, haloed map labels, comparison tables as stacked cards);
+    - a **course QA sweep** (backstage lines out, hero reading times = front clock);
+    - a **Writing Standard Part D deslop of 01 and 02** (`work/latam-rebuild/deslop_01_02.py` lists the patterns).
+  - **Not yet rebuilt (older Codex text, accurate and cleaned, but still with an "Aprofundamento" appendix and old-style tests):** 03, 04, 07, 08, 09 and the revisão.
+  - **Blueprints on disk** (`work/pipeline/direito-latino-americano/compendium/<aula>/blueprint.md` + `panel.md`):
+    - **08:** APPROVED;
+    - **04, 07, 09:** REVISE, with the panel's points in panel.md;
+    - **03:** never panelled;
+    - **revisão:** none.
+  - S0–S4 are complete; all 950 chapter texts are in the main checkout (git-ignored).
+- **How a Latam lesson rebuild is done** (repeat this): read blueprint + panel → read the live page → read the decisive source passages (grep the compendium, never model memory) → write `work/latam-rebuild/aNN_patch.py`, which rebuilds the page from the live HTML. The script:
+  - keeps figures, defs SVGs, the bet and the quiz verbatim;
+  - folds the Aprofundamento into the chapters;
+  - removes backstage text.
 
-## In flight (Codex; gate each at `needs-gate`). As of 04/10 morning nothing has moved since the 03/10 verdicts
-- **S5 writing PAUSED (F-023)** until **Controle Aula 08 (site #59)** passes. v2 verdict: REVISE, close. F-019/020 fixed; the fault is F-021 repetition (the "modulation ≠ anulabilidade" trap said ~8 times), plus 3 off-lesson paragraphs, plus one missing fact (why 11 vereadores was unconstitutional, if the sources say). The exact cut list is on the PR. Also conflicting with main. When it passes, its verdict goes to #52 A02, #53 A04, #54 A05, #55 A07, #60 A09 (+ A03, A06, A30).
-- **#58 Processo A01** (petição as a document): approve on 2 fixes (two labels clip at the viewBox edge; rebase). Merge on sight.
-- **#47 CHG-1 changelog bento:** approve on 3 fixes (holes at the end of the grid; drop the "0 rótulos cortados" QA tile; scale the "Um contrato de verdade" miniature). Merge on sight.
-- **#65 Contratos A01:** REVISE. 6 of 11 panels visibly broken (text×text, clipped) while breakscan said clean; p-est recast (F-026), p-sub + p-esp merged into one "roupagem" drawing. Keep p-lad, p-nor, p-dest, p-teo, p-cas once fixed.
-- **#51 Delito U01:** REVISE (F-025: restore the one-fact-two-norms fork with the art. 13 § 2º duty contrast). Not redone yet.
-- **#18 REG-H1**, **#22 BIO-2:** briefs, not started. BIO-2 also normalises the BIO-1 bios (three voices today).
-- **TBL-1 (#14):** Latam Aulas 08/09 overflow 16 px at 375 px. Codex was told to stop computer-use checks and extend breakscan instead (Next up #2).
-- **#12 PIPE-C**, **#16** (data merged; superseded by #22), **#17 CAST-1** (ledger merged; recasting continues per FIG-2 verdicts).
+  Then: deslop against Writing Standard Part D (read the last sentence of every paragraph for moral closers) → `slop_lint` + `anatomy_check` → breakscan at 1280 + 375 → hero "Leitura" = front clock → regenerate the front → the site-edit procedure (gotchas) → ISSUES.md line → PR → merge.
+  - **Figure conventions:** `work/latam-rebuild/fk.py` (`.figkit.lt`, 18 px mono / 21 px hand on upright phones, ≤ 28 characters per mono line, line spacing ≥ 28/30 px, titles ≤ 30 characters); maps on `Frame('courts')`.
+  - **Breakscan baseline:** desktop 0 findings; phones 25, all haloed labels on four legacy maps (A01 crisis + strata, A02 courts, A03 route). A new finding is a regression.
+- **Facts corrected in the rebuild; don't let them regress:**
+  - "mientras el soberano así lo desee" is the *petitioners'* argument in SCP 0084/2017, not the TCP's;
+  - Argentina's review is diffuse; Uruguay's is concentrated, with effects in the case;
+  - Engelmann & Bandeira's Colombian court is the Corte Suprema de Justicia, not the Corte Constitucional;
+  - the 19-country table is undated;
+  - the three-project typology is not attributed in the course sources (don't credit Gargarella);
+  - Gelman was unanimous (Vio Grossi concurred);
+  - Sentencia 65/2014 is not about Gelman.
+- **Other merged since 04/10:** Controle 02/04/05/08, Processo A01 figure, CHG-1 bento, REG-H1, BRK-1 breakscan (workshop #36: fonts, 1280 + 375, panel steps, CLIP/OVERFLOW).
+- **Reference set (unchanged):** Controle Aula 01 + REF comments; reference blueprint and template; FLIGHT-LOG F-001…F-027; BUGS.md; Visual Casting; Writing Standard.
+- **Machine:** the 15" MacBook Air; `gh` authed as Benecles. **Desktop holds only Felipe + Mark.** Course material is in `~/Documents/UFRGS 2026-2`.
+
+## In flight (Codex, when it has credits)
+- **Codex is out of credits as of 05/10 night.** Its handoff is the **RESUME HERE** section at the top of `work/briefs/2026-10-04-orchestrator-prompt.md` (kept current through 05/10 night). The paste message for a fresh Codex window is in that file's history; it says: pull both repos, read that file starting at RESUME HERE, and execute "What's left".
+- **Open site PRs:**
+  - **#69 PHN-1:** touches every Latam page and curso.css. It **must rebase; main wins on Latam.**
+  - **#68 BIO-2**, **#65 Contratos A01**, **#51 Delito U01:** each per its last verdict.
+  - **#55, #60:** Controle A07/A09, per the W2 verdict and the #59 lessons.
+- **Workshop PR #42:** PHN-1's docs.
+- **Open issues:** #25 LAT-1, #24 PHN-1, #22 BIO-2, #17 CAST-1, #15/#13 Controle waves, #12 PIPE-C, #10 FIG-2, #5 PIPE-5 (Aula 30).
+- **`RUN-0410.md`** (the run ledger the plan requires) was never created by Codex; the resume section asks for it.
 
 ## Next up (in order)
-0. **05/10 night state (LAT-1):**
-   - Live and CEO-built: Aulas 01, 02, 05 and 06, the front, and every Latam figure (site #70–#75).
-   - Blueprints: 08 APPROVED; 04, 07, 09 REVISE; 03 unpaneled; revisão not started.
-   - The resume section at the top of `work/briefs/2026-10-04-orchestrator-prompt.md` is the handoff to Codex.
-   - Gotcha: port 8793 may be Codex's server for another checkout.
-0b. **Chairman 04/10: no gates. Codex ships straight to the live site (merges its own PRs after its checks); the CEO reviews what landed on GitHub/live afterwards and fixes, edits, forks, bugfixes from there.** Master plan: `work/briefs/2026-10-04-orchestrator-prompt.md`; run ledger: `work/pipeline/direito-latino-americano/RUN-0410.md`.
- **04/10 chairman direction: LAT-1 (#25) rebuilds Latam on the full pipeline, prototype Aula 05 Gelman; the activity is 05/10 (Aulas 02–09).** One orchestrator prompt covering everything open: `work/briefs/2026-10-04-orchestrator-prompt.md`. Gate LAT-1 S0 fast.
-1. **Gate whatever is `needs-gate`:** Aula 08 v3 first (read it in full against the #59 cut list and Aula 01), then #58 / #47 (merge on sight if the listed fixes are in), #65, #51. Use `work/checks/gate_prs.sh` and look at every panel yourself.
-2. **Breakscan fix: now brief BRK-1, workshop #23 (filed 04/10; was only a comment before).** `work/checks/breakscan.mjs` runs at 1280 only, has no page-overflow check, and measures before webfonts load (`waitUntil:'load'`, no `document.fonts.ready`), which likely explains why #65 passed. Wanted: `--width` (1280 + 375), an OVERFLOW finding (`scrollWidth > innerWidth`), and a wait on `document.fonts.ready`. It must FAIL on #65's panels and Latam 08/09 at 375 before its PASS counts again. Gate that PR first: it unblocks honest figure gates.
-3. ~~Ask the chairman about the hero on phones~~ **Decided 04/10: upright phones get the same drawings re-laid out; sideways = desktop. Brief PHN-1, workshop #24.** (Old note:) show the hero drawing on phones? It is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in `controle.css`, a 30/09 rule); he saw the specimen without it and objected ("none of them have a graph"). CEO recommends yes (scaled, no phone variant, F-009). He hasn't answered; if yes, it's a one-line brief.
-4. Course-world pages for Visual Casting as course redos come up.
+1. **Finish LAT-1, one lesson at a time:**
+   - **08** (blueprint APPROVED);
+   - **04, 07, 09:** apply panel.md's REVISE points to the blueprint first;
+   - **03:** panel the blueprint yourself first, as was done for 02 (approve or revise in ≤ 5 points);
+   - **the revisão:** turn it into the eixo workbench (one block per class: eixo, cases, answer frame);
+   - then the cards (`cartoes.html`, from one case-data file) and `RETRO.md`.
+
+   Whoever has capacity does it: Codex via the resume section, or the CEO directly with the recipe in State.
+2. **Review what Codex merges** (the no-gates mode): read the live page, run the deslop read, and fix with a follow-up PR.
+3. **PHN-1 #69:** make sure the rebase keeps the Latam phone pass. Breakscan 375 on Latam must stay at 25.
+4. **Remaining legacy figures, optional:** the four Latam maps with phone label crossings, the A02/A07 box heroes, and the A09 decision flow. They are acceptable as they are, so only touch them if there's spare time.
+5. Other courses: the Controle waves, PIPE-C and FIG-2/CAST-1 resume under the same no-gates rule.
 
 ## Quality findings and sources (30/09–01/10; why the pipeline exists)
 - **Text:** Controle is genuinely weak: median lesson 1.25k words (other courses 2.7–3.8k); Aula 01 circles abstractions, promises an example it never gives, repeats its own summary, and ends with a "Fontes e limites" disclaimer (breaks the no-citations rule). Aula 24 is decent (concrete, statute-anchored). Contratos is equally thin (1.06k median). Cause: writers got slides plus scattered ad-hoc extracts, never per-lesson prepared sources.
@@ -76,9 +104,15 @@ If `~/Developer` is missing, restore first:
 - **Existing extracts to reuse:** `work/book-extracts/` (+ `book-extract-map.md`), `work/controle-depth/extracts/`, `work/source-intake-2026-09-28/` (Metodologia, Processo, Const I intake on the same philosophy).
 
 ## Open decisions for the chairman
-- Hero composition: **decided 03/10, chairman picked "Atual"** (no rollout needed; the live layout stays). Still open: the hero drawing is hidden on portrait screens ≤ 860 px (`.hero-fork{display:none}` in controle.css, a 30/09 rule); the chairman saw the specimen with no drawing and objected. Show it there too (scaled, no phone variant per F-009)? Always give the chairman full live URLs.
+- **Gates or no gates going forward?** The 04/10 override ("ship as you go, CEO reviews after") is still in force. It has worked for speed. The cost is that faults ship before anyone reads them; the 05/10 QA sweep found backstage text on seven pages.
+- **The four legacy Latam maps:** are their phone label crossings (haloed, legible) acceptable, or redraw them on `Frame('courts')`?
 
 ## Gotchas (hard-won; the full list is in `Relay Baton.md` → "Build-process lessons" and ~/.codex/AGENTS.md)
+- **Port 8793 can be Codex's `http.server` serving another checkout** (05/10 it served `ordenacoes-filipinas-delito-u01`). A breakscan pointed at it silently tests the wrong pages. Serve your checkout on its own port (the CEO's gate config now uses 8795 in `~/.claude/launch.json`) and pass `--base-url` explicitly. Check with `curl …/aula-NN.html | grep "≈"` that you're seeing your build.
+- **The site's service worker caches pages.** A browser check can show an old page even with `?r=N`. Unregister it or use a fresh port.
+- **Latam pages carry hidden defs SVGs** (`<svg width="0" height="0">` holding `lm-*` map land, `st-*` strata patterns, `fcourts-*`). Any rebuild that re-slices a page must carry every one of them, or the figures silently lose their land and patterns.
+- **The Writing Standard linter (`protocols/tools/slop_lint.py`) passing is not enough.** Read the last sentence of every paragraph for moral closers, and check "não X, mas Y" with the delete-the-"não" test.
+- **Codex leaves blueprints uncommitted** in the shared checkout. Commit them (05/10: `f61a83d`) before they're lost.
 - **Talk to the chairman in full live URLs** (e.g. https://benecles.github.io/ordenacoes-filipinas/specimen/hero.html). A repo path means nothing to him. GitHub Pages serves `main`.
 - **Gate workflow that worked (03/10):** a worktree in your scratchpad (`git worktree add <sp>/site origin/codex/X`), merge `origin/main` into it, serve it with a `gate` entry in `~/.claude/launch.json` (port 8793, `python3 -m http.server --directory <sp>/site`), and look panel by panel: scroll each `[data-panel]` step into view, wait ~2.5 s (the crossfade is slow; an earlier screenshot shows ghosts or the previous step), then screenshot. A ship script for merging (merge main, rebuild manifest on conflict, ISSUES line, check_all, push to `codex/X`, `gh pr merge`) is easy to rewrite; offline-manifest is the usual conflict, and taking main's side + `offline_build.py` resolves it.
 - **When FIG-2 PRs stack, merge one and the others conflict** in `specimen/figuras.html`, `tools/figkit/inject.py`, `tools/figkit/specimen.py`. Ask Codex to rebase and keep both entries; don't hand-merge generator code.
