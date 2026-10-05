@@ -1,3 +1,57 @@
+# RESUME HERE (CEO, 05/10 evening): read this section first, then the plan below
+
+Codex ran out of credits on 05/10. The CEO (Claude) carried the work in the meantime. **Everything below this section is still the plan, but these facts override it where they conflict.**
+
+## Already done: don't redo, don't overwrite
+- **Closed out (merged):** site #47 CHG-1, #52/#53/#54 Controle 02/04/05, #58 Processo A01, #59 Controle A08, #67 REG-H1; workshop #36 BRK-1. Issues #11, #16, #18 are closed.
+- **LAT-1 data stages S0–S4: done** (workshop #39–#56). The split chapter texts are git-ignored, and the CEO gathered all 950 into the main checkout's `work/pipeline/direito-latino-americano/chapters/`. Rebuild compendia with `python3 work/pipeline/tools/build_compendia.py --site <site checkout> direito-latino-americano`.
+- **LAT-1 Aula 05 (Gelman): rebuilt and merged by the CEO** (site #70). It is the **reference page for every other Latam writer**: read it and its ISSUES.md line. No blueprint file was written for it; the scripts are `work/latam-rebuild/a05_*.py`.
+- **Latam course front: rebuilt** (site #71, "Quem respondeu a quem"; generator `work/latam-build/front_courts.py`, frame `geo/frame_courts.json`). Don't regenerate it from `index_gen.py`.
+- **Latam figure pass (site #72–#74), CEO-built.** All figures in the table below are **canonical**. Writers keep them as they are. A writer may add new figures but may not redraw these without a written reason in the PR.
+
+| Page | Canonical CEO figures |
+|---|---|
+| A01 | Fig. 2 field (`p-pj*`) |
+| A03 | Fig. 1 "conexos" (`p-rd*`) |
+| A04 | Fig. 1 marked-up sheets (`p-dc*`) |
+| A05 | Figs. 1 (`p-gr*`) and 2 (`p-am*`) |
+| A06 | Fig. 1 (`p-us*`) |
+| A07 | Fig. 1 lanes (`p-rm*`) |
+| A08 | Figs. 1 (`p-ck*`), 2 (`p-tr*`) and the hero |
+
+- **Latam phone pass (site #73).**
+  - The inline 19 px figure rule and the `latam-wide` full-bleed hack are gone.
+  - Legacy figure labels have a paper halo.
+  - Every `table.compare` stacks into cards on upright phones (cells carry `data-label` / `data-tone`).
+  - Breakscan, whole course: **1280: 0 findings; 375: 25**. All 25 are haloed map labels over coastlines on four legacy maps; that's accepted.
+  - New Latam figures must keep those numbers: 0 new findings at either width.
+
+## Figure conventions for any new Latam figure (learned today, binding)
+- Use `work/latam-rebuild/fk.py`: panels are `.figkit.lt`; upright phones set text to 18 px (mono) and 21 px (hand).
+  - Design every label to fit at that size: ≤ 28 mono characters per line from x≈40 in a 600-wide box.
+  - Line spacing ≥ 28 px for stacked mono lines and ≥ 30 px for hand lines.
+  - Titles ≤ 30 characters.
+- Maps use the course frame: `Frame('courts')` from `work/latam-build/maps.py`, with defs injected once per page as a hidden SVG (see `a06_fig.py`).
+- Run breakscan at **both** widths on every changed page (`node work/checks/breakscan.mjs <root-with-touched-pages> out.csv --width 1280 --width 375 --base-url ...`).
+- Look at every panel yourself, but only through a worker that returns crops.
+
+## What's left, in order (wide, not long: same operating rules as below)
+1. **LAT-1 · the other nine pages.** Blueprint (Sol) → panel (Sol) → write (Luna xhigh) → checks → merge, for Aulas 03, 04, 06, 07, 08, 09, 02, 01 and the revisão.
+   - Build on the live pages, which now include the canonical figures.
+   - Model the text on Aula 05: each fact once; cases with court · year · holding · reasoning · dissent · what came next; the closing test ends with an eixo question.
+   - The revisão becomes the eixo workbench (§5.6 below).
+   - Then cards + front register + RETRO.md (§5.9). The front drawing itself is done.
+2. **Site #69 PHN-1: rebase on main first.** It touches every Latam page and `curso.css`, so it conflicts with #71–#74.
+   - **On every Latam file, main wins.** Keep the CEO's phone pass as is.
+   - Apply PHN-1 only where it adds something main lacks, such as heroes shown on upright phones. If PHN-1 re-adds forced font sizes, a full-bleed figure rule, or phone-variant drawings on Latam, that part is dropped.
+   - Merge after breakscan at 375 shows no new findings on Latam.
+3. **Site #68 BIO-2, #65 Contratos A01, #51 Delito U01.** Finish each per its latest verdict comment, rebase, check, merge.
+4. **Site #55, #60 (Controle A07, A09), workshop #5 PIPE-5 (Aula 30).** Revise per the W2 verdict and the #59 lessons, then merge.
+5. **#17 CAST-1, #10 FIG-2, #12 PIPE-C, #13/#15 Controle waves:** proceed on spare slots, lowest priority.
+6. **Housekeeping:** create the `RUN-0410.md` ledger (§3.1). It was never written, and a fresh orchestrator needs it to resume.
+
+---
+
 # Master plan, 04/10: close out everything open, rebuild Direito Latino-americano
 
 **For: the orchestrator (Codex app, Luna high, fresh window).** Written by Claude (CEO) on the chairman's direction. Read every word before dispatching anything. You'll be running this for many hours with many workers, and every decision you'll need is either in here or in a file this points to. Where this plan and an older document disagree, **this plan wins for this run** (§9 lists the known conflicts and how they're resolved).
