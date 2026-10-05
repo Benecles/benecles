@@ -23,7 +23,7 @@
     .phone-sample .professor-card{width:343px;max-width:calc(100vw - 32px)}
     .dark-sample{color-scheme:dark;--paper:#14171d;--paper-2:#1e2229;--grid-major:#252a32;--ink:#e5e3da;--ink-2:#a3a6a6;--muted:#868a8e;--conc:#dd8b6b;--conc-wash:#372824;--dif:#7fb0dd;--dif-wash:#1e2c3b;--mix:#b99ad0;--mix-wash:#2b2635}
     .dark-sample .sample-content{padding:14px 12px 6px;background:var(--paper-2)}
-    @media(max-width:480px){.phone-sample .professor-card{width:calc(100vw - 32px)}}
+    @media(max-width:480px) and (orientation:portrait){.phone-sample .professor-card{width:calc(100vw - 32px)}}
   </style>
 </head>
 <body>
@@ -46,5 +46,8 @@
     this.setAttribute('aria-pressed', String(dark));
   });
 </script>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body>
 </html>
