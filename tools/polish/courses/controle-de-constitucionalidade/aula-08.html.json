@@ -1,18 +1,98 @@
 [
 {
-"before": " Barbosa</td><td>Modelo alemão; doutrina de Hans Kelsen; referência ao STF</td></tr>\n      <tr><th scope=\"row\">Situação",
-"after": " Barbosa</td><td>Modelo austríaco-alemão; doutrina de Hans Kelsen</td></tr>\n      <tr><th scope=\"row\">Situação"
-},
-{
-"before": "<div class=\"step on\" data-panel=\"p08-anulavel\" data-slides=\"Slide 4\"><div class=\"card\">\n      <span class=\"label conc\">Modelo alemão · Kelsen · referência ao STF</span>\n      <h3>A decisão",
-"after": "<div class=\"step on\" data-panel=\"p08-anulavel\" data-slides=\"Slide 4\"><div class=\"card\">\n      <span class=\"label conc\">Modelo austríaco-alemão · Kelsen</span>\n      <h3>A decisão"
-},
-{
-"before": "do julgamento?</h3>\n      <p>O esquema mostra a lei, o julgamento e o trânsito em julgado. Depois deste marco, arcos e ponto de interrogação deixam em aberto a extensão temporal dos efeitos: o tema da",
-"after": "do julgamento?</h3>\n      <p>Depois do trânsito em julgado, a extensão temporal dos efeitos fica em aberto: é o tema da"
-},
-{
 "before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=870499967f\">\n</head>\n<body>\n<nav class=\"topbar\">",
 "after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 08 · Teoria clássica da nulidade e teoria moderna da anulabilidade ou nulificabilidade no controle de constitucionalidade.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b2001a7490\">\n</head>\n<body>\n<nav class=\"topbar\">"
+},
+{
+"before": "\n\n    <div role=\"listitem\">Leitura<b>≈ 20 min</b></div>\n    <div role=\"listitem\">",
+"after": "\n\n    <div role=\"listitem\">Leitura<b>≈ 15 min</b></div>\n    <div role=\"listitem\">"
+},
+{
+"before": "reconhecer o vício</h2>\n  <p class=\"lede\">A Aula 06 identificou a incompatibilidade; agora interessa saber o que a decisão faz com a lei e com os efeitos que ela produziu.</p>\n</section>\n<div class=\"wide\"><div class=\"prosa\">\n  ",
+"after": "reconhecer o vício</h2>\n</section>\n<div class=\"wide\"><div class=\"prosa\">\n  "
+},
+{
+"before": "assim, a teoria usada para explicá-la atribuir-lhe um estado diferente. O passado de",
+"after": "assim, a teoria atribuir-lhe outro estado jurídico. O passado de"
+},
+{
+"before": "tribunal. Essa distinção ajuda a entender por que o",
+"after": "tribunal. Essa distinção mostra por que o"
+},
+{
+"before": "período anterior ao julgamento. Essa é a retroatividade",
+"after": "período anterior ao julgamento: é a retroatividade"
+},
+{
+"before": "lei “nascida morta” tenta exprimir esse resultado, não afirmar que ninguém tenha obedecido à norma ou que nenhum fato tenha ocorrido sob sua vigência aparente.</p>\n\n  <p>Há quatro",
+"after": "lei “nascida morta” exprime essa premissa.</p>\n\n  <p>Há quatro"
+},
+{
+"before": "austríaco de 1920 ajuda a compreender a lógica dessa",
+"after": "austríaco de 1920 mostra a lógica dessa"
+},
+{
+"before": "que retire a norma, não uma aprovação material da lei perante a Constituição. Assim se explica o caráter constitutivo: a decisão produz uma consequência que não estava completa",
+"after": "que retire a norma. O caráter constitutivo decorre de a decisão produzir uma consequência que ainda não estava completa"
+},
+{
+"before": "o futuro.</p>\n  <p>“Típico” não significa necessário. <em>Ex nunc</em> é a solução usual nesse modelo, mas a decisão também pode ter efeito retroativo ou ser modulada para outro momento. A anulabilidade descreve a posição da norma e a função da decisão; a data inicial dos efeitos é uma dimensão própria do julgamento.</p>\n  <p>Também se usa ",
+"after": "o futuro.</p>\n  <p>Também se usa "
+},
+{
+"before": " desconstituir o ato. A distinção recai sobre o estado atribuído à norma e a natureza do julgamento; o marco temporal é uma dimensão à parte.</p>\n\n  <p>A analogia",
+"after": " desconstituir o ato.</p>\n\n  <p>A analogia"
+},
+{
+"before": "do colar falso ajuda a separar aparência e validade.",
+"after": "do colar falso separa aparência e validade."
+},
+{
+"before": "a regra</h2>\n  <p class=\"lede\">A modulação dos efeitos limita a consequência temporal em situações previstas, sem tornar a anulabilidade a regra geral.</p>\n</section>\n<div class=\"wide\"><div class=\"prosa\">",
+"after": "a regra</h2>\n  <p class=\"lede\">O art. 27 fixa as condições para restringir os efeitos ou definir quando a declaração terá eficácia.</p>\n</section>\n<div class=\"wide\"><div class=\"prosa\">"
+},
+{
+"before": " ser identificadas separadamente.</p>\n  <p>A ADI 939 oferece outro tipo de ilustração. A Emenda Constitucional 3/1993 instituiu o IPMF, e a Lei Complementar 77/1993 regulou sua cobrança. O STF declarou inconstitucionais pontos da lei que autorizavam a incidência do tributo no mesmo ano e afastavam imunidades tributárias previstas na Constituição. O exemplo situa a supremacia constitucional diante de uma emenda e da lei que a executava; o seu ponto didático está no reconhecimento do conflito normativo, não na escolha de um marco temporal especial para os efeitos.</p>\n  <p>O art.",
+"after": " ser identificadas separadamente.</p>\n  <p>O art."
+},
+{
+"before": "técnica por analogia a um caso de controle difuso, aproximando a regra temporal do modelo concentrado à situação concreta examinada. A forma do controle e o momento de eficácia são classificações diferentes: saber que um recurso foi julgado em controle difuso não responde, por si só, até quando a declaração produzirá efeitos. O fundamento temporal precisa vir da decisão e das condições jurídicas que a autorizam.</p>\n  <p>A ADI",
+"after": "técnica por analogia ao controle difuso: limitar os efeitos naquele caso preservou a regra brasileira da nulidade; modulação e anulabilidade não são a mesma coisa.</p>\n  <p>A ADI"
+},
+{
+"before": " a exigência constitucional. Ela não altera a teoria geral da nulidade, nem deve ser lida como simples sinônimo de qualquer escolha de data sob o art. 27.</p>\n\n</div></div>\n\n<section class=\"chapter\" aria-labelledby=\"c4\">",
+"after": " a exigência constitucional.</p>\n\n</div></div>\n\n<section class=\"chapter\" aria-labelledby=\"c4\">"
+},
+{
+"before": "distribuição das cadeiras.</p>\n  <p>A data do julgamento e o marco dos efeitos respondem a perguntas diferentes. 06.06.2002 identifica quando o STF julgou o recurso; “legislatura seguinte” identifica o período em que a nova composição passaria a valer. A data é um instante; a legislatura é um período de atuação parlamentar. O caso emprega esse marco institucional para tratar do risco à atividade legislativa já em curso. O julgamento foi do Plenário, sob relatoria do ministro Maurício Corrêa, e o acórdão foi publicado em 07.05.2004. Esses marcos ajudam a não fundir três referências temporais: o dia da sessão, a publicação do acórdão e o período institucional escolhido para a nova composição.</p>\n\n</div></div>\n\n<div class=\"scrolly\">\n  ",
+"after": "distribuição das cadeiras.</p>\n\n</div></div>\n\n<div class=\"scrolly\">\n  "
+},
+{
+"before": "caso permite concluir</h2>\n  <p class=\"lede\">O precedente modifica o alcance temporal daquela decisão; ele não responde por todas as decisões futuras.</p>\n</section>\n<div class=\"wide\"><div class=\"prosa\">\n  <p>A nulidade, a anulabilidade e a modulação atuam em planos diferentes. A primeira qualifica o defeito da lei como originário; a segunda explica a norma como passível de desconstituição; a terceira organiza o alcance temporal da decisão que reconhece a incompatibilidade. As duas primeiras são concepções sobre a norma e o papel do juiz; a modulação é uma técnica do direito positivo para organizar os efeitos de uma declaração. Por isso, a regra brasileira de nulidade pode coexistir com o ajuste de efeitos previsto na Lei 9.868/1999. O juízo sobre a validade e o alcance temporal da consequência são perguntas ligadas, mas distintas.</p>\n  <p>O RE 197.917 oferece um exemplo dessa separação. A escolha de efeitos para a legislatura seguinte foi uma resposta ao risco institucional descrito no julgamento; esse dado temporal não transforma, por si só, a anulabilidade em regra geral. Para reconhecer o modelo aplicado, é preciso identificar o estado atribuído à norma e a função da decisão, além de observar o marco temporal que o tribunal fixou.</p>\n  <p>Uma resposta ",
+"after": "caso permite concluir</h2>\n</section>\n<div class=\"wide\"><div class=\"prosa\">\n  <p>Uma resposta "
+},
+{
+"before": "associou à retroatividade.</p>\n  <p>Esse roteiro evita misturar respostas para perguntas diferentes. A teoria da nulidade ou da anulabilidade descreve como a norma se relaciona com o ordenamento e como o tribunal atua; o efeito temporal indica o período alcançado pela decisão. A técnica processual, por sua vez, situa onde e por qual via o controle ocorreu. Um caso pode ser concreto e difuso e, ainda assim, suscitar debate sobre efeitos que ultrapassam a situação imediata. Para resolver a questão proposta, basta usar cada eixo na ordem em que o problema o exige, sem deduzir um resultado temporal apenas do nome da via de controle.</p>\n</div></div>\n\n<section class=\"chapter\" aria-labelledby=\"c6\">\n  ",
+"after": "associou à retroatividade.</p>\n</div></div>\n\n<section class=\"chapter\" aria-labelledby=\"c6\">\n  "
+},
+{
+"before": "<div class=\"wide\">\n  <div class=\"quiz\">\n    <details><summary>A teoria clássica não admite modulação. Isso significa que o direito brasileiro jamais pode limitar os efeitos de uma declaração?</summary><p>Não. A afirmação descreve o extremo do modelo teórico clássico. No Brasil, a nulidade é a regra, mas o art. 27 admite excepcionalmente restringir os efeitos ou fixar outro momento de eficácia se houver uma das razões legais e voto de dois terços do STF. O erro tentador é transformar uma característica teórica em proibição absoluta para o direito positivo.</p></details>\n    <details><summary>Na teoria moderna da anulabilidade, a decisão produz efeitos sempre a partir do julgamento?</summary><p>Não. <em>Ex nunc</em> é o efeito típico, mas a decisão também pode ser retroativa ou fixar outro momento. O nome da teoria não determina sozinho o marco temporal.</p></details>\n    <details><summary>Quais",
+"after": "<div class=\"wide\">\n  <div class=\"quiz\">\n    <details><summary>Quais quatro critérios organizam a comparação entre as teorias clássica e moderna?</summary><p>O estado da norma antes do julgamento, a natureza declaratória ou constitutiva da decisão, o plano jurídico em foco (validade ou eficácia) e o tempo dos efeitos. Aplicar os mesmos eixos torna visível onde os modelos divergem.</p></details>\n    <details><summary>Por que a teoria moderna descreve a decisão como constitutiva negativa?</summary><p>Porque é o ato do órgão competente que desconstitui a norma e retira sua eficácia. A decisão não apenas declara um defeito originário; ela produz uma consequência jurídica que ainda não estava completa antes do julgamento.</p></details>\n    <details><summary>Quais"
+},
+{
+"before": "prazo para reapreciação legislativa; isso não redefine, por si só, a teoria geral da nulidade.</p></details>\n    <details><summary>A",
+"after": "prazo para reapreciação legislativa.</p></details>\n    <details><summary>A"
+},
+{
+"before": "produzia efeitos?</p>\n  <p>Validade e eficácia ajudam a formular essa diferença. Perguntar pela validade é perguntar se a norma pode subsistir diante da Constituição; perguntar pela eficácia é perguntar se ela pode produzir os efeitos jurídicos que",
+"after": "produzia efeitos?</p>\n  <p>A distinção entre validade e eficácia organiza essa pergunta. Validade diz respeito à possibilidade de a norma subsistir diante da Constituição; eficácia, à produção dos efeitos jurídicos que"
+},
+{
+"before": " resposta sobre validade.</p>\n  <p>Essa pergunta pressupõe uma Constituição superior às leis ordinárias e apta a funcionar como parâmetro de validade. Se os dois textos ocupassem a mesma posição e fossem produzidos pelo mesmo procedimento, o conflito poderia ser tratado como sucessão entre leis; o controle constitucional depende da hierarquia que autoriza comparar a lei com a Constituição.</p>\n  <p>O RE",
+"after": " resposta sobre validade.</p>\n  <p>O RE"
+},
+{
+"before": "prazo para reapreciação legislativa; isso não redefine, por si só, a teoria geral da nulidade.</p></details>\n    <details><summary>A aplicação de uma lei antes do julgamento prova que era constitucional até então ou que a anulabilidade passou a reger todos os casos?</summary><p>Não. O cumprimento anterior mostra que a lei produziu efeitos de fato, mas não decide a validade que a teoria lhe atribui. O RE 197.917 resolveu o marco temporal de um caso concreto.</p></details>\n  </div>\n</div>",
+"after": "prazo para reapreciação legislativa.</p></details>\n    <details><summary>A fixação de efeitos futuros no RE 197.917 tornou a anulabilidade a regra geral no Brasil?</summary><p>Não. O STF limitou os efeitos por analogia ao art. 27 diante do risco ao sistema legislativo vigente; a decisão não substituiu a nulidade como regra brasileira.</p></details>\n  </div>\n</div>"
 }
 ]
