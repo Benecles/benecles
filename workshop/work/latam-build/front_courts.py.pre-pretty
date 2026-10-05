@@ -18,9 +18,7 @@ def arc(a, b, bend, tone, dash=False):
     cx, cy = (x1 + x2) / 2 - (y2 - y1) * bend, (y1 + y2) / 2 + (x2 - x1) * bend
     mx, my = .25 * x1 + .5 * cx + .25 * x2, .25 * y1 + .5 * cy + .25 * y2   # midpoint of the quadratic
     da = ';stroke-dasharray:7 5' if dash else ''
-    d = f'M{x1} {y1}Q{cx:.1f} {cy:.1f} {x2} {y2}'
-    path = (f'<path d="{d}" style="fill:none;stroke:var(--paper);stroke-width:7;stroke-linecap:round;opacity:.9"/>'
-            f'<path class="draw" d="{d}" style="fill:none;stroke:var(--{tone});stroke-width:2.6;stroke-linecap:round{da}"/>')
+    path = f'<path class="draw" d="M{x1} {y1}Q{cx:.1f} {cy:.1f} {x2} {y2}" style="fill:none;stroke:var(--{tone});stroke-width:2.4{da}"/>'
     return path, (mx, my)
 
 def tag(x, y, n, tone, href, label):
@@ -33,29 +31,22 @@ def city(pt, name, court, dx, dy, anchor='start'):
     x, y = P(pt)
     return (f'<circle cx="{x}" cy="{y}" r="4.5" style="fill:var(--ink)"/>'
             f'<circle cx="{x}" cy="{y}" r="8.5" style="fill:none;stroke:var(--ink);stroke-width:1"/>'
-            f'<text x="{x + dx}" y="{y + dy}" text-anchor="{anchor}" style="font:600 16px var(--mono);fill:var(--ink);{HALO}">{name}</text>'
-            f'<text x="{x + dx}" y="{y + dy + 18}" text-anchor="{anchor}" style="font:14px var(--mono);fill:var(--ink-2);{HALO}">{court}</text>')
+            f'<text x="{x + dx}" y="{y + dy}" text-anchor="{anchor}" style="font:600 14px var(--mono);fill:var(--ink);{HALO}">{name}</text>'
+            f'<text x="{x + dx}" y="{y + dy + 17}" text-anchor="{anchor}" style="font:13px var(--mono);fill:var(--ink-2);{HALO}">{court}</text>')
 
 # ---- map
 o = f'<g clip-path="url(#f{F.name}-frame-clip)">'
-# engraved coast rings in the sea (house atlas style): faint rules alternating with paper, under the land
-for w, col, op in ((16, 'var(--grid-major)', .5), (12.5, 'var(--paper)', 1), (9, 'var(--grid-major)', .5), (6, 'var(--paper)', 1), (3, 'var(--grid-major)', .6)):
-    o += f'<use href="#f{F.name}-coast" style="fill:none;stroke:{col};stroke-width:{w};stroke-linejoin:round;opacity:{op}"/>'
-# land on paper; the four national courts in alternating blue/violet washes (neighbours never share one), the Corte IDH's host in orange
-WASH = {'COL': 'dif', 'BRA': 'mix', 'BOL': 'dif', 'URY': 'dif', 'CRI': 'conc'}
-for k in F.ct:
-    t = WASH.get(k)
-    st = (f'fill:var(--{t}-wash);stroke:var(--{t});stroke-width:1.1' if t else 'fill:var(--paper);stroke:var(--ink-2);stroke-width:.6;stroke-opacity:.55')
-    o += f'<use href="#f{F.name}-{k}" style="{st};stroke-linejoin:round"/>'
-o += f'<use href="#f{F.name}-coast" style="fill:none;stroke:var(--ink-2);stroke-width:1;stroke-linejoin:round"/>'
+for k in F.ct:   # land on paper-2, the five court countries a shade darker, thin borders so the land reads
+    fill = 'color-mix(in srgb,var(--ink) 13%,var(--paper))' if k in COURT_ISO else 'color-mix(in srgb,var(--ink) 6%,var(--paper))'
+    o += f'<use href="#f{F.name}-{k}" style="fill:{fill};stroke:var(--paper);stroke-width:.9;stroke-linejoin:round"/>'
 o += '</g>'
 o += F.graticule(lats=((0, 'Equador'), (-23.44, 'Trópico de Capricórnio')), labels=False)
 ex, ey = F.xy(-31, 0); tx, ty = F.xy(-31, -23.44)
 o += (f'<text x="{ex}" y="{ey - 5}" text-anchor="end" style="font:italic 12px var(--serif,serif);fill:var(--muted);{HALO}">Equador</text>'
       f'<text x="{tx}" y="{ty - 5}" text-anchor="end" style="font:italic 12px var(--serif,serif);fill:var(--muted);{HALO}">Trópico de Capricórnio</text>')
-o += F.sea(-84, -21, 'OCEANO PACÍFICO', 13) + F.sea(-38, 6, 'OCEANO ATLÂNTICO', 13) + F.sea(-73.5, 15.5, 'MAR DO CARIBE', 12)
+o += F.sea(-81, -13, 'OCEANO PACÍFICO', 13) + F.sea(-38, 6, 'OCEANO ATLÂNTICO', 13) + F.sea(-73.5, 15.5, 'MAR DO CARIBE', 12)
 arcs = [  # (from, to, bend, tone, lesson, href, aria)
-    (SJ, BSB, -.12, 'conc', '03', 'aula-03.html', 'Aula 03: ADPF 153 e Gomes Lund'),
+    (SJ, BSB, -.18, 'conc', '03', 'aula-03.html', 'Aula 03: ADPF 153 e Gomes Lund'),
     (SJ, MVD, -.10, 'conc', '05', 'aula-05.html', 'Aula 05: Gelman e a Suprema Corte uruguaia'),
     (SJ, SUC, .10, 'conc', '06', 'aula-06.html', 'Aula 06: Bolívia e OC-28'),
     (BOG, BSB, .16, 'dif', '07', 'aula-07.html', 'Aula 07: o estado de coisas inconstitucional, de Bogotá a Brasília'),
@@ -96,7 +87,7 @@ lis = ''.join(
 html = (f'<div class="atlas courts"><div class="courts-sheet">{svg}</div>'
         f'<ol class="dialogues" aria-label="As decisões do curso, por aula">{lis}</ol></div>')
 
-css = ('.atlas.courts{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(22px,3vw,40px);align-items:start}'
+css = ('.atlas.courts{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(22px,3vw,40px);align-items:start}'
        '.courts-sheet{border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major)}'
        '.courts-sheet svg{display:block;width:100%;height:auto}'
        '.courts-map a{cursor:pointer}.courts-map a:hover rect,.courts-map a:focus-visible rect{fill:var(--paper-2)}'
