@@ -1,7 +1,7 @@
 {
   "periods": [
     {
-      "label": "01/10/2026 · atualizações da semana",
+      "label": "05/10/2026 · atualizações da semana",
       "tiles": [
         {
           "size": "hero",
@@ -138,6 +138,17 @@
           "visual": {
             "type": "mini",
             "kind": "nameplate"
+          }
+        },
+        {
+          "size": "wide",
+          "title": "Uma faixa segue a próxima linha",
+          "sub": "um sinal de aproximação nas listas do curso",
+          "href": "specimen/motion.html",
+          "visual": {
+            "type": "stat",
+            "value": "5",
+            "label": "listas com prévia por ponteiro ou foco"
           }
         }
       ]
