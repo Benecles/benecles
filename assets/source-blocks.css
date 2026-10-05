@@ -1,0 +1,76 @@
+/* Source blocks: court texts and book passages interrupt the prose at the point
+   where the source's own wording does more work than a paraphrase. */
+.source-block {
+  --source-accent: var(--conc, var(--accent, var(--ink)));
+  position: relative;
+  max-width: 1180px;
+  margin: 28px auto 34px;
+  padding: 22px clamp(20px, 3.2vw, 42px) 18px;
+  background: var(--paper-2);
+  border-left: 4px solid var(--source-accent);
+}
+.source-block__head {
+  margin: 0 0 15px;
+  color: var(--source-accent);
+  font: 500 11px/1.5 var(--mono, ui-monospace, monospace);
+  letter-spacing: .075em;
+  text-transform: uppercase;
+}
+.source-block blockquote {
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+}
+.source-block blockquote p { margin: 0 0 1em; }
+.source-block blockquote p:last-child { margin-bottom: 0; }
+.source-block__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 17px;
+}
+.source-block__button {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  padding: 2px 0;
+  background: none;
+  color: var(--source-accent);
+  cursor: pointer;
+  font: 500 11px/1.5 var(--mono, ui-monospace, monospace);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.source-block__button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.source-block__translation { position: relative; margin: 0; }
+.source-block__translation[hidden] { display: none; }
+.source-block__translation p { margin: 0 0 1em; }
+.source-block__translation p:last-child { margin-bottom: 0; }
+.source-block__translation-label {
+  display: block;
+  margin: 14px 0 8px;
+  color: var(--muted);
+  font: 500 10px/1.5 var(--mono, ui-monospace, monospace);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.source-block[data-collapsible="true"]:not([data-expanded="true"]) blockquote,
+.source-block[data-collapsible="true"]:not([data-expanded="true"]) .source-block__translation:not([hidden]) {
+  position: relative;
+  max-height: 18.2em;
+  overflow: hidden;
+}
+.source-block[data-collapsible="true"]:not([data-expanded="true"]) blockquote::after,
+.source-block[data-collapsible="true"]:not([data-expanded="true"]) .source-block__translation:not([hidden])::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 4.3em;
+  background: linear-gradient(transparent, var(--paper-2));
+  content: "";
+  pointer-events: none;
+}
+.source-block[data-expanded="true"] blockquote,
+.source-block[data-expanded="true"] .source-block__translation { max-height: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .source-block blockquote,
+  .source-block__translation { transition: max-height .35s ease; }
+}
