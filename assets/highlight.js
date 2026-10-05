@@ -225,3 +225,12 @@
   loader.setAttribute('data-ordenacoes-bookmarks', '');
   document.head.appendChild(loader);
 })();
+
+// Shared interaction-motion layer; resolve assets from this script so every course route works.
+(function () {
+  var current = document.currentScript;
+  if (!current || !current.src || document.querySelector('script[data-ordenacoes-motion]')) return;
+  var base = new URL('.', current.src);
+  var css = document.createElement('link'); css.rel = 'stylesheet'; css.href = new URL('motion.css', base).href; document.head.appendChild(css);
+  var script = document.createElement('script'); script.src = new URL('motion.js', base).href; script.defer = true; script.setAttribute('data-ordenacoes-motion', ''); document.head.appendChild(script);
+})();
