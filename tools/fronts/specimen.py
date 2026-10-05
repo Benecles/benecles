@@ -26,9 +26,33 @@ DATA = {
     "reg": {"exams": [{"label": "P1", "date": "07/10", "covers": ["#Aula comum", "#Aula em duas páginas", "#Aula em duas páginas (continuação)", "#Leitura complementar de uma aula", "#Aula sem linha de função", "#Unidade de uma aula só"]},
                       {"label": "P2", "covers": ["#Aula da segunda prova"]}]},
 }
+STATES = [
+    ("repouso", "Aula 08", "Um critério para ler a lei", 20, "", "O tema, a função e os minutos aparecem sem apontar."),
+    ("ponteiro", "Aula 09", "Identificar a pergunta de controle", 25, "is-demo-active", "Tom, número e relógio respondem juntos."),
+    ("foco do teclado", "Aula 10", "Distinguir quem pode controlar", 30, "is-demo-active is-demo-focus", "Tab produz a mesma resposta e mantém o contorno de foco."),
+    ("complementar", "Aula 11", "Uma leitura para aprofundar", 15, "is-complementary is-demo-active", "O contorno pontilhado preserva o sinal vazado."),
+    ("movimento reduzido", "Aula 12", "Reconhecer o efeito da decisão", 35, "is-demo-active is-demo-reduced", "A marca completa aparece na hora, sem animação."),
+    ("escuro", "Aula 13", "Ler a consequência do controle", 40, "is-demo-active", "O tom permanece legível sobre a folha escura.", True),
+]
+state_rows = []
+for state in STATES:
+    label, number, title, minutes, classes, note, *dark = state
+    sample_class = "reg-state-sample is-dark" if dark and dark[0] else "reg-state-sample"
+    row_classes = "reg-row" + (f" {classes}" if classes else "")
+    row = (f'<div class="{row_classes}" data-tone="conc"><span class="reg-n">{number[-2:]}</span>'
+           f'<span class="reg-body"><span class="reg-t">{html.escape(title)}</span>'
+           '<span class="reg-does">O que esta aula permite fazer.</span></span>'
+           f'<span class="reg-time">{front._clock(minutes)}<span>{minutes}′</span></span></div>')
+    state_rows.append(f'<li class="reg-state-item"><div class="{sample_class}">{row}</div>'
+                      f'<p class="reg-state-note"><strong>{html.escape(label)}</strong> · {html.escape(note)}</p></li>')
+
+STATES_HTML = ('<section class="reg-states" aria-labelledby="reg-states-title">'
+               '<h2 id="reg-states-title" class="reg-states-title">Estados da linha</h2>'
+               f'<ol class="reg-state-list">{"".join(state_rows)}</ol></section>')
+
 WHY = [
     ("Linha", "Número, título, a linha do que a aula deixa você fazer, e o relógio. O título diz o tema; a linha diz a função."),
-    ("Relógio", "O setor pintado é o tempo de leitura (60 min = mostrador cheio), calculado das palavras da página a 180 por minuto. Uma aula de uma sessão fica entre 15 e 25. Fatias muito finas ou muito cheias saltam aos olhos: são aulas a aprofundar ou dividir."),
+    ("Relógio", "O número informa o tempo de leitura, calculado das palavras da página a 180 por minuto. Ao apontar, o setor se enche até esse tempo (60 min = mostrador cheio). Uma aula de uma sessão fica entre 15 e 25."),
     ("Partes", "Uma aula longa vira duas ou três páginas; os traços dizem em qual delas você está. Leituras complementares não contam como parte."),
     ("Complementar", "O número vazado e o título mais leve dizem que é opcional, sem rótulo escrito."),
     ("Sem linha de função", "Fica um vazio silencioso, nunca um texto de preenchimento."),
@@ -44,7 +68,7 @@ page = f"""<!doctype html>
 <link rel="stylesheet" href="../courses/processo-civil-i/assets/curso.css">
 <link rel="stylesheet" href="../assets/front.css">
 <style>main{{max-width:980px;margin:32px auto;padding:0 clamp(16px,4vw,48px)}}.why{{margin:40px 0 64px;display:grid;grid-template-columns:11rem 1fr;gap:10px 24px;font:15px/1.5 var(--serif,Georgia,serif)}}.why dt{{font:600 13px/1.5 var(--mono)}}.why dd{{margin:0;color:var(--ink-2)}}@media(max-width:600px){{.why{{grid-template-columns:1fr}}.why dd{{margin-bottom:10px}}}}</style>
-</head><body><main>{body}<dl class="why">{why}</dl></main></body></html>
+</head><body><main>{STATES_HTML}{body}<dl class="why">{why}</dl></main></body></html>
 """
 out = front.R / "specimen" / "register.html"
 out.parent.mkdir(exist_ok=True)
