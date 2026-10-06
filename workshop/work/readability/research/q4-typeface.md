@@ -27,7 +27,7 @@ For the later switchable specimen, keep passage, 19 px size, measure, line-heigh
 
 - Legge, G. E. & Bigelow, C. A. “Does Print Size Matter for Reading? A Review of Findings from Vision Science and Typography.” *Journal of Vision* (2011). [Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC3428264/).
 - Tyrrell et al. “Towards a standardisation of reading charts: Font effects on reading performance—Times New Roman with serifs versus the sans serif font Helvetica.” *PLOS ONE* (2022). [Article](https://pmc.ncbi.nlm.nih.gov/articles/PMC9804255/).
-- Beier, S. & Oderkerk, C. “The effect of serifs and stroke contrast on low vision reading.” *Acta Psychologica* (2023). [Article DOI](https://doi.org/10.1016/j.actpsy.2022.103810).
+- Minakata, K., Eckmann-Hansen, C., Larsen, M., Bek, T. & Beier, S. “The effect of serifs and stroke contrast on low vision reading.” *Acta Psychologica* 232 (2023), 103810. [Article DOI](https://doi.org/10.1016/j.actpsy.2022.103810).
 - MDN, [`font-optical-sizing`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-optical-sizing).
 - Google Fonts, [Source Serif 4 metadata](https://github.com/google/fonts/blob/main/ofl/sourceserif4/METADATA.pb).
 - Google Fonts, [Literata 3.0 design notes](https://github.com/googlefonts/literata/blob/main/Documentation/WhatsNew-in-v3.md).
