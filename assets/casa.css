@@ -9,7 +9,7 @@
 .held, .limit { font-weight: 650; }
 .held { color: var(--dif); }
 .limit { color: var(--conc); }
-.mark { background: linear-gradient(transparent 52%, var(--casa-hl) 52%, var(--casa-hl) 92%, transparent 92%); padding: 0 .08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.mark { background: linear-gradient(var(--casa-hl), var(--casa-hl)) 0 57% / 100% .74em no-repeat; padding: 0 .08em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .term { text-decoration: underline dotted var(--ink-2) 1.5px; text-underline-offset: .22em; cursor: help; position: relative; }
 .term:hover::after, .term:focus-visible::after {
   content: attr(data-def); position: absolute; left: 0; top: calc(100% + 8px); z-index: 5; width: max-content; max-width: 30ch;
@@ -27,7 +27,7 @@ body[data-int="discreto"] .limit { text-decoration-color: var(--conc); }
 body[data-int="discreto"] .mark { background: none; text-decoration: underline wavy var(--conc) 1px; text-underline-offset: .22em; }
 body[data-int="forte"] .held { background: var(--dif-wash); padding: 0 .22em; }
 body[data-int="forte"] .limit { background: var(--conc-wash); padding: 0 .22em; }
-body[data-int="forte"] .mark { background: linear-gradient(transparent 28%, var(--casa-hl) 28%, var(--casa-hl) 96%, transparent 96%); }
+body[data-int="forte"] .mark { background: linear-gradient(var(--casa-hl), var(--casa-hl)) 0 63% / 100% .95em no-repeat; }
 :root[data-theme="dark"] body[data-int="forte"] .held { background: var(--dif-wash); }
 :root[data-theme="dark"] body[data-int="forte"] .limit { background: var(--conc-wash); }
 body[data-int="forte"] .held, body[data-int="forte"] .limit { -webkit-box-decoration-break: clone; box-decoration-break: clone; }
@@ -44,8 +44,8 @@ body[data-int="forte"] .held, body[data-int="forte"] .limit { -webkit-box-decora
 .fonte blockquote { margin: 0; padding: 0; border: 0; max-width: none; font: 400 18px/1.62 var(--serif); font-style: normal; color: var(--ink); }
 .fonte blockquote p { margin: 0 0 .9em; max-width: none; width: auto; }
 .fonte blockquote p:last-child { margin-bottom: 0; }
-.fonte .key { background: linear-gradient(transparent 50%, var(--casa-hl-dif) 50%, var(--casa-hl-dif) 94%, transparent 94%); padding: 0 .06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-.fonte.lim .key { background: linear-gradient(transparent 50%, var(--casa-hl) 50%, var(--casa-hl) 94%, transparent 94%); }
+.fonte .key { background: linear-gradient(var(--casa-hl-dif), var(--casa-hl-dif)) 0 57% / 100% .74em no-repeat; padding: 0 .06em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.fonte.lim .key { background: linear-gradient(var(--casa-hl), var(--casa-hl)) 0 57% / 100% .74em no-repeat; }
 .fonte blockquote[lang]:not([lang="pt"]):not([lang="pt-BR"]) { font-size: 17.5px; }
 .fonte .tr { margin: 14px 0 0; padding-top: 12px; border-top: 1px dotted var(--grid-major); color: var(--ink-2); font: 400 17px/1.58 var(--serif); }
 .fonte .tr[hidden] { display: none; }

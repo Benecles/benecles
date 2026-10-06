@@ -16,11 +16,11 @@
 .dial button{font:inherit;letter-spacing:inherit;text-transform:inherit;padding:6px 12px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);cursor:pointer}
 .dial button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
 .dial .dial-note{margin-left:auto;color:var(--muted)}
-.chave{list-style:none;margin:34px auto 0;padding:0;width:min(1083px,calc(100vw - 96px));border-top:1.5px solid var(--ink)}
-.chave li{display:grid;grid-template-columns:minmax(170px,1.1fr) 2fr 1.4fr;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--grid-major);font:400 16px/1.4 var(--serif)}
-.chave .k-sample{font-size:19px}
-.chave .k-rule{font:500 11px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
-@media(max-width:760px) and (orientation:portrait){.chave li{grid-template-columns:1fr}}
+.legenda{list-style:none;margin:34px auto 0;padding:0;width:min(1083px,calc(100vw - 96px));border-top:1.5px solid var(--ink)}
+.legenda li{display:grid;grid-template-columns:minmax(170px,1.1fr) 2fr 1.4fr;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--grid-major);font:400 16px/1.4 var(--serif)}
+.legenda .k-sample{font-size:19px}
+.legenda .k-rule{font:500 11px/1.4 var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:760px) and (orientation:portrait){.legenda li{grid-template-columns:1fr}}
 .annot{width:min(1083px,calc(100vw - 96px));margin:38px auto 10px;padding-top:10px;border-top:1.5px dashed var(--ink-2);font:500 11px/1.5 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
 .annot b{color:var(--conc);font-weight:600}
 .casa-fig{width:min(1083px,calc(100vw - 96px));margin:34px auto;border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major);padding:18px 18px 12px}
@@ -29,7 +29,7 @@
 .casa .bet,.casa .quiz,.casa-reg{width:min(1083px,calc(100vw - 96px));margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
 .casa .bet>div{max-width:none}
 .casa-reg{max-width:none}
-@media(max-width:1099px) and (orientation:portrait){.casa-fig,.annot,.chave,.dial>div,.casa .bet,.casa .quiz,.casa-reg,.casa-ch{width:calc(100vw - 32px)}}
+@media(max-width:1099px) and (orientation:portrait){.casa-fig,.annot,.legenda,.dial>div,.casa .bet,.casa .quiz,.casa-reg,.casa-ch{width:calc(100vw - 32px)}}
 </style>
 </head>
 <body class="casa" data-int="proposto">
@@ -39,7 +39,7 @@
   <h1><span class="split">A casa,</span><span class="split">junta</span></h1>
 </header>
 <div class="dial" role="group" aria-label="Intensidade das marcas"><div><span>Marcas no texto</span><button type="button" data-int="discreto" aria-pressed="false">Discreto</button><button type="button" data-int="proposto" aria-pressed="true">Proposto</button><button type="button" data-int="forte" aria-pressed="false">Forte</button><span class="dial-note">Aula 05 · Gelman, texto verbatim</span></div></div>
-<ul class="chave" aria-label="Chave das marcas"><li><span class="k-sample"><span class="held">decidiu</span></span><span class="k-does">o que a corte ou a lei decidiu: a regra operativa</span><span class="k-rule">azul · no máximo uma por parágrafo</span></li><li><span class="k-sample"><span class="limit">não fez</span></span><span class="k-does">o limite, a armadilha, o que a decisão não faz</span><span class="k-rule">laranja · no máximo uma por parágrafo</span></li><li><span class="k-sample"><span class="mark">a frase para guardar</span></span><span class="k-does">a única frase do capítulo que vale decorar</span><span class="k-rule">marca-texto · uma por capítulo</span></li><li><span class="k-sample"><span class="term" tabindex="0" data-def="Passe o ponteiro ou use Tab: a definição aparece aqui.">termo técnico</span></span><span class="k-does">define o termo ali mesmo</span><span class="k-rule">pontilhado · passe o ponteiro</span></li><li><span class="k-sample"><span class="art">art. 23 CADH</span></span><span class="k-does">artigo que o leitor pode querer abrir</span><span class="k-rule">mono em caixa fina</span></li><li><span class="k-sample"><span class="org">Corte Constitucional</span></span><span class="k-does">órgão, na primeira menção</span><span class="k-rule">versalete</span></li></ul>
+<ul class="legenda" aria-label="Chave das marcas"><li><span class="k-sample"><span class="held">decidiu</span></span><span class="k-does">o que a corte ou a lei decidiu: a regra operativa</span><span class="k-rule">azul · no máximo uma por parágrafo</span></li><li><span class="k-sample"><span class="limit">não fez</span></span><span class="k-does">o limite, a armadilha, o que a decisão não faz</span><span class="k-rule">laranja · no máximo uma por parágrafo</span></li><li><span class="k-sample"><span class="mark">a frase para guardar</span></span><span class="k-does">a única frase do capítulo que vale decorar</span><span class="k-rule">marca-texto · uma por capítulo</span></li><li><span class="k-sample"><span class="term" tabindex="0" data-def="Passe o ponteiro ou use Tab: a definição aparece aqui.">termo técnico</span></span><span class="k-does">define o termo ali mesmo</span><span class="k-rule">pontilhado · passe o ponteiro</span></li><li><span class="k-sample"><span class="art">art. 23 CADH</span></span><span class="k-does">artigo que o leitor pode querer abrir</span><span class="k-rule">mono em caixa fina</span></li><li><span class="k-sample"><span class="org">Corte Constitucional</span></span><span class="k-does">órgão, na primeira menção</span><span class="k-rule">versalete</span></li></ul>
 <section class="chapter casa-ch" aria-labelledby="c2"><span class="num" aria-hidden="true">02</span><h2 id="c2">O que a Corte Interamericana decidiu</h2><p class="lede">As anistias para graves violações não têm efeito jurídico, venham de onde vierem.</p></section>
 <div class="casa-col">
 <p>A Corte reafirmou a linha que vinha desde <em>Barrios Altos vs. Peru</em> (2001): são inadmissíveis anistias, prescrições e excludentes de responsabilidade que impeçam a investigação e a punição de graves violações, como tortura, execuções e desaparecimentos forçados (§ 225). Essas leis violam os <span class="art">arts. 1.1 e 2</span> da Convenção, porque impedem que as vítimas sejam ouvidas por um juiz (<span class="art">art. 8.1</span>) e recebam proteção judicial (<span class="art">art. 25</span>), e por isso “<span class="held">carecem de efeitos jurídicos</span>” (§ 226).</p>
