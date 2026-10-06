@@ -222,6 +222,22 @@ def make_record(path, source_id, chapter_id, pages, role, why):
     }
 
 
+def blueprint_statute_articles(path):
+    """Return article numbers explicitly listed for the 60-statute packet."""
+    if not path.is_file():
+        return []
+    numbers = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if "`60-statute.txt`" not in line or not line.lstrip().startswith("|"):
+            continue
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        if not cells or "course statute packet" not in cells[0].casefold():
+            continue
+        if len(cells) > 1:
+            numbers.extend(re.findall(r"\bart\.\s*(\d+)\b", cells[1], re.I))
+    return list(dict.fromkeys(numbers))
+
+
 def build(course, site=DEFAULT_SITE):
     root = PIPELINE_ROOT / course
     map_path = root / "course-map.json"
@@ -329,6 +345,8 @@ def build(course, site=DEFAULT_SITE):
         ]
         exercise_pieces = []
         exercise_meta = []
+        statute_pieces = []
+        statute_meta = []
         counters = {"primary": 0, "supporting": 0, "background": 0}
         for row in assigned:
             source_id = row["source_id"]
@@ -341,6 +359,9 @@ def build(course, site=DEFAULT_SITE):
             if source_id == "constituicao-federal-1988" or source_id.startswith("lei-") or source_role == "statute":
                 if entry.get("locator") != "article" or chapter_id == "whole":
                     raise ValueError(f"S4 legal sources must be assembled by article: {source_id}/{chapter_id}")
+            if source_role == "statute" and entry.get("locator") == "article":
+                statute_pieces.append(f"===== {source_id} / {chapter_id} =====\n\n{text_path.read_text(encoding='utf-8').rstrip()}\n")
+                statute_meta.append((source_id, chapter_id, page_label(entry), row["role"], row["why"]))
             is_exercise = source_role in {"past_exam", "exercise", "exercises"} or bool(re.search(r"exam|exerc", source_id, re.I))
             if is_exercise:
                 exercise_pieces.append(f"===== {source_id} / {chapter_id} =====\n\n{text_path.read_text(encoding='utf-8').rstrip()}\n")
@@ -353,6 +374,23 @@ def build(course, site=DEFAULT_SITE):
             destination = output_dir / file_name
             destination.write_bytes(text_path.read_bytes())
             records.append(make_record(destination, source_id, chapter_id, page_label(entry), role, row["why"]))
+
+        known_statutes = {(source_id, chapter_id) for source_id, chapter_id, *_ in statute_meta}
+        blueprint_path = output_dir / "blueprint.md"
+        cpc_sources = [source_id for source_id, shelf_row in shelf_by_id.items() if shelf_role(shelf_row) == "statute" and source_id.startswith("cpc-")]
+        if cpc_sources:
+            cpc_source_id = cpc_sources[0]
+            for article_number in blueprint_statute_articles(blueprint_path):
+                chapter_id = f"Art. {article_number}"
+                key = (cpc_source_id, chapter_id)
+                if key in known_statutes or key not in catalog:
+                    continue
+                entry, text_path = catalog[key]
+                if entry.get("locator") != "article":
+                    continue
+                statute_pieces.append(f"===== {cpc_source_id} / {chapter_id} =====\n\n{text_path.read_text(encoding='utf-8').rstrip()}\n")
+                statute_meta.append((cpc_source_id, chapter_id, page_label(entry), "blueprint locator", "Explicitly listed in the lesson blueprint's Course statute packet locator."))
+                known_statutes.add(key)
 
         if exercise_pieces:
             exercises_path = output_dir / "50-exercises-and-exams.txt"
@@ -372,6 +410,18 @@ def build(course, site=DEFAULT_SITE):
                 "—",
                 "exercises/exams (no assigned source)",
                 "S0 leaves lesson-specific assessment mapping undetermined; S3 assigns no exercise or exam chapter to this lesson.",
+            ))
+
+        statute_path = output_dir / "60-statute.txt"
+        if statute_pieces:
+            statute_path.write_text("\n\n".join(statute_pieces).rstrip() + "\n", encoding="utf-8")
+            for source_id, chapter_id, pages, role, why in statute_meta:
+                records.append(make_record(statute_path, source_id, chapter_id, pages, f"statute packet; {role}", why))
+        else:
+            statute_path.write_text("[No CPC article is assigned to this lesson in S3.]\n", encoding="utf-8")
+            records.append(make_record(
+                statute_path, "course-map.json", "statute", "—", "statute packet",
+                "S3 assigns no CPC article to this lesson.",
             ))
 
         records.sort(key=lambda row: (row["file"], row["source"], row["chapter"]))

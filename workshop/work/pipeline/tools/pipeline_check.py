@@ -47,6 +47,7 @@ from build_compendia import (
     DOSSIER_SOURCE_ID,
     eixo_markdown,
     dossier_answer_instruction,
+    blueprint_statute_articles,
     visible_page_text,
 )
 
@@ -752,6 +753,7 @@ def check_s4(args, errors, warnings):
     shelf_by_id = {row.get("source_id", ""): row for row in shelf if row.get("source_id")}
     lesson_ids = {lesson.get("id") for lesson in lessons}
     expected = {lesson_id: {} for lesson_id in lesson_ids}
+    expected_statutes = {lesson_id: [] for lesson_id in lesson_ids}
     for row in triage_rows:
         role = row.get("role", "")
         lesson_id = row.get("lesson_id", "")
@@ -759,6 +761,21 @@ def check_s4(args, errors, warnings):
             continue
         key = (row.get("source_id", ""), row.get("chapter_id", ""), role, row.get("why", ""))
         expected[lesson_id][key] = expected[lesson_id].get(key, 0) + 1
+        entry = catalog.get((row.get("source_id", ""), row.get("chapter_id", "")))
+        if shelf_role(shelf_by_id.get(row.get("source_id", ""), {})) == "statute" and entry and entry.get("locator") == "article":
+            expected_statutes[lesson_id].append((row.get("source_id", ""), row.get("chapter_id", ""), role, row.get("why", "")))
+    cpc_sources = [source_id for source_id, shelf_row in shelf_by_id.items() if shelf_role(shelf_row) == "statute" and source_id.startswith("cpc-")]
+    if cpc_sources:
+        cpc_source_id = cpc_sources[0]
+        for lesson_id in lesson_ids:
+            blueprint_path = args.compendium / Path(lesson_id).stem / "blueprint.md"
+            known = {(source_id, chapter_id) for source_id, chapter_id, *_ in expected_statutes[lesson_id]}
+            for article_number in blueprint_statute_articles(blueprint_path):
+                key = (cpc_source_id, f"Art. {article_number}")
+                item = catalog.get(key)
+                if key not in known and item and item.get("locator") == "article":
+                    expected_statutes[lesson_id].append((key[0], key[1], "blueprint locator", "Explicitly listed in the lesson blueprint's Course statute packet locator."))
+                    known.add(key)
 
     policy_assignments = []
     checked_manifests = 0
@@ -813,6 +830,7 @@ def check_s4(args, errors, warnings):
         found_live_page_record = False
         listed_files = set()
         observed = {}
+        observed_statutes = []
         for line in lines:
             if not line.startswith("|") or line.startswith("|---"):
                 continue
@@ -857,6 +875,20 @@ def check_s4(args, errors, warnings):
                 if (file_name, source_id, chapter_id) != ("60-live-page.txt", "live-page", lesson_id):
                     errors.append(f"{lesson_id}: malformed live-page provenance row")
                 found_live_page_record = True
+                continue
+            if role_cell.strip().startswith("statute packet"):
+                if file_name != "60-statute.txt":
+                    errors.append(f"{lesson_id}: statute packet provenance must point to 60-statute.txt")
+                if source_id == "course-map.json":
+                    if expected_statutes[lesson_id] or (chapter_id, why) != ("statute", "S3 assigns no CPC article to this lesson."):
+                        errors.append(f"{lesson_id}: unexpected empty statute packet provenance")
+                else:
+                    role = role_cell.split(";", 1)[1].strip() if ";" in role_cell else ""
+                    assignment_key = (source_id, chapter_id, role, why)
+                    if assignment_key not in expected[lesson_id] and assignment_key not in expected_statutes[lesson_id]:
+                        errors.append(f"{lesson_id}: statute packet contains unassigned article {source_id}/{chapter_id}")
+                    else:
+                        observed_statutes.append(assignment_key)
                 continue
             if role_cell.strip() == "slides":
                 found_slide_record = True
@@ -905,6 +937,33 @@ def check_s4(args, errors, warnings):
             errors.append(f"{lesson_id}: S4 manifest has no provenance table")
         if not found_slide_record:
             errors.append(f"{lesson_id}: S4 manifest has no slide provenance row")
+        statute_path = lesson_dir / "60-statute.txt"
+        packet_pieces = []
+        for source_id, chapter_id, role, why in expected_statutes[lesson_id]:
+            item = catalog.get((source_id, chapter_id))
+            if not item:
+                continue
+            source_path = args.chapters / source_id / item.get("path", "")
+            try:
+                atom_text = source_path.read_text(encoding="utf-8").rstrip()
+            except OSError as exc:
+                errors.append(f"{lesson_id}: cannot read assigned statute atom {source_id}/{chapter_id}: {exc}")
+                continue
+            packet_pieces.append(f"===== {source_id} / {chapter_id} =====\n\n{atom_text}\n")
+        expected_packet = "\n\n".join(packet_pieces).rstrip() + "\n" if packet_pieces else "[No CPC article is assigned to this lesson in S3.]\n"
+        try:
+            if statute_path.read_text(encoding="utf-8") != expected_packet:
+                errors.append(f"{lesson_id}: 60-statute.txt differs from assigned CPC article atoms")
+        except OSError as exc:
+            errors.append(f"{lesson_id}: missing or unreadable 60-statute.txt: {exc}")
+        expected_statute_rows = expected_statutes[lesson_id]
+        if expected_statute_rows:
+            actual_packet_rows = [item for item in observed_statutes]
+            expected_packet_rows = [(source_id, chapter_id, role, why) for source_id, chapter_id, role, why in expected_statute_rows]
+            if sorted(actual_packet_rows) != sorted(expected_packet_rows):
+                errors.append(f"{lesson_id}: 60-statute.txt provenance does not cover each assigned CPC article")
+        elif len(observed_statutes) > 0:
+            errors.append(f"{lesson_id}: 60-statute.txt has article provenance although S3 assigns no CPC article")
         if latam_workbench and (not found_eixo_map_record or not found_eixo_dossier_record):
             errors.append(f"{lesson_id}: S4 manifest lacks course-map or dossier provenance for 05-eixo.md")
         if latam_workbench and not found_live_page_record:
@@ -916,7 +975,7 @@ def check_s4(args, errors, warnings):
                     f"{lesson_id}: S4 manifest has {actual_count} of {expected_count} expected {assignment_key[2]} rows for {assignment_key[0]}/{assignment_key[1]}"
                 )
         try:
-            actual_files = {path.relative_to(lesson_dir).as_posix() for path in lesson_dir.rglob("*") if path.is_file() and path != index_path}
+            actual_files = {path.relative_to(lesson_dir).as_posix() for path in lesson_dir.rglob("*") if path.is_file() and path != index_path and path.name not in {"blueprint.md", "panel.md"}}
             for unlisted in sorted(actual_files - listed_files):
                 errors.append(f"{lesson_id}: S4 file is absent from manifest: {unlisted}")
         except OSError as exc:

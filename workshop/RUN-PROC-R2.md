@@ -22,9 +22,9 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S1 Shelf | #85 | checked, ready to integrate | Luna high | `work/pipeline/processo-civil-i/shelf.csv` + reuse notes; hashes, OCR state, dedup |
 | S2 Split | #86 | checked, ready to integrate (12 disjoint source batches) | Luna high | Luna high | chapter/page-marked corpus and indexes; `pipeline_check.py s2` |
 | S3 Triage | #87 | checked, ready to integrate | Luna xhigh | lesson × chapter triage; `pipeline_check.py s3` |
-| S4 Compendia | #88 | checked, ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
+| S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
-| S5a Blueprints/panel | #90 | P2 first batch: 6 blueprints in progress | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
+| S5a Blueprints/panel | #90 | P2 blueprints/panels in progress; final verdicts provisional pending S4 repair | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
 | S5 Pages | #91 | blocked on prototype gate | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | blocked on S4b/S5 | Luna high | generated exam-bank workbench and cards |
@@ -70,6 +70,8 @@ S3 repair results: Aula 01 and 04 promoted directly relevant Didier Vol. I chapt
 S3 final gate: `python3 work/pipeline/tools/pipeline_check.py s3 processo-civil-i` → `S3 PASS: 28241 triage rows / 1276 chapters` (exit 0). Warnings: no slide deck is mapped in the shelf for any lesson.
 
 S4 result: builder created 22 lesson compendia; worker reports 659 generated files and 683 provenance rows. `pipeline_check.py s4 processo-civil-i --site /Users/benecles/Developer/ordenacoes-filipinas-proc-r2` passed with 22/22 manifests; warnings: no slide deck is mapped for each lesson. Mechanical existence check found 22 `00-index.md` files. S4b now starts; 2025/2 P1 candidate naming Sérgio Mattos stays excluded pending the chairman's answer.
+
+S4 correction: S5a author found `compendium/aula-10-estabilizacao/60-statute.txt` absent, confirmed by the orchestrator. The S4 builder now emits the file for all 22 workbenches with per-article provenance from the refreshed 2026-10-06 CPC capture. The assembler/checker defect is recorded in `BUGS.md`. Corrected gate: `pipeline_check.py s4 processo-civil-i --site /Users/benecles/Developer/ordenacoes-filipinas-proc-r2` → PASS, 22/22 manifests, 1,082 provenance rows; unmapped slide decks remain warnings. Mechanical count confirms 22 statute files. S5a verdicts that depended on the prior indexes remain provisional until re-evaluated against the corrected indexes.
 
 S6 integration: checked front/planta changes committed on staging branch `codex/processo-r2` as `2dfd6c5` (`Add Direito Processual Civil I course front`). No push to `main`.
 
