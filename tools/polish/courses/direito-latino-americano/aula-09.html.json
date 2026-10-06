@@ -90,5 +90,97 @@
 {
 "before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
 "after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
+},
+{
+"before": "ele encontrou, o <strong>diálogo institucional</strong>, é um passo",
+"after": "ele encontrou, o diálogo institucional, é um passo"
+},
+{
+"before": "da ordem na <strong>STA 175</strong>; Fortaleza, em pedido separado, na <strong>STA 178</strong>. A suspensão de",
+"after": "da ordem na STA 175; Fortaleza, em pedido separado, na STA 178. A suspensão de"
+},
+{
+"before": "havia convocado uma <strong>audiência pública sobre saúde</strong>, aberta aos diversos",
+"after": "havia convocado uma audiência pública sobre saúde, aberta aos diversos"
+},
+{
+"before": "o remédio pedido <strong>já está</strong> nas políticas do",
+"after": "o remédio pedido já está nas políticas do"
+},
+{
+"before": "manda cumpri-la. Se <strong>não está</strong>, é preciso descobrir",
+"after": "manda cumpri-la. Se não está, é preciso descobrir"
+},
+{
+"before": "duas coisas. O <strong>resultado</strong> colegiado é esse,",
+"after": "duas coisas. O resultado colegiado é esse,"
+},
+{
+"before": "só esse. Os <strong>parâmetros</strong> são do voto",
+"after": "só esse. Os parâmetros são do voto"
+},
+{
+"before": "o fornecimento judicial. A exceção é estreita: <strong>mora irrazoável</strong> da Anvisa em",
+"after": "o fornecimento judicial. <span class=\"held\">A exceção é estreita</span>: mora irrazoável da Anvisa em"
+},
+{
+"before": "exige seis requisitos <strong>cumulativos</strong>, todos a cargo",
+"after": "exige seis requisitos cumulativos, todos a cargo"
+},
+{
+"before": "e, se conceder, <strong>oficiar aos órgãos competentes</strong> para avaliarem a",
+"after": "e, se conceder, oficiar aos órgãos competentes para avaliarem a"
+},
+{
+"before": "tratamento anual custa <strong>210 salários mínimos ou mais</strong>, calculado pelo preço",
+"after": "tratamento anual custa 210 salários mínimos ou mais, calculado pelo preço"
+},
+{
+"before": "recurso extraordinário, uma <strong>Comissão Especial</strong> de conciliação entre",
+"after": "recurso extraordinário, uma Comissão Especial de conciliação entre"
+},
+{
+"before": "Plenário, por unanimidade, <strong>homologou em parte</strong> os acordos, com",
+"after": "Plenário, por unanimidade, homologou em parte os acordos, com"
+},
+{
+"before": "deu origem à <strong>Súmula Vinculante 61</strong>. As duas teses",
+"after": "deu origem à Súmula Vinculante 61. As duas teses"
+},
+{
+"before": " públicas?</p><p>Pelo <strong>conteúdo</strong>, as teses são",
+"after": " públicas?</p><p>Pelo conteúdo, as teses são"
+},
+{
+"before": " espaço.</p><p>Pela <strong>forma</strong>, é intervenção de",
+"after": " espaço.</p><p>Pela forma, é intervenção de"
+},
+{
+"before": "o diálogo era <strong>de acompanhamento</strong>, com a política",
+"after": "o diálogo era de acompanhamento, com a política"
+},
+{
+"before": "o diálogo é <strong>de desenho</strong>, com o processo",
+"after": "o diálogo é de desenho, com o processo"
+},
+{
+"before": " SUS.</p><p>1. <strong>Sem registro na ",
+"after": " SUS.</p><p>1. <strong class=\"runin\">Sem registro na "
+},
+{
+"before": "da Anvisa. 2. <strong>Registrado e incorporado ",
+"after": "da Anvisa. 2. <strong class=\"runin\">Registrado e incorporado "
+},
+{
+"before": "a prova. 3. <strong>Registrado, mas não ",
+"after": "a prova. 3. <strong class=\"runin\">Registrado, mas não "
+},
+{
+"before": " dois pacientes</h3><p><strong>Paciente A:</strong> pede",
+"after": " dois pacientes</h3><p><strong class=\"runin\">Paciente A:</strong> pede"
+},
+{
+"before": " já ocorreu.</p><p><strong>Paciente B:</strong> pede",
+"after": " já ocorreu.</p><p><strong class=\"runin\">Paciente B:</strong> pede"
 }
 ]
