@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espécime tipográfico · CUFRGS</title>
+<meta name="description" content="Exemplo de intensidades tipográficas para texto jurídico, sujeito à escolha do conselho editorial.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Spectral:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+:root{color-scheme:light;--paper:#f2eee3;--paper-2:#e9e3d3;--grid:#d8d2c0;--grid-major:#c9c1aa;--ink:#1d2530;--ink-2:#4a4f55;--muted:#7a7566;--blue:#2b5597;--blue-wash:#d8e1ee;--orange:#b4432a;--orange-wash:#f0d9cc;--highlight:#f0d77a;--sans:'Archivo',system-ui,sans-serif;--serif:'Spectral',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#14171d;--paper-2:#1e2229;--grid:#1a1e25;--grid-major:#252a32;--ink:#e5e3da;--ink-2:#a3a6a6;--muted:#868a8e;--blue:#7fb0dd;--blue-wash:#1e2c3b;--orange:#dd8b6b;--orange-wash:#372824;--highlight:#75652b}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--paper);color:var(--ink);font:400 19px/1.62 var(--serif);background-image:linear-gradient(var(--grid-major) 1px,transparent 1px),linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),linear-gradient(var(--grid) .5px,transparent .5px),linear-gradient(90deg,var(--grid) .5px,transparent .5px);background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-attachment:fixed;transition:background-color .25s,color .25s}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px clamp(16px,4vw,48px);color:var(--ink-2);font:11px var(--mono);letter-spacing:.09em;text-transform:uppercase}.topbar a{color:inherit;text-decoration:none}.topbar a:hover{text-decoration:underline}.theme-toggle,.mode button{color:inherit;font:inherit;cursor:pointer}.theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:4px 2px;border:0;background:none;letter-spacing:inherit;text-transform:inherit}.theme-toggle:focus-visible,.mode button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}.track{position:relative;width:30px;height:16px;border:1.5px solid currentColor;border-radius:9px}.knob{position:absolute;top:2px;left:2px;width:9px;height:9px;border-radius:50%;background:var(--orange);transition:transform .25s}.theme-toggle[aria-pressed="true"] .knob{transform:translateX(14px);background:var(--blue)}
+main{width:min(100% - 32px,880px);margin:clamp(34px,8vh,84px) auto 90px}.eyebrow{font:500 11px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}h1{margin:10px 0 12px;font:800 clamp(34px,6vw,64px)/.98 var(--sans);letter-spacing:-.035em;max-width:15ch}.intro{max-width:62ch;margin:0 0 28px;color:var(--ink-2);font-size:18px}.sample{border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major);padding:clamp(20px,5vw,42px)}.sample h2{margin:0 0 22px;padding-bottom:10px;border-bottom:1px solid var(--grid-major);font:500 11px/1.5 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2)}.sample p{max-width:62ch;margin:0;font-size:clamp(19px,2.2vw,22px);line-height:1.68}.source{margin-top:18px;color:var(--muted);font:10px/1.5 var(--mono);letter-spacing:.07em;text-transform:uppercase}.mode{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 12px}.mode button{border:1px solid var(--ink-2);padding:8px 12px;background:transparent;color:var(--ink-2);font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase}.mode button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:0;border-top:1px solid var(--grid-major)}.legend div{padding:12px 14px 12px 0;border-bottom:1px solid var(--grid-major);font:13px/1.45 var(--sans);color:var(--ink-2)}.legend b{display:block;margin-bottom:3px;color:var(--ink);font:500 10px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}.blue{color:var(--blue)}.orange{color:var(--orange)}.court{font-variant:small-caps;letter-spacing:.04em}.case{font-style:italic}.hl{background:linear-gradient(transparent 43%,var(--highlight) 43%,var(--highlight) 91%,transparent 91%);padding-inline:.05em}.level-restraint .blue,.level-restraint .orange{color:inherit}.level-restraint .hl{background:none}.level-bold .hl{background:linear-gradient(transparent 20%,var(--highlight) 20%,var(--highlight) 96%,transparent 96%)}.note{margin:22px 0 0;color:var(--ink-2);font:11px/1.5 var(--mono);letter-spacing:.04em;text-transform:uppercase}.legend b{font-weight:500}@media(max-width:560px) and (orientation:portrait){.topbar{font-size:10px}.theme-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Navegação"><a href="../index.html">← CUFRGS</a><span>Espécime · TYPE-1</span><button class="theme-toggle" type="button" aria-pressed="false" aria-label="Alternar modo noite"><span class="track" aria-hidden="true"><span class="knob"></span></span><span class="theme-label">Modo noite</span></button></nav>
+<main>
+  <div class="eyebrow">Estudo para decisão editorial · 06/10/2026</div>
+  <h1>Uma passagem,<br>três intensidades</h1>
+  <p class="intro">A marcação deve tornar visível o trabalho de cada trecho. Escolha uma intensidade e compare; este exemplo aguarda a escolha do conselho e não representa estilo adotado.</p>
+  <div class="mode" role="group" aria-label="Intensidade tipográfica">
+    <button type="button" data-level="restraint" aria-pressed="true">Contida</button>
+    <button type="button" data-level="proposed" aria-pressed="false">Proposta</button>
+    <button type="button" data-level="bold" aria-pressed="false">Forte</button>
+  </div>
+  <article class="sample level-restraint" id="sample">
+    <h2>Direito Latino-americano · Aula 05 · O caso Gelman</h2>
+    <p>Para a <span class="court">Corte IDH</span> (2011, unânime), não pode: a proteção dos direitos humanos é limite intransponível à regra da maioria, e o voto popular, por ser ato do Estado, gera responsabilidade como qualquer lei.</p>
+    <div class="source"><span class="case">Gelman vs. Uruguai</span> · Aula 05 · capítulo “Eixo de discussão da aula”</div>
+  </article>
+  <p class="note">Exemplo para deliberação · não é estilo adotado</p>
+  <section class="legend" aria-label="Significado das marcas">
+    <div><b>Azul · sustenta</b>Marca a proposição que a decisão afirma: voto popular atribuível ao Estado.</div>
+    <div><b>Laranja · limita</b>Marca o limite jurídico que restringe a proposição: proteção de direitos humanos.</div>
+    <div><b>Itálico</b>Identifica termo estrangeiro ou nome de caso, sem mudar seu peso.</div>
+    <div><b>Versalete</b>Identifica o tribunal na primeira menção do trecho.</div>
+    <div><b>Realce · uma vez</b>Destaca uma única conclusão de leitura no trecho.</div>
+  </section>
+</main>
+<script>
+const sample=document.querySelector('#sample');
+const levels={
+ restraint:'Para a <span class="court">Corte IDH</span> (2011, unânime), não pode: a proteção dos direitos humanos é limite intransponível à regra da maioria, e o voto popular, por ser ato do Estado, gera responsabilidade como qualquer lei.',
+ proposed:'Para a <span class="court">Corte IDH</span> (2011, unânime), não pode: <span class="orange">a proteção dos direitos humanos é limite intransponível à regra da maioria</span>, e <span class="blue">o voto popular, por ser ato do Estado, gera responsabilidade como qualquer lei</span>.',
+ bold:'Para a <span class="court">Corte IDH</span> (2011, unânime), não pode: <span class="orange">a proteção dos direitos humanos é <span class="hl">limite intransponível</span> à regra da maioria</span>, e <span class="blue">o voto popular, por ser ato do Estado, gera responsabilidade como qualquer lei</span>.'
+};
+for(const button of document.querySelectorAll('[data-level]'))button.addEventListener('click',()=>{const level=button.dataset.level;sample.className='sample level-'+level;sample.querySelector('p').innerHTML=levels[level];for(const item of document.querySelectorAll('[data-level]'))item.setAttribute('aria-pressed',String(item===button))});
+const themeButton=document.querySelector('.theme-toggle');themeButton.addEventListener('click',()=>{const dark=document.documentElement.dataset.theme!=='dark';if(dark)document.documentElement.dataset.theme='dark';else delete document.documentElement.dataset.theme;themeButton.setAttribute('aria-pressed',String(dark));try{localStorage.setItem('type-specimen-theme',dark?'dark':'light')}catch{}});try{if(localStorage.getItem('type-specimen-theme')==='dark'){document.documentElement.dataset.theme='dark';themeButton.setAttribute('aria-pressed','true')}}catch{}
+</script>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
+</body>
+</html>
