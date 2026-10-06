@@ -1,4 +1,4 @@
-/* CUFRGS · caderno: chapter bookmarks kept in this browser. */
+/* caderno: chapter bookmarks kept in this browser. */
 (function () {
   'use strict';
   var path = normalizePath(location.pathname);

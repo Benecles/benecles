@@ -1,4 +1,4 @@
-/* CUFRGS · modo avião: a discreet corner button that saves the whole site
+/* modo avião: a discreet corner button that saves the whole site
    on this device (via sw.js) so it can be read without a connection. */
 (function () {
   if (!('serviceWorker' in navigator) || !('caches' in window)) return;

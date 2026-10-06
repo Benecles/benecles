@@ -1,4 +1,4 @@
-/* CUFRGS · marca-texto: select reading text and mark it in one of five colours.
+/* marca-texto: select reading text and mark it in one of five colours.
    Marks are kept in this browser only (localStorage), one list per page. */
 (function () {
   if (!window.getSelection || !document.createTreeWalker || !Element.prototype.closest) return;
