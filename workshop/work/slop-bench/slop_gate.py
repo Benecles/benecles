@@ -13,6 +13,7 @@ import argparse, json, os, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(ROOT, 'protocols', 'tools'))
 from slop_lint import lint, text_of
+from marks_lint import check as marks_check
 
 ap = argparse.ArgumentParser(); ap.add_argument('page'); ap.add_argument('--out'); ap.add_argument('--mode', default='conform')
 a = ap.parse_args()
@@ -28,4 +29,6 @@ lint_lines = '\n'.join(f"- line {f['line']} `{f['rule']}`: “{f['span']}”" fo
 with open(os.path.join(out, 'critic_input.md'), 'w') as fh:
     fh.write(f"{prompt}\n\nMode: **{a.mode}**\n\n---\n# STYLE.md\n{style}\n\n---\n# Writing Standard, Part D\n{part_d}\n\n---\n"
              f"# Deterministic findings (review prompts, not verdicts)\n{lint_lines}\n\n---\n# Frozen draft: {os.path.basename(a.page)}\n\n{text_of(a.page).strip()}\n")
+marks = marks_check(a.page)
+for ln, rule, msg in marks: print(f'  marks line {ln} {rule}: {msg}')
 print(f"{res['status']} · {res['finding_count']} lint findings ({res['findings_per_1000']}/1000) · critic input: {os.path.join(out, 'critic_input.md')}")

@@ -233,6 +233,7 @@ One vocabulary, learned once, read at a glance. Specimen: `specimen/casa.html`; 
 - `.term` (dotted underline, `data-def` card): a term of art defined on the spot; the definition must come from the lesson itself.
 - `.org` (small caps): court or organ name on first mention. `.tab`: tabular figures for dates, votes and sums. `.art` (mono chip): an article the reader may want to open, used rarely (dense runs of chips look like noise). Foreign terms, case names and works are italic.
 - Colour is a legend: never colour a sentence of ordinary prose, never mark for decoration, and the colours agree with the source-block bars and figure legends (blue = decided, orange = limit).
+- Enforced by `protocols/tools/marks_lint.py` (also run by `slop_gate.py`): the caps above, `.term` needs `data-def`, no plain bold, no inline colour on text.
 - Refused: party colours in comparisons (collide with blue = decided); sidenotes (no margin in the 1,083 px column, and they put source talk outside the source block).
 
 ### C11. Portuguese register
