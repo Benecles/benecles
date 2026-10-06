@@ -60,3 +60,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **CASA-3 · Latam Aula 02 on the house marks** · 06/10 · plain bold retired on Aula 02 (17 bolds unwrapped; names and terms read as plain text); marks_lint 0 findings
 - **CASA-3 · Latam Aula 03 on the house marks** · 06/10 · plain bold retired on Aula 03; marks_lint 0 findings
 - **CASA-3 · Latam Aula 04 on the house marks** · 06/10 · plain bold retired on Aula 04; marks_lint 0 findings
+- **CASA-3 · Latam Aula 07 on the house marks** · 06/10 · plain bold retired on Aula 07; ECI becomes a .term defined from the lesson's own sentence; marks_lint 0 findings

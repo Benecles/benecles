@@ -142,5 +142,49 @@
 {
 "before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
 "after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
+},
+{
+"before": " lesões.</p><p>O <strong>estado de coisas inconstitucional (ECI)</strong> é a técnica",
+"after": " lesões.</p><p>O <span class=\"term\" tabindex=\"0\" data-def=\"Técnica que torna visível a relação entre violação de direitos e funcionamento institucional.\">estado de coisas inconstitucional (ECI)</span> é a técnica"
+},
+{
+"before": "primeira vez na <strong>SU-559/1997</strong>, sobre o não",
+"after": "primeira vez na SU-559/1997, sobre o não"
+},
+{
+"before": "a ela na <strong>T-068/1998</strong>, sobre a ineficiência",
+"after": "a ela na T-068/1998, sobre a ineficiência"
+},
+{
+"before": "de Previsión. A <strong>T-153/1998</strong> não inventou a",
+"after": "de Previsión. A T-153/1998 não inventou a"
+},
+{
+"before": "direitos fundamentais de <strong>caráter geral</strong> e com <strong>causas estruturais</strong>, cuja solução exige",
+"after": "direitos fundamentais de caráter geral e com causas estruturais, cuja solução exige"
+},
+{
+"before": "formal foi o <strong>PSOL</strong>, porque partidos com",
+"after": "formal foi o PSOL, porque partidos com"
+},
+{
+"before": "julgamento terminou em <strong>4 de outubro de 2023</strong>, com a ação",
+"after": "julgamento terminou em 4 de outubro de 2023, com a ação"
+},
+{
+"before": "347: são as <strong>audiências públicas de monitoramento</strong> que dão legitimidade",
+"after": "347: são as audiências públicas de monitoramento que dão legitimidade"
+},
+{
+"before": "uma ordem estrutural. <strong>Repetição:</strong> a lesão aparece",
+"after": "uma ordem estrutural. Repetição: a lesão aparece"
+},
+{
+"before": "unidades e persiste? <strong>Causalidade:</strong> depende de atos",
+"after": "unidades e persiste? Causalidade: depende de atos"
+},
+{
+"before": "de instituições distintas? <strong>Capacidade de resposta ordinária:</strong> uma tutela individual",
+"after": "de instituições distintas? Capacidade de resposta ordinária: uma tutela individual"
 }
 ]
