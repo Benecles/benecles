@@ -189,11 +189,11 @@ Counted by `slop_lint` (⚙). Each limit is the smallest rate at which ≤ 10% o
 - line 207 `negative-parallelism`: “não é”
 - line 222 `negative-parallelism`: “não foi”
 - line 222 `negative-parallelism`: “não é”
-- line 385 `negative-parallelism`: “não é”
-- line 346 `negated-inference`: “não cria”
-- line 353 `negated-inference`: “não torna”
-- line 387 `negated-inference`: “não cria”
-- line 396 `negated-inference`: “não converte”
+- line 372 `negative-parallelism`: “não é”
+- line 333 `negated-inference`: “não cria”
+- line 340 `negated-inference`: “não torna”
+- line 374 `negated-inference`: “não cria”
+- line 383 `negated-inference`: “não converte”
 - line 13 `colon-reveal`: “O controle preventivo age antes : sobre o projeto, não sobre a lei.”
 - line 34 `colon-reveal`: “O marco didático é o encerramento da formação da norma: antes dele, o projeto ainda pode ser deliberado; depois, o ato formado pode ser objeto de controle repressivo.”
 - line 80 `colon-reveal`: “Ele acontece em dois pontos da tramitação: dentro da própria Casa legislativa e nas mãos do Presidente da República, por meio do veto.”
@@ -213,27 +213,27 @@ Counted by `slop_lint` (⚙). Each limit is the smallest rate at which ≤ 10% o
 - line 218 `colon-reveal`: “Por regra, é vedada pelo STF a interpretação das normas regimentais das Casas legislativas: ponto que permanece controverso .”
 - line 220 `colon-reveal`: “O Plenário não conheceu do mandado de segurança: a discussão envolvia regras internas da Câmara e não havia direito subjetivo do impetrante a amparar a ação (Rel.”
 - line 222 `colon-reveal`: “foi extinto sem julgamento de mérito), mas mostra que a barreira do interna corporis não é absoluta: onde o regimento realiza diretamente um comando constitucional, sua má aplicação pode deixar de ser assunto apenas interno da Casa.”
-- line 245 `colon-reveal`: “Aponta-se lei casuística, voltada a impedir a implantação do partido Rede Sustentabilidade: possível violação do direito público subjetivo do parlamentar de não se submeter a processo legislativo inconstitucional.”
-- line 256 `colon-reveal`: “mesa deve designar comissão especial para o exame do mérito, com prazo de 40 sessões para o parecer: comissão não instalada, o que indica tramitação suspensa.”
-- line 260 `colon-reveal`: “Medida cautelar indeferida: sem notícia da comissão especial, falta o periculum in mora : a tramitação já estava, de fato, suspensa.”
-- line 310 `colon-reveal`: “Seguimento negado: a vedação do art.”
-- line 349 `colon-reveal`: “No julgamento de mérito, prevaleceu a divergência de Teori Zavascki: o Plenário revogou a liminar e denegou a segurança.”
-- line 353 `colon-reveal`: “A diferença está no objeto: decidir se o conteúdo de um PL é compatível com direitos constitucionais é uma coisa; impedir que a Casa viole uma etapa que a Constituição impõe é outra.”
-- line 385 `colon-reveal`: “A exceção não é uma ação popular contra emendas: o fundamento está na posição do parlamentar e na proibição constitucional de deliberar proposta tendente a abolir cláusula protegida.”
-- line 387 `colon-reveal`: “O STF negou a segurança: discordância com o conteúdo de PL não cria direito subjetivo de barrar o debate.”
-- line 396 `colon-reveal`: “o mesmo conteúdo, a gravidade da tese não converte o mandado de segurança em revisão material prévia: a Casa pode rejeitar, o Presidente pode vetar e, se o projeto virar lei, o controle será repressivo.”
-- line 471 `colon-reveal`: “Por regra, não: a interpretação de matéria puramente regimental é tratada como ato interna corporis .”
+- line 241 `colon-reveal`: “Aponta-se lei casuística, voltada a impedir a implantação do partido Rede Sustentabilidade: possível violação do direito público subjetivo do parlamentar de não se submeter a processo legislativo inconstitucional.”
+- line 247 `colon-reveal`: “mesa deve designar comissão especial para o exame do mérito, com prazo de 40 sessões para o parecer: comissão não instalada, o que indica tramitação suspensa.”
+- line 251 `colon-reveal`: “Medida cautelar indeferida: sem notícia da comissão especial, falta o periculum in mora : a tramitação já estava, de fato, suspensa.”
+- line 297 `colon-reveal`: “Seguimento negado: a vedação do art.”
+- line 336 `colon-reveal`: “No julgamento de mérito, prevaleceu a divergência de Teori Zavascki: o Plenário revogou a liminar e denegou a segurança.”
+- line 340 `colon-reveal`: “A diferença está no objeto: decidir se o conteúdo de um PL é compatível com direitos constitucionais é uma coisa; impedir que a Casa viole uma etapa que a Constituição impõe é outra.”
+- line 372 `colon-reveal`: “A exceção não é uma ação popular contra emendas: o fundamento está na posição do parlamentar e na proibição constitucional de deliberar proposta tendente a abolir cláusula protegida.”
+- line 374 `colon-reveal`: “O STF negou a segurança: discordância com o conteúdo de PL não cria direito subjetivo de barrar o debate.”
+- line 383 `colon-reveal`: “o mesmo conteúdo, a gravidade da tese não converte o mandado de segurança em revisão material prévia: a Casa pode rejeitar, o Presidente pode vetar e, se o projeto virar lei, o controle será repressivo.”
+- line 458 `colon-reveal`: “Por regra, não: a interpretação de matéria puramente regimental é tratada como ato interna corporis .”
 - line 13 `triad-density`: “é sancionada ou vetada, promulgada e passa a vigorar”
 - line 53 `triad-density`: “por regra, pelos Poderes Legislativo e Executivo”
 - line 64 `triad-density`: “Enquanto a formação ainda está em curso, há projeto e controle preventivo”
 - line 101 `triad-density`: “Medidas Provisórias, resoluções de tribunais e decretos, conforme as atribuições previstas no regimento int”
 - line 140 `triad-density`: “66, §§ 5º e 7º)”
 - line 180 `triad-density`: “secreto, universal e periódico”
-- line 245 `triad-density`: “liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o acesso ao fundo partidário e ao tempo de propaganda eleitoral a novos partidos, na migraç”
-- line 349 `triad-density`: “o STF examinou mandado de segurança contra o PLC 14/2013, que alterava regras de distribuição do fundo partidário e do tempo de propaganda eleitoral envolvendo partidos recém-c”
-- line 357 `triad-density`: “secreto, universal e periódico, a separação dos Poderes ou direitos e garantias i”
-- line 367 `triad-density`: “033 preserva debate, emenda e veto”
-- line 245 `uniform-paragraphs`: “Medida liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o”
+- line 241 `triad-density`: “liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o acesso ao fundo partidário e ao tempo de propaganda eleitoral a novos partidos, na migraç”
+- line 336 `triad-density`: “o STF examinou mandado de segurança contra o PLC 14/2013, que alterava regras de distribuição do fundo partidário e do tempo de propaganda eleitoral envolvendo partidos recém-c”
+- line 344 `triad-density`: “secreto, universal e periódico, a separação dos Poderes ou direitos e garantias i”
+- line 354 `triad-density`: “033 preserva debate, emenda e veto”
+- line 267 `uniform-paragraphs`: “A via é excepcional e se funda no direito público subjetivo do parlamentar a um ”
 
 ---
 # Frozen draft: aula-09.html
@@ -470,31 +470,18 @@ Programa · III.1 Momentos do controle · III.1.1 Preventivo Prof. Marcelo Schen
 
  
  
- 
- 
- MS 32.033/DF Rel. Min. Gilmar Mendes · STF, abril de 2013 
- 
- Medida liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o acesso ao fundo partidário e ao tempo de propaganda eleitoral a novos partidos, na migração partidária ocorrida durante a legislatura. Aponta-se lei casuística, voltada a impedir a implantação do partido Rede Sustentabilidade: possível violação do direito público subjetivo do parlamentar de não se submeter a processo legislativo inconstitucional.
+ MS 32.033/DF Rel. Min. Gilmar Mendes · STF, abril de 2013 Medida liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o acesso ao fundo partidário e ao tempo de propaganda eleitoral a novos partidos, na migração partidária ocorrida durante a legislatura. Aponta-se lei casuística, voltada a impedir a implantação do partido Rede Sustentabilidade: possível violação do direito público subjetivo do parlamentar de não se submeter a processo legislativo inconstitucional.
 
  
 
  Liminar deferida em 24.4.2013; em 20.6.2013 o Plenário revogou a liminar e denegou a segurança.
-
  
-
- 
- MS 32.036 e 32.037/DF Rel. Min. Dias Toffoli · STF, maio de 2013 
- 
- Mandado de segurança impetrado para obstar a tramitação e a deliberação da PEC 33/2011 (que alteraria o controle das decisões do STF pelo Congresso Nacional). O regimento interno da Câmara prevê que, após a admissão pela CCJ, a mesa deve designar comissão especial para o exame do mérito, com prazo de 40 sessões para o parecer: comissão não instalada, o que indica tramitação suspensa.
+ MS 32.036 e 32.037/DF Rel. Min. Dias Toffoli · STF, maio de 2013 Mandado de segurança impetrado para obstar a tramitação e a deliberação da PEC 33/2011 (que alteraria o controle das decisões do STF pelo Congresso Nacional). O regimento interno da Câmara prevê que, após a admissão pela CCJ, a mesa deve designar comissão especial para o exame do mérito, com prazo de 40 sessões para o parecer: comissão não instalada, o que indica tramitação suspensa.
 
  
 
  Medida cautelar indeferida: sem notícia da comissão especial, falta o periculum in mora : a tramitação já estava, de fato, suspensa.
-
  
-
- 
-
 
 
 

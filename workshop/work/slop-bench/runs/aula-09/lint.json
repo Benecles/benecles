@@ -1,5 +1,5 @@
 {
-  "file": "courses/controle-de-constitucionalidade/aula-09.html",
+  "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
   "words": 3326,
   "sentences": 192,
   "finding_count": 48,
@@ -40,7 +40,7 @@
   "status": "PASS",
   "findings": [
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 207,
       "rule": "negative-parallelism",
       "band": "tell",
@@ -52,7 +52,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 222,
       "rule": "negative-parallelism",
       "band": "tell",
@@ -64,7 +64,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 222,
       "rule": "negative-parallelism",
       "band": "tell",
@@ -76,8 +76,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 385,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 372,
       "rule": "negative-parallelism",
       "band": "tell",
       "span": "não é",
@@ -88,8 +88,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 346,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 333,
       "rule": "negated-inference",
       "band": "tell",
       "span": "não cria",
@@ -100,8 +100,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 353,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 340,
       "rule": "negated-inference",
       "band": "tell",
       "span": "não torna",
@@ -112,8 +112,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 387,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 374,
       "rule": "negated-inference",
       "band": "tell",
       "span": "não cria",
@@ -124,8 +124,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 396,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 383,
       "rule": "negated-inference",
       "band": "tell",
       "span": "não converte",
@@ -136,7 +136,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 13,
       "rule": "colon-reveal",
       "band": "tell",
@@ -148,7 +148,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 34,
       "rule": "colon-reveal",
       "band": "tell",
@@ -160,7 +160,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 80,
       "rule": "colon-reveal",
       "band": "tell",
@@ -172,7 +172,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 99,
       "rule": "colon-reveal",
       "band": "tell",
@@ -184,7 +184,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 101,
       "rule": "colon-reveal",
       "band": "tell",
@@ -196,7 +196,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 101,
       "rule": "colon-reveal",
       "band": "tell",
@@ -208,7 +208,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 112,
       "rule": "colon-reveal",
       "band": "tell",
@@ -220,7 +220,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 125,
       "rule": "colon-reveal",
       "band": "tell",
@@ -232,7 +232,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 136,
       "rule": "colon-reveal",
       "band": "tell",
@@ -244,7 +244,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 174,
       "rule": "colon-reveal",
       "band": "tell",
@@ -256,7 +256,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 194,
       "rule": "colon-reveal",
       "band": "tell",
@@ -268,7 +268,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 194,
       "rule": "colon-reveal",
       "band": "tell",
@@ -280,7 +280,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 198,
       "rule": "colon-reveal",
       "band": "tell",
@@ -292,7 +292,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 207,
       "rule": "colon-reveal",
       "band": "tell",
@@ -304,7 +304,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 207,
       "rule": "colon-reveal",
       "band": "tell",
@@ -316,7 +316,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 209,
       "rule": "colon-reveal",
       "band": "tell",
@@ -328,7 +328,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 218,
       "rule": "colon-reveal",
       "band": "tell",
@@ -340,7 +340,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 220,
       "rule": "colon-reveal",
       "band": "tell",
@@ -352,7 +352,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 222,
       "rule": "colon-reveal",
       "band": "tell",
@@ -364,8 +364,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 245,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 241,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "Aponta-se lei casuística, voltada a impedir a implantação do partido Rede Sustentabilidade: possível violação do direito público subjetivo do parlamentar de não se submeter a processo legislativo inconstitucional.",
@@ -376,8 +376,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 256,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 247,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "mesa deve designar comissão especial para o exame do mérito, com prazo de 40 sessões para o parecer: comissão não instalada, o que indica tramitação suspensa.",
@@ -388,8 +388,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 260,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 251,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "Medida cautelar indeferida: sem notícia da comissão especial, falta o periculum in mora : a tramitação já estava, de fato, suspensa.",
@@ -400,8 +400,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 310,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 297,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "Seguimento negado: a vedação do art.",
@@ -412,8 +412,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 349,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 336,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "No julgamento de mérito, prevaleceu a divergência de Teori Zavascki: o Plenário revogou a liminar e denegou a segurança.",
@@ -424,8 +424,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 353,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 340,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "A diferença está no objeto: decidir se o conteúdo de um PL é compatível com direitos constitucionais é uma coisa; impedir que a Casa viole uma etapa que a Constituição impõe é outra.",
@@ -436,8 +436,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 385,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 372,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "A exceção não é uma ação popular contra emendas: o fundamento está na posição do parlamentar e na proibição constitucional de deliberar proposta tendente a abolir cláusula protegida.",
@@ -448,8 +448,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 387,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 374,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "O STF negou a segurança: discordância com o conteúdo de PL não cria direito subjetivo de barrar o debate.",
@@ -460,8 +460,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 396,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 383,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "o mesmo conteúdo, a gravidade da tese não converte o mandado de segurança em revisão material prévia: a Casa pode rejeitar, o Presidente pode vetar e, se o projeto virar lei, o controle será repressivo.",
@@ -472,8 +472,8 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 471,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 458,
       "rule": "colon-reveal",
       "band": "tell",
       "span": "Por regra, não: a interpretação de matéria puramente regimental é tratada como ato interna corporis .",
@@ -484,7 +484,7 @@
       "over_limit": true
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 13,
       "rule": "triad-density",
       "band": "tell",
@@ -496,7 +496,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 53,
       "rule": "triad-density",
       "band": "tell",
@@ -508,7 +508,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 64,
       "rule": "triad-density",
       "band": "tell",
@@ -520,7 +520,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 101,
       "rule": "triad-density",
       "band": "tell",
@@ -532,7 +532,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 140,
       "rule": "triad-density",
       "band": "tell",
@@ -544,7 +544,7 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
       "line": 180,
       "rule": "triad-density",
       "band": "tell",
@@ -556,8 +556,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 245,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 241,
       "rule": "triad-density",
       "band": "tell",
       "span": "liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o acesso ao fundo partidário e ao tempo de propaganda eleitoral a novos partidos, na migraç",
@@ -568,8 +568,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 349,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 336,
       "rule": "triad-density",
       "band": "tell",
       "span": "o STF examinou mandado de segurança contra o PLC 14/2013, que alterava regras de distribuição do fundo partidário e do tempo de propaganda eleitoral envolvendo partidos recém-c",
@@ -580,8 +580,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 357,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 344,
       "rule": "triad-density",
       "band": "tell",
       "span": "secreto, universal e periódico, a separação dos Poderes ou direitos e garantias i",
@@ -592,8 +592,8 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 367,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 354,
       "rule": "triad-density",
       "band": "tell",
       "span": "033 preserva debate, emenda e veto",
@@ -604,11 +604,11 @@
       "over_limit": false
     },
     {
-      "file": "courses/controle-de-constitucionalidade/aula-09.html",
-      "line": 245,
+      "file": "/Users/benecles/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-09.html",
+      "line": 267,
       "rule": "uniform-paragraphs",
       "band": "tell",
-      "span": "Medida liminar afastou a possibilidade prevista no PLC 14/2013, que restringia o",
+      "span": "A via é excepcional e se funda no direito público subjetivo do parlamentar a um ",
       "fix": "Reshape paragraphs around the argument (D9); never to a length quota.",
       "per_1000": 0.301,
       "severity": "rate",
