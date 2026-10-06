@@ -1,6 +1,6 @@
 # Finding
 
-The strongest direct screen study here supports a medium measure near 55 characters per line for sustained reading, with no basis for treating 76 CSS `ch` as 76 characters. NN/G’s 50–75-character range is a useful expert convention, not a replicated universal optimum. At 19px, 76ch may be visually comfortable in this serif, but the cited evidence cannot establish that: measure must be counted in the rendered face and tested in the specimen.
+The strongest direct screen study here supports a medium measure near 55 characters per line for sustained reading. NN/G’s 50–75-character range is a useful expert convention, not a replicated universal optimum. The old 76ch width is historical: WIDE-4 now sets the desktop reading column to `min(1,083px, viewport − 96px)` (1,083px at a 1,440px viewport). The specimen should compare that live column with a narrower candidate. Measure actual rendered lines in the reading face at 19px; the evidence does not justify converting the CSS width into a character count.
 
 # Evidence and quality
 
@@ -14,11 +14,11 @@ The strongest direct screen study here supports a medium measure near 55 charact
 
 Dyson’s three tested lengths are coarse and its result does not identify a continuous optimum. The NN/G recommendation is practical guidance rather than a controlled estimate. Legge’s visual-span work concerns letter recognition and eye movements, while Rello et al. focus on font size and line spacing in Arial. Neither transfers directly to a 19px reading serif or Portuguese legal prose. No named source tests this typeface, this population, or this CSS measure.
 
-CSS `ch` is based on the advance width of the font’s “0” glyph, not a promise that a line holds that number of proportional characters. Actual character count varies with the face and text. A 76ch declaration therefore cannot be compared numerically with Dyson’s 55 characters per line without measuring rendered text.
+The live column is specified in pixels, while Dyson reports characters per line; they are different measures. Do not infer a character count from 1,083px. Actual line counts depend on the rendered face and text.
 
 # CSS implication
 
-Treat 50–75 rendered characters per line as a comparison range, with roughly 55 as the evidence-led starting point for a specimen variant. Keep 76ch as the current comparison condition; measure its actual average and maximum characters per line in the reading serif at 19px. The specimen should let the chairman compare the current width with a narrower condition before any site-wide recommendation.
+Treat 50–75 rendered characters per line as a comparison range, with roughly 55 as the evidence-led starting point for a narrower specimen variant. Compare the live 1,083px desktop column (capped by viewport width minus 96px) with that narrower candidate. Count rendered characters in the actual reading face at 19px; do not invent a pixel-to-character conversion. The specimen should let the chairman compare the two conditions before any site-wide recommendation.
 
 # Sources
 
