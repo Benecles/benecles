@@ -1,10 +1,11 @@
 {
-"version": "c32231625df1",
+"version": "fffc5643c106",
 "files": [
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
 "assets/casa.css",
+"assets/casa.js",
 "assets/changelog.css",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
 "assets/course-diagrams/semana01-exclusoes-conduta-ced6eec05503.svg",
