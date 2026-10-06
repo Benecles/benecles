@@ -200,7 +200,31 @@
 "after": "de Janeiro</text><path d=\"M430 575H487.5M430 571V579M458.7 572V578M487.5 571V579\" style=\"fill:none;stroke:var(--ink);stroke-width:1.2\"></path><text x=\"487.5\" y=\"566\" text-anchor=\"end\" class=\"t-small t-muted\">1000 km</text><path d=\"M40 190V259M40 265V440\" class=\"thin\"></path><path d=\"M35 257L45 261M35 263L45 267\" class=\"thin\"></path><rect x=\"36\" y=\"262.0\" width=\"8\" height=\"167.5\" style=\"fill:var(--conc)\"></rect>"
 },
 {
-"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Constitucionalismo na América Latina em larga duração: Haiti, a crise de 1808, o laboratório da Nova Granada, Cádiz, o Brasil imperial, os três projetos fundacionais, o constitucionalismo social e a redemocratização.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=381047ae9a\">\n<style>.longform{max-width:1180px;margin:28px auto ",
-"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Constitucionalismo na América Latina em larga duração: Haiti, a crise de 1808, o laboratório da Nova Granada, Cádiz, o Brasil imperial, os três projetos fundacionais, o constitucionalismo social e a redemocratização.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto "
+"before": " Latino-americano</title>\n<meta name=\"description\" content=\"Constitucionalismo na América Latina em larga duração: Haiti, a crise de 1808, o laboratório da Nova Granada, Cádiz, o Brasil imperial, os três projetos fundacionais, o constitucionalismo social e a redemocratização.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto",
+"after": " Latino-americano</title>\n<meta name=\"description\" content=\"Constitucionalismo na América Latina em larga duração: Haiti, a crise de 1808, o laboratório da Nova Granada, Cádiz, o Brasil imperial, os três projetos fundacionais, o constitucionalismo social e a redemocratização.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto"
+},
+{
+"before": "22px/1.2 var(--sans);margin:1.6em 0 .5em}.lex{margin:6px 0 22px;padding:2px 0 2px 16px;border-left:3px solid var(--dif);font-size:17px;line-height:1.55;color:var(--ink-2)}.lex b{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dif);display:block;margin-bottom:2px}.lex.conc{border-left-color:var(--conc)}.lex.conc b{color:var(--conc)}.eixo{margin:26px 0 8px;padding:14px 18px;border:1.5px",
+"after": "22px/1.2 var(--sans);margin:1.6em 0 .5em}.eixo{margin:26px 0 8px;padding:14px 18px;border:1.5px"
+},
+{
+"before": "do poder real.</p><p class=\"lex \"><b>Constituição de Cádiz, arts. 1º e 3º</b>Art. 1º La ",
+"after": "do poder real.</p><aside class=\"fonte dec\" aria-label=\"Fonte: Constituição de Cádiz, arts. 1º e 3º\"><header><span>Constituição de Cádiz</span><span class=\"loc\">arts. 1º e 3º</span></header><blockquote lang=\"es\"><p>Art. 1º La "
+},
+{
+"before": "en la Nación.</p><p>A inclusão é",
+"after": "en la Nación.</p></blockquote><p class=\"tr\" hidden><b>Tradução nossa</b>Art. 1º A Nação espanhola é a reunião de todos os espanhóis de ambos os hemisférios. Art. 3º A soberania reside essencialmente na Nação.</p><footer><button type=\"button\" data-tr aria-expanded=\"false\">ver tradução</button></footer></aside><p>A inclusão é"
+},
+{
+"before": "fundamento da participação.</p><p class=\"lex conc\"><b>Constituição de Cádiz, art. 22</b>A los españoles ",
+"after": "fundamento da participação.</p><aside class=\"fonte lim\" aria-label=\"Fonte: Constituição de Cádiz, art. 22\"><header><span>Constituição de Cádiz</span><span class=\"loc\">art. 22</span></header><blockquote lang=\"es\"><p>A los españoles "
+},
+{
+"before": "ser Ciudadanos [...].</p><p>A exclusão está",
+"after": "ser Ciudadanos [...].</p></blockquote><p class=\"tr\" hidden><b>Tradução nossa</b>Aos espanhóis que por qualquer linha são havidos e reputados como originários da África fica aberta a porta da virtude e do merecimento para serem Cidadãos [...].</p><footer><button type=\"button\" data-tr aria-expanded=\"false\">ver tradução</button></footer></aside><p>A exclusão está"
+},
+{
+"before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
+"after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
 }
 ]
