@@ -1,6 +1,7 @@
 {
-"version": "b4ffc61ba765",
+"version": "3344d93c674b",
 "files": [
+"_tmp/labeler.js",
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
