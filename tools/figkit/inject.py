@@ -21,7 +21,7 @@ PAGES = {
     'courses/teoria-do-delito/unidade-01.html': by_ids(*delito_u01.panels()),
     'courses/teoria-do-delito/unidade-04.html': by_ids(*delito_u04.panels()),
     'courses/teoria-do-delito/unidade-05.html': by_ids(*delito_u05.panels()),
-    'courses/teoria-geral-dos-contratos/aula-01.html': by_ids(*contratos_a01.panels2(), *contratos_a01.panels3()),
+    'courses/teoria-geral-dos-contratos/aula-01.html': {**by_ids(*contratos_a01.panels1(), *contratos_a01.panels2(), *contratos_a01.panels3()), '__remove__': ['p-esp']},
     'courses/direito-latino-americano/aula-02.html': by_ids(*latam_a02.panels()),
     'courses/direito-constitucional-i/aula-04.html': by_ids(*consti_a04.panels()),
     'courses/processo-civil-i/aula-01.html': by_ids(processo_a01.panel()),
@@ -41,7 +41,15 @@ def element_span(s, start):
 def inject(path, repl):
     p = os.path.join(ROOT, path)
     s = open(p).read()
+    for ident in repl.get('__remove__', []):
+        m = re.search(rf'<svg\b[^>]*\bid="{re.escape(ident)}"', s)
+        if not m:
+            raise SystemExit(f'{path}: no <svg> for removal: {ident}')
+        a, b = element_span(s, m.start())
+        s = s[:a] + s[b:]
     for key, new in repl.items():
+        if key.startswith('__'):
+            continue
         if key == 'hero':
             m = re.search(r'<svg\b[^>]*class="hero-fork[^"]*"', s)
         else:
@@ -53,7 +61,7 @@ def inject(path, repl):
         a, b = element_span(s, m.start())
         s = s[:a] + new + s[b:]
     open(p, 'w').write(s)
-    return len(repl)
+    return sum(not key.startswith('__') for key in repl)
 
 
 if __name__ == '__main__':
