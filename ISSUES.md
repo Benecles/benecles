@@ -68,3 +68,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Controle A01: house style (terms, casa.css)** · Aula 01 gets casa.css/js; roadmap objeto/parâmetro/controlador become .term with the lesson's own clauses; stray bold unwrapped.
 - **Controle A09: decision summaries as source blocks** · the two .julgado boxes (MS 32.033, MS 32.036/37) become .fonte.resumo: our summary, not a quote, outcome line under it; .resumo/.tese added to casa.css and the specimen
 - **Drop the internal CUFRGS label** · code comments, specimen back-link and gate README unlabelled (storage key doc now matches gate.mjs: ordenacoes-theme); public patch notes keep the historical name
+- **Drop the CUFRGS label: sw.js and experiments** · the two files the first pass's ship script didn't stage
