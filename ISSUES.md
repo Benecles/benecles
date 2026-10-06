@@ -62,3 +62,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **CASA-3 · Latam Aula 04 on the house marks** · 06/10 · plain bold retired on Aula 04; marks_lint 0 findings
 - **CASA-3 · Latam Aula 07 on the house marks** · 06/10 · plain bold retired on Aula 07; ECI becomes a .term defined from the lesson's own sentence; marks_lint 0 findings
 - **CASA-3 · Latam Aula 08 on the house marks** · 06/10 · plain bold retired on Aula 08; one .limit (what T-025 did not choose) and one .held (the burden of proof); marks_lint 0 findings
+- **CASA-3 · Latam Aula 09 on the house marks** · 06/10 · plain bold retired on Aula 09 (.runin for the numbered and patient heads, one .held on the narrow exception); marks_lint 0 findings
