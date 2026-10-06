@@ -225,6 +225,16 @@ Every general statement is followed, within two sentences, by something the read
 - No exclamation marks.
 - Rhetorical questions are allowed only as a heading, or as the literal question a case poses.
 
+### C10b. Marks in running text (CASA-1, chairman picked "proposto", 06/10)
+One vocabulary, learned once, read at a glance. Specimen: `specimen/casa.html`; CSS: `assets/casa.css`.
+- `.held` (blue bold): what the court or law decided, the operative rule. At most one per paragraph, only on a holding, at most ~6 words.
+- `.limit` (orange bold): the limit, the trap, what the decision did not do. Same caps.
+- `.mark` (highlighter): the one sentence per chapter worth memorising. At most one per chapter.
+- `.term` (dotted underline, `data-def` card): a term of art defined on the spot; the definition must come from the lesson itself.
+- `.org` (small caps): court or organ name on first mention. `.tab`: tabular figures for dates, votes and sums. `.art` (mono chip): an article the reader may want to open, used rarely (dense runs of chips look like noise). Foreign terms, case names and works are italic.
+- Colour is a legend: never colour a sentence of ordinary prose, never mark for decoration, and the colours agree with the source-block bars and figure legends (blue = decided, orange = limit).
+- Refused: party colours in comparisons (collide with blue = decided); sidenotes (no margin in the 1,083 px column, and they put source talk outside the source block).
+
 ### C11. Portuguese register
 - Norma culta, direct, active voice by default, plain words.
 - Avoid calques of AI English: "desempenhar um papel crucial", "no cenário atual", "navegar por", "robusto", "abordagem holística", "jornada", "mergulhar".
@@ -305,7 +315,7 @@ The order of priority when editing: (1) maximize propositions per sentence and d
 - Direct instructions in exam-practice contexts are fine ("Responda antes de abrir a solução").
 
 ### D8. Formatting tics
-- Bold only key terms at first mention. Never bold whole sentences.
+- Plain bold is retired (CASA-1, 06/10): the only bold in running text is `.held` and `.limit` (see C10b). Run-in labels inside a structured block (Tese., Casos.) may stay bold. Never bold whole sentences.
 - No emoji.
 - No headings that contain only other headings.
 - No horizontal rules as decoration.
@@ -339,6 +349,7 @@ Counted by `slop_lint` (⚙). Each limit is the smallest rate at which ≤ 10% o
 
 ### E2. Source blocks: the books and decisions speak for themselves (chairman, 05/10; replaces "no doctrine quotations")
 - When a book, decision, statute or treaty says the thing better than our paraphrase, the prose **stops** at that point and a **source block** opens right there: the passage itself, as long as it earns (a paragraph, or several hundred words of a key stretch). The prose resumes below without "como vimos" or a recap.
+- **One component, `.fonte`** (replaces `.lex`, `blockquote.law`, `.julgado` and the Codex `.source-block`): mono header (source, locator), the passage in the reading serif, a left bar that says what the source is to the argument: blue = a decision or statute's operative words, orange = a limit, ink = a book or doctrine. Key words the prose leans on get a marker highlight inside the block. Non-Portuguese passages carry a `tradução nossa` toggle. Markup and examples: `specimen/casa.html`; `.src` is taken by the hidden-sourcing class.
 - **No lead-in attribution in the prose** ("segundo X", "como afirma Y"). The block carries its own header: author, *work*, chapter/page; or court, case, date.
 - Choose stretches that do something paraphrase can't: the author's argument in their own order, a definition the professor uses, the court's actual reasoning, the operative words of an article. Don't quote what a sentence of ours says as well.
 - Decisions stay in their original language (Spanish, Portuguese); a translation toggle sits under non-Portuguese blocks.
