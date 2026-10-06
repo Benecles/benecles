@@ -63,3 +63,9 @@ uniform-paragraphs          0.0    64.7   11.1
 ai-vocab-pt                 0.5     0.0   22.2
 paren-scarcity              0.0     0.0    0.0
 ```
+
+## Luna (our writer) raw drafts, 06/10
+15 unedited `gpt-6-luna` drafts (`raw-luna/`, same 18-topic prompt set; 3 timed out on Codex workspace routing). Share of drafts alarming, vs human doctrine:
+- **triad-density 60.0%** (12.38/1k vs human 7.59), **colon-reveal 40.0%** (4.64/1k vs 3.05), **negated-inference 26.7%** (1.55/1k vs 0.06, ~25×), evaluative-tail 6.7%, uniform-paragraphs 6.7%, rather-than 6.7%.
+- Luna produces **none** of the generic AI vocabulary or formulaic metatext Haiku does (ai-vocab-pt 0 vs Haiku 21%): model-specific profiling matters; English-style word lists would miss our writer.
+- Conclusion: the three rules to watch hardest on Codex/Luna output are triads, colon reveals and negated inference. The site-wide follow-up pass should target exactly these.
