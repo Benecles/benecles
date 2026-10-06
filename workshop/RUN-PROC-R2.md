@@ -1,6 +1,7 @@
 # RUN-PROC-R2 · Direito Processual Civil I · 2026-10-06
 
 ## Chairman questions
+- Aula 10-estabilização's blueprint received a second `REVISE`: Q2 must test S0's construction outcome, and §05/Q5 must stay within C9's narrower doctrinal claims. Please decide whether to require another revision or accept this blueprint.
 - Aula 11-merit's blueprint received a second `REVISE`: the whole-request contrast in A4/§02 remains ambiguous, and T1 repeats across the Hero, §01, and §04. The panel protocol escalates after a second `REVISE`; please decide whether to require another revision or accept the current blueprint.
 - Aula 15's blueprint received a second `REVISE`: its integrated exercise still needs a documentary means and a reasoned admissibility assessment. The panel protocol escalates after a second `REVISE`; please decide whether to require another revision or accept the current exercise.
 - Aula 10's blueprint received a second `REVISE`: the closing exercise still gives the learner the evidence-necessity premise instead of asking them to assess it. The panel protocol says a second `REVISE` goes to the chairman; please decide whether to require another revision or accept the current exercise.
@@ -24,7 +25,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S3 Triage | #87 | checked, ready to integrate | Luna xhigh | lesson × chapter triage; `pipeline_check.py s3` |
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
-| S5a Blueprints/panel | #90 | P2 blueprints/panels in progress; final verdicts provisional pending S4 repair | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
+| S5a Blueprints/panel | #90 | P2: 5 approved, 4 escalated to chairman; P1 first batch of 6 now starting | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
 | S5 Pages | #91 | blocked on prototype gate | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | blocked on S4b/S5 | Luna high | generated exam-bank workbench and cards |
@@ -72,6 +73,10 @@ S3 final gate: `python3 work/pipeline/tools/pipeline_check.py s3 processo-civil-
 S4 result: builder created 22 lesson compendia; worker reports 659 generated files and 683 provenance rows. `pipeline_check.py s4 processo-civil-i --site /Users/benecles/Developer/ordenacoes-filipinas-proc-r2` passed with 22/22 manifests; warnings: no slide deck is mapped for each lesson. Mechanical existence check found 22 `00-index.md` files. S4b now starts; 2025/2 P1 candidate naming Sérgio Mattos stays excluded pending the chairman's answer.
 
 S4 correction: S5a author found `compendium/aula-10-estabilizacao/60-statute.txt` absent, confirmed by the orchestrator. The S4 builder now emits the file for all 22 workbenches with per-article provenance from the refreshed 2026-10-06 CPC capture. The assembler/checker defect is recorded in `BUGS.md`. Corrected gate: `pipeline_check.py s4 processo-civil-i --site /Users/benecles/Developer/ordenacoes-filipinas-proc-r2` → PASS, 22/22 manifests, 1,082 provenance rows; unmapped slide decks remain warnings. Mechanical count confirms 22 statute files. S5a verdicts that depended on the prior indexes remain provisional until re-evaluated against the corrected indexes.
+
+S5a first P2 batch final panel status after the corrected S4 index: Aula 11 and Aula 14 are `APPROVED`. Aula 10, Aula 10-estabilização, Aula 11-merit, and Aula 15 remain `REVISE` after the author round, so each is escalated to the chairman under the two-REVISE rule.
+
+S5a next P2 results: Aula 16, Aula 17, and Aula 18 are `APPROVED`. Aula 16's mapped Q9 needs a later S5 source request because its cited CPC arts. 125, 127, 385, 447 §§4–5, 459 and Marinoni §9.12 are absent from its current compendium. No answer rationale is inferred from memory. The first six P1 lesson blueprints are now starting; P2 remains the first page-writing batch once F-023 is lifted.
 
 S6 integration: checked front/planta changes committed on staging branch `codex/processo-r2` as `2dfd6c5` (`Add Direito Processual Civil I course front`). No push to `main`.
 

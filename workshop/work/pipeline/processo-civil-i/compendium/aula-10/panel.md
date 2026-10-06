@@ -1,0 +1,3 @@
+REVISE
+
+1. The closing-exercise issue remains after the source-locator correction: the two-route key supplies the decisive premises (“no additional evidence is needed” / “evidence still needs organization”) and asks for the articles and operations. It tests recall of the routes, but does not require the reader to identify what the record establishes, decide whether a material fact needs additional evidence, and justify whether instruction is necessary. Add that application to the closing task using the actual record and its limits. The new per-article 60-statute.txt index entries confirm statutory availability; they do not change this exercise-design issue. The earlier thread issue remains fixed by the explicit record checks in §§04–05.
