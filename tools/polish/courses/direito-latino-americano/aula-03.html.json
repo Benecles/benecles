@@ -150,5 +150,29 @@
 {
 "before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
 "after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
+},
+{
+"before": "o STF desse <strong>interpretação conforme</strong> à Constituição e",
+"after": "o STF desse interpretação conforme à Constituição e"
+},
+{
+"before": "declarasse o dispositivo <strong>não recebido</strong> pela Constituição de",
+"after": "declarasse o dispositivo não recebido pela Constituição de"
+},
+{
+"before": "6.683 é uma <strong>lei-medida</strong>: não uma regra",
+"after": "6.683 é uma lei-medida: não uma regra"
+},
+{
+"before": "a anistia foi <strong>bilateral</strong>: estendeu a conexão",
+"after": "a anistia foi bilateral: estendeu a conexão"
+},
+{
+"before": "uma postura de <strong>autocontenção</strong> (validou o pacto",
+"after": "uma postura de autocontenção (validou o pacto"
+},
+{
+"before": "Corte colombiana teve <strong>intervenção ativa</strong> (validou a transição,",
+"after": "Corte colombiana teve intervenção ativa (validou a transição,"
 }
 ]
