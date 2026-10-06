@@ -134,13 +134,34 @@ def check_s0(args, errors):
     ids = [lesson.get("id") for lesson in lessons]
     if len(ids) != len(set(ids)):
         errors.append("duplicate lesson IDs in course map")
-    missing = sorted(pages - set(ids))
-    extra = sorted(set(ids) - pages)
+    states = {}
+    for lesson in lessons:
+        lesson_id = lesson.get("id")
+        state = lesson.get("page_state", "live")
+        if state not in {"live", "planned"}:
+            errors.append(f"{lesson_id}: page_state must be live or planned")
+        states[lesson_id] = state
+    redirects = read_json(args.map, []).get("redirects", {})
+    if not isinstance(redirects, dict):
+        errors.append("redirects must map old hrefs to lesson IDs")
+        redirects = {}
+    redirect_sources = set(redirects)
+    missing = sorted(pages - {lesson_id for lesson_id in ids if states.get(lesson_id) == "live"} - redirect_sources)
+    extra = sorted({lesson_id for lesson_id in ids if states.get(lesson_id) == "live"} - pages)
     if missing:
-        errors.append("live pages absent from map: " + ", ".join(missing))
+        errors.append("live pages absent from lessons or redirects: " + ", ".join(missing))
     if extra:
-        errors.append("map IDs without live pages: " + ", ".join(map(str, extra)))
+        errors.append("live lesson IDs without live pages: " + ", ".join(map(str, extra)))
     positions = {lesson_id: i for i, lesson_id in enumerate(ids)}
+    for source, target in redirects.items():
+        if source not in pages:
+            errors.append(f"redirect source is not a live lesson page: {source}")
+        if target not in positions:
+            errors.append(f"redirect {source}: unknown destination lesson {target}")
+    for lesson in lessons:
+        lesson_id = lesson.get("id")
+        if states.get(lesson_id) == "planned" and lesson_id in pages:
+            errors.append(f"planned lesson already has a live page: {lesson_id}")
     for i, lesson in enumerate(lessons):
         lesson_id = lesson.get("id", f"row {i+1}")
         for field in ("syllabus_line", "learning_outcome", "exam"):
@@ -375,7 +396,7 @@ def bibliography_authors(reference):
     surnames = set()
     for author in author_line.split(";"):
         name = author.split(",", 1)[0].strip()
-        tokens = normalized_words(name)
+        tokens = normalized_words(name) - {"jr", "junior"}
         if tokens:
             surnames.add(sorted(tokens)[-1])
     return surnames
@@ -386,33 +407,33 @@ def essential_source_ids(args, shelf_rows, errors):
 
     Reusable exact override in course-map.json:
       "policy": {"basica_essencial_source_ids": ["source-id", ...]}
-    Without it, match author surnames and distinctive title words against
-    book_base IDs and source filenames. Multiple acquired editions may match.
+Without it, match author surnames and distinctive title words against
+book-role shelf IDs and source filenames. Multiple acquired editions may match.
     """
     course = read_json(args.map, errors)
     policy = course.get("policy", {}) if isinstance(course, dict) else {}
     explicit = policy.get("basica_essencial_source_ids") if isinstance(policy, dict) else None
     shelf_by_id = {row.get("source_id", ""): row for row in shelf_rows if row.get("source_id")}
-    book_base_rows = [row for row in shelf_rows if shelf_role(row) == "book_base"]
+    book_rows = [row for row in shelf_rows if shelf_role(row).startswith("book_")]
     if explicit is not None:
         if not isinstance(explicit, list) or not all(isinstance(item, str) and item for item in explicit):
             errors.append("policy.basica_essencial_source_ids must be a list of shelf source IDs")
             return set()
-        if not explicit and book_base_rows:
-            errors.append("policy.basica_essencial_source_ids is empty but the shelf contains book_base sources")
+        if not explicit and book_rows:
+            errors.append("policy.basica_essencial_source_ids is empty but the shelf contains book sources")
             return set()
         for source_id in explicit:
             if source_id not in shelf_by_id:
                 errors.append(f"policy.basica_essencial_source_ids references unknown shelf source {source_id}")
-            elif shelf_role(shelf_by_id[source_id]) != "book_base":
-                errors.append(f"policy.basica_essencial_source_ids source {source_id} is not a book_base shelf item")
+            elif not shelf_role(shelf_by_id[source_id]).startswith("book_"):
+                errors.append(f"policy.basica_essencial_source_ids source {source_id} is not a book shelf item")
         return set(explicit)
 
     bibliography = course.get("bibliography", {}) if isinstance(course, dict) else {}
     base = bibliography.get("base", {}) if isinstance(bibliography, dict) else {}
     references = base.get("basica_essencial", []) if isinstance(base, dict) else []
     if not isinstance(references, list) or not references:
-        if not book_base_rows:
+        if not book_rows:
             return set()
         errors.append("course map has no bibliography.base.basica_essencial list")
         return set()
@@ -420,12 +441,12 @@ def essential_source_ids(args, shelf_rows, errors):
     matched = set()
     for reference in references:
         authors = bibliography_authors(str(reference))
-        title = str(reference).split(".", 2)[1] if "." in str(reference) else str(reference)
+        title = str(reference).split(". ", 1)[1] if ". " in str(reference) else str(reference)
         generic = {"a", "as", "ao", "aos", "com", "da", "das", "de", "do", "dos", "e", "em", "na", "no", "o", "os", "para", "por", "um", "uma", "direito", "constitucional", "curso", "livro", "volume", "edicao", "edicoes", "esquematizado", "sao", "paulo", "editora", "saraiva", "malheiros", "juspubdivm", "isbn"}
         title_tokens = normalized_words(title) - generic - authors
         candidates = []
         for row in shelf_rows:
-            if shelf_role(row) != "book_base":
+            if not shelf_role(row).startswith("book_"):
                 continue
             source_id = row.get("source_id", "")
             identity = normalized_words(source_id + " " + Path(row.get("path", "")).name)
@@ -446,7 +467,12 @@ SYLLABUS_STOP_WORDS = {
 
 
 def primary_matches_syllabus(lesson, assignment):
-    syllabus = normalized_words(str(lesson.get("syllabus_line", "")) + " " + str(lesson.get("learning_outcome", ""))) - SYLLABUS_STOP_WORDS
+    scope = lesson.get("scope", [])
+    scope_text = " ".join(map(str, scope)) if isinstance(scope, list) else str(scope)
+    syllabus = normalized_words(
+        str(lesson.get("title", "")) + " " + str(lesson.get("syllabus_line", "")) + " "
+        + str(lesson.get("learning_outcome", "")) + " " + scope_text
+    ) - SYLLABUS_STOP_WORDS
     rationale_and_title = normalized_words(assignment.get("why", "") + " " + assignment.get("title", ""))
     return bool(syllabus & rationale_and_title)
 
@@ -534,12 +560,11 @@ def check_assignment_policy(args, lessons, assignments, shelf_rows, errors):
             if no_book_course and lesson_id in no_book_lessons:
                 if not primary_matches_syllabus(lesson_by_id.get(lesson_id, {}), assignment):
                     errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} rationale/title does not match the mapped syllabus")
-            elif source_id not in essential_ids:
-                errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} is not matched to bibliography.base.basica_essencial")
-            elif not primary_matches_syllabus(lesson_by_id.get(lesson_id, {}), assignment):
-                errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} rationale/title does not match the mapped syllabus")
             else:
-                primary_totals[lesson_id] = primary_totals.get(lesson_id, 0) + words
+                if not primary_matches_syllabus(lesson_by_id.get(lesson_id, {}), assignment):
+                    errors.append(f"{lesson_id}: primary {source_id}/{chapter_id} rationale/title does not match the mapped syllabus")
+                elif source_id in essential_ids:
+                    primary_totals[lesson_id] = primary_totals.get(lesson_id, 0) + words
 
     for lesson_id, total in support_totals.items():
         if total > MAX_SUPPORTING_TOTAL_WORDS:
