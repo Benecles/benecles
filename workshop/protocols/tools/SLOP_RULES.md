@@ -59,3 +59,6 @@ Findings are review prompts, not automatic verdicts. HARD rules report every pat
 On live Latam Aulas 01–09 (06/10): `stacked-questions` 12 (true rhetorical stacks), `uniform-paragraphs` 5, the rest 0.
 
 **Whole gate in one command:** `python3 work/slop-bench/slop_gate.py PAGE.html` → `lint.json` + `critic_input.md` for a separate reviewer; apply span patches only, re-run.
+
+## 06/10 backtest retune (SLOP-3b)
+Limits now come from data (`work/slop-bench/BACKTEST.md`): negative-parallelism became RATE 2.0/1k; new `negated-inference` 0.5/1k; colon-reveal 5.6; triad-density 12.3; denial-restatement 1.6; stance-adverb 1.2; `fragment-run` and `load-bearing-adverb` retired (measured backwards). Twelve SlopDetector/tropes.fyi ports added (tool-artifact, placeholder, chat-scaffolding, ai-self-reference, ritual-conclusion, challenges-future, evaluative-tail, count-announce, analogy-coach, where-it-lives, invented-label, stakes-inflation) plus RATE `ai-vocab-pt` 5.2/1k. Every finding carries `band: tell|style`.

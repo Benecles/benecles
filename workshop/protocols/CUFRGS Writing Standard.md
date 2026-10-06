@@ -312,18 +312,17 @@ The order of priority when editing: (1) maximize propositions per sentence and d
 
 ---
 
-### D9. Density limits (structural tells; per lesson unless stated)
-Counted by `slop_lint` where marked ⚙; read for the rest. A hit over the limit is a reason to look, not an automatic edit.
-- ⚙ **Colon reveals** (claim, colon, expansion in the same sentence): ≤ 2.5 per 1,000 words. Humans in the matched corpus never exceeded 2.7; 14 of 18 AI documents were ≥ 3.0.
-- ⚙ **Denial; restatement** ("não reduziu o dano; deslocou o ônus"): 0 as a flourish. D1's legal test applies.
-- ⚙ **"em vez de / ao invés de / em lugar de"**: ≤ 1 per 1,000 words and never twice in a paragraph (the measured flagship tell is the rate).
-- ⚙ **Triads** ("X, Y e Z" lists of short items): ≤ 4 per 1,000 words; a run of two triads in one paragraph is a finding. Two items are often the honest count.
-- ⚙ **Stance adverbs**: "meramente, simplesmente, genuinamente, verdadeiramente, efetivamente, justamente, precisamente, silenciosamente" as emphasis: 0 (D6 counts real intensifiers separately).
-- ⚙ **Negation chains** ("sem X, sem Y, sem Z" / "Não X. Não Y."): 0 outside an enumeration of legal requirements.
-- ⚙ **Same-opener runs**: three consecutive sentences starting with the same word or skeleton.
-- **Uniform paragraphs**: five or more consecutive paragraphs of near-equal length (±15%) in a long-prose section; reshape around the argument, never to a quota.
-- **Nominalization pile-ups** ("a implementação da verificação da execução"): turn the nouns back into verbs with an actor (C1).
-- **Participial tails** (D2): any sentence-final gerund clause that comments instead of adding a fact.
+### D9. Density limits (structural tells; set from the 06/10 backtest, `work/slop-bench/BACKTEST.md`)
+Counted by `slop_lint` (⚙). Each limit is the smallest rate at which ≤ 10% of human Portuguese doctrine would alarm; a hit over the limit is a reason to look, not an automatic edit. Findings carry a band: **tell** (model habit) or **style** (house rule humans also break).
+- ⚙ **Negated inference** ("não basta / substitui / resolve / autoriza / prova / transforma / significa…"): ≤ 0.5 per 1,000 words. Our pages ran 2.43 vs human doctrine 0.14 (~18×): our strongest house tic. State what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.
+- ⚙ **"Não é X" frames** (D1): ≤ 2.0 per 1,000 words, legal test still applies to each.
+- ⚙ **Colon reveals** (claim, colon, expansion in one sentence): ≤ 5.6 per 1,000 words (human ~3, our pages 7–8).
+- ⚙ **Triads** ("X, Y e Z"): ≤ 12.3 per 1,000 words; two triads in one paragraph is still worth a look.
+- ⚙ **"em vez de / ao invés de / em lugar de"**: ≤ 1 per 1,000 words (13–15× the human rate).
+- ⚙ **Stacked rhetorical questions**, **same-opener runs**, **uniform paragraphs** (five consecutive within ±15%), **no parentheses on a long page**: model-only patterns; any run is a finding.
+- ⚙ **AI vocabulary basket** ("crucial, fundamental, essencial, robusto, abrangente, panorama, nuance…"): ≤ 5.2 per 1,000 words.
+- ⚙ **Style band** (applies to everyone): stance adverbs ≤ 1.2/1k, "não X, mas Y" ≤ 1.6/1k, no "Em suma," wrap-ups, no "vale destacar".
+- Read, not counted: nominalization pile-ups (C1), participial and "o que demonstra…" tails (⚙ hard), sentences that restate an earlier one (D10.3).
 
 ### D10. The five pathologies generic guides miss (chairman, 05/10; hard bans)
 1. **Fake disagreement.** Staging an opposing view nobody in the sources holds, so the text can refute it. Only named positions with reasons (C6) are disputed.

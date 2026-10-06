@@ -1,0 +1,9 @@
+Criei um material didático de aproximadamente 650 palavras em prosa corrida que integra os principais tópicos de sua lista em uma narrativa coerente sobre as cortes constitucionais na América Latina. O texto está estruturado em torno de três eixos centrais:
+
+1. **Controle de constitucionalidade** — explicando as modalidades difusa e concentrada, modulação de efeitos
+2. **Justiça transicional** — abordando a Sentença T-025 (deslocamento forçado), ADPF 153, casos Gomes Lund e Gelman, estado de coisas inconstitucional
+3. **Expansão da judicialização** — cobrindo saúde pública, mandado de injunção, princípios civilistas (boa-fé, função social do contrato), direito penal (teoria finalista, conceito analítico de crime)
+
+O material também toca na questão central da **autonomia das cortes constitucionais** e sua legitimidade democrática ao intervir em decisões políticas maioritárias.
+
+O texto foi formatado em HTML com suporte a tema claro e escuro para melhor leitura. Deseja que eu ajuste o foco, expanda alguma seção em particular, ou reescreva em um estilo diferente?

@@ -8,7 +8,6 @@ itself. An explicit aggregate finding-density budget can fail a file.
 import argparse, html, json, os, re, sys
 
 HARD = {
-    'negative-parallelism': (r'\b(?:não é|não era|não são|não foi|não se trata de|mais do que)\b', 'Retain only if both sides state a real legal distinction; otherwise state the affirmative rule.'),
     'puffery': (r'\b(?:papel (?:crucial|fundamental|central|decisivo|essencial)|desempenha(?:m)? (?:um )?papel|pedra angular|divisor de águas|ganha(?:m)? destaque|merece(?:m)? atenção especial|reflete(?:m)? a (?:importância|relevância)|evidencia(?:ndo|m)? a (?:importância|relevância))\b', 'Replace importance language with the rule, fact, or consequence that makes the point matter.'),
     'significance-gerund': (r',\s*(?:evidenciando|reforçando|consolidando|demonstrando|ressaltando|sublinhando|refletindo|destacando)\s+(?:a|o|as|os|sua|seu)\s+(?:importância|relevância|papel|centralidade|necessidade|peso|força|valor)\b', 'Delete the evaluative tail or replace it with a new fact.'),
     'formulaic-metatext': (r'\b(?:vale (?:a pena )?(?:ressaltar|destacar|notar|lembrar|mencionar)|cabe (?:ressaltar|destacar|notar|lembrar)|é (?:importante|interessante) (?:notar|ressaltar|destacar|observar|lembrar)|nesta aula (?:veremos|vamos)|como (?:vimos|veremos)|vamos entender|em conclusão|à luz do exposto)\b', 'Remove the announcement and state the legal proposition.'),
@@ -24,29 +23,52 @@ HARD = {
     'staged-objection': (r'\b(?:alguém poderia (?:dizer|objetar|argumentar|pensar)|poder-se-ia (?:objetar|dizer|argumentar)|pode-se objetar|seria tentador (?:pensar|concluir|dizer)|à primeira vista, (?:poder-se-ia|parece))\b', 'Fake disagreement (D10.1): dispute only named positions with reasons.'),
     'reader-steer-question': (r'\b(?:o que (?:isso|isto) significa|por que isso importa|e o que isso (?:quer dizer|muda)|qual a consequência disso)\?', 'Answer directly; drop the rhetorical question.'),
     'circular-because': (r'\bporque (?:havia|existia|há|existe) (?:a |uma )?(?:necessidade|exigência) de\b', 'Circular explanation (D10.2): name the fact, rule or actor that caused it.'),
+    # 06/10 ports from SlopDetector and tropes.fyi, kept only after the backtest (work/slop-bench/eval_candidates.py).
+    'tool-artifact': ('(?:citeturn\\d|contentReference\\[oaicite|oai_citation|utm_source=(?:chatgpt|openai|claude|perplexity|copilot)|\\[attached_file:\\d)', 'Chatbot markup leaked into the page: delete it.'),
+    'placeholder': ('\\[(?:inserir|insira|seu nome|nome|data|fonte|link|citação|referência|preencher|completar)[^\\]]{0,40}\\]|\\bXX/XX/XXXX\\b|(?-i:\\bTODO\\b)|\\blorem ipsum\\b', 'Unfilled template slot: fill it from the source or delete the sentence.'),
+    'chat-scaffolding': ('\\b(?:espero que (?:isso|este|esta) (?:ajude|tenha ajudado)|se (?:quiser|preferir|desejar), posso|fico à disposição|ótima pergunta|claro! |certamente! |posso ajudar (?:com|em) mais)', 'Chat pleasantry in a finished page: delete.'),
+    'ai-self-reference': ('\\b(?:como (?:um )?modelo de linguagem|como (?:uma )?(?:IA|inteligência artificial),|até (?:a data|o momento) do meu (?:conhecimento|treinamento)|não tenho acesso (?:a|à) (?:internet|dados em tempo real))', 'Model self-reference: delete.'),
+    'ritual-conclusion': ('(?m)(?:^|(?<=[.!?]\\s))(?:Em suma|Em síntese|Em resumo|Resumindo|Para concluir|Em conclusão|Concluindo),', 'Signposted wrap-up: end on the last proposition instead (house style).'),
+    'challenges-future': ('\\b(?:apesar dos (?:desafios|obstáculos)|desafios e perspectivas|resta saber se|o futuro dirá|só o tempo dirá|ainda há um longo caminho|permanece(?:m)? (?:como )?(?:um )?desafio)', 'Concede-and-reassure filler: name the specific difficulty from the sources, or cut.'),
+    'evaluative-tail': (',\\s*o que (?:evidencia|demonstra|reforça|revela|ressalta|sublinha|mostra|confirma|ilustra|reflete|denota|atesta)\\b', 'Evaluative tail: delete it or replace it with a new fact.'),
+    'count-announce': ('(?:^|(?<=[.!?]\\s))(?:(?:Há|Existem|São) )?(?:Duas|Três|Quatro|Cinco|duas|três|quatro|cinco) (?:razões|coisas|perguntas|condições|camadas|lições|diferenças|movimentos|etapas|ideias|pontos|leituras|respostas|problemas)\\b', 'Announcing the count: start with the first item.'),
+    'analogy-coach': ('\\b(?:pense (?:em|n[oa]s?) [^.]{1,40} como (?:um|uma)|imagine um mundo|imagine uma sociedade)\\b', 'Patronizing analogy: explain the mechanism directly.'),
+    'where-it-lives': ('\\b(?:é aí que (?:mora|reside|está)|onde (?:mora|reside) (?:de fato|realmente|o verdadeiro|a verdadeira))\\b', '"Where it really lives" framing: name the thing directly.'),
+    'invented-label': ('\\b(?:o|a|no|na|do|da|um|uma) (?:paradoxo|armadilha|dilema|ilusão|miragem|vácuo|inversão) d[aoe]s? [a-záéíóúçãõ]+\\b', 'Invented concept label: describe the mechanism, or define the term from the sources.'),
+    'stakes-inflation': ('\\b(?:muda(?:m)? tudo|redefine(?:m)? (?:o|a)s? |sem precedentes|marco histórico|revolucion(?:a|ou|ário))\\b', 'Inflated stakes: state the concrete effect.'),
     'rhetorical-triad': (r'\b(?:e,\s*sobretudo,|e,\s*acima de tudo,)', 'Keep the full enumeration only when each item is legally necessary; remove rhetorical emphasis.'),
 }
 # D9 rate signals and transferred measured-positive constructions. Limits are
 # project review budgets, not linguistic laws. Each emits only after >=2 hits,
 # >=250 words and >=5 sentences, except absence-based paren-scarcity.
 RATE = {
- 'colon-reveal': (r'\b[^\n.!?]{2,100}:\s+[^\n.!?]{3,160}[.!?]', 2.5, 'If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.'),
- 'denial-restatement': (r'\bnão\b[^.;:!?]{1,100}[,;]\s*(?:mas|e sim|senão)\s+[^.;:!?]{2,100}', 0.0, 'Apply the delete-the-não test. Keep both halves when they encode a legal distinction.'),
+ 'negative-parallelism': (r'\b(?:não é|não era|não são|não foi|não se trata de|mais do que)\b', 2.0, 'Retain only if both sides state a real legal distinction; otherwise state the affirmative rule.'),
+ 'negated-inference': (r'\bnão\s+(?:se\s+)?(?:prova|provam|transforma|transformam|equivale|equivalem|basta|bastam|garante|garantem|substitui|substituem|encerra|encerram|resolve|resolvem|apaga|apagam|elimina|eliminam|esgota|esgotam|autoriza|autorizam|dispensa|dispensam|decide|decidem|significa|significam|cria|criam|converte|convertem|torna|tornam)\b', 0.5, 'House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.'),
+ 'colon-reveal': (r'\b[^\n.!?]{2,100}:\s+[^\n.!?]{3,160}[.!?]', 5.6, 'If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.'),
+ 'denial-restatement': (r'\bnão\b[^.;:!?]{1,100}[,;]\s*(?:mas|e sim|senão)\s+[^.;:!?]{2,100}', 1.6, 'Apply the delete-the-não test. Keep both halves when they encode a legal distinction.'),
  'rather-than': (r'\b(?:em vez de|ao invés de|em lugar de|em lugar da|em lugar do)\b', 1.0, 'Use a direct affirmative verb when the contrast adds no legal condition.'),
- 'triad-density': (r'\b[^,.!?;\n]{1,60},\s*[^,.!?;\n]{1,60}\s+e\s+[^.!?;\n]{1,60}', 4.0, 'Enumerate the number of legal elements the source actually provides; keep statutory triads.'),
- 'stance-adverb': (r'\b(?:meramente|simplesmente|genuinamente|verdadeiramente|efetivamente|justamente|precisamente|silenciosamente)\b', 0.0, 'Remove emphasis if it adds no fact; keep an adverb that changes the legal proposition.'),
+ 'triad-density': (r'\b[^,.!?;\n]{1,60},\s*[^,.!?;\n]{1,60}\s+e\s+[^.!?;\n]{1,60}', 12.3, 'Enumerate the number of legal elements the source actually provides; keep statutory triads.'),
+ 'stance-adverb': (r'\b(?:meramente|simplesmente|genuinamente|verdadeiramente|efetivamente|justamente|precisamente|silenciosamente)\b', 1.2, 'Remove emphasis if it adds no fact; keep an adverb that changes the legal proposition.'),
  'negation-chain': (r'\b(?:sem\s+[^,.;!?]{1,35},\s*){2,}sem\s+[^.;!?]{1,45}|(?:\bNão\s+[^.!?]{2,90}[.!?]\s*){2,}\bNão\s+[^.!?]{2,90}[.!?]', 0.0, 'Convert only rhetorical repetition; retain enumerated legal requirements.'),
  'same-opener-run': (r'(?m)(?:^|(?<=[.!?]\s))([A-ZÁÉÍÓÚÂÊÔÃÕÇ][\wÀ-ÿ-]{1,18})(?:\b[^.!?]*[.!?]\s+)(?:\1\b[^.!?]*[.!?]\s+){2}', 0.0, 'Vary openings only if the repeated subject is not required for legal clarity.'),
  'semicolon-correction': (r'[^.!?;]{3,100};\s*(?:mas|porém|antes|na verdade|e sim|em vez disso|isto é|ou seja),?\s+[^.!?]{3,120}[.!?]', 1.0, 'Keep a semicolon only when it joins independent but closely related clauses; remove correction theater.'),
  'colon-appositive': (r'\b(?:é|são|significa|consiste em|inclui|abrange)\s*:\s*[^.!?]{3,100}[.!?]', 1.0, 'Keep a colon introducing a needed definition/list; otherwise write the definition in the same sentence.'),
- 'load-bearing-adverb': (r'\b(?:claramente|obviamente|naturalmente|certamente|inevitavelmente|simplesmente|basicamente|essencialmente|fundamentalmente)\b', 1.0, 'Delete it if the sentence remains equally precise; preserve genuine evidential qualification.'),
  'nominalisation-pileup': (r'\b(?:a|o|da|do|na|no)\s+(?:implementação|realização|efetivação|verificação|aplicação|ocorrência|concretização|determinação|construção|formulação)\s+(?:da|de|do|na|no)\s+(?:análise|execução|aplicação|verificação|realização|implementação|concretização|determinação)\b', 1.0, 'Put the action in a verb and name who performs it, if known.'),
  'stacked-questions': (r'[^.!?\n]{3,140}\?\s+[^.!?\n]{3,140}\?', 0.0, 'Keep at most one question; state the answers the sources give.'),
  'transition-opener': (r'(?m)^\s*(?:Além disso|Ademais|Por outro lado|Contudo|Entretanto|No entanto|Dessa forma|Desse modo|Assim sendo|Nesse sentido|Outrossim|Por fim)\b', 1.5, 'Start paragraphs with their subject; keep a connector only where the logic is invisible (C3).'),
- 'fragment-run': (r'(?!)', 0.0, 'Fold staccato fragments into sentences; keep one fragment only if it earns emphasis.'),
  'uniform-paragraphs': (r'(?!)', 0.0, 'Reshape paragraphs around the argument (D9); never to a length quota.'),
+ 'ai-vocab-pt': ('\\b(?:crucial|cruciais|fundamental|fundamentais|essencial|essenciais|robust[oa]s?|abrangente|notável|nuances?|panorama|multifacetad[oa]|intrínsec[oa]|salientar|primordial|imprescindível)\\b', 5.2, 'Portuguese AI-vocabulary basket over the human p90 (5.2/1k; raw drafts 7.5/1k vs human 2.2/1k): replace with the concrete rule, fact or effect.'),
  'paren-scarcity': (r'(?!)', 0.0, 'Consider parenthetical material only when it clarifies; do not add parentheses merely to satisfy this signal.'),
 }
+# Measured backwards on 06/10 (human doctrine uses them more than our pages): off by default, kept with evidence.
+# fragment-run: human 2.0-2.3/1k (PDF headings inflate it) vs pages 0.10-0.15; load-bearing-adverb: human 0.28-0.32/1k vs pages 0.04-0.08.
+RETIRED = {
+ 'fragment-run': (r'(?!)', 0.0, 'Fold staccato fragments into sentences; keep one fragment only if it earns emphasis.'),
+ 'load-bearing-adverb': (r'\b(?:claramente|obviamente|naturalmente|certamente|inevitavelmente|simplesmente|basicamente|essencialmente|fundamentalmente)\b', 1.0, 'Delete it if the sentence remains equally precise; preserve genuine evidential qualification.'),
+}
+# Band (06/10 backtest): 'style' = house rule that human jurists also break (a hit is not evidence of AI writing);
+# every other rule is a 'tell' (fires clearly more on model text than on human doctrine, or never on human doctrine).
+STYLE = {'ritual-conclusion', 'formulaic-metatext', 'denial-restatement', 'stance-adverb', 'backstage', 'reader-address'}
 # For reports only: counts instances of parenthetical text as meaningful usage;
 # zero on a long page is an absence signal, not a match-count rule.
 PAREN = re.compile(r'\([^()\n]{2,100}\)')
@@ -65,7 +87,7 @@ def text_of(path):
 
 def finding(text, path, rule, m, fix, density=None):
     return {'file': path, 'line': text.count('\n', 0, m.start()) + 1,
-            'rule': rule, 'span': re.sub(r'\s+', ' ', m.group(0)).strip(),
+            'rule': rule, 'band': 'style' if rule in STYLE else 'tell', 'span': re.sub(r'\s+', ' ', m.group(0)).strip(),
             'fix': fix, **({'per_1000': round(density, 3)} if density is not None else {})}
 
 def lint(path, budget):

@@ -17,6 +17,18 @@ FILLER = " ".join(
 )
 
 RATE_CASES = {
+    "ai-vocab-pt": (
+        "O mecanismo é crucial e fundamental. A garantia é essencial e robusta. O panorama é abrangente e notável. " + FILLER,
+        "O mecanismo fixa o prazo. A garantia protege o réu. O sistema cobre três instâncias. " + FILLER,
+    ),
+    "negative-parallelism": (
+        "A medida não é definitiva. O ato não é nulo. A regra não é geral. O prazo não é fatal. " + FILLER,
+        "A medida é provisória. O ato é anulável. A regra é especial. O prazo é dilatório. " + FILLER,
+    ),
+    "negated-inference": (
+        "A declaração não prova a solução. O plano não basta. A ordem não substitui a política. " + FILLER,
+        "A declaração registra o problema. O plano fixa metas. A ordem distribui deveres. " + FILLER,
+    ),
     "stacked-questions": (
         "Quem decide o plano? Quem paga a conta? A Corte responde em seguida. Quem fiscaliza a execução? Quem presta contas? " + FILLER,
         "A Corte decide quem fiscaliza a execução e quem presta contas. " + FILLER,
@@ -24,10 +36,6 @@ RATE_CASES = {
     "transition-opener": (
         "Além disso, a norma fixa o prazo.\nAdemais, o juízo examina a prova.\nContudo, a parte recorre.\nNo entanto, o pedido segue.\n" + FILLER,
         "A norma fixa o prazo.\nO juízo examina a prova.\nA parte recorre.\n" + FILLER,
-    ),
-    "fragment-run": (
-        "A Corte decidiu o caso. Sem verba. Sem plano. Sem prazo. O governo recorreu depois. Nada mudou. Nenhum relatório. Nenhuma meta. " + FILLER,
-        "A Corte decidiu o caso sem verba, sem plano e sem prazo definidos pela administração. " + FILLER,
     ),
     "uniform-paragraphs": (
         "\n".join(["A norma fixa o prazo e o juízo examina a prova com cuidado antes de decidir o pedido da parte, que recorre quando entende que a decisão viola a lei aplicável ao caso concreto, e o tribunal revê o mérito em seguida com base nos autos e nas provas juntadas pela parte."] * 10) + "\n" + FILLER,
@@ -79,10 +87,6 @@ RATE_CASES = {
         "O requisito é: prova documental suficiente. A competência consiste em: julgamento do recurso. " + FILLER,
         "O requisito exige prova documental suficiente. A competência permite julgar o recurso. " + FILLER,
     ),
-    "load-bearing-adverb": (
-        "A prova demonstra claramente o fato. O prazo é obviamente aplicável. " + FILLER,
-        "A prova demonstra o fato. O prazo está previsto no artigo. " + FILLER,
-    ),
     "nominalisation-pileup": (
         "A implementação da verificação da execução cabe ao órgão. "
         "A realização da análise da aplicação depende do relator. " + FILLER,
@@ -91,6 +95,18 @@ RATE_CASES = {
 }
 
 HARD_CASES = {
+    "tool-artifact": ("Veja a fonte citeturn0search1 sobre o caso.", "Veja a fonte sobre o caso."),
+    "placeholder": ("O prazo é de [inserir prazo] dias.", "O prazo é de quinze dias."),
+    "chat-scaffolding": ("Espero que isso ajude na revisão.", "A revisão cobre as Aulas 02 a 09."),
+    "ai-self-reference": ("Como modelo de linguagem, resumo a decisão.", "O resumo da decisão segue abaixo."),
+    "ritual-conclusion": ("Em suma, a Corte manteve o prazo.", "A Corte manteve o prazo."),
+    "challenges-future": ("Apesar dos desafios, o sistema avançou.", "O sistema reduziu a fila em 30% em 2019."),
+    "evaluative-tail": ("A Corte manteve o prazo, o que demonstra rigor.", "A Corte manteve o prazo de quinze dias."),
+    "count-announce": ("Há três razões para isso. A primeira é o prazo.", "A primeira razão é o prazo."),
+    "analogy-coach": ("Pense no controle difuso como uma rede de vigias.", "No controle difuso, qualquer juiz afasta a lei no caso."),
+    "where-it-lives": ("É aí que mora o problema da execução.", "O problema está na execução."),
+    "invented-label": ("A Corte caiu no paradoxo da supervisão.", "A Corte supervisionou o cumprimento por cinco anos."),
+    "stakes-inflation": ("A decisão muda tudo no direito penal.", "A decisão fixou o prazo prescricional."),
     "teaser-hook": ("O resultado? A Corte manteve a decisão.", "A Corte manteve a decisão."),
     "self-labeling": ("Esse é o ponto central da decisão.", "A decisão fixa o prazo."),
     "hedge-stack": ("A regra pode potencialmente afastar o prazo.", "A regra pode afastar o prazo."),
@@ -98,7 +114,6 @@ HARD_CASES = {
     "staged-objection": ("Alguém poderia objetar que a anistia encerrou o caso.", "Eros Grau sustentou que a anistia integrou a transição."),
     "reader-steer-question": ("O que isso significa? A Corte manteve o prazo.", "A Corte manteve o prazo."),
     "circular-because": ("A Corte interveio porque havia necessidade de intervenção.", "A Corte interveio porque as autoridades descumpriram a T-153."),
-    "negative-parallelism": ("A decisão não é definitiva neste ponto.", "A decisão permanece provisória neste ponto."),
     "puffery": ("A regra desempenha papel fundamental no sistema.", "A regra define o prazo do recurso."),
     "significance-gerund": ("A regra foi aplicada, evidenciando a importância do tema.", "A regra foi aplicada ao caso concreto."),
     "formulaic-metatext": ("Vale destacar que o prazo começou ontem.", "O prazo começou ontem."),
@@ -194,3 +209,42 @@ class LinterRulesTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# 06/10 adversarial false-positive set (adewale discipline): legitimate legal prose that must raise no HARD *tell*.
+ADVERSARIAL = [
+    "A resposta tardia não forma contrato, mas vale como nova proposta.",
+    "O art. 5º, LV, assegura o contraditório, a ampla defesa e os recursos a ela inerentes.",
+    "Imagine que um Estado edite lei retroativa: o juiz deve afastá-la no caso concreto.",
+    "O STF, por seis votos a cinco, manteve a interpretação da Lei 6.683/1979.",
+    "A Corte declarou o estado de coisas inconstitucional e fixou prazos para as autoridades.",
+    "Como dispõe o art. 421 do Código Civil, a liberdade contratual será exercida nos limites da função social.",
+    "O relator, Eros Grau, sustentou que a anistia integrou a transição.",
+    "A sentença não anulou o referendo; o efeito prático, porém, foi liberar a candidatura.",
+]
+
+class AdversarialTest(unittest.TestCase):
+    def test_legal_prose_raises_no_hard_tell(self):
+        from slop_lint import STYLE
+        for sentence in ADVERSARIAL:
+            with self.subTest(sentence=sentence):
+                hard = {f["rule"] for f in run_text(sentence)["findings"] if f.get("severity") == "hard" and f["rule"] not in STYLE}
+                self.assertEqual(hard, set())
+
+    def test_holdout_human_false_alarms_when_corpus_present(self):
+        bench = os.path.join(os.path.dirname(__file__), "..", "..", "work", "slop-bench")
+        sys.path.insert(0, bench)
+        try:
+            import backtest
+            docs = backtest.human_docs("holdout")
+        except Exception:
+            docs = []
+        if len(docs) < 50:
+            self.skipTest("human holdout corpus not on this machine (git-ignored chapters)")
+        from slop_lint import STYLE
+        counts = {}
+        for _, text in docs:
+            fired = {f["rule"] for f in run_text(text)["findings"] if (f.get("severity") == "hard" or f.get("over_limit")) and f["rule"] not in STYLE}
+            for rule in fired: counts[rule] = counts.get(rule, 0) + 1
+        worst = {r: n / len(docs) for r, n in counts.items() if n / len(docs) > 0.12}
+        self.assertEqual(worst, {}, "tell rules alarming on >12% of held-out human doctrine")

@@ -64,11 +64,11 @@ Scope: Portuguese legal-teaching prose. These resources inform editorial checks;
 
 ### SlopDetector, “The Fingerprints of Machine Prose”
 **Claim/evidence.** Describes itself as a style linter, not an authorship detector; documents English corpus limits and warns against grading or accusation from matches. [Method and limits](https://about.slopdetector.me/).
-**Decision: ADOPT the separation of lint from authorship judgment; REJECT its score/pattern list as a grading rubric.** Treat findings as review prompts only.
+**Decision: ADOPT the separation of lint from authorship judgment; REJECT its score as a grading rubric.** 06/10 (CEO): its categories were ported to Portuguese and backtested; kept: tool artifacts, placeholders, chat scaffolding, AI self-reference, challenges-and-future, evaluative tails, ritual conclusions (style band), AI-vocabulary basket (rate); rejected after testing: copula avoidance (human jurists use it more). See BACKTEST.md.
 
 ### tropes.fyi and tropes-md
 **Claim/evidence.** Opinionated catalogue of sentence, paragraph, tone, formatting, and composition patterns, with AI-assisted content disclosed. [Project](https://tropes.fyi/), [catalogue](https://tropes.fyi/tropes-md).
-**Decision: ADOPT selectively as review questions; REJECT counts and universal bans.** Inspect unsupported abstraction, self-narration, and needless repetition. Preserve real legal contrasts, triads, fragments, and terminology.
+**Decision: ADOPT selectively; REJECT counts and universal bans.** 06/10 (CEO): ported and backtested; kept: count announcements, patronizing analogies, "where it really lives", invented labels, stakes inflation, signposted conclusions; rejected: appeal to familiarity (human 12% of docs), self-echo as a rule (left to the critic). See BACKTEST.md. Inspect unsupported abstraction, self-narration, and needless repetition. Preserve real legal contrasts, triads, fragments, and terminology.
 
 ### se-uhd/ai-slop-skill
 **Claim/evidence.** Layered rules, optional register guidance, quote preservation, and export to AGENTS.md. [Repository](https://github.com/se-uhd/ai-slop-skill).
