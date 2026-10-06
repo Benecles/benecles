@@ -59,3 +59,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **CASA-3 · Latam Aula 01 on the house marks** · 06/10 · plain bold retired on Aula 01 (one .mark on the chapter's thesis phrase; .runin for the parallel country heads); marks_lint 0 findings
 - **CASA-3 · Latam Aula 02 on the house marks** · 06/10 · plain bold retired on Aula 02 (17 bolds unwrapped; names and terms read as plain text); marks_lint 0 findings
 - **CASA-3 · Latam Aula 03 on the house marks** · 06/10 · plain bold retired on Aula 03; marks_lint 0 findings
+- **CASA-3 · Latam Aula 04 on the house marks** · 06/10 · plain bold retired on Aula 04; marks_lint 0 findings
