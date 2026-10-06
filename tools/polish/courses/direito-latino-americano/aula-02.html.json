@@ -92,10 +92,6 @@
 "after": "políticos seguiram trajetórias diferentes, e são "
 },
 {
-"before": "nas democracias recentes.</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c2\"><span class=\"num \" aria-hidden=\"true\">02</span><h2 id=\"c2\">Como o estudo foi feito</h2><p class=\"lede\">Não pelas decisões, mas pelas pessoas que as tomam.</p></section>\n<div class=\"longform\"><div><p>",
-"after": "nas democracias recentes.</p><p>O teste mais claro do paradoxo é um par. Brasil e Argentina escolhem os ministros da corte mais alta pela mesma porta, indicação do presidente com aprovação do Senado, e mesmo assim tiveram histórias opostas: uma corte reiteradamente trocada por cada governo, outra estável desde 1988. A regra de nomeação explica pouco. O resto da explicação está na história de cada corte.</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c2\"><span class=\"num \" aria-hidden=\"true\">02</span><h2 id=\"c2\">Autonomia, protagonismo e direitos</h2><p class=\"lede\">Três perguntas diferentes sobre a mesma corte.</p></section>\n<div class=\"longform\"><div><p>A literatura que Engelmann e Bandeira organizam trata a presença política das Cortes por perguntas diferentes. Os estudos de judicialização partem do efeito das decisões: partidos, movimentos sociais e pessoas acionam tribunais, inclusive em busca de direitos sociais, e o tribunal passa a interferir em temas políticos. Os estudos de legitimidade e autonomia perguntam quais condições permitem que os juízes decidam com espaço próprio diante de elites políticas e burocráticas. Já os estudos de reforma judicial usam indicadores mais gerais, como garantias jurisdicionais e administrativas, respeito às decisões por Executivo e Legislativo, carreira judicial, direitos humanos e possibilidade de revisão judicial.</p><p>Essas perguntas não se substituem. Uma decisão pode ter grande repercussão política sem demonstrar que a Corte seja autônoma; uma Corte pode ter autonomia e proferir decisão que restrinja direitos; e a previsão constitucional de revisão judicial não prova que os governos cumpram as decisões. A análise de um caso começa por saber qual pergunta está sendo respondida e que evidência serve a ela. Um voto contra o governo é evidência sobre aquele conflito; a estabilidade das regras de composição, as renúncias e destituições ou os padrões de recrutamento ajudam a examinar a autonomia institucional ao longo do tempo.</p><p>Daí as três perguntas que o senso comum costuma misturar. <strong>Autonomia</strong>: a corte está protegida de pressões externas? <strong>Protagonismo</strong>: ela intervém em disputas políticas? <strong>Proteção de direitos</strong>: a intervenção serve a quem? Uma corte pode ter autonomia alta e pouco protagonismo, ou protagonismo intenso sem proteger direitos. O estudo de Engelmann e Bandeira responde sobretudo à primeira pergunta.</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c3\"><span class=\"num \" aria-hidden=\"true\">03</span><h2 id=\"c3\">Quem entrou nas cinco cúpulas, 1990–2015</h2><p class=\"lede\">Um retrato das pessoas que decidem, de onde vêm e como chegaram.</p></section>\n<div class=\"longform\"><div><p>"
-},
-{
 "before": "com a história política. É aí que",
 "after": "com a história política de cada país. É aí que"
 },
@@ -184,10 +180,6 @@
 "after": "deles indicados por Augusto Pinochet. A amostra "
 },
 {
-"before": " são da <strong>Corte Suprema de Justicia</strong>. A Constituição de",
-"after": " são da <strong><i>Corte Suprema de Justicia</i></strong> (Suprema Corte de Justiça; CSJ). A Constituição de"
-},
-{
 "before": "em 1947 o governo eleito de Perón destituiu quatro",
 "after": "em 1947 o presidente eleito Juan Perón destituiu quatro"
 },
@@ -230,5 +222,65 @@
 {
 "before": " Latino-americano</title>\n<meta name=\"description\" content=\"Cortes constitucionais e democratização na América Latina: o estudo de Engelmann e Bandeira sobre a autonomia política do Judiciário em Argentina, Brasil, Chile, Colômbia e Venezuela, e o quadro das cortes constitucionais da região no século XXI.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=381047ae9a\">\n<style>.longform{max-width:1180px;margin:28px auto ",
 "after": " Latino-americano</title>\n<meta name=\"description\" content=\"Cortes constitucionais e democratização na América Latina: o estudo de Engelmann e Bandeira sobre a autonomia política do Judiciário em Argentina, Brasil, Chile, Colômbia e Venezuela, e o quadro das cortes constitucionais da região no século XXI.\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto "
+},
+{
+"before": "comum costuma misturar. <strong>Autonomia</strong>: a corte está",
+"after": "comum costuma misturar. Autonomia: a corte está"
+},
+{
+"before": "de pressões externas? <strong>Protagonismo</strong>: ela intervém em disputas políticas? <strong>Proteção de direitos</strong>: a intervenção serve",
+"after": "de pressões externas? Protagonismo: ela intervém em disputas políticas? Proteção de direitos: a intervenção serve"
+},
+{
+"before": "chegaram lá. Mapearam <strong>286 ministros</strong> das cortes superiores",
+"after": "chegaram lá. Mapearam 286 ministros das cortes superiores"
+},
+{
+"before": "que atuaram entre <strong>1990 e 2015</strong>, e cruzaram esses",
+"after": "que atuaram entre 1990 e 2015, e cruzaram esses"
+},
+{
+"before": "estudados são da <strong><i>Corte Suprema de Justicia</i></strong> (Suprema Corte de",
+"after": "estudados são da <i>Corte Suprema de Justicia</i> (Suprema Corte de"
+},
+{
+"before": "órgão novo, a <strong>Corte Constitucional</strong>, que não está",
+"after": "órgão novo, a Corte Constitucional, que não está"
+},
+{
+"before": "No primeiro grupo, <strong>Argentina e Venezuela</strong>: Judiciários com padrão",
+"after": "No primeiro grupo, Argentina e Venezuela: Judiciários com padrão"
+},
+{
+"before": "partidos. No segundo, <strong>Brasil, Chile e Colômbia</strong>: trajetórias em que",
+"after": "partidos. No segundo, Brasil, Chile e Colômbia: trajetórias em que"
+},
+{
+"before": "explicam isso pela <strong>cooptação</strong>: a própria hierarquia",
+"after": "explicam isso pela cooptação: a própria hierarquia"
+},
+{
+"before": "mais recentemente, o <strong>ativismo punitivo</strong> do “combate à",
+"after": "mais recentemente, o ativismo punitivo do “combate à"
+},
+{
+"before": "dois países, a <strong>Bolívia</strong> e o <strong>México</strong>, levaram a escolha",
+"after": "dois países, a Bolívia e o México, levaram a escolha"
+},
+{
+"before": " quatro coisas.</p><p><strong>Onde está o controle.</strong> Há tribunais constitucionais",
+"after": " quatro coisas.</p><p>Onde está o controle. Há tribunais constitucionais"
+},
+{
+"before": " “muito amplo”.</p><p><strong>Quem chega à corte.</strong> Tutela, amparo e",
+"after": " “muito amplo”.</p><p>Quem chega à corte. Tutela, amparo e"
+},
+{
+"before": "autonomia pode favorecer <strong>hipercorporativismo</strong>, quando uma elite",
+"after": "autonomia pode favorecer hipercorporativismo, quando uma elite"
+},
+{
+"before": "crescente, pode ocorrer <strong>hiperjudicialização</strong>, quando matérias políticas",
+"after": "crescente, pode ocorrer hiperjudicialização, quando matérias políticas"
 }
 ]

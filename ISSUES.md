@@ -57,3 +57,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Controle A07 (#55) · Recepção e não recepção** · 06/10 · Rebuilt from current main; separates the reception judgment from an alleged formal defect at origin and adds a regenerated 1969–1988 timeline · `check_all` PASS; `marks_lint` 0 findings.
 - **CASA-3 · Latam Aula 06 on the house marks** · 06/10 · plain bold retired on Aula 06: the Court's holdings (aplicação preferente, não há direito autônomo, a maioria também tem limite) become .held, the rest plain or italic; marks_lint 0 findings
 - **CASA-3 · Latam Aula 01 on the house marks** · 06/10 · plain bold retired on Aula 01 (one .mark on the chapter's thesis phrase; .runin for the parallel country heads); marks_lint 0 findings
+- **CASA-3 · Latam Aula 02 on the house marks** · 06/10 · plain bold retired on Aula 02 (17 bolds unwrapped; names and terms read as plain text); marks_lint 0 findings
