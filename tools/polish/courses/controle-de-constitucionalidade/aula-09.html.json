@@ -1,9 +1,5 @@
 [
 {
-"before": "</strong> (art. 58 CF) e o ",
-"after": "</strong> (art. 58 da CF) e o "
-},
-{
 "before": "(art. 66, § 1º CF).</p>\n      <p>A",
 "after": "(art. 66, § 1º, da CF).</p>\n      <p>A"
 },
@@ -12,28 +8,12 @@
 "after": "veto (art. 66 da CF)</h3>\n  <p class=\"note\" style=\"margin-bottom:18px\">O art. 66 da CF, do caput"
 },
 {
-"before": " a um <strong>\"direito função\"</strong> do parlamentar ",
-"after": " a um <strong>“direito função”</strong> do parlamentar "
-},
-{
-"before": " processo legislativo <strong>\"hígido\"</strong> (sadio).</p>\n      <p>",
-"after": " processo legislativo <strong>“hígido”</strong> (sadio).</p>\n      <p>"
-},
-{
 "before": "lei ou da emenda, admitir isso equivaleria",
 "after": "lei ou da emenda: admitir isso equivaleria"
 },
 {
-"before": "Onde está o \"controverso\": para o Min.",
-"after": "Onde está o “controverso”: para o Min."
-},
-{
 "before": "4º.</dd>\n    <dt>Ponto jurisprudencial central</dt>\n    <dd>O STF",
 "after": "4º.</dd>\n    <dt>Ponto principal da jurisprudência</dt>\n    <dd>O STF"
-},
-{
-"before": " concessão definitiva é extremamente rara; o MS",
-"after": " concessão definitiva é rara; o MS"
 },
 {
 "before": "58 e 66 CF</td><td>Art. 60, § 4º CF · direito",
@@ -52,7 +32,259 @@
 "after": "<defs><marker id=\"ah9-1\" viewBox=\"0 0 10 10\" refX=\"7\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path d=\"M0 0L10 5L0 10z\" style=\"fill:var(--conc)\"/></marker></defs>\n        <line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"286\" class=\"thin dash\"/><line x1=\"300\" y1=\"324\" x2=\"300\" y2=\"540\" class=\"thin dash\"/>\n        <rect x=\"220\" y=\"270\" width=\"160\" height=\"60\" style=\"fill:var(--accent)\"/>\n        <text x=\"240\" y=\"305\">PUBLICAÇÃO</text>\n        <path class=\"c-dif grow\" d=\"M60 300H220\" stroke-width=\"3\"/>\n        <path class=\"dash\" d=\"M380 300H540\" stroke-width=\"3\" style=\"stroke:var(--conc)\" marker-end=\"url(#ah9-1)\"/>\n        <text x=\"70\" y=\"380\" class=\"t-mid tc-dif\">PROCESSO LEGISLATIVO</text>"
 },
 {
-"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b6c272a98d\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
-"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
+"before": " de Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
+"after": " de Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo <span class=\"term\" tabindex=\"0\" data-def=\"Ação constitucional usada para proteger direito líquido e certo contra ilegalidade ou abuso de poder.\">mandado de segurança</span> parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
+},
+{
+"before": "ao Judiciário cabe uma via excepcional para proteger o devido processo legislativo.</p>\n  <svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\">\n    <path class=\"draw\" d=\"M0 75H620\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\"/>\n    ",
+"after": "ao Judiciário cabe <span class=\"limit\">uma via excepcional para proteger o processo legislativo</span>.</p>\n  <svg class=\"hero-fork\" viewBox=\"0 0 1080 162\" aria-hidden=\"true\">\n    <path class=\"draw\" d=\"M0 75H620\" stroke-width=\"3\" fill=\"none\" style=\"stroke:var(--dif)\"/>\n    "
+},
+{
+"before": "\n  </svg>\n  <div class=\"titleblock label\" role=\"list\">\n    <div role=\"listitem\">Fonte<b>Slides “Momentos do controle (preventivo)”, 19 pp.</b></div>\n    <div role=\"listitem\">Leitura<b>≈ 14 min</b></div>\n    <div role=\"listitem\">Antes<b>Aula 08 · Teorias do controle</b></div>\n    <div role=\"listitem\">Depois<b>Aula 10 · Controle repressivo</b></div>\n  </div>\n</header>\n\n",
+"after": "\n  </svg>\n  <div class=\"titleblock label\" role=\"list\">\n    <div role=\"listitem\">Questão<span class=\"label\">Quem pode parar a tramitação?</span></div>\n    <div role=\"listitem\">Leitura<span class=\"label\">≈ 14 min</span></div>\n    <div role=\"listitem\">Antes<span class=\"label\">Aula 08 · Teorias do controle</span></div>\n    <div role=\"listitem\">Depois<span class=\"label\">Aula 10 · Controle repressivo</span></div>\n  </div>\n</header>\n\n"
+},
+{
+"before": "e na próxima, <strong class=\"dif\">azul</strong> marca o controle <strong class=\"dif\">preventivo</strong>, antes de ",
+"after": "e na próxima, <em class=\"dif\">azul</em> marca o controle <em class=\"dif\">preventivo</em>, antes de "
+},
+{
+"before": "lei existir, e <strong class=\"conc\">vermelho</strong> marca o controle <strong class=\"conc\">repressivo</strong>, depois. O marco entre os dois é a publicação do ato no diário oficial.</p>\n</section>\n\n<div class=\"scrolly\">\n  ",
+"after": "lei existir, e <em class=\"conc\">vermelho</em> marca o controle <em class=\"conc\">repressivo</em>, depois. O marco didático é o encerramento da formação da norma: antes dele, o projeto ainda pode ser deliberado; depois, o ato formado pode ser objeto de controle repressivo.</p>\n</section>\n\n<div class=\"scrolly\">\n  "
+},
+{
+"before": " Dois momentos</span><span class=\"stage-count\">Slide 2</span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-defs\" data-slides=\"Slide 2\"><div class=\"card\">\n      <span class=\"label dif\">Definição por",
+"after": " Dois momentos</span><span class=\"stage-count\">1 / 2</span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-defs\"><div class=\"card\">\n      <span class=\"label dif\">Definição por"
+},
+{
+"before": "repressivo</h3>\n      <p>O <strong class=\"dif\">controle preventivo</strong> (prévio) é realizado <strong>durante o processo legislativo</strong>. A lei <strong>ainda não existe</strong>, só o ",
+"after": "repressivo</h3>\n      <p>O <em class=\"dif\">controle preventivo</em> (prévio) é realizado <em>durante o processo legislativo</em>. A lei <em>ainda não existe</em>, só o "
+},
+{
+"before": "regra, pelos Poderes <strong>Legislativo</strong> e <strong>Executivo</strong>.</p>\n      <p>O <strong class=\"conc\">controle repressivo</strong> (posterior) é feito",
+"after": "regra, pelos Poderes <em>Legislativo</em> e <em>Executivo</em>.</p>\n      <p>O <em class=\"conc\">controle repressivo</em> (posterior) é feito"
+},
+{
+"before": "projeto. Pressupõe o <strong>encerramento do processo legislativo</strong>, e não, ",
+"after": "projeto. Pressupõe o <em>encerramento do processo legislativo</em>, e não, "
+},
+{
+"before": "por regra, pelo <strong>Poder Judiciário</strong>.</p>\n      <span class=\"src\" hidden data-src=\"Slide 2\"></span>\n    </div></div>\n    <div class=\"step\" data-panel=\"p9-linha\" data-slides=\"Slide 3\"><div class=\"card\">\n      <span class=\"label conc\">O marco",
+"after": "por regra, pelo <em>Poder Judiciário</em>.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n    <div class=\"step\" data-panel=\"p9-linha\"><div class=\"card\">\n      <span class=\"label conc\">O marco"
+},
+{
+"before": "temporal</span>\n      <h3>A publicação divide o eixo</h3>\n      <p>Antes da publicação no diário oficial há apenas <strong>processo legislativo</strong>, projeto, e <strong class=\"dif\">controle preventivo</strong>. Depois dela, a lei <strong>existe</strong>, esteja <strong>vigendo</strong> ou em <em>vacatio legis</em>, e o controle passa a ser <strong class=\"conc\">repressivo</strong>.</p>\n      <p>A publicação inaugura o controle repressivo: mesmo antes do início da vigência, a lei já existe e pode ser submetida a esse controle.</p>\n      <span class=\"src\" hidden data-src=\"Slide 3\"></span>\n    </div></div>\n  </div>\n</div>",
+"after": "temporal</span>\n      <h3>A conclusão da formação separa as fases</h3>\n      <p>Enquanto a formação ainda está em curso, há projeto e controle <em class=\"dif\">preventivo</em>. Encerrado o processo e formado o ato, o controle passa a ser <em class=\"conc\">repressivo</em>; a vigência pode começar depois.</p>\n\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n  </div>\n</div>"
+},
+{
+"before": " e Executivo</span><span class=\"stage-count\">Slide 4</span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-leg\" data-slides=\"Slide 4\"><div class=\"card\">\n      <span class=\"label dif\">Comissões e",
+"after": " e Executivo</span><span class=\"stage-count\"></span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-leg\"><div class=\"card\">\n      <span class=\"label dif\">Comissões e"
+},
+{
+"before": "Casa legislativa: as <strong>Comissões de Constituição e Justiça</strong> (art. 58 da",
+"after": "Casa legislativa: as <em>Comissões de Constituição e Justiça</em> (art. 58 da"
+},
+{
+"before": "CF) e o <strong>Plenário</strong> da respectiva Casa.",
+"after": "CF) e o <em>Plenário</em> da respectiva Casa."
+},
+{
+"before": "o regimento interno.</p>\n      <span class=\"src\" hidden data-src=\"Slide 4\"></span>\n    </div></div>\n    <div class=\"step\" data-panel=\"p9-veto\" data-slides=\"Slide 5\"><div class=\"card\">\n      <span class=\"label dif\">O veto",
+"after": "o regimento interno.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n    <div class=\"step\" data-panel=\"p9-veto\"><div class=\"card\">\n      <span class=\"label dif\">O veto"
+},
+{
+"before": "\n      <p>Compete ao <strong>Presidente da República</strong> vetar o projeto,",
+"after": "\n      <p>Compete ao <em>Presidente da República</em> vetar o projeto,"
+},
+{
+"before": "quando o considerar <strong>inconstitucional</strong> ou <strong>contrário ao interesse público</strong> (art. 66, §",
+"after": "quando o considerar <em>inconstitucional</em> ou <em>contrário ao interesse público</em> (art. 66, §"
+},
+{
+"before": "por inconstitucionalidade é <strong>veto jurídico</strong>; veto por ",
+"after": "por inconstitucionalidade é <em>veto jurídico</em>; veto por "
+},
+{
+"before": "interesse público é <strong>veto político</strong>. O próximo bloco reúne o procedimento completo do art. 66.</p>\n      <span class=\"src\" hidden data-src=\"Slide 5\"></span>\n    </div></div>\n  </div>\n</div>",
+"after": "interesse público é <em>veto político</em>.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n  </div>\n</div>"
+},
+{
+"before": "sequência:</p>\n  <ol class=\"fluxo\">\n    <li><b>Envio para sanção</b> (art. 66, caput).",
+"after": "sequência:</p>\n  <ol class=\"fluxo\">\n    <li><span class=\"label\">Envio para sanção</span> (art. 66, caput)."
+},
+{
+"before": "o sanciona.</li>\n    <li class=\"dif\"><b>Veto presidencial</b> (art. 66, §",
+"after": "o sanciona.</li>\n    <li class=\"dif\"><span class=\"label\">Veto presidencial</span> (art. 66, §"
+},
+{
+"before": "ou parcialmente, em <strong>quinze dias úteis</strong> contados do recebimento,",
+"after": "ou parcialmente, em <em><span class=\"tab\">quinze dias úteis</span></em> contados do recebimento,"
+},
+{
+"before": "Senado Federal em <strong>quarenta e oito horas</strong>.</li>\n    <li><b>Limite do veto parcial</b> (art. 66, §",
+"after": "Senado Federal em <em>quarenta e oito horas</em>.</li>\n    <li><span class=\"label\">Limite do veto parcial</span> (art. 66, §"
+},
+{
+"before": "ou alínea.</li>\n    <li><b>Silêncio é sanção</b> (art. 66, §",
+"after": "ou alínea.</li>\n    <li><span class=\"label\">Silêncio é sanção</span> (art. 66, §"
+},
+{
+"before": "importa sanção.</li>\n    <li><b>Apreciação em sessão conjunta</b> (art. 66, §",
+"after": "importa sanção.</li>\n    <li><span class=\"label\">Apreciação em sessão conjunta</span> (art. 66, §"
+},
+{
+"before": "é aferida por <strong>votação por estirpe</strong>: maioria dos ",
+"after": "é aferida por <em>votação por estirpe</em>: maioria dos "
+},
+{
+"before": "dessa votação.</li>\n    <li><b>Prazo esgotado tranca a pauta</b> (art. 66, §",
+"after": "dessa votação.</li>\n    <li><span class=\"label\">Prazo esgotado tranca a pauta</span> (art. 66, §"
+},
+{
+"before": "votação final.</li>\n    <li><b>Se não mantido, promulgação em cascata</b> (art. 66, §§",
+"after": "votação final.</li>\n    <li><span class=\"label\">Se não mantido, promulgação em cascata</span> (art. 66, §§"
+},
+{
+"before": "do Senado.</li>\n  </ol>\n  <span class=\"src\" hidden data-src=\"Slides 6–8\"></span>\n</div>\n\n<!-- ============ 03 · A EXCEÇÃO ============ -->\n<section class=\"chapter\" aria-labelledby=\"c3\">",
+"after": "do Senado.</li>\n  </ol>\n</div>\n\n<!-- ============ 03 · A EXCEÇÃO ============ -->\n<section class=\"chapter\" aria-labelledby=\"c3\">"
+},
+{
+"before": " pelo Judiciário</span><span class=\"stage-count\">Slide 9</span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-fund\" data-slides=\"Slide 9\"><div class=\"card\">\n      <span class=\"label dif\">Fundamento</span>\n      ",
+"after": " pelo Judiciário</span><span class=\"stage-count\"></span></figcaption>\n    </figure>\n  </div>\n  <div class=\"steps\">\n    <div class=\"step\" data-panel=\"p9-fund\"><div class=\"card\">\n      <span class=\"label dif\">Fundamento</span>\n      "
+},
+{
+"before": "expressamente, prevê a <strong>impossibilidade de trâmite</strong> de uma determinada",
+"after": "expressamente, prevê a <em>impossibilidade de trâmite</em> de uma determinada"
+},
+{
+"before": "respeito a um <strong>“direito função”</strong> do parlamentar ao processo legislativo <strong>“hígido”</strong> (sadio).</p>\n      <p>O parlamentar tem <strong>direito a não ver deliberada</strong> uma emenda tendente a abolir os bens assegurados por cláusulas pétreas: o art. 60, § 4º veda a deliberação de proposta de emenda",
+"after": "respeito a um <em>“direito função”</em> do parlamentar ao processo legislativo <em>“hígido”</em> (sadio).</p>\n      <p>O art. 60, § 4º, impede que o Congresso delibere proposta de emenda"
+},
+{
+"before": "tendente a abolir a forma federativa de Estado, o voto direto,",
+"after": "tendente a abolir quatro núcleos protegidos:</p>\n<aside class=\"fonte dec\" aria-label=\"Fonte: Constituição Federal, art. 60, § 4º\">\n<header><span>Constituição Federal · art. 60</span><span class=\"loc\">§ 4º</span></header>\n<blockquote lang=\"pt-BR\"><p>Não será objeto de deliberação a proposta de emenda tendente a abolir:</p><p>I - a forma federativa de Estado;</p><p>II - o voto direto,"
+},
+{
+"before": "secreto, universal e periódico, a separação dos Poderes e os direitos e garantias individuais.</p>\n      <span class=\"src\" hidden data-src=\"Slide 9\"></span>\n    </div></div>\n    <div class=\"step\" data-panel=\"p9-ms\" data-slides=\"Slides 10–11\"><div class=\"card\">\n      <span class=\"label dif\">Mecanismo e",
+"after": "secreto, universal e periódico;</p><p>III - a separação dos Poderes;</p><p>IV - os direitos e garantias individuais.</p></blockquote>\n</aside>\n<p><span class=\"held\">A vedação alcança a própria deliberação.</span> O parlamentar pode pedir proteção antes da votação de PEC que, de modo inequívoco, ataque uma cláusula pétrea.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n    <div class=\"step\" data-panel=\"p9-ms\"><div class=\"card\">\n      <span class=\"label dif\">Mecanismo e"
+},
+{
+"before": "em tese, uma <strong>ilegalidade</strong>: viola a ",
+"after": "em tese, uma <em>ilegalidade</em>: viola a "
+},
+{
+"before": "se exerce pela <strong>via de exceção ou defesa (incidental)</strong>, em defesa ",
+"after": "se exerce pela <em>via de exceção ou defesa (incidental)</em>, em defesa "
+},
+{
+"before": "do próprio parlamentar: <strong>mandado de segurança</strong> contra a mesa",
+"after": "do próprio parlamentar: <em>mandado de segurança</em> contra a mesa"
+},
+{
+"before": "a ação é <strong>exclusiva do parlamentar</strong>. O STF fixou isso desde",
+"after": "a ação é <em>exclusiva do parlamentar</em>. O <span class=\"org\">STF</span> fixou isso desde"
+},
+{
+"before": "Mello, j. 1º.07.2011).</p>\n      <span class=\"src\" hidden data-src=\"Slides 10–11\"></span>\n    </div></div>\n    <div class=\"step\" data-panel=\"p9-alcance\" data-slides=\"Slides 9–13\"><div class=\"card\">\n      <span class=\"label dif\">Alcance</span>\n      ",
+"after": "Mello, j. 1º.07.2011).</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n    <div class=\"step\" data-panel=\"p9-alcance\"><div class=\"card\">\n      <span class=\"label dif\">Alcance</span>\n      "
+},
+{
+"before": "toda proposição. Sobre <strong>PEC</strong>, o art. ",
+"after": "toda proposição. Sobre <em>PEC</em>, o art. "
+},
+{
+"before": "controle alcança a <strong>matéria</strong>, não só o rito. Sobre <strong>projeto de lei</strong>, não há ",
+"after": "controle alcança a <em>matéria</em>, não só o rito. Sobre <em>projeto de lei</em>, não há "
+},
+{
+"before": "à regularidade do <strong>procedimento</strong>: ao devido ",
+"after": "à regularidade do <em>procedimento</em>: ao devido "
+},
+{
+"before": "próprio processo legislativo.</p>\n      <span class=\"src\" hidden data-src=\"Doutrina · Lenza 6.4.1.3\"></span>\n    </div></div>\n    <div class=\"step\" data-panel=\"p9-limites\" data-slides=\"Slides 12–13\"><div class=\"card\">\n      <span class=\"label dif\">Limites</span>\n      ",
+"after": "próprio processo legislativo.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n    <div class=\"step\" data-panel=\"p9-limites\"><div class=\"card\">\n      <span class=\"label dif\">Limites</span>\n      "
+},
+{
+"before": "com a Constituição. <strong>Não</strong> lhe cabe estender",
+"after": "com a Constituição. <em>Não</em> lhe cabe estender"
+},
+{
+"before": "discricionários relativos às <strong>questões políticas</strong> e aos <strong>atos internos</strong> (<em>interna corporis",
+"after": "discricionários relativos às <em>questões políticas</em> e aos <em>atos internos</em> (<em>interna corporis"
+},
+{
+"before": "ponto que permanece <strong>controverso</strong>.</p>\n      <p>O ",
+"after": "ponto que permanece <em>controverso</em>.</p>\n      <p>O "
+},
+{
+"before": "em 13/02/2003).</p>\n      <p>Onde está o “controverso”: para o Min. Gilmar",
+"after": "em 13/02/2003).</p>\n      <p>Para o Min. Gilmar"
+},
+{
+"before": "regimento funciona como <strong>norma constitucional interposta</strong>: expressão de ",
+"after": "regimento funciona como <em>norma constitucional interposta</em>: expressão de "
+},
+{
+"before": "interno da Casa.</p>\n      <span class=\"src\" hidden data-src=\"Slides 12–13\"></span>\n    </div></div>\n  </div>\n</div>",
+"after": "interno da Casa.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n  </div>\n</div>"
+},
+{
+"before": "suspensa.</div>\n    </div>\n  </div>\n  <span class=\"src\" hidden data-src=\"Slides 14–15\"></span>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">",
+"after": "suspensa.</div>\n    </div>\n  </div>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">"
+},
+{
+"before": "pelo Plenário.</dd>\n  </dl>\n  <div class=\"chave\"><span class=\"label\"></span>A via existe, mas a concessão definitiva é rara; o MS 32.033/DF destaca-se pelo deferimento cautelar.</div>\n\n  <div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Casos relevantes no STF sobre controle preventivo\">\n  <table class=\"compare\">\n    <thead>",
+"after": "pelo Plenário.</dd>\n  </dl>\n\n  <div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Casos relevantes no STF sobre controle preventivo\">\n  <table class=\"compare\">\n    <thead>"
+},
+{
+"before": "\n    </tbody>\n  </table>\n  </div>\n  <span class=\"src\" hidden data-src=\"Slides 17–19\"></span>\n\n  <ol class=\"fluxo\" style=\"margin-top:34px\">\n    <li><b>Cabimento reconhecido em tese</b> O STF admite,",
+"after": "\n    </tbody>\n  </table>\n  </div>\n\n  <ol class=\"fluxo\" style=\"margin-top:34px\">\n    <li><span class=\"label\">Cabimento reconhecido em tese</span> O STF admite,"
+},
+{
+"before": "processo legislativo.</li>\n    <li><b>Âmbito restrito</b> O Tribunal é",
+"after": "processo legislativo.</li>\n    <li><span class=\"label\">Âmbito restrito</span> O Tribunal é"
+},
+{
+"before": "preventivo amplo.</li>\n    <li><b>Ponto distintivo</b> O MS 32.033/DF",
+"after": "preventivo amplo.</li>\n    <li><span class=\"label\">Ponto distintivo</span> O MS 32.033/DF"
+},
+{
+"before": "final da ordem.</li>\n    <li><b>Síntese final</b> Os casos reunidos nesta aula reconhecem a via em tese, mas não trazem concessão definitiva da ordem para sustar PEC por ofensa material a cláusula pétrea.</li>\n  </ol>\n  <span class=\"src\" hidden data-src=\"Slide 19\"></span>\n</div>\n\n<!-- ============ 06 · RESUMO ============ -->\n<section class=\"chapter\" aria-labelledby=\"c6\">",
+"after": "final da ordem.</li>\n  </ol>\n</div>\n\n\\n<!-- Profundidade acrescentada: a fronteira entre projeto de lei, PEC e rito constitucional -->\n<section class=\"chapter\" aria-labelledby=\"c9-depth\"><span class=\"num dif\" aria-hidden=\"true\">05</span><h2 id=\"c9-depth\">O caso muda quando muda a proposição</h2><p class=\"lede\">A Constituição proíbe deliberar certas propostas de emenda; não cria a mesma vedação para o conteúdo de um projeto de lei.</p></section>\n<div class=\"wide\">\n  <p>No <em>MS 32.033/DF</em>, o STF examinou mandado de segurança contra o PLC 14/2013, que alterava regras de distribuição do fundo partidário e do tempo de propaganda eleitoral envolvendo partidos recém-criados. O relator, Gilmar Mendes, concedeu liminar para suspender a tramitação. No julgamento de mérito, prevaleceu a divergência de Teori Zavascki: o Plenário revogou a liminar e denegou a segurança.</p>\n  <p>A maioria recusou o controle judicial preventivo do conteúdo material de projeto de lei. Enquanto a proposta tramita, o Legislativo pode debatê-la, emendá-la ou rejeitá-la, e o Executivo pode vetá-la. Antecipar o controle material por mandado de segurança daria ao parlamentar uma revisão abstrata que não pode provocar depois da promulgação. Se o projeto virar lei, permanece o controle repressivo.</p>\n  <p>O resultado não torna o processo legislativo imune ao Judiciário. O STF admite MS de parlamentar quando um vício constitucional de procedimento já se concretizou. A diferença está no objeto: decidir se o conteúdo de um PL é compatível com direitos constitucionais é uma coisa; impedir que a Casa viole uma etapa que a Constituição impõe é outra.</p>\n  <h3>Por que a PEC tem uma exceção própria</h3>\n  <p>O art. 60, §4º, determina que não será objeto de deliberação proposta de emenda tendente a abolir a forma federativa, o voto direto, secreto, universal e periódico, a separação dos Poderes ou direitos e garantias individuais. A vedação alcança a própria deliberação. Por isso o parlamentar pode, em hipótese excepcional, pedir que o Judiciário impeça a tramitação de PEC que ataque de modo inequívoco uma dessas cláusulas.</p>\n  <p>O limite é alto. No MS 37.721 AgR, sobre proposta relativa às imunidades parlamentares, a Primeira Turma reiterou que o controle preventivo de PEC exige afronta inequívoca a cláusula pétrea e que, fora de situações extremas, o Judiciário não deve impedir o Congresso de discutir matéria. Discordância com a política proposta ou redução de proteção não demonstram, sozinhas, tendência a abolir direito protegido.</p>\n  <div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Diferença entre projeto de lei e proposta de emenda no controle preventivo\"><table class=\"compare\"><thead><tr><th>Proposição</th><th>Via judicial preventiva</th><th>Razão</th></tr></thead><tbody>\n  <tr><th>Projeto de lei: mérito material</th><td>Em regra, não cabe MS para antecipar o juízo judicial</td><td>MS 32.033 preserva debate, emenda e veto; após formada a lei, existe controle repressivo</td></tr>\n  <tr><th>PL: vício constitucional do procedimento</th><td>MS parlamentar pode caber se a violação já ocorreu</td><td>Protege o direito de participar de processo legislativo constitucional</td></tr>\n  <tr><th>PEC: proposta tendente a abolir cláusula pétrea</th><td>Excepcionalmente, parlamentar pode pedir bloqueio da deliberação</td><td>Art. 60, §4º; exige afronta inequívoca e intervenção extrema</td></tr>\n  <tr><th>Disputa puramente regimental</th><td>Em regra, não cabe ao STF substituir a Casa</td><td>Sem ligação direta com comando constitucional, permanece matéria interna</td></tr>\n  </tbody></table></div>\n  <h3>Três casos, três funções</h3>\n  <p><em>MS 20.257/DF</em> é lembrado como precedente fundador sobre mandado de segurança parlamentar e PEC que prorrogava mandatos municipais. A exceção não é uma ação popular contra emendas: o fundamento está na posição do parlamentar e na proibição constitucional de deliberar proposta tendente a abolir cláusula protegida.</p>\n  <p>No <em>MS 24.138/DF</em>, um parlamentar tentou impedir discussão de projeto que alterava a CLT. O STF negou a segurança: discordância com o conteúdo de PL não cria direito subjetivo de barrar o debate. Já o <em>MS 24.356/DF</em> tratava de denúncia por quebra de decoro e de procedimento interno da Câmara; o Plenário não conheceu do pedido, por falta de direito subjetivo demonstrado. Ele ilustra o limite das controvérsias puramente regimentais, não o mérito de uma lei.</p>\n  <h3>Roteiro de resolução</h3>\n  <ol class=\"fluxo\"><li><span class=\"label\">Classifique a proposição.</span> É projeto de lei, PEC ou outro ato em formação?</li><li><span class=\"label\">Localize o vício.</span> A violação de procedimento já ocorreu ou se pede avaliação antecipada do resultado?</li><li><span class=\"label\">Mostre o comando constitucional.</span> Qual artigo disciplina o rito ou qual cláusula pétrea estaria sendo abolida?</li><li><span class=\"label\">Limite o pedido.</span> O parlamentar pede tutela do próprio direito de participação ou tenta obter controle abstrato prévio?</li></ol>\n  <p><em>Exemplo.</em> Se PEC propõe abolir eleições periódicas para determinado cargo, o art. 60, §4º, II, oferece fundamento textual para pedir que a deliberação seja interrompida, sujeito ao exame rigoroso do STF. Se um projeto de lei propõe o mesmo conteúdo, a gravidade da tese não converte o mandado de segurança em revisão material prévia: a Casa pode rejeitar, o Presidente pode vetar e, se o projeto virar lei, o controle será repressivo.</p>\n</div>\n\n<!-- ============ 06 · RESUMO ============ -->\n<section class=\"chapter\" aria-labelledby=\"c6\">"
+},
+{
+"before": " a CCJ)</td><td>Só matéria com vedação expressa de deliberação (cláusulas pétreas)</td></tr>\n      <tr><th scope=\"row\">Via",
+"after": " a CCJ)</td><td>Conteúdo de PEC, apenas excepcionalmente; para PL, vício constitucional do rito</td></tr>\n      <tr><th scope=\"row\">Via"
+},
+{
+"before": " o órgão</td><td>Só a regularidade do procedimento; não alcança questões políticas nem atos <em>interna corporis</em></td></tr>\n      <tr><th scope=\"row\">Fundamento",
+"after": " o órgão</td><td>Procedimento constitucional já violado; em PEC, excepcional limite material do art. 60, §4º; questões puramente internas ficam com a Casa</td></tr>\n      <tr><th scope=\"row\">Fundamento"
+},
+{
+"before": "\n    </tbody>\n  </table>\n  </div>\n  <span class=\"src\" hidden data-src=\"Síntese das\"></span>\n</div>\n\n<!-- ============ 07 · TESTE ============ -->\n<section class=\"chapter\" aria-labelledby=\"c7\">\n  <span class=\"num\" aria-hidden=\"true\">07</span>\n  <h2 id=\"c7\">Teste rápido",
+"after": "\n    </tbody>\n  </table>\n  </div>\n</div>\n\n<!-- ============ 07 · TESTE ============ -->\n<section class=\"chapter\" aria-labelledby=\"c7\">\n  <span class=\"num\" aria-hidden=\"true\">06</span>\n  <h2 id=\"c7\">Teste rápido"
+},
+{
+"before": "cabe recurso ao <strong>plenário</strong> da Casa legislativa.",
+"after": "cabe recurso ao <em>plenário</em> da Casa legislativa."
+},
+{
+"before": "se funda em <strong>inconstitucionalidade</strong>; o veto político, em <strong>contrariedade ao interesse público</strong> (art. 66, §",
+"after": "se funda em <em>inconstitucionalidade</em>; o veto político, em <em>contrariedade ao interesse público</em> (art. 66, §"
+},
+{
+"before": "O silêncio importa <strong>sanção</strong> (art. 66, §",
+"after": "O silêncio importa <em>sanção</em> (art. 66, §"
+},
+{
+"before": " pode usá-lo?</summary><p><strong>Mandado de segurança</strong> contra a mesa",
+"after": " pode usá-lo?</summary><p><em>Mandado de segurança</em> contra a mesa"
+},
+{
+"before": "legislativa, de legitimidade <strong>exclusiva do parlamentar</strong>.</p></details>\n    <details><summary>",
+"after": "legislativa, de legitimidade <em>exclusiva do parlamentar</em>.</p></details>\n    <details><summary>"
+},
+{
+"before": "controle: repressivo</a>\n</nav>\n<details class=\"provenance\" hidden lang=\"pt-BR\"><summary>Fontes e limites</summary></details>\n\n<script src=\"assets/controle.js?v=f3b058afd3\"></script>\n<script src=\"../../assets/offline.js\" defer></script>\n",
+"after": "controle: repressivo</a>\n</nav>\n\n<script src=\"../../assets/casa.js\" defer></script>\n<script src=\"assets/controle.js?v=f3b058afd3\"></script>\n<script src=\"../../assets/offline.js\" defer></script>\n"
 }
 ]
