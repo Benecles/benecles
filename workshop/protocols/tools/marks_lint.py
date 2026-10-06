@@ -35,7 +35,7 @@ def check(path):
     for opener, closer in ((r'<header\b', r'</header>'), (r'<p class="deck"', r'</p>'), (r'<p class="eixo"', r'</p>'), (r'<div class="bet"', r'</div></div>'),
                            (r'<aside class="fonte', r'</aside>'), (r'<div class="titleblock', r'</div></div>'), (r'<table\b', r'</table>'), (r'<summary\b', r'</summary>'), (r'<nav\b', r'</nav>')):
         t = re.sub(r'(?is)' + opener + r'.*?' + closer, lambda m: '#' * len(m.group(0)), t)
-    for m in re.finditer(r'(?is)<(strong|b)\b(?![^>]*class="(?:held|limit)")[^>]*>(?!\s*\w+\.\s*</)', t):   # run-in labels like <strong>Tese.</strong> stay
+    for m in re.finditer(r'(?is)<(strong|b)\b(?![^>]*class="(?:held|limit|runin)")[^>]*>(?!\s*\w+(?: \w+){0,2}\.\s*</)', t):   # run-in labels like <strong>Tese.</strong> stay
         out.append((line(m.start()), 'plain-bold', 'plain bold retired; use .held/.limit, italics or nothing'))
     for m in re.finditer(r'(?is)<span[^>]*style="[^"]*\bcolor\s*:', s): out.append((line(m.start()), 'inline-colour', 'colour comes from .held/.limit only'))
     return sorted(out)
