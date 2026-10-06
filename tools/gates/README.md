@@ -35,7 +35,7 @@ The runner uses the bundled Playwright module and `/Applications/Google Chrome.a
 }
 ```
 
-`pages` is required when a manifest is supplied. Each `path` resolves against `--base-url`; `name` controls screenshot filenames. Optional `localStorage` entries seed browser storage before page scripts run. Page-level values override global values. The runner sets `cufrgs-theme` and `document.documentElement.dataset.theme` for each light/dark pass, matching the site theme convention. `selectors` may be selector strings or `{ "name", "selector" }` objects; `artSelector` is a shorthand for one selected art crop. Missing selectors are listed in the JSON report.
+`pages` is required when a manifest is supplied. Each `path` resolves against `--base-url`; `name` controls screenshot filenames. Optional `localStorage` entries seed browser storage before page scripts run. Page-level values override global values. The runner sets `ordenacoes-theme` and `document.documentElement.dataset.theme` for each light/dark pass, matching the site theme convention. `selectors` may be selector strings or `{ "name", "selector" }` objects; `artSelector` is a shorthand for one selected art crop. Missing selectors are listed in the JSON report.
 
 ## Report fields
 

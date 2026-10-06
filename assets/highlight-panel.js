@@ -1,4 +1,4 @@
-/* CUFRGS · painel de marcações: lists this page's highlights and jumps to each. Shown only once a page has a mark. */
+/* painel de marcações: lists this page's highlights and jumps to each. Shown only once a page has a mark. */
 (function () {
   var path = location.pathname.replace(/index\.html$/, ''), key = 'ordenacoes-hl:' + path;
   var css = document.createElement('style');
