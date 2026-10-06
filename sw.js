@@ -1,4 +1,4 @@
-/* CUFRGS · modo avião
+/* modo avião
    Service worker that only does anything after a reader turns on offline mode
    (assets/offline.js). It then keeps a copy of every page listed in
    offline-manifest.json so the site works without a connection. */

@@ -1,4 +1,4 @@
-# CUFRGS — emerging house language
+# Emerging house language
 
 Status: working hypotheses, not a final design system. Updated 2026-09-07 by Codex.
 
