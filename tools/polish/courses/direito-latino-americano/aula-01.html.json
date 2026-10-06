@@ -52,10 +52,6 @@
 "after": "pelas repúblicas hispano-americanas. Ela começa antes, em"
 },
 {
-"before": "</strong></p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c3\"><span class=\"num dif\" aria-hidden=\"true\">03</span><h2 id=\"c3\">1808: quem é soberano sem o rei?</h2><p class=\"lede\">A invasão ",
-"after": "</strong></p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c3\"><span class=\"num \" aria-hidden=\"true\">03</span><h2 id=\"c3\">Da crise de 1808 às constituições americanas</h2><p class=\"lede\">A invasão "
-},
-{
 "before": " e depois</span><h3>Cádiz: incluir e excluir no mesmo texto</h3><p>Promulgada em 19 de março de 1812, a Constituição de Cádiz declara que a Nação espanhola é “la reunión de todos los españoles de ambos hemisferios” (art. 1º) e que a soberania reside essencialmente na Nação (art. 3º). Indígenas americanos são reconhecidos como cidadãos; desaparece a distinção política entre peninsulares e americanos.</p><p>Mas o art. 22 deixa aos originários da África apenas “la puerta de la virtud y del merecimiento”: são espanhóis, com direitos civis, sem cidadania, que só as Cortes poderiam conceder a quem cumprisse uma série de condições. Cádiz universaliza a cidadania dentro de limites profundamente marcados pela raça.</p><p>O texto circulou e foi apropriado. No Peru, a Constituição de 1823 carrega sua marca, e estudos recentes mostram comunidades indígenas usando os <em>ayuntamientos</em> gaditanos para ampliar seu autogoverno, mesmo depois da revogação.</p></div></div>\n<div class=\"step\" data-panel=\"p-cr3\"><div class=\"card\">",
 "after": " e depois</span><h3>Cádiz atravessa o Atlântico</h3><p>Em 19 de março de 1812, as Cortes reunidas em Cádiz promulgam uma Constituição para a Nação “de ambos os hemisferios”. O texto atravessa o Atlântico e é apropriado: em Lima, a primeira Constituição republicana do Peru, de 1823, carrega sua marca.</p></div></div>\n<div class=\"step\" data-panel=\"p-cr3\"><div class=\"card\">"
 },
@@ -80,20 +76,8 @@
 "after": " do povo soberano.</p></details><details><summary>Qual "
 },
 {
-"before": "larga duração</strong>. Ela não se mede pela quantidade de anos cobertos, mas pela conexão entre passado e presente. Importa saber “o que de 1812 continua funcionando hoje?”, e não “o que aconteceu em 1812?”.</p><p>A hipótese ",
-"after": "larga duração</strong>. O que a define é a conexão entre passado e presente, qualquer que seja o número de anos cobertos. Interessa saber o que de 1812 continua funcionando hoje.</p><p>A hipótese "
-},
-{
 "before": " que não eram. Constituições novas sobre sociedades velhas.</p><p>As palavras ",
 "after": " que não eram.</p><p>As palavras "
-},
-{
-"before": "Cádiz. A questão é simples de formular e difícil de responder: <strong>quem exerce ",
-"after": "Cádiz. A questão posta era <strong>quem exerce "
-},
-{
-"before": "rei não pode exercê-la?</strong></p><p>A resposta ",
-"after": "rei não pode exercê-la</strong>.</p><p>A resposta "
 },
 {
 "before": "Constituições desde 1801. Cádiz foi decisiva, mas entrou num continente que já escrevia Constituições.",
@@ -106,10 +90,6 @@
 {
 "before": "e unidade territorial. Cádiz fez parte da experiência brasileira, não do seu desenho final.</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c6\"><span class=\"num \" aria-hidden=\"true\">",
 "after": "e unidade territorial. A experiência gaditana passou pelo Brasil; o desenho de 1824 seguiu outro caminho.</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c6\"><span class=\"num \" aria-hidden=\"true\">"
-},
-{
-"before": "lado de presidentes muito fortes</strong>.</p><p>No",
-"after": "lado de presidentes fortes</strong>.</p><p>No"
 },
 {
 "before": "prova predomínio republicano. Classifique a combinação e indique o compromisso que",
@@ -226,5 +206,77 @@
 {
 "before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
 "after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
+},
+{
+"before": "de método: a <strong>análise de larga duração</strong>. O que a",
+"after": "de método: a análise de larga duração. O que a"
+},
+{
+"before": "constitucionalismo da região: <strong>quem pode ser ",
+"after": "constitucionalismo da região: quem pode ser "
+},
+{
+"before": " do povo soberano?</strong></p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c3\"><span class=\"num \" aria-hidden=\"true\">",
+"after": " do povo soberano?</p></div></div>\n<section class=\"chapter\" aria-labelledby=\"c3\"><span class=\"num \" aria-hidden=\"true\">"
+},
+{
+"before": "questão posta era <strong>quem exerce a ",
+"after": "questão posta era quem exerce a "
+},
+{
+"before": "rei não pode exercê-la</strong>.</p><p>A resposta ",
+"after": "rei não pode exercê-la.</p><p>A resposta "
+},
+{
+"before": "Cundinamarca apostou na <strong>centralização</strong>; Tunja, Antioquia, Cartagena",
+"after": "Cundinamarca apostou na centralização; Tunja, Antioquia, Cartagena"
+},
+{
+"before": "provinciais, no caminho <strong>federal</strong>. A independência envolvia",
+"after": "provinciais, no caminho federal. A independência envolvia"
+},
+{
+"before": " venceu ali.</p><p><strong>Peru, 1823.</strong> A",
+"after": " venceu ali.</p><p><strong class=\"runin\">Peru, 1823.</strong> A"
+},
+{
+"before": " constitucionalismo republicano.</p><p><strong>Argentina, de 1813 ",
+"after": " constitucionalismo republicano.</p><p><strong class=\"runin\">Argentina, de 1813 "
+},
+{
+"before": " e gaditana.</p><p><strong>Brasil, 1824.</strong> Aqui",
+"after": " e gaditana.</p><p><strong class=\"runin\">Brasil, 1824.</strong> Aqui"
+},
+{
+"before": " projetos</h3><p>O <strong>conservador</strong>, o modelo “da",
+"after": " projetos</h3><p>O conservador, o modelo “da"
+},
+{
+"before": "Peru 1839). O <strong>liberal</strong> defende as liberdades",
+"after": "Peru 1839). O liberal defende as liberdades"
+},
+{
+"before": "Uruguai 1830). O <strong>republicano</strong> aposta no autogoverno",
+"after": "Uruguai 1830). O republicano aposta no autogoverno"
+},
+{
+"before": "do constitucionalismo latino-americano: <strong>catálogos de direitos ",
+"after": "do constitucionalismo latino-americano: <span class=\"mark\">catálogos de direitos "
+},
+{
+"before": " de presidentes fortes</strong>.</p><p>No Brasil,",
+"after": " de presidentes fortes</span>.</p><p>No Brasil,"
+},
+{
+"before": "o Estado, mas <strong>exigir</strong> sua atuação para",
+"after": "o Estado, mas exigir sua atuação para"
+},
+{
+"before": "pensada também como <strong>garantia contra a repetição do autoritarismo</strong>, e os juízes",
+"after": "pensada também como garantia contra a repetição do autoritarismo, e os juízes"
+},
+{
+"before": "social há uma <strong>discordância</strong>, como dizem os",
+"after": "social há uma discordância, como dizem os"
 }
 ]
