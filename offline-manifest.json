@@ -1,10 +1,10 @@
 {
-"version": "16a372ec6918",
+"version": "c32231625df1",
 "files": [
-"_tmp/labeler.js",
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
+"assets/casa.css",
 "assets/changelog.css",
 "assets/course-diagrams/semana01-cascata-1f22b90eb1aa.svg",
 "assets/course-diagrams/semana01-exclusoes-conduta-ced6eec05503.svg",
@@ -257,6 +257,7 @@
 "index-folio-teoria.html",
 "index.html",
 "./",
+"specimen/casa.html",
 "specimen/figkit-controle-a01.html",
 "specimen/figuras.html",
 "specimen/hero.html",
