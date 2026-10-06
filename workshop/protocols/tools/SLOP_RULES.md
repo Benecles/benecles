@@ -39,3 +39,23 @@ Findings are review prompts, not automatic verdicts. HARD rules report every pat
 - `triad-density` is intentionally broad: a comma-separated three-part phrase may be a statutory triad. The rate threshold and minimum text gates limit noise; context remains decisive.
 - Rate ceilings are included in each rule definition and echoed as finding density. They do not hide low-density matches; runs fail only when the caller supplies `--max-per-1000 N` and the aggregate exceeds that budget.
 - `paren-scarcity` is an absence signal on eligible pages and is exempt from the two-positive-match gate by definition.
+
+## 06/10 additions (CEO; sources: avoid-ai-writing, stop-slop, autonovel ANTI-SLOP, MariusAure, Writing Standard D10)
+
+| Rule | Kind | Catches | Fix |
+|---|---|---|---|
+| `teaser-hook` | HARD | "O resultado? …" staged reveal | State the fact. |
+| `self-labeling` | HARD | "Esse é o ponto central" | Cut the label. |
+| `hedge-stack` | HARD | "pode potencialmente" | One qualifier, where the doubt is. |
+| `false-concession` | HARD | "Embora X, Y continua um desafio" | Specific concession or cut (D10.5). |
+| `staged-objection` | HARD | "Alguém poderia objetar…" | Fake disagreement (D10.1): named positions only. |
+| `reader-steer-question` | HARD | "O que isso significa?" | Answer directly. |
+| `circular-because` | HARD | "porque havia necessidade de…" | Name the cause (D10.2). |
+| `stacked-questions` | RATE | two+ rhetorical questions in a row | At most one. |
+| `transition-opener` | RATE (1.5/1000) | paragraphs opening on "Além disso / Contudo / Nesse sentido…" | Open on the subject (C3). |
+| `fragment-run` | RATE | three+ consecutive ≤3-word sentences | Fold into sentences. |
+| `uniform-paragraphs` | RATE | five consecutive ≥40-word paragraphs within ±15% | Reshape around the argument (D9). |
+
+On live Latam Aulas 01–09 (06/10): `stacked-questions` 12 (true rhetorical stacks), `uniform-paragraphs` 5, the rest 0.
+
+**Whole gate in one command:** `python3 work/slop-bench/slop_gate.py PAGE.html` → `lint.json` + `critic_input.md` for a separate reviewer; apply span patches only, re-run.

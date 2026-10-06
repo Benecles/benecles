@@ -16,6 +16,14 @@ HARD = {
     'reader-address': (r'\b(?:você já deve ter percebido|não se preocupe|pense nisso|perceba que|repare:?)\b', 'State the rule or consequence directly.'),
     'AI-calque': (r'\b(?:no cenário (?:atual|jurídico|brasileiro)|navegar (?:por|pel[oa]s?)|abordagem holística|robust[oa]s?|(?-i:jornada)(?! (?:de trabalho|limitada|diária|semanal|máxima))|mergulh(?:ar|amos|e) (?:em|n[oa]s?))\b', 'Replace the calque with the concrete legal action or plain Portuguese verb.'),
     'backstage': (r'\b(?:(?:os|nos|dos|pelos|segundo os?) slides?|materia(?:l|is) da disciplina|nest[ae] leitura|dest[ae] leitura|prática autoral|relatad[oa]s? por|localizador(?:es)?|fontes e (?:limites|localizadores)|(?-i:C\d{1,2})\b|blueprint|cerca desta)\b', 'Move provenance to the private ledger; keep the page about the legal material.'),
+    # 06/10 additions from avoid-ai-writing, stop-slop, autonovel ANTI-SLOP, MariusAure and Writing Standard D10.
+    'teaser-hook': (r'(?:^|(?<=[.!?]\s))(?:O resultado|O problema|A questão|O detalhe|A resposta|O ponto|A consequência|O motivo|O curioso|O efeito|A pegadinha)\?', 'Delete the staged question and state the fact.'),
+    'self-labeling': (r'\b(?:(?:esse|este|eis|aqui está|aí está) (?:é )?o (?:ponto|detalhe|dado|passo|movimento) (?:central|crucial|decisivo|essencial|mais importante|interessante|contraintuitivo)|aí está o (?:essencial|ponto))\b', 'Cut the label; let the fact show its weight.'),
+    'hedge-stack': (r'\b(?:pode(?:m|ria|riam|rá)? (?:potencialmente|eventualmente|possivelmente|talvez)|talvez (?:possa|pudesse|poderia))\b', 'Keep one qualifier, where the doubt is (C7).'),
+    'false-concession': (r'\b(?:embora|ainda que|apesar de)\b[^.;]{3,90},\s*[^.;]{0,40}\b(?:continua|permanece|resta|segue)\b[^.;]{0,40}\b(?:desafio|em aberto|incert[oa]|um problema)\b', 'Make the concession specific from the sources, or cut the frame (D10.5).'),
+    'staged-objection': (r'\b(?:alguém poderia (?:dizer|objetar|argumentar|pensar)|poder-se-ia (?:objetar|dizer|argumentar)|pode-se objetar|seria tentador (?:pensar|concluir|dizer)|à primeira vista, (?:poder-se-ia|parece))\b', 'Fake disagreement (D10.1): dispute only named positions with reasons.'),
+    'reader-steer-question': (r'\b(?:o que (?:isso|isto) significa|por que isso importa|e o que isso (?:quer dizer|muda)|qual a consequência disso)\?', 'Answer directly; drop the rhetorical question.'),
+    'circular-because': (r'\bporque (?:havia|existia|há|existe) (?:a |uma )?(?:necessidade|exigência) de\b', 'Circular explanation (D10.2): name the fact, rule or actor that caused it.'),
     'rhetorical-triad': (r'\b(?:e,\s*sobretudo,|e,\s*acima de tudo,)', 'Keep the full enumeration only when each item is legally necessary; remove rhetorical emphasis.'),
 }
 # D9 rate signals and transferred measured-positive constructions. Limits are
@@ -33,6 +41,10 @@ RATE = {
  'colon-appositive': (r'\b(?:é|são|significa|consiste em|inclui|abrange)\s*:\s*[^.!?]{3,100}[.!?]', 1.0, 'Keep a colon introducing a needed definition/list; otherwise write the definition in the same sentence.'),
  'load-bearing-adverb': (r'\b(?:claramente|obviamente|naturalmente|certamente|inevitavelmente|simplesmente|basicamente|essencialmente|fundamentalmente)\b', 1.0, 'Delete it if the sentence remains equally precise; preserve genuine evidential qualification.'),
  'nominalisation-pileup': (r'\b(?:a|o|da|do|na|no)\s+(?:implementação|realização|efetivação|verificação|aplicação|ocorrência|concretização|determinação|construção|formulação)\s+(?:da|de|do|na|no)\s+(?:análise|execução|aplicação|verificação|realização|implementação|concretização|determinação)\b', 1.0, 'Put the action in a verb and name who performs it, if known.'),
+ 'stacked-questions': (r'[^.!?\n]{3,140}\?\s+[^.!?\n]{3,140}\?', 0.0, 'Keep at most one question; state the answers the sources give.'),
+ 'transition-opener': (r'(?m)^\s*(?:Além disso|Ademais|Por outro lado|Contudo|Entretanto|No entanto|Dessa forma|Desse modo|Assim sendo|Nesse sentido|Outrossim|Por fim)\b', 1.5, 'Start paragraphs with their subject; keep a connector only where the logic is invisible (C3).'),
+ 'fragment-run': (r'(?!)', 0.0, 'Fold staccato fragments into sentences; keep one fragment only if it earns emphasis.'),
+ 'uniform-paragraphs': (r'(?!)', 0.0, 'Reshape paragraphs around the argument (D9); never to a length quota.'),
  'paren-scarcity': (r'(?!)', 0.0, 'Consider parenthetical material only when it clarifies; do not add parentheses merely to satisfy this signal.'),
 }
 # For reports only: counts instances of parenthetical text as meaningful usage;
@@ -73,6 +85,31 @@ def lint(path, budget):
                         item=finding(t,path,name,m,fix,0.0)
                         item['severity']='rate'; item['limit_per_1000']=limit; item['over_limit']=False
                         out.append(item)
+                continue
+            if name == 'fragment-run':
+                sents=list(re.finditer(r'[^.!?\n]+[.!?](?:\s+|$)', masked)); matches=[]; run=[]
+                for sm in sents:
+                    if 0 < len(re.findall(r"\b\w+\b", sm.group(0))) <= 3: run.append(sm)
+                    else:
+                        if len(run)>=3: matches.append(run[0])
+                        run=[]
+                if len(run)>=3: matches.append(run[0])
+                if matches:
+                    rate=len(matches)*1000/max(words,1)
+                    for m in matches:
+                        item=finding(t,path,name,m,fix,rate); item['severity']='rate'; item['limit_per_1000']=limit; item['over_limit']=True; out.append(item)
+                continue
+            if name == 'uniform-paragraphs':
+                paras=[pm for pm in re.finditer(r'[^\n]+', t) if len(re.findall(r'\b\w+\b', pm.group(0)))>=40]
+                lens=[len(re.findall(r'\b\w+\b', pm.group(0))) for pm in paras]; matches=[]; i=0
+                while i+5<=len(lens):
+                    w=lens[i:i+5]; mean=sum(w)/5
+                    if all(abs(x-mean)<=0.15*mean for x in w): matches.append(paras[i]); i+=5
+                    else: i+=1
+                if matches:
+                    rate=len(matches)*1000/max(words,1)
+                    for m in matches:
+                        item=finding(t,path,name,m,fix,rate); item['severity']='rate'; item['limit_per_1000']=limit; item['over_limit']=True; item['span']=item['span'][:80]; out.append(item)
                 continue
             if name == 'same-opener-run':
                 sentences_found = list(re.finditer(r'[^.!?]+[.!?](?:\s+|$)', masked))

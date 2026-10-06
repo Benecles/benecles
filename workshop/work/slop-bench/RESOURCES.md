@@ -94,6 +94,22 @@ Scope: Portuguese legal-teaching prose. These resources inform editorial checks;
 **Claim/evidence.** Workflow template centers purpose, audience, structure, evidence, source checks, and a final editorial pass. [Full guide](https://github.com/louisfb01/ai-engineering-cheatsheets/blob/main/Anti_Slop_AI_Writing_Guide.md).
 **Decision: ADOPT audience/outcome-first planning and source verification; ADAPT to legal question, governing source, reasoning, and learning objective.** Reject fixed em-dash/word bans, zero-targets, and marketing voice as universal rules.
 
+### bheijden/slop (CEO read first-hand, 05/10)
+**Claim/evidence.** A prose linter whose 78 `ai-tells` rules each record a matched human/AI corpus result; it ships rules that discriminate in the right direction and parks the ones measured backwards. Measured-positive: "genuinely" (×53), `not-x-but-y`, `semicolon-correction`, `colon-appositive` (rate), `rather-than` (rate), `load-bearing-adverbs`, `nominalisation-pileup`, `paren-scarcity`; em dashes measured as **not** a tell. [Repository](https://github.com/bheijden/slop).
+**Decision: ADOPT the method and the measured rules (ported to Portuguese as RATE rules); REJECT its em-dash rule as slop evidence.** Rules ship only with tests and a false-positive note; rates, not single hits, for ordinary constructions.
+
+### NousResearch autonovel, ANTI-SLOP.md (CEO read first-hand, 05/10)
+**Claim/evidence.** Field guide: slop = low information density + predictable structure + unnatural vocabulary; separates vocabulary tells from structural ones (topic-sentence machine, list abuse, symmetry addiction, hedge parade, transition-word paragraph openers, "not just X but Y", false depth). [File](https://github.com/NousResearch/autonovel/blob/master/ANTI-SLOP.md).
+**Decision: ADOPT the structural tells** as `transition-opener`, `hedge-stack`, `uniform-paragraphs` and the D10 restatement ban; **REJECT** its English vocabulary tiers as a Portuguese list and its blog/notebook tone advice (wrong register).
+
+### hardikpandya/stop-slop (CEO read first-hand, 05/10)
+**Claim/evidence.** Short agent skill: binary contrasts, negative listings, dramatic fragmentation, rhetorical setups, false agency, vague declaratives, quotable closers; five-dimension 1–10 score (directness, rhythm, trust, authenticity, density). [SKILL.md](https://github.com/hardikpandya/stop-slop/blob/main/SKILL.md).
+**Decision: ADOPT** fragmentation (`fragment-run`), rhetorical setups (`teaser-hook`, `reader-steer-question`) and its density/directness dimensions in the critic; **REJECT** "no passive ever", "kill all adverbs", "you beats people" and "no em dashes": legal prose needs agentless passives for rules and must not address the reader (D7).
+
+### MariusAure/anti-slop-writing, writing.md v7 (CEO read first-hand, 05/10)
+**Claim/evidence.** One system prompt: fulfil the job first; avoid-list items are warning lights, not bans; meaning test (restate the boring version), fungibility test (could the sentence sit in any article?), evidence test, fit test; never invent detail to seem human. [writing.md](https://github.com/MariusAure/anti-slop-writing/blob/main/writing.md).
+**Decision: ADOPT** the meaning and fungibility tests in the critic and in Writing Standard Part D's preamble spirit; **ADOPT** "do not humanize". Nothing here is lintable; it governs judgment.
+
 ## Cross-source policy
 
 1. Preserve legal meaning, source scope, quotations, statutory wording, terms of art, and real uncertainty.

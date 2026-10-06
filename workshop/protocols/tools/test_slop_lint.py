@@ -17,6 +17,22 @@ FILLER = " ".join(
 )
 
 RATE_CASES = {
+    "stacked-questions": (
+        "Quem decide o plano? Quem paga a conta? A Corte responde em seguida. Quem fiscaliza a execução? Quem presta contas? " + FILLER,
+        "A Corte decide quem fiscaliza a execução e quem presta contas. " + FILLER,
+    ),
+    "transition-opener": (
+        "Além disso, a norma fixa o prazo.\nAdemais, o juízo examina a prova.\nContudo, a parte recorre.\nNo entanto, o pedido segue.\n" + FILLER,
+        "A norma fixa o prazo.\nO juízo examina a prova.\nA parte recorre.\n" + FILLER,
+    ),
+    "fragment-run": (
+        "A Corte decidiu o caso. Sem verba. Sem plano. Sem prazo. O governo recorreu depois. Nada mudou. Nenhum relatório. Nenhuma meta. " + FILLER,
+        "A Corte decidiu o caso sem verba, sem plano e sem prazo definidos pela administração. " + FILLER,
+    ),
+    "uniform-paragraphs": (
+        "\n".join(["A norma fixa o prazo e o juízo examina a prova com cuidado antes de decidir o pedido da parte, que recorre quando entende que a decisão viola a lei aplicável ao caso concreto, e o tribunal revê o mérito em seguida com base nos autos e nas provas juntadas pela parte."] * 10) + "\n" + FILLER,
+        "\n".join(["A norma fixa o prazo.", "O juízo examina a prova com cuidado antes de decidir o pedido da parte, que recorre quando entende que a decisão viola a lei aplicável ao caso concreto, e o tribunal revê o mérito em seguida com base nos autos e nas provas juntadas pela parte, ouvindo o Ministério Público e as demais partes interessadas antes de proferir o acórdão final.", "A parte recorre.", "O tribunal decide em seguida com base nos autos e nas provas juntadas pela parte, que recorre quando entende que a decisão viola a lei."]) + "\n" + FILLER,
+    ),
     "colon-reveal": (
         "A regra define o alcance. O ponto central é este: a decisão limita o pedido. "
         "A norma organiza o exame. A consequência é esta: o juiz verifica o prazo. " + FILLER,
@@ -75,6 +91,13 @@ RATE_CASES = {
 }
 
 HARD_CASES = {
+    "teaser-hook": ("O resultado? A Corte manteve a decisão.", "A Corte manteve a decisão."),
+    "self-labeling": ("Esse é o ponto central da decisão.", "A decisão fixa o prazo."),
+    "hedge-stack": ("A regra pode potencialmente afastar o prazo.", "A regra pode afastar o prazo."),
+    "false-concession": ("Embora a reforma tenha avançado, a execução continua um desafio.", "A reforma criou o fundo em 2015; a execução caiu 40% em 2016."),
+    "staged-objection": ("Alguém poderia objetar que a anistia encerrou o caso.", "Eros Grau sustentou que a anistia integrou a transição."),
+    "reader-steer-question": ("O que isso significa? A Corte manteve o prazo.", "A Corte manteve o prazo."),
+    "circular-because": ("A Corte interveio porque havia necessidade de intervenção.", "A Corte interveio porque as autoridades descumpriram a T-153."),
     "negative-parallelism": ("A decisão não é definitiva neste ponto.", "A decisão permanece provisória neste ponto."),
     "puffery": ("A regra desempenha papel fundamental no sistema.", "A regra define o prazo do recurso."),
     "significance-gerund": ("A regra foi aplicada, evidenciando a importância do tema.", "A regra foi aplicada ao caso concreto."),
