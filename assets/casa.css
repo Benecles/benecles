@@ -53,3 +53,6 @@ body[data-int="forte"] .held, body[data-int="forte"] .limit { -webkit-box-decora
 .fonte footer { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 14px; }
 .fonte footer button { border: 0; border-bottom: 1px solid currentColor; padding: 2px 0; background: none; color: var(--bar); cursor: pointer; font: 500 11px/1.5 var(--mono); letter-spacing: .07em; text-transform: uppercase; }
 .fonte footer button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+/* run-in head: a short bold label that opens a paragraph in a parallel run (Peru, 1823. / Brasil, 1824.). Structure, not emphasis. */
+.runin { font-weight: 650; }
