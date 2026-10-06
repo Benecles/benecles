@@ -3,296 +3,362 @@
   "code": "DIR02002",
   "area": "Direito Processual Civil",
   "prof": "Prof. Eduardo Scarparo",
-  "n_aulas": 11,
+  "n_aulas": 22,
   "title": "Processo Civil I-a",
-  "deck": "Da petição inicial ao julgamento do mérito.",
+  "deck": "O procedimento de conhecimento: da petição inicial à prova.",
   "deck_flag": false,
-  "exam_html": "<aside class=\"exam-card\" aria-labelledby=\"exam-title\">\n    <span class=\"exam-date\">P1 · 07/10/2026</span>\n    <h2 id=\"exam-title\">O que cai</h2>\n    <p>A P1 inclui as Aulas 01 a 09. As Aulas 10 e 11 — saneamento e julgamento conforme o estado do processo — vêm depois da prova. Estude uma aula, responda aos testes sem consultar o texto e retome os trechos ligados a cada erro.</p>\n    <a href=\"revisao-p1.html\"><span>Abrir a revisão para a P1</span><span aria-hidden=\"true\">→</span></a><a href=\"cartoes.html\"><span>Revisar com os cartões</span><span aria-hidden=\"true\">→</span></a><a href=\"aula-01.html\"><span>Começar pela Aula 01</span><span aria-hidden=\"true\">→</span></a>\n  </aside>",
+  "drawing": {
+    "html": "<figure class=\"proc-docket\" aria-labelledby=\"proc-docket-title\"><div class=\"proc-docket-head\"><span class=\"proc-stamp\">AUTOS · FASE DE CONHECIMENTO</span><h2 id=\"proc-docket-title\">Um processo, ato após ato</h2><p>Abra a aula no ponto em que o procedimento avança.</p></div><ol class=\"proc-route\">\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">01</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">PETIÇÃO</span><span class=\"proc-phase-sub\">demanda · emenda</span><div class=\"proc-phase-links\"><a href=\"aula-01.html\">Petição inicial, demanda e emenda</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">02</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">JUÍZO INICIAL</span><span class=\"proc-phase-sub\">improcedência · audiência</span><div class=\"proc-phase-links\"><a href=\"aula-02.html\">Improcedência liminar e audiência inicial</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">03</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">SUJEITOS</span><span class=\"proc-phase-sub\">partes · terceiros</span><div class=\"proc-phase-links\"><a href=\"aula-03.html\">Partes e litisconsórcio</a><a href=\"aula-04.html\">Assistência simples e litisconsorcial</a><a href=\"aula-12.html\">Denunciação da lide</a><a href=\"aula-05.html\">Chamamento, desconsideração e amicus curiae</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">04</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">COMUNICAÇÃO</span><span class=\"proc-phase-sub\">citação · atos · prazos</span><div class=\"proc-phase-links\"><a href=\"aula-06-citacao.html\">Comunicação dos atos: citação e intimação</a><a href=\"aula-06.html\">Atos processuais, processo eletrônico e cooperação</a><a href=\"aula-07.html\">Prazos e preclusão</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">05</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">RESPOSTA</span><span class=\"proc-phase-sub\">contestação · revelia</span><div class=\"proc-phase-links\"><a href=\"aula-08.html\">Resposta do réu e contestação</a><a href=\"aula-08-revelia.html\">Revelia e reconvenção</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p1\"><span class=\"proc-stamp-no\">06</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">NULIDADES</span><span class=\"proc-phase-sub\">semana 9</span><div class=\"proc-phase-links\"><a href=\"aula-09.html\">Nulidades processuais</a><a href=\"aula-13.html\">Estabilização e preparação do processo para decidir</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p2\"><span class=\"proc-stamp-no\">07</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">SANEAMENTO</span><span class=\"proc-phase-sub\">semanas 11–12</span><div class=\"proc-phase-links\"><a href=\"aula-10-estabilizacao.html\">Saneamento e estabilização da organização</a><a href=\"aula-10.html\">Julgamento conforme o estado do processo</a><a href=\"aula-11.html\">Decisões sem resolução do mérito</a><a href=\"aula-11-merito.html\">Resolução do mérito e julgamentos parciais</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n<li class=\"proc-phase p2\"><span class=\"proc-stamp-no\">08</span><div class=\"proc-phase-copy\"><span class=\"proc-phase-title\">PROVA</span><span class=\"proc-phase-sub\">objeto · valoração · ônus</span><div class=\"proc-phase-links\"><a href=\"aula-14.html\">Teoria da prova: princípios e modelos</a><a href=\"aula-15.html\">Objeto da prova e admissibilidade</a><a href=\"aula-16.html\">Valoração e modelos de constatação</a><a href=\"aula-17.html\">Ônus da prova</a><a href=\"aula-18.html\">Máximas de experiência e poderes instrutórios</a></div></div><span class=\"proc-clerk-mark\" aria-hidden=\"true\">✓</span></li>\n</ol><div class=\"proc-boundary\"><span>P1 · semanas 1–9</span><span class=\"proc-boundary-rule\"></span><span>P2 · conteúdo novo · semanas 11–16</span></div><figcaption>O corte da P1 fica após a semana 9; o bloco novo da P2 começa na semana 11. A aferição final é cumulativa, conforme o cronograma.</figcaption></figure>",
+    "css": ".proc-docket{margin:0 auto;max-width:1180px;padding:clamp(18px,3vw,34px);border:1.5px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--grid-major);color:var(--ink)}.proc-docket-head{border-bottom:1px solid var(--ink);padding-bottom:14px;margin-bottom:15px}.proc-stamp{display:inline-block;color:var(--conc);border:1px solid var(--conc);padding:4px 7px;font:500 10px var(--mono);letter-spacing:.1em;transform:rotate(-1deg)}.proc-docket-head h2{font:750 clamp(22px,3vw,34px)/1.1 var(--sans);margin:12px 0 5px;letter-spacing:-.02em}.proc-docket-head p{margin:0;color:var(--ink-2);font:15px/1.4 var(--sans)}.proc-route{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));align-items:stretch}.proc-phase{position:relative;min-width:0;padding:11px 9px 13px;border-right:1px solid var(--rule);border-top:3px solid var(--conc);background:linear-gradient(to bottom,var(--conc-wash),transparent 54px)}.proc-phase.p2{border-top-color:var(--dif);background:linear-gradient(to bottom,var(--dif-wash),transparent 54px)}.proc-phase:not(:last-child)::after{content:'›';position:absolute;right:-7px;top:18px;z-index:1;background:var(--paper);color:var(--ink-2);font:20px/1 var(--serif)}.proc-stamp-no{display:block;color:var(--ink-2);font:500 10px var(--mono);letter-spacing:.1em}.proc-phase-title{display:block;margin:7px 0 2px;font:650 13px/1.15 var(--mono);letter-spacing:.04em}.proc-phase-sub{display:block;min-height:34px;color:var(--ink-2);font:12px/1.35 var(--sans)}.proc-phase-links{display:grid;gap:4px;margin-top:8px}.proc-phase-links a{font:12px/1.25 var(--sans);text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2px}.proc-phase-links a:hover,.proc-phase-links a:focus-visible{color:var(--conc);text-decoration-color:var(--conc)}.proc-clerk-mark{display:block;margin-top:10px;color:var(--ink-2);font:12px var(--mono);text-align:right}.proc-boundary{display:flex;align-items:center;gap:11px;margin:16px 0 0;font:500 10px var(--mono);letter-spacing:.045em;text-transform:uppercase}.proc-boundary span:first-child{color:var(--conc)}.proc-boundary span:last-child{color:var(--dif);text-align:right}.proc-boundary-rule{height:1px;background:linear-gradient(to right,var(--conc) 0 48%,var(--dif) 52% 100%);flex:1}.proc-docket figcaption{margin-top:10px;color:var(--ink-2);font:12px/1.4 var(--serif)}@media(max-width:900px){.proc-route{grid-template-columns:repeat(4,minmax(0,1fr))}.proc-phase:nth-child(4),.proc-phase:nth-child(8){border-right:0}.proc-phase:nth-child(4)::after,.proc-phase:nth-child(8)::after{display:none}}@media(max-width:600px){.proc-docket{padding:17px}.proc-route{grid-template-columns:1fr}.proc-phase{display:grid;grid-template-columns:32px 1fr;gap:0 8px;border-right:0;border-top-width:2px;padding:10px 5px;background:linear-gradient(to right,var(--conc-wash),transparent 90px)}.proc-phase.p2{background:linear-gradient(to right,var(--dif-wash),transparent 90px)}.proc-phase:not(:last-child)::after{content:'⌄';display:block;right:auto;left:10px;top:auto;bottom:-10px}.proc-stamp-no{grid-row:1 / span 3;padding-top:3px}.proc-phase-title{margin:0}.proc-phase-sub{min-height:0}.proc-phase-links{grid-column:2;margin-top:6px}.proc-clerk-mark{grid-column:2;margin-top:4px}.proc-boundary{align-items:flex-start;gap:7px;font-size:9px}.proc-boundary span{max-width:43%}.proc-boundary-rule{margin-top:6px}}"
+  },
+  "exam_html": "<aside class=\"exam-card\" aria-labelledby=\"exam-title\"><span class=\"exam-date\">P1 · até a semana 9</span><h2 id=\"exam-title\">A passagem do programa</h2><p>A Primeira Avaliação fecha o bloco das semanas 1–9. A aferição final é cumulativa: acrescenta o conteúdo das semanas 11–16 ao percurso anterior. As datas do cronograma são provisórias e não aparecem aqui.</p><a href=\"revisao-p1.html\"><span>Abrir revisão</span><span aria-hidden=\"true\">→</span></a><a href=\"cartoes.html\"><span>Revisar com cartões</span><span aria-hidden=\"true\">→</span></a><a href=\"aula-01.html\"><span>Começar pela Aula 01</span><span aria-hidden=\"true\">→</span></a></aside>",
   "review_href": "revisao-p1.html",
   "units": [
     {
-      "label": "UNIDADE 01",
-      "title": "Petição inicial",
-      "desc": "Demanda, emenda à inicial e pedido.",
+      "label": "Semana 01",
+      "title": "Apresentação · fase de conhecimento · petição inicial",
+      "desc": "05/08 · Sem leitura específica indicada no cronograma.",
       "lessons": [
         {
           "href": "aula-01.html",
           "label": "Aula 01",
-          "title": "Petição inicial, demanda e pedido",
+          "title": "Petição inicial, demanda e emenda",
           "complementary": false,
-          "desc": "A petição inicial dá forma à demanda, e o que ela apresenta limita o que o juiz pode decidir. Até quando o autor pode alterar pedido e causa de pedir sem o consentimento do réu?",
+          "desc": "Delimitar a demanda e decidir o que deve ser corrigido na petição inicial.",
           "reg": {
-            "does": "Delimitar a demanda pelo pedido e distinga emenda de alteração."
+            "does": "Delimitar a demanda e distinguir emenda de alteração do pedido."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 02",
-      "title": "Improcedência liminar e audiência",
-      "desc": "Improcedência liminar, conciliação e mediação.",
+      "label": "Semana 02",
+      "title": "Aula reservada",
+      "desc": "12/08 · Sem leitura específica indicada no cronograma.",
+      "lessons": []
+    },
+    {
+      "label": "Semanas 03–04",
+      "title": "Improcedência liminar, audiência, partes e litisconsórcio",
+      "desc": "19/08 · 26/08 · EID, Elie Pierre. Litisconsórcio Unitário: fundamentos, estrutura e regime. São Paulo: Revista dos Tribunais, 2016, p. 25–69.",
       "lessons": [
         {
           "href": "aula-02.html",
           "label": "Aula 02",
-          "title": "Indeferimento liminar e audiência inicial",
+          "title": "Improcedência liminar e audiência inicial",
           "complementary": false,
-          "desc": "Duas ações podem receber decisão antes de o réu ser ouvido, mas só uma julga o pedido. Essa diferença define recurso, coisa julgada e se o processo segue para audiência: defeito da inicial ou improcedência do pedido?",
+          "desc": "Escolher a resposta judicial inicial e organizar a passagem para a audiência de conciliação ou mediação.",
           "reg": {
-            "does": "Classificar a decisão liminar e determine se cabe audiência inicial."
+            "does": "Classificar a decisão inicial e identificar se cabe audiência."
           }
-        }
-      ]
-    },
-    {
-      "label": "UNIDADE 03",
-      "title": "Partes e litisconsórcio",
-      "desc": "Partes, sujeitos do processo e litisconsórcio.",
-      "lessons": [
+        },
         {
           "href": "aula-03.html",
           "label": "Aula 03",
           "title": "Partes e litisconsórcio",
           "complementary": false,
-          "desc": "Duas perguntas diferentes governam o litisconsórcio: quem precisa estar no polo (necessário ou facultativo) e se o mérito precisa ser igual para todos (unitário ou simples). Misturar as duas é o erro clássico de prova.",
+          "desc": "Identificar as partes e classificar a pluralidade de sujeitos pelos dois eixos do litisconsórcio.",
           "reg": {
-            "does": "Classificar o litisconsórcio e identifique quem deve integrar o polo."
+            "does": "Classificar o litisconsórcio e identificar quem integra o polo."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 04",
-      "title": "Assistência",
-      "desc": "Intervenção de terceiros: assistência.",
+      "label": "Semanas 05–06",
+      "title": "Intervenção de terceiros",
+      "desc": "02/09 · 09/09 · CINTRA, Lia Carolina Batista. Intervenção de terceiro por ordem do juiz. Cap. 10: Análise crítica do sistema brasileiro vigente de intervenções de terceiro. São Paulo: Revista dos Tribunais, 2017.",
       "lessons": [
         {
           "href": "aula-04.html",
           "label": "Aula 04",
           "title": "Assistência simples e litisconsorcial",
           "complementary": false,
-          "desc": "O sublocatário pode entrar no despejo para defender o locatário, mas seus poderes dependem do vínculo que ele aponta. A omissão do assistido e a renúncia do assistido produzem resultados opostos para o assistente.",
+          "desc": "Identificar o interesse que permite a assistência e escolher o regime de participação do assistente.",
           "reg": {
-            "does": "Relacionar o vínculo do terceiro assistente aos poderes que exerce."
+            "does": "Relacionar o vínculo do assistente aos poderes que exerce."
           }
-        }
-      ]
-    },
-    {
-      "label": "UNIDADE 05",
-      "title": "Denunciação da lide",
-      "desc": "Intervenção provocada e casos no STJ.",
-      "lessons": [
+        },
+        {
+          "href": "aula-12.html",
+          "label": "Aula 12",
+          "title": "Denunciação da lide",
+          "complementary": false,
+          "desc": "Reconhecer a pretensão de garantia ou regresso e separar a demanda principal da demanda denunciada.",
+          "reg": {
+            "does": "Identificar quando cabe denunciação da lide."
+          }
+        },
         {
           "href": "aula-05.html",
           "label": "Aula 05",
-          "title": "Intervenção provocada e amicus curiae",
+          "title": "Chamamento, desconsideração e amicus curiae",
           "complementary": false,
-          "desc": "Denunciação e chamamento parecem trazer um terceiro para o mesmo processo, mas o vínculo é outro: garantia ou regresso de um lado, dívida comum ao mesmo credor do outro. A classificação do vínculo decide qual técnica cabe.",
+          "desc": "Escolher entre chamamento, incidente de desconsideração e participação de amicus curiae segundo a função pretendida.",
           "reg": {
-            "does": "Escolher a intervenção provocada conforme a relação jurídica envolvida."
-          }
-        },
-        {
-          "href": "aula-05-casos.html",
-          "label": "Aula 05 · casos",
-          "title": "Denunciação no STJ",
-          "complementary": true,
-          "desc": "Três casos sobre quando a denunciação pesa demais para quem pediu a tutela, e um sobre o que o denunciado passa a ser: a seguradora que contesta pode ser condenada direto.",
-          "reg": {
-            "does": "Aplicar precedentes do STJ aos limites da denunciação da lide."
+            "does": "Escolher a intervenção de terceiro conforme a relação envolvida."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 06",
-      "title": "Atos processuais e comunicação",
-      "desc": "Atos, cartas, citação e intimação.",
+      "label": "Semana 07",
+      "title": "Comunicação, atos, cooperação e prazos",
+      "desc": "16/09 · Estudar modelos de documentos disponibilizados no Moodle.",
       "lessons": [
+        {
+          "href": "aula-06-citacao.html",
+          "label": "Aula 06",
+          "title": "Comunicação dos atos: citação e intimação",
+          "complementary": false,
+          "desc": "Ler AR, edital, mandado e certidão de nota de expediente e identificar o ato de comunicação registrado.",
+          "reg": {
+            "does": "Determinar a modalidade de citação e o marco de ciência."
+          }
+        },
         {
           "href": "aula-06.html",
           "label": "Aula 06",
-          "title": "Atos processuais, negócios e cartas",
+          "title": "Atos processuais, processo eletrônico e cooperação",
           "complementary": false,
-          "desc": "Uma cláusula de foro num contrato já é ato processual, e as partes podem mudar o procedimento, mas não tudo. Onde termina o poder do art. 190, e o que o juiz faz quando a parte descumpre o negócio?",
+          "desc": "Escolher a forma, o lugar e o meio de prática do ato e reconhecer quando usar carta ou cooperação nacional.",
           "reg": {
-            "does": "Classificar atos processuais, negócios e cartas pelos seus efeitos e limites."
+            "does": "Classificar atos, negócios processuais e cartas."
           }
         },
-        {
-          "href": "aula-06-citacao.html",
-          "label": "Aula 06 · complemento",
-          "title": "Citação e intimação",
-          "complementary": true,
-          "reg": {
-            "does": "Determinar a modalidade de citação e o marco de ciência processual aplicável."
-          }
-        }
-      ]
-    },
-    {
-      "label": "UNIDADE 07",
-      "title": "Prazos e preclusão",
-      "desc": "Tempo dos atos e espécies de preclusão.",
-      "lessons": [
         {
           "href": "aula-07.html",
           "label": "Aula 07",
-          "title": "Prazos processuais e tempo do processo",
+          "title": "Prazos e preclusão",
           "complementary": false,
-          "desc": "O prazo só começa a correr depois de um marco que varia com o modo de comunicação, e disponibilização no Diário da Justiça não é publicação. Errar esse ponto antecipa o prazo em um dia útil e custa o recurso.",
+          "desc": "Fixar o termo inicial, contar o prazo e identificar quando o poder de praticar o ato se encerra.",
           "reg": {
-            "does": "Calcular prazos úteis a partir do marco correto de cada comunicação."
-          }
-        },
-        {
-          "href": "aula-07-preclusao.html",
-          "label": "Aula 07 · complemento",
-          "title": "Preclusão e suas espécies",
-          "complementary": true,
-          "reg": {
-            "does": "Distinguir as espécies de preclusão pelo fato que extingue o poder processual."
+            "does": "Calcular prazos úteis a partir do marco de comunicação aplicável."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 08",
+      "label": "Semana 08",
       "title": "Resposta do réu",
-      "desc": "Contestação, reconvenção e revelia.",
+      "desc": "23/09 · DIDIER JR., Fredie. Curso de Direito Processual Civil. Vol. I. Salvador: Jus Podivm, 2015, p. 637–670.",
       "lessons": [
         {
           "href": "aula-08.html",
           "label": "Aula 08",
-          "title": "A resposta do réu",
+          "title": "Resposta do réu e contestação",
           "complementary": false,
-          "desc": "Resposta é o conjunto das reações do réu, e contestação é só a peça de defesa. Contar quinze dias da citação, sem olhar a audiência, e deixar fato sem impugnação específica são os erros que a prova explora.",
+          "desc": "Organizar a defesa na contestação e determinar quando ela deve ser apresentada.",
           "reg": {
-            "does": "Estruturar a contestação com preliminares, impugnação específica e defesa de mérito."
+            "does": "Estruturar a contestação e formular a defesa do réu."
           }
         },
         {
           "href": "aula-08-revelia.html",
-          "label": "Aula 08 · complemento",
-          "title": "Reconvenção e revelia",
-          "complementary": true,
-          "desc": "A contestação resiste, a reconvenção demanda. E a revelia é a falta de resposta no prazo, cujo efeito material, a presunção de veracidade, tem quatro exceções e não decide o direito.",
+          "label": "Aula 08",
+          "title": "Revelia e reconvenção",
+          "complementary": false,
+          "desc": "Distinguir a falta de contestação da formulação de demanda pelo réu e resolver suas consequências no caso.",
           "reg": {
-            "does": "Formular reconvenção e determine os efeitos e limites da revelia."
+            "does": "Formular reconvenção e determinar os efeitos da revelia."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 09",
-      "title": "Nulidades processuais",
-      "desc": "Nulidades e estabilização do processo.",
+      "label": "Semana 09",
+      "title": "Nulidades, estabilização, saneamento e julgamento",
+      "desc": "30/09 · PASSOS, José Joaquim Calmon de. Esboço de uma teoria das nulidades aplicada às nulidades processuais. Rio de Janeiro: Forense, 2005, p. 123–142.",
       "lessons": [
         {
           "href": "aula-09.html",
           "label": "Aula 09",
-          "title": "Nulidades processuais e estabilização",
+          "title": "Nulidades processuais",
           "complementary": false,
-          "desc": "Um ato defeituoso vale até o juiz pronunciar a nulidade, e só o defeito somado ao prejuízo justifica desfazê-lo. A mesma falha de forma pode anular a intimação de um réu e salvar a de outro.",
+          "desc": "Examinar o defeito de um ato e justificar sua conservação, correção ou invalidação.",
           "reg": {
-            "does": "Aplicar defeito e prejuízo para decidir se cabe invalidar o ato processual."
+            "does": "Aplicar defeito e prejuízo à análise de nulidade processual."
+          }
+        },
+        {
+          "href": "aula-13.html",
+          "label": "Aula 13",
+          "title": "Estabilização e preparação do processo para decidir",
+          "complementary": false,
+          "desc": "Organizar as providências após a resposta e identificar se o processo exige regularização, julgamento ou instrução.",
+          "reg": {
+            "does": "Relacionar estabilização e organização do processo à decisão."
           }
         }
       ]
     },
     {
-      "label": "UNIDADE 10",
-      "title": "Saneamento e julgamento",
-      "desc": "Providências preliminares, saneamento e mérito parcial.",
+      "label": "Semana 10",
+      "title": "Primeira avaliação · correção",
+      "desc": "07/10 · Sem leitura específica indicada no cronograma.",
+      "lessons": []
+    },
+    {
+      "label": "Semanas 11–12",
+      "title": "Estabilização, saneamento, julgamento e decisões parciais",
+      "desc": "14/10 · 21/10 · BARBOSA MOREIRA, José Carlos. Saneamento do processo e audiência preliminar. In: Temas de Direito Processual. Quarta Série. São Paulo: Saraiva, 1989. / LUCON, Paulo. Comentários aos arts. 355 a 357 do CPC/2015. In: Código de Processo Civil Anotado. AASP. OAB-PR, 2016, p. 586–596.",
       "lessons": [
+        {
+          "href": "aula-10-estabilizacao.html",
+          "label": "Aula 10",
+          "title": "Saneamento e estabilização da organização",
+          "complementary": false,
+          "desc": "Construir a organização da instrução e identificar o que a decisão de saneamento fixa para o restante do processo.",
+          "reg": {
+            "does": "Explicar como o saneamento organiza a fase de conhecimento."
+          }
+        },
         {
           "href": "aula-10.html",
           "label": "Aula 10",
           "title": "Julgamento conforme o estado do processo",
           "complementary": false,
-          "desc": "Terminado o prazo da contestação, o juiz corrige, ouve o autor e escolhe uma de cinco saídas. O julgamento antecipado só vale se a prova é desnecessária, e o juiz que o adota não pode julgar improcedente por falta de prova.",
+          "desc": "Escolher a saída compatível com o estado do processo e justificar se a instrução ainda é necessária.",
           "reg": {
-            "does": "Escolher a saída após a resposta do réu e verifique quando cabe julgamento antecipado."
+            "does": "Classificar as vias de julgamento conforme o estado do processo."
           }
         },
         {
-          "href": "aula-10-estabilizacao.html",
-          "label": "Aula 10 · complemento",
-          "title": "Estabilização do saneamento e acordos",
-          "complementary": true,
-          "reg": {
-            "does": "Separar o saneamento estabilizado dos capítulos ainda sujeitos a recurso."
-          }
-        }
-      ]
-    },
-    {
-      "label": "UNIDADE 11",
-      "title": "Sentença e mérito",
-      "desc": "Extinção sem mérito e resolução de mérito.",
-      "lessons": [
-        {
           "href": "aula-11.html",
           "label": "Aula 11",
-          "title": "Sentença, extinção e abandono",
+          "title": "Decisões sem resolução do mérito",
           "complementary": false,
-          "desc": "Excluir um litisconsorte por ilegitimidade não é sentença, embora se funde no art. 485. A forma depende da extensão da decisão, e o recurso muda com ela: apelação ou agravo.",
+          "desc": "Reconhecer a saída sem resolução do mérito e distinguir o encerramento total da exclusão de uma parte do processo.",
           "reg": {
-            "does": "Classificar a extinção pelo mérito, extensão e forma para definir o recurso cabível."
+            "does": "Classificar decisões sem resolução do mérito."
           }
         },
         {
           "href": "aula-11-merito.html",
-          "label": "Aula 11 · complemento",
-          "title": "Mérito, antecipado e parcial",
-          "complementary": true,
+          "label": "Aula 11",
+          "title": "Resolução do mérito e julgamentos parciais",
+          "complementary": false,
+          "desc": "Distinguir a decisão total da parcial e identificar que parcela da demanda está pronta para decisão.",
           "reg": {
-            "does": "Identificar quando cabe julgamento parcial e quais efeitos de mérito ele produz."
+            "does": "Classificar a resolução do mérito e os julgamentos parciais."
+          }
+        }
+      ]
+    },
+    {
+      "label": "Semana 13",
+      "title": "Semana Acadêmica",
+      "desc": "28/10 · Sem leitura específica indicada no cronograma.",
+      "lessons": []
+    },
+    {
+      "label": "Semanas 14–16",
+      "title": "Teoria geral da prova",
+      "desc": "04/11 · 11/11 · 18/11 · KNIJNIK, Danilo. A prova nos juízos cível, penal e tributário. Rio de Janeiro: Forense, 2007, p. 3–48. / CARPES, Artur. Ônus dinâmico da prova. Porto Alegre: Livraria do Advogado, 2010, p. 45–61.",
+      "lessons": [
+        {
+          "href": "aula-14.html",
+          "label": "Aula 14",
+          "title": "Teoria da prova: princípios e modelos",
+          "complementary": false,
+          "desc": "Comparar os modelos de prova e usar os princípios para formular o problema probatório de um caso.",
+          "reg": {
+            "does": "Distinguir princípios e modelos da teoria geral da prova."
+          }
+        },
+        {
+          "href": "aula-15.html",
+          "label": "Aula 15",
+          "title": "Objeto da prova e admissibilidade",
+          "complementary": false,
+          "desc": "Delimitar os fatos que precisam ser provados e avaliar a admissibilidade do meio proposto.",
+          "reg": {
+            "does": "Delimitar o objeto da prova e avaliar sua admissibilidade."
+          }
+        },
+        {
+          "href": "aula-16.html",
+          "label": "Aula 16",
+          "title": "Valoração e modelos de constatação",
+          "complementary": false,
+          "desc": "Avaliar o suporte probatório de uma conclusão e distinguir valoração do padrão exigido para decidir.",
+          "reg": {
+            "does": "Avaliar a prova e distinguir modelos de constatação."
+          }
+        },
+        {
+          "href": "aula-17.html",
+          "label": "Aula 17",
+          "title": "Ônus da prova",
+          "complementary": false,
+          "desc": "Distribuir o ônus probatório no caso e identificar sua função quando persistir a dúvida sobre um fato.",
+          "reg": {
+            "does": "Distribuir o ônus da prova diante dos fatos controvertidos."
+          }
+        },
+        {
+          "href": "aula-18.html",
+          "label": "Aula 18",
+          "title": "Máximas de experiência e poderes instrutórios",
+          "complementary": false,
+          "desc": "Identificar o papel das máximas de experiência e justificar o alcance da iniciativa probatória judicial.",
+          "reg": {
+            "does": "Relacionar máximas de experiência e poderes instrutórios."
           }
         }
       ]
     }
   ],
-  "info_items_html": "<div class=\"fontes-card\" role=\"dialog\" aria-label=\"Fontes do curso\"><h2>Fontes do curso</h2><h3>Do programa</h3><ul><li>Fredie Didier Jr., <i>Curso de Direito Processual Civil</i>, v. 1</li><li>Luiz Guilherme Marinoni, Sérgio Arenhart e Daniel Mitidiero, <i>Novo Curso de Processo Civil</i></li></ul><h3>Leituras indicadas</h3><ul><li>Elie Pierre Eid, <i>Litisconsórcio unitário: fundamentos, estrutura e regime</i></li><li>J. J. Calmon de Passos, <i>Esboço de uma teoria das nulidades aplicada às nulidades processuais</i></li><li>Paulo Henrique dos Santos Lucon, comentários aos arts. 355 a 357 do CPC</li></ul><h3>Lei</h3><ul><li>Código de Processo Civil (Lei 13.105/2015)</li></ul><p>As principais, não a bibliografia completa.</p></div>",
+  "info_items_html": "<li>Cronograma do semestre · UFRGS · 2026/2</li><li>Leituras semanais e modelos de documentos do Moodle</li><li>A Primeira Avaliação cobre semanas 1–9; a aferição final é cumulativa.</li>",
   "bibliografia": {
     "basica": [
-      "DIDIER JR, Fredie. Curso de Direito Processual Civil. Volume I. Salvador: Ius Podivm",
+      "DIDIER JR., Fredie. Curso de Direito Processual Civil. Volume I. Salvador: Ius Podivm.",
       "MARINONI, Luiz Guilherme; ARENHART, Sérgio Cruz; MITIDIERO, Daniel. Novo Curso de Processo Civil. Volume I. São Paulo: Revista dos Tribunais."
     ],
-    "complementar": [],
-    "source_file": "Direito Processual Civil I-a/Anotações/Cronograma do Semestre - P1 - 2026-2.pdf (Bibliografia de acompanhamento geral)"
+    "complementar": [
+      "EID, Elie Pierre. Litisconsórcio Unitário: fundamentos, estrutura e regime. São Paulo: Revista dos Tribunais, 2016, p. 25–69.",
+      "CINTRA, Lia Carolina Batista. Intervenção de terceiro por ordem do juiz. Cap. 10: Análise crítica do sistema brasileiro vigente de intervenções de terceiro. São Paulo: Revista dos Tribunais, 2017.",
+      "DIDIER JR., Fredie. Curso de Direito Processual Civil. Vol. I. Salvador: Jus Podivm, 2015, p. 637–670.",
+      "PASSOS, José Joaquim Calmon de. Esboço de uma teoria das nulidades aplicada às nulidades processuais. Rio de Janeiro: Forense, 2005, p. 123–142.",
+      "BARBOSA MOREIRA, José Carlos. Saneamento do processo e audiência preliminar. In: Temas de Direito Processual. Quarta Série. São Paulo: Saraiva, 1989.",
+      "LUCON, Paulo. Comentários aos arts. 355 a 357 do CPC/2015. In: Código de Processo Civil Anotado. AASP. OAB-PR, 2016, p. 586–596.",
+      "KNIJNIK, Danilo. A prova nos juízos cível, penal e tributário. Rio de Janeiro: Forense, 2007, p. 3–48.",
+      "CARPES, Artur. Ônus dinâmico da prova. Porto Alegre: Livraria do Advogado, 2010, p. 45–61."
+    ]
   },
-  "endnote_html": "<p class=\"endnote\">Processo Civil I-a (DIR02002) · UFRGS · 2026/2.</p>",
-  "excluded_pages": [
-    {
-      "page": "cartoes.html",
-      "reason": "ferramenta de cartões de estudo"
-    },
-    {
-      "page": "revisao-p1.html",
-      "reason": "revisão para avaliação"
-    }
-  ],
+  "endnote_html": "DIR02002 · UFRGS · 2026/2",
   "reg": {
     "exams": [
       {
         "label": "P1",
-        "date": "07/10",
         "covers": [
           "aula-01.html",
           "aula-02.html",
           "aula-03.html",
           "aula-04.html",
+          "aula-12.html",
           "aula-05.html",
-          "aula-05-casos.html",
-          "aula-06.html",
           "aula-06-citacao.html",
+          "aula-06.html",
           "aula-07.html",
-          "aula-07-preclusao.html",
           "aula-08.html",
           "aula-08-revelia.html",
-          "aula-09.html"
+          "aula-09.html",
+          "aula-13.html"
+        ]
+      },
+      {
+        "label": "P2",
+        "covers": [
+          "aula-10-estabilizacao.html",
+          "aula-10.html",
+          "aula-11.html",
+          "aula-11-merito.html",
+          "aula-14.html",
+          "aula-15.html",
+          "aula-16.html",
+          "aula-17.html",
+          "aula-18.html"
         ]
       }
     ]
