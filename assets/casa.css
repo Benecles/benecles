@@ -56,3 +56,10 @@ body[data-int="forte"] .held, body[data-int="forte"] .limit { -webkit-box-decora
 
 /* run-in head: a short bold label that opens a paragraph in a parallel run (Peru, 1823. / Brasil, 1824.). Structure, not emphasis. */
 .runin { font-weight: 650; }
+/* .fonte.resumo: our summary of a decision, not its words (no blockquote, no quote face) */
+.fonte .corpo { font: 400 17.5px/1.6 var(--serif); color: var(--ink-2); }
+.fonte .corpo p { margin: 0 0 .9em; max-width: none; width: auto; }
+.fonte .corpo p:last-child { margin-bottom: 0; }
+.fonte.resumo > header::after { content: "resumo"; margin-left: auto; color: var(--muted); }
+.fonte .tese { margin: 14px 0 0; padding-top: 12px; border-top: 1px dotted var(--grid-major); font: 500 17.5px/1.55 var(--serif); color: var(--ink); }
+.fonte .tese::before { content: "resultado"; display: block; margin-bottom: 6px; font: 500 10px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--bar); }

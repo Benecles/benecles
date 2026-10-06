@@ -220,10 +220,6 @@
 "after": "interno da Casa.</p>\n    <span class=\"src\" aria-hidden=\"true\"></span></div></div>\n  </div>\n</div>"
 },
 {
-"before": "suspensa.</div>\n    </div>\n  </div>\n  <span class=\"src\" hidden data-src=\"Slides 14–15\"></span>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">",
-"after": "suspensa.</div>\n    </div>\n  </div>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">"
-},
-{
 "before": "pelo Plenário.</dd>\n  </dl>\n  <div class=\"chave\"><span class=\"label\"></span>A via existe, mas a concessão definitiva é rara; o MS 32.033/DF destaca-se pelo deferimento cautelar.</div>\n\n  <div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Casos relevantes no STF sobre controle preventivo\">\n  <table class=\"compare\">\n    <thead>",
 "after": "pelo Plenário.</dd>\n  </dl>\n\n  <div class=\"table-wrap\" tabindex=\"0\" role=\"region\" aria-label=\"Casos relevantes no STF sobre controle preventivo\">\n  <table class=\"compare\">\n    <thead>"
 },
@@ -286,5 +282,25 @@
 {
 "before": "do próprio parlamentar: <em>mandado de segurança</em> contra a mesa",
 "after": "do próprio parlamentar: <span class=\"term\" tabindex=\"0\" data-def=\"Ação constitucional usada para proteger direito líquido e certo contra ilegalidade ou abuso de poder.\">mandado de segurança</span> contra a mesa"
+},
+{
+"before": "</p>\n</section>\n<div class=\"wide\">\n  <div class=\"julgados\">\n    <div class=\"julgado dif\">\n      <header><span>MS 32.033/DF</span><span>Rel. Min. Gilmar ",
+"after": "</p>\n</section>\n<div class=\"wide\">\n  <aside class=\"fonte dec resumo\" aria-label=\"Resumo: MS 32.033/DF\"><header><span>MS 32.033/DF</span><span class=\"loc\">Rel. Min. Gilmar "
+},
+{
+"before": " de 2013</span></header>\n      <div class=\"corpo\">\n        <p>Medida liminar afastou",
+"after": " de 2013</span></header><div class=\"corpo\"><p>Medida liminar afastou"
+},
+{
+"before": "denegou a segurança.</div>\n    </div>\n    <div class=\"julgado dif\">\n      <header><span>MS 32.036 e 32.037/DF</span><span>Rel. Min. Dias ",
+"after": "denegou a segurança.</div></aside>\n    <aside class=\"fonte dec resumo\" aria-label=\"Resumo: MS 32.036 e 32.037/DF\"><header><span>MS 32.036 e 32.037/DF</span><span class=\"loc\">Rel. Min. Dias "
+},
+{
+"before": " de 2013</span></header>\n      <div class=\"corpo\">\n        <p>Mandado de segurança",
+"after": " de 2013</span></header><div class=\"corpo\"><p>Mandado de segurança"
+},
+{
+"before": "de fato, suspensa.</div>\n    </div>\n  </div>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">",
+"after": "de fato, suspensa.</div></aside>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">"
 }
 ]
