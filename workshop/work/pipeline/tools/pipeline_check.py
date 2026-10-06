@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the CUFRGS source pipeline's S0–S4 stage artifacts.
+"""Validate the source pipeline's S0–S4 stage artifacts.
 
 Usage: pipeline_check.py {s0,s1,s2,s3,s4} COURSE [--workspace-root PATH]
        [--map PATH] [--shelf PATH] [--chapters PATH] [--triage PATH]

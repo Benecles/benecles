@@ -353,7 +353,7 @@ def label_of(s):
 def front(C, index):
     src = open(os.path.join(SITE, 'courses', 'direito-latino-americano', 'index.html')).read()
     head = src[:src.find('<body')]
-    head = re.sub(r'<title>.*?</title>', f"<title>{C['course']} · CUFRGS</title>", head, flags=re.S)
+    head = re.sub(r'<title>.*?</title>', f"<title>{C['course']} · Ordenações</title>", head, flags=re.S)
     desc = f"Guia de estudo de {C['course']} ({C['code']}), UFRGS 2026/2: aulas na ordem do programa, com casos, quadros e testes."
     head = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{desc}">', head)
     head = re.sub(r'<!-- FONTES:START -->.*?<!-- FONTES:END -->', '', head, flags=re.S)
@@ -374,7 +374,7 @@ def front(C, index):
     kick_exam = f" · {C['exam'][0]} em {C['exam'][1][:5]}" if C['exam'] else ''
     prof = f"<span>{C['prof']}</span>" if C['prof'] else ''
     body = f'''<body>
-<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← CUFRGS</a><span>{C['code']} · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← Ordenações</a><span>{C['code']} · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 <header class="hero front">
   <div class="kicker label"><span>Guia de estudo</span>{prof}<span>{n_aulas} aulas{kick_exam}</span></div>
   <h1><span class="split">{C['course'].rsplit(' ', 1)[0]}</span><span class="split">{C['course'].rsplit(' ', 1)[1]}</span></h1>

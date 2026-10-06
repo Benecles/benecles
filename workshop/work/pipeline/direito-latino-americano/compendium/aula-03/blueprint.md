@@ -113,7 +113,7 @@ O pedido de 1979/2010 abre a leitura; o resultado doméstico é seguido por um j
 
 **Total planejado:** ~3.790 palavras de corpo mais abertura, captions e cartão (~4,0–4,3 mil pelo contador do site). Não deixar cair abaixo da baseline oficial renovada. Figuras e trechos só de prosa se alternam: §01 figura, §02 argumentos após tally, §03 mapa, §04 instrumento, §05 prosa/caso. Se §03 e §04 parecerem duas figuras consecutivas no render, interpor a leitura argumentativa de 3–4 parágrafos e deslocar a segunda figura para depois do primeiro argumento do §04.
 
-## A7. Figures: the cast (`CUFRGS Visual Casting`)
+## A7. Figures: the cast (`Visual Casting`)
 
 Teste abreviado por candidato: **S** = troca de rótulos para outra aula? **L** = forma repetida no curso? **O** = objeto jurídico real presente? **V** = verbo/ganho do leitor? “Não” em S e L, “sim” em O e V são os sinais favoráveis. A Fig. 1 atual `p-rd0/1` é **canônica e preservada**: o passe recente do CEO já a recastou. Qualquer redesenho exigiria razão escrita, que este plano não encontrou. Fig. 2 `p-vt` e Fig. 3 `p-gl0/1` também têm valor próprio; intervenções abaixo são de texto/posição, salvo a figura nova.
 

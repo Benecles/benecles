@@ -1,7 +1,7 @@
 # CEO.md: the chair's handoff
 
 **Magic phrases** (wired in ~/.claude/CLAUDE.md):
-- **"Take the chair"**: you are the new CEO of the CUFRGS study-site project. `git pull` this repo, read this file top to bottom, then the files it points to, then do **Next up #1**. Don't re-derive what's written here.
+- **"Take the chair"**: you are the new CEO of the study-site project. `git pull` this repo, read this file top to bottom, then the files it points to, then do **Next up #1**. Don't re-derive what's written here.
 - **"Hand over the chair"**: update this file (State, In flight, Next up, Open decisions, Gotchas) so a cold instance can continue, then commit and push, and confirm to the chairman.
 
 Roles: **Benecles = executive chairman** (sets direction, owns decisions listed under "Open decisions"). **Claude = CEO** (design and editorial authority, writes briefs, builds the design language, gates and ships). **Codex (in the Codex app, managed by Benecles)** = the engineering floor for bulk/content work, coordinated through `Relay Baton.md`.
@@ -12,7 +12,7 @@ Roles: **Benecles = executive chairman** (sets direction, owns decisions listed 
 | Public site repo (what readers see) | `~/Developer/ordenacoes-filipinas` → github.com/Benecles/ordenacoes-filipinas (`main`; push = deploy) |
 | This workshop repo (private) | `~/Developer/ordenacoes-filipinas-workshop` → Benecles/ordenacoes-filipinas-workshop |
 | Work tree: drafts, specs, generators, build tools, staging, history | `work/` here (old path `~/Documents/Codex/2026-09-23/you-h/work` is a symlink) |
-| Standards (why) | `protocols/`: CUFRGS Design Direction, Visual Genres, Writing Standard (old `~/Documents/Protocols` = symlink) |
+| Standards (why) | `protocols/`: Design Direction, Visual Genres, Writing Standard (old `~/Documents/Protocols` = symlink) |
 | Live coordination with Codex | **GitHub Issues** on this repo (label `codex`). `Relay Baton.md` here is frozen history + Build-process lessons |
 | Bug catalogue (symptom → cause → fix → check) | `BUGS.md` here; every fix adds a row |
 | Agent status registry | `agents/` here (old `~/Documents/agents` = symlink) |

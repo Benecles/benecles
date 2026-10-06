@@ -8,7 +8,7 @@ from maps import latam_map, map_defs, xy
 PUB = '/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/'
 src = open(PUB + 'teoria-geral-dos-contratos/index.html').read()
 head = src[:src.find('<body')]
-head = re.sub(r'<title>.*?</title>', '<title>Direito Latino-americano · CUFRGS</title>', head, flags=re.S)
+head = re.sub(r'<title>.*?</title>', '<title>Direito Latino-americano · Ordenações</title>', head, flags=re.S)
 head = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="Guia de estudo de Direito Latino-americano (DIR03057), UFRGS 2026/2: constitucionalismo, cortes, justiça de transição, soberania popular e litígio estrutural na América Latina.">', head)
 head = re.sub(r'curso\.css\?v=[^"]*', f'curso.css?v={kit.VER}', head)
 head = head.replace('</style>', '.atlas{display:grid;grid-template-columns:minmax(0,640px) minmax(0,1fr);gap:34px;align-items:start}'
@@ -47,7 +47,7 @@ EXTRA_UNITS = ('<article class="lesson-group"><h3><span>Atividade · 05/10</span
 units = ''.join(f'<article class="lesson-group"><h3><span>{d}</span>{t}</h3><p>{p}</p><div class="lesson-links">' + ''.join(f'<a href="{h}">{l}</a>' for h, l in links) + '</div></article>' for d, t, p, links in UNITS)
 
 body = f'''<body>
-<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← CUFRGS</a><span>DIR03057 · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<nav class="topbar" aria-label="Navegação principal"><a href="../../index.html">← Ordenações</a><span>DIR03057 · UFRGS · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 <header class="hero">
   <div class="kicker label"><span>Guia de estudo · Direito Público</span><span>Direito Latino-americano</span><span>Semestre 2026/2</span></div>
   <h1><span class="split">Direito</span><span class="split">Latino-americano</span></h1>
@@ -62,7 +62,7 @@ body = f'''<body>
       <a href="revisao-atividade.html"><span>Abrir revisão</span><span aria-hidden="true">→</span></a>
       <a class="resume" href="#" hidden><span>Continuar de onde parou</span><span aria-hidden="true">→</span></a>
     </aside>
-<script>(function(){{try{{var d=JSON.parse(localStorage.getItem('cufrgs-dla-last')||'null');if(!d||!/^\\d\\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}}catch(e){{}}}})()</script>
+<script>(function(){{try{{var d=JSON.parse(localStorage.getItem('ordenacoes-dla-last')||'null');if(!d||!/^\\d\\d$/.test(d.n))return;var a=document.querySelector('.exam-card .resume');a.href='aula-'+d.n+'.html';a.firstChild.textContent='Continuar: Aula '+d.n+' · '+String(d.t).slice(0,48);a.hidden=false}}catch(e){{}}}})()</script>
   </div>
 </header>
 

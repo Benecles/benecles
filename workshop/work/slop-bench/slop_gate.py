@@ -21,7 +21,7 @@ out = a.out or os.path.join(HERE, 'runs', os.path.splitext(os.path.basename(a.pa
 os.makedirs(out, exist_ok=True)
 res = lint(a.page, None)
 json.dump(res, open(os.path.join(out, 'lint.json'), 'w'), ensure_ascii=False, indent=2)
-ws = open(os.path.join(ROOT, 'protocols', 'CUFRGS Writing Standard.md')).read()
+ws = open(os.path.join(ROOT, 'protocols', 'Writing Standard.md')).read()
 part_d = ws[ws.index('## Part D.'):ws.index('## Part E.')]
 style = open(os.path.join(ROOT, 'protocols', 'STYLE.md')).read()
 prompt = open(os.path.join(HERE, 'critic_prompt.md')).read()

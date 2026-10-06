@@ -21,7 +21,7 @@
 
 ## Limits
 
-The distraction experiment used two science texts and simple, static, peripheral stimuli; it does not test animated site chrome, textured backgrounds, or the CUFRGS reading layout. Hypertext results vary by reader, task, and link design, and much of the review predates current web patterns. Heading experiments test structured expository texts, not legal lessons specifically. The Wikimedia study is small and qualitative. No causal comprehension claim should be attached to progress bars or sticky controls from this evidence.
+The distraction experiment used two science texts and simple, static, peripheral stimuli; it does not test animated site chrome, textured backgrounds, or the reading layout. Hypertext results vary by reader, task, and link design, and much of the review predates current web patterns. Heading experiments test structured expository texts, not legal lessons specifically. The Wikimedia study is small and qualitative. No causal comprehension claim should be attached to progress bars or sticky controls from this evidence.
 
 ## CSS implication
 

@@ -2,7 +2,7 @@
 
 **What it is.** A writing-quality gate that sits after every writer on this project (lessons, cards, fronts, briefs' visible text). It measures where our prose drifts from a defined target style and fixes those spans locally. It is *not* a "humanizer" and not an AI detector. The chairman asked for every useful idea in his research to be implemented; this brief is the CEO's cut of that research. The HOW is yours.
 
-**Read first:** `protocols/CUFRGS Writing Standard.md`, Part D (now with the new preamble, D9 density limits, D10 the five pathologies). That is the policy; this brief is the machinery.
+**Read first:** `protocols/Writing Standard.md`, Part D (now with the new preamble, D9 density limits, D10 the five pathologies). That is the policy; this brief is the machinery.
 
 ## The principle the build must embody
 Don't teach the model to "sound human". Give it a defined target distribution, measure where its output deviates, and correct those deviations as locally as possible. Every full-draft rewrite re-imposes model house style (LLM rewrites cut complexity variance 21–50%; post-edited LLM drafts stay LLM-like), so **no stage may rewrite unflagged text**.

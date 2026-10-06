@@ -92,7 +92,7 @@ Diffuse/concentrated definitions and the usual routes/effects → Aula 11. Senat
 
 **Total:** ~3,150 words, one sitting. The section forms alternate: table/prose, prose-only, table/prose, figure/prose, table/prose, case, recap. The figure is not a word-table; it carries the numerical split in a real vote. No section is a survey of future lessons.
 
-## A7. Figures: the cast (protocols/CUFRGS Visual Casting.md)
+## A7. Figures: the cast (protocols/Visual Casting.md)
 
 | Fig | Move | Cast (chosen) | Rejected casts and why | The sheet, described | Card claims |
 |---|---|---|---|---|---|

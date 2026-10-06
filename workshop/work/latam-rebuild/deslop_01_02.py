@@ -1,4 +1,4 @@
-# Deslop pass on Latam Aulas 01 and 02 against the CUFRGS Writing Standard Part D (Claude, 05/10):
+# Deslop pass on Latam Aulas 01 and 02 against the Writing Standard Part D (Claude, 05/10):
 # negative parallelism used as flourish (D1), slogans and moral closers (D4), intensifiers (D6), reader address in
 # prose (D7), house tics and formulaic connectors (D3/D4). Legal distinctions that carry law in both halves stay.
 import sys

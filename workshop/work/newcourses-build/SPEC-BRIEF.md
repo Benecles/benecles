@@ -1,8 +1,8 @@
 # Page-spec brief (cloud session, 2026-09-29)
 
-Claude is turning finished drafts (`course-drafts-2026-09-28/<course>/<packet>/draft.md`) into public CUFRGS pages with one shared renderer. The renderer handles the body text. You write, per lesson, the **editorial pieces around it** as JSON: title lines, deck, meta description, one "bet" per page, and the recall quiz. Everything you write must be supported by that lesson's own draft (and its ledger); never add law, cases or facts that are not in the draft.
+Claude is turning finished drafts (`course-drafts-2026-09-28/<course>/<packet>/draft.md`) into public pages with one shared renderer. The renderer handles the body text. You write, per lesson, the **editorial pieces around it** as JSON: title lines, deck, meta description, one "bet" per page, and the recall quiz. Everything you write must be supported by that lesson's own draft (and its ledger); never add law, cases or facts that are not in the draft.
 
-Read first: `/home/user/study-lab-private/Documents/Protocols/CUFRGS Writing Standard.md` (Parts C and D are binding for every string you write), and look at how a live page uses these pieces: `/home/user/study-lab/courses/direito-latino-americano/aula-09.html` (hero h1 in two lines, deck, the `.bet` block, the `.quiz` at the end). Its generator is `/home/user/study-lab-private/Documents/Codex/2026-09-23/you-h/work/latam-build/a09.py`.
+Read first: `/home/user/study-lab-private/Documents/Protocols/Writing Standard.md` (Parts C and D are binding for every string you write), and look at how a live page uses these pieces: `/home/user/study-lab/courses/direito-latino-americano/aula-09.html` (hero h1 in two lines, deck, the `.bet` block, the `.quiz` at the end). Its generator is `/home/user/study-lab-private/Documents/Codex/2026-09-23/you-h/work/latam-build/a09.py`.
 
 ## Output: one JSON file per lesson
 Path: `/home/user/study-lab-private/Documents/Codex/2026-09-23/you-h/work/newcourses-build/specs/<course>/<key>.json`

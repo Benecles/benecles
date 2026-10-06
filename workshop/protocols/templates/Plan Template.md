@@ -1,6 +1,6 @@
 # Plan: <course> · <lesson or page>
 
-Follow Part A of `~/Documents/Protocols/CUFRGS Writing Standard.md`. Keep this file next to the draft in the private build folder and update it whenever the text changes shape.
+Follow Part A of `~/Documents/Protocols/Writing Standard.md`. Keep this file next to the draft in the private build folder and update it whenever the text changes shape.
 
 ## A1. Reader brief
 - Already known (earlier lessons/concepts):

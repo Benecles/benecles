@@ -1,4 +1,4 @@
-# CUFRGS Source Pipeline (v1, 2026-09-30)
+# Source Pipeline (v1, 2026-09-30)
 
 Owner: Claude (CEO). Direction: Benecles, 30/09. Codex runs it; Claude gates each stage.
 

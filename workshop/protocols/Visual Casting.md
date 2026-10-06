@@ -1,4 +1,4 @@
-# CUFRGS Visual Casting
+# Visual Casting
 
 *The master brief for every figure on the site. Written by the CEO, 03/10. It sits above the Figure Library (craft and tests), Visual Genres (forms) and the kit (primitives): those say what a good figure is made of; this says what each lesson's figure must BE.*
 

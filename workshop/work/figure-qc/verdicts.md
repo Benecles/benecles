@@ -1,6 +1,6 @@
 # Figure QC, 01/10 (CEO)
 
-All 784 live figures, collapsed to 400 distinct figures (scrolly steps grouped), judged against `protocols/CUFRGS Figure Library.md`. Ids are VIS-2 catalogue ids (`work/vis-catalog/catalog.csv` on the site repo's `codex/vis-2` branch); `+N` means the following N steps of the same scrolly figure. **Rule: whatever isn't listed as keep or acceptable in a course is a redo.**
+All 784 live figures, collapsed to 400 distinct figures (scrolly steps grouped), judged against `protocols/Figure Library.md`. Ids are VIS-2 catalogue ids (`work/vis-catalog/catalog.csv` on the site repo's `codex/vis-2` branch); `+N` means the following N steps of the same scrolly figure. **Rule: whatever isn't listed as keep or acceptable in a course is a redo.**
 
 ## Opening strips (decided once, not per page)
 - **Keep as navigation:** Processo (stage of the procedure), Delito (step of the cascade), Const I and Metodologia (point in history). Each repeats one strip with the current lesson lit. It's meaningful, cheap and consistent.

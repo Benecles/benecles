@@ -1,8 +1,8 @@
-You are the orchestrator for the CUFRGS study site (Ordenações Filipinas). Run the whole queue below to completion, in parallel streams, without waiting on the CEO between items.
+You are the orchestrator for the study site (Ordenações Filipinas). Run the whole queue below to completion, in parallel streams, without waiting on the CEO between items.
 
 SETUP
 1. git pull both repos: ~/Developer/ordenacoes-filipinas (site; push to main = deploy) and ~/Developer/ordenacoes-filipinas-workshop (workshop). The shared site checkout is on codex/controle-a08 with a local merge commit; sort that out first (push or rebase), don't lose work.
-2. Read in full: workshop CEO.md (source of truth; "Since 05/10 evening" and "Next up" supersede the RESUME HERE section of work/briefs/2026-10-04-orchestrator-prompt.md), protocols/CUFRGS Writing Standard.md (Part D now has a preamble plus D9 and D10; E2/E3 were rewritten for source blocks), BUGS.md, ~/.codex/AGENTS.md.
+2. Read in full: workshop CEO.md (source of truth; "Since 05/10 evening" and "Next up" supersede the RESUME HERE section of work/briefs/2026-10-04-orchestrator-prompt.md), protocols/Writing Standard.md (Part D now has a preamble plus D9 and D10; E2/E3 were rewritten for source blocks), BUGS.md, ~/.codex/AGENTS.md.
 3. Replace the stale agents/Luna1.md registry entry with your own (task, owned paths, streams); keep it current; delete it when done. Create and keep RUN-0510.md in the workshop root as the run ledger (each item: status, branch, PR, checks, notes).
 
 OPERATING RULES (chairman)

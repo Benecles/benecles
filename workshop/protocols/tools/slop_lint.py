@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Portuguese CUFRGS prose linter: findings are review prompts, not verdicts.
+"""Portuguese prose linter: findings are review prompts, not verdicts.
 
 Usage: python3 slop_lint.py FILE_OR_DIR [...] [--json] [--max-per-1000 N]
 Reads visible text from HTML and text from Markdown/plain text. No hit fails by

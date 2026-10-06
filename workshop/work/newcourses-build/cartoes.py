@@ -22,9 +22,9 @@ SPECS = os.path.join(HERE, "specs")
 EXTRAS = os.path.join(WORK, "cartoes-2026-09-29", "extras")
 DEFAULT_OUT = os.path.join(WORK, "staging", "courses")
 COURSE_KEYS = {
-    "processo-civil": "cufrgs-processo-civil-cartoes-v1",
-    "constitucional": "cufrgs-constitucional-cartoes-v1",
-    "metodologia": "cufrgs-metodologia-cartoes-v1",
+    "processo-civil": "ordenacoes-processo-civil-cartoes-v1",
+    "constitucional": "ordenacoes-constitucional-cartoes-v1",
+    "metodologia": "ordenacoes-metodologia-cartoes-v1",
 }
 COURSE_TITLES = {
     "processo-civil": "Processo Civil I-a",
@@ -83,7 +83,7 @@ def render(cname, slug, cards, storage_key):
     return f'''<!doctype html>
 <html lang="pt-BR">
 <head>
-<script>(function(){{var k='cufrgs-theme',r=document.documentElement;try{{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}}catch(e){{}}document.addEventListener('DOMContentLoaded',function(){{var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){{b.setAttribute('aria-pressed',r.dataset.theme==='dark')}}sync();b.addEventListener('click',function(){{var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{{localStorage.setItem(k,d?'dark':'light')}}catch(e){{}}sync()}})}})}})()</script>
+<script>(function(){{var k='ordenacoes-theme',r=document.documentElement;try{{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}}catch(e){{}}document.addEventListener('DOMContentLoaded',function(){{var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){{b.setAttribute('aria-pressed',r.dataset.theme==='dark')}}sync();b.addEventListener('click',function(){{var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{{localStorage.setItem(k,d?'dark':'light')}}catch(e){{}}sync()}})}})}})()</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Cartões · {escaped_title}</title>
 <meta name="description" content="Cartões de estudo de {escaped_title}, com repetição espaçada.">

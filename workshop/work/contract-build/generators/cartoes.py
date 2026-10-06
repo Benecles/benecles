@@ -77,7 +77,7 @@ body = f'''<body>
 <script>
 (function(){{
   var ALL={data};
-  var KEY='cufrgs-contratos-cartoes-v1',DAY=86400000,INTERVALS=[0,DAY,3*DAY,7*DAY,16*DAY];
+  var KEY='ordenacoes-contratos-cartoes-v1',DAY=86400000,INTERVALS=[0,DAY,3*DAY,7*DAY,16*DAY];
   var f='all',aula='',queue=[],done=0,right=0,cur=null,state={{}};
   var $=function(id){{return document.getElementById(id)}};
   function hash(t){{var h=2166136261;for(var i=0;i<t.length;i++){{h^=t.charCodeAt(i);h=Math.imul(h,16777619)}}return ('00000000'+(h>>>0).toString(16)).slice(-8)}}

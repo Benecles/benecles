@@ -1,4 +1,4 @@
-# CUFRGS Figure Library
+# Figure Library
 
 The reference for what a figure on the site can be and how good it has to be. It was curated on 01/10 from the 784 figures live on the site (contact sheet: VIS-2, `codex/vis-2` → `work/vis-catalog/`). Use it in three ways:
 - **Before drawing:** pick the genre whose job matches the lesson's point.

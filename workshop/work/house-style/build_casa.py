@@ -127,7 +127,7 @@ html = f'''<!doctype html>
 </style>
 </head>
 <body class="casa" data-int="proposto">
-<nav class="topbar"><a href="../index.html">← CUFRGS</a><span>Espécime · estilo da casa</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<nav class="topbar"><a href="../index.html">← Ordenações</a><span>Espécime · estilo da casa</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 <header class="hero">
   <div class="kicker label"><span>Espécime</span><span>CASA-1</span><span>06/10</span></div>
   <h1><span class="split">A casa,</span><span class="split">junta</span></h1>

@@ -1,6 +1,6 @@
-# CUFRGS Design Direction (v1, 2026-09-29)
+# Design Direction (v1, 2026-09-29)
 
-Owner: Claude (design authority). Companion to `CUFRGS Visual Genres.md` (which paper form to pick) and `CUFRGS Writing Standard.md` (prose).
+Owner: Claude (design authority). Companion to `Visual Genres.md` (which paper form to pick) and `Writing Standard.md` (prose).
 This document says **how things should look and feel**, so builders (Sol, Luna) can design with real freedom and land close to done. It is taste plus hard constraints. Where it says *should*, use judgment; where it says *must*, don't deviate without asking Claude.
 
 ---
@@ -45,7 +45,7 @@ A scholar's drafting desk. Paper, ink, a grid underneath, two accent inks. Every
 
 Every course front renders through **one** template, in this order:
 
-1. **Top bar:** `← CUFRGS` · code · UFRGS · 2026/2 · ⓘ · Modo noite. (Exists; keep it.)
+1. **Top bar:** `← Ordenações` · code · UFRGS · 2026/2 · ⓘ · Modo noite. (Exists; keep it.)
 2. **Title block:** kicker line in mono (`Guia de estudo · <área> · N aulas · <Prof.>`); the course name as h1 (≤2 lines, the existing clamp size); **one-sentence deck** (≤62ch), which says what the course *is about*, not what the page is.
 3. **The course drawing,** the course's own figure on a paper sheet at the content width (max 1180px), with the house shadow. It must be clickable to lessons, readable in five seconds, and have a phone version. Courses that don't have one yet (Const I, Processo, Metodologia) get a proposal at the gate; Claude may redraw.
 4. **Exam row:** the exam card (≤520px) plus the review link if a review exists, and "Continuar: <aula>" when there's a saved place. Past exams show nothing, or the next exam.

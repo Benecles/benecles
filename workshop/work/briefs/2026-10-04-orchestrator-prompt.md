@@ -108,9 +108,9 @@ Codex ran out of credits on 05/10. The CEO (Claude) carried the work in the mean
 1. `~/Developer/ordenacoes-filipinas-workshop/CEO.md`: the mandate, state and gotchas. The gotchas are paid-for lessons; every one applies.
 2. `FLIGHT-LOG.md` (F-001…F-027): every row is a rule. Tags tell you which stage it binds.
 3. `BUGS.md`: the bug catalogue, by symptom. Workers search it before debugging.
-4. `protocols/CUFRGS Source Pipeline.md`: the stages. This plan adapts it for Latam (§5).
+4. `protocols/Source Pipeline.md`: the stages. This plan adapts it for Latam (§5).
 5. `protocols/templates/Lesson Blueprint.md`, the reference blueprint `work/pipeline/controle-de-constitucionalidade/compendium/aula-01/blueprint.md` (read its Method notes), and the live reference page `~/Developer/ordenacoes-filipinas/courses/controle-de-constitucionalidade/aula-01.html` with its `REF ·` comments.
-6. Skim for orientation (workers read them in full): `protocols/CUFRGS Writing Standard.md`, `CUFRGS Visual Casting.md`, `CUFRGS Visual Genres.md`, `CUFRGS Figure Library.md`, `CUFRGS Design Direction.md`.
+6. Skim for orientation (workers read them in full): `protocols/Writing Standard.md`, `Visual Casting.md`, `Visual Genres.md`, `Figure Library.md`, `Design Direction.md`.
 7. `~/.codex/AGENTS.md` (your standing rules), and "Build-process lessons" in `Relay Baton.md`.
 8. Every issue in §5–§6, **with all comments**. The newest CEO comment on an issue is its current verdict.
 

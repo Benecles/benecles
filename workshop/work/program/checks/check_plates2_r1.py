@@ -8,7 +8,7 @@ import sys
 ROOT = Path('/Users/benecles/Documents/Codex/2026-09-23/you-h/work')
 R = ROOT / 'relay-design-2026-09-29'
 BASE = ROOT / 'program/ships/baselines/plates-2-r1'
-REPORT = Path('/private/tmp/cufrgs-captures/plates-2-r1/gate-report.json')
+REPORT = Path('/private/tmp/ordenacoes-captures/plates-2-r1/gate-report.json')
 GATE = R / 'program/plates-2-r1-GATE.md'
 NODE = Path('/Users/benecles/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node')
 PUBLISH_COURSES = Path('/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses')

@@ -1,5 +1,5 @@
 #!/bin/bash
-# CUFRGS program runner (Claude, 2026-09-30). Zero-token manager: launches queued orders as FRESH Luna-high
+# Program runner (Claude, 2026-09-30). Zero-token manager: launches queued orders as FRESH Luna-high
 # orchestrators, one at a time, checks each mechanically, retries once, sleeps through Codex 5h walls, stops near
 # the weekly limit, and wakes the Luna-xhigh program manager (pm.md) whenever nothing is runnable.
 P=/Users/benecles/Documents/Codex/2026-09-23/you-h/work/program; W=/Users/benecles/Documents/Codex/2026-09-23/you-h/work

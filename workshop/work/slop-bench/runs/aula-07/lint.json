@@ -1,0 +1,271 @@
+{
+  "file": "courses/controle-de-constitucionalidade/aula-07.html",
+  "words": 1214,
+  "sentences": 83,
+  "finding_count": 20,
+  "findings_per_1000": 16.474,
+  "density": {
+    "negated-inference": {
+      "count": 5,
+      "per_1000": 4.119,
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    "colon-reveal": {
+      "count": 4,
+      "per_1000": 3.295,
+      "limit_per_1000": 5.6,
+      "over_limit": false
+    },
+    "triad-density": {
+      "count": 3,
+      "per_1000": 2.471,
+      "limit_per_1000": 12.3,
+      "over_limit": false
+    },
+    "stacked-questions": {
+      "count": 2,
+      "per_1000": 1.647,
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    },
+    "uniform-paragraphs": {
+      "count": 2,
+      "per_1000": 1.647,
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    }
+  },
+  "budget_per_1000": null,
+  "status": "PASS",
+  "findings": [
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 157,
+      "rule": "backstage",
+      "band": "style",
+      "span": "Fontes e limites",
+      "fix": "Move provenance to the private ledger; keep the page about the legal material.",
+      "severity": "hard"
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 159,
+      "rule": "backstage",
+      "band": "style",
+      "span": "dos slides",
+      "fix": "Move provenance to the private ledger; keep the page about the legal material.",
+      "severity": "hard"
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 161,
+      "rule": "backstage",
+      "band": "style",
+      "span": "Os slides",
+      "fix": "Move provenance to the private ledger; keep the page about the legal material.",
+      "severity": "hard"
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 161,
+      "rule": "backstage",
+      "band": "style",
+      "span": "os slides",
+      "fix": "Move provenance to the private ledger; keep the page about the legal material.",
+      "severity": "hard"
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 31,
+      "rule": "negated-inference",
+      "band": "tell",
+      "span": "não apaga",
+      "fix": "House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.",
+      "per_1000": 4.119,
+      "severity": "rate",
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 47,
+      "rule": "negated-inference",
+      "band": "tell",
+      "span": "não decide",
+      "fix": "House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.",
+      "per_1000": 4.119,
+      "severity": "rate",
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 76,
+      "rule": "negated-inference",
+      "band": "tell",
+      "span": "não cria",
+      "fix": "House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.",
+      "per_1000": 4.119,
+      "severity": "rate",
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 125,
+      "rule": "negated-inference",
+      "band": "tell",
+      "span": "não substitui",
+      "fix": "House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.",
+      "per_1000": 4.119,
+      "severity": "rate",
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 125,
+      "rule": "negated-inference",
+      "band": "tell",
+      "span": "não basta",
+      "fix": "House tic (06/10 backtest: our pages 2.43/1k vs human doctrine 0.14/1k, ~18x): state what the decision did; keep a limit sentence only where the reader would otherwise assume the opposite.",
+      "per_1000": 4.119,
+      "severity": "rate",
+      "limit_per_1000": 0.5,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 11,
+      "rule": "colon-reveal",
+      "band": "tell",
+      "span": "Diante de uma norma anterior, separe duas perguntas: o conteúdo cabe na nova ordem, ou a alegação aponta um defeito formal da época em que ela nasceu?",
+      "fix": "If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.",
+      "per_1000": 3.295,
+      "severity": "rate",
+      "limit_per_1000": 5.6,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 33,
+      "rule": "colon-reveal",
+      "band": "tell",
+      "span": "Já uma norma anterior pode suscitar alegações diferentes: uma sobre o conteúdo diante da Constituição nova, outra sobre a forma observada quando foi editada.",
+      "fix": "If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.",
+      "per_1000": 3.295,
+      "severity": "rate",
+      "limit_per_1000": 5.6,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 94,
+      "rule": "colon-reveal",
+      "band": "tell",
+      "span": "A CF/88 serve à outra pergunta: se o conteúdo antigo pode continuar na nova ordem.",
+      "fix": "If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.",
+      "per_1000": 3.295,
+      "severity": "rate",
+      "limit_per_1000": 5.6,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 159,
+      "rule": "colon-reveal",
+      "band": "tell",
+      "span": "Base: slides “Juízo de não recepção × inconstitucionalidade”, do Prof.",
+      "fix": "If the second clause only dramatizes/rephrases the first, state the fact directly; keep a colon that introduces real content.",
+      "per_1000": 3.295,
+      "severity": "rate",
+      "limit_per_1000": 5.6,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 35,
+      "rule": "triad-density",
+      "band": "tell",
+      "span": "Ponto de partida Antes de escolher o resultado, identifique a data da norma e o aspecto questionado",
+      "fix": "Enumerate the number of legal elements the source actually provides; keep statutory triads.",
+      "per_1000": 2.471,
+      "severity": "rate",
+      "limit_per_1000": 12.3,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 47,
+      "rule": "triad-density",
+      "band": "tell",
+      "span": "Se o conteúdo é compatível, a norma pode ser recebida e continuar vigente",
+      "fix": "Enumerate the number of legal elements the source actually provides; keep statutory triads.",
+      "per_1000": 2.471,
+      "severity": "rate",
+      "limit_per_1000": 12.3,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 113,
+      "rule": "triad-density",
+      "band": "tell",
+      "span": "de norma pré-constitucional pode ser levada ao STF por ADPF, se houver lesão a §§§§§§§§§§§§§§§§§§§§ e se estiverem presentes os demais requisitos de cabimento",
+      "fix": "Enumerate the number of legal elements the source actually provides; keep statutory triads.",
+      "per_1000": 2.471,
+      "severity": "rate",
+      "limit_per_1000": 12.3,
+      "over_limit": false
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 61,
+      "rule": "stacked-questions",
+      "band": "tell",
+      "span": "Foi recebida pela nova Constituição? É compatível com a Constituição vigente?",
+      "fix": "Keep at most one question; state the answers the sources give.",
+      "per_1000": 1.647,
+      "severity": "rate",
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 136,
+      "rule": "stacked-questions",
+      "band": "tell",
+      "span": "O roteiro Quando a norma foi editada? A alegação trata do conteúdo perante uma Constituição nova ou da forma de origem?",
+      "fix": "Keep at most one question; state the answers the sources give.",
+      "per_1000": 1.647,
+      "severity": "rate",
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 11,
+      "rule": "uniform-paragraphs",
+      "band": "tell",
+      "span": "Diante de uma norma anterior, separe duas perguntas: o conteúdo cabe na nova ord",
+      "fix": "Reshape paragraphs around the argument (D9); never to a length quota.",
+      "per_1000": 1.647,
+      "severity": "rate",
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    },
+    {
+      "file": "courses/controle-de-constitucionalidade/aula-07.html",
+      "line": 84,
+      "rule": "uniform-paragraphs",
+      "band": "tell",
+      "span": "O Supremo Tribunal Federal , na ADI 2, distingue o juízo de recepção do juízo de",
+      "fix": "Reshape paragraphs around the argument (D9); never to a length quota.",
+      "per_1000": 1.647,
+      "severity": "rate",
+      "limit_per_1000": 0.0,
+      "over_limit": true
+    }
+  ]
+}

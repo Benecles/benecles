@@ -1,7 +1,7 @@
-# CUFRGS Writing Standard
+# Writing Standard
 
 **Owner: Claude.** Codex and Luna apply this standard. They do not change it; they propose changes in the Relay Baton and Claude decides. Version 1.5, 2026-09-25 (A0 page-size guide; C15: no glosas, no decorative motion).
-**Applies to:** everything that reaches a CUFRGS page (lessons, reviews, deep pages, cards) and every draft on the way there.
+**Applies to:** everything that reaches a page (lessons, reviews, deep pages, cards) and every draft on the way there.
 **Companion tool:** `~/Documents/Protocols/tools/slop_lint.py` (Part G).
 
 The standard has four jobs:
