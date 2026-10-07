@@ -5,8 +5,9 @@ The builder reports that a higher-priority content filter blocks the required ve
 
 ## S5c · P2 house-pass wave 1 progress · 07/10
 - **Aula 10:** [PR #125](https://github.com/Benecles/ordenacoes-filipinas/pull/125) merged into `codex/processo-r2` at `49a7e1009208c9e4ae50959f578fa9aab07cbb49` after GitHub `check_all` passed. The 3,813-word page passed `house_check` with 0 warnings, `slop_gate`, `marks_lint` 0, `offline_build`, `check_all`, and a 1280 px scan with 0 findings against a 0-finding baseline; both 1512 px crops were inspected and attached.
+- **Aula 15:** [PR #126](https://github.com/Benecles/ordenacoes-filipinas/pull/126) merged after GitHub `check_all` passed, at `4d1bb970a139f17048660de6be44fd9623596a51`. The 4,425-word page passed `house_check` (0 warnings), `slop_gate`, `marks_lint` (0), `offline_build`, and `check_all`; the refreshed 1280 px scan had 45 baseline and 45 candidate findings, 0 new; both inspected 1512 px crops are attached.
 - **Aula 10-estabilização:** all local checks pass except the governing CPC verbatim quote remains blocked as recorded in the CEO question above. It is committed only in its isolated branch and has no PR.
-- **Next integration:** rebase and ship the remaining wave lessons one at a time from each refreshed `codex/processo-r2` tip.
+- **Next integration:** Aula 16 is rebasing onto the refreshed staging tip; continue the remaining wave lessons one at a time.
 
 ## CEO early release · 07/10
 - **Revisão para a P1:** PR [#121](https://github.com/Benecles/ordenacoes-filipinas/pull/121) merged; live at [revisao-p1.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/revisao-p1.html).
