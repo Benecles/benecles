@@ -116,10 +116,6 @@
 "after": "posições, casos e distinções.</p></section>\n<div class=\"longform\"><div><h3>"
 },
 {
-"before": " Latino-americano</title>\n<meta name=\"description\" content=\"A negação estrutural de direitos: o estado de coisas inconstitucional na Corte Constitucional colombiana (SU-559/1997, T-153/1998) e no STF (ADPF 347, cautelar de 2015 e mérito de 2023).\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto",
-"after": " Latino-americano</title>\n<meta name=\"description\" content=\"A negação estrutural de direitos: o estado de coisas inconstitucional na Corte Constitucional colombiana (SU-559/1997, T-153/1998) e no STF (ADPF 347, cautelar de 2015 e mérito de 2023).\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto"
-},
-{
 "before": "22px/1.2 var(--sans);margin:1.6em 0 .5em}.lex{margin:6px 0 22px;padding:2px 0 2px 16px;border-left:3px solid var(--dif);font-size:17px;line-height:1.55;color:var(--ink-2)}.lex b{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dif);display:block;margin-bottom:2px}.lex.conc{border-left-color:var(--conc)}.lex.conc b{color:var(--conc)}.eixo{margin:26px 0 8px;padding:14px 18px;border:1.5px",
 "after": "22px/1.2 var(--sans);margin:1.6em 0 .5em}.eixo{margin:26px 0 8px;padding:14px 18px;border:1.5px"
 },
@@ -186,5 +182,9 @@
 {
 "before": "de instituições distintas? <strong>Capacidade de resposta ordinária:</strong> uma tutela individual",
 "after": "de instituições distintas? Capacidade de resposta ordinária: uma tutela individual"
+},
+{
+"before": "</title>\n<meta name=\"description\" content=\"A negação estrutural de direitos: o estado de coisas inconstitucional na Corte Constitucional colombiana (SU-559/1997, T-153/1998) e no STF (ADPF 347, cautelar de 2015 e mérito de 2023).\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=df056c387d\">\n<style>.longform{max-width:1180px;margin:28px auto ",
+"after": "</title>\n<meta name=\"description\" content=\"A negação estrutural de direitos: o estado de coisas inconstitucional na Corte Constitucional colombiana (SU-559/1997, T-153/1998) e no STF (ADPF 347, cautelar de 2015 e mérito de 2023).\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=a7a10e5609\">\n<style>.longform{max-width:1180px;margin:28px auto "
 }
 ]

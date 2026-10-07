@@ -6,5 +6,9 @@
 {
 "before": "</a></footer>\n<script src=\"../../assets/casa.js\"></script>\n</body></html>\n",
 "after": "</a></footer>\n<script src=\"../../assets/casa.js\"></script>\n<script src=\"../../assets/offline.js\" defer></script>\n<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body></html>\n"
+},
+{
+"before": "I-a</title>\n<meta name=\"description\" content=\"Como a petição inicial apresenta a demanda, organiza os pedidos e pode ser corrigida ou alterada no processo.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\"><link rel=\"stylesheet\" href=\"assets/curso.css?v=ee49c1e0f5\">\n<style>\n.peticao{width:min(100%,820px);margin:22px auto;padding:clamp(18px,4vw,42px);background:var(--paper-2);border:1.5px",
+"after": "I-a</title>\n<meta name=\"description\" content=\"Como a petição inicial apresenta a demanda, organiza os pedidos e pode ser corrigida ou alterada no processo.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\"><link rel=\"stylesheet\" href=\"assets/curso.css?v=32067c15c6\">\n<style>\n.peticao{width:min(100%,820px);margin:22px auto;padding:clamp(18px,4vw,42px);background:var(--paper-2);border:1.5px"
 }
 ]

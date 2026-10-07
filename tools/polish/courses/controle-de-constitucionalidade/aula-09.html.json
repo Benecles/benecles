@@ -276,10 +276,6 @@
 "after": "controle: repressivo</a>\n</nav>\n\n<script src=\"../../assets/casa.js\" defer></script>\n<script src=\"assets/controle.js?v=f3b058afd3\"></script>\n<script src=\"../../assets/offline.js\" defer></script>\n"
 },
 {
-"before": " de Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo <span class=\"term\" tabindex=\"0\" data-def=\"Ação constitucional usada para proteger direito líquido e certo contra ilegalidade ou abuso de poder.\">mandado de segurança</span> parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n</head>",
-"after": " de Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n</head>"
-},
-{
 "before": "do próprio parlamentar: <em>mandado de segurança</em> contra a mesa",
 "after": "do próprio parlamentar: <span class=\"term\" tabindex=\"0\" data-def=\"Ação constitucional usada para proteger direito líquido e certo contra ilegalidade ou abuso de poder.\">mandado de segurança</span> contra a mesa"
 },
@@ -302,5 +298,9 @@
 {
 "before": "de fato, suspensa.</div>\n    </div>\n  </div>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">",
 "after": "de fato, suspensa.</div></aside>\n</div>\n\n<!-- ============ 05 · SÍNTESE JURISPRUDENCIAL ============ -->\n<section class=\"chapter\" aria-labelledby=\"c5\">"
+},
+{
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n</head>\n<body>",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 09 · Momentos do controle de constitucionalidade: o controle preventivo, exercido em regra por Legislativo e Executivo, e a exceção judicial pelo mandado de segurança parlamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=c011ba948d\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n</head>\n<body>"
 }
 ]

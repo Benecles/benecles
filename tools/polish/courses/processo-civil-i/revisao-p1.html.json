@@ -6,5 +6,9 @@
 {
 "before": "\n</div>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n",
 "after": "\n</div>\n<script src=\"../../assets/casa.js\" defer></script>\n<script src=\"../../assets/offline.js\" defer></script>\n<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n"
+},
+{
+"before": "</title>\n<meta name=\"description\" content=\"Questões anteriores e roteiro de resposta para os temas da primeira parte de Processo Civil I-a.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=ee49c1e0f5\">\n<style>\n.revisao-nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:24px",
+"after": "</title>\n<meta name=\"description\" content=\"Questões anteriores e roteiro de resposta para os temas da primeira parte de Processo Civil I-a.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\">\n<link rel=\"stylesheet\" href=\"assets/curso.css?v=32067c15c6\">\n<style>\n.revisao-nav{display:flex;flex-wrap:wrap;gap:8px 18px;margin:24px"
 }
 ]
