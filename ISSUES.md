@@ -72,3 +72,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Processo: revisão P1 como banco de questões** · Rebuild revisão-p1 as the P1 exam-bank workbench; source-checked questions, collapsed answers, house layer; checks passed.
 - **Processo: Aula 01 — Petição inicial, demanda e emenda** · Fresh house-standard Aula 01 from approved blueprint, with source/page addendum and 2018/2 exam thread. Required checks passed.
 - **Processo: front de liberação antecipada** · Adapt the Processo Civil I front for early release: link Aula 01 and revisão P1, keep live Aula 02–11 links, and mark unbuilt lessons em breve. Checks passed.
+- **Specimen: instrumentos de processo** · reference instruments for text-heavy courses, drawn from real exam facts: the deadline counted on the April 2015 calendar (arts. 219, 224, 1.003) and the litisconsórcio seating chart (arts. 114/116, 2015/1 Q3 + the trap alternative)
