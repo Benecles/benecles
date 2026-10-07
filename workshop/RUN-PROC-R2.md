@@ -16,6 +16,7 @@
 - Before writing A12/A16, retrieve the specified missing CPC/Marinoni sources.
 - Resolve conflicting 2018/2 variant answers against the CPC; if unresolved, show both answers and label the divergence.
 - Keep canonical issues #84–91, #93, and #95; close duplicate stage issues.
+- Duplicate stage issues #92, #94, and #96–#99 are already closed; canonical #84–91, #93, and #95 remain open.
 - **House pass:** no lesson is rewritten. Aula 14 is the one-page prototype; after its checks and flight-log updates, proceed in waves of at most six, P2 first. Each rebuilt lesson gets the house layer, source blocks, one real thread, figures/marks as assigned, and `house_check`, slop_gate, marks_lint, `check_all`, and 1280 breakscan.
 - **Unwritten lessons:** write to the same house bar from the start; add the two-line source-block/thread note to each approved blueprint first. There is no new panel. The CEO's early-release exception shipped Aula 01, the P1 workbench, and the adapted course front to `main` before S5c.
 - **Aula 09 is resolved:** proceed to writing after its second `REVISE`; make closing exercises 2–4 self-contained. This replaces the question above about another author→panel cycle.
