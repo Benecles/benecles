@@ -17,6 +17,32 @@ def _esc(value: Any) -> str:
     return html.escape(str(value or ""), quote=True)
 
 
+def _lesson_page_exists(course: str, href: str) -> bool:
+    """Only make a course-front lesson interactive once its page is present."""
+    path = Path(href)
+    return (path.suffix == ".html" and not path.is_absolute() and ".." not in path.parts
+            and (R / "courses" / course / path).is_file())
+
+
+def _unlink_missing_lesson_anchors(markup: str, course: str) -> str:
+    """Keep planned lessons visible in custom drawings without dead links."""
+    anchor = re.compile(r'<a\b(?P<attrs>[^>]*)>(?P<body>.*?)</a\s*>', re.I | re.S)
+    href_attr = re.compile(r'\s+href=(?P<quote>["\'])(?P<href>.*?)(?P=quote)', re.I | re.S)
+
+    def replace(match: re.Match[str]) -> str:
+        attrs = match.group("attrs")
+        found = href_attr.search(attrs)
+        if not found:
+            return match.group(0)
+        href = html.unescape(found.group("href"))
+        if _lesson_page_exists(course, href):
+            return match.group(0)
+        attrs = attrs[:found.start()] + attrs[found.end():]
+        return f'<span{attrs} aria-disabled="true">{match.group("body")}</span>'
+
+    return anchor.sub(replace, markup)
+
+
 def _read_old(course: str) -> str:
     old = HERE / "shell" / f"{course}.html"  # head/script shell captured from the pre-D1 front
     if not old.is_file():
@@ -78,14 +104,16 @@ def _title(data: dict[str, Any]) -> str:
             f'<h1>{_esc(data.get("title"))}</h1><p class="front-deck">{_esc(data.get("deck"))}</p></header>')
 
 
-def _drawing(data: dict[str, Any]) -> str:
+def _drawing(data: dict[str, Any], course: str) -> str:
     drawing = data.get("drawing")
     if not drawing:
         return '<section class="front-drawing" aria-label="Desenho do curso"><div class="front-drawing-empty"><span class="front-label">Desenho do curso</span><p>O percurso visual deste curso será definido na revisão do projeto.</p></div></section>'
     if "inner_html" in drawing:  # reconciled from the live front: markup kept verbatim
-        return f'<section class="front-drawing" aria-label="Desenho do curso">{drawing["inner_html"]}</section>'
-    art = drawing.get("html", "")
+        art = _unlink_missing_lesson_anchors(drawing["inner_html"], course)
+        return f'<section class="front-drawing" aria-label="Desenho do curso">{art}</section>'
+    art = _unlink_missing_lesson_anchors(drawing.get("html", ""), course)
     phone = drawing.get("phone_html") or ""
+    phone = _unlink_missing_lesson_anchors(phone, course)
     if phone:
         art = f'<div class="front-art-desktop">{art}</div><div class="front-art-phone">{phone}</div>'
     # Several preserved drawings already own a framed sheet in their markup/CSS.
@@ -233,8 +261,11 @@ def _register(data: dict[str, Any], slug: str) -> str:
             if len(sib) > 1 and h in sib:
                 attrs += f' data-motion-group="aula-{num.group(0).zfill(2) if num else lab}"'
             cls = "reg-row" + (" is-complementary" if l.get("complementary") else "")
-            rows.append(f'<li><a class="{cls}"{attrs} href="{_esc(h)}">{n}<span class="reg-body"><span class="reg-t">{_esc(l.get("title"))}{ticks}</span>'
-                        f'{does_html}</span>{time}</a></li>')
+            live = _lesson_page_exists(slug, h)
+            target = f'<a class="{cls}"{attrs} href="{_esc(h)}">' if live else f'<span class="{cls} is-planned"{attrs} aria-disabled="true">'
+            close = "</a>" if live else "</span>"
+            rows.append(f'<li>{target}{n}<span class="reg-body"><span class="reg-t">{_esc(l.get("title"))}{ticks}</span>'
+                        f'{does_html}</span>{time}{close}</li>')
             if h in fold_after:
                 rows.append(fold(fold_after[h]))
         head = (f'<div class="reg-unit-head"><span class="reg-unit-n">{ui:02d}</span><h3>{_esc(unit["title"])}</h3></div>'
@@ -271,7 +302,7 @@ def render(data: dict[str, Any], slug: str | None = None) -> str:
     if inline_drawing_css:
         page_head = page_head.replace("</head>", inline_drawing_css + "\n</head>")
     body = (f'{doc_open}{page_head}\n<body>\n{_topbar(old, data)}\n{_title(data)}\n<main class="front-main">'
-            f'{_drawing(data)}{_exam(data, old)}{_register(data, course)}{_bibliografia(data)}'
+            f'{_drawing(data, course)}{_exam(data, old)}{_register(data, course)}{_bibliografia(data)}'
             f'</main>\n<p class="endnote">{data.get("endnote_html") or ""}</p>\n{_scripts(old)}\n</body>\n</html>')
     return body
 

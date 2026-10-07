@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -43,6 +43,9 @@ ENTRIES = [
     ('Documento · anatomia', 'ler', 'Processo · Aula 01 · petição inicial',
      'A petição como peça real: ler os incisos do art. 319 nos campos onde aparecem e localizar o contrato anexo do art. 320.',
      'substitui pci-a01-s2', [processo_a01.panel()], 'processo-civil-i'),
+    ('Partitura · operações probatórias', 'comparar', 'Processo · Aula 14 · teoria da prova',
+     'Duas pautas percorrem os arts. 369 a 371: uma acompanha a afirmação e os meios; outra, a participação e as razões.',
+     'substitui pci-a14-score', [processo_a14.panel()], 'processo-civil-i'),
 ]
 
 
