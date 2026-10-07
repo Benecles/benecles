@@ -58,7 +58,7 @@
     layer.className = 'bs-stage';
     layer.innerHTML =
       '<div class="bs-under" style="background:' + s.bg + ';color:' + s.ink + ';background-image:linear-gradient(' + s.major + ' 1px,transparent 1px),linear-gradient(90deg,' + s.major + ' 1px,transparent 1px),linear-gradient(' + s.grid + ' .5px,transparent .5px),linear-gradient(90deg,' + s.grid + ' .5px,transparent .5px);background-size:120px 120px,120px 120px,24px 24px,24px 24px">' +
-      '<a href="backstage/" style="color:' + s.ink + '">Backstage&nbsp;→</a><small>behind the paper</small></div>' +
+      '<a href="backstage/" style="color:' + s.ink + '">Backstage&nbsp;→</a></div>' +
       '<div class="bs-flap" style="background-position:-' + SQ.x + 'px -' + SQ.y + 'px"></div>' +
       '<svg class="bs-cut" viewBox="0 0 ' + MAJOR + ' ' + MAJOR + '" width="' + (MAJOR + 2) + '" height="' + (MAJOR + 2) + '" aria-hidden="true"><path d="M1 ' + (MAJOR + 1) + ' V1 H' + (MAJOR + 1) + ' V' + (MAJOR + 1) + '"/></svg>';
     document.body.appendChild(layer);
