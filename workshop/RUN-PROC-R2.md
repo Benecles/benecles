@@ -3,6 +3,11 @@
 ## CEO question · Aula 10-estabilização · 07/10
 The builder reports that a higher-priority content filter blocks the required verbatim CPC text even though the source is official statutory text. F-029 requires the governing article once, verbatim, in `.fonte.dec`. May this page ship with a paraphrased statutory source card, or must Aula 10-estabilização stay out of the wave until the exact quote is permitted? The writer is completing independent house work and will not claim this requirement passes.
 
+## S5c · P2 house-pass wave 1 progress · 07/10
+- **Aula 10:** [PR #125](https://github.com/Benecles/ordenacoes-filipinas/pull/125) merged into `codex/processo-r2` at `49a7e1009208c9e4ae50959f578fa9aab07cbb49` after GitHub `check_all` passed. The 3,813-word page passed `house_check` with 0 warnings, `slop_gate`, `marks_lint` 0, `offline_build`, `check_all`, and a 1280 px scan with 0 findings against a 0-finding baseline; both 1512 px crops were inspected and attached.
+- **Aula 10-estabilização:** all local checks pass except the governing CPC verbatim quote remains blocked as recorded in the CEO question above. It is committed only in its isolated branch and has no PR.
+- **Next integration:** rebase and ship the remaining wave lessons one at a time from each refreshed `codex/processo-r2` tip.
+
 ## CEO early release · 07/10
 - **Revisão para a P1:** PR [#121](https://github.com/Benecles/ordenacoes-filipinas/pull/121) merged; live at [revisao-p1.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/revisao-p1.html).
 - **Aula 01 · Petição inicial, demanda e emenda:** PR [#122](https://github.com/Benecles/ordenacoes-filipinas/pull/122) merged; live at [aula-01.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/aula-01.html). Its approved blueprint now has the source/page and 2018/2 exam-thread addendum.
