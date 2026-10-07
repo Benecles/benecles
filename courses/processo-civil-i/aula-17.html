@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>(function(){var k='ordenacoes-theme',r=document.documentElement;try{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}catch(e){}document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){b.setAttribute('aria-pressed',r.dataset.theme==='dark')}sync();b.addEventListener('click',function(){if(r.dataset.theme==='dark')delete r.dataset.theme;else r.dataset.theme='dark';try{localStorage.setItem(k,r.dataset.theme==='dark'?'dark':'light')}catch(e){}sync()})})})();</script>
+<title>Ônus da prova · Processo Civil I-a</title>
+<meta name="description" content="Distribuir o ônus probatório no caso e identificar sua função quando persistir a dúvida sobre um fato.">
+<link rel="stylesheet" href="assets/curso.css?v=ee49c1e0f5">
+<link rel="stylesheet" href="assets/aula-17.css?v=4f2eeae042">
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Processo Civil I-a</a><span>Aula 17 · Ônus da prova</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<header class="hero">
+  <div class="kicker label"><span>Processo Civil I-a · DIR02002</span><span>UFRGS · 2026/2</span></div>
+  <h1><span class="split">Quem suporta a dúvida?</span></h1>
+  <p class="deck">O art. 373 atribui a cada parte o risco da dúvida, orienta a prova e limita qualquer redistribuição do encargo.</p>
+  <div class="hero-meta"><span class="label">Leitura ≈ 15 min</span></div>
+</header>
+
+<section class="chapter" aria-labelledby="c1"><span class="num" aria-hidden="true">01</span><h2 id="c1">O tipo de fato define a distribuição ordinária</h2><p class="lede">O autor prova o fato constitutivo de seu direito; o réu prova o fato impeditivo, modificativo ou extintivo.</p></section>
+<div class="wide">
+  <figure class="a17-instrument" id="art373-instrument" aria-labelledby="a17-form-title">
+  <div class="a17-instrument__head">
+    <span class="label">CPC · instrumento de decisão</span>
+    <h3 id="a17-form-title">Art. 373 · ônus da prova</h3>
+  </div>
+  <div class="a17-instrument__body">
+    <div class="a17-statute">
+      <span class="art-head">Regra legal · caput e §§ 1º–2º</span>
+      <p>Art. 373. O ônus da prova incumbe:</p>
+      <p>I - ao autor, quanto ao fato constitutivo de seu direito;</p>
+      <p>II - ao réu, quanto à existência de fato impeditivo, modificativo ou extintivo do direito do autor.</p>
+      <p>§ 1º Nos casos previstos em lei ou diante de peculiaridades da causa relacionadas à impossibilidade ou à excessiva dificuldade de cumprir o encargo nos termos do caput ou à maior facilidade de obtenção da prova do fato contrário, poderá o juiz atribuir o ônus da prova de modo diverso, desde que o faça por decisão fundamentada, caso em que deverá dar à parte a oportunidade de se desincumbir do ônus que lhe foi atribuído.</p>
+      <p>§ 2º A decisão prevista no § 1º deste artigo não pode gerar situação em que a desincumbência do encargo pela parte seja impossível ou excessivamente difícil.</p>
+    </div>
+    <form class="a17-controls" id="a17-controls" aria-describedby="a17-result">
+      <label for="a17-fato">Qual é o tipo de fato?</label>
+      <select name="fato" id="a17-fato">
+        <option value="constitutivo" selected>Constitutivo do direito</option>
+        <option value="impeditivo">Impeditivo do direito</option>
+        <option value="modificativo">Modificativo do direito</option>
+        <option value="extintivo">Extintivo do direito</option>
+      </select>
+      <label for="a17-hipotese">Há hipótese para redistribuir o encargo?</label>
+      <select name="hipotese" id="a17-hipotese">
+        <option value="nenhuma" selected>Nenhuma · aplica-se o caput</option>
+        <option value="lei">Previsão legal</option>
+        <option value="dificuldade">Impossibilidade ou excessiva dificuldade do encargo do caput</option>
+        <option value="facilidade">Maior facilidade para obter a prova do fato contrário</option>
+      </select>
+      <fieldset>
+        <legend>Salvaguardas do § 1º</legend>
+        <label class="check-line"><input type="checkbox" name="fundamentada" value="sim"> Decisão fundamentada</label>
+        <label class="check-line"><input type="checkbox" name="oportunidade" value="sim"> Oportunidade para cumprir o encargo</label>
+      </fieldset>
+      <label for="a17-cumprivel">A parte que receberá o encargo pode cumpri-lo?</label>
+      <select name="cumprivel" id="a17-cumprivel">
+        <option value="sim" selected>Sim</option>
+        <option value="nao">Não · seria impossível ou excessivamente difícil</option>
+      </select>
+      <div class="a17-result" id="a17-result" data-state="default" role="status" aria-live="polite">
+        <span class="a17-result__title">Mantém-se a regra do caput</span>
+        <p class="a17-result__text">O ônus ordinário cabe ao autor quanto ao fato constitutivo.</p>
+      </div>
+    </form>
+  </div>
+  <figcaption>Fig. 1 · O art. 373 parte da distribuição legal e limita a redistribuição</figcaption>
+</figure>
+  <div class="prosa">
+    <p>O art. 373 separa o encargo conforme o fato que sustenta a pretensão ou a defesa. Se o fato cria o direito afirmado pelo autor, cabe a ele prová-lo. Se a defesa se apoia em fato que impede a formação do direito, modifica seu alcance ou o extingue, cabe ao réu provar esse fato (CPC, art. 373, I e II).</p>
+    <p>Essa distribuição depende do papel que o fato exerce no raciocínio jurídico. O mesmo acontecimento pode ocupar posições diferentes conforme a pretensão e a defesa que o processo apresenta. O julgador identifica primeiro qual direito o autor afirma; depois localiza o fato que o constituiria e os fatos que o réu invoca para explicar por que o pedido não deve ser acolhido.</p>
+    <p>O fato constitutivo compõe os pressupostos do direito alegado. A falta de prova sobre ele deixa sem demonstração a base da pretensão. Já o fato impeditivo impede que o direito se forme nas condições afirmadas; o modificativo altera o conteúdo ou a extensão da relação; o extintivo põe fim ao direito que antes poderia ser exigido. Essas categorias organizam o risco da incerteza conforme o pedido e a defesa (CPC, art. 373, I e II).</p>
+    <p>O exemplo do empréstimo permite classificar três fatos sem alterar a distribuição. O empréstimo constitui a base do pedido de pagamento. Se o réu afirma que a dívida foi paga, invoca um fato extintivo; se afirma que foi parcelada, invoca um fato modificativo. O réu pode fazer essas alegações sem negar que o empréstimo ocorreu. Cada fato recebe sua categoria pelo efeito que teria sobre o direito discutido.</p>
+    <p>O encargo do autor recai sobre o fato constitutivo do direito que pediu. O do réu recai sobre os fatos impeditivos, modificativos ou extintivos que sustentam a defesa. A análise começa pelo efeito jurídico pretendido e pergunta qual fato precisa estar demonstrado para que esse efeito possa ser reconhecido.</p>
+    <p>A distinção importa quando a defesa contém mais de uma afirmação. Negar que o empréstimo tenha ocorrido discute o próprio fato constitutivo. Afirmar que o empréstimo ocorreu, mas que a dívida já foi paga, introduz outro fato, com efeito extintivo. A regra do caput separa esses encargos: o autor prova o primeiro; o réu prova o segundo, se o invoca (CPC, art. 373, I e II).</p>
+    <p>O ponto de partida é a distribuição legal do caput. Ela permite saber, antes do julgamento, qual parte suporta o risco quando um fato relevante não se esclarece. O modo como essa regra orienta a instrução, porém, exige separar o encargo de provar da possibilidade de apresentar prova sobre o fato da outra parte.</p>
+  </div>
+</div>
+
+<section class="chapter" aria-labelledby="c2"><span class="num" aria-hidden="true">02</span><h2 id="c2">O encargo orienta a instrução e resolve a dúvida residual</h2><p class="lede">A regra informa às partes o risco da falta de prova e dá ao juiz um critério para decidir quando a instrução termina sem esclarecimento suficiente.</p></section>
+<div class="wide"><div class="prosa">
+  <p>Durante a instrução, a distribuição legal orienta a conduta das partes. Quem sabe que suporta o risco da falta de prova tem motivo para requerer meios capazes de sustentar o fato que lhe cabe. Essa função instrutória opera antes da sentença: cada parte conhece a consequência possível de chegar ao julgamento sem prova suficiente do fato que sustenta sua posição.</p>
+  <p>Essa é a função subjetiva, também chamada de regra de instrução, porque se dirige às partes antes do julgamento. A função objetiva, ou regra de julgamento, dirige-se ao juiz quando a prova não afasta a dúvida sobre um fato relevante. Os nomes indicam destinatários e momentos diferentes, embora ambos partam da mesma distribuição legal.</p>
+  <p>O encargo não reserva a produção da prova à parte que o suporta. O réu pode contestar o fato constitutivo alegado pelo autor e produzir contraprova para mostrar que ele não ocorreu. Essa atuação não significa, por si, que o réu assumiu o ônus atribuído ao autor, nem transfere automaticamente o encargo. A regra continua a indicar quem corre o risco se o fato permanecer incerto ao fim da instrução.</p>
+  <p>Na cobrança do empréstimo, por exemplo, o réu pode negar a entrega do dinheiro e apresentar prova de que o fato constitutivo não existiu. Se, em vez disso, sustenta que recebeu o empréstimo e pagou a dívida, sua defesa passa a depender de um fato extintivo que lhe cabe provar. A diferença está no conteúdo da afirmação: a primeira contesta a ocorrência do fato do autor; a segunda acrescenta um acontecimento que extinguiria o direito de cobrar.</p>
+  <p>Também não há prova que permaneça propriedade de quem a requereu. Uma vez incorporado ao processo, o elemento pode contribuir para a conclusão sobre o fato independentemente de sua origem. O juiz pode considerar prova produzida pelo adversário, por terceiro ou por iniciativa judicial; se esse material sustenta o fato constitutivo, a conclusão pode favorecer o autor mesmo que ele não tenha requerido a prova que convenceu o julgador. A análise recai sobre o conjunto que consta dos autos.</p>
+  <p>A função objetiva aparece em outro momento. Se, depois da produção e da avaliação do material, o juiz ainda não consegue formar convicção sobre um fato relevante, a regra de distribuição define quem suporta essa incerteza. A dúvida sobre o fato constitutivo pesa contra o autor; a dúvida sobre o fato impeditivo, modificativo ou extintivo pesa contra o réu, a quem cabia prová-lo (CPC, art. 373, I e II).</p>
+  <p>Essa função de julgamento não converte a falta de uma prova específica em derrota automática. O encargo só resolve a dúvida que persiste. Se outros elementos do processo convencem o juiz de que o fato ocorreu, a conclusão pode ser favorável à parte que não tinha o ônus de prová-lo. A distribuição indica a consequência da incerteza, não a fonte exclusiva de informação que o julgador pode considerar.</p>
+  <p>Por isso, a pergunta sobre o encargo só ganha resposta final depois que o juiz examina o material produzido. Uma parte pode deixar de requerer prova e ainda assim ter o fato que invoca confirmado por outro elemento dos autos. Também pode produzir uma prova que não convence. A regra não mede esforço nem recompensa a iniciativa; ela atribui a consequência de um fato que continua sem esclarecimento suficiente.</p>
+  <p>As duas funções se encadeiam. Antes do encerramento da prova, o encargo dá às partes uma orientação sobre o risco; se a prova produzida permite uma conclusão, o juiz decide com base nela; se a dúvida permanece, a regra atribui a consequência. Essa distinção permite compreender por que o mesmo artigo informa a instrução e também fecha o raciocínio quando o fato continua incerto.</p>
+  <p>O risco residual só precisa ser redistribuído quando a regra ordinária não se ajusta às condições da causa previstas em lei. Para isso, o CPC parte do caput e estabelece fundamentos e salvaguardas expressos.</p>
+</div></div>
+
+<section class="chapter" aria-labelledby="c3"><span class="num" aria-hidden="true">03</span><h2 id="c3">A redistribuição exige fundamento e oportunidade</h2><p class="lede">O juiz pode alterar o encargo nas hipóteses legais, mas precisa fundamentar a decisão, permitir a produção da prova e respeitar o limite do § 2º.</p></section>
+<div class="wide"><div class="prosa">
+  <p>Na decisão de saneamento e de organização do processo, o juiz define a distribuição do ônus da prova, observando o art. 373 (CPC, art. 357, III). Essa localização dá às partes a regra que organizará a instrução antes que o processo chegue ao julgamento. A distribuição ordinária segue sendo o ponto de partida: a alteração depende de uma hipótese que o CPC ou outra lei reconheça.</p>
+  <p>O § 1º do art. 373 permite atribuir o encargo de modo diverso quando a lei assim prevê ou quando as particularidades da causa se relacionam à impossibilidade ou à excessiva dificuldade de cumprir a regra do caput. A mesma possibilidade existe quando a outra parte tem maior facilidade para obter a prova do fato contrário. A decisão exige uma relação entre a dificuldade concreta, a prova que se procura e o encargo que será atribuído (CPC, art. 373, § 1º).</p>
+  <p>A previsão em lei e as particularidades da causa são fundamentos distintos. Na primeira hipótese, o próprio texto legal prevê distribuição diferente. Na segunda, o juiz identifica uma condição concreta que dificulta o encargo ordinário ou torna mais fácil obter a prova do fato contrário. A decisão precisa dizer qual dessas hipóteses orienta o caso e qual prova será alcançada por ela (CPC, art. 373, § 1º).</p>
+  <p>A maior facilidade de obtenção da prova do fato contrário é uma hipótese legal, não um convite para substituir a distribuição ordinária por uma preferência judicial. O juiz precisa identificar a circunstância que justifica a mudança e explicar como ela se encaixa na previsão aplicável. Sem esse vínculo, a decisão não mostra por que aquele fato deve ser provado pela parte que, pelo caput, não carregava o encargo.</p>
+  <p>A decisão que redistribui precisa ser fundamentada. Ela também deve dar à parte que recebe o novo encargo uma oportunidade de cumpri-lo. O aviso tem consequência prática: sem conhecer a nova atribuição em tempo útil, a parte não pode organizar a produção da prova correspondente. Essa oportunidade inclui poder avaliar a razão indicada pelo juiz e pedir a prova que passa a ser necessária. A regra de julgamento não pode aparecer apenas no momento em que o juiz decide que a parte perdeu por não ter provado aquilo que antes não lhe competia (CPC, art. 373, § 1º).</p>
+  <p>A decisão de saneamento é, por isso, um momento de organização da prova, não apenas um registro do que já foi produzido. Ao definir o encargo no curso do processo, o juiz permite que as partes compreendam qual prova está em discussão e que elementos ainda podem apresentar. A oportunidade do § 1º preserva a participação da parte antes de a dúvida ser resolvida contra ela (CPC, art. 357, III; art. 373, § 1º).</p>
+  <p>O § 2º impede que a alteração gere uma obrigação probatória impossível ou excessivamente difícil para a parte que passa a suportá-la.  A dificuldade que pode justificar a mudança é a de cumprir a distribuição original; o encargo resultante, por sua vez, precisa ser possível de cumprir pela parte que o receberá. Transferir uma impossibilidade apenas mudaria quem suporta uma situação que continua sem solução probatória (CPC, art. 373, §§ 1º e 2º).</p>
+  <p>A redistribuição exige dois exames distintos. O juiz precisa identificar qual dificuldade da causa se ajusta ao § 1º ou qual previsão legal autoriza a mudança. Depois verifica se a parte que passará a suportar o encargo terá acesso efetivo à prova. A hipótese que abre a redistribuição e a condição que a impede respondem a perguntas diferentes, embora ambas se refiram à possibilidade concreta de produzir prova.</p>
+  <p>O art. 373 também não estabelece uma dispensa geral do ônus fundada apenas na idade ou na incapacidade de uma parte. O caput distribui os encargos conforme o tipo de fato e a posição de autor ou réu; o § 1º prevê hipóteses de alteração relacionadas à lei ou às particularidades da causa. Essa leitura fica no texto do artigo e não decide, por si, a aplicação de outras regras protetivas.</p>
+  <p>Nas relações de consumo, a lei admite inversão do ônus em favor do consumidor nas hipóteses que ela prevê. A autorização legislativa não torna automática a decisão do juiz: a fundamentação precisa mostrar por que a inversão se justifica naquela causa.</p>
+  <p>Se o juiz usa uma máxima da experiência para justificar a avaliação da prova ou a redistribuição do encargo, a motivação precisa explicitar como essa razão sustenta a conclusão. A regra de experiência não funciona como uma premissa oculta: as partes precisam poder compreender e discutir a inferência que levou o juiz a reconhecer a dúvida ou a alterar quem a suporta.</p>
+  <p>Na ficha do art. 373, selecione uma hipótese do § 1º, marque a decisão fundamentada e a oportunidade de prova, e teste o limite do § 2º. A redistribuição só aparece quando esses requisitos se combinam; se o encargo resultante for impossível ou excessivamente difícil, prevalece a vedação legal.</p>
+  <p class="a17-return"><a href="#art373-instrument">Retomar o instrumento do art. 373</a></p>
+</div></div>
+
+<section class="chapter" aria-labelledby="c4"><span class="num" aria-hidden="true">04</span><h2 id="c4">Do encargo ao julgamento</h2><p class="lede">No exemplo do empréstimo, o tipo de fato separa a prova do direito pedido da prova de pagamento ou parcelamento.</p></section>
+<div class="wide"><div class="prosa">
+  <p class="caso"><span class="label">Exercício</span>O empréstimo é o fato constitutivo do pedido de pagamento. O réu pode alegar que a dívida foi paga ou parcelada e ainda assim questionar a cobrança. A prova do empréstimo permanece incerta; depois, suponha que o empréstimo esteja demonstrado, mas a prova do pagamento ou do parcelamento também não esclareça o fato. A quem caberá suportar cada dúvida quando a instrução terminar?</p>
+  <p>O primeiro passo é classificar o que cada afirmação faz no processo. O empréstimo constitui a base do pedido de pagamento, por isso o autor tem o encargo de prová-lo. O pagamento extingue o direito de exigir aquela prestação; o parcelamento modifica a forma ou o alcance da obrigação. O réu suporta o encargo de provar o fato extintivo ou modificativo que invoca (CPC, art. 373, I e II).</p>
+  <p>Se a prova do empréstimo deixa o juiz em dúvida ao fim da instrução, o risco recai sobre o autor. Se o empréstimo está demonstrado, mas permanece dúvida sobre pagamento, o risco dessa segunda afirmação recai sobre o réu. Se o réu alegou parcelamento, a mesma regra vale para a dúvida sobre esse fato modificativo. A regra não compara qual das partes se empenhou mais nem qual delas deixou de requerer um meio determinado. Ela identifica o fato que continua incerto e aplica a distribuição correspondente a esse fato.</p>
+  <p>Se o empréstimo fica provado, a pretensão não depende de uma prova adicional de que ele foi emprestado: esse fato já está esclarecido. Se o réu alega pagamento, a questão passa a ser a existência desse fato extintivo. Se a prova não permite concluir que houve pagamento, a dúvida sobre essa defesa recai sobre quem a apresentou. O raciocínio não trata toda a causa como uma única massa de fatos; examina cada fato relevante segundo sua função.</p>
+  <p>A contestação do réu também pode se limitar a negar o empréstimo e a oferecer prova contrária sobre sua existência. Nessa hipótese, a prova contrária não converte a negação em alegação de pagamento e não muda a distribuição do caput. O réu participa da produção e da crítica da prova; o autor continua sujeito ao risco de que o fato constitutivo não se esclareça.</p>
+  <p>A mesma prova pode servir à análise do fato constitutivo e ser requerida pelo réu. Se ela convence o juiz de que o dinheiro foi entregue, o fato pode ser considerado demonstrado. Se o conjunto permanece dividido e a dúvida continua, a regra do caput resolve esse estado de incerteza em desfavor do autor. A identidade de quem pediu o meio não altera nem o conteúdo do fato nem o encargo ordinário.</p>
+  <p>A mesma cobrança pode envolver dúvidas sobre fatos diferentes. A dúvida sobre a formação do direito e a dúvida sobre sua extinção recaem sobre fatos diferentes, com encargos diferentes. Se o empréstimo está demonstrado e o pagamento não, o autor pode obter a resposta favorável mesmo que a prova do empréstimo tenha vindo do réu. Se o empréstimo continua incerto, a falta dessa prova pesa contra o autor, ainda que o réu não tenha demonstrado o pagamento.</p>
+  <p> Se o material convence sobre o pagamento, pode afastar a pretensão. A regra do ônus só é necessária quando a conclusão factual permanece incerta depois da avaliação da prova existente.</p>
+  <p> A falta de esclarecimento do empréstimo recai sobre quem afirma o direito; a falta de esclarecimento do pagamento ou do parcelamento recai sobre quem os invoca como defesa. </p>
+</div></div>
+
+<section class="chapter" aria-labelledby="recap"><span class="num" aria-hidden="true">↺</span><h2 id="recap">Recapitulação</h2><p class="lede">Classifique o fato, aplique o caput e teste se a redistribuição pode ocorrer com fundamento, oportunidade e prova possível.</p></section>
+<div class="wide">
+  <div class="chave"><span class="label">O roteiro</span>Fato constitutivo: autor. Fato impeditivo, modificativo ou extintivo: réu. Dúvida residual: aplica-se o risco do encargo, salvo redistribuição legalmente fundamentada e possível.</div>
+  <div class="quiz">
+    <details>
+      <summary>Acerca dos ônus da prova, assinale a alternativa correta:<br>a) A distribuição dinâmica do ônus da prova se dá mediante o afastamento das regras de distribuição legais, recaindo a tarefa de fixar nova distribuição dos ônus ao juiz da causa, diante do caso concreto.<br>b) A função objetiva do ônus da prova é entendida como um modo de, objetivamente, distribuir as tarefas probatórias entre as partes, incentivando-as a atuar em busca da melhor instrução da causa.<br>c) Não se aplicam os ônus da prova em detrimento de menor e de incapaz.<br>d) A decisão que inverte o ônus da prova em favor do consumidor não prescinde de fundamentação por parte do juiz, uma vez que decorrente da aplicação direta da lei.<br>e) Como ônus da prova são exclusivamente regras de julgamento, deverá a sua inversão e redistribuição ser decidida em capítulo preliminar da sentença.</summary>
+      <p>Sim. A alternativa d é correta. A inversão em favor do consumidor também depende de decisão fundamentada; a previsão legal não substitui a análise dos fundamentos da medida e a oportunidade de a parte produzir a prova que passa a lhe caber.</p>
+    </details>
+  </div>
+</div>
+
+<nav class="endnav" aria-label="Navegação do curso"><a href="index.html"><span>Processo Civil I-a</span>Voltar ao curso</a></nav>
+<script src="assets/aula-17.js?v=b581e1fd53"></script>
+<div hidden aria-hidden="true" class="source-archive">
+  <span class="src" hidden data-src="Claim 1: CPC art. 373, I–II; `60-statute.txt`, art. 373; Marinoni, Novo Curso, v. 1 (2017), § 4.5, pp. 290–291; v. 2, § 9.4.1, p. 259 (PDF 252)."></span>
+  <span class="src" hidden data-src="Claims 2–4: Marinoni, Novo Curso, v. 1 (2017), § 4.5, pp. 291–292; v. 2, §§ 9.4.1–9.4.3, pp. 259–263 (PDF 252–256); CPC art. 373, I–II."></span>
+  <span class="src" hidden data-src="Claims 5–7: `60-statute.txt`, arts. 357, III, and 373, §§ 1º–2º; Marinoni, Novo Curso, v. 2, § 9.4.6, pp. 267–268 (PDF 260–261)."></span>
+  <span class="src" hidden data-src="Claim 8: Marinoni, Novo Curso, v. 2, § 9.4.7, pp. 269–272 (PDF 262–265); CPC art. 373, § 1º; `exam-bank.json`, `exam-2015-1-avaliacao-2-q8`, verified answer d."></span>
+  <span class="src" hidden data-src="Claim 9: `60-statute.txt`, art. 373, caput and § 1º; `50-exercises-and-exams.txt`, 2015/1, Q. 8, option c."></span>
+  <span class="src" hidden data-src="Claim 10: Marinoni, Novo Curso, v. 2, § 9.4.9, pp. 275–276 (PDF 268–269)."></span>
+  <span class="src" hidden data-src="Worked exercise: Marinoni, Novo Curso, v. 1 (2017), § 4.5, pp. 290–292; CPC art. 373, I–II."></span>
+  <span class="src" hidden data-src="Assessment: `50-exercises-and-exams.txt`, 2015/1, Q. 8, PDF pp. 1–2; `exam-bank.json`, `exam-2015-1-avaliacao-2-q8`, verified answer d."></span>
+</div>
+<script src="../../assets/offline.js" defer></script>
+<script src="../../assets/highlight.js" defer></script>
+<script src="../../assets/highlight-panel.js" defer></script>
+</body>
+</html>
