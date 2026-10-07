@@ -1,5 +1,8 @@
 # RUN-PROC-R2 · Direito Processual Civil I · 2026-10-06
 
+## CEO question · Aula 10-estabilização · 07/10
+The builder reports that a higher-priority content filter blocks the required verbatim CPC text even though the source is official statutory text. F-029 requires the governing article once, verbatim, in `.fonte.dec`. May this page ship with a paraphrased statutory source card, or must Aula 10-estabilização stay out of the wave until the exact quote is permitted? The writer is completing independent house work and will not claim this requirement passes.
+
 ## CEO early release · 07/10
 - **Revisão para a P1:** PR [#121](https://github.com/Benecles/ordenacoes-filipinas/pull/121) merged; live at [revisao-p1.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/revisao-p1.html).
 - **Aula 01 · Petição inicial, demanda e emenda:** PR [#122](https://github.com/Benecles/ordenacoes-filipinas/pull/122) merged; live at [aula-01.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/aula-01.html). Its approved blueprint now has the source/page and 2018/2 exam-thread addendum.
