@@ -1,16 +1,16 @@
 # Banco de questões — Processo Civil I
 
-56 questões consolidadas; 9 exclusões. Cada ocorrência mantém seus próprios dados e respostas verificadas.
+61 questões consolidadas; professor identificado em cada ocorrência.
 
-## 1. Prazos processuais e contagem em dias úteis
+## 1. prazo-recursal-contagem-dias-uteis
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q1` · chaves: `prazo-recursal-contagem-dias-uteis`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 1
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 1
 
-OCR: sim · tipo: case · tópico: Prazos processuais e contagem em dias úteis · aula: `aula-07.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Prazos processuais e contagem em dias úteis · **Aula:** `aula-07.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 VALTER é o chef de cozinha do restaurante OS GALOS                 c) Acaso MAIQUE também tivesse demandado com
 PRIMOS LTDA. Certo dia, os clientes MAIQUE e GUSTAVO                   GUSTAVO, em litisconsórcio ativo, ter-se-ia, nesse polo
@@ -51,15 +51,15 @@ Não indicada.
 - `cpc-lei-13105-capture-2026-09-28` — arts. 219, 224 e 1.003, § 5º; publicação eletrônica: Lei 11.419/2006, art. 4º, § 3º
 - `exam-2015-1-avaliacao-1` — PDF p. 1; disponibilização indicada no enunciado
 
-## 2. Litisconsórcio: facultativo/necessário e simples/unitário
+## 2. litisconsorcio-passivo-simples-facultativo
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q3` · chaves: `litisconsorcio-passivo-simples-facultativo`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 3
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 3
 
-OCR: sim · tipo: case · tópico: Litisconsórcio: facultativo/necessário e simples/unitário · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Litisconsórcio: facultativo/necessário e simples/unitário · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 VALTER é o chef de cozinha do restaurante OS GALOS PRIMOS LTDA. Certo dia, os clientes MAIQUE e GUSTAVO perceberam a presença de substâncias que julgaram suspeitas em seus pratos. Quando buscaram esclarecimentos, VALTER explicou que se tratava do ingrediente “anis azul”. Contudo, GUSTAVO e MAIQUE alertaram que tal substância não constava na descrição do prato no cardápio. O bate-boca encerrou somente quando VALTER, aos gritos, ordenou a expulsão dos clientes do local. Diante do caso, GUSTAVO exerceu ação contra VALTER e contra OS GALOS PRIMOS para haver danos morais e para se determinasse o fechamento do restaurante. MAIQUE não tomou medidas, mas apoiou moralmente GUSTAVO. O juiz, ao receber a inicial, (a) determinou a citação dos réus, (b) fixou o dia 29/05/2015 para audiência preliminar, bem como (c) negou o pedido liminar de GUSTAVO de que fosse imediatamente fechado o estabelecimento. A decisão foi disponibilizada no Diário de Justiça Eletrônico em 01/04/2015 e, ato subsequente, os réus foram citados e intimados por carta, sendo juntados aos autos os ARs em 07/04/2015. 3. Considere o caso e assinale a correta: a) Acaso GUSTAVO não indicasse na petição inicial como réu o restaurante GALOS PRIMOS, deveria o juiz suprir a falta e determinar a formação de litisconsórcio necessário ulterior. b) O litisconsórcio passivo formado entre o restaurante e VALTER é unitário. c) Acaso MAIQUE também tivesse demandado com GUSTAVO, em litisconsórcio ativo, ter-se-ia, nesse polo um litisconsórcio unitário. d) O litisconsórcio passivo, no caso, é simples e facultativo. e) Acaso MAIQUE e GUSTAVO litigassem conjuntamente contra VALTER e OS GALOS PRIMOS, ter-se-ia caso de litisconsórcio multitudinário.
 
@@ -75,15 +75,15 @@ d. A presença conjunta do chef e da pessoa jurídica não exige julgamento unif
 - `cpc-lei-13105-capture-2026-09-28` — arts. 113, III, 114 e 116
 - `didier-curso-vol1-2017` — cap. 12, PDF pp. 507–534; compendium/aula-03/20-primary-001-didier-curso-vol1-2017-ch12.txt
 
-## 3. Intervenção de terceiros: assistência litisconsorcial
+## 3. assistencia-litisconsorcial-ingresso-acao
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q4` · chaves: `assistencia-litisconsorcial-ingresso-acao`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 4
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 4
 
-OCR: sim · tipo: case · tópico: Intervenção de terceiros: assistência litisconsorcial · aula: `aula-04.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Intervenção de terceiros: assistência litisconsorcial · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 VALTER é o chef de cozinha do restaurante OS GALOS PRIMOS LTDA. Certo dia, os clientes MAIQUE e GUSTAVO perceberam a presença de substâncias que julgaram suspeitas em seus pratos. Quando buscaram esclarecimentos, VALTER explicou que se tratava do ingrediente “anis azul”. Contudo, GUSTAVO e MAIQUE alertaram que tal substância não constava na descrição do prato no cardápio. O bate-boca encerrou somente quando VALTER, aos gritos, ordenou a expulsão dos clientes do local. Diante do caso, GUSTAVO exerceu ação contra VALTER e contra OS GALOS PRIMOS para haver danos morais e para se determinasse o fechamento do restaurante. MAIQUE não tomou medidas, mas apoiou moralmente GUSTAVO. O juiz, ao receber a inicial, (a) determinou a citação dos réus, (b) fixou o dia 29/05/2015 para audiência preliminar, bem como (c) negou o pedido liminar de GUSTAVO de que fosse imediatamente fechado o estabelecimento. A decisão foi disponibilizada no Diário de Justiça Eletrônico em 01/04/2015 e, ato subsequente, os réus foram citados e intimados por carta, sendo juntados aos autos os ARs em 07/04/2015. Após a distribuição da demanda de GUSTAVO e a citação dos réus, MAIQUE muda de ideia e resolve também demandar VALTER e os GALOS PRIMOS LTDA. Nesse caso, é correto afirmar que: a) Poderá aderir à ação proposta por GUSTAVO, mediante a assistência litisconsorcial e obter para si tutela jurisdicional com a causa; b) Poderá ser chamado ao processo por GUSTAVO, passando à condição de litisconsorte ativo; c) Terá de demandar em via própria, sendo que sua ação será conexa com a promovida por GUSTAVO, tramitando perante o mesmo juízo. d) Se demandar em via própria, apensar-se-ão os processos em face da litispendência. e) Com o requerimento expresso de MAIQUE, GUSTAVO assumirá a condição de legitimado extraordinário e tutelará, em nome próprio, direito do primeiro, a ele sujeitando os efeitos benéficos ou prejudiciais da decisão.
 
@@ -99,15 +99,15 @@ c. A assistência litisconsorcial permite intervenção para auxiliar uma parte 
 - `cpc-lei-13105-capture-2026-09-28` — arts. 55, 119 e 124
 - `didier-curso-vol1-2017` — capítulo sobre intervenção de terceiros; compendium/aula-04 (assistência simples e litisconsorcial)
 
-## 4. Prazos processuais
+## 4. prazo-processual-dobra
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q6` · chaves: `prazo-processual-dobra`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 6
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 6
 
-OCR: sim · tipo: objective · tópico: Prazos processuais · aula: `aula-07.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Prazos processuais · **Aula:** `aula-07.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sobre os prazos processuais é correto afirmar:
 a) Não correm contra pessoa absolutamente incapaz;
@@ -127,15 +127,15 @@ e. O art. 229 prevê prazo em dobro para litisconsortes com procuradores de escr
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Art. 229
 
-## 5. Competência absoluta
+## 5. incompetencia-absoluta-materia-funcao
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q7` · chaves: `incompetencia-absoluta-materia-funcao`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 7
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 7
 
-OCR: sim · tipo: objective · tópico: Competência absoluta · aula: `aula-02.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Competência absoluta · **Aula:** `aula-02.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Considere as hipóteses e responda:
 
@@ -161,15 +161,15 @@ a. I descreve matéria atribuída a juízo especializado; III distingue competê
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 62–64 (competência absoluta); art. 144 (impedimento)
 
-## 6. Litisconsórcio
+## 6. litisconsorcio-necessario-unitario
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q8` · chaves: `litisconsorcio-necessario-unitario`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 8
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 8
 
-OCR: sim · tipo: objective · tópico: Litisconsórcio · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Litisconsórcio · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Acerca do Litisconsórcio, considere as seguintes alternativas e assinale a correta:
 a) Litisconsórcio necessário é aquele obrigatoriamente formado, seja porque alguma disposição de lei assim o imponha, seja porque a natureza da relação jurídica controvertida torne indispensável o tratamento da situação litigiosa perante a presença de todos os interessados no processo;
@@ -189,15 +189,15 @@ a. A alternativa a corresponde ao critério do art. 114. As alternativas c–e c
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 114, 116–117, 229
 
-## 7. Invalidades processuais
+## 7. invalidade-processual-criterios
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q9` · chaves: `invalidade-processual-criterios`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 9
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 9
 
-OCR: sim · tipo: objective · tópico: Invalidades processuais · aula: `aula-09.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Invalidades processuais · **Aula:** `aula-09.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Assinale a alternativa correta acerca das invalidades processuais:
 a) A atipicidade será relevante para Calmon de Passos quando o ato não der causa a um prejuízo
@@ -219,15 +219,15 @@ c) A invalidade processual pressupõe desconformidade do ato com o modelo juríd
 - `didier-curso-vol1-2017` — cap. 9, PDF pp. 447–470; seção sobre tipos de defeito e invalidades (compendium/aula-09/20-primary-001-didier-curso-vol1-2017-ch09.txt)
 - `cpc-lei-13105-capture-2026-09-28` — arts. 276–283 (forma, prejuízo, preclusão e efeitos da invalidação)
 
-## 8. Comunicação dos atos processuais; cartas e cooperação
+## 8. comunicacao-processual-cartas
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q10` · chaves: `comunicacao-processual-cartas`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 10
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 10
 
-OCR: sim · tipo: objective · tópico: Comunicação dos atos processuais; cartas e cooperação · aula: `aula-06.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Comunicação dos atos processuais; cartas e cooperação · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sobre a comunicação dos atos processuais é correto afirmar que:
 a) Menores impúberes não podem ser citados, senão na presença de membro do conselho tutelar.
@@ -248,15 +248,15 @@ e) O CPC admite cumprimento de atos fora dos limites territoriais por cooperaç�
 - `cpc-lei-13105-capture-2026-09-28` — arts. 236–237
 - `didier-curso-vol1-2017` — compendium/aula-06-citacao/40-background-042-didier-curso-vol1-2017-ch17.txt, cap. 17, PDF pp. 681–698
 
-## 9. Citação por hora certa
+## 9. citacao-hora-certa-hipoteses
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q11` · chaves: `citacao-hora-certa-hipoteses`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 11
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 11
 
-OCR: sim · tipo: case · tópico: Citação por hora certa · aula: `aula-06-citacao.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Citação por hora certa · **Aula:** `aula-06-citacao.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 O que é citação por hora certa? Em que hipóteses é possível?
 
@@ -272,15 +272,15 @@ Não indicada.
 - `cpc-lei-13105-capture-2026-09-28` — arts. 252–254
 - `didier-curso-vol1-2017` — compendium/aula-06-citacao/40-background-042-didier-curso-vol1-2017-ch17.txt, seção 9.3, PDF pp. 681–698
 
-## 10. Assistência simples e litisconsorcial
+## 10. assistencia-exemplo-classificacao
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-1-q12` · chaves: `assistencia-exemplo-classificacao`
 
-### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf, 2015, questão 12
+### Ocorrência 1: /Users/benecles/Documents/UFRGS 2026-2/Direito Processual Civil I-a/Exercícios e provas/Direito Processual Civil I - Eduardo Kochemborger Scarparo - Prova 1.pdf · 2015 · questão 12
 
-OCR: sim · tipo: case · tópico: Assistência simples e litisconsorcial · aula: `aula-04.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Assistência simples e litisconsorcial · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Dê um exemplo de algum caso em que seja possível a assistência. Após, indique se o exemplo dado condiz com assistência simples ou litisconsorcial.
 
@@ -296,15 +296,15 @@ Exemplo de assistência simples: o sublocatário ingressa para assistir o locat�
 - `cpc-lei-13105-capture-2026-09-28` — arts. 119–124, especialmente art. 124
 - `didier-curso-vol1-2017` — compendium/aula-04/20-primary-001-didier-curso-vol1-2017-ch13-s01.txt, cap. 13, seção sobre assistência
 
-## 11. Contestação, impugnação específica e efeitos da revelia entre corréus
+## 11. exam-2015-1-avaliacao-2-q1
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q1` · chaves: `exam-2015-1-avaliacao-2-q1`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 1
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 1
 
-OCR: sim · tipo: objective · tópico: Contestação, impugnação específica e efeitos da revelia entre corréus · aula: `aula-08.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Contestação, impugnação específica e efeitos da revelia entre corréus · **Aula:** `aula-08.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Jesse Valadão exerceu ação em face de Dalvo Fritz e Serotonina da Silva. A demanda tinha por objeto a cobrança solidária de R$ 100.000,00 (cem mil reais). Citados regularmente os réus por carta, realizou-se a audiência preliminar, em 01/04/2015, com comparecimento de todas as partes, sem alcançar acordo. A contestação foi apresentada por Dalvo Fritz na primeira semana do prazo contestacional. Na peça, apesar de apresentar uma série de defesas preliminares, defesas de mérito e também reconvenção, o réu não impugnou expressamente alguns dos fatos alegados pelo autor na petição inicial, o que o contestante percebeu em 13/04/2015. Daí redigiu petição complementando a sua contestação que foi protocolada de pronto, impugnando os fatos antes esquecidos. Serotonina da Silva não apresentou defesa no processo, nem constituiu advogado. Considere o caso para responder de 1 a 4.
 
@@ -327,15 +327,15 @@ e — Sob o CPC/2015, a complementação apresentada ainda dentro do prazo de co
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 335, 341 e 345, I
 - `didier-curso-vol1-2017` — Cap. 19, resposta do réu e contestação (compendium/aula-08)
 
-## 12. Revelia e intervenção posterior do réu revel
+## 12. exam-2015-1-avaliacao-2-q2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q2` · chaves: `exam-2015-1-avaliacao-2-q2`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 2
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 2
 
-OCR: sim · tipo: objective · tópico: Revelia e intervenção posterior do réu revel · aula: `aula-08-revelia.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Revelia e intervenção posterior do réu revel · **Aula:** `aula-08-revelia.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Jesse Valadão exerceu ação em face de Dalvo Fritz e Serotonina da Silva. A demanda tinha por objeto a cobrança solidária de R$ 100.000,00 (cem mil reais). Citados regularmente os réus por carta, realizou-se a audiência preliminar, em 01/04/2015, com comparecimento de todas as partes, sem alcançar acordo. A contestação foi apresentada por Dalvo Fritz na primeira semana do prazo contestacional. Na peça, apesar de apresentar uma série de defesas preliminares, defesas de mérito e também reconvenção, o réu não impugnou expressamente alguns dos fatos alegados pelo autor na petição inicial, o que o contestante percebeu em 13/04/2015. Daí redigiu petição complementando a sua contestação que foi protocolada de pronto, impugnando os fatos antes esquecidos. Serotonina da Silva não apresentou defesa no processo, nem constituiu advogado. Considere o caso para responder de 1 a 4.
 
@@ -358,15 +358,15 @@ c — Os prazos contra o revel sem advogado fluem da publicação do ato decisó
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 344–346
 - `didier-resposta-reu-revelia` — Resposta do réu e revelia; compendium/aula-08-revelia
 
-## 13. Reconvenção e autonomia das pretensões
+## 13. exam-2015-1-avaliacao-2-q3
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q3` · chaves: `exam-2015-1-avaliacao-2-q3`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 3
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 3
 
-OCR: sim · tipo: objective · tópico: Reconvenção e autonomia das pretensões · aula: `aula-08-revelia.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Reconvenção e autonomia das pretensões · **Aula:** `aula-08-revelia.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Jesse Valadão exerceu ação em face de Dalvo Fritz e Serotonina da Silva. A demanda tinha por objeto a cobrança solidária de R$ 100.000,00 (cem mil reais). Citados regularmente os réus por carta, realizou-se a audiência preliminar, em 01/04/2015, com comparecimento de todas as partes, sem alcançar acordo. A contestação foi apresentada por Dalvo Fritz na primeira semana do prazo contestacional. Na peça, apesar de apresentar uma série de defesas preliminares, defesas de mérito e também reconvenção, o réu não impugnou expressamente alguns dos fatos alegados pelo autor na petição inicial, o que o contestante percebeu em 13/04/2015. Daí redigiu petição complementando a sua contestação que foi protocolada de pronto, impugnando os fatos antes esquecidos. Serotonina da Silva não apresentou defesa no processo, nem constituiu advogado. Considere o caso para responder de 1 a 4.
 
@@ -389,15 +389,15 @@ c — A reconvenção veicula pretensão própria e autônoma; sua procedência 
 - `cpc-lei-13105-capture-2026-09-28` — Art. 343, caput e § 2º
 - `didier-resposta-reu-revelia` — Reconvenção; compendium/aula-08-revelia
 
-## 14. Litisconsórcio simples e facultativo entre devedores solidários
+## 14. exam-2015-1-avaliacao-2-q4
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q4` · chaves: `exam-2015-1-avaliacao-2-q4`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 4
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 4
 
-OCR: sim · tipo: objective · tópico: Litisconsórcio simples e facultativo entre devedores solidários · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Litisconsórcio simples e facultativo entre devedores solidários · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Jesse Valadão exerceu ação em face de Dalvo Fritz e Serotonina da Silva. A demanda tinha por objeto a cobrança solidária de R$ 100.000,00 (cem mil reais). Citados regularmente os réus por carta, realizou-se a audiência preliminar, em 01/04/2015, com comparecimento de todas as partes, sem alcançar acordo. A contestação foi apresentada por Dalvo Fritz na primeira semana do prazo contestacional. Na peça, apesar de apresentar uma série de defesas preliminares, defesas de mérito e também reconvenção, o réu não impugnou expressamente alguns dos fatos alegados pelo autor na petição inicial, o que o contestante percebeu em 13/04/2015. Daí redigiu petição complementando a sua contestação que foi protocolada de pronto, impugnando os fatos antes esquecidos. Serotonina da Silva não apresentou defesa no processo, nem constituiu advogado. Considere o caso para responder de 1 a 4.
 
@@ -419,15 +419,15 @@ e — A solidariedade permite ao credor demandar um ou alguns dos devedores; cad
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 113, I, and 117
 
-## 15. Requisitos da petição inicial, pedido genérico e cumulação
+## 15. exam-2015-1-avaliacao-2-q5
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q5` · chaves: `exam-2015-1-avaliacao-2-q5`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 5
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 5
 
-OCR: sim · tipo: objective · tópico: Requisitos da petição inicial, pedido genérico e cumulação · aula: `aula-01.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Requisitos da petição inicial, pedido genérico e cumulação · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 5. Sobre a petição inicial é correto afirmar:
 a) Deverá ser apresentada no prazo de 15 dias;
@@ -448,15 +448,15 @@ d — A regra é pedido certo e determinado, mas o CPC admite pedido genérico n
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 319, 321, 324, § 1º, 327 e 435
 - `didier-curso-vol1-2017` — Cap. 15, petição inicial e pedido; compendium/aula-01
 
-## 16. Contestação, concentração da defesa e impugnação específica
+## 16. exam-2015-1-avaliacao-2-q6
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q6` · chaves: `exam-2015-1-avaliacao-2-q6`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 6
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 6
 
-OCR: sim · tipo: objective · tópico: Contestação, concentração da defesa e impugnação específica · aula: `aula-08.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Contestação, concentração da defesa e impugnação específica · **Aula:** `aula-08.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 6. Sobre a contestação é incorreto afirmar:
 a) Em regra, deverá ser apresentada em peça escrita, no prazo de 15 dias contados da audiência preliminar quando realizada;
@@ -477,15 +477,15 @@ d — A impugnação específica é a regra; a negativa geral só é autorizada 
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 335, 336, 337, 341 e 434
 - `didier-curso-vol1-2017` — Cap. 19, contestação; compendium/aula-08
 
-## 17. Tipicidade e admissibilidade dos meios de prova
+## 17. exam-2015-1-avaliacao-2-q7
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q7` · chaves: `exam-2015-1-avaliacao-2-q7`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 7
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 7
 
-OCR: sim · tipo: objective · tópico: Tipicidade e admissibilidade dos meios de prova · aula: `aula-15.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Tipicidade e admissibilidade dos meios de prova · **Aula:** `aula-15.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 7. Acerca da tipicidade probatória, assinale a alternativa correta:
 a) A previsão taxativa dos meios de provas na lei processual civil brasileira tem por finalidade fornecer segurança jurídica ao processo.
@@ -506,15 +506,15 @@ c — O CPC admite meios legais e moralmente legítimos, ainda que não especifi
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 369 e 371
 - `marinoni-novo-curso-vol2` — § 9.12, meios típicos e atípicos; compendium/aula-15
 
-## 18. Ônus da prova: função e redistribuição dinâmica
+## 18. exam-2015-1-avaliacao-2-q8
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q8` · chaves: `exam-2015-1-avaliacao-2-q8`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 8
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 8
 
-OCR: sim · tipo: objective · tópico: Ônus da prova: função e redistribuição dinâmica · aula: `aula-17.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Ônus da prova: função e redistribuição dinâmica · **Aula:** `aula-17.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 8. Acerca dos ônus da prova, assinale a alternativa correta:
 a) A distribuição dinâmica do ônus da prova se dá mediante o afastamento das regras de distribuição legais, recaindo a tarefa de fixar nova distribuição dos ônus ao juiz da causa, diante do caso concreto.
@@ -535,15 +535,15 @@ d — A inversão consumerista depende de decisão judicial fundamentada; pelo C
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 11, 357, III, e 373, §§ 1º–2º
 - `marinoni-novo-curso-vol1-2017` — Parte III, cap. 4, § 4.5, fatos litigiosos e ônus da prova; compendium/aula-17
 
-## 19. Prova oral: depoimento pessoal, informante e inquirição
+## 19. exam-2015-1-avaliacao-2-q9
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q9` · chaves: `exam-2015-1-avaliacao-2-q9`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 9
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 9
 
-OCR: sim · tipo: objective · tópico: Prova oral: depoimento pessoal, informante e inquirição · aula: `aula-16.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Prova oral: depoimento pessoal, informante e inquirição · **Aula:** `aula-16.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 9. Acerca das provas orais, é correto afirmar que:
 a) As testemunhas arroladas pelo autor deverão responder diretamente aos questionamentos do autor e do réu, nessa ordem, sendo vedado o questionamento formulado pelo juiz.
@@ -564,15 +564,15 @@ d — O depoimento pessoal pode ser requerido por uma parte contra a outra; na r
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 125, 127, 385, 447, §§ 4º–5º, e 459
 - `marinoni-novo-curso-vol2` — § 9.12, provas e admissibilidade; compendium/aula-16
 
-## 20. Julgamento parcial de mérito
+## 20. exam-2015-1-avaliacao-2-q10
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q10` · chaves: `exam-2015-1-avaliacao-2-q10`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 10
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 10
 
-OCR: sim · tipo: case · tópico: Julgamento parcial de mérito · aula: `aula-11-merito.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Julgamento parcial de mérito · **Aula:** `aula-11-merito.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 10. Dê um exemplo de julgamento parcial de mérito?
 
@@ -589,15 +589,15 @@ Exemplo: o juiz resolve definitivamente um dos pedidos cumulados que já está p
 - `cpc-lei-13105-capture-2026-09-28` — Art. 356
 - `lucon-cpc-355-357` — Arts. 355–357, comentário ao art. 356; compendium/aula-11-merito
 
-## 21. Admissibilidade da prova e valoração de fatos inverossímeis
+## 21. exam-2015-1-avaliacao-2-q11
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2015-1-avaliacao-2-q11` · chaves: `exam-2015-1-avaliacao-2-q11`
 
-### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt, 2015/1, questão 11
+### Ocorrência 1: /Users/benecles/Developer/ordenacoes-filipinas-workshop/work/pipeline/processo-civil-i/chapters/exam-2015-1-avaliacao-2/01-exam.txt · 2015/1 · questão 11
 
-OCR: sim · tipo: case · tópico: Admissibilidade da prova e valoração de fatos inverossímeis · aula: `aula-15.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Admissibilidade da prova e valoração de fatos inverossímeis · **Aula:** `aula-15.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 11. É possível a produção de provas sobre fatos inverossímeis? Justifique brevemente.
 
@@ -615,15 +615,15 @@ Sim. A inverossimilhança pode influir na valoração, mas não exclui por si s�
 - `marinoni-novo-curso-vol2` — §§ 9.1–9.3, prova e seu objeto; compendium/aula-15
 - `marinoni-novo-curso-vol2` — §§ 9.5.2 e 9.6, máximas de experiência; compendium/aula-18
 
-## 22. Prazos processuais; prazo para contestar e prazo em dobro da Fazenda Pública
+## 22. prazo-contestacao-litisconsortes-fazenda-publica
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q1` · chaves: `prazo-contestacao-litisconsortes-fazenda-publica`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 1
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 1
 
-OCR: sim · tipo: case · tópico: Prazos processuais; prazo para contestar e prazo em dobro da Fazenda Pública · aula: `aula-07.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Prazos processuais; prazo para contestar e prazo em dobro da Fazenda Pública · **Aula:** `aula-07.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sabendo que o prazo para contestar é contado considerado o art. 335, I, do CPC/2015, além de todas as demais disposições legais pertinentes aos prazos, circule no calendário o último dia para que ODRAUDE apresente contestação (0,5) e faça um X ou uma estrela (como preferir) sobre o último dia do prazo de contestação da UFRGS (0,5): MARÇO 2018 / ABRIL 2018. Feriados: 30/03/18 (sexta-feira da paixão).
 Calendário impresso (OCR):
@@ -647,15 +647,15 @@ ODRAUDE: 22/03/2018, ao fim de 15 dias úteis contados do primeiro dia útil seg
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 219, 224, 335, I, e 183
 - `exam-2017-2-p1` — PDF p. 1; audiência designada para 01/03/2018 e feriado de 30/03/2018
 
-## 23. Litisconsórcio simples ou unitário e facultativo ou necessário
+## 23. litisconsorcio-passivo-responsabilidade-danos-morais
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q3` · chaves: `litisconsorcio-passivo-responsabilidade-danos-morais`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 3
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 3
 
-OCR: sim · tipo: objective · tópico: Litisconsórcio simples ou unitário e facultativo ou necessário · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Litisconsórcio simples ou unitário e facultativo ou necessário · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sobre o litisconsórcio formado no que condiz com o pedido de danos morais (1,0): a) Trata-se de litisconsórcio unitário, uma vez que o montante do dano será único e fixado em razão do prejuízo de ARIOVALDO. b) Trata-se de litisconsórcio necessário, tendo em conta que o evento foi praticado por ODRAUDE como servidor da autarquia federal (UFRGS). c) Se está diante de litisconsórcio passivo simples e facultativo, sendo livre o juiz decidir quanto a fixação de diferentes ou iguais responsabilidades de cada um dos réus. d) Há caso de litisconsórcio multitudinário, tendo em conta a presença de múltiplos pedidos em face dos mesmos réus.
 
@@ -671,15 +671,15 @@ c) Litisconsórcio passivo simples e facultativo: a responsabilidade de cada ré
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 113, 116 e 117
 - `didier-curso-vol1-2017` — Cap. 12, PDF pp. 507–534; compendium/aula-03/20-primary-001-didier-curso-vol1-2017-ch12.txt
 
-## 24. Assistência litisconsorcial e interesse jurídico do terceiro
+## 24. assistencia-terceira-aluna-demanda-anulatoria
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q4` · chaves: `assistencia-terceira-aluna-demanda-anulatoria`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 4
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 4
 
-OCR: sim · tipo: objective · tópico: Assistência litisconsorcial e interesse jurídico do terceiro · aula: `aula-04.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Assistência litisconsorcial e interesse jurídico do terceiro · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 ANACLETA é igualmente aluna, tendo também se submetido à mesma avaliação. Ciente da demanda proposta por ARIOVALDO é correto afirmar que (1,0): a) ANACLETA poderá ser chamada ao processo por ARIOVALDO, a fim de que tenha para si tutela jurisdicional, podendo-se por esse expediente invalidar também a sua prova; b) ANACLETA poderá denunciar a lide ao Ministério Público Federal, para que apure eventual improbidade administrativa praticada pelo docente; c) ANACLETA deverá participar como litisconsorte necessária, tendo em conta que a anulação da prova de ARIOVALDO e a oportunidade de novo exame ao autor repercutirá em potencial afetação de sua própria relação com a universidade, considerado o ordenamento acadêmico. d) ANACLETA poderá habilitar-se como assistente litisconsorcial de ARIOVALDO.
 
@@ -695,15 +695,15 @@ d) Ela poderá requerer ingresso como assistente litisconsorcial se demonstrar q
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 119 e 124
 - `didier-curso-vol1-2017` — Cap. 13, item 2, PDF pp. 535–567; compendium/aula-04/20-primary-001-didier-curso-vol1-2017-ch13-s01.txt
 
-## 25. Intimação, destinatários e intimação por hora certa
+## 25. intimacao-hora-certa-destinatarios
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q6` · chaves: `intimacao-hora-certa-destinatarios`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 6
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 6
 
-OCR: sim · tipo: VF · tópico: Intimação, destinatários e intimação por hora certa · aula: `aula-06.html`
+**OCR:** sim · **Tipo:** VF · **Tópico:** Intimação, destinatários e intimação por hora certa · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Considere as hipóteses e responda sobre a intimação: I – Se presentes os requisitos da citação por hora certa (CPC/2015. Art. 252), pode ser também efetuada a intimação por hora certa; II – Serão objeto de intimação apenas as partes e o Ministério Público, não sendo possível destiná-las a terceiros não integrantes do contraditório. Trata-se de assertivas corretas (1,0): a) Nenhuma. b) Apenas I c) Apenas II d) Todas
 
@@ -719,15 +719,15 @@ b) Apenas I. O art. 275, § 2º, permite intimação por hora certa quando neces
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 269 e 275, § 2º
 - `cpc-lei-13105-capture-2026-09-28` — Art. 252
 
-## 26. Tempo e lugar dos atos processuais; prática eletrônica de atos
+## 26. tempo-lugar-atos-peticao-eletronica
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q7` · chaves: `tempo-lugar-atos-peticao-eletronica`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 7
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 7
 
-OCR: sim · tipo: objective · tópico: Tempo e lugar dos atos processuais; prática eletrônica de atos · aula: `aula-07.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** Tempo e lugar dos atos processuais; prática eletrônica de atos · **Aula:** `aula-07.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sobre o tempo e lugar dos atos do processo é correto afirmar que (1,0): a) Os atos processuais devem ser cumpridos preferencialmente em tempo seco e ao abrigo do sol para melhor conservação e durabilidade; b) Os atos realizam-se ordinariamente em cartório, salvo disposição expressa da lei, autorizando especificamente a prática do ato nas circunstâncias determinadas estritamente pelo legislador. c) Atos processuais podem ser realizados na madrugada, independentemente de autorização judicial. d) Salvo quando em autos eletrônicos, os atos que devem ser cumpridos por petição devem ser praticados durante o período do expediente forense.
 
@@ -743,15 +743,15 @@ d) Em autos não eletrônicos, petições devem ser protocoladas no horário de 
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 212, caput e § 3º; 213; 217
 - `marinoni-novo-curso-vol2` — Cap. 4, PDF pp. 102–121; compendium/aula-07/40-background-041-marinoni-novo-curso-vol2-04.txt
 
-## 27. Assistência simples; terceiro interveniente e conceito de parte
+## 27. assistente-simples-e-parte-na-lide
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q8` · chaves: `assistente-simples-e-parte-na-lide`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 8
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 8
 
-OCR: sim · tipo: case · tópico: Assistência simples; terceiro interveniente e conceito de parte · aula: `aula-04.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Assistência simples; terceiro interveniente e conceito de parte · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 O assistente simples é parte na lide? Justifique relacionando com o conceito de parte que julgares mais adequado. (1,0).
 
@@ -768,15 +768,15 @@ O assistente simples não é titular da relação jurídica litigiosa e, nesse s
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 119 e 121
 - `didier-curso-vol1-2017` — Cap. 13, item 2, PDF pp. 535–567; compendium/aula-04/20-primary-001-didier-curso-vol1-2017-ch13-s01.txt
 
-## 28. Nulidades processuais; irregularidade e atipicidade relevante
+## 28. irregularidade-teoria-nulidades-calmon-passos
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2017-2-p1-q9` · chaves: `irregularidade-teoria-nulidades-calmon-passos`
 
-### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt, 2017, questão 9
+### Ocorrência 1: chapters/exam-2017-2-p1/01-exam.txt · 2017 · questão 9
 
-OCR: sim · tipo: case · tópico: Nulidades processuais; irregularidade e atipicidade relevante · aula: `aula-09.html`
+**OCR:** sim · **Tipo:** case · **Tópico:** Nulidades processuais; irregularidade e atipicidade relevante · **Aula:** `aula-09.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 O que é uma irregularidade, na perspectiva da teoria de nulidades processuais proposta por Calmon de Passos? (1.0)
 
@@ -792,15 +792,15 @@ Na formulação cobrada, irregularidade é atipicidade sem prejuízo relevante, 
 - `exam-2017-2-p1` — PDF p. 2; resposta impressa após a questão 9
 - `passos-teoria-nulidades` — Leitura atribuída, pp. 123–142; compendium/aula-09/20-primary-002-passos-teoria-nulidades-assigned-reading.txt, especialmente PDF pp. 2–4 (livro pp. 123–125)
 
-## 29. prazo recurso interlocutoria prazo dias uteis
+## 29. prazo-recurso-interlocutoria-prazo-dias-uteis
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q1` · chaves: `prazo-recurso-interlocutoria-prazo-dias-uteis`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 1
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 1
 
-OCR: não · tipo: objective · tópico: prazo recurso interlocutoria prazo dias uteis · aula: `aula-07.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** prazo recurso interlocutoria prazo dias uteis · **Aula:** `aula-07.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Considerando as técnicas de contagem de prazo de 15 dias para a apresentação de recurso da decisão liminar, pode-se dizer que o último dia do prazo para que DIOGO recorra é (circule no calendário):
 
@@ -816,15 +816,15 @@ Não indicada.
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 219, 224, 231, II e 1.003, § 5º
 - `exam-2018-1-p1` — PDF 1, questão 1
 
-## 30. litisconsorcio passivo necessario honorarios proporcionais
+## 30. litisconsorcio-passivo-necessario-honorarios-proporcionais
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q2` · chaves: `litisconsorcio-passivo-necessario-honorarios-proporcionais`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 2
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 2
 
-OCR: não · tipo: objective · tópico: litisconsorcio passivo necessario honorarios proporcionais · aula: `aula-03.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** litisconsorcio passivo necessario honorarios proporcionais · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Após alguns atos, o réu DIOGO apresentou sua contestação, alegando que a composição subjetiva do processo estaria incompleta, dado que também lhe são credores os demais advogados atuantes do feito, ainda que não se possa estabelecer de antemão o quantum devido a cada um. Por isso deveriam participar todos como litisconsortes necessários. Quanto a essa fundamentação, pode-se afirmar que: (1,0)
 
@@ -845,15 +845,15 @@ a
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 114–115
 - `exam-2018-1-p1` — PDF 1, questão 2
 
-## 31. foro acao cobranca honorarios advogado
+## 31. foro-acao-cobranca-honorarios-advogado
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q3` · chaves: `foro-acao-cobranca-honorarios-advogado`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 3
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 3
 
-OCR: não · tipo: objective · tópico: foro acao cobranca honorarios advogado · aula: `aula-06.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** foro acao cobranca honorarios advogado · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Considere os seguintes dados de domicílio: REINALDO (Porto Alegre), ARIOVALDO (Canoas), AGNES (Gravataí), DIOGO (Cachoeirinha). Considere, igualmente, que a causa originária, proposta por CARLA em face de DIOGO, tramitou em Alvorada, por conta de cláusula de eleição de foro no contrato de empréstimo. Assim estabelecido, de acordo com as regras definidoras de competência do CPC/2015, o foro de tramitação da causa proposta por AGNES será o de: (1,0)
 
@@ -874,15 +874,15 @@ a
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 46, 63
 - `exam-2018-1-p1` — PDF 1, questão 3
 
-## 32. intervencao terceiro assistencia interesse juridico contrato honorarios
+## 32. intervencao-terceiro-assistencia-interesse-juridico-contrato-honorarios
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q4` · chaves: `intervencao-terceiro-assistencia-interesse-juridico-contrato-honorarios`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 4
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 4
 
-OCR: não · tipo: objective · tópico: intervencao terceiro assistencia interesse juridico contrato honorarios · aula: `aula-04.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** intervencao terceiro assistencia interesse juridico contrato honorarios · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 CLÁUDIA, quando firmou contrato de honorários com ARIOVALDO, previu, na Cláusula 6ª do referido pacto, que eventuais valores obtidos por ARIOVALDO e advogados substabelecidos por esse, a título de sucumbência, seriam abatidos do montante contratual a ser pago pelos serviços prestados. Assim tendo em conta o contrato de honorários e a repercussão no pagamento devido, poderá CLÁUDIA ser sujeito de alguma intervenção de terceiros no feito? (1,0)
 
@@ -903,15 +903,15 @@ d
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 119, 125, 138
 - `exam-2018-1-p1` — PDF 1, questão 4
 
-## 33. litisconsorcio ativo necessario art 26 oab extincao
+## 33. litisconsorcio-ativo-necessario-art-26-oab-extincao
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q5` · chaves: `litisconsorcio-ativo-necessario-art-26-oab-extincao`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 5
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 5
 
-OCR: não · tipo: objective · tópico: litisconsorcio ativo necessario art 26 oab extincao · aula: `aula-03.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** litisconsorcio ativo necessario art 26 oab extincao · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 O juiz, quando do exame atento da causa, entendeu que AGNES não poderia demandar sozinha pelos honorários de sucumbência, sem que houvesse a participação de ARIOVALDO como autor, em razão da dicção do art. 26 da Lei 8.906/94. Assim, com base nesse dispositivo legal, disse que não haveria fundamento processual para seguimento do processo e extinguiu o feito sem resolução de mérito, na forma do art. 487 do CPC/15. Assim considerado, é correto afirmar que: (1,0)
 
@@ -932,15 +932,15 @@ a
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 113–115; Lei 8.906/1994, art. 26
 - `exam-2018-1-p1` — PDF 2, questão 5
 
-## 34. conexao litispendencia continencia acao honorarios
+## 34. conexao-litispendencia-continencia-acao-honorarios
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q6` · chaves: `conexao-litispendencia-continencia-acao-honorarios`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 6
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 6
 
-OCR: não · tipo: objective · tópico: conexao litispendencia continencia acao honorarios · aula: `aula-03.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** conexao litispendencia continencia acao honorarios · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 A demanda proposta por AGNES tem vínculos com a causa originária, na qual foram fixados os honorários de sucumbência em questão. Por esse motivo, pode-se dizer que: (1,0)
 
@@ -961,15 +961,15 @@ d
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 55–57
 - `exam-2018-1-p1` — PDF 2, questão 6
 
-## 35. principios nulidades instrumentalidade aproveitamento
+## 35. principios-nulidades-instrumentalidade-aproveitamento
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q7` · chaves: `principios-nulidades-instrumentalidade-aproveitamento`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 7
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 7
 
-OCR: não · tipo: objective · tópico: principios nulidades instrumentalidade aproveitamento · aula: `aula-09.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** principios nulidades instrumentalidade aproveitamento · **Aula:** `aula-09.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Considerando os princípios vinculados às nulidades no direito processual civil brasileiro, pode-se afirmar que: (1,0)
 
@@ -990,15 +990,15 @@ c
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 188, 277, 282–283
 - `exam-2018-1-p1` — PDF 2, questão 7
 
-## 36. competencia absoluta caracteristicas
+## 36. competencia-absoluta-caracteristicas
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q8` · chaves: `competencia-absoluta-caracteristicas`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 8
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 8
 
-OCR: não · tipo: objective · tópico: competencia absoluta caracteristicas · aula: `aula-06.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** competencia absoluta caracteristicas · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Analise as características. (1,0)
 
@@ -1026,15 +1026,15 @@ a
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts.  rel. 62–64; art. 966, II
 - `exam-2018-1-p1` — PDF 2, questão 8
 
-## 37. comunicacao atos processuais citacao intimacao cooperacao
+## 37. comunicacao-atos-processuais-citacao-intimacao-cooperacao
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q9` · chaves: `comunicacao-atos-processuais-citacao-intimacao-cooperacao`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 9
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 9
 
-OCR: não · tipo: objective · tópico: comunicacao atos processuais citacao intimacao cooperacao · aula: `aula-06.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** comunicacao atos processuais citacao intimacao cooperacao · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Acerca da comunicação dos atos processuais, é correto afirmar que: (1,0)
 
@@ -1055,15 +1055,15 @@ d
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 67–69; arts. 270–275; art. 239, § 1º
 - `exam-2018-1-p1` — PDF 2, questão 9
 
-## 38. auxiliares justica imparcialidade formacao universitaria
+## 38. auxiliares-justica-imparcialidade-formacao-universitaria
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2018-1-p1-q10` · chaves: `auxiliares-justica-imparcialidade-formacao-universitaria`
 
-### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt, 2018, questão 10
+### Ocorrência 1: chapters/exam-2018-1-p1/01-document.txt · 2018 · questão 10
 
-OCR: não · tipo: true_false · tópico: auxiliares justica imparcialidade formacao universitaria · aula: `aula-06.html`
+**OCR:** não · **Tipo:** true_false · **Tópico:** auxiliares justica imparcialidade formacao universitaria · **Aula:** `aula-06.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Sobre os auxiliares do juiz, analise as assertivas, indicando V para verdadeiro e F para falso:
 
@@ -1082,16 +1082,15 @@ V; F
 - `cpc-lei-13105-capture-2026-09-28` — CPC, arts. 149–155
 - `exam-2018-1-p1` — PDF 2, questão 10
 
-## 39. Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário
+## 39. chamamento-ao-processo-classificacao-litisconsorcio
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q2`
+ID: `exam-2018-2-p1-v1-q2` · chaves: `chamamento-ao-processo-classificacao-litisconsorcio`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 2
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 2
 
-OCR: não · tipo: V/F · tópico: Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário · aula: `aula-05.html`
+**OCR:** não · **Tipo:** V/F · **Tópico:** Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário · **Aula:** `aula-05.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. A inclusão de Raimundo e Florinda na causa, está lastreada em hipótese de intervenção de terceiros, formando litisconsórcio passivo ulterior. Nesse caso, pode-se dizer que: I – trata-se de chamamento ao processo. V II – o litisconsórcio formado é simples. V II – o litisconsórcio formado é necessário. F. Analisando as assertivas, pode-se afirmar que: a) Todas são falsas; b) Todas são corretas; c) Duas são falsas e uma é correta; d) Duas são corretas e uma é falsa.
 
@@ -1107,16 +1106,15 @@ O chamamento é admissível: Francisco é fiador e pode chamar o afiançado e os
 - `cpc-lei-13105-capture-2026-09-28` — Art. 130, I–II
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 113–117
 
-## 40. Contestação, revelia e efeitos do comparecimento espontâneo
+## 40. prazo-contestacao-revelia-correpres
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q3`
+ID: `exam-2018-2-p1-v1-q3` · chaves: `prazo-contestacao-revelia-correpres`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 3
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 3
 
-OCR: não · tipo: objective · tópico: Contestação, revelia e efeitos do comparecimento espontâneo · aula: `aula-08.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Contestação, revelia e efeitos do comparecimento espontâneo · **Aula:** `aula-08.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. Ambos constituíram advogados, juntando procuração aos autos enquanto fluía o prazo para contestação, mas apenas Raimundo ofereceu defesa, de modo que Florinda não contestou a causa. Assim considerado, é correto afirmar que: a) Deverá o juízo designar curador especial para Florinda, por conta da citação ficta. b) Deverá ocorrer nova citação de Florinda. c) Será certificada a ausência de defesa por Florinda, seguindo-se a causa normalmente. d) Raimundo ou Francisco será designado como representante de Florinda para a causa.
 
@@ -1132,16 +1130,15 @@ c) A citação com hora certa não exige curador especial antes da revelia. Como
 - `cpc-lei-13105-capture-2026-09-28` — Art. 239, § 1º
 - `cpc-lei-13105-capture-2026-09-28` — Art. 72
 
-## 41. Citação com hora certa; atipicidade e prejuízo processual
+## 41. citacao-hora-certa-atipicidade-prejuizo
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q4`
+ID: `exam-2018-2-p1-v1-q4` · chaves: `citacao-hora-certa-atipicidade-prejuizo`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 4
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 4
 
-OCR: não · tipo: objective · tópico: Citação com hora certa; atipicidade e prejuízo processual · aula: `aula-09.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Citação com hora certa; atipicidade e prejuízo processual · **Aula:** `aula-09.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. Relativamente à citação por hora certa realizada, tendo-se por consideração a teoria da relevância da atipicidade, elaborada por Calmon de Passos. Pode-se afirmar que: a) Trata-se de ato nulo, tendo-se em vista a atipicidade da conduta e o evidente prejuízo sofrido por Florinda, razão pela qual deve ser renovada a citação. b) Trata-se de ato válido, pois não há qualquer atipicidade na citação por hora certa realizada. c) Trata-se de ato irregular e, por isso, descartável para todos os fins no que diz respeito com o trâmite do processo. d) Apesar da atipicidade da conduta, não se vislumbra prejuízo processual no caso, o que direciona a desnecessidade de qualquer retificação ou ratificação sobre a citação.
 
@@ -1158,16 +1155,15 @@ d) A diligência descrita diverge do procedimento do art. 252, que exige duas pr
 - `cpc-lei-13105-capture-2026-09-28` — Art. 239, § 1º
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 277 e 282, § 1º
 
-## 42. Partes e litisconsórcio facultativo; cumulação de pedidos
+## 42. cumulação-pedidos-litisconsorcio-passivo
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q5`
+ID: `exam-2018-2-p1-v1-q5` · chaves: `cumulação-pedidos-litisconsorcio-passivo`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 5
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 5
 
-OCR: não · tipo: objective · tópico: Partes e litisconsórcio facultativo; cumulação de pedidos · aula: `aula-03.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Partes e litisconsórcio facultativo; cumulação de pedidos · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. Florinda, apesar de não ter contestado a causa, não quis permanecer neutra à situação. Por conta disso, propôs ação judicial contra Adamastor para que fosse reconhecida a nulidade do contrato de empréstimo e, por conta disso, isentar-se do pagamento como fiadora. Na mesma petição, cumulando pedidos, Florinda buscou indenização de R$ 50.000,00 contra Valquíria, pois essa espalhou boatos falsos que lhes causaram impacto moral. Assim estabelecido, é correto afirmar que: a) O litisconsórcio passivo formado entre Valquíria e Adamastor é plenamente admissível, facultativo e simples. b) A cumulação de pedidos formulada é imprópria. c) Com a formação do litisconsórcio como proposto, a eventual procedência do pedido indenizatório, com condenação em danos morais necessariamente atingirá Adamastor e Valquíria. d) Nenhuma das alternativas anteriores é correta.
 
@@ -1183,16 +1179,15 @@ b) O pedido declaratório contra Adamastor e o pedido indenizatório contra Valq
 - `cpc-lei-13105-capture-2026-09-28` — Art. 113, II–III
 - `cpc-lei-13105-capture-2026-09-28` — Art. 327, caput e § 1º
 
-## 43. Petição inicial; valor da causa e cumulação de pedidos
+## 43. valor-causa-cumulação-declaratorio-dano-moral
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q6`
+ID: `exam-2018-2-p1-v1-q6` · chaves: `valor-causa-cumulação-declaratorio-dano-moral`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 6
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 6
 
-OCR: não · tipo: objective · tópico: Petição inicial; valor da causa e cumulação de pedidos · aula: `aula-01.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Petição inicial; valor da causa e cumulação de pedidos · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. Qual o correto valor da causa proposta por Florinda, considerando a narrativa trazida na questão imediatamente anterior? a) R$ 100.000,00. b) R$ 50.000,00. c) R$ 150.000,00. d) Nenhuma das alternativas anteriores.
 
@@ -1207,16 +1202,15 @@ c) R$ 150.000,00: R$ 100.000,00, valor do contrato cuja validade é discutida, s
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Art. 292, II, V–VI
 
-## 44. Litisconsórcio necessário e unitário
+## 44. litisconsorcio-necessario-demanda-validade-contrato
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q7`
+ID: `exam-2018-2-p1-v1-q7` · chaves: `litisconsorcio-necessario-demanda-validade-contrato`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 7
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 7
 
-OCR: não · tipo: objective · tópico: Litisconsórcio necessário e unitário · aula: `aula-03.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Litisconsórcio necessário e unitário · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Adamastor emprestou R$ 100.000,00 (cem mil reais) para Raimundo. A namorada do devedor (Florinda) e o filho do réu (Francisco) prestaram fiança ao negócio. Com o inadimplemento, Adamastor propôs ação de cobrança exclusivamente em face de Francisco, que foi citado para comparecer à audiência de conciliação. Não houve acordo no ato, sendo que, no prazo legal da contestação (15 dias), apresentou sua defesa o réu. Na peça de defesa, propôs a inclusão na lide de Raimundo e Florinda, pois eram também supostamente devedores do autor. Foi determinada a respectiva citação para contestarem no prazo legal. As cartas de citação não tiveram êxito em encontrar os réus. Expedido mandado de citação, o Oficial de Justiça compareceu ao endereço de Raimundo e o citou regularmente, sendo o mandado juntado aos autos no dia 05 de setembro. Para a citação de Florinda, o mesmo oficial diligenciou no respectivo endereço, sem localizar a ré. Suspeitando de ocultação, já na primeira tentativa de citação, marcou data no dia seguinte para citação por hora certa da ré Florinda, tendo cumprido o mandado na pessoa da vizinha Valquíria, que espalhou para toda a vizinhança que Florinda era “fugitiva da justiça”. Diante da boataria, Florinda constituiu advogado para saber do que se tratava, que compareceu aos autos no dia 05 de setembro, curiosamente o mesmo dia da juntada do referido mandado de citação por hora certa naqueles autos. Diante do caso, responda as questões de n. 01 a 07, com pontuação de 1,0. Após algum vai-e-vem processual, Florinda desistiu do pedido indenizatório contra Valquíria, excluindo-a da causa. O objeto litigioso do processo voltou-se exclusivamente no que conforma a (in)validade do negócio jurídico. Assim estabelecido, é correto afirmar que: a) Deve formar litisconsórcio passivo necessário entre Adamastor, Raimundo e Francisco. b) Deve formar litisconsórcio ativo entre Florinda, Francisco e Raimundo. c) Poderá ser apreciado no mérito sem inovações na composição subjetiva da causa, sem a formação de litisconsórcio. d) Deve ser reinserida Valquíria na causa, na condição de amicus curiae, tendo em vista sua expertise em opinar sobre questões alheias.
 
@@ -1232,16 +1226,15 @@ b) Se o pedido busca declarar inválido o negócio jurídico em relações que a
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 114–116
 - `cpc-lei-13105-capture-2026-09-28` — Art. 115, parágrafo único
 
-## 45. Improcedência liminar; indeferimento da petição inicial e resolução do mérito
+## 45. indeferimento-inicial-improcedencia-liminar-coisa-julgada
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Esta entrada consolida ocorrências da mesma questão.
+ID: `exam-2018-2-p1-v1-q8` · chaves: `indeferimento-inicial-improcedencia-liminar-coisa-julgada`, `indeferimento-inicial-improcedencia-liminar-efeitos-futuros-2018v2`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 8
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 8
 
-OCR: não · tipo: case · tópico: Improcedência liminar; indeferimento da petição inicial e resolução do mérito · aula: `aula-02.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Improcedência liminar; indeferimento da petição inicial e resolução do mérito · **Aula:** `aula-02.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Existe alguma diferença para o futuro entre as hipóteses de julgamento por indeferimento da inicial e de improcedência liminar?
 
@@ -1256,11 +1249,11 @@ Sim. O indeferimento da inicial é hipótese de extinção sem resolução do m�
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 330, 332, 485, I, 486 e 487, I
 
-### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 8
+### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 8
 
-OCR: não · tipo: case · tópico: Indeferimento da inicial, improcedência liminar e coisa julgada · aula: `aula-02.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Indeferimento da inicial, improcedência liminar e coisa julgada · **Aula:** `aula-02.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 8. Existe alguma diferença para o futuro entre as hipóteses de julgamento por indeferimento da inicial e de improcedência liminar?
 
@@ -1276,16 +1269,15 @@ Sim. O indeferimento da inicial é, em regra, extinção sem resolução do mér
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 330, 485, I, 487, I, e 502
 - `exam-2018-2-p1-v2` — PDF p. 2, questão 8; compendium aula-02/00-index.md, Arts. 330, 332 e 487; compendium aula-11/00-index.md, Arts. 485 e 487
 
-## 46. Assistência simples e litisconsorcial
+## 46. assistencia-simples-litisconsorcial-exemplo
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Esta entrada consolida ocorrências da mesma questão.
+ID: `exam-2018-2-p1-v1-q9` · chaves: `assistencia-simples-litisconsorcial-exemplo`, `exemplo-assistencia-simples-ou-litisconsorcial-2018v2`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 9
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 9
 
-OCR: não · tipo: case · tópico: Assistência simples e litisconsorcial · aula: `aula-04.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Assistência simples e litisconsorcial · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Dê um exemplo (caso hipotético ou real) que não conste do Caderno Coletivo de algum caso em que seja possível a assistência e indique se o exemplo dado condiz com assistência simples ou litisconsorcial.
 
@@ -1300,11 +1292,11 @@ Resposta depende do exemplo e da relação jurídica: assistência simples press
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 119 e 124
 
-### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 9
+### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 9
 
-OCR: não · tipo: case · tópico: Assistência simples e litisconsorcial · aula: `aula-04.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Assistência simples e litisconsorcial · **Aula:** `aula-04.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 9. Dê um exemplo (caso hipotético ou real) que não conste do Caderno Coletivo de algum caso em que seja possível a assistência e indique se o exemplo dado condiz com assistência simples ou litisconsorcial.
 
@@ -1321,16 +1313,15 @@ A classificação depende da relação jurídica: assistência simples quando a 
 - `didier-curso-vol1-2017` — Cap. 13, item 2, PDF pp. 535–567 (compendium aula-04/00-index.md)
 - `exam-2018-2-p1-v2` — PDF p. 2, questão 9
 
-## 47. Petição inicial; pedidos subsidiários
+## 47. pedido-subsidiario-exemplo
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Esta entrada consolida ocorrências da mesma questão.
+ID: `exam-2018-2-p1-v1-q10` · chaves: `pedido-subsidiario-exemplo`, `exemplo-pedido-subsidiario-2018v2`
 
-### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt, 2018, questão 10
+### Ocorrência 1: chapters/exam-2018-2-p1-v1/01-document.txt · 2018 · questão 10
 
-OCR: não · tipo: case · tópico: Petição inicial; pedidos subsidiários · aula: `aula-01.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Petição inicial; pedidos subsidiários · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Dê um exemplo (caso hipotético ou real) de pedido subsidiário que não conste do Caderno Coletivo.
 
@@ -1345,11 +1336,11 @@ O gabarito não fixa um exemplo. Pedido subsidiário é aquele cuja apreciação
 **Citações**
 - `cpc-lei-13105-capture-2026-09-28` — Art. 326
 
-### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 10
+### Ocorrência 2: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 10
 
-OCR: não · tipo: case · tópico: Pedidos subsidiários · aula: `aula-01.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Pedidos subsidiários · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 10. Dê um exemplo (caso hipotético ou real) de pedido subsidiário que não conste do Caderno Coletivo.
 
@@ -1365,16 +1356,15 @@ Pedido subsidiário é formulado para ser examinado apenas se o pedido principal
 - `cpc-lei-13105-capture-2026-09-28` — Art. 326, parágrafo único
 - `exam-2018-2-p1-v2` — PDF p. 2, questão 10; compendium aula-01/00-index.md, pedido subsidiário
 
-## 48. Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário
+## 48. chamamento-fiadores-litisconsorcio-classificacao-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q2` · variante de `exam-2018-2-p1-v1-q2`
+ID: `exam-2018-2-p1-v2-q2` · chaves: `chamamento-fiadores-litisconsorcio-classificacao-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 2
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 2
 
-OCR: não · tipo: V/F · tópico: Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário · aula: `aula-05.html`
+**OCR:** não · **Tipo:** V/F · **Tópico:** Chamamento ao processo; litisconsórcio facultativo/necessário e simples/unitário · **Aula:** `aula-05.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 2. A inclusão de Raimundo e Florinda na causa, está lastreada em hipótese de intervenção de terceiros, formando litisconsórcio passivo ulterior. Nesse caso, pode-se dizer que:
 I – trata-se de chamamento ao processo. V
@@ -1398,16 +1388,15 @@ O chamamento ao processo é cabível para o fiador demandado chamar os demais fi
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 130, I, 113, 114 e 116
 - `exam-2018-2-p1-v2` — PDF p. 1, questão 2; compendium aula-05/00-index.md, pp. 1–2
 
-## 49. Revelia, comparecimento espontâneo e curador especial
+## 49. revelia-hora-certa-comparecimento-advogado-litisconsorcio-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q3` · variante de `exam-2018-2-p1-v1-q3`
+ID: `exam-2018-2-p1-v2-q3` · chaves: `revelia-hora-certa-comparecimento-advogado-litisconsorcio-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 3
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 3
 
-OCR: não · tipo: objective · tópico: Revelia, comparecimento espontâneo e curador especial · aula: `aula-08-revelia.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Revelia, comparecimento espontâneo e curador especial · **Aula:** `aula-08-revelia.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 3. Ambos constituíram advogados, juntando procuração aos autos enquanto fluía o prazo para contestação, mas apenas Raimundo ofereceu defesa, de modo que Florinda não contestou a causa. Assim considerado, é correto afirmar que:
 a) Deverá o juízo designar curador especial para Florinda, por conta da citação ficta.
@@ -1427,16 +1416,15 @@ d) Será certificada a ausência de defesa por Florinda, seguindo-se a causa nor
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 72, II, 239, § 1º, e 345, I
 - `exam-2018-2-p1-v2` — PDF p. 1, questão 3; compendium aula-08-revelia/00-index.md
 
-## 50. Nulidades processuais; finalidade do ato e prejuízo
+## 50. hora-certa-uma-diligencia-teoria-relevancia-atipicidade-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q4` · variante de `exam-2018-2-p1-v1-q4`
+ID: `exam-2018-2-p1-v2-q4` · chaves: `hora-certa-uma-diligencia-teoria-relevancia-atipicidade-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 4
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 4
 
-OCR: não · tipo: objective · tópico: Nulidades processuais; finalidade do ato e prejuízo · aula: `aula-09.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Nulidades processuais; finalidade do ato e prejuízo · **Aula:** `aula-09.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 4. Relativamente à citação por hora certa realizada, tendo-se por consideração a teoria da relevância da atipicidade, elaborada por Calmon de Passos. Pode-se afirmar que:
 a) Trata-se de ato nulo, tendo-se em vista a atipicidade da conduta e o evidente prejuízo sofrido por Florinda, razão pela qual deve ser renovada a citação.
@@ -1457,16 +1445,15 @@ c) O procedimento descrito é irregular porque o art. 252 exige duas diligência
 - `passos-teoria-nulidades` — pp. 123–142, teoria da relevância da atipicidade (compendium aula-09/00-index.md)
 - `exam-2018-2-p1-v2` — PDF p. 1, questão 4
 
-## 51. Pedido e cumulação de pedidos; litisconsórcio passivo facultativo
+## 51. cumulo-pedidos-fianca-dano-moral-reus-sem-conexao-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q5` · variante de `exam-2018-2-p1-v1-q5`
+ID: `exam-2018-2-p1-v2-q5` · chaves: `cumulo-pedidos-fianca-dano-moral-reus-sem-conexao-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 5
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 5
 
-OCR: não · tipo: case · tópico: Pedido e cumulação de pedidos; litisconsórcio passivo facultativo · aula: `aula-01.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Pedido e cumulação de pedidos; litisconsórcio passivo facultativo · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 5. Florinda, apesar de não ter contestado a causa, não quis permanecer neutra à situação. Por conta disso, propôs ação judicial contra Adamastor para que fosse reconhecida a nulidade do contrato de empréstimo e, por conta disso, isentar-se do pagamento como fiadora. Na mesma petição, cumulando pedidos, Florinda buscou indenização de R$ 5.000,00 contra Valquíria, pois essa espalhou boatos falsos que lhes causaram impacto moral. Assim estabelecido, é correto afirmar que:
 a) O litisconsórcio passivo formado entre Valquíria e Adamastor é plenamente admissível, facultativo e simples.
@@ -1486,16 +1473,15 @@ b) A cumulação é imprópria nos fatos apresentados: pedidos contra réus dist
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 113 e 327
 - `exam-2018-2-p1-v2` — PDF p. 1, questão 5; compendium aula-01/00-index.md, arts. 292 e 327
 
-## 52. Valor da causa; cumulação de pedidos
+## 52. valor-causa-nulidade-emprestimo-dano-moral-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q6` · variante de `exam-2018-2-p1-v1-q6`
+ID: `exam-2018-2-p1-v2-q6` · chaves: `valor-causa-nulidade-emprestimo-dano-moral-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 6
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 6
 
-OCR: não · tipo: objective · tópico: Valor da causa; cumulação de pedidos · aula: `aula-01.html`
+**OCR:** não · **Tipo:** objective · **Tópico:** Valor da causa; cumulação de pedidos · **Aula:** `aula-01.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 6. Qual o correto valor da causa proposta por Florinda, considerando a narrativa trazida na questão imediatamente anterior?
 a) R$ 105.000,00
@@ -1515,16 +1501,15 @@ a) R$ 105.000,00, soma do proveito econômico discutido no pedido de nulidade do
 - `cpc-lei-13105-capture-2026-09-28` — Art. 292, II e VI
 - `exam-2018-2-p1-v2` — PDF p. 1, questões 5–6; compendium aula-01/00-index.md, Art. 292
 
-## 53. Litisconsórcio necessário; eficácia da sentença e integração do contraditório
+## 53. retirada-pedido-indenizatorio-necessidade-litisconsorcio-2018v2
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
-Grupo de variantes: `2018-2-fiadores-q7` · variante de `exam-2018-2-p1-v1-q7`
+ID: `exam-2018-2-p1-v2-q7` · chaves: `retirada-pedido-indenizatorio-necessidade-litisconsorcio-2018v2`
 
-### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt, 2018, questão 7
+### Ocorrência 1: work/pipeline/processo-civil-i/chapters/exam-2018-2-p1-v2/01-document.txt · 2018 · questão 7
 
-OCR: não · tipo: case · tópico: Litisconsórcio necessário; eficácia da sentença e integração do contraditório · aula: `aula-03.html`
+**OCR:** não · **Tipo:** case · **Tópico:** Litisconsórcio necessário; eficácia da sentença e integração do contraditório · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 7. Após algum vai-e-vem processual, Florinda desistiu do pedido indenizatório contra Valquíria, excluindo-a da causa. O objeto litigioso do processo voltou-se exclusivamente no que conforma a (in)validade do negócio jurídico. Assim estabelecido, é correto afirmar que:
 a) Deve formar litisconsórcio ativo entre Florinda, Francisco e Raimundo.
@@ -1544,15 +1529,15 @@ c) A controvérsia sobre validade do negócio pode ser apreciada entre Florinda 
 - `cpc-lei-13105-capture-2026-09-28` — Arts. 114–115
 - `exam-2018-2-p1-v2` — PDF p. 2, questão 7; compendium aula-03/00-index.md, Arts. 113–117
 
-## 54. litisconsórcio necessário e unitário
+## 54. litisconsorcio_necessario_ativo_doutrina_liebman
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2019-2-p1-q2` · chaves: `litisconsorcio_necessario_ativo_doutrina_liebman`
 
-### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt, 2019/2, questão 2
+### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt · 2019/2 · questão 2
 
-OCR: sim · tipo: objective · tópico: litisconsórcio necessário e unitário · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** litisconsórcio necessário e unitário · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Acerca do litisconsórcio, assinale a alternativa correta. (0,3)
 a) O litisconsórcio necessário proposto pelo autor que envolve multidões pode ser limitado de ofício pelo juiz, a fim de permitir o desenvolvimento do processo e dos direitos de defesa.
@@ -1572,15 +1557,15 @@ c
 - `didier-curso-vol1-2017` — cap. 12, PDF 507–534
 - `cpc-lei-13105-capture-2026-09-28` — arts. 113–117
 
-## 55. litisconsórcio simples e unitário
+## 55. poliamor_pedidos_alimentos_e_reconhecimento_uniao_litisconsorcio
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2019-2-p1-q3` · chaves: `poliamor_pedidos_alimentos_e_reconhecimento_uniao_litisconsorcio`
 
-### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt, 2019/2, questão 3
+### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt · 2019/2 · questão 3
 
-OCR: sim · tipo: objective · tópico: litisconsórcio simples e unitário · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** objective · **Tópico:** litisconsórcio simples e unitário · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Antônio, Reinaldo e Rita formaram um trio amoroso, coabitando mesma morada, dividindo despesas, adquirindo patrimônio e constituindo família, em situação de “poliamor”, que é juridicamente polêmica em Direito de Família. Por fatos da vida, Antônio desgostou-se do romance e pretendeu, em juízo, “o reconhecimento e a dissolução da união poliafetiva”, com pedido alimentos em face de Rita e de Reinaldo. Considerando as questões pertinentes ao litisconsórcio, pode-se dizer que, quanto ao pedido de alimentos, o litisconsórcio será “simples” e, quanto ao reconhecimento e dissolução da união poliafetiva, o litisconsórcio será “unitário”. Preenchem corretamente as lacunas (0,3):
 a) Simples — unitário
@@ -1600,15 +1585,15 @@ a
 - `didier-curso-vol1-2017` — cap. 12, PDF 507–534
 - `cpc-lei-13105-capture-2026-09-28` — arts. 113, 116–117
 
-## 56. litisconsórcio e intervenção de terceiros
+## 56. economia_processual_e_decisoes_conflitantes_como_fundamentos
 
-ID: `{q["id"]}` · tipo: {a0["kind"]} · aula: `{a0["lesson_id"]}`
+ID: `exam-2019-2-p1-q4(a)` · chaves: `economia_processual_e_decisoes_conflitantes_como_fundamentos`
 
-### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt, 2019/2, questão 4(a)
+### Ocorrência 1: chapters/exam-2019-2-p1/01-document.txt · 2019/2 · questão 4(a)
 
-OCR: sim · tipo: VF · tópico: litisconsórcio e intervenção de terceiros · aula: `aula-03.html`
+**OCR:** sim · **Tipo:** VF · **Tópico:** litisconsórcio e intervenção de terceiros · **Aula:** `aula-03.html`
 
-**Enunciado verbatim**
+**Enunciado**
 
 Assinale V ou F (0,1).
 Os fundamentos mais usuais para defesa de intervenção de terceiros e de amplitude nas hipóteses de admissibilidade de litisconsórcios são a economia processual e a finalidade de evitar eventuais decisões conflitantes.
@@ -1624,6 +1609,128 @@ V
 **Citações**
 - `didier-curso-vol1-2017` — cap. 12, PDF 507–534
 - `cpc-lei-13105-capture-2026-09-28` — arts. 55 e 113
+
+## 57. prazo-apelacao-apos-embargos-djen-2025
+
+ID: `exam-2025-2-p1-q1` · chaves: `prazo-apelacao-apos-embargos-djen-2025`
+
+### Ocorrência 1: chapters/exam-2025-2-p1-candidate/01-document.txt · 2025/2 · questão 1 · Professor: Sérgio Mattos
+
+**OCR:** sim · **Tipo:** discursive · **Tópico:** Prazo recursal após embargos de declaração; DJEN e contagem em dias úteis · **Aula:** `aula-07.html`
+
+**Enunciado**
+
+Em 04/09/2025 (quinta-feira), o Diário da Justiça Eletrônico Nacional (DJEN) disponibiliza intimação de sentença passível de impugnação por meio de embargos de declaração e de apelação. O prazo de interposição de embargos de declaração é de 5 (cinco) dias; o de apelação, 15 (quinze) dias (arts. 1.003, § 5º, e 1.023 do CPC/2015). Os embargos de declaração são interpostos em 10/09/2025 (quarta-feira) e desprovidos no dia seguinte, com disponibilização da intimação no DJE em 12/09/2025 (sexta-feira). Indique o dia de vencimento do prazo da apelação. Justifique sua resposta.
+
+**Resposta oficial**
+
+Não indicada.
+
+**Resposta verificada**
+
+6 de outubro de 2025. Os embargos de declaração tempestivos interrompem o prazo dos demais recursos (art. 1.026, § 1º). Para a intimação disponibilizada no DJEN em 12/09 (sexta-feira), a publicação ocorre no primeiro dia útil seguinte, 15/09 (segunda-feira); o prazo começa no dia útil seguinte, 16/09. Contados 15 dias úteis, excluídos o começo e incluído o vencimento, o prazo termina em 06/10, sem feriado indicado no calendário da prova nesse intervalo (arts. 219 e 224 do CPC; Resolução CNJ 455/2022, art. 11, § 3º).
+
+**Citações**
+- `cpc-lei-13105-capture-2026-09-28` — arts. 219, 224, 1.003, § 5º, 1.023 e 1.026, § 1º
+- `resolucao-cnj-455-2022` — art. 11, § 3º; disponibilização no DJEN, publicação no dia útil seguinte, prazo a partir do próximo dia útil
+- `exam-2025-2-p1-candidate` — PDF p. 1, Q1 and calendar
+
+## 58. denunciacao-sucessiva-seguro-locacao-veiculo
+
+ID: `exam-2025-2-p1-q2` · chaves: `denunciacao-sucessiva-seguro-locacao-veiculo`
+
+### Ocorrência 1: chapters/exam-2025-2-p1-candidate/01-document.txt · 2025/2 · questão 2 · Professor: Sérgio Mattos
+
+**OCR:** sim · **Tipo:** discursive · **Tópico:** Denunciação da lide; única denunciação sucessiva · **Aula:** `aula-12.html`
+
+**Enunciado**
+
+A viúva de motorista falecido em acidente de trânsito move ação de reparação de danos em face do motorista causador do acidente. Por sua vez, o demandado promove denunciação da lide em face da empresa que lhe havia locado o veículo envolvido no acidente, que é admitida. A seu turno, a empresa locadora do veículo promove nova denunciação da lide em face da empresa seguradora do veículo. De acordo com o sistema do CPC/2015, a segunda denunciação da lide é admissível? Justifique sua resposta.
+
+**Resposta oficial**
+
+Não indicada.
+
+**Resposta verificada**
+
+Sim, como única denunciação sucessiva, promovida pela denunciada (locadora) contra quem deve indenizá-la regressivamente (seguradora). O CPC admite uma denunciação sucessiva e veda apenas que a denunciada sucessiva promova outra; eventual regresso posterior deve ser buscado em ação autônoma (art. 125, II e § 2º).
+
+**Citações**
+- `cpc-lei-13105-capture-2026-09-28` — art. 125, II e § 2º
+- `exam-2025-2-p1-candidate` — PDF p. 1, Q2
+
+## 59. ausencia-intimacao-mp-prejuizo-nulidade
+
+ID: `exam-2025-2-p1-q3` · chaves: `ausencia-intimacao-mp-prejuizo-nulidade`
+
+### Ocorrência 1: chapters/exam-2025-2-p1-candidate/01-document.txt · 2025/2 · questão 3 · Professor: Sérgio Mattos
+
+**OCR:** sim · **Tipo:** discursive · **Tópico:** Nulidade pela falta de intimação do Ministério Público; prejuízo · **Aula:** `aula-09.html`
+
+**Enunciado**
+
+À luz do CPC/2015, a ausência de intimação do Ministério Público, quando necessária sua intervenção como fiscal da ordem jurídica, enseja, por si só, a decretação de nulidade do processo? Justifique sua resposta.
+
+**Resposta oficial**
+
+Não indicada.
+
+**Resposta verificada**
+
+Não, por si só. O art. 279 prevê nulidade a partir do momento em que o Ministério Público deveria ter sido intimado, mas a decretação depende de prévia intimação do próprio Ministério Público para que se manifeste sobre a existência ou inexistência de prejuízo (§§ 1º e 2º).
+
+**Citações**
+- `cpc-lei-13105-capture-2026-09-28` — art. 279, §§ 1º–2º
+- `exam-2025-2-p1-candidate` — PDF p. 1, Q3
+
+## 60. anulacao-testamento-litisconsorcio-sucessores-testamentarios
+
+ID: `exam-2025-2-p1-q4` · chaves: `anulacao-testamento-litisconsorcio-sucessores-testamentarios`
+
+### Ocorrência 1: chapters/exam-2025-2-p1-candidate/01-document.txt · 2025/2 · questão 4 · Professor: Sérgio Mattos
+
+**OCR:** sim · **Tipo:** discursive · **Tópico:** Litisconsórcio necessário e unitário; efeitos da falta de citação · **Aula:** `aula-03.html`
+
+**Enunciado**
+
+Em ação de anulação de testamento ajuizada por um dos herdeiros do testador, são citados como litisconsortes passivos o testamenteiro, a quem compete “defender a validade do testamento” (art. 1.981 do CC/2002), e somente alguns dos sucessores testamentários. Conforme o CPC/2015, será nula ou ineficaz a sentença de mérito que for proferida nessa ação sem a citação dos demais sucessores testamentários? Justifique sua resposta.
+
+**Resposta oficial**
+
+Não indicada.
+
+**Resposta verificada**
+
+Nula, se a ação de anulação exige a participação de todos os sucessores testamentários para que a validade do mesmo testamento seja decidida uniformemente. Nessa hipótese há litisconsórcio passivo necessário e unitário (arts. 114 e 116), e a sentença de mérito sem integração do contraditório é nula (art. 115, I). A ineficácia prevista no inciso II é a consequência quando a decisão não tiver de ser uniforme.
+
+**Citações**
+- `cpc-lei-13105-capture-2026-09-28` — arts. 114–116; art. 115, I–II
+- `didier-curso-vol1-2017` — cap. 12, printed pp. 511–528 (PDF pp. 510–527); compendium/aula-03
+- `exam-2025-2-p1-candidate` — PDF p. 1, Q4
+
+## 61. exclusao-litisconsorte-ilegitimidade-decisao-interlocutoria
+
+ID: `exam-2025-2-p1-q5` · chaves: `exclusao-litisconsorte-ilegitimidade-decisao-interlocutoria`
+
+### Ocorrência 1: chapters/exam-2025-2-p1-candidate/01-document.txt · 2025/2 · questão 5 · Professor: Sérgio Mattos
+
+**OCR:** sim · **Tipo:** discursive · **Tópico:** Pronunciamentos judiciais; exclusão de litisconsorte por ilegitimidade · **Aula:** `aula-11.html`
+
+**Enunciado**
+
+O pronunciamento judicial de 1º grau de jurisdição que exclui um dos litisconsortes passivos por ausência de legitimidade (art. 485, VI, do CPC/2015) é sentença ou decisão interlocutória? Justifique sua resposta.
+
+**Resposta oficial**
+
+Não indicada.
+
+**Resposta verificada**
+
+Decisão interlocutória. Embora fundada no art. 485, VI, o pronunciamento exclui apenas um litisconsorte e o processo continua quanto aos demais; portanto, não põe fim à fase cognitiva como um todo e se enquadra no art. 203, § 2º. O art. 354, parágrafo único, confirma que decisão que extingue o processo apenas em relação a um litisconsorte é impugnável por agravo de instrumento.
+
+**Citações**
+- `cpc-lei-13105-capture-2026-09-28` — arts. 203, §§ 1º–2º, 354, parágrafo único, e 1.015, VII
+- `exam-2025-2-p1-candidate` — PDF p. 1, Q5
 
 # Exclusões
 
@@ -1652,4 +1759,3 @@ a) No CPC/2015, assume-se que as atividades de conhecimento e execução se enco
 b) As funções jurisdicionais de conhecer, executar e acautelar são sempre realizadas concomitantemente, de modo a se garantir o pleno exercício de direitos fundamentais processuais.
 c) A cognição sobre a lide constitui atividade prevalente na fase de conhecimento, mas não se trata de função exclusiva, podendo-se verificar atos de natureza executiva em seu desenvolvimento.
 d) O desenvolvimento científico-processual no Século [ilegível] permitiu a definição técnica perene das funções jurisdicionais, tendo-se alcançado alto grau de especificação no modelo do CPC/2015, sendo, por isso, considerado ponto teórico definitivo, na processualística contemporânea.
-- **exam-2025-2-p1-candidate, 2025, questão None:** O shelf registra que o scan nomeia Sérgio Mattos; a identificação como prova de Scarparo permanece sem verificação, pendente da decisão do chairman. Não transcrito nem incluído.

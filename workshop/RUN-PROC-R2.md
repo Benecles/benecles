@@ -1,14 +1,14 @@
 # RUN-PROC-R2 · Direito Processual Civil I · 2026-10-06
 
-## Chairman questions
-- Aula 08-revelia received a second `REVISE` after its one author revision. The plan still does not test the promised classification of a defendant's own demand, its instructions conflict over whether Figure 1 was cut, and A5 assigns the reconvenção distinction to the wrong section. The panel says no third author round without your decision. Should we accept this plan, or should the author make one further targeted revision?
-- Aula 03's revised blueprint received a second `REVISE`: Didier printed/PDF locators conflict across the plan; the closing tasks do not explicitly test same-proceeding plurality and pole configuration; and some retained exam practice appears both in a section and in the closing set. The protocol says a second `REVISE` goes to the chairman. Should the author revise again or should this plan be accepted as-is?
-- Aula 10-estabilização's blueprint received a second `REVISE`: Q2 must test S0's construction outcome, and §05/Q5 must stay within C9's narrower doctrinal claims. Please decide whether to require another revision or accept this blueprint.
-- Aula 11-merit's blueprint received a second `REVISE`: the whole-request contrast in A4/§02 remains ambiguous, and T1 repeats across the Hero, §01, and §04. The panel protocol escalates after a second `REVISE`; please decide whether to require another revision or accept the current blueprint.
-- Aula 15's blueprint received a second `REVISE`: its integrated exercise still needs a documentary means and a reasoned admissibility assessment. The panel protocol escalates after a second `REVISE`; please decide whether to require another revision or accept the current exercise.
-- Aula 10's blueprint received a second `REVISE`: the closing exercise still gives the learner the evidence-necessity premise instead of asking them to assess it. The panel protocol says a second `REVISE` goes to the chairman; please decide whether to require another revision or accept the current exercise.
-- The syllabus lists Novo Curso, Volume I as basic-essential, while the shelf classifies its acquired copy as supplementary (“Theory only”) and S3 found no directly mapped lesson chapter. I mapped its exact source ID for the primary-word policy but left its shelf role unchanged; should this volume be promoted to book_base? Promoting it would require meeting the S2 15,000-word cap on four currently oversized chapters.
-- Should the 2025/2 P1 PDF that names Sérgio Mattos be included in Scarparo’s exam bank? It is in the course folder, but the scanned exam identifies a different professor. It remains a candidate until decided.
+## Resolved 07/10
+- Require one exact targeted author pass for each of the six second-`REVISE` blueprints; the orchestrator verifies every stated point, and there is no third panel. Aula 08-revelia: test classification of the defendant's own demand, make Figure 1's status consistent, and place the reconvenção distinction in the correct section. Aula 03: reconcile Didier print/PDF locators, explicitly test same-proceeding plurality and pole configuration in the closing tasks, and remove duplicated exam practice. Aula 10-estabilização: make Q2 test S0's construction outcome and keep §05/Q5 within C9. Aula 11-merit: clarify the whole-request contrast in A4/§02 and remove T1 repetition across Hero, §01, and §04. Aula 15: add a documentary means and reasoned admissibility assessment to the integrated exercise. Aula 10: make the learner assess evidence necessity rather than supplying that premise.
+- Finish A06, A07, A09, and A13 under the normal author→panel rule.
+- Replace F-023 with the F-023b prototype-and-waves rule: prototype A14, then proceed in waves of at most six, P2 first; no mid-run CEO gate.
+- Novo Curso, Volume I remains supplementary (“Theory only”); do not promote it to `book_base`.
+- Include the 2025/2 P1 with the Sérgio Mattos label in both the exam bank and the relevant lesson pages.
+- Before writing A12/A16, retrieve the specified missing CPC/Marinoni sources.
+- Resolve conflicting 2018/2 variant answers against the CPC; if unresolved, show both answers and label the divergence.
+- Keep canonical issues #84–91, #93, and #95; close duplicate stage issues.
 
 ## S0 · Source discrepancies resolved
 - The PDF has a final general bibliography section: Didier volume I and Novo Curso volume I. The 28/09 intake map omitted it; the new map includes it without changing the week order.
@@ -87,6 +87,11 @@ S6 integration: checked front/planta changes committed on staging branch `codex/
 S4b assignment: seven independent exam-source fragments assigned to Luna high workers at `exam-fragments/<source-id>.json`; all seven are now present and the Luna high merge/dedup is underway. 2025/2 P1 remains excluded as a candidate pending the chairman's answer.
 
 S4b result: merger created `exam-bank.json` and `exam-bank.md`; structural/artifact checks pass with 56 consolidated questions and 9 exclusions. Questions retain per-appearance text, answers, citations, topics, lesson IDs, and kinds. The scanned 2025/2 P1 naming Sérgio Mattos is listed as an excluded candidate pending the chairman's answer.
+
+## Resume · 2026-10-07 S3/S4b corrections
+S3 Art. 267 correction: split the missing CPC atom in S2 and added one verdict per lesson (Aula 06 supporting; the other 21 unused). Updated the cap checker so past exams/exercises, including `exam_candidate` sources, remain role-validated but do not count as doctrinal supporting words; recorded the cause and fix in `BUGS.md`. Final `python3 work/pipeline/tools/pipeline_check.py s3 processo-civil-i` → `S3 PASS: 28263 triage rows / 1277 chapters`; unmapped slide decks remain warnings.
+
+S4b chairman ruling: incorporated 2025/2 P1 with the Sérgio Mattos label into the exam bank and mapped all five questions to lessons; the bank now has 61 consolidated questions and eight pre-existing exclusions. The 2025 exam packet is also mapped into Aulas 03, 07, 09, 11, and 12 for generated lesson workbenches. S4 compendia rebuild/check remains pending.
 
 ## Resume · 2026-10-06 evening
 All three repositories were refreshed with `git pull --ff-only`; each was already current. No new chairman reply appears on #90. Current S5a P1 queue: retry Sol high panel for Aula 06; finish Luna max author round for Aula 07 then panel; finish Luna max authored check for Aula 09 then panel; author and panel Aula 13. Existing second-REVISE cases remain escalated. F-023 still pauses page writing. The Codex usage tool reports zero credits and prior worker errors specify retry after 23:48 São Paulo time, so no worker was restarted before that reset. Duplicate S7 issue #99 was closed; canonical tracking remains #95.

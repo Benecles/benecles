@@ -67,6 +67,7 @@ WORD_COUNT_MARKERS = (MARKER, SECTION_MARKER, ARTICLE_MARKER)
 MIN_PRIMARY_WORDS = 5_000
 MAX_SUPPORTING_ITEM_WORDS = 10_000
 MAX_SUPPORTING_TOTAL_WORDS = 30_000
+EXERCISE_SHELF_ROLES = {"past_exam", "exam_candidate", "exercise", "exercises"}
 SIZE_EXEMPT_SOURCE_IDS = {
     "constituicao-federal-1988",
     "lei-9868-1999",
@@ -549,8 +550,14 @@ def check_assignment_policy(args, lessons, assignments, shelf_rows, errors):
                 validate_legal_atom(assignment, errors)
                 checked_legal_atoms.add(legal_key)
         if role == "supporting":
-            support_totals[lesson_id] = support_totals.get(lesson_id, 0) + words
-            if words > MAX_SUPPORTING_ITEM_WORDS:
+            is_exercise = (
+                shelf_roles.get(source_id) in EXERCISE_SHELF_ROLES
+                or bool(re.search(r"exam|exerc", source_id, re.I))
+            )
+            counts_toward_support_cap = not is_exercise
+            if counts_toward_support_cap:
+                support_totals[lesson_id] = support_totals.get(lesson_id, 0) + words
+            if counts_toward_support_cap and words > MAX_SUPPORTING_ITEM_WORDS:
                 why = assignment.get("why", "")
                 specific = SPECIFIC_NEED.search(why)
                 if not specific or not concrete_explanation(specific.group(1)):
