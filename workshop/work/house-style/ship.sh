@@ -7,11 +7,11 @@ python3 tools/offline_build.py | tail -1
 git checkout -- assets/front.css specimen/register.html
 python3 tools/polish.py capture | tail -1
 rm -rf tools/polish/specimen
-git add -A courses assets tools offline-manifest.json specimen
+git add -A courses assets tools offline-manifest.json specimen index.html backstage
 printf -- '- **%s** · %s\n' "$T" "$L" >> ISSUES.md
 git add ISSUES.md
 bash tools/check_all.sh | tail -1
-git add -A courses assets tools offline-manifest.json specimen ISSUES.md sw.js experiments
+git add -A courses assets tools offline-manifest.json specimen ISSUES.md sw.js experiments index.html backstage
 python3 tools/offline_build.py >/dev/null; git checkout -- assets/front.css specimen/register.html; git add -A offline-manifest.json
 bash tools/check_all.sh | tail -1 | grep -q PASS
 git commit -qm "$T"
