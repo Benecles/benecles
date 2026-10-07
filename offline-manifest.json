@@ -1,6 +1,8 @@
 {
-"version": "c5ecb0a540de",
+"version": "8db19375f009",
 "files": [
+"assets/backstage-egg.js",
+"assets/backstage-peek.jpg",
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
@@ -24,6 +26,20 @@
 "assets/unit08/lesson.css",
 "assets/unit08/lesson.js",
 "assets/unit08/paper.svg",
+"backstage/figure-sheet.jpg",
+"backstage/index.html",
+"backstage/",
+"backstage/thumbs/casa.jpg",
+"backstage/thumbs/figkit.jpg",
+"backstage/thumbs/figuras.jpg",
+"backstage/thumbs/hero.jpg",
+"backstage/thumbs/instrumentos.jpg",
+"backstage/thumbs/materials.jpg",
+"backstage/thumbs/motion.jpg",
+"backstage/thumbs/register.jpg",
+"backstage/thumbs/round1.jpg",
+"backstage/thumbs/variants.jpg",
+"backstage/workshop.html",
 "caderno.html",
 "changelog.json",
 "courses/controle-de-constitucionalidade/assets/controle.css",
@@ -270,6 +286,7 @@
 "specimen/figkit-controle-a01.html",
 "specimen/figuras.html",
 "specimen/hero.html",
+"specimen/instrumentos.html",
 "specimen/motion.html",
 "specimen/register.html"
 ]
