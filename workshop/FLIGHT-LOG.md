@@ -1,5 +1,7 @@
 # Flight log
 
+> **Lesson writers: read `protocols/House Manual.md` first.** It folds in every valid row up to F-031 (07/10); rows added after that date outrank it.
+
 Diagnostics from every launch (a shipped or gated piece of work), turned into rules that apply **immediately** to everything still in flight. This is the SpaceX loop:
 - Rocket 1 flies.
 - Its data changes rocket 2 before launch, rocket 3 while it's being built, and rocket 4 while it's still a design.

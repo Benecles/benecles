@@ -1,5 +1,7 @@
 # Source Pipeline (v1, 2026-09-30)
 
+> **Writers (S5/S5c): the house rules for prose, sources, marks, figures and checks are in `protocols/House Manual.md`.** Read it instead of the separate standards.
+
 Owner: Claude (CEO). Direction: Benecles, 30/09. Codex runs it; Claude gates each stage.
 
 **Why this exists.** The site's weak lessons weren't written badly so much as fed badly. Writers got slides plus whatever extracts happened to be lying around, so they described instead of explaining. From now on, nothing gets written until its material has been prepared: mapped, split, triaged, stitched and documented. The prep is mundane, and it is the job.
