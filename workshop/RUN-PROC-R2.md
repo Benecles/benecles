@@ -1,5 +1,8 @@
 # RUN-PROC-R2 · Direito Processual Civil I · 2026-10-06
 
+## Open decision for CEO
+Aula 09 received a second `REVISE` after its targeted author pass. The panel confirms the CPC art. 279 sequence and the 2025/2 Q3 mapping, but says closing exercises 2–4 still depend on choices or case facts missing from their reader-facing prompts. Should Aula 09 get another targeted author→panel cycle, or should its current blueprint proceed to page writing with that note recorded? Work on other lessons continues.
+
 ## Resolved 07/10
 - Require one exact targeted author pass for each of the six second-`REVISE` blueprints; the orchestrator verifies every stated point, and there is no third panel. Aula 08-revelia: test classification of the defendant's own demand, make Figure 1's status consistent, and place the reconvenção distinction in the correct section. Aula 03: reconcile Didier print/PDF locators, explicitly test same-proceeding plurality and pole configuration in the closing tasks, and remove duplicated exam practice. Aula 10-estabilização: make Q2 test S0's construction outcome and keep §05/Q5 within C9. Aula 11-merit: clarify the whole-request contrast in A4/§02 and remove T1 repetition across Hero, §01, and §04. Aula 15: add a documentary means and reasoned admissibility assessment to the integrated exercise. Aula 10: make the learner assess evidence necessity rather than supplying that premise.
 - Finish A06, A07, A09, and A13 under the normal author→panel rule.
@@ -27,8 +30,8 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S3 Triage | #87 | checked, ready to integrate | Luna xhigh | lesson × chapter triage; `pipeline_check.py s3` |
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
-| S5a Blueprints/panel | #90 | P2: 5 approved, 4 escalated; P1: Aula 01/02/04/05/06-citacao/08/12 approved, Aula 03/08-revelia escalated on second REVISE; Aula 06 panel failed at service usage limit; Aula 07 author follow-up and Aula 09 author failed at same limit; second chunk incomplete | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | blocked on prototype gate | Luna xhigh | one lesson PR at a time; P2 first |
+| S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
+| S5 Pages | #91 | F-023b active; Aula 14 prototype next | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | blocked on S4b/S5 | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -95,3 +98,10 @@ S4b chairman ruling: incorporated 2025/2 P1 with the Sérgio Mattos label into t
 
 ## Resume · 2026-10-06 evening
 All three repositories were refreshed with `git pull --ff-only`; each was already current. No new chairman reply appears on #90. Current S5a P1 queue: retry Sol high panel for Aula 06; finish Luna max author round for Aula 07 then panel; finish Luna max authored check for Aula 09 then panel; author and panel Aula 13. Existing second-REVISE cases remain escalated. F-023 still pauses page writing. The Codex usage tool reports zero credits and prior worker errors specify retry after 23:48 São Paulo time, so no worker was restarted before that reset. Duplicate S7 issue #99 was closed; canonical tracking remains #95.
+
+## Resume · 2026-10-07 targeted revisions and source refresh
+The six blueprints with a second `REVISE` each received one targeted author pass. The orchestrator verified the listed point against each blueprint: A03 reconciles print/PDF locators, tests same-proceeding plurality and pole configuration, and removes duplicate practice; A08-revelia classifies the defendant's own demand, aligns Figure 1 status/instructions, and places reconvenção in the correct section; A10 asks the learner to assess whether more proof is needed; A10-estabilização makes Q2 test S0's construction outcome and keeps §05/Q5 within C9; A11-merit distinguishes art. 355 from art. 356, including a whole request, and removes the repeated T1; A15's integrated task assesses documentary means and reasoned admissibility without assuming an event occurred. No third panels were commissioned.
+
+A06 received its targeted revision and second panel approval. A07 now includes a single-use, labelled `2025/2 P1 — Sérgio Mattos` Q1 with the supported 06/10/2025 deadline calculation under CPC arts. 219, 224, 1.003 §5, and 1.026 caput; its second panel had requested this exact coverage, and the author completeness/source-locator check passed. A13's second panel approved the targeted date qualification and CPC arts. 352/357 §1 check. A09's second panel still returned `REVISE`; its missing exercise prompts/case facts are recorded as the open CEO question at the top. The duplicate issues are closed; canonical issues remain open. The stale `blocked` label was removed from S5 issue #91 under F-023b.
+
+The 2025/2 P1 exam is in the bank (61 questions, eight exclusions) with all five questions mapped to lessons. The A12/A16 CPC source requests are fulfilled. Marinoni `14.04` now ends at PDF p.322 and `14.04b` begins at PDF p.323. S2 passes with 1,278 atoms; S3 passes with 28,285 triage rows / 1,278 chapters. Compendia rebuilt as 22 lessons / 681 files / 1080 provenance rows. Corrected-state S4 passes with 22/22 manifests / 1080 provenance rows; unmapped slide decks remain warnings.

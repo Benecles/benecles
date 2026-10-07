@@ -14,6 +14,15 @@ PIPELINE_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SITE = PIPELINE_ROOT.parents[1].parent / "ordenacoes-filipinas"
 DOSSIER_SOURCE_ID = "dossier-atividade-05-10"
 DOSSIER_INSTRUCTIONS_ID = "01-00-instrucoes"
+GENERATED_COMPENDIUM_PATTERNS = (
+    "10-slides.txt",
+    "20-primary-*.txt",
+    "30-supporting-*.txt",
+    "30-pulled-*.txt",
+    "40-background-*.txt",
+    "50-exercises-and-exams.txt",
+    "60-statute.txt",
+)
 ANSWER_INSTRUCTION = re.compile(
     r"Ao treinar o aluno, proponha perguntas no formato dos eixos e cobre respostas que usem os casos: "
     r"tribunal, ano, o que foi decidido, por quê, quem divergiu e como o caso responde ao eixo\."
@@ -190,15 +199,19 @@ def table_row(record):
     return "| " + " | ".join(str(cell).replace("|", "\\|").replace("\n", " ") for cell in cells) + " |"
 
 
-def preserved_pulls(index_path):
+def preserved_pulls(index_path, assigned_keys=(), statute_keys=()):
     if not index_path.is_file():
         return []
+    assigned_keys = set(assigned_keys)
+    statute_keys = set(statute_keys)
     records = []
     for line in index_path.read_text(encoding="utf-8").splitlines():
         if not line.startswith("|") or line.startswith("|---"):
             continue
         cells = [cell.strip().replace("\\|", "|") for cell in re.split(r"(?<!\\)\|", line.strip().strip("|"))]
         if len(cells) != 7 or not cells[4].startswith("supporting (pulled)"):
+            continue
+        if (cells[1], cells[2]) in assigned_keys or (cells[1], cells[2]) in statute_keys:
             continue
         path = index_path.parent / cells[0]
         if not path.is_file():
@@ -220,6 +233,14 @@ def make_record(path, source_id, chapter_id, pages, role, why):
         "why": why,
         "sha256": sha256(path),
     }
+
+
+def remove_stale_generated_files(output_dir, records):
+    listed_files = {record["file"] for record in records}
+    for pattern in GENERATED_COMPENDIUM_PATTERNS:
+        for path in output_dir.glob(pattern):
+            if path.name not in listed_files:
+                path.unlink()
 
 
 def blueprint_statute_articles(path):
@@ -270,13 +291,34 @@ def build(course, site=DEFAULT_SITE):
     provenance_count = 0
     is_latam = course == "direito-latino-americano"
     answer_instruction = dossier_answer_instruction(chapters_root) if is_latam else ""
+    cpc_sources = [
+        source_id for source_id, shelf_row in shelf_by_id.items()
+        if shelf_role(shelf_row) == "statute" and source_id.startswith("cpc-")
+    ]
+    cpc_source_id = cpc_sources[0] if cpc_sources else None
 
     for lesson in course_map.get("lessons", []):
         lesson_id = lesson["id"]
         slug = Path(lesson_id).stem
         output_dir = compendium / slug
         output_dir.mkdir(parents=True, exist_ok=True)
-        records = preserved_pulls(output_dir / "00-index.md")
+        assigned = [
+            row for row in triage_rows
+            if row.get("lesson_id") == lesson_id and row.get("role") in {"primary", "supporting", "background"}
+        ]
+        assigned_keys = {(row.get("source_id", ""), row.get("chapter_id", "")) for row in assigned}
+        blueprint_path = output_dir / "blueprint.md"
+        statute_keys = {
+            (cpc_source_id, f"Art. {article_number}")
+            for article_number in blueprint_statute_articles(blueprint_path)
+        } if cpc_source_id else set()
+        records = preserved_pulls(output_dir / "00-index.md", assigned_keys, statute_keys)
+        requests_path = output_dir / "requests.md"
+        if requests_path.is_file():
+            records.append(make_record(
+                requests_path, "workbench", "pull requests", "—", "reader requests",
+                "Reader-logged source pulls required by Source Pipeline §80.",
+            ))
 
         if is_latam:
             eixo_path = output_dir / "05-eixo.md"
@@ -339,10 +381,6 @@ def build(course, site=DEFAULT_SITE):
             why = "Lesson slide deck from S1." if shelf_source_is_available(shelf_by_id.get(source_id, {})) else f"S1 records `{source_id}` as missing; placeholder documents the source gap."
             records.append(make_record(slides_path, source_id, chapter_id, pages, "slides", why))
 
-        assigned = [
-            row for row in triage_rows
-            if row.get("lesson_id") == lesson_id and row.get("role") in {"primary", "supporting", "background"}
-        ]
         exercise_pieces = []
         exercise_meta = []
         statute_pieces = []
@@ -376,10 +414,7 @@ def build(course, site=DEFAULT_SITE):
             records.append(make_record(destination, source_id, chapter_id, page_label(entry), role, row["why"]))
 
         known_statutes = {(source_id, chapter_id) for source_id, chapter_id, *_ in statute_meta}
-        blueprint_path = output_dir / "blueprint.md"
-        cpc_sources = [source_id for source_id, shelf_row in shelf_by_id.items() if shelf_role(shelf_row) == "statute" and source_id.startswith("cpc-")]
-        if cpc_sources:
-            cpc_source_id = cpc_sources[0]
+        if cpc_source_id:
             for article_number in blueprint_statute_articles(blueprint_path):
                 chapter_id = f"Art. {article_number}"
                 key = (cpc_source_id, chapter_id)
@@ -435,6 +470,7 @@ def build(course, site=DEFAULT_SITE):
         ]
         lines.extend(table_row(record) for record in records)
         (output_dir / "00-index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        remove_stale_generated_files(output_dir, records)
         lesson_count += 1
         file_count += len({record["file"] for record in records})
         provenance_count += len(records)

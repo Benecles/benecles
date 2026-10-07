@@ -1628,10 +1628,10 @@ Não indicada.
 
 **Resposta verificada**
 
-6 de outubro de 2025. Os embargos de declaração tempestivos interrompem o prazo dos demais recursos (art. 1.026, § 1º). Para a intimação disponibilizada no DJEN em 12/09 (sexta-feira), a publicação ocorre no primeiro dia útil seguinte, 15/09 (segunda-feira); o prazo começa no dia útil seguinte, 16/09. Contados 15 dias úteis, excluídos o começo e incluído o vencimento, o prazo termina em 06/10, sem feriado indicado no calendário da prova nesse intervalo (arts. 219 e 224 do CPC; Resolução CNJ 455/2022, art. 11, § 3º).
+6 de outubro de 2025. Os embargos de declaração tempestivos interrompem o prazo dos demais recursos (art. 1.026, caput). Para a intimação disponibilizada no DJEN em 12/09 (sexta-feira), a publicação ocorre no primeiro dia útil seguinte, 15/09 (segunda-feira); o prazo começa no dia útil seguinte, 16/09. Contados 15 dias úteis, excluídos o começo e incluído o vencimento, o prazo termina em 06/10, sem feriado indicado no calendário da prova nesse intervalo (arts. 219 e 224 do CPC; Resolução CNJ 455/2022, art. 11, § 3º).
 
 **Citações**
-- `cpc-lei-13105-capture-2026-09-28` — arts. 219, 224, 1.003, § 5º, 1.023 e 1.026, § 1º
+- `cpc-lei-13105-capture-2026-09-28` — arts. 219, 224, 1.003, § 5º, 1.023 e 1.026, caput
 - `resolucao-cnj-455-2022` — art. 11, § 3º; disponibilização no DJEN, publicação no dia útil seguinte, prazo a partir do próximo dia útil
 - `exam-2025-2-p1-candidate` — PDF p. 1, Q1 and calendar
 
