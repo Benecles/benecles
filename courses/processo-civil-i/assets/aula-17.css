@@ -123,6 +123,9 @@
 }
 .a17-return{font:600 14px/1.4 var(--sans)}
 .a17-return a{color:var(--dif);text-decoration-thickness:1px;text-underline-offset:3px}
+.a17-figure{max-width:860px;margin:30px auto 42px}
+.a17-figure svg{display:block;width:100%;height:auto}
+.a17-figure figcaption{margin-top:12px;padding-top:8px;border-top:1px solid var(--rule);color:var(--ink-2);font:500 10.5px/1.5 var(--mono);letter-spacing:.07em;text-transform:uppercase}
 @media(max-width:760px) and (orientation:portrait){
   .a17-instrument{padding:15px;margin:18px auto 28px}
   .a17-instrument__body{grid-template-columns:minmax(0,1fr);gap:18px;padding-top:14px}

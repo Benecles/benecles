@@ -1,31 +1,33 @@
-"""Processo Civil I · Aula 17: the native decision form for CPC art. 373.
+"""Processo Civil I · Aula 17: the native decision form and case panels.
 
-The chosen cast is a working HTML form, not an SVG retyping of legal text. The statute remains
-selectable text for phone and print; the controls progressively enhance its default caput state.
-Run `python3 tools/figkit/processo_a17.py` to insert the component in the lesson. Set FIGKIT_PROBE
-to write a standalone specimen page for visual inspection.
+The working HTML form is not an SVG retyping of legal text. Its source is quoted once in the
+lesson's .fonte block; this form applies the rule and progressively enhances its default state.
+Run `python3 tools/figkit/processo_a17.py` to install the form and call Aula 17's figure injector.
+Set FIGKIT_PROBE to write a standalone specimen page for visual inspection.
 """
 from pathlib import Path
 import os
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGE = ROOT / 'courses' / 'processo-civil-i' / 'aula-17.html'
+sys.path.insert(0, os.path.dirname(__file__))
+import inject as figure_inject
+import processo_a17_panels
 
 
 def instrument():
     return '''<figure class="a17-instrument" id="art373-instrument" aria-labelledby="a17-form-title">
   <div class="a17-instrument__head">
     <span class="label">CPC · instrumento de decisão</span>
-    <h3 id="a17-form-title">Art. 373 · ônus da prova</h3>
+    <h3 id="a17-form-title">Distribuição do ônus da prova</h3>
   </div>
   <div class="a17-instrument__body">
     <div class="a17-statute">
-      <span class="art-head">Regra legal · caput e §§ 1º–2º</span>
-      <p>Art. 373. O ônus da prova incumbe:</p>
-      <p>I - ao autor, quanto ao fato constitutivo de seu direito;</p>
-      <p>II - ao réu, quanto à existência de fato impeditivo, modificativo ou extintivo do direito do autor.</p>
-      <p>§ 1º Nos casos previstos em lei ou diante de peculiaridades da causa relacionadas à impossibilidade ou à excessiva dificuldade de cumprir o encargo nos termos do caput ou à maior facilidade de obtenção da prova do fato contrário, poderá o juiz atribuir o ônus da prova de modo diverso, desde que o faça por decisão fundamentada, caso em que deverá dar à parte a oportunidade de se desincumbir do ônus que lhe foi atribuído.</p>
-      <p>§ 2º A decisão prevista no § 1º deste artigo não pode gerar situação em que a desincumbência do encargo pela parte seja impossível ou excessivamente difícil.</p>
+      <span class="art-head">Pergunta de entrada</span>
+      <p>Qual fato precisa ser provado para reconhecer o direito pedido?</p>
+      <p>Qual fato, se alegado na defesa, impede, modifica ou extingue esse direito?</p>
+      <p>A ficha testa a distribuição ordinária e os limites de uma mudança do encargo.</p>
     </div>
     <form class="a17-controls" id="a17-controls" aria-describedby="a17-result">
       <label for="a17-fato">Qual é o tipo de fato?</label>
@@ -53,12 +55,12 @@ def instrument():
         <option value="nao">Não · seria impossível ou excessivamente difícil</option>
       </select>
       <div class="a17-result" id="a17-result" data-state="default" role="status" aria-live="polite">
-        <strong class="a17-result__title">Mantém-se a regra do caput</strong>
+        <span class="a17-result__title">Mantém-se a regra do caput</span>
         <p class="a17-result__text">O ônus ordinário cabe ao autor quanto ao fato constitutivo.</p>
       </div>
     </form>
   </div>
-  <figcaption>Fig. 1 · O art. 373 parte da distribuição legal e limita a redistribuição</figcaption>
+  <figcaption>Instrumento · Classifique o fato e teste os fundamentos, a oportunidade e o limite da redistribuição</figcaption>
 </figure>'''
 
 
@@ -86,6 +88,10 @@ def install():
         raise SystemExit(f'expected exactly one generated art. 373 form in {PAGE}')
     end = end_at + len('</figure>')
     PAGE.write_text(source[:start] + instrument() + source[end:], encoding='utf-8')
+    figure_inject.inject('courses/processo-civil-i/aula-17.html', {
+        'pci-a17-precedent-time': processo_a17_panels.decision_timeline(),
+        'pci-a17-presumption': processo_a17_panels.presumption_panel(),
+    })
     return PAGE
 
 
