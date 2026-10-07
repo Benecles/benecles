@@ -73,3 +73,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Processo: Aula 01 — Petição inicial, demanda e emenda** · Fresh house-standard Aula 01 from approved blueprint, with source/page addendum and 2018/2 exam thread. Required checks passed.
 - **Processo: front de liberação antecipada** · Adapt the Processo Civil I front for early release: link Aula 01 and revisão P1, keep live Aula 02–11 links, and mark unbuilt lessons em breve. Checks passed.
 - **Processo Civil I Aula 10 · julgamento conforme o estado** · Aula 10 house pass (F-028–F-031): eight source blocks including assigned Lucon p. 588, two SVG figures, marked holding/limit/term; house_check, marks_lint, check_all, and 1280px breakscan passed.
+- **Processo Civil I Aula 15 · objeto da prova** · S5c house pass on refreshed PROC-R2 staging; source-backed panels and case thread; local house_check, marks_lint, check_all, and 1280px breakscan.
