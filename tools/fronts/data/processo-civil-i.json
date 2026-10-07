@@ -362,5 +362,15 @@
         ]
       }
     ]
-  }
+  },
+  "excluded_pages": [
+    {
+      "page": "aula-05-casos.html",
+      "reason": "Legacy URL mapped by S0 to aula-12.html; retained in the staging site until the redirect target is written."
+    },
+    {
+      "page": "aula-07-preclusao.html",
+      "reason": "Legacy URL mapped by S0 to aula-07.html; retained in the staging site until the target lesson is written."
+    }
+  ]
 }
