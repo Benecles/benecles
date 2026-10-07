@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14, processo_a17
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -59,6 +59,7 @@ def page():
     return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Figuras · referências · Ordenações Filipinas</title>
 <link rel="stylesheet" href="../courses/controle-de-constitucionalidade/assets/controle.css">
+<link rel="stylesheet" href="../courses/processo-civil-i/assets/aula-17.css">
 <style>body{{max-width:1180px;margin:0 auto;padding:28px 16px 80px}}
 h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--serif,serif);color:var(--ink-2);max-width:62ch;margin:0 0 30px}}
 .ref{{border-top:1.5px solid var(--ink);padding:16px 0 26px}} .ref header{{display:flex;gap:14px;font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase}}
@@ -68,7 +69,8 @@ h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--s
 .s{{border:1.5px solid var(--ink);background:var(--paper);padding:6px}}
 .s svg{{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important}}</style></head><body>
 <h1>Figuras · referências</h1><p class="lede">Uma referência feita à mão por gênero, cada uma refazendo uma figura real do site. É o padrão contra o qual as outras são julgadas.</p>
-{''.join(out)}</body></html>'''
+{processo_a17.specimen_section()}{''.join(out)}
+<script src="../courses/processo-civil-i/assets/aula-17.js"></script></body></html>'''
 
 
 if __name__ == '__main__':
