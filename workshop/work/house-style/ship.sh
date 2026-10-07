@@ -20,5 +20,5 @@ git push -q -u origin "$B"
 N=$(gh pr create --title "$T" --body "$L" | grep -o '[0-9]*$')
 for i in $(seq 1 20); do sleep 10; r=$(gh pr checks $N 2>/dev/null | awk '{print $2}' | head -1); [ "$r" = pass ] && break; [ "$r" = fail ] && { echo "CI FAIL on #$N"; exit 1; }; done
 gh pr merge $N --merge | tail -1
-git checkout -q main; git pull -q
+git checkout -q main 2>/dev/null && git pull -q || true   # in a worktree main lives elsewhere; the merge already happened
 echo "merged #$N"

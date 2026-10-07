@@ -34,7 +34,7 @@ def fonte_law(m):
     return f'<aside class="fonte dec" aria-label="Fonte: {cite}"><header>{h}</header><blockquote><p>{body}</p></blockquote></aside>'
 
 def fonte_julgado(m):
-    kind = 'lim' if 'conc' in m.group(1) else 'dec'
+    kind = 'lim' if 'conc' in (m.group(1) or '') else 'dec'
     a, b, corpo = m.group(2), m.group(3), m.group(4).strip()
     corpo = re.sub(r'</?strong>', '', corpo)
     return (f'<aside class="fonte {kind} resumo" aria-label="Resumo: {a}"><header><span>{a}</span><span class="loc">{b}</span></header>'
