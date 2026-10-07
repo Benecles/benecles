@@ -6,18 +6,12 @@
 <style>
 /* Layout: one reading column on the site's drafting-sheet paper; the production line as ruled rows, like a register. */
 :root {
-  --paper: #efe9da; --paper-2: #e6dfcb; --ink: #1d2530; --ink-2: #4a4f55; --muted: #7a7566;
-  --dif: #2b5597; --conc: #b4432a; --grid: #ddd6c3; --grid-major: #c9c1aa;
+  --paper: #15335f; --paper-2: #1a3d70; --ink: #eaf1fb; --ink-2: #c3d4ee; --muted: #8fa9d1; --bg: #15335f;
+  --dif: #9fdcff; --conc: #ffb07a; --grid: #1f4275; --grid-major: #2c5189; color-scheme: dark;
   --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
   --body: "Spectral", Georgia, "Times New Roman", serif;
-  --bg: var(--paper); --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+  --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --paper: #15181d; --paper-2: #1e2229; --ink: #e5e3da; --ink-2: #a3a6a6; --muted: #868a8e;
-  --dif: #7fb0dd; --conc: #dd8b6b; --grid: #1a1e25; --grid-major: #252a32; color-scheme: dark } }
-:root[data-theme="dark"] {
-  --paper: #15181d; --paper-2: #1e2229; --ink: #e5e3da; --ink-2: #a3a6a6; --muted: #868a8e;
-  --dif: #7fb0dd; --conc: #dd8b6b; --grid: #1a1e25; --grid-major: #252a32; color-scheme: dark }
 * { box-sizing: border-box; }
 body { background: var(--paper); color: var(--ink); font: 400 18px/1.62 var(--body);
   background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
