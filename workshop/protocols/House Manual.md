@@ -215,7 +215,7 @@ The checks pass on absence, so read the page too. PAGE is the site path (e.g. `~
 1. `python3 work/slop-bench/slop_gate.py PAGE` → PASS. It runs slop_lint and marks_lint and writes `critic_input.md` for a separate reviewer; apply span patches only, re-run. Then read each paragraph's last sentence for moral closers. [WS G]
 2. `python3 protocols/tools/marks_lint.py PAGE` → 0 findings.
 3. `python3 work/house-style/house_check.py PAGE` → PASS with **no article warning** (casa.css + casa.js, ≥ 4 `.fonte`, ≥ 1 doctrine, ≥ 2 SVG figures, ≥ 3 marks, `.term` with `data-def`). [F-028a, F-029a, R13]
-4. `python3 work/house-style/quote_check.py PAGE` once it exists: every quote found in the compendium after normalizing; a cut without "[...]" fails. Until then, check each block against its file by hand. [R14]
+4. `python3 work/house-style/quote_check.py PAGE [--corpus DIR]` → no FAIL: every quoted segment of 6+ words is found in the course's `work/pipeline/<course>/chapters` after normalizing. Treat its "cut without [...]" WARN as a fail. [R14]
 
 **Site (site repo)**
 5. After adding a lesson or touching a front: `python3 tools/offline_build.py`, then `git checkout -- assets/front.css specimen/register.html`, and commit every generated output. *Why:* CI rejects a stale offline manifest. [F-029b]
