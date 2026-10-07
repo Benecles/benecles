@@ -1,15 +1,7 @@
 [
 {
-"before": "processo legislativo</strong>, ou seja, antes da publicação",
-"after": "processo legislativo</strong>, isto é, antes da publicação"
-},
-{
 "before": "Código Eleitoral (Lei nº 4.737/1965) atribui ao ",
 "after": "Código Eleitoral (Lei 4.737/1965) atribui ao "
-},
-{
-"before": "nacional de partido político e, o ponto que importa aqui, <strong>parlamentares podem efetivamente figurar como consulentes",
-"after": "nacional de partido político; o ponto que importa aqui é que <strong>parlamentares podem figurar como consulentes"
 },
 {
 "before": " O art. 121 CF limita-se a",
@@ -20,24 +12,12 @@
 "after": "pelo art. 121 da CF.</dd>\n  </dl>\n  <span class=\"src\">"
 },
 {
-"before": "62, § 1º, CF).</p>\n      <blockquote class=\"law\"><cite>CF,",
-"after": "62, § 1º, da CF).</p>\n      <blockquote class=\"law\"><cite>CF,"
-},
-{
-"before": "</strong> (art. 68 CF). A delegação ",
-"after": "</strong> (art. 68 da CF). A delegação "
-},
-{
 "before": "lei (art. 84, IV CF). Se, ao",
 "after": "lei (art. 84, IV, da CF). Se, ao"
 },
 {
 "before": "competências dos arts. 70–71 da Constituição.</li>\n      ",
 "after": "competências dos arts. 70 a 71 da Constituição.</li>\n      "
-},
-{
-"before": "</strong> (art. 84, IV CF): é o",
-"after": "</strong> (art. 84, IV, da CF): é o"
 },
 {
 "before": "constitucional direta. O ponto decisivo é saber se",
@@ -64,10 +44,6 @@
 "after": "(ex.: art. 84, VI, da CF), surge problema"
 },
 {
-"before": "(art. 62, caput, CF).</li>\n    <li><b>Força",
-"after": "(art. 62, caput, da CF).</li>\n    <li><b>Força"
-},
-{
 "before": "(art. 62, § 3º CF).</li>\n  </ul>\n  ",
 "after": "(art. 62, § 3º, da CF).</li>\n  </ul>\n  "
 },
@@ -86,10 +62,6 @@
 {
 "before": "(art. 49, V, CF): hipótese de ",
 "after": "(art. 49, V, da CF): hipótese de "
-},
-{
-"before": "diferencia a versão \"problema de legalidade\" da versão \"problema de inconstitucionalidade direta\"?</summary><p>Um <strong>X sobre \"Lei\"</strong> (e sobre \"ato secundário\"). Sem o X",
-"after": "diferencia a versão “problema de legalidade” da versão “problema de inconstitucionalidade direta”?</summary><p>Um <strong>X sobre “Lei”</strong> (e sobre “ato secundário”). Sem o X"
 },
 {
 "before": "a lei é \"pulada\": é inconstitucionalidade direta.",
@@ -112,7 +84,415 @@
 "after": "· sem detalhe</text><line x1=\"182\" y1=\"250\" x2=\"198\" y2=\"266\" class=\"c-conc\" /><line x1=\"198\" y1=\"250\" x2=\"182\" y2=\"266\" class=\"c-conc\" /><rect x=\"180\" y=\"382\" width=\"240\" height=\"76\" class=\"w-conc ink\" /><text x=\"204\" y=\"428\" class=\"t-mid tc-conc\" >DECRETO</text><text x=\"60\" y=\"520\" class=\"t-mid tc-conc\" >NÃO"
 },
 {
-"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 10 · Momentos do controle de constitucionalidade: o controle repressivo, exercido em regra pelo Judiciário (difuso e concentrado), com as exceções da Justiça Eleitoral, do Legislativo e do poder regulamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=b6c272a98d\">\n</head>\n<body>\n\n<nav class=\"topbar\">",
-"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 10 · Momentos do controle de constitucionalidade: o controle repressivo, exercido em regra pelo Judiciário (difuso e concentrado), com as exceções da Justiça Eleitoral, do Legislativo e do poder regulamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n</head>\n<body>\n\n<nav class=\"topbar\">"
+"before": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 10 · Momentos do controle de constitucionalidade: o controle repressivo, exercido em regra pelo Judiciário (difuso e concentrado), com as exceções da Justiça Eleitoral, do Legislativo e do poder regulamentar.\">\n<link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n</head>\n<body>\n\n",
+"after": " Constitucionalidade</title>\n<meta name=\"description\" content=\"Aula 10 · Momentos do controle de constitucionalidade: o controle repressivo, exercido em regra pelo Judiciário (difuso e concentrado), com as exceções da Justiça Eleitoral, do Legislativo e do poder regulamentar.\">\n<link rel=\"stylesheet\" href=\"../../assets/casa.css\"><link rel=\"stylesheet\" href=\"assets/controle.css?v=137ec6c29a\">\n</head>\n<body>\n\n"
+},
+{
+"before": "\n    </g>\n  </svg>\n  <div class=\"titleblock label\" role=\"list\">\n    <div role=\"listitem\">Fonte<b>Slides “Momentos",
+"after": "\n    </g>\n  </svg>\n  <div class=\"titleblock label\" role=\"list\"><div role=\"listitem\">Fonte<b>Slides “Momentos"
+},
+{
+"before": " 33 pp.</b></div>\n    <div role=\"listitem\">Leitura<b>≈ 20 min</b></div>\n    <div role=\"listitem\">Antes<b>Aula 09",
+"after": " 33 pp.</b></div><div role=\"listitem\">Leitura<b>≈ 20 min</b></div><div role=\"listitem\">Antes<b>Aula 09"
+},
+{
+"before": " Controle preventivo</b></div>\n    <div role=\"listitem\">Depois<b>Aula 11",
+"after": " Controle preventivo</b></div><div role=\"listitem\">Depois<b>Aula 11"
+},
+{
+"before": " de controle</b></div>\n  </div>\n</header>\n\n<!-- ============ 01 · DEFINIÇÃO E MARCO ============ -->\n",
+"after": " de controle</b></div></div>\n</header>\n\n<!-- ============ 01 · DEFINIÇÃO E MARCO ============ -->\n"
+},
+{
+"before": "a Aula 09: <strong class=\"dif\">azul</strong> ainda marca o <strong class=\"dif\">preventivo</strong>, <strong class=\"conc\">vermelho</strong> ainda marca o <strong class=\"conc\">repressivo</strong>. A publicação, não ",
+"after": "a Aula 09: <em class=\"dif\">azul</em> ainda marca o <em class=\"dif\">preventivo</em>, <em class=\"conc\">vermelho</em> ainda marca o <em class=\"conc\">repressivo</em>. <span class=\"mark\">A publicação, não "
+},
+{
+"before": " preventivo ao repressivo.</p>\n</section>\n\n<div class=\"scrolly\">\n  ",
+"after": " preventivo ao repressivo.</span></p>\n</section>\n\n<div class=\"scrolly\">\n  "
+},
+{
+"before": "\n      <p>Fala-se em <strong class=\"dif\">controle preventivo</strong> quando o exame",
+"after": "\n      <p>Fala-se em <em class=\"dif\">controle preventivo</em> quando o exame"
+},
+{
+"before": "constitucionalidade é feito <strong>durante o processo legislativo</strong>, isto é, antes",
+"after": "constitucionalidade é feito durante o processo legislativo, isto é, antes"
+},
+{
+"before": "\n      <p>Fala-se em <strong class=\"conc\">controle repressivo</strong> quando o controle",
+"after": "\n      <p>Fala-se em <em class=\"conc\">controle repressivo</em> quando o controle"
+},
+{
+"before": "constitucionalidade é feito <strong>a partir da ",
+"after": "constitucionalidade é feito a partir da "
+},
+{
+"before": "ato no diário oficial</strong>, ou seja, <strong>após a conclusão ",
+"after": "ato no diário oficial, ou seja, após a conclusão "
+},
+{
+"before": "etapas do processo legislativo</strong>. A partir daí,",
+"after": "etapas do processo legislativo. A partir daí,"
+},
+{
+"before": "o período de <strong><em>vacatio legis</em></strong> de uma norma,",
+"after": "o período de <span class=\"term\" tabindex=\"0\" data-def=\"Período em que a norma já foi publicada, mas ainda não obriga.\"><em>vacatio legis</em></span> de uma norma,"
+},
+{
+"before": "ele já é <strong>repressivo</strong>. O fato de",
+"after": "ele já é repressivo. O fato de"
+},
+{
+"before": "estar em vigência <strong>não significa que ela não exista</strong>.</p>\n      <p>A norma",
+"after": "estar em vigência não significa que ela não exista.</p>\n      <p>A norma"
+},
+{
+"before": "No controle repressivo, <strong class=\"dif\">azul</strong> passa a marcar a <strong class=\"dif\">regra</strong>, o Judiciário, e <strong class=\"conc\">vermelho</strong> marca as <strong class=\"conc\">exceções</strong> a essa regra.",
+"after": "No controle repressivo, <em class=\"dif\">azul</em> passa a marcar a <em class=\"dif\">regra</em>, o Judiciário, e <em class=\"conc\">vermelho</em> marca as <em class=\"conc\">exceções</em> a essa regra."
+},
+{
+"before": "é feito pelo <strong class=\"dif\">Poder Judiciário</strong>. Existem dois sistemas: o <strong>difuso</strong>, exercido por qualquer",
+"after": "é feito pelo <em class=\"dif\">Poder Judiciário</em>. Existem dois sistemas: o difuso, exercido por qualquer"
+},
+{
+"before": "tribunal, e o <strong>concentrado</strong>, reservado a órgãos",
+"after": "tribunal, e o concentrado, reservado a órgãos"
+},
+{
+"before": "O Poder Judiciário <strong>não serve de consultor</strong> do Poder Legislativo.",
+"after": "O Poder Judiciário <span class=\"limit\">não serve de consultor</span> do Poder Legislativo."
+},
+{
+"before": "repressivo só começa <strong>após a conclusão do processo legislativo</strong>, sem prejuízo da",
+"after": "repressivo só começa após a conclusão do processo legislativo, sem prejuízo da"
+},
+{
+"before": "controle repressivo: a <strong class=\"conc\">Justiça Eleitoral</strong> é excepcionalmente dotada de <strong>função consultiva</strong>.</p>\n      <span class=\"src\"></span>\n    </div>",
+"after": "controle repressivo: a <em class=\"conc\">Justiça Eleitoral</em> é excepcionalmente dotada de função consultiva.</p>\n      <span class=\"src\"></span>\n    </div>"
+},
+{
+"before": "competência para responder, <strong>em tese e sobre matéria eleitoral</strong>, a consultas ",
+"after": "competência para responder, <span class=\"held\">em tese e sobre matéria eleitoral</span>, a consultas "
+},
+{
+"before": "aqui é que <strong>parlamentares podem figurar como consulentes</strong>.</p>\n      <p>Membros do",
+"after": "aqui é que parlamentares podem figurar como consulentes.</p>\n      <p>Membros do"
+},
+{
+"before": "Eleitoral sobre determinada <strong>situação abstrata</strong> e receber resposta.",
+"after": "Eleitoral sobre determinada situação abstrata e receber resposta."
+},
+{
+"before": "consulta deve ser <strong>abstrata</strong>; não pode servir",
+"after": "consulta deve ser abstrata; não pode servir"
+},
+{
+"before": "concreto. Sua resposta <strong>não possui natureza jurisdicional</strong>, mas sim <strong>administrativa</strong>. Ao contrário dos",
+"after": "concreto. Sua resposta <span class=\"limit\">não possui natureza jurisdicional</span>, mas sim administrativa. Ao contrário dos"
+},
+{
+"before": "a estabelecer que <strong>lei complementar disporá ",
+"after": "a estabelecer que lei complementar disporá "
+},
+{
+"before": " e a competência</strong> dos tribunais, juízes",
+"after": " e a competência dos tribunais, juízes"
+},
+{
+"before": "a questão da <strong>recepção do Código ",
+"after": "a questão da recepção do Código "
+},
+{
+"before": " de lei complementar</strong> nas matérias abrangidas",
+"after": " de lei complementar nas matérias abrangidas"
+},
+{
+"before": "que exorbitem da <strong>delegação legislativa</strong> ou do <strong>poder regulamentar</strong>, além da apreciação de <strong>medidas provisórias</strong> pelo Congresso (art.",
+"after": "que exorbitem da delegação legislativa ou do poder regulamentar, além da apreciação de medidas provisórias pelo Congresso (art."
+},
+{
+"before": " da CF).</p>\n      <blockquote class=\"law\"><cite>CF, art. 49</cite>É da competência ",
+"after": " da CF).</p>\n      <aside class=\"fonte dec\" aria-label=\"Fonte: CF, art. 49\"><header><span>CF</span><span class=\"loc\">art. 49</span></header><blockquote><p>É da competência "
+},
+{
+"before": "do Congresso Nacional: <strong>V</strong> – sustar os",
+"after": "do Congresso Nacional: V – sustar os"
+},
+{
+"before": "de delegação legislativa; <strong>XI</strong> – zelar pela",
+"after": "de delegação legislativa; XI – zelar pela"
+},
+{
+"before": " dos outros Poderes.</blockquote>\n      <span class=\"src\"></span>\n    </div></div>",
+"after": " dos outros Poderes.</p></blockquote></aside>\n      <span class=\"src\"></span>\n    </div></div>"
+},
+{
+"before": "do Presidente elaborar <strong>leis delegadas</strong> (art. 68 da",
+"after": "do Presidente elaborar leis delegadas (art. 68 da"
+},
+{
+"before": "delegação ocorre mediante <strong>resolução</strong> do Congresso, que",
+"after": "delegação ocorre mediante resolução do Congresso, que"
+},
+{
+"before": "Congresso pode, por <strong>decreto legislativo</strong>, sustar o ",
+"after": "Congresso pode, por <span class=\"held\">decreto legislativo</span>, sustar o "
+},
+{
+"before": "o Presidente disciplinar <strong>além do limite definido na lei</strong>, esse excesso pode",
+"after": "o Presidente disciplinar além do limite definido na lei, esse excesso pode"
+},
+{
+"before": "autores, trata-se de <strong>controle de legalidade</strong>, decreto contra lei,",
+"after": "autores, trata-se de controle de legalidade, decreto contra lei,"
+},
+{
+"before": " próprio Congresso.</div>\n  <div class=\"julgados\">\n    <div class=\"julgado dif\">\n      <header><span>ADC 96 ",
+"after": " próprio Congresso.</div>\n  <aside class=\"fonte dec resumo\" aria-label=\"Resumo: ADC 96 · ADIs 7827 e 7839\"><header><span>ADC 96 "
+},
+{
+"before": "7827 e 7839</span><span>Rel. Min. Alexandre ",
+"after": "7827 e 7839</span><span class=\"loc\">Rel. Min. Alexandre "
+},
+{
+"before": " de 16.7.2025</span></header>\n      <div class=\"corpo\">\n        <p>O decreto presidencial",
+"after": " de 16.7.2025</span></header><div class=\"corpo\"><p>O decreto presidencial"
+},
+{
+"before": "operações de crédito, <strong>inovou sobre as ",
+"after": "operações de crédito, inovou sobre as "
+},
+{
+"before": "de incidência do tributo</strong>: foi além do",
+"after": "de incidência do tributo: foi além do"
+},
+{
+"before": "mas o decreto <strong>extravasou o poder ",
+"after": "mas o decreto extravasou o poder "
+},
+{
+"before": "matéria reservada à lei</strong>.</p>\n      </div>\n      <div class=\"tese\">Essa",
+"after": "matéria reservada à lei.</p>\n      </div>\n      <div class=\"tese\">Essa"
+},
+{
+"before": "ao risco sacado.</div>\n    </div>\n  </div>\n  <p class=\"note\">Caso ilustrativo: ",
+"after": "ao risco sacado.</div></aside>\n  <p class=\"note\">Caso ilustrativo: "
+},
+{
+"before": "decisão</span>\n    <ol class=\"fluxo\">\n      <li><b>Há uma atribuição ",
+"after": "decisão</span>\n    <ol class=\"fluxo\">\n      <li><b class=\"runin\">Há uma atribuição "
+},
+{
+"before": "da Constituição.</li>\n      <li><b>A norma precisa ",
+"after": "da Constituição.</li>\n      <li><b class=\"runin\">A norma precisa "
+},
+{
+"before": "da lei.</li>\n      <li><b>Existe incompatibilidade patente ",
+"after": "da lei.</li>\n      <li><b class=\"runin\">Existe incompatibilidade patente "
+},
+{
+"before": "de constitucionalidade.</li>\n      <li><b>O efeito fica ",
+"after": "de constitucionalidade.</li>\n      <li><b class=\"runin\">O efeito fica "
+},
+{
+"before": "Em 2023, no <strong>MS 25.888 AgR/DF</strong>, o Plenário do STF afirmou a compatibilidade da ",
+"after": "Em 2023, no <em>MS 25.888 AgR/DF</em>, o Plenário do STF afirmou <span class=\"held\">a compatibilidade da "
+},
+{
+"before": " com a Constituição de 1988 sob",
+"after": " com a Constituição</span> de 1988 sob"
+},
+{
+"before": "privativamente ao Presidente <strong>expedir decretos e ",
+"after": "privativamente ao Presidente expedir decretos e "
+},
+{
+"before": " execução das leis</strong> (art. 84, IV,",
+"after": " execução das leis (art. 84, IV,"
+},
+{
+"before": "é o chamado <strong>poder regulamentar</strong>. Ele importa porque permite <strong>adaptar as leis, ",
+"after": "é o chamado <span class=\"term\" tabindex=\"0\" data-def=\"Competência privativa do Presidente para expedir decretos e regulamentos para a fiel execução das leis (art. 84, IV, da CF).\">poder regulamentar</span>. Ele importa porque permite adaptar as leis, "
+},
+{
+"before": "se modificam com frequência</strong>, e permite agregar, por decreto, <strong>detalhes que a ",
+"after": "se modificam com frequência, e permite agregar, por decreto, detalhes que a "
+},
+{
+"before": "si só, não fornece</strong>.</p>\n      <span class=\"src\"></span>\n    </div>",
+"after": "si só, não fornece.</p>\n      <span class=\"src\"></span>\n    </div>"
+},
+{
+"before": "lei, ele toma <strong>duas decisões básicas</strong>: o tema da",
+"after": "lei, ele toma duas decisões básicas: o tema da"
+},
+{
+"before": "e o seu <strong>grau de detalhamento</strong>. Essa segunda decisão",
+"after": "e o seu grau de detalhamento. Essa segunda decisão"
+},
+{
+"before": "Se o legislador <strong>silenciar</strong> sobre o valor,",
+"after": "Se o legislador silenciar sobre o valor,"
+},
+{
+"before": "a qualquer momento, <strong>sem depender de nova lei</strong>. Essa dinamicidade é",
+"after": "a qualquer momento, sem depender de nova lei. Essa dinamicidade é"
+},
+{
+"before": "agora o legislador <strong>estabelece</strong> o valor da",
+"after": "agora o legislador estabelece o valor da"
+},
+{
+"before": "Chefe do Executivo <strong>não poderá, por decreto, alterá-lo</strong>: o decreto ",
+"after": "Chefe do Executivo <span class=\"limit\">não poderá, por decreto, alterá-lo</span>: o decreto "
+},
+{
+"before": "Um decreto que <strong>inova</strong> na ordem jurídica,",
+"after": "Um decreto que inova na ordem jurídica,"
+},
+{
+"before": "não prevê, é <strong>ilegal</strong>: tema ligado ao",
+"after": "não prevê, é ilegal: tema ligado ao"
+},
+{
+"before": "A lei é <strong>ato primário</strong>: tem fundamento ",
+"after": "A lei é <span class=\"term\" tabindex=\"0\" data-def=\"Tem fundamento direto na Constituição e é produzido pelo Poder Legislativo: a lei.\">ato primário</span>: tem fundamento "
+},
+{
+"before": "decreto regulamentar é <strong>ato secundário</strong>: subordinado à ",
+"after": "decreto regulamentar é <span class=\"term\" tabindex=\"0\" data-def=\"Subordinado à lei, é expedido pelo Executivo para dar-lhe fiel execução: o decreto regulamentar.\">ato secundário</span>: subordinado à "
+},
+{
+"before": "problema é de <strong>legalidade</strong> ou de <strong>inconstitucionalidade</strong>? A resposta depende",
+"after": "problema é de legalidade ou de inconstitucionalidade? A resposta depende"
+},
+{
+"before": "\n      <p>Quando um <strong>decreto regulamentar</strong> viola uma lei,",
+"after": "\n      <p>Quando um decreto regulamentar viola uma lei,"
+},
+{
+"before": "de tudo, de <strong>legalidade</strong>. Motivo: deve-se primeiro",
+"after": "de tudo, de legalidade. Motivo: deve-se primeiro"
+},
+{
+"before": "A Lei é <strong>fonte primária</strong> do Direito; o Decreto, <strong>fonte secundária</strong>. Os limites derivam",
+"after": "A Lei é fonte primária do Direito; o Decreto, fonte secundária. Os limites derivam"
+},
+{
+"before": "dos princípios da <strong>legalidade e da separação dos poderes</strong>, e exceções a",
+"after": "dos princípios da legalidade e da separação dos poderes, e exceções a"
+},
+{
+"before": "normativo, marcados pela <strong>indelegabilidade</strong> (art. 13, I,",
+"after": "normativo, marcados pela <span class=\"term\" tabindex=\"0\" data-def=\"Não pode ser objeto de delegação a edição de atos de caráter normativo (art. 13, I, da Lei 9.784/1999).\">indelegabilidade</span> (art. 13, I,"
+},
+{
+"before": "\n      <p>Quando um <strong>decreto autônomo</strong> é expedido <strong>fora das hipóteses autorizadas pela Constituição</strong> (ex.: art. 84,",
+"after": "\n      <p>Quando um <span class=\"term\" tabindex=\"0\" data-def=\"Decreto que retira seu fundamento de validade diretamente da Constituição, sem intermediação legislativa.\">decreto autônomo</span> é expedido fora das hipóteses autorizadas pela Constituição (ex.: art. 84,"
+},
+{
+"before": "surge problema de <strong>inconstitucionalidade</strong>. Motivo: a violação ",
+"after": "surge problema de inconstitucionalidade. <span class=\"mark\">Motivo: a violação "
+},
+{
+"before": "passa a ser <strong>direta</strong>: a Lei é “pulada” da cadeia. O X sobre",
+"after": "passa a ser direta: a Lei é “pulada” da cadeia.</span> O X sobre"
+},
+{
+"before": "fundamento de validade <strong>diretamente da Constituição, sem intermediação legislativa</strong>. Mas ele <strong>não pode inovar ",
+"after": "fundamento de validade diretamente da Constituição, sem intermediação legislativa. Mas ele <span class=\"limit\">não pode inovar "
+},
+{
+"before": " na ordem jurídica</strong>: sua autonomia ",
+"after": " na ordem jurídica</span>: sua autonomia "
+},
+{
+"before": "\n<div class=\"wide\">\n  <ul class=\"requisitos\">\n    <li><b>Requisitos da MP</b>",
+"after": "\n<div class=\"wide\">\n  <ul class=\"requisitos\">\n    <li><b class=\"runin\">Requisitos da MP</b>"
+},
+{
+"before": "da CF).</li>\n    <li><b>Força de lei</b>",
+"after": "da CF).</li>\n    <li><b class=\"runin\">Força de lei</b>"
+},
+{
+"before": "enquanto tramita.</li>\n    <li><b>Mecanismo de controle</b>",
+"after": "enquanto tramita.</li>\n    <li><b class=\"runin\">Mecanismo de controle</b>"
+},
+{
+"before": "inconstitucional, o Congresso <strong>não a converte em lei</strong>; ela <strong>perde a eficácia</strong> ao fim do prazo de <strong>60 dias</strong>, prorrogável uma única",
+"after": "inconstitucional, o Congresso não a converte em lei; ela <span class=\"held\">perde a eficácia</span> ao fim do prazo de 60 dias, prorrogável uma única"
+},
+{
+"before": " CF).</li>\n  </ul>\n  <blockquote class=\"law\"><cite>CF, art. 62, § 1º</cite>É vedada a ",
+"after": " CF).</li>\n  </ul>\n  <aside class=\"fonte lim\" aria-label=\"Fonte: CF, art. 62, § 1º\"><header><span>CF</span><span class=\"loc\">art. 62, § 1º</span></header><blockquote><p>É vedada a "
+},
+{
+"before": "provisórias sobre matéria: <strong>I</strong> – relativa a: <strong>a)</strong> nacionalidade, cidadania, direitos",
+"after": "provisórias sobre matéria: I – relativa a: a) nacionalidade, cidadania, direitos"
+},
+{
+"before": "e direito eleitoral; <strong>b)</strong> direito penal, processual",
+"after": "e direito eleitoral; b) direito penal, processual"
+},
+{
+"before": "e processual civil; <strong>c)</strong> organização do Poder",
+"after": "e processual civil; c) organização do Poder"
+},
+{
+"before": "de seus membros; <strong>d)</strong> planos plurianuais, diretrizes",
+"after": "de seus membros; d) planos plurianuais, diretrizes"
+},
+{
+"before": "167, § 3º; <strong>II</strong> – que vise",
+"after": "167, § 3º; II – que vise"
+},
+{
+"before": "outro ativo financeiro; <strong>III</strong> – reservada a lei complementar; <strong>IV</strong> – já disciplinada",
+"after": "outro ativo financeiro; III – reservada a lei complementar; IV – já disciplinada"
+},
+{
+"before": " Presidente da República.</blockquote>\n  <span class=\"src\"></span>\n</div>\n\n",
+"after": " Presidente da República.</p></blockquote></aside>\n  <span class=\"src\"></span>\n</div>\n\n"
+},
+{
+"before": " ou repressivo?</summary><p><strong class=\"conc\">Repressivo</strong>. O marco ",
+"after": " ou repressivo?</summary><p><em class=\"conc\">Repressivo</em>. O marco "
+},
+{
+"before": "que o Judiciário <strong>não é consultor</strong> do Legislativo. A",
+"after": "que o Judiciário não é consultor do Legislativo. A"
+},
+{
+"before": "excepcional, de natureza <strong>administrativa</strong>, com base no",
+"after": "excepcional, de natureza administrativa, com base no"
+},
+{
+"before": " instrumento?</summary><p>Do <strong>Congresso Nacional</strong>, por <strong>decreto legislativo</strong> (art. 49, V,",
+"after": " instrumento?</summary><p>Do Congresso Nacional, por decreto legislativo (art. 49, V,"
+},
+{
+"before": " direta”?</summary><p>Um <strong>X sobre “Lei”</strong> (e sobre “ato",
+"after": " direta”?</summary><p>Um X sobre “Lei” (e sobre “ato"
+},
+{
+"before": "Apenas que ele <strong>não depende de uma lei a regulamentar</strong>: retira fundamento direto",
+"after": "Apenas que ele não depende de uma lei a regulamentar: retira fundamento direto"
+},
+{
+"before": "significa que possa <strong>inovar livremente</strong> na ordem jurídica.",
+"after": "significa que possa inovar livremente na ordem jurídica."
+},
+{
+"before": "Não. Ele simplesmente <strong>não a converte em lei</strong>, e ela perde",
+"after": "Não. Ele simplesmente não a converte em lei, e ela perde"
+},
+{
+"before": "do prazo de <strong>60 dias</strong>, prorrogável uma vez",
+"after": "do prazo de 60 dias, prorrogável uma vez"
+},
+{
+"before": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n</body>\n</html>\n",
+"after": "<script src=\"../../assets/highlight.js\" defer></script>\n<script src=\"../../assets/highlight-panel.js\" defer></script>\n<script src=\"../../assets/casa.js\" defer></script>\n</body>\n</html>\n"
 }
 ]
