@@ -54,9 +54,9 @@ Design process and earlier directions are kept, not hidden:
 
 Benecles directs the project and decides what ships. Much of the engineering, writing and design work is done by AI agents working under that direction: **Claude** (Anthropic, through Claude Code) as the design and editorial lead and the author of the house style and many of the figures and lessons, and **Codex** (OpenAI) for bulk content and engineering work, coordinated through GitHub issues and pull requests. Agents work in separate branches and worktrees, and every change goes through the same checks as a human one. The agent instructions are in [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md). The agents are how the guides are built; they are not a feature the reader uses.
 
-## Status
+## License
 
-Early stage: a student-built project, not an incorporated company, with no paying users. No usage figures are published here. There is no license; all rights are reserved, and nothing here grants reuse of the content.
+All rights reserved. Nothing here grants reuse of the content.
 
 ## Running it
 
