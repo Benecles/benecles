@@ -31,7 +31,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | Aula 14, Aula 10, Aula 11-merit, Aula 15, Aula 11, and Aula 10-estabilização merged (#108–#114); A16 writing and A17/A18 wave 2 active | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | Aula 14, Aula 10, Aula 11-merit, Aula 15, Aula 11, Aula 10-estabilização, and Aula 16 merged (#108–#115); A17/A18 wave 2 active | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -124,4 +124,6 @@ Source-pull correction: Aula 12's Art. 385 request manifest and Aula 16's CPC ar
 
 P2 wave 2 has started with approved Aula 17 (~3,300 words) and Aula 18 (~3,200 words), in separate author worktrees. They will integrate as separate lesson PRs after fresh Conform critique and the page-specific checks.
 
-Aula 16's first checked draft reached 3,433 words against the 3,700-word target. Its source use, separate-model critique, `marks_lint`, `check_all`, 375 px table fit, 1280 px staging comparison, and 1512 px crop are reported clean. The author is adding approximately 100 mapped, source-checked words to bring it within 5% of target, then will re-run the affected writing gate and open its PR. Per F-023b, the S5 issue's accidental `needs-gate` label was removed; no mid-run CEO gate applies.
+Aula 16 is complete at 3,545 canonical words against the 3,700-word target. Its separate-model Conform critique, `marks_lint` (0), `check_all`, 375 px table fit, 1280 px staging comparison (0 new, 1 resolved), and inspected 1512 px crop are complete. [PR #115](https://github.com/Benecles/ordenacoes-filipinas/pull/115) passed GitHub `check_all` and is merged. The S5 `needs-gate` label was removed under F-023b; the CEO reads the complete staging build before the swap PR.
+
+Aula 17 has a 3,200-word draft against its ~3,300 target and a fresh Conform critique with six supported spans; the author is applying them and will capture both states of its art. 373 figure at 1512 px. Supporting extracts `30-004/005` lack the blueprint's cited §9.4.6–9.4.9 passages; claims use primary source `002` only. Aula 18 has a 3,319-word draft against its ~3,200 target, passed its fresh Conform gate, and awaits six supported critique spans; its Art. 370 panel was inspected in both selector states at 1512 px. The S5 issue's accidental `needs-gate` label was also removed per F-023b.
