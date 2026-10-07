@@ -5,6 +5,7 @@ Provenance index assembled from `course-map.json` (S0), `shelf.csv` (S1), `chapt
 | File | Source | Chapter | Pages | Role | Why | SHA-256 |
 |---|---|---|---|---|---|---|
 | 10-slides.txt | — | — | — | slides | Lesson slide deck from S1. | 025dd23604c82c1f5f436647eed5956d47be5c708f96ea9ca882d8305040f819 |
+| requests.md | workbench | pull requests | — | reader requests | Reader-logged source pulls required by Source Pipeline §80. | 639c96e1c7bed2c063445ec7edde79244af11ef67e1599a8026bdd8bf9ce30b9 |
 | 20-primary-001-didier-curso-vol1-2017-ch13-s02.txt | didier-curso-vol1-2017 | ch13-s02 | PDF 568–601 | primary | Capítulo dedicado à intervenção de terceiros, com análise específica da denunciação da lide e de seu procedimento. | 64b2bd76ba2a77c40e7df4db8f29c24661fdecef37d6188bc4219fab7408cf40 |
 | 30-pulled-001-cpc-lei-13105-capture-2026-09-28-Art.-385.txt | cpc-lei-13105-capture-2026-09-28 | Art. 385 | Art. 385 | supporting (pulled) | Requested by the 2026-10-07 PROC-R2 ruling before the Aula 16 evidence lesson is written; cited by exam-2015-1-avaliacao-2-q9. Pulled as an exact atom from the refreshed official CPC capture retrieved 2026-10-06. | df2e0e89355ac7bc79979da9e5df81937dd82ec3b95b830226cbaaf5cfa6740f |
 | 30-supporting-001-cpc-lei-13105-capture-2026-09-28-Art.-125.txt | cpc-lei-13105-capture-2026-09-28 | Art. 125 | Art. 125 | supporting | Texto legal diretamente aplicável à admissibilidade e ao procedimento da denunciação da lide (CPC, arts. 125–129). | 47238df276236a2fecddd06abe392f074159a87363fc33033be1376d78a3d97d |
