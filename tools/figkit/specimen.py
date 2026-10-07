@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14, processo_a17, processo_a18, proc_a10
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a14, processo_a15, processo_a17, processo_a18, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -79,7 +79,7 @@ h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--s
 .s:has(.figkit-document){{border:0;background:none;padding:0}}
 .s svg{{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important}}</style></head><body>
 <h1>Figuras · referências</h1><p class="lede">Uma referência feita à mão por gênero, cada uma refazendo uma figura real do site. É o padrão contra o qual as outras são julgadas.</p>
-{processo_a17.specimen_section()}{''.join(out)}
+{processo_a17.specimen_section()}{''.join(out)}{processo_a15.specimen_section()}{processo_a11.specimen_sections()}
 <script src="../courses/processo-civil-i/assets/aula-17.js"></script></body></html>'''
 
 
