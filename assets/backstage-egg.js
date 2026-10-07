@@ -104,31 +104,5 @@
     if (step === 4) { step = 0; setTimeout(function () { CORNERS.forEach(function (_, j) { flash(j); }); reveal(); }, 260); }
   });
 
-  // TEMPORARY DEBUG (chairman 07/10): tint the four cells. Solid red = the egg is live here;
-  // dashed grey = switched off (window too narrow, not landscape, or a course card covers the square). Remove after testing.
-  var DEBUG = true;
-  if (DEBUG) {
-    var dbg = [], note = document.createElement('div');
-    note.style.cssText = 'position:fixed;left:' + (SQ.x + 2) + 'px;top:' + (SQ.y + MAJOR + 4) + 'px;z-index:61;font:600 10px/1.3 var(--mono);letter-spacing:.06em;color:#c0392b;pointer-events:none;white-space:nowrap';
-    CORNERS.forEach(function (c, i) {
-      var d = document.createElement('div');
-      d.style.cssText = 'position:fixed;left:' + (SQ.x + c[0] * CELL) + 'px;top:' + (SQ.y + c[1] * CELL) + 'px;width:' + CELL + 'px;height:' + CELL + 'px;z-index:61;pointer-events:none;box-sizing:border-box;font:600 9px/' + CELL + 'px var(--mono);text-align:center';
-      d.textContent = String(i + 1);
-      dbg.push(d);
-    });
-    function paint() {
-      var live = mq.matches && allClear();
-      dbg.forEach(function (d) {
-        d.style.background = live ? 'rgba(220,40,40,.32)' : 'transparent';
-        d.style.border = live ? '1px solid rgba(200,30,30,.8)' : '1px dashed rgba(120,120,120,.9)';
-        d.style.color = live ? '#8b0000' : '#777';
-      });
-      note.textContent = (live ? 'egg live' : 'egg off') + ' · window ' + window.innerWidth + '×' + window.innerHeight + (mq.matches ? '' : ' (needs ≥1100 wide, landscape, mouse)');
-    }
-    function mount() { dbg.forEach(function (d) { document.body.appendChild(d); }); document.body.appendChild(note); paint(); }
-    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mount); else mount();
-    window.addEventListener('resize', paint);
-    window.addEventListener('scroll', paint, { passive: true });
-  }
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && open) close(); });
 })();

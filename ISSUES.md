@@ -83,3 +83,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Backstage: fallen flap no longer catches clicks** · the folded paper ignores clicks once it has fallen, so the Backstage link is clickable in every browser (Safari hit-tests 3D-rotated elements at their unrotated box)
 - **Backstage: show, don't tell** · cut the ledes, the footer narration and 'behind the paper'; menu rows name their contents in a few words
 - **Backstage goes visual + temporary egg debug tint** · routing map of the real Processo triage as the hero (and on the workshop page); house and drawers as picture plates; TEMPORARY: the four egg cells tinted red when live, dashed grey with the window size when off
+- **Backstage egg: debug tint removed** · the chairman found it; the four cells are invisible again
