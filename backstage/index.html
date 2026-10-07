@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Backstage · Ordenações Filipinas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* The other side of the paper: always night, always English. Rows ruled like the register. */
+:root { --bg: #15181d; --bg-2: #1e2229; --ink: #e5e3da; --ink-2: #a3a6a6; --muted: #868a8e; --dif: #7fb0dd; --conc: #dd8b6b; --grid: #1a1e25; --grid-major: #252a32;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif; --body: "Spectral", Georgia, serif; --mono: "IBM Plex Mono", Menlo, monospace; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 18px/1.6 var(--body);
+  background-image: linear-gradient(var(--grid-major) 1px, transparent 1px), linear-gradient(90deg, var(--grid-major) 1px, transparent 1px), linear-gradient(var(--grid) .5px, transparent .5px), linear-gradient(90deg, var(--grid) .5px, transparent .5px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; background-attachment: fixed; }
+@media (orientation: portrait) and (max-width: 1099px) { body { background-attachment: scroll; } }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 24px; padding-block: 40px 110px; }
+.top { display: flex; justify-content: space-between; gap: 12px; font: 500 11px/1.5 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.top a { color: var(--ink-2); text-decoration: none; } .top a:hover { color: var(--ink); }
+h1 { font: 800 clamp(64px, 11vw, 132px)/.88 var(--display); font-stretch: 78%; letter-spacing: -.03em; margin: 64px 0 14px; }
+.lede { font-size: 21px; color: var(--ink-2); max-width: 52ch; margin: 0 0 8px; }
+.nums { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--grid-major); margin: 40px 0 0; }
+.nums div { padding: 14px 14px 12px 0; min-width: 0; }
+.nums b { display: block; font: 700 34px/1 var(--display); font-stretch: 85%; font-variant-numeric: tabular-nums; }
+.nums span { font: 500 10.5px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h2 { font: 500 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--conc); margin: 64px 0 0; padding-bottom: 8px; border-bottom: 1.5px solid var(--ink); }
+.row { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) auto; gap: 18px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--grid-major); text-decoration: none; color: inherit; transition: background .2s, padding .2s; }
+.row:hover, .row:focus-visible { background: var(--bg-2); padding-inline: 12px; outline: none; }
+.row:focus-visible { box-shadow: inset 3px 0 0 var(--conc); }
+.row b { font: 700 22px/1.15 var(--display); font-stretch: 92%; }
+.row span { color: var(--ink-2); font-size: 16.5px; line-height: 1.45; }
+.row code { font: 11px var(--mono); color: var(--muted); white-space: nowrap; }
+.row.lead b { font-size: 30px; color: var(--dif); }
+@media (max-width: 700px) { .row { grid-template-columns: 1fr; gap: 4px; } }
+.foot { margin-top: 70px; font: 500 11px/1.6 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.foot a { color: var(--ink-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="../">← Ordenações Filipinas</a><span>Backstage · behind the paper</span></div>
+  <h1>Backstage</h1>
+  <p class="lede">The lessons are the finished surface. This is the workshop underneath: the machine that turns a professor's syllabus and a shelf of books into a course, the house style it builds toward, and the studies that didn't make the cut.</p>
+
+  <div class="nums" aria-label="The Processo Civil run, in numbers">
+    <div><b>1,276</b><span>book chapters split by their own tables of contents</span></div>
+    <div><b>28,241</b><span>chapter-by-lesson triage verdicts</span></div>
+    <div><b>61</b><span>real exam questions, verified against the CPC</span></div>
+    <div><b>22</b><span>lessons, one sitting each</span></div>
+  </div>
+
+  <h2>The machine</h2>
+  <a class="row lead" href="workshop.html"><b>Inside the workshop</b><span>Every stage from raw course material to a finished course, the checks and what they can't see, the house style, and where it goes next.</span><code>workshop.html</code></a>
+
+  <h2>The house</h2>
+  <a class="row" href="../specimen/instrumentos.html"><b>Instruments, not boxes</b><span>How to draw a course that is all text: the deadline on a real calendar, the litisconsórcio seating chart, the case file from the side, art. 373 as a balance.</span><code>specimen/instrumentos</code></a>
+  <a class="row" href="../specimen/casa.html"><b>The house style, together</b><span>Prose, source blocks, inline marks, figure and register on one page, with the reason for each.</span><code>specimen/casa</code></a>
+  <a class="row" href="../specimen/figuras.html"><b>Figure references</b><span>The drawn genres the lessons are allowed to use, and the ones that were rejected.</span><code>specimen/figuras</code></a>
+  <a class="row" href="../specimen/figkit-controle-a01.html"><b>The figure kit</b><span>The shared drawing parts, assembled on Controle Aula 01.</span><code>specimen/figkit</code></a>
+  <a class="row" href="../specimen/hero.html"><b>Lesson openings</b><span>Variants of how a lesson begins.</span><code>specimen/hero</code></a>
+  <a class="row" href="../specimen/register.html"><b>The class register</b><span>The one instrument that is identical on every course front.</span><code>specimen/register</code></a>
+  <a class="row" href="../specimen/motion.html"><b>Motion</b><span>How things move when you touch them, and why it stays calm.</span><code>specimen/motion</code></a>
+
+  <h2>The drawers</h2>
+  <a class="row" href="../experiments/"><b>Material studies</b><span>The paper, ink and reading-form experiments the site grew out of.</span><code>experiments/</code></a>
+  <a class="row" href="../experiments/round1-index.html"><b>First round</b><span>The earliest notebook of trials, kept as it was.</span><code>experiments/round1</code></a>
+  <a class="row" href="../experiments/controle-variantes/alternativas-estruturais.html"><b>Structural variants</b><span>Other ways the Controle course could have been laid out.</span><code>experiments/controle-variantes</code></a>
+
+  <p class="foot">You got here by cutting the paper. Put it back with Escape on the front page, or <a href="../">return to the lessons</a>.</p>
+</div>
+</body></html>
