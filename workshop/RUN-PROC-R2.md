@@ -31,7 +31,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | Aula 14 merged; P2 wave 1 authors (A10-estabilização/A10/A11/A11-merit/A15/A16) in progress | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | Aula 14 and Aula 10 merged (#108/#109); remaining P2 wave 1 work in progress | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -110,3 +110,5 @@ The 2025/2 P1 exam is in the bank (61 questions, eight exclusions) with all five
 Aula 14 was drafted alone on `codex/proc-r2-aula-14`, with one figure panel. The final canonical reader count is 3,603, within the approved 3,600–3,700-word range. Its Conform slop gate passed (76 advisory findings), `marks_lint` passed with 0 findings, and whole-site `check_all` passed. The served 1280 px breakscan comparison found 48 findings on both live main and staging, 0 new, and 0 on Aula 14. The author inspected the 1512 px selector crop; it is embedded in [PR #108](https://github.com/Benecles/ordenacoes-filipinas/pull/108). The PR branch contains `a457801` and follow-up generated-output fixes `2e031b0` and `f836245`; GitHub's `check_all` passes at `f836245`. Prototype faults are recorded in `FLIGHT-LOG.md` F-028–F-030 and `BUGS.md`.
 
 P2 wave 1 started from `b3499eb` with six disjoint author checkouts. Authors are building the blueprint-scoped pages and their lesson-specific figures; integration will regenerate the shared Processo front and offline outputs one lesson PR at a time.
+
+Aula 10 is complete at 2,849 canonical words. Its Conform gate passed, `marks_lint` found 0 issues, `check_all` passed after the front/offline outputs were generated, and 1280 px breakscan found 0 new results against the 48-finding live baseline. The inspected 1512 px panel crop is in [PR #109](https://github.com/Benecles/ordenacoes-filipinas/pull/109), merged to `codex/processo-r2`.
