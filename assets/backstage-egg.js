@@ -3,7 +3,7 @@
    In the square at column 2, row 3, four cells answer a click with a brief flash. Clicked clockwise
    from the top left, each within 2 s of the last, they mark the corners of a cut: the knife runs
    along the square's left, top and right edges, and the sheet falls away from the reader, hinged
-   at its bottom, showing the other side of the paper (the other theme) and the way backstage.
+   at its bottom, showing blueprint behind it (the plans of the house) and the way backstage.
    Desktop and landscape only; reduced motion fades instead of folding. Chairman's idea, 07/10. */
 (function () {
   var mq = window.matchMedia('(min-width: 1100px) and (hover: hover) and (pointer: fine) and (orientation: landscape)');
@@ -40,13 +40,8 @@
     '@media (prefers-reduced-motion: reduce){.bs-stage.on .bs-flap{animation:none;transition:opacity .3s;opacity:0}.bs-cut path{animation:none;stroke-dashoffset:0}}';
   document.head.appendChild(css);
 
-  // the other side of the paper is the other theme
-  function otherSide() {
-    var dark = document.documentElement.dataset.theme === 'dark';   // the site goes dark only through its own toggle
-    return dark
-      ? { bg: '#efe9da', ink: '#1d2530', peek: 'assets/backstage-peek-light.jpg' }
-      : { bg: '#15181d', ink: '#e5e3da', peek: 'assets/backstage-peek-dark.jpg' };
-  }
+  // behind the paper, in either theme: blueprint (the plans of the house), not the other theme
+  function otherSide() { return { bg: '#15335f', ink: '#eaf1fb', peek: 'assets/backstage-peek.jpg' }; }
 
   function flash(i) {
     var d = document.createElement('div');
