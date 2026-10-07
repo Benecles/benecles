@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a14, processo_a15, processo_a17, processo_a18, proc_a10
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a14, processo_a15, processo_a17, processo_a18, processo_a18_house, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -52,9 +52,12 @@ ENTRIES = [
     ('Partitura · operações probatórias', 'comparar', 'Processo · Aula 14 · teoria da prova',
      'Duas pautas percorrem os arts. 369 a 371: uma acompanha a afirmação e os meios; outra, a participação e as razões.',
      'substitui pci-a14-score', [processo_a14.panel()], 'processo-civil-i'),
-    ('Documento · corte de estatuto', 'ler', 'Processo · Aula 18 · art. 370',
-     'O texto legal distingue a prova necessária ao mérito da diligência inútil ou meramente protelatória.',
-     'novo componente · pci-a18-art370', [processo_a18.panel()], 'processo-civil-i'),
+    ('Caso · dado e indício', 'distinguir', 'Processo · Aula 18 · REsp 692.242/MG',
+     'A recusa ao exame de DNA não substitui os indícios circunstanciais mínimos da relação íntima na investigação de paternidade.',
+     'novo componente · pci-a18-case', [processo_a18_house.case_panel()], 'processo-civil-i'),
+    ('Sequência · perguntas da prova', 'separar', 'Processo · Aula 18 · Q11',
+     'A plausibilidade inicial não resolve a legitimidade do meio, a necessidade da diligência ou o peso do resultado.',
+     'novo componente · pci-a18-three-questions', [processo_a18_house.three_questions_panel()], 'processo-civil-i'),
 ]
 
 
