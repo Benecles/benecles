@@ -17,7 +17,7 @@
     {
       "label": "Semana 01",
       "title": "Apresentação · fase de conhecimento · petição inicial",
-      "desc": "05/08 · Sem leitura específica indicada no cronograma.",
+      "desc": "Sem leitura específica indicada no cronograma.",
       "lessons": [
         {
           "href": "aula-01.html",
@@ -34,13 +34,13 @@
     {
       "label": "Semana 02",
       "title": "Aula reservada",
-      "desc": "12/08 · Sem leitura específica indicada no cronograma.",
+      "desc": "Sem leitura específica indicada no cronograma.",
       "lessons": []
     },
     {
       "label": "Semanas 03–04",
       "title": "Improcedência liminar, audiência, partes e litisconsórcio",
-      "desc": "19/08 · 26/08 · EID, Elie Pierre. Litisconsórcio Unitário: fundamentos, estrutura e regime. São Paulo: Revista dos Tribunais, 2016, p. 25–69.",
+      "desc": "EID, Elie Pierre. Litisconsórcio Unitário: fundamentos, estrutura e regime. São Paulo: Revista dos Tribunais, 2016, p. 25–69.",
       "lessons": [
         {
           "href": "aula-02.html",
@@ -67,7 +67,7 @@
     {
       "label": "Semanas 05–06",
       "title": "Intervenção de terceiros",
-      "desc": "02/09 · 09/09 · CINTRA, Lia Carolina Batista. Intervenção de terceiro por ordem do juiz. Cap. 10: Análise crítica do sistema brasileiro vigente de intervenções de terceiro. São Paulo: Revista dos Tribunais, 2017.",
+      "desc": "CINTRA, Lia Carolina Batista. Intervenção de terceiro por ordem do juiz. Cap. 10: Análise crítica do sistema brasileiro vigente de intervenções de terceiro. São Paulo: Revista dos Tribunais, 2017.",
       "lessons": [
         {
           "href": "aula-04.html",
@@ -98,13 +98,23 @@
           "reg": {
             "does": "Escolher a intervenção de terceiro conforme a relação envolvida."
           }
+        },
+        {
+          "href": "aula-05-casos.html",
+          "label": "Aula 05 · casos",
+          "title": "Denunciação no STJ",
+          "complementary": true,
+          "desc": "Três casos sobre quando a denunciação pesa demais para quem pediu a tutela, e um sobre o que o denunciado passa a ser: a seguradora que contesta pode ser condenada direto.",
+          "reg": {
+            "does": "Aplicar precedentes do STJ aos limites da denunciação da lide."
+          }
         }
       ]
     },
     {
       "label": "Semana 07",
       "title": "Comunicação, atos, cooperação e prazos",
-      "desc": "16/09 · Estudar modelos de documentos disponibilizados no Moodle.",
+      "desc": "Estudar modelos de documentos disponibilizados no Moodle.",
       "lessons": [
         {
           "href": "aula-06-citacao.html",
@@ -135,13 +145,22 @@
           "reg": {
             "does": "Calcular prazos úteis a partir do marco de comunicação aplicável."
           }
+        },
+        {
+          "href": "aula-07-preclusao.html",
+          "label": "Aula 07 · complemento",
+          "title": "Preclusão e suas espécies",
+          "complementary": true,
+          "reg": {
+            "does": "Distinguir as espécies de preclusão pelo fato que extingue o poder processual."
+          }
         }
       ]
     },
     {
       "label": "Semana 08",
       "title": "Resposta do réu",
-      "desc": "23/09 · DIDIER JR., Fredie. Curso de Direito Processual Civil. Vol. I. Salvador: Jus Podivm, 2015, p. 637–670.",
+      "desc": "DIDIER JR., Fredie. Curso de Direito Processual Civil. Vol. I. Salvador: Jus Podivm, 2015, p. 637–670.",
       "lessons": [
         {
           "href": "aula-08.html",
@@ -168,7 +187,7 @@
     {
       "label": "Semana 09",
       "title": "Nulidades, estabilização, saneamento e julgamento",
-      "desc": "30/09 · PASSOS, José Joaquim Calmon de. Esboço de uma teoria das nulidades aplicada às nulidades processuais. Rio de Janeiro: Forense, 2005, p. 123–142.",
+      "desc": "PASSOS, José Joaquim Calmon de. Esboço de uma teoria das nulidades aplicada às nulidades processuais. Rio de Janeiro: Forense, 2005, p. 123–142.",
       "lessons": [
         {
           "href": "aula-09.html",
@@ -195,13 +214,13 @@
     {
       "label": "Semana 10",
       "title": "Primeira avaliação · correção",
-      "desc": "07/10 · Sem leitura específica indicada no cronograma.",
+      "desc": "Sem leitura específica indicada no cronograma.",
       "lessons": []
     },
     {
       "label": "Semanas 11–12",
       "title": "Estabilização, saneamento, julgamento e decisões parciais",
-      "desc": "14/10 · 21/10 · BARBOSA MOREIRA, José Carlos. Saneamento do processo e audiência preliminar. In: Temas de Direito Processual. Quarta Série. São Paulo: Saraiva, 1989. / LUCON, Paulo. Comentários aos arts. 355 a 357 do CPC/2015. In: Código de Processo Civil Anotado. AASP. OAB-PR, 2016, p. 586–596.",
+      "desc": "BARBOSA MOREIRA, José Carlos. Saneamento do processo e audiência preliminar. In: Temas de Direito Processual. Quarta Série. São Paulo: Saraiva, 1989. / LUCON, Paulo. Comentários aos arts. 355 a 357 do CPC/2015. In: Código de Processo Civil Anotado. AASP. OAB-PR, 2016, p. 586–596.",
       "lessons": [
         {
           "href": "aula-10-estabilizacao.html",
@@ -248,13 +267,13 @@
     {
       "label": "Semana 13",
       "title": "Semana Acadêmica",
-      "desc": "28/10 · Sem leitura específica indicada no cronograma.",
+      "desc": "Sem leitura específica indicada no cronograma.",
       "lessons": []
     },
     {
       "label": "Semanas 14–16",
       "title": "Teoria geral da prova",
-      "desc": "04/11 · 11/11 · 18/11 · KNIJNIK, Danilo. A prova nos juízos cível, penal e tributário. Rio de Janeiro: Forense, 2007, p. 3–48. / CARPES, Artur. Ônus dinâmico da prova. Porto Alegre: Livraria do Advogado, 2010, p. 45–61.",
+      "desc": "KNIJNIK, Danilo. A prova nos juízos cível, penal e tributário. Rio de Janeiro: Forense, 2007, p. 3–48. / CARPES, Artur. Ônus dinâmico da prova. Porto Alegre: Livraria do Advogado, 2010, p. 45–61.",
       "lessons": [
         {
           "href": "aula-14.html",
@@ -309,7 +328,7 @@
       ]
     }
   ],
-  "info_items_html": "<li>Cronograma do semestre · UFRGS · 2026/2</li><li>Leituras semanais e modelos de documentos do Moodle</li><li>A Primeira Avaliação cobre semanas 1–9; a aferição final é cumulativa.</li>",
+  "info_items_html": "",
   "bibliografia": {
     "basica": [
       "DIDIER JR., Fredie. Curso de Direito Processual Civil. Volume I. Salvador: Ius Podivm.",
@@ -344,7 +363,9 @@
           "aula-08.html",
           "aula-08-revelia.html",
           "aula-09.html",
-          "aula-13.html"
+          "aula-13.html",
+          "aula-05-casos.html",
+          "aula-07-preclusao.html"
         ]
       },
       {
@@ -363,14 +384,5 @@
       }
     ]
   },
-  "excluded_pages": [
-    {
-      "page": "aula-05-casos.html",
-      "reason": "Legacy URL mapped by S0 to aula-12.html; retained in the staging site until the redirect target is written."
-    },
-    {
-      "page": "aula-07-preclusao.html",
-      "reason": "Legacy URL mapped by S0 to aula-07.html; retained in the staging site until the target lesson is written."
-    }
-  ]
+  "excluded_pages": []
 }

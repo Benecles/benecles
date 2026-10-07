@@ -38,7 +38,7 @@ def _unlink_missing_lesson_anchors(markup: str, course: str) -> str:
         if _lesson_page_exists(course, href):
             return match.group(0)
         attrs = attrs[:found.start()] + attrs[found.end():]
-        return f'<span{attrs} aria-disabled="true">{match.group("body")}</span>'
+        return f'<span{attrs} aria-disabled="true">{match.group("body")} · em breve</span>'
 
     return anchor.sub(replace, markup)
 
@@ -253,6 +253,7 @@ def _register(data: dict[str, Any], slug: str) -> str:
                          "".join(f'<i{" class=on" if j == k else ""}></i>' for j in range(len(sib))) + "</span>")
             does = (l.get("reg") or {}).get("does")
             does_html = f'<span class="reg-does">{_esc(does)}</span>' if does else ""
+            status_html = '<span class="reg-does">Em breve</span>'
             mins = l.get("_minutes") or _minutes(slug, h)  # _minutes: specimen only
             time = (f'<span class="reg-time">{_clock(mins)}<span>{mins}′</span></span>'
                     if mins else '<span class="reg-time"></span>')
@@ -265,7 +266,7 @@ def _register(data: dict[str, Any], slug: str) -> str:
             target = f'<a class="{cls}"{attrs} href="{_esc(h)}">' if live else f'<span class="{cls} is-planned"{attrs} aria-disabled="true">'
             close = "</a>" if live else "</span>"
             rows.append(f'<li>{target}{n}<span class="reg-body"><span class="reg-t">{_esc(l.get("title"))}{ticks}</span>'
-                        f'{does_html}</span>{time}{close}</li>')
+                        f'{does_html}{status_html if not live else ""}</span>{time}{close}</li>')
             if h in fold_after:
                 rows.append(fold(fold_after[h]))
         head = (f'<div class="reg-unit-head"><span class="reg-unit-n">{ui:02d}</span><h3>{_esc(unit["title"])}</h3></div>'

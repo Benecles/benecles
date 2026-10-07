@@ -69,3 +69,6 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Controle A09: decision summaries as source blocks** · the two .julgado boxes (MS 32.033, MS 32.036/37) become .fonte.resumo: our summary, not a quote, outcome line under it; .resumo/.tese added to casa.css and the specimen
 - **Drop the internal CUFRGS label** · code comments, specimen back-link and gate README unlabelled (storage key doc now matches gate.mjs: ordenacoes-theme); public patch notes keep the historical name
 - **Drop the CUFRGS label: sw.js and experiments** · the two files the first pass's ship script didn't stage
+- **Processo: revisão P1 como banco de questões** · Rebuild revisão-p1 as the P1 exam-bank workbench; source-checked questions, collapsed answers, house layer; checks passed.
+- **Processo: Aula 01 — Petição inicial, demanda e emenda** · Fresh house-standard Aula 01 from approved blueprint, with source/page addendum and 2018/2 exam thread. Required checks passed.
+- **Processo: front de liberação antecipada** · Adapt the Processo Civil I front for early release: link Aula 01 and revisão P1, keep live Aula 02–11 links, and mark unbuilt lessons em breve. Checks passed.
