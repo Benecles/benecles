@@ -24,7 +24,7 @@
     '.bs-under a:focus-visible{outline:2px solid var(--conc);outline-offset:3px}' +
     '.bs-under small{font:400 9px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.65}' +
     '.bs-flap{position:absolute;inset:0;transform-origin:50% 100%;background-color:var(--paper);background-image:linear-gradient(var(--grid-major) 1px,transparent 1px),linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),linear-gradient(var(--grid) .5px,transparent .5px),linear-gradient(90deg,var(--grid) .5px,transparent .5px);background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-position:0 0;backface-visibility:hidden;transition:transform .9s cubic-bezier(.55,.05,.75,.45),filter .9s;will-change:transform}' +
-    '.bs-stage.on .bs-flap{transform:rotateX(86deg);filter:brightness(.72)}' +
+    '.bs-stage.on .bs-flap{transform:rotateX(86deg);filter:brightness(.72);pointer-events:none}' +
     '.bs-stage.lift .bs-flap{transition:transform .55s cubic-bezier(.2,.7,.3,1),filter .55s}' +
     '.bs-cut{position:absolute;inset:-1px;overflow:visible;pointer-events:none}' +
     '.bs-cut path{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-dasharray:360;stroke-dashoffset:360;animation:bs-cut .45s ease-in forwards}' +
