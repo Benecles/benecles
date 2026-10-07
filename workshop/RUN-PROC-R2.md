@@ -31,7 +31,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | Aula 14, Aula 10 and Aula 11-merit merged (#108–#110); A10-estabilização/A11/A15 active; A16 awaits CPC pull | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | Aula 14, Aula 10, Aula 11-merit, and Aula 15 merged (#108–#111); A10/A11 budget corrections and A10-estabilização final Conform pass active; A16 awaits repaired CPC source gate | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -114,3 +114,8 @@ P2 wave 1 started from `b3499eb` with six disjoint author checkouts. Authors are
 Aula 10 is complete at 2,849 canonical words. Its Conform gate passed, `marks_lint` found 0 issues, `check_all` passed after the front/offline outputs were generated, and 1280 px breakscan found 0 new results against the 48-finding live baseline. The inspected 1512 px panel crop is in [PR #109](https://github.com/Benecles/ordenacoes-filipinas/pull/109), merged to `codex/processo-r2`.
 
 Aula 11-merit is complete at 3,099 canonical words. Its Conform gate passed with 49 advisory findings; `marks_lint` found 0 issues, `check_all` passed after the regenerated front and offline manifest were committed, and served 1280 px breakscan found 0 new findings. Both inspected 1512 px theme crops are in [PR #110](https://github.com/Benecles/ordenacoes-filipinas/pull/110), merged to `codex/processo-r2`.
+
+## Resume · 2026-10-07 P2 wave 1 integration
+Aula 15 is complete at 3,914 canonical words; its Conform gate passed, `marks_lint` found 0 issues, `check_all` passed, and the served 1280 px comparison found no new findings. The inspected 1512 px figure crop is in [PR #111](https://github.com/Benecles/ordenacoes-filipinas/pull/111), merged to `codex/processo-r2`.
+
+Aula 11's targeted expansion is at 3,073 canonical words after the fresh critic's supported spans. `marks_lint` found 0 issues, `check_all` passed, and served 1280 px comparison against staging commit `b3499eb` was 48/48 with 0 new findings and 0 on Aula 11. Its correction commit is `ad86bb4`; staging PR is pending. Aula 10's budget correction is in a fresh Conform critique at 3,332 words. Aula 10-estabilização's current draft is 4,305 words and awaits its separate Conform critique. Aula 12/16 source pulls are being rechecked against the actual requested article packets before the A16 writer resumes; do not treat the earlier S4 fulfillment note as final until the repaired S4 gate is recorded.
