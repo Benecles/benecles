@@ -5,7 +5,7 @@ Run: python3 tools/figkit/inject.py        (then offline_build, polish capture/c
 """
 import os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import controle_a01, controle_a02, controle_a07, controle_a27, delito_u01, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04, processo_a01, processo_a14, proc_a10
+import controle_a01, controle_a02, controle_a07, controle_a27, delito_u01, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04, processo_a01, processo_a14, processo_a16, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -29,6 +29,10 @@ PAGES = {
         'a10_hero': proc_a10.hero(),
         **by_ids(proc_a10.statute_panel()),
         '__optional__': ['pci-a10-art356'],  # the lesson author locates the new panel
+    },
+    'courses/processo-civil-i/aula-16.html': {
+        **by_ids(processo_a16.panel(), processo_a16.excerpt_panel()),
+        '__optional__': ['pci-a16-excerpt'],  # inserted by the page author inside §07
     },
     'courses/processo-civil-i/aula-14.html': {
         **by_ids(processo_a14.panel(), processo_a14.docket_panel()),
