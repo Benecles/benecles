@@ -25,7 +25,10 @@ PAGES = {
     'courses/direito-latino-americano/aula-02.html': by_ids(*latam_a02.panels()),
     'courses/direito-constitucional-i/aula-04.html': by_ids(*consti_a04.panels()),
     'courses/processo-civil-i/aula-01.html': by_ids(processo_a01.panel()),
-    'courses/processo-civil-i/aula-14.html': by_ids(processo_a14.panel()),
+    'courses/processo-civil-i/aula-14.html': {
+        **by_ids(processo_a14.panel(), processo_a14.docket_panel()),
+        '__optional__': ['pci-a14-docket'],  # installed by the page author after panel integration
+    },
 }
 
 
@@ -42,6 +45,7 @@ def element_span(s, start):
 def inject(path, repl):
     p = os.path.join(ROOT, path)
     s = open(p).read()
+    replaced = 0
     for ident in repl.get('__remove__', []):
         m = re.search(rf'<svg\b[^>]*\bid="{re.escape(ident)}"', s)
         if not m:
@@ -57,12 +61,15 @@ def inject(path, repl):
             m = re.search(rf'<svg\b[^>]*\bid="{re.escape(key)}"', s)
             if not m and key == 'tdl-u01-s7':
                 m = re.search(r'<svg\b[^>]*\baria-label="O mesmo fato passa por recortes normativos diferentes e gera juízos provisórios diferentes"', s)
+        if not m and key in repl.get('__optional__', []):
+            continue
         if not m:
             raise SystemExit(f'{path}: no <svg> for {key}')
         a, b = element_span(s, m.start())
         s = s[:a] + new + s[b:]
+        replaced += 1
     open(p, 'w').write(s)
-    return sum(not key.startswith('__') for key in repl)
+    return replaced
 
 
 if __name__ == '__main__':
