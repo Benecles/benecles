@@ -48,5 +48,53 @@ def panel():
                label='Partitura dos arts. 369 a 371: duas pautas mostram perguntas demonstrativas e argumentativas sobre os mesmos marcos legais')
 
 
+def docket_panel():
+    """The exam's case record: acts are located; absent detail stays unfilled."""
+    o = ''
+    o += t(46, 53, 'AUTOS · AVALIAÇÃO 2 / 2015', size=16, weight=700)
+    o += t(46, 79, 'JESSE VALADÃO  ×  DALVO FRITZ E SEROTONINA DA SILVA',
+           size=15, weight=600)
+    o += line(46, 96, 954, 96, w=1.5)
+
+    # A docket has an ordered margin and distinct entries, not prose in ruled cells.
+    o += line(91, 127, 91, 455, w=2)
+    entries = [
+        (143, 'AÇÃO', 'Cobrança solidária de R$ 100.000',
+         'Jesse demanda contra Dalvo e Serotonina', 'ink'),
+        (231, '01/04/2015', 'Audiência preliminar',
+         'Todas as partes comparecem · sem acordo', 'ink'),
+        (320, '1ª SEMANA', 'Dalvo apresenta contestação',
+         'Fatos da inicial sem impugnação expressa', 'conc'),
+        (413, '13/04/2015', 'Dalvo protocola complemento',
+         'Impugna os fatos antes esquecidos', 'dif'),
+    ]
+    for y, when, act, detail, tone in entries:
+        o += line(78, y, 104, y, tone=tone, w=3)
+        o += t(123, y - 8, when, size=12, fill=f'var(--{tone})', weight=700)
+        o += t(300, y - 8, act, size=15, weight=700)
+        o += t(300, y + 18, detail, size=12, fill='var(--ink-2)')
+        o += line(123, y + 37, 954, y + 37, tone='muted', w=.8)
+
+    # The unfiled defense is a visible open track, rather than a dated act.
+    o += t(680, 301, 'SEROTONINA', size=11, fill='var(--dif)', weight=700)
+    o += line(680, 312, 954, 312, tone='dif', w=1.5, dash='4 4')
+    o += t(680, 334, 'sem defesa · sem advogado', size=11, fill='var(--ink-2)')
+
+    # The source names neither the omitted allegations nor any evidence request.
+    o += t(46, 493, 'CAMPOS QUE O ENUNCIADO NÃO PREENCHE', size=12,
+           fill='var(--ink-2)', weight=700)
+    o += line(46, 504, 954, 504, w=1.3)
+    o += t(46, 532, 'FATOS NÃO IMPUGNADOS', size=11, fill='var(--conc)', weight=700)
+    o += line(46, 551, 440, 551, tone='conc', w=1.1, dash='3 4')
+    o += t(514, 532, 'MEIOS DE PROVA', size=11, fill='var(--dif)', weight=700)
+    o += line(514, 551, 954, 551, tone='dif', w=1.1, dash='3 4')
+    o += t(46, 590, 'ALEGADO  →  INFORMAÇÃO  →  CONCLUSÃO', size=12,
+           fill='var(--ink-2)', weight=700)
+    o += t(954, 590, 'Avaliação 2, 2015, Q1', size=11,
+           fill='var(--ink-2)', anchor='end', weight=600)
+    return svg('24 25 948 582', o, cls='fig', ident='pci-a14-docket',
+               label='Autos do caso Jesse Valadão: sequência processual conhecida e campos não informados no enunciado da Avaliação 2 de 2015')
+
+
 if __name__ == '__main__':
     print(panel())
