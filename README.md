@@ -42,13 +42,17 @@ Not a folder of notes: every course is built from named sources, split into less
 
 ## History and process
 
-386 commits since 2026-09-05, 131 merged pull requests, one issue per change. [ISSUES.md](ISSUES.md) lists each merged change; `changelog.json` feeds the patch notes on the home page. Development is assisted by AI coding agents; the agent instructions are in [AGENTS.md](AGENTS.md). AI is part of how the guides are built, not a feature the reader uses.
+386 commits since 2026-09-05, 131 merged pull requests, one issue per change. [ISSUES.md](ISSUES.md) lists each merged change; `changelog.json` feeds the patch notes on the home page.
 
 Design process and earlier directions are kept, not hidden:
 
 - `specimen/` shows each house component in every state.
 - `experiments/` holds earlier material studies; `prototype-folio.html`, `index-alt-*.html` and the standalone pages at the root are the original prototypes, kept at their original URLs.
 - `VISUAL_CRAFT_NOTES.md` records the design process.
+
+## Built with AI agents
+
+Benecles directs the project and decides what ships. Much of the engineering, writing and design work is done by AI agents working under that direction: **Claude** (Anthropic, through Claude Code) as the design and editorial lead and the author of the house style and many of the figures and lessons, and **Codex** (OpenAI) for bulk content and engineering work, coordinated through GitHub issues and pull requests. Agents work in separate branches and worktrees, and every change goes through the same checks as a human one. The agent instructions are in [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md). The agents are how the guides are built; they are not a feature the reader uses.
 
 ## Status
 
