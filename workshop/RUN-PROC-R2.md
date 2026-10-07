@@ -31,7 +31,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | All nine P2 lessons plus Aula 04 merged (#108–#118); P1 wave 1 (Aula 01/02/03/12/05) is authoring or integrating; Aula 09 remains with the CEO question above | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | All nine P2 lessons plus Aula 04 merged (#108–#118); P1 wave 1 continues, wave 2 authors Aula 06-citação/06/07/08/08-revelia/13; Aula 09 remains with the CEO question above | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -133,3 +133,5 @@ P2 completion: Aula 18's six supported Conform spans were applied; its page is 3
 P1 wave 1 began with six disjoint authors: Aula 01 (~4,100 words), Aula 02 (~3,150), Aula 03 (~3,900), Aula 04 (~3,400), Aula 12 (~3,300), and Aula 05 (~3,600). Each will produce one page PR after separate-model Conform critique and page-specific checks.
 
 Aula 04 is complete at 3,338 words. Its fresh Conform critique, marks lint (0), `check_all`, offline freshness, and 1512 px statute-panel crop are complete. PR [#118](https://github.com/Benecles/ordenacoes-filipinas/pull/118) passed GitHub `check_all` and merged to staging. Aula 02 is at 3,078 words with a fresh slop gate PASS and awaits separate-model Conform critique; its 1512 px docket crop was inspected.
+
+P1 wave 2 has started in six disjoint author worktrees: Aula 06-citação (3,770 words), Aula 06 (4,000), Aula 07 (4,000), Aula 08 (3,700), Aula 08-revelia (~3,300), and Aula 13 (~3,200). Aula 09 remains paused only on the open CEO decision; independent P1 pages continue.
