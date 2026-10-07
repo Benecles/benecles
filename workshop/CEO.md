@@ -36,7 +36,56 @@ If `~/Developer` is missing, restore first:
 8. **The CEO is the master prompter (chairman, 03/10; the most important rule here).** We already have more building agency than we can use; doing the work yourself, or asking agents to emulate you, is not the lever. The CEO's job is the WHAT: take the chairman's thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator's. Priorities, in order: (1) what it is and what it's for, (2) what it looks and feels like, in detail, (3) implementation hints, only if they matter. The CEO keeps final say at the gate. Example: "airplane mode" is not a button to build; it's a brief: an orange plane in an orange ring, bottom left, what it does, what the reader sees offline, which words it uses.
 7. **The rocket line (chairman, 01/10).** Work flies in staggered waves: launch #1, finish #2, build #3, design #4, all at once. Every gate turns its findings into numbered entries in `FLIGHT-LOG.md`, and every in-flight stage applies them before its next step. Never let a stream idle waiting on a gate; the gate feeds the log, the log feeds the line.
 
-## READ THIS FIRST: 06/10 night (Claude Opus 5.5)
+## READ THIS FIRST: 07/10 handoff (Claude Opus 5.5; chairman: next CEO works through web-found feature ideas with him)
+**Your first job:** the chairman will paste things he found on the web. For each, give an honest verdict (bite / adapt / pass), what it would DO on this site, and how it fits the house, then build the ones he picks. Have opinions and taste, offer alternatives, never manufacture pushback; he likes fun and creative risk, pushed live and rolled back if he dislikes it.
+
+**State (07/10):**
+- **PROC-R2 (Processo rebuild, workshop #83)** runs in Codex; waiting on Codex credits. The resume prompt is `work/briefs/2026-10-07-processo-r2-resume-paste.md`, plus a one-line add-on: "read rulings 14–21 at the bottom of `work/briefs/2026-10-07-processo-r2-decisions.md`". Ledger `RUN-PROC-R2.md`.
+  - On staging `codex/processo-r2`: S5c house pass done on Aulas 14, 10, 15, 16. Aulas 11, 11-mérito, 17 and 18 are mid-pass; Aula 10-estabilização is held for its verbatim CPC quote (ruling 15).
+  - The swap PR to main waits for the CEO's read.
+- **Live early release** (#121–#123, #131, #132):
+  - Processo front, Aula 01 (its Fig. 1 redrawn as Florinda's petição) and revisão P1 (all 55 P1 questions).
+  - Exam dates are not shown anywhere: the P1 was postponed.
+- **New checks and tools (workshop):**
+  - `work/house-style/house_check.py`: fails on a missing house layer.
+  - `work/house-style/quote_check.py`: every quote must be found in the sources.
+  - `work/figure-sheet/figsheet.mjs`: all of a page's figures on ONE image. Use it for every figure review; it's cheap.
+  - `protocols/House Manual.md`: one doc that replaces the seven style docs for writers. It has 15 resolved conflicts; one is open (below).
+  - `FLIGHT-LOG.md` gained F-028–F-031 (Codex also added rows with the same numbers; renumber when convenient).
+- **Specimen `specimen/instrumentos.html`** (#128, #134): four instruments drawn from real exam facts:
+  - the deadline on the real April 2015 calendar;
+  - the litisconsórcio seating chart;
+  - the autos seen from the side;
+  - art. 373 as a balance.
+  
+  The chairman loved these ("exactly that kind of creativity"). Generators: `work/figure-sheet/instrumentos_processo.py`, `aula01_fig1.py`.
+- **Controle roll-out:** Aulas 01, 09, 10 and 24 are in the house style (#104, #105, #129, #133). Next is A20, then A03 and others (counts in the 06/10 night section below). Helper: `controle_casa.py apply|list|unwrap NN`. It splits `.law` headers at the first comma, so fix multi-comma citations by hand.
+- **Backstage Easter egg** (#135–#140, the chairman's idea):
+  - **Trigger:** on the home page, desktop only, with all four cells clear (window ≥ ~1,500 px wide). The cells are in the pinned grid square at column 2, row 3 (x 120–240, y 240–360). Click the 24 px cells at inner (1,1), (2,1), (2,2), (1,2) clockwise, each within 2 s of the last.
+  - **The fold:** a knife traces the cut, then the sheet falls through the hole onto blueprint with the real routing threads, and **BACKSTAGE →** appears. A 'hang' variant sits behind the `FALL` switch.
+  - **Backstage itself** (`backstage/`, English, noindex): a third palette, blueprint.
+    - Hero: every lesson on the site as a book spine (`work/figure-sheet/library_shelf.py`).
+    - "The machine": the Processo routing map (`routing_map.py`), linking to `backstage/workshop.html` (the system walk-through).
+    - Plates of specimens and experiments; the experiments link was moved off the front page.
+  - Script: `assets/backstage-egg.js`.
+- **Also live:**
+  - background pinned on desktop/landscape, scrolling in portrait (#130);
+  - CUFRGS label removed from both repos (#106, #107; workshop caae5df).
+- **Chairman preferences, new today (also in memory):**
+  - Show, don't tell applies to EVERY page I build (no ledes or footers saying what a page is).
+  - Rambling transcripts are his way of giving context.
+  - Weekly Claude budget resets Thursday 17:00; when he says "burn tokens", parallel Opus agents in their own worktrees work well.
+- **Open decisions for the chairman:**
+  1. Idle motion: keep the slow flag idle as the one exception, or ban looping motion everywhere (House Manual appendix B #3)?
+  2. Answer the CEO-flagged items in the RUN-PROC-R2 ledger as they appear.
+- **Gotchas new today:**
+  - The ship script can't run concurrent merges cleanly. Loop on conflict: merge origin/main, take theirs for `offline-manifest.json`, `ISSUES.md` and the polish JSONs, re-append your ISSUES line, run `offline_build`, push, merge.
+  - `ship.sh` stages `index.html` and `backstage/` now and tolerates worktrees.
+  - New pages need `offline_build` output committed or CI fails.
+  - GitHub sometimes returns 500 on push: retry.
+  - The in-app browser pane is narrower than a full window. Playwright with real mouse clicks (`page.mouse.click`) is the reliable way to test interactions.
+
+## 06/10 night (Claude Opus 5.5)
 - **The CUFRGS label is gone** from both repos (chairman: "drop the prefix", history included): the standards are now `protocols/Writing Standard.md`, `Source Pipeline.md`, `Design Direction.md`, `Visual Genres.md`, `Visual Casting.md`, `Figure Library.md`. Storage keys `cufrgs-*` → `ordenacoes-*`. Kept on purpose: the WhatsApp group "CUFRGS💦🔩" and its `photos-cufrgs/` folder, `~/Desktop/CUFRGS/`, quoted records of the old rename, and the site's public patch notes. Codex worktree dirs `~/Developer/cufrgs-*` and `~/.claude/scheduled-tasks/cufrgs-*` were not renamed. Site #106/#107, workshop caae5df; `~/.codex/AGENTS.md`, CLAUDE.md and the memories were updated too.
 - **Controle A09 boxes done** (site #105): `.julgado` summaries → **`.fonte.resumo`** (our words, no blockquote, "RESUMO" tag, `.tese` outcome line). It's in `casa.css` and the specimen. Helper `work/house-style/controle_casa.py list|apply|unwrap NN` does the head links + box conversion for any Controle lesson. `ship.sh` now also stages `sw.js` and `experiments/`.
 - **PROC-R2 dispatched (workshop #83):** Processo Civil I rebuilt from scratch as the reference course. Brief: `work/briefs/2026-10-06-processo-r2.md`; paste prompt: `...-paste.md`. The chairman starts the Codex window. CEO's part: read the staging build before the swap PR (the one gate kept).
