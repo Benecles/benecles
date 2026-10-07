@@ -70,3 +70,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Drop the internal CUFRGS label** · code comments, specimen back-link and gate README unlabelled (storage key doc now matches gate.mjs: ordenacoes-theme); public patch notes keep the historical name
 - **Drop the CUFRGS label: sw.js and experiments** · the two files the first pass's ship script didn't stage
 - **Processo: revisão P1 como banco de questões** · Rebuild revisão-p1 as the P1 exam-bank workbench; source-checked questions, collapsed answers, house layer; checks passed.
+- **Processo: Aula 01 — Petição inicial, demanda e emenda** · Fresh house-standard Aula 01 from approved blueprint, with source/page addendum and 2018/2 exam thread. Required checks passed.
