@@ -31,9 +31,9 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | F-023b active; Aula 14 prototype next | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | Aula 14 prototype checks passed at 3,603 canonical words; lesson PR pending | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
-| S7 Revisão/cartões | #95 | blocked on S4b/S5 | Luna high | generated exam-bank workbench and cards |
+| S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
 
 ## Milestones
@@ -105,3 +105,6 @@ The six blueprints with a second `REVISE` each received one targeted author pass
 A06 received its targeted revision and second panel approval. A07 now includes a single-use, labelled `2025/2 P1 — Sérgio Mattos` Q1 with the supported 06/10/2025 deadline calculation under CPC arts. 219, 224, 1.003 §5, and 1.026 caput; its second panel had requested this exact coverage, and the author completeness/source-locator check passed. A13's second panel approved the targeted date qualification and CPC arts. 352/357 §1 check. A09's second panel still returned `REVISE`; its missing exercise prompts/case facts are recorded as the open CEO question at the top. The duplicate issues are closed; canonical issues remain open. The stale `blocked` label was removed from S5 issue #91 under F-023b.
 
 The 2025/2 P1 exam is in the bank (61 questions, eight exclusions) with all five questions mapped to lessons. The A12/A16 CPC source requests are fulfilled. Marinoni `14.04` now ends at PDF p.322 and `14.04b` begins at PDF p.323. S2 passes with 1,278 atoms; S3 passes with 28,285 triage rows / 1,278 chapters. Compendia rebuilt as 22 lessons / 681 files / 1080 provenance rows. Corrected-state S4 passes with 22/22 manifests / 1080 provenance rows; unmapped slide decks remain warnings.
+
+## Resume · 2026-10-07 S5 prototype
+Aula 14 was drafted alone on `codex/proc-r2-aula-14`, with one figure panel. The final canonical reader count is 3,603, within the approved 3,600–3,700-word range. Its Conform slop gate passed (76 advisory findings), `marks_lint` passed with 0 findings, and whole-site `check_all` passed. The served 1280 px breakscan comparison found 48 findings on both live main and staging, 0 new, and 0 on Aula 14. The author inspected the 1512 px selector crop at `/private/tmp/aula14-score-1512.png`. The prototype commit is `a457801`; its lesson PR is pending. The front-generation fault and rule are recorded in `FLIGHT-LOG.md` F-028 and `BUGS.md`.
