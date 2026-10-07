@@ -12,3 +12,19 @@ The Source Pipeline sends a second REVISE to the CEO, not the chairman. Rulings:
 6. **Missing CPC articles** (Aula 16: arts. 125, 127, 385, 447 §§4–5, 459 + Marinoni §9.12; Aula 12: art. 385): pull them with `pull_source.py` from the refreshed 06/10 CPC capture and the vol. 2 chapters before those lessons are written. Never answer from memory.
 7. **The 2018/2 v1/v2 variant groups are right** (e.g. `2018-2-fiadores-q7`). Where a variant's answer conflicts, settle it from the CPC text in the compendium. If the text can't settle it, show both readings with the article and mark the official key as diverging. Never guess.
 8. **Housekeeping:** the stage issues were created twice. Keep #84–91 plus #93 (S6) and #95 (S7) as canonical and close the rest as duplicates. Codex left blueprints uncommitted in the shared checkout again (committed by the CEO as 36e1770): commit at every stage end.
+
+## Second ruling, 07/10 (after the CEO's read of the staging build)
+9. **Stop the line on new pages.** The 11 merged lessons (Aulas 04, 05, 10, 10-estabilização, 11, 11-mérito, 14–18) pass slop_gate and marks_lint but fail the house bar: FLIGHT-LOG F-028, F-029, F-030. No new lesson is written until the rework below has its own prototype.
+10. **S5c · House pass on every rebuilt lesson.** The lesson is not rewritten. Keep its structure, facts and exercises, and bring it up to the bar:
+    - load casa.css + casa.js;
+    - quote the assigned reading and the treatise as doctrine `.fonte` blocks, verbatim from the compendium with page locators, at the points where the argument rests on them;
+    - quote the governing CPC articles once each as `.fonte dec`, then stop restating them (F-029);
+    - run one real thread through every chapter (F-030; take it from the exam bank where possible);
+    - draw a second instrument where a table or prose is standing in for a figure (F-026);
+    - add `.held` / `.limit` / `.term` where the text states a holding, a limit or a term (Writing Standard C10b; caps per marks_lint).
+    Words may rise to the 4.5k ceiling. Checks: `house_check` PASS with no article warning, plus slop_gate, marks_lint, check_all and breakscan 1280.
+    - **Prototype:** Aula 14 first, alone. The CEO will look at it on the staging server (no formal gate). Then the other ten in waves of ≤6, each applying the log.
+11. **Unwritten lessons** (Aulas 01, 02, 03, 06, 06-citação, 07, 08, 08-revelia, 09, 12, 13) are written to the same bar from the start. Before writing, each blueprint gets a two-line addendum naming its source blocks (which passage, which page) and its thread. No new panel for that.
+    - The open PR #120 (Aula 03) gets the house pass before it merges.
+12. **Aula 09** (second REVISE after its targeted pass): proceed to writing. The writer makes closing exercises 2–4 self-contained: every choice and fact the reader needs sits in the prompt. Record that under the panel.
+13. Add `house_check.py` to the S5 check list in the orchestrator's own notes and AGENTS.md, next to slop_gate and marks_lint.
