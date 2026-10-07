@@ -199,3 +199,6 @@ tbody tr:last-child td{border-bottom:0}
 .course-reader .endnav.lesson-endnav,.course-reader .endnav{display:grid;grid-template-columns:1fr 1fr;gap:16px;border:0;padding:0;margin-top:40px}
 .course-reader .endnav a{display:block;text-decoration:none;border:1.5px solid var(--ink);background:var(--paper);box-shadow:4px 4px 0 var(--grid-major);padding:12px 14px;font:650 16px/1.3 var(--sans)}
 @media(max-width:600px) and (orientation:portrait){.course-reader .endnav,.course-reader .endnav.lesson-endnav{grid-template-columns:1fr}.course-reader .scrolly{grid-template-columns:1fr}}
+
+/* Paper: pinned on desktop and landscape (the page slides over the drafting table); in portrait it scrolls with the text (written on the paper). Chairman 07/10. iOS ignores fixed backgrounds, which is how this started. */
+@media (orientation:portrait) and (max-width:1099px){body{background-attachment:scroll}}

@@ -441,3 +441,6 @@ section.chapter:has(+ .wide > .prosa:only-child):not(:has(+ .wide + .scrolly)) >
 
 /* Reading column on desktop (CEO, 05/10): standalone text with no figure beside it runs halfway between the old 76ch and double (up to 1,083 px), centred; a chapter heading that leads straight into such text moves with it. */
 @media (min-width:1100px){:root{--readw:min(1083px,calc(100vw - 96px))}body .longform>div,body .prose p,body .prose ul,body .prose ol,body .prose blockquote,body .prosa{width:var(--readw);max-width:none;margin-left:calc(50% - var(--readw)/2);margin-right:calc(50% - var(--readw)/2)}body .chapter:has(+ .longform)>*,body .chapter:has(+ .wide>.prosa:first-child)>*,body .chapter:has(>.prosa):not(:has(.scrolly,figure,svg.fig))>:not(.prosa){margin-left:calc(50% - var(--readw)/2)}}
+
+/* Paper: pinned on desktop and landscape (the page slides over the drafting table); in portrait it scrolls with the text (written on the paper). Chairman 07/10. iOS ignores fixed backgrounds, which is how this started. */
+@media (orientation:portrait) and (max-width:1099px){body{background-attachment:scroll}}
