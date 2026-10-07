@@ -84,3 +84,4 @@ One line per merged issue: number · date · what changed · the check that prov
 - **Backstage: show, don't tell** · cut the ledes, the footer narration and 'behind the paper'; menu rows name their contents in a few words
 - **Backstage goes visual + temporary egg debug tint** · routing map of the real Processo triage as the hero (and on the workshop page); house and drawers as picture plates; TEMPORARY: the four egg cells tinted red when live, dashed grey with the window size when off
 - **Backstage egg: debug tint removed** · the chairman found it; the four cells are invisible again
+- **Backstage egg: the paper falls through, the machine shows** · the cut sheet now tips back and falls out of sight through the hole (no floor); behind it, a deep-shadowed window onto the real routing-map threads (theme-matched), with the link on top; 'hang' variant kept behind a switch

@@ -1,7 +1,9 @@
 {
-"version": "11ca9ea22fae",
+"version": "be1910fbd863",
 "files": [
 "assets/backstage-egg.js",
+"assets/backstage-peek-dark.jpg",
+"assets/backstage-peek-light.jpg",
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
