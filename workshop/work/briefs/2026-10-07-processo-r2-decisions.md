@@ -28,3 +28,13 @@ The Source Pipeline sends a second REVISE to the CEO, not the chairman. Rulings:
     - The open PR #120 (Aula 03) gets the house pass before it merges.
 12. **Aula 09** (second REVISE after its targeted pass): proceed to writing. The writer makes closing exercises 2–4 self-contained: every choice and fact the reader needs sits in the prompt. Record that under the panel.
 13. Add `house_check.py` to the S5 check list in the orchestrator's own notes and AGENTS.md, next to slop_gate and marks_lint.
+
+## Third ruling, 07/10 (CEO spot-check of the early release and the S5c wave)
+14. **Quotes are pasted by script, never typed by a model.** Every `.fonte` blockquote is filled mechanically from the source file by locator (source id + page or article number). The writer picks the passage and the cut; a script copies the text. Cuts are marked "[...]". This fixes both problems at once:
+    - the content filter that refuses to retype CPC text (Aula 10-estabilização): statute text isn't protected (Lei 9.610/98, art. 8º, IV), and a script copying from the 06/10 capture never meets the filter;
+    - silent elisions: Aula 01's causa de pedir quote drops Didier's parenthetical without a "[...]".
+
+    Add `quote_check.py`: every quoted segment must be found in the compendium after normalizing whitespace, OCR hyphenation and inline footnote digits. A cut without "[...]" fails. Run it with house_check from now on, including on the live Aula 01 and revisão.
+15. **Aula 10-estabilização:** ship it with the article pasted by script under ruling 14. No paraphrased statute card.
+16. **Revisão P1 coverage:** check by question id that all 55 P1 bank questions are on the page (a text match found 50; the other 5 may be OCR differences). Add any that are missing.
+17. **Figures:** house_check counts SVGs; it can't see a ruled text table drawn in SVG (F-026). Aula 01 Fig. 1's lower half is exactly that. Before a figure ships, the delete-every-text-node test from F-026 goes in the PR body, with the crop.
