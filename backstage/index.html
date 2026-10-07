@@ -28,7 +28,7 @@ h2 { font: 500 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppe
 .row span { color: var(--ink-2); font-size: 16.5px; line-height: 1.45; }
 .row code { font: 11px var(--mono); color: var(--muted); white-space: nowrap; }
 .row.lead b { font-size: 30px; color: var(--dif); }
-@media (max-width: 700px) { .row { grid-template-columns: 1fr; gap: 4px; } }
+@media (max-width: 700px) and (orientation:portrait) { .row { grid-template-columns: 1fr; gap: 4px; } }
 .foot { margin-top: 70px; font: 500 11px/1.6 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .foot a { color: var(--ink-2); }
 </style>
@@ -65,4 +65,7 @@ h2 { font: 500 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppe
 
   <p class="foot">You got here by cutting the paper. Put it back with Escape on the front page, or <a href="../">return to the lessons</a>.</p>
 </div>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body></html>
