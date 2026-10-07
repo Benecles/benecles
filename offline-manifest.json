@@ -1,5 +1,5 @@
 {
-"version": "def2d1e6eeba",
+"version": "61c4a0fbd304",
 "files": [
 "assets/bookmarks.js",
 "assets/caderno.css",
@@ -262,6 +262,7 @@
 "specimen/figkit-controle-a01.html",
 "specimen/figuras.html",
 "specimen/hero.html",
+"specimen/instrumentos.html",
 "specimen/motion.html",
 "specimen/register.html"
 ]
