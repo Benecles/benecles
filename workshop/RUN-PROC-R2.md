@@ -1,7 +1,11 @@
 # RUN-PROC-R2 · Direito Processual Civil I · 2026-10-06
 
-## Open decision for CEO
-Aula 09 received a second `REVISE` after its targeted author pass. The panel confirms the CPC art. 279 sequence and the 2025/2 Q3 mapping, but says closing exercises 2–4 still depend on choices or case facts missing from their reader-facing prompts. Should Aula 09 get another targeted author→panel cycle, or should its current blueprint proceed to page writing with that note recorded? Work on other lessons continues.
+## CEO early release · 07/10
+- **Revisão para a P1:** PR [#121](https://github.com/Benecles/ordenacoes-filipinas/pull/121) merged; live at [revisao-p1.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/revisao-p1.html).
+- **Aula 01 · Petição inicial, demanda e emenda:** PR [#122](https://github.com/Benecles/ordenacoes-filipinas/pull/122) merged; live at [aula-01.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/aula-01.html). Its approved blueprint now has the source/page and 2018/2 exam-thread addendum.
+- **Course front:** PR [#123](https://github.com/Benecles/ordenacoes-filipinas/pull/123) merged; live at [Processo Civil I](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/).
+- Main merged into `codex/processo-r2` at `1c82d02`; whole-repository `check_all` passed, including all 22 staged lesson links.
+- **Next:** resume S5c with Aula 14 as the sole house-pass prototype, then apply its flight-log findings in waves of at most six.
 
 ## Resolved 07/10
 - Require one exact targeted author pass for each of the six second-`REVISE` blueprints; the orchestrator verifies every stated point, and there is no third panel. Aula 08-revelia: test classification of the defendant's own demand, make Figure 1's status consistent, and place the reconvenção distinction in the correct section. Aula 03: reconcile Didier print/PDF locators, explicitly test same-proceeding plurality and pole configuration in the closing tasks, and remove duplicated exam practice. Aula 10-estabilização: make Q2 test S0's construction outcome and keep §05/Q5 within C9. Aula 11-merit: clarify the whole-request contrast in A4/§02 and remove T1 repetition across Hero, §01, and §04. Aula 15: add a documentary means and reasoned admissibility assessment to the integrated exercise. Aula 10: make the learner assess evidence necessity rather than supplying that premise.
@@ -12,6 +16,10 @@ Aula 09 received a second `REVISE` after its targeted author pass. The panel con
 - Before writing A12/A16, retrieve the specified missing CPC/Marinoni sources.
 - Resolve conflicting 2018/2 variant answers against the CPC; if unresolved, show both answers and label the divergence.
 - Keep canonical issues #84–91, #93, and #95; close duplicate stage issues.
+- **House pass:** no lesson is rewritten. Aula 14 is the one-page prototype; after its checks and flight-log updates, proceed in waves of at most six, P2 first. Each rebuilt lesson gets the house layer, source blocks, one real thread, figures/marks as assigned, and `house_check`, slop_gate, marks_lint, `check_all`, and 1280 breakscan.
+- **Unwritten lessons:** write to the same house bar from the start; add the two-line source-block/thread note to each approved blueprint first. There is no new panel. The CEO's early-release exception shipped Aula 01, the P1 workbench, and the adapted course front to `main` before S5c.
+- **Aula 09 is resolved:** proceed to writing after its second `REVISE`; make closing exercises 2–4 self-contained. This replaces the question above about another author→panel cycle.
+- Add `house_check.py` to the S5 checklist beside slop_gate and marks_lint.
 
 ## S0 · Source discrepancies resolved
 - The PDF has a final general bibliography section: Didier volume I and Novo Curso volume I. The 28/09 intake map omitted it; the new map includes it without changing the week order.
@@ -30,8 +38,8 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S3 Triage | #87 | checked, ready to integrate | Luna xhigh | lesson × chapter triage; `pipeline_check.py s3` |
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
-| S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 awaits CEO ruling recorded above | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | All nine P2 lessons plus Aula 04 merged (#108–#118); P1 wave 1 continues, wave 2 authors Aula 06-citação/06/07/08/08-revelia/13; Aula 09 remains with the CEO question above | Luna xhigh | one lesson PR at a time; P2 first |
+| S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 writing authorized by ruling 12 | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
+| S5 Pages | #91 | All nine P2 lessons plus Aulas 04 and 05 merged (#108–#119); Aula 01 early release merged to main (#122) and staging; next is S5c prototype A14 before further lesson writing | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
@@ -128,10 +136,14 @@ Aula 16 is complete at 3,545 canonical words against the 3,700-word target. Its 
 
 Aula 17 is complete at 3,140 words, within 5% of its ~3,300 target. Its six supported Conform spans were applied, `slop_gate`, `marks_lint` (0), and `check_all` passed, and served 1280 comparison against base `10112e5` found 0 new findings and one unrelated finding resolved. Both 1512 px art. 373 states were inspected and embedded in [PR #117](https://github.com/Benecles/ordenacoes-filipinas/pull/117), merged after GitHub `check_all` passed. Supporting extracts `30-004/005` lack the blueprint's cited §9.4.6–9.4.9 passages; claims use primary source `002` only. Aula 18 is at 3,287 words in [PR #116](https://github.com/Benecles/ordenacoes-filipinas/pull/116) after its six supported spans. Its `slop_gate`, zero-mark lint and `check_all` pass; both 1512 px selector-state crops are attached. The initial GitHub check found a stale offline manifest, now corrected; PR #116 must be transplanted onto new staging base `810979f` after #117 and pass the fresh GitHub check before merge. The S5 issue's accidental `needs-gate` label was removed per F-023b.
 
-P2 completion: Aula 18's six supported Conform spans were applied; its page is 3,287 words. The offline outputs were refreshed, `slop_gate`, zero-mark lint, `check_all`, and the served 1280 comparison pass on new base `810979f`; both 1512 px state crops are attached. [PR #116](https://github.com/Benecles/ordenacoes-filipinas/pull/116) passed GitHub `check_all` after rebase and is merged. P2 now has nine rebuilt lessons: A10, A10-estabilização, A11, A11-merit, A14, A15, A16, A17, A18. The approved A09 question remains open; other P1 work proceeds.
+P2 completion: Aula 18's six supported Conform spans were applied; its page is 3,287 words. The offline outputs were refreshed, `slop_gate`, zero-mark lint, `check_all`, and the served 1280 comparison pass on new base `810979f`; both 1512 px state crops are attached. [PR #116](https://github.com/Benecles/ordenacoes-filipinas/pull/116) passed GitHub `check_all` after rebase and is merged. P2 now has nine rebuilt lessons: A10, A10-estabilização, A11, A11-merit, A14, A15, A16, A17, A18. Ruling 12 authorizes A09 writing; after the CEO early release, the immediate work is the S5c Aula 14 house prototype.
 
 P1 wave 1 began with six disjoint authors: Aula 01 (~4,100 words), Aula 02 (~3,150), Aula 03 (~3,900), Aula 04 (~3,400), Aula 12 (~3,300), and Aula 05 (~3,600). Each will produce one page PR after separate-model Conform critique and page-specific checks.
 
 Aula 04 is complete at 3,338 words. Its fresh Conform critique, marks lint (0), `check_all`, offline freshness, and 1512 px statute-panel crop are complete. PR [#118](https://github.com/Benecles/ordenacoes-filipinas/pull/118) passed GitHub `check_all` and merged to staging. Aula 02 is at 3,078 words with a fresh slop gate PASS and awaits separate-model Conform critique; its 1512 px docket crop was inspected.
 
-P1 wave 2 has started in six disjoint author worktrees: Aula 06-citação (3,770 words), Aula 06 (4,000), Aula 07 (4,000), Aula 08 (3,700), Aula 08-revelia (~3,300), and Aula 13 (~3,200). Aula 09 remains paused only on the open CEO decision; independent P1 pages continue.
+Aula 05 is complete at 3,435 words against the ~3,600 target. Separate-model Conform spans were applied; `slop_gate`, marks lint (0), `check_all`, and served 1280 breakscan passed with no new findings. The blueprint uses an HTML decision form and no custom figure. PR [#119](https://github.com/Benecles/ordenacoes-filipinas/pull/119) passed GitHub `check_all` and merged.
+
+Aula 12 is at 3,238 words after its fresh slop gate PASS; its statutory figure was built and the specimen entry added. The author could not inspect the required 1512 px crop: CUA refused the local `file://` probe and explicitly prohibited alternate browser/render paths. The separate-model Conform critique and text checks continue; the PR is held until a permitted visual inspection is available.
+
+P1 wave 2 author snapshots exist in six disjoint worktrees: Aula 06-citação (3,770 words), Aula 06 (4,000), Aula 07 (4,000), Aula 08 (3,700), Aula 08-revelia (~3,300), and Aula 13 (~3,200). Resume their integration after the S5c prototype and its flight-log rules; Aula 09 may proceed under ruling 12.
