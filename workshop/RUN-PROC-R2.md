@@ -123,3 +123,5 @@ Aula 11's targeted expansion is at 3,073 canonical words after the fresh critic'
 Source-pull correction: Aula 12's Art. 385 request manifest and Aula 16's CPC arts. 125, 127, 385, 447 §§4–5, 459 plus Marinoni §9.12 (PDF pp. 305–322) now match their source packets and provenance. Aggregate `pipeline_check.py s4 processo-civil-i` passes 22/22 manifests and 1,090 provenance rows at workshop commit `90187c2`. Aula 16 writing has resumed.
 
 P2 wave 2 has started with approved Aula 17 (~3,300 words) and Aula 18 (~3,200 words), in separate author worktrees. They will integrate as separate lesson PRs after fresh Conform critique and the page-specific checks.
+
+Aula 16's first checked draft reached 3,433 words against the 3,700-word target. Its source use, separate-model critique, `marks_lint`, `check_all`, 375 px table fit, 1280 px staging comparison, and 1512 px crop are reported clean. The author is adding approximately 100 mapped, source-checked words to bring it within 5% of target, then will re-run the affected writing gate and open its PR. Per F-023b, the S5 issue's accidental `needs-gate` label was removed; no mid-run CEO gate applies.
