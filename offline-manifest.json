@@ -1,5 +1,5 @@
 {
-"version": "c48290274c63",
+"version": "04f81ef7fe36",
 "files": [
 "assets/backstage-egg.js",
 "assets/bookmarks.js",
@@ -28,6 +28,16 @@
 "backstage/figure-sheet.jpg",
 "backstage/index.html",
 "backstage/",
+"backstage/thumbs/casa.jpg",
+"backstage/thumbs/figkit.jpg",
+"backstage/thumbs/figuras.jpg",
+"backstage/thumbs/hero.jpg",
+"backstage/thumbs/instrumentos.jpg",
+"backstage/thumbs/materials.jpg",
+"backstage/thumbs/motion.jpg",
+"backstage/thumbs/register.jpg",
+"backstage/thumbs/round1.jpg",
+"backstage/thumbs/variants.jpg",
 "backstage/workshop.html",
 "caderno.html",
 "changelog.json",
