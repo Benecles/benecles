@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14, processo_a17
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a14, processo_a17, processo_a18
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -46,6 +46,9 @@ ENTRIES = [
     ('Partitura · operações probatórias', 'comparar', 'Processo · Aula 14 · teoria da prova',
      'Duas pautas percorrem os arts. 369 a 371: uma acompanha a afirmação e os meios; outra, a participação e as razões.',
      'substitui pci-a14-score', [processo_a14.panel()], 'processo-civil-i'),
+    ('Documento · corte de estatuto', 'ler', 'Processo · Aula 18 · art. 370',
+     'O texto legal distingue a prova necessária ao mérito da diligência inútil ou meramente protelatória.',
+     'novo componente · pci-a18-art370', [processo_a18.panel()], 'processo-civil-i'),
 ]
 
 
@@ -67,6 +70,7 @@ h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--s
 .ref p{{font:16px/1.5 var(--serif,serif);max-width:66ch;margin:0 0 6px}} .ref p.r{{font:11px var(--mono);letter-spacing:.06em;color:var(--muted)}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;margin-top:12px}} .wide{{margin-top:12px}}
 .s{{border:1.5px solid var(--ink);background:var(--paper);padding:6px}}
+.s:has(.figkit-document){{border:0;background:none;padding:0}}
 .s svg{{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important}}</style></head><body>
 <h1>Figuras · referências</h1><p class="lede">Uma referência feita à mão por gênero, cada uma refazendo uma figura real do site. É o padrão contra o qual as outras são julgadas.</p>
 {processo_a17.specimen_section()}{''.join(out)}
