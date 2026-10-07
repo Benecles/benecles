@@ -5,7 +5,12 @@
 - **Aula 01 · Petição inicial, demanda e emenda:** PR [#122](https://github.com/Benecles/ordenacoes-filipinas/pull/122) merged; live at [aula-01.html](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/aula-01.html). Its approved blueprint now has the source/page and 2018/2 exam-thread addendum.
 - **Course front:** PR [#123](https://github.com/Benecles/ordenacoes-filipinas/pull/123) merged; live at [Processo Civil I](https://benecles.github.io/ordenacoes-filipinas/courses/processo-civil-i/).
 - Main merged into `codex/processo-r2` at `1c82d02`; whole-repository `check_all` passed, including all 22 staged lesson links.
-- **Next:** resume S5c with Aula 14 as the sole house-pass prototype, then apply its flight-log findings in waves of at most six.
+- **Next:** S5c Aula 14 prototype merged to staging as PR #124; begin P2 house-pass wave 1 (A10, A10-estabilização, A11, A11-mérito, A15, A16), with P2 first and waves capped at six.
+
+## S5c · Aula 14 house prototype · 07/10
+- PR [#124](https://github.com/Benecles/ordenacoes-filipinas/pull/124) merged to `codex/processo-r2` at `9f0719fee5eb90f05220c0938aa916116681c1b6`; no main PR was opened.
+- `house_check`: PASS, 0 warnings; `slop_gate`: PASS (50 advisory findings; 17.569/1k); `marks_lint`: 0; `check_all`: PASS; served 1280 px breakscan: 0 findings (0 baseline/new); both 1512 px figure crops were inspected and attached to the PR.
+- The hero clock was synchronized with the regenerated 15-minute index estimate under F-013. The all-pages figure injector stopped on the unrelated missing Contratos `p-esp` removal target; the page-specific A14 injector was used, and the fault is logged as F-031.
 
 ## Resolved 07/10
 - Require one exact targeted author pass for each of the six second-`REVISE` blueprints; the orchestrator verifies every stated point, and there is no third panel. Aula 08-revelia: test classification of the defendant's own demand, make Figure 1's status consistent, and place the reconvenção distinction in the correct section. Aula 03: reconcile Didier print/PDF locators, explicitly test same-proceeding plurality and pole configuration in the closing tasks, and remove duplicated exam practice. Aula 10-estabilização: make Q2 test S0's construction outcome and keep §05/Q5 within C9. Aula 11-merit: clarify the whole-request contrast in A4/§02 and remove T1 repetition across Hero, §01, and §04. Aula 15: add a documentary means and reasoned admissibility assessment to the integrated exercise. Aula 10: make the learner assess evidence necessity rather than supplying that premise.
@@ -40,7 +45,7 @@ Master brief: `work/briefs/2026-10-06-processo-r2.md`. Umbrella: #83. Staging br
 | S4 Compendia | #88 | corrected gate passed; ready to integrate | Luna high | assembled lesson workbenches + CPC statute slices |
 | S4b Exam bank | #89 | checked, ready to integrate | Luna high | `exam-bank.json` + `.md`, verified questions and exclusions |
 | S5a Blueprints/panel | #90 | targeted second-REVISE set complete and verified; A06/A07/A13 approved; A09 writing authorized by ruling 12 | Luna max author, Sol high panel | blueprint per lesson; panel per lesson |
-| S5 Pages | #91 | All nine P2 lessons plus Aulas 04 and 05 merged (#108–#119); Aula 01 early release merged to main (#122) and staging; next is S5c prototype A14 before further lesson writing | Luna xhigh | one lesson PR at a time; P2 first |
+| S5 Pages | #91 | All nine P2 lessons plus Aulas 04 and 05 merged (#108–#119); Aula 01 early release merged to main (#122) and staging; A14 house prototype merged (#124); next P2 house-pass wave 1 | Luna xhigh | one lesson PR at a time; P2 first |
 | S6 Front/planta | #93 | checked, ready to integrate | Luna high | `work/plantas/processo-civil-i/structure.md` + staging front |
 | S7 Revisão/cartões | #95 | ready after S5 lesson waves | Luna high | generated exam-bank workbench and cards |
 | Final swap | #83 | blocked on CEO read | Orchestrator | one PR `codex/processo-r2` → `main`; no merge before CEO review |
