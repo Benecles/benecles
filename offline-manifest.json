@@ -1,8 +1,10 @@
 {
-"version": "f3c61ca1ea0e",
+"version": "3484ff697777",
 "files": [
 "assets/backstage-egg.js",
 "assets/backstage-peek.jpg",
+"assets/benecles-og.png",
+"assets/benecles.css",
 "assets/bookmarks.js",
 "assets/caderno.css",
 "assets/caderno.js",
@@ -274,6 +276,8 @@
 "favicon.ico",
 "index.html",
 "./",
+"ordenacoes-filipinas/index.html",
+"ordenacoes-filipinas/",
 "specimen/casa.html",
 "specimen/figkit-controle-a01.html",
 "specimen/figuras.html",

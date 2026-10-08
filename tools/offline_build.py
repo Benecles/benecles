@@ -55,7 +55,8 @@ def add_script(path):
     return True
 
 files = public_files()
-added = [p for p in files if p.endswith('.html') and add_script(p)]
+NO_READER_TOOLS = {'index.html'}  # the Benecles front door: no offline plane or highlighter
+added = [p for p in files if p.endswith('.html') and p not in NO_READER_TOOLS and add_script(p)]
 h = hashlib.sha1()
 entries = []
 for p in files:
