@@ -19,7 +19,7 @@ assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')
 SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude', 'docs', 'workshop', 'archive', 'gallery'}
-SKIP_FILES = {'offline-manifest.json', 'sw.js', 'lesson-aula06.png', 'benecles-og.png', 'benecles.css', 'index.html'} if False else {'offline-manifest.json', 'sw.js', 'lesson-aula06.png', 'benecles-og.png'}
+SKIP_FILES = {'offline-manifest.json', 'sw.js', 'lesson-aula06.png', 'benecles-og.png'}  # landing-page images stay out of the readers' offline cache
 
 # Retired prototypes and alternate homepages kept for the design archive (Issue #80).
 # Readers in modo avião do not need to download these (~240 KB).
