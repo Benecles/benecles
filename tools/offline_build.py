@@ -18,22 +18,12 @@ assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')
-SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude', 'docs', 'workshop'}
+SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude', 'docs', 'workshop', 'archive'}
 SKIP_FILES = {'offline-manifest.json', 'sw.js'}
 
 # Retired prototypes and alternate homepages kept for the design archive (Issue #80).
 # Readers in modo avião do not need to download these (~240 KB).
-ARCHIVE_PAGES = {
-    'index-alt-a.html',
-    'index-alt-b.html',
-    'index-alt-c.html',
-    'index-before-folio.html',
-    'prototype-folio.html',
-    'a-terra-muda-de-dono.html',
-    'bifurcacao-constitucional.html',
-    'dossie-do-delito.html',
-    'glossario-ancorado.html',
-}
+ARCHIVE_PAGES = set()  # retired prototypes now live in archive/ (skipped as a directory)
 
 def public_files():
     out = []
