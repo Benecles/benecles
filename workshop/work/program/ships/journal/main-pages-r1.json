@@ -1,0 +1,27 @@
+{
+  "phase": "error",
+  "order": "main-pages-r1",
+  "paths": [
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/controle-de-constitucionalidade/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/direito-constitucional-i/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/processo-civil-i/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/teoria-do-delito/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/teoria-geral-dos-contratos/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/direito-latino-americano/index.html",
+    "/Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/courses/metodologia-juridica/index.html"
+  ],
+  "html_paths": [
+    "index.html",
+    "courses/controle-de-constitucionalidade/index.html",
+    "courses/direito-constitucional-i/index.html",
+    "courses/processo-civil-i/index.html",
+    "courses/teoria-do-delito/index.html",
+    "courses/teoria-geral-dos-contratos/index.html",
+    "courses/direito-latino-americano/index.html",
+    "courses/metodologia-juridica/index.html"
+  ],
+  "summary": "Improve the home and seven course fronts with page-specific reading routes and stronger syllabus-grounded copy; rebuild all fronts through D1.",
+  "commit": "a3088736d3b2f93f07e3ca7df1f342a931962a60",
+  "error": "command failed (1): git push origin HEAD:main\nTo https://github.com/Benecles/study-lab.git\n ! [remote rejected] HEAD -> main (cannot lock ref 'refs/heads/main': is at a3088736d3b2f93f07e3ca7df1f342a931962a60 but expected 1c49fa3ee98865c624798ae9bfb3387fcecff24c)\nerror: failed to push some refs to 'https://github.com/Benecles/study-lab.git'\n"
+}

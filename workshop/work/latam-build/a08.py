@@ -1,0 +1,153 @@
+from common import *
+
+# hero: the sentence does not close the case; it opens a cycle that returns to the Court
+hero = ('<text x="60" y="34" style="font:12px var(--mono);letter-spacing:1px;fill:var(--muted)">A SENTENÇA NÃO ENCERRA O PROCESSO</text>'
+        '<g class="pop" style="--d:.1s"><rect x="60" y="56" width="250" height="74" style="fill:var(--dif-wash);stroke:var(--dif);stroke-width:2"/>'
+        '<text x="76" y="86" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--dif)">T-025 · 2004</text>'
+        '<text x="76" y="110" style="font:12px var(--mono);fill:var(--ink-2)">deveres, prazos, mínimo</text></g>'
+        '<path class="draw" d="M318 93H402" style="fill:none;stroke:var(--ink);stroke-width:2.5;--d:.4s"/>'
+        '<path class="draw" d="M390 85L404 93L390 101" style="fill:none;stroke:var(--ink);stroke-width:2.5;--d:.6s"/>'
+        '<g class="pop" style="--d:.7s"><rect x="412" y="56" width="250" height="74" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.5"/>'
+        '<text x="428" y="86" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--ink)">AUTO 176 · 2005</text>'
+        '<text x="428" y="110" style="font:12px var(--mono);fill:var(--ink-2)">o dinheiro, rastreável</text></g>'
+        '<path class="draw" d="M670 93H754" style="fill:none;stroke:var(--ink);stroke-width:2.5;--d:1s"/>'
+        '<path class="draw" d="M742 85L756 93L742 101" style="fill:none;stroke:var(--ink);stroke-width:2.5;--d:1.2s"/>'
+        '<g class="pop" style="--d:1.3s"><rect x="764" y="56" width="256" height="74" style="fill:var(--conc-wash);stroke:var(--conc);stroke-width:2"/>'
+        '<text x="780" y="86" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--conc)">AUTO 008 · 2009</text>'
+        '<text x="780" y="110" style="font:12px var(--mono);fill:var(--ink-2)">o ECI persiste</text></g>'
+        '<path class="draw" d="M892 138C892 172 185 172 185 138" style="fill:none;stroke:var(--conc);stroke-width:2;stroke-dasharray:6 5;--d:1.6s"/>'
+        '<path class="draw" d="M177 148L185 136L193 148" style="fill:none;stroke:var(--conc);stroke-width:2;--d:1.9s"/>')
+
+# ---- Fig 1: the 2004 orders on a clock
+DL = [  # (y, when, who, what)
+    (110, '15 DIAS', 'órgãos de moradia e renda', 'responder a cada pedido'),
+    (200, '31/03/2004', 'Conselho Nacional', 'contar pessoas, custo e fontes'),
+    (290, '3 MESES', 'Conselho Nacional', 'programa de capacidade'),
+    (380, '6 MESES', 'Conselho Nacional', 'mínimo de proteção a todos'),
+    (470, '1 ANO', 'governo e Conselho', 'atingir a meta ou replanejar'),
+]
+def clock(k):
+    o = T(40, 56, 'QUEM FAZ O QUÊ, ATÉ QUANDO', 't-small', style='letter-spacing:.1em')
+    o += P('M120 90V520', 'thin')
+    hi = {0: [0], 1: [1, 2], 2: [3], 3: [4]}[k]
+    for i, (y, when, who, what) in enumerate(DL):
+        on = i in hi
+        tone = 'dif' if on else 'grey'
+        o += C(120, y, 7 if on else 5, 'f-ink' if on else 'ink')
+        o += T(104, y + 5, when, 't-small' + (' tc-dif' if on else ''), anchor='end')
+        o += G(box(150, y - 34, 410, 68, who.upper(), what, tone, ctx='clock'), 'pop' if on else '', d=.1 * (hi.index(i) + 1) if on else None)
+    note = {0: 'o caso de quem já pediu não espera a política',
+            1: 'primeiro medir; depois corrigir a máquina',
+            2: 'o mínimo não espera a reforma inteira',
+            3: 'se faltar dinheiro, a escolha vira pública'}[k]
+    o += G(T(300, 560, note, 't-hand', anchor='middle'), 'fade', d=.5)
+    return o
+
+# ---- Fig 2: Auto 176, "falta orçamento" decomposed
+def trail(k):
+    o = T(40, 56, 'O CAMINHO DO DINHEIRO', 't-small', style='letter-spacing:.1em')
+    stages = [('ESTIMATIVA', 'COP 4,5 trilhões'), ('DOTAÇÃO', 'por ano e por fonte'), ('EXECUÇÃO', 'por entidade responsável'), ('ATENDIMENTO', 'a família recebe')]
+    for i, (t, s) in enumerate(stages):
+        y = 90 + i * 112
+        tone = 'dif' if (k == 0 or i in (0, 3)) else 'grey'
+        o += G(box(60, y, 300, 72, t, s, tone, ctx='trail'), 'pop', d=.1 + i * .15)
+        if i < 3:
+            o += P(f'M210 {y+72}V{y+112}', 'c-dif grow' if k == 0 else 'thin grow', style=f'--d:{.2 + i*.15:.2f}s')
+    if k == 0:
+        o += G(T(380, 128, 'a–c: quanto, de onde,', 't-small') + T(380, 146, 'por quem', 't-small'), 'fade', d=.8)
+        o += G(T(380, 240, 'd–e: orçamento de cada', 't-small') + T(380, 258, 'entidade, por componente', 't-small'), 'fade', d=.9)
+        o += G(T(380, 352, 'f: separar o gasto para', 't-small') + T(380, 370, 'deslocados do gasto geral', 't-small'), 'fade', d=1)
+        o += G(T(300, 540, 'ritmo razoável, mas sustentado e progressivo', 't-hand', anchor='middle'), 'fade', d=1.2)
+    else:
+        fails = [(202, 'sem dotação', 'priorizar ou realocar'), (314, 'dotação sem execução', 'falha administrativa'), (426, 'repasse não chega', 'acionar a contingência')]
+        for j, (y, t, s) in enumerate(fails):
+            o += P(f'M360 {y}H392', 'c-conc grow', style=f'--d:{.3 + j*.2:.1f}s')
+            o += G(box(392, y - 30, 178, 60, t.upper(), s, 'conc', tcls='t-small', ctx='trail'), 'pop', d=.4 + j * .2)
+        o += G(T(300, 560, '“falta orçamento” são três problemas diferentes', 't-hand', anchor='middle'), 'fade', d=1.1)
+    return o
+
+b = ''
+b += chapter('01', 'c1', 'Depois do diagnóstico', 'A Aula 07 terminou com uma sentença que acertou o diagnóstico e perdeu o controle do remédio. A T-025 é a tentativa de não repetir o erro.', 'dif')
+b += longform(
+    '<p>Na T-153/1998, a Corte Constitucional declarou o estado de coisas inconstitucional nas prisões, deu ordens com prazos e entregou a supervisão a outros órgãos. O caso não voltou a ela de forma organizada. Seis anos depois, a mesma Corte enfrentou um problema maior e mais disperso: o deslocamento forçado pelo conflito armado. Dessa vez, desenhou o remédio de outro jeito. César e Diana Rodríguez, os mesmos autores que Ariza cita para descrever os efeitos limitados da T-153, dedicaram um livro inteiro a mostrar como a T-025 “transformou” o deslocamento forçado na Colômbia.</p>',
+    '<p>A aula de 21/09 não pede para reaprender o que é um ECI. Pede outra coisa: olhar o que acontece <strong>depois</strong> da declaração. Quem recebe as ordens, com que prazos, como o dinheiro entra, quem participa, e o que a Corte faz quando, anos depois, o problema continua. É nessa engrenagem que se decide se o litígio estrutural é ativismo ou coordenação.</p>')
+
+b += chapter('02', 'c2', 'O caso', '108 tutelas, 1.150 famílias e uma resposta administrativa que se repetia.')
+b += longform(
+    '<p>Sob o expediente T-653010 foram acumuladas outras 108 tutelas, ajuizadas por <strong>1.150 núcleos familiares</strong> deslocados, em média quatro pessoas por núcleo, sobretudo mulheres chefes de família, idosos e crianças. Muitas foram apresentadas por associações de deslocados. Os pedidos eram básicos: ajuda humanitária de emergência, moradia, terra, meios de subsistência, saúde, educação, inscrição no registro oficial.</p>',
+    '<p>As respostas também se pareciam. A entidade dizia que o pedido não era de sua competência, que o requerente não estava inscrito no Registro Único, que não havia orçamento, que o programa estava suspenso. Cada justificativa podia ser verdadeira. Juntas, desenhavam um padrão: a política existia no papel, e a pessoa só obtinha resposta, quando obtinha, depois de litigar.</p>',
+    '<p>Em 22 de janeiro de 2004, a Sala Tercera de Revisión (relator <strong>Manuel José Cepeda Espinosa</strong>, com Jaime Córdoba Triviño e Rodrigo Escobar Gil) declarou o estado de coisas inconstitucional. O fundamento central foi um descompasso: de um lado, a gravidade da violação de direitos reconhecidos na Constituição e na lei; de outro, o volume de recursos destinados a garanti-los e a capacidade institucional de executar a política. A lei de 1997 prometia mais do que o Estado financiava e sabia entregar. A própria sentença registra que a verba do orçamento nacional para a população deslocada <strong>caiu</strong> de 103.491 milhões de pesos em 2002 para 70.783 milhões em 2003.</p>',
+    lex('Corte Constitucional, T-025/2004, ordinal primeiro', 'Declarar la existencia de un estado de cosas inconstitucional en la situación de la población desplazada debido a la falta de concordancia entre la gravedad de la afectación de los derechos reconocidos constitucionalmente y desarrollados por la ley, de un lado, y el volumen de recursos efectivamente destinado a asegurar el goce efectivo de tales derechos y la capacidad institucional para implementar los correspondientes mandatos constitucionales y legales, de otro lado.'))
+
+b += bet('As autoridades respondem que não há orçamento para atender todos os deslocados. O que a Corte deve fazer?', [
+    ('Aceitar a resposta: juiz não cria despesa, e a política é do Executivo.', ''),
+    ('Fixar ela mesma quanto deve ser gasto e em quê.', ''),
+    ('Mandar o governo calcular o custo, dizer de onde virá o dinheiro e, se faltar, redefinir prioridades em público, sem descer abaixo de um mínimo.', '*Corte Constitucional, T-025/2004'),
+], '<p>A Corte escolheu a terceira. Ela não aceitou a escassez como resposta final, nem fixou o valor. Transformou a escassez em uma decisão que o governo teria de tomar e justificar, com prazo e com um piso. O capítulo seguinte mostra como.</p>')
+
+b += chapter('03', 'c3', 'A sentença de 2004', 'Não uma ordem, mas um calendário com destinatários nomeados.')
+b += scrolly('As ordens da T-025 no tempo', [('p-ck0', clock(0), 'Prazo de 15 dias'), ('p-ck1', clock(1), 'Março e três meses'), ('p-ck2', clock(2), 'Seis meses'), ('p-ck3', clock(3), 'Um ano')], [
+    S('p-ck0', 'Ordinais 8º a 10º', 'Primeiro, quem já pediu', '<p>Para os autores, a Corte fixou um procedimento: registrar o pedido, informar em <strong>15 dias</strong> o prazo máximo de resposta e se os requisitos estão cumpridos (e, se não, como corrigir). Se o pedido estiver completo mas faltar verba, a entidade deve buscar os recursos e definir a ordem de atendimento. A falta de dinheiro deixa de ser motivo para não responder.</p><p>E proibiu que as autoridades exigissem tutela como condição para acessar benefícios legais. Quando a pessoa precisa processar o Estado para ser atendida, o Judiciário virou, na prática, um guichê do programa.</p>', 'dif'),
+    S('p-ck1', 'Ordinais 2º a 4º', 'Depois, medir e corrigir a máquina', '<p>Até <strong>31 de março de 2004</strong>, o Conselho Nacional para a Atenção Integral à População Deslocada devia dizer quantos eram os deslocados inscritos, onde estavam e do que precisavam; quanto custava a política; quanto caberia à Nação, aos entes territoriais e à cooperação internacional; e um <strong>plano de contingência</strong> para o caso de o dinheiro territorial ou internacional não chegar.</p><p>Governadores e prefeitos, por meio do Ministério do Interior, deviam ajustar seus deveres aos seus recursos, ouvindo as organizações de deslocados. E em <strong>três meses</strong> o Conselho devia adotar um programa, com cronograma, para corrigir as falhas de capacidade institucional descritas no processo.</p>', 'dif'),
+    S('p-ck2', 'Ordinal 5º', 'O mínimo não espera', '<p>Em até <strong>seis meses</strong>, todos os deslocados deveriam gozar de um mínimo de proteção dos seus direitos, definido na própria sentença a partir do que a vida em condições dignas exige. Os prazos longos cuidam de reformar a política; este cuida de quem não pode esperar a reforma.</p>', 'dif'),
+    S('p-ck3', 'Ordinal 2º, b', 'Se o dinheiro não vier, a escolha é pública', '<p>Em <strong>um ano</strong>, governo e Conselho deviam fazer todo o esforço para atingir a meta orçamentária que eles próprios fixaram. Se ficasse claro que não seria possível, deviam <strong>redefinir as prioridades</strong> da política e desenhar as mudanças necessárias, sempre assegurando o mínimo. A Corte não decide quanto gastar; decide que a insuficiência precisa virar uma decisão explícita.</p><p>Por todo o caminho, as organizações de deslocados deviam ter oportunidades efetivas de participar das decisões e receber informação mensal sobre o avanço.</p>', 'dif'),
+])
+b += longform(
+    '<p>O que a Corte <strong>não</strong> fez pesa tanto quanto o que fez. Não escolheu programas, não fixou o valor do orçamento, não ordenou a construção de nada. Distribuiu deveres segundo as competências que a lei já dava a cada órgão, exigiu informação e fixou tempos diferentes para problemas diferentes. Esse é o contraste mais claro com a T-153, cujo núcleo era um plano de obras.</p>')
+
+b += chapter('04', 'c4', 'Auto 176/2005: seguir o dinheiro', 'Uma estimativa de custo não é dinheiro gasto.', 'dif')
+b += longform(
+    '<p>A Corte manteve a competência para acompanhar o cumprimento, com base no art. 27 do Decreto 2.591/1991: o juiz conserva o caso até que o direito esteja restabelecido ou eliminadas as causas da ameaça. Em 29 de agosto de 2005, no Auto 176, reconheceu um avanço. O Planejamento Nacional havia estimado em <strong>4,5 billones</strong> de pesos (4,5 trilhões) o custo de implementar a política. Mas, na mesma frase, registrou que os direitos ainda não tinham sido restabelecidos nem as causas do ECI eliminadas.</p>',
+    '<p>O problema de uma cifra total é que ela não permite cobrar ninguém. Por isso a Corte ordenou que, até 1º de dezembro de 2005, o Ministro da Fazenda, o diretor da Acción Social e o diretor do Planejamento enviassem à Corte e aos órgãos de controle um <strong>cronograma</strong> dizendo em que ritmo e por quais mecanismos os recursos seriam destinados.</p>')
+b += scrolly('Auto 176: o que o cronograma tinha de mostrar', [('p-tr0', trail(0), 'O cronograma'), ('p-tr1', trail(1), 'Três falhas')], [
+    S('p-tr0', 'Auto 176, ordinal primeiro', 'Seis cortes no mesmo dinheiro', '<p>O cronograma tinha de desagregar o total: (a) por exercício fiscal; (b) por fonte (Nação, entes territoriais, comunidade internacional, outras); (c) nomeando quem obteria e quem executaria cada parcela; (d) indicando o orçamento de cada entidade nacional; (e) por componente da política; e (f) <strong>separando os programas gerais para a população vulnerável dos dirigidos aos deslocados</strong>.</p><p>O item (f) é o mais esperto. Sem ele, qualquer aumento do gasto social agregado poderia ser apresentado como progresso na política de deslocamento. O ritmo podia ser gradual, mas “razoável, pero sostenido y progresivo”.</p>', 'dif'),
+    S('p-tr1', 'A lógica do auto', 'Três falhas com o mesmo nome', '<p>Com o dinheiro rastreável, “falta orçamento” se decompõe. Se o componente não tem dotação, o problema é de prioridade e pede realocação. Se tem dotação e a entidade não executa, a falha é administrativa. Se o repasse territorial ou internacional não chega, é a hora de acionar o plano de contingência que a sentença de 2004 já exigia.</p><p>Cada diagnóstico pede uma providência diferente, e a Corte agora tinha como perguntar qual delas faltou.</p>', 'conc'),
+])
+
+b += chapter('05', 'c5', 'Auto 008/2009: cinco anos depois', 'Avanços, sim. Superação, não.')
+b += longform(
+    '<p>Em 26 de janeiro de 2009, a Sala Segunda de Revisión (ainda com Cepeda como relator) fez o balanço. Governo, Comissão de Acompanhamento da sociedade civil, Procuradoria, Controladoria, Defensoria, ACNUR, organizações de deslocados e centros acadêmicos haviam enviado relatórios, e uma sessão técnica pública fora realizada em 11 de dezembro de 2008. A conclusão abre o dispositivo.</p>',
+    lex('Corte Constitucional, Auto 008/2009, ordinal primeiro', 'Constatar que persiste el estado de cosas inconstitucional, a pesar de los avances logrados. [...] La carga de demostrar que las condiciones que dieron lugar a la declaratoria del estado de cosas inconstitucional han sido superadas, recae sobre el gobierno nacional.', 'conc'),
+    '<p>Três movimentos merecem atenção. O primeiro é o <strong>ônus da prova</strong>: não é a Corte que precisa mostrar que o problema continua; é o governo que precisa demonstrar que o superou, com relatório marcado para 1º de julho de 2010. O segundo é a recusa de uma saída parcial: apesar de resultados positivos em alguns direitos, a Corte entendeu que não era possível declarar o ECI superado só em parte, dada a gravidade da crise humanitária. Superar exige avanço sistemático e integral no <strong>gozo efetivo</strong> dos direitos.</p>',
+    '<p>O terceiro é a mudança de régua. A Corte recusou os indicadores de coordenação que o governo apresentara em 2008 e insistiu que as metas se medissem pelo que muda na vida das pessoas deslocadas, e não pelo que a administração fez. E foi mais longe do que em 2004: ordenou <strong>reformular</strong> as políticas de moradia e de terras, com diagnóstico até 30 de junho de 2009 e início da execução até 31 de agosto. Mas com uma cláusula repetida em cada ordem: haveria participação da Comissão de Acompanhamento e das organizações, “sin perjuicio de que las entidades responsables adopten las decisiones sobre el plan de manera autónoma”.</p>')
+b += wide(table(['A pergunta', 'Indicador de atividade', 'Indicador de gozo efetivo'], [
+    ['Moradia', 'Quantos subsídios foram aprovados?', 'Quantas famílias deslocadas passaram a morar em condições dignas?'],
+    ['Orçamento', 'Quanto foi apropriado para “população vulnerável”?', 'Quanto foi executado na política de deslocamento, e com que resultado?'],
+    ['Coordenação', 'Quantas reuniões entre Nação e entes territoriais?', 'Os entes territoriais passaram a atender quem chega ao município?'],
+    ['Superação do ECI', 'O plano foi aprovado?', 'O governo demonstra avanço sistemático em todos os direitos?'],
+], hcls=['', 'conc', 'dif']))
+
+b += chapter('06', 'c6', 'Ativismo ou coordenação?', 'O eixo da aula se responde pelas ordens efetivamente dadas, não por rótulos.', 'dif')
+b += longform(
+    eixo('O litígio estrutural representa uma forma de ativismo judicial ou uma estratégia de diálogo e coordenação institucional?'),
+    '<p>A T-025 tem elementos que qualquer crítico chamaria de ativismo. A Corte transformou 108 tutelas em um processo sobre toda uma política pública; deu ordens a órgãos que não eram réus individuais; conservou a competência por anos; inverteu o ônus da prova contra o governo; e, em 2009, mandou reformular políticas inteiras. Nenhum desses movimentos cabe no modelo clássico de uma parte, um réu e uma ordem.</p>',
+    '<p>Mas o conteúdo das ordens aponta para outra direção. A Corte não fixou valores, não escolheu programas, não executou nada. Pediu números, fontes, responsáveis, cronogramas e relatórios; abriu espaço formal para os deslocados; e repetiu que as decisões de mérito sobre os planos eram das autoridades. O que ela controlou foi a <strong>informação</strong> e o <strong>tempo</strong>, não a política.</p>')
+b += wide(table(['', 'Traços de ativismo', 'Traços de coordenação'], [
+    ['Escala', 'De 108 tutelas a toda a política de deslocamento.', 'As ordens seguem as competências que a lei já atribuía a cada órgão.'],
+    ['Orçamento', 'A escassez deixa de ser resposta suficiente.', 'A Corte não fixa o valor: exige estimativa, fontes e cronograma do próprio governo.'],
+    ['Duração', 'Competência mantida por anos, sem data para acabar.', 'Cada auto responde a uma lacuna revelada pelo anterior.'],
+    ['Prova', 'O governo tem de provar que superou o ECI.', 'A prova se faz com informação pública, discutida em sessões técnicas.'],
+    ['Conteúdo', 'Em 2009, manda reformular moradia e terras.', '“Las entidades responsables adoptan las decisiones de manera autónoma.”'],
+    ['Participação', 'Nenhum: aqui a Corte só abre a porta.', 'Organizações de deslocados e a Comissão de Acompanhamento entram no processo.'],
+], hcls=['', 'conc', 'dif']))
+b += longform(
+    '<p>A melhor resposta para a prova não escolhe um rótulo; mostra por que os dois convivem. A T-025 é intervenção forte quanto à <strong>existência</strong> do dever e ao <strong>ritmo</strong> de cumprimento, e contida quanto aos <strong>meios</strong>. A comparação com a T-153 mostra o ganho: lá, a Corte decidiu o meio (construir vagas) e perdeu o acompanhamento; aqui, deixou o meio com o governo e ficou com o acompanhamento. É o que Kozicki e Van der Broocke, na Aula 07, chamam de ativismo dialógico: a Corte fixa o piso e cobra razões; os órgãos políticos escolhem e justificam.</p>',
+    '<p>O limite também precisa aparecer na resposta. Cinco anos e muitos autos depois, o ECI persistia. Cronogramas e indicadores tornaram as falhas visíveis e cobráveis, mas não garantiram, por si, os direitos. O litígio estrutural organiza a política; não a substitui. A aula de 28/09 leva a mesma pergunta para um terreno brasileiro, a saúde, onde o STF tentou coordenar por meio de audiências públicas e teses de repercussão geral.</p>')
+
+b += deep_chapter('08', '07', ())
+b += chapter('08', 'c8', 'Teste', 'Responda antes de abrir.')
+b += quiz([
+    ('Qual foi o fundamento central da declaração de ECI na T-025/2004?', 'A falta de correspondência entre a gravidade da violação dos direitos dos deslocados, de um lado, e o volume de recursos efetivamente destinados e a capacidade institucional para cumprir a política, de outro.'),
+    ('O que a Corte ordenou ao Conselho Nacional até 31/03/2004?', 'Precisar número, localização, necessidades e direitos dos deslocados inscritos; fixar o esforço orçamentário necessário; definir a participação da Nação, dos entes territoriais e da cooperação internacional; indicar como obter os recursos; e prever um plano de contingência se o dinheiro territorial ou internacional não chegasse.'),
+    ('O que acontecia se, em um ano, a meta orçamentária se mostrasse inatingível?', 'O governo e o Conselho deviam redefinir as prioridades e desenhar as mudanças na política, sempre assegurando o mínimo de proteção ligado à vida digna. A escassez vira uma escolha pública e justificada.'),
+    ('Por que o Auto 176/2005 exigiu separar o gasto com população vulnerável do gasto com deslocados?', 'Para impedir que aumentos no gasto social geral fossem apresentados como progresso na política específica de deslocamento. Sem a separação, o cumprimento não é verificável.'),
+    ('Quais são as três decisões mais fortes do Auto 008/2009?', 'Constatou que o ECI persistia; pôs sobre o governo o ônus de demonstrar sua superação; e ordenou reformular as políticas de moradia e de terras, preservando a autonomia das entidades para decidir o conteúdo dos planos.'),
+    ('A T-025 é ativismo ou diálogo?', 'As duas coisas, em planos diferentes. É intervenção forte quanto à existência do dever, à escala e ao ritmo de cumprimento; é contida quanto aos meios, que ficam com as autoridades. A Corte controla informação e prazos, não o conteúdo da política. E o balanço de 2009 mostra o limite: o ECI persistia.'),
+])
+
+lesson('08', 'aula-08.html', 'T-025 e litígio estrutural',
+       'Litígio estrutural e diálogos institucionais: a T-025/2004 da Corte Constitucional colombiana sobre o deslocamento forçado, o Auto 176/2005 e o Auto 008/2009.',
+       'T-025 e o litígio', 'estrutural',
+       'A Corte colombiana não disse ao governo o que fazer pelos deslocados. Disse <strong class="dif">quanto medir, até quando e com que dinheiro</strong>, e voltou para conferir. Cinco anos depois, o problema <strong class="conc">ainda estava lá</strong>.',
+       hero, [('Aula', '21/09 · Litígio estrutural'), ('Leitura', '≈ 20 min'), ('Antes', 'Aula 07 · ECI'), ('Depois', 'Aula 09 · Saúde')], b,
+       ('aula-07.html', '← Aula 07', 'Estado de coisas inconstitucional'), ('aula-09.html', 'Aula 09 →', 'Saúde e diálogo institucional'), '21/09')

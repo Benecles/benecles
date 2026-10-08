@@ -1,0 +1,15 @@
+# Compendium — aula-02.html
+
+Provenance index assembled from `course-map.json` (S0), `shelf.csv` (S1), `chapters/` (S2), and `triage.csv` (S3).
+
+| File | Source | Chapter | Pages | Role | Why | SHA-256 |
+|---|---|---|---|---|---|---|
+| 05-eixo.md | course-map.json | eixo_de_discussao | — | workbench metadata | Verbatim eixo(s) from the S0 course map, paired with the dossier's answer-evaluation instruction. | d925178d011bb549985659087c77dcb656a69e8472571b9eab1c8727327b071d |
+| 05-eixo.md | dossier-atividade-05-10 | 01-00-instrucoes | PDF 1–2 | workbench metadata | Exact answer-evaluation instruction reproduced from dossier Part 0, item 2. | d925178d011bb549985659087c77dcb656a69e8472571b9eab1c8727327b071d |
+| 10-slides.txt | cortes-constitucionales-latam | quadro-cortes-constitucionais | PDF 1–2 | slides | Lesson slide deck from S1. | 31cf80cff9db91e6f99ad93e663aeece84f3f0d3afc38a9cd635c4a2e17866d4 |
+| 20-primary-001-engelmann-bandeira-2017-estudos-caso.txt | engelmann-bandeira-2017 | estudos-caso | PDF 4–21 | primary | Nas pp. 906–923, examina trajetórias histórico-políticas e percursos de 286 ministros das Cortes Superiores de Argentina, Brasil, Chile, Colômbia e Venezuela (1990–2015), núcleo comparativo da função mapeada. | 61dd99f78a2df0c0d30d4f8735dd261bf7b3c259beaaf37d6506119379b072fa |
+| 30-supporting-001-engelmann-bandeira-2017-estudo-legitimidade.txt | engelmann-bandeira-2017 | estudo-legitimidade | PDF 2–3 | supporting | Nas pp. 904–905, contrasta estudos de judicialização com análises da legitimidade e independência decisória das cúpulas, apontando trajetórias histórico-políticas, estabilidade e perfis das elites como fatores de autonomia; oferece o quadro conceitual da comparação. | e3b8eeb8c08c3cae8b69ddcfa5d334c8b46c5825f4209013d779c97ef6efe886 |
+| 30-supporting-002-engelmann-bandeira-2017-consideracoes-finais.txt | engelmann-bandeira-2017 | consideracoes-finais | PDF 22–34 | supporting | Nas pp. 924–936, agrupa os cinco casos em trajetórias de menor ou maior autonomia e sintetiza mecanismos de recrutamento e relações das Cortes com o espaço político, permitindo fechar a comparação. | d6fcbb0db958e074079828c6e56631f8f229bd993aa4c1d23d78927fc6f9f81f |
+| 30-supporting-003-cortes-constitucionales-latam-quadro-cortes-constitucionais.txt | cortes-constitucionales-latam | quadro-cortes-constitucionais | PDF 1–2 | supporting | Nas pp. 1–2, o quadro discrimina, para cada país, órgão de controle, modelo, composição, recrutamento e traço da jurisdição; apoia a distinção entre desenhos de controle. | 31cf80cff9db91e6f99ad93e663aeece84f3f0d3afc38a9cd635c4a2e17866d4 |
+| 50-exercises-and-exams.txt | course-map.json | exam | — | exercises/exams (no assigned source) | S0 leaves lesson-specific assessment mapping undetermined; S3 assigns no exercise or exam chapter to this lesson. | 898ee1979372b8c735dc4851c26e5f806945c9cadd623097474e7b5df71a0933 |
+| 60-live-page.txt | live-page | aula-02.html | — | live page snapshot | Visible text extracted from the current live lesson page. | 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b |

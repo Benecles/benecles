@@ -1,0 +1,63 @@
+{
+ "key": "06",
+ "date": "Semanas 10–11",
+ "pages": [
+  {
+   "file": "aula-06.html",
+   "h1a": "Reforma e limites",
+   "h1b": "da Constituição",
+   "title": "Reforma da Constituição e seus limites",
+   "desc": "Limites temporais, circunstanciais, materiais e tácitos à reforma, o roteiro de uma PEC no art. 60 e a diferença entre emenda e revisão do art. 3º do ADCT.",
+   "deck": "Seguir o rito do art. 60 não basta para que uma emenda valha. A lição percorre <strong class=\"dif\">limites expressos e tácitos</strong> e as <strong class=\"conc\">armadilhas do § 4º</strong>: a forma republicana não é cláusula pétrea, e o procedimento de emenda também não está no rol.",
+   "bet": {
+    "after_chapter": 6,
+    "question": "Uma PEC com iniciativa regular, em tempo de normalidade, propõe reduzir o quórum do art. 60, § 2º, de três quintos para maioria simples. O § 4º não lista o procedimento de emenda. Um candidato conclui que, por isso, a proposta pode ser deliberada. Ele está certo?",
+    "options": [
+     [
+      "Sim: só é vedada a proposta que tenda a abolir as quatro matérias do § 4º, e o procedimento não é uma delas.",
+      ""
+     ],
+     [
+      "Não: a proposta tende a abolir a forma federativa de Estado, cláusula pétrea do § 4º.",
+      ""
+     ],
+     [
+      "Não: para a maioria dos publicistas, o poder derivado não pode mudar as regras da própria reforma, limite tácito que só o poder originário superaria.",
+      "*"
+     ],
+     [
+      "Sim, desde que aprovada em dois turnos em cada Casa, pois o rito cura o vício de matéria.",
+      ""
+     ]
+    ],
+    "reveal": "<p>A resposta de Bonavides não vem do rol expresso, e sim do limite tácito de que o poder revisor não modifica o processo de revisão: isso daria ao poder derivado uma característica que ele não tem, a de poder constituinte originário. A tese é a da maioria dos publicistas, e não de todos. Reduzir o quórum não atinge a forma federativa, e o rito seguido não corrige vício de matéria.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Por que uma Constituição rígida precisa de um caminho jurídico de reforma?",
+   "Porque uma ordem que não admite reforma pacífica entrega as crises à revolução e ao golpe de Estado. Bonavides chama a imutabilidade de tese absurda: a força, tornada árbitro dos conflitos constitucionais, logo desacredita a lei fundamental."
+  ],
+  [
+   "Quais são os limites expressos da reforma e como aparecem na Constituição de 1988?",
+   "O temporal paralisa a reforma por certo prazo (a Constituição de 1988 não tem prazo inicial de intangibilidade). O circunstancial a proíbe em crises, no art. 60, § 1º: intervenção federal, estado de defesa e estado de sítio. O material está no § 4º: forma federativa, voto direto, secreto, universal e periódico, separação dos Poderes e direitos e garantias individuais. A forma republicana saiu do rol, e o art. 2º do ADCT previu plebiscito sobre a forma de governo."
+  ],
+  [
+   "Como Laferrière e Bonavides divergem sobre a força das cláusulas intangíveis?",
+   "Laferrière, e com ele Barthélemy e Duez, sustenta que o poder constituinte de um momento não vincula o futuro, então as cláusulas seriam meras moções políticas. Bonavides responde que a objeção vale só para o poder originário. O derivado é jurídico, existe por competência do texto e, ao superar os limites, usurpa competência e comete golpe contra a ordem constitucional."
+  ],
+  [
+   "Quais são os três limites tácitos da reforma segundo Bonavides?",
+   "A extensão da reforma, que exclui a revisão total e a reforma total feita por reformas parciais (fraude à Constituição, avaliada pelo conteúdo). A modificação do próprio processo de revisão, vedada ao poder derivado. E a substituição do poder derivado pelo originário sem previsão constitucional, que a consulta popular não convalida."
+  ],
+  [
+   "Em que ordem uma PEC deve vencer as perguntas do art. 60?",
+   "Circunstância (§ 1º), iniciativa (incisos I a III), matéria expressa (§ 4º), matéria tácita, votação em dois turnos com três quintos em cada Casa (§ 2º) e repetição na mesma sessão legislativa (§ 5º). Uma PEC votada em estado de sítio cai na primeira pergunta, e a votação qualificada não a salva."
+  ],
+  [
+   "Por que a revisão do art. 3º do ADCT não é emenda?",
+   "Fica fora do processo legislativo do art. 59, era transitória e exigia só maioria absoluta dos membros do Congresso em sessão unicameral, rigidez menor que a da emenda. Para Bonavides, estava atada ao plebiscito do art. 2º, e o texto permanente ignora a revisão."
+  ]
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "key": "19",
+ "date": "Semanas 15–18",
+ "pages": [
+  {
+   "file": "aula-19.html",
+   "h1a": "Direito à informação e",
+   "h1b": "acesso à informação",
+   "title": "Direito à informação e acesso à informação",
+   "desc": "Informar, ser informado e acessar: arts. 5º, XIV e XXXIII, habeas data, Lei de Acesso à Informação, limites de sigilo e quatro decisões do STF sobre acesso.",
+   "deck": "Três pedidos de \"informação\" apoiam-se em três incisos diferentes do art. 5º e enfrentam <strong class=\"dif\">recusas diferentes</strong>. Quando a Constituição permite negar é a <strong class=\"conc\">pergunta que a prova repete</strong>.",
+   "bet": {
+    "after_chapter": 5,
+    "question": "Um portal de transparência publica apenas o cargo e o valor da remuneração de cada servidor, sem os nomes, e um cidadão exige a divulgação nominal. Sustentar que a publicação nominal seria desproporcional, por existir a alternativa sem nomes, encontra apoio na jurisprudência do STF?",
+    "options": [
+     ["Sim: a alternativa sem nomes preserva a privacidade e atende ao interesse público, por isso a publicação nominal viola o critério da necessidade.", ""],
+     ["Sim: o art. 5º, XXXIII, só protege o acesso a informações de interesse particular, e a remuneração de servidor é dado íntimo.", ""],
+     ["Não: no ARE 652.777/SP (2015), o STF entendeu a publicação nominal legítima e devida e não desproporcional, de modo que a alternativa sem nomes não a tornou inválida. A divulgação só por cargo não cumpre o precedente.", "*"],
+     ["Não: a decisão foi unânime e vinculante para todos os setores, que já implantaram a publicação nominal.", ""]
+    ],
+    "reveal": "<p>Em 23 de abril de 2015, sob relatoria do Ministro Teori Zavascki, o STF afastou o argumento de que bastaria publicar vencimentos e benefícios por cargo, sem o nome de quem o ocupa. Concluiu que a publicação nominal atende o interesse público em ser informado sem intervenção desproporcional na vida privada e íntima. Sarlet, Marinoni e Mitidiero registram que a decisão prevalece, embora não implantada em todos os setores.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  ["Como distinguir liberdade de informação, direito à informação e direito de acesso?", "A liberdade de informação é o direito de informar (publicar, comunicar, fazer jornalismo). O direito à informação é o direito de ser informado, e dentro dele está o direito de acesso à informação. Há ainda a face defensiva, o direito de não ser impedido de se informar. Sarlet, Marinoni e Mitidiero os tratam como dimensão particular da liberdade de informação, com fortes pontos de contato, mas sem confusão."],
+  ["Que dizem o art. 5º, XIV, o art. 5º, XXXIII, e o habeas data (LXXII)?", "O inciso XIV assegura a todos o acesso à informação e resguarda o sigilo da fonte quando necessário ao exercício profissional. O inciso XXXIII dá direito a receber dos órgãos públicos informações de interesse particular, coletivo ou geral, no prazo de lei e sob pena de responsabilidade, ressalvado o sigilo imprescindível à segurança da sociedade e do Estado. O habeas data serve para conhecer e retificar informações do próprio impetrante em bancos de dados públicos e não substitui o inciso XXXIII."],
+  ["Quem são titulares e destinatários segundo a Lei de Acesso à Informação?", "A titularidade é universal: pessoas naturais, inclusive estrangeiros, e jurídicas, e a Lei 12.527/2011 não restringe a qualidade de quem pede. A LAI obriga a administração direta e indireta em todos os níveis, demais órgãos estatais, empresas públicas, fundações e sociedades de economia mista, e entidades privadas que receberam recursos públicos, mas só quanto às informações sobre esses recursos (arts. 1º e 2º)."],
+  ["Para que serve o direito à informação nas dimensões objetiva e subjetiva?", "Na objetiva, expressa valor coletivo do Estado Democrático de Direito: publicidade e transparência permitem controle social, e geram deveres de proteção, de organização e de procedimento, sustentando um dever de gestão transparente da informação. Na subjetiva, há posições negativas (não ser impedido de se informar, faculdade de não se informar) e positivas (prestações informativas e participação em procedimentos), que integram o status activus processualis de Häberle."],
+  ["Quais os limites expressos do direito à informação e como se avaliam os limites legais?", "Os limites expressos são o sigilo profissional (art. 5º, XIV, parte final), o sigilo imprescindível à segurança da sociedade e do Estado (art. 5º, XXXIII) e as restrições do estado de sítio (art. 139, III), sujeitas à proporcionalidade e ao núcleo essencial. Ainda há o segredo de justiça do art. 93, IX. Os limites legais devem ser reconduzíveis a bens constitucionais, e sigilo apenas conveniente à administração não cabe no texto; o Decreto 7.724/2012 criou restrições que a lei não previa."],
+  ["O que o STF decidiu sobre sigilo da fonte, documentos do STM, remuneração de servidores e acesso do parlamentar?", "No Inq 870-RJ (1996), é desautorizada medida que constranja o jornalista a revelar a fonte. Na Rcl 11.949/RJ (2017), o acesso a documentos do STM na década de 1970 vai além das sessões públicas, e a recusa exige motivação detalhada que permita controle judicial. No ARE 652.777/SP (2015), a publicação nominal de vencimentos é legítima. No RE 865.401/MG (2018), o parlamentar exerce, como cidadão, o direito do art. 5º, XXXIII, salvo sigilo excepcional ou documento sujeito a aprovação de CPI."]
+ ]
+}

@@ -1,0 +1,5 @@
+REVISE
+
+1. Restore a bounded primary packet for C-579/2013, C-694/2015 and C-674/2017 through S3/S4 before sending this to the writer. The index assigns all three dossier extracts to `30-supporting-*` and contains no `20-primary-*`; C-579's dissent relies on a comparative deck. Add the relevant official decision sections, operative points and votes with precise locators, then map the A4 case claims to them. Do not treat a dossier extract or deck as a complete judgment.
+2. Complete the dossier's required “what happened next” field for each case in A4 and the section plan, using only indexed evidence. The 2016 agreement and C-674 are later context, but they do not establish the sequel of each prior ruling; Ley 1592/2012 also predates C-579/2013. If the packet establishes no sequel for a case, say so in the private plan and omit an invented one from the page.
+3. Give the exact 28.08.2013 and 11.11.2015 dates proposed for Fig. 2 their own source locators, or use only the year precision already supported by the indexed case titles. Keep canonical Fig. 1 unchanged.

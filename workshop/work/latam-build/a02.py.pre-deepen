@@ -1,0 +1,147 @@
+from common import *
+from maps import latam_map, map_defs
+
+# hero: the same civil-law root, two paths
+hero = ('<text x="60" y="30" style="font:12px var(--mono);letter-spacing:1px;fill:var(--muted)">A MESMA MATRIZ, DOIS CAMINHOS</text>'
+        '<g class="pop" style="--d:.1s"><rect x="60" y="62" width="230" height="64" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.5"/>'
+        '<text x="76" y="90" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--ink)">CIVIL LAW EUROPEU</text>'
+        '<text x="76" y="112" style="font:12px var(--mono);fill:var(--ink-2)">um “Estado importado”</text></g>'
+        '<path class="draw" d="M290 94C400 94 420 44 520 44" style="fill:none;stroke:var(--conc);stroke-width:2.5;--d:.5s"/>'
+        '<path class="draw" d="M290 94C400 94 420 144 520 144" style="fill:none;stroke:var(--dif);stroke-width:2.5;--d:.7s"/>'
+        '<g class="pop" style="--d:1s"><rect x="530" y="18" width="490" height="54" style="fill:var(--conc-wash);stroke:var(--conc);stroke-width:2"/>'
+        '<text x="546" y="42" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--conc)">ARGENTINA · VENEZUELA</text>'
+        '<text x="546" y="62" style="font:12px var(--mono);fill:var(--ink-2)">instabilidade, cortes aparelhadas por partidos</text></g>'
+        '<g class="pop" style="--d:1.2s"><rect x="530" y="116" width="490" height="54" style="fill:var(--dif-wash);stroke:var(--dif);stroke-width:2"/>'
+        '<text x="546" y="140" style="font:600 13px var(--mono);letter-spacing:1px;fill:var(--dif)">BRASIL · CHILE · COLÔMBIA</text>'
+        '<text x="546" y="160" style="font:12px var(--mono);fill:var(--ink-2)">maior autonomia, por razões diferentes</text></g>')
+
+# ---- Fig: the autonomy axis
+CT = {'VE': (100, 'Venezuela', 'conc'), 'AR': (190, 'Argentina', 'conc'), 'BR': (380, 'Brasil', 'dif'),
+      'CO': (460, 'Colômbia', 'dif'), 'CL': (530, 'Chile', 'dif')}
+def axis(k):
+    o = T(40, 56, 'AUTONOMIA HISTÓRICA DAS CORTES, 1990–2015', 't-small', style='letter-spacing:.1em')
+    o += P('M50 300H560', 'ink', style='stroke-width:2')
+    o += T(50, 330, 'menor', 't-small') + T(560, 330, 'maior', 't-small', anchor='end')
+    hi = {0: set(CT), 1: {'VE', 'AR'}, 2: {'CO', 'CL'}, 3: {'BR', 'AR'}}[k]
+    for key, (x, name, tone) in CT.items():
+        on = key in hi
+        y = 300 - (60 if key in ('AR', 'CO') else 30)
+        o += P(f'M{x} 300V{y+8}', 'thin')
+        o += C(x, 300, 8 if on else 5, ('f-ink' if on else 'ink'))
+        o += T(x, y, name, ('t-mid tc-' + tone) if on else 't-small', anchor='middle')
+    if k == 0:
+        o += G(box(50, 380, 250, 90, 'CAMINHO 1', 'baixa autonomia histórica,', 'conc', ctx='axis', sub2='instabilidade, partidos'), 'pop', d=.2)
+        o += G(box(310, 380, 250, 90, 'CAMINHO 2', 'autonomia maior, com', 'dif', ctx='axis', sub2='mecanismos diferentes'), 'pop', d=.4)
+    elif k == 1:
+        o += G(box(50, 380, 510, 90, 'O QUE OS APROXIMA', 'ministros com passagem por cargos eletivos;', 'conc', ctx='axis', sub2='regras de nomeação contornadas (Venezuela)'), 'pop', d=.2)
+        o += P('M190 226C230 196 262 196 290 216', 'c-conc grow', style='--d:.5s') + G(T(262, 184, 'reformas recentes', 't-small tc-conc', anchor='middle'), 'fade', d=.7)
+    elif k == 2:
+        o += G(box(50, 380, 510, 90, 'COOPTAÇÃO', 'a hierarquia judicial escolhe quem sobe:', 'dif', ctx='axis', sub2='autonomia alta, elite autocentrada'), 'pop', d=.2)
+    else:
+        o += P('M190 300C190 200 380 200 380 300', 'c-mix grow', style='stroke-dasharray:6 5;stroke-width:2;--d:.2s')
+        o += G(T(285, 205, 'mesma regra: presidente + Senado', 't-small', anchor='middle'), 'fade', d=.5)
+        o += G(box(50, 380, 510, 90, 'O QUE EXPLICA A DIFERENÇA', 'estabilidade institucional e elites que', 'dif', ctx='axis', sub2='buscam legitimação jurídica (Brasil)'), 'pop', d=.6)
+    return o
+
+
+# ---- Map: the 19 countries of the table
+L19 = ['ARG','BOL','BRA','CHL','COL','CRI','CUB','DOM','ECU','SLV','GTM','HND','MEX','NIC','PAN','PRY','PER','URY','VEN']
+MODEL = {**{k: 'dif' for k in ['BOL','CHL','COL','DOM','ECU','GTM','PER']},
+         **{k: 'mix' for k in ['CRI','SLV','HND','NIC','PRY','VEN']},
+         **{k: 'conc' for k in ['ARG','BRA','MEX','PAN','URY']}, 'CUB': 'hatch'}
+WHO = {**{k: 'grey' for k in ['ARG','BRA','COL','CRI','SLV','PAN','PER','URY','VEN']},
+       **{k: 'dif' for k in ['CHL','DOM','HND','PRY','NIC','GTM']},
+       'ECU': 'mix', 'BOL': 'conc', 'MEX': 'conc', 'CUB': 'hatch'}
+def cmap(k):
+    if k == 0:
+        return latam_map(MODEL, L19, title='ONDE ESTÁ O CONTROLE DE CONSTITUCIONALIDADE',
+                         key=[('dif', 'tribunal constitucional autônomo'), ('mix', 'sala da corte suprema'), ('conc', 'a própria corte suprema'), ('hatch', 'controle político')])
+    return latam_map(WHO, L19, title='QUEM ESCOLHE OS JUÍZES CONSTITUCIONAIS',
+                     key=[('grey', 'Executivo e/ou Legislativo'), ('dif', 'com magistratura ou fontes mistas'), ('mix', 'concurso público'), ('conc', 'eleição popular')])
+
+COURTS = [
+    ['Argentina', 'Corte Suprema', 'Suprema Corte', '5', 'Presidente + Senado (2/3)', 'Difuso; concreto'],
+    ['Bolívia', 'Tribunal Constitucional Plurinacional', 'TC autônomo', '9', 'Eleição popular', 'Concentrado + pluralismo jurídico'],
+    ['Brasil', 'STF', 'Suprema Corte', '11', 'Presidente + Senado', 'Difuso + concentrado, muito amplo'],
+    ['Chile', 'Tribunal Constitucional', 'TC autônomo', '10', 'Presidente + Congresso + Corte Suprema', 'Preventivo + repressivo'],
+    ['Colômbia', 'Corte Constitucional', 'TC autônomo', '9', 'Senado, a partir de 3 ternas', 'Concentrado + tutela'],
+    ['Costa Rica', 'Sala Constitucional da Corte Suprema', 'Sala', '7', 'Seleção pública; eleição pela Assembleia (2/3)', 'Concentrado + amparo/habeas corpus'],
+    ['Cuba', 'Assembleia Nacional', 'Controle político', 'n/d', 'n/d', 'Controle pela Assembleia'],
+    ['Rep. Dominicana', 'Tribunal Constitucional', 'TC autônomo', '13', 'Conselho Nacional da Magistratura', 'Concentrado + preventivo'],
+    ['Equador', 'Corte Constitucional', 'TC autônomo', '9', 'Concurso público, comissão tripartite', 'Concentrado + garantias'],
+    ['El Salvador', 'Sala Constitucional da CSJ', 'Sala', '5', 'Assembleia Legislativa', 'Inconstitucionalidade + amparo + habeas corpus'],
+    ['Guatemala', 'Corte de Constitucionalidade', 'TC autônomo', '5', 'Cinco fontes institucionais', 'Concentrado + amparo'],
+    ['Honduras', 'Sala Constitucional da CSJ', 'Sala', '5', 'Integrantes da CSJ', 'Inconstitucionalidade + amparo'],
+    ['México', 'Suprema Corte', 'Suprema Corte', '9', 'Eleição popular; candidaturas dos três Poderes', 'Concentrado + amparo'],
+    ['Nicarágua', 'Sala Constitucional da CSJ', 'Sala', '6*', 'Assembleia + Corte Suprema', 'Amparo + inconstitucionalidade'],
+    ['Panamá', 'Pleno da Corte Suprema', 'Suprema Corte', '9', 'Executivo', 'Concentrado pelo Pleno'],
+    ['Paraguai', 'Sala Constitucional da CSJ', 'Sala', '3*', 'Corte Suprema', 'Inconstitucionalidade, sobretudo concreta'],
+    ['Peru', 'Tribunal Constitucional', 'TC autônomo', '7', 'Congresso', 'Concentrado + processos de tutela'],
+    ['Uruguai', 'Suprema Corte', 'Suprema Corte', '5', 'Assembleia Geral (2/3)', 'Concentrado, efeitos no caso'],
+    ['Venezuela', 'Sala Constitucional do TSJ', 'Sala', '7*', 'Assembleia Nacional', 'Concentrado + amplo'],
+]
+
+b = map_defs()
+b += chapter('01', 'c1', 'A pergunta', 'Por que, depois das ditaduras, algumas cortes latino-americanas viraram atores políticos centrais e outras não?', 'dif')
+b += longform(
+    '<p>A Aula 01 terminou com a redemocratização entregando às cortes a guarda de Constituições cheias de direitos. A segunda metade da aula de 17/08 pergunta o que aconteceu com essa entrega. Todas as cortes da região ganharam o mesmo poder? Usaram-no do mesmo jeito?</p>',
+    '<p>O texto da aula é um estudo de Fabiano Engelmann e Júlia Veiga Vieira Mâncio Bandeira, da UFRGS, publicado na revista <em>Dados</em> em 2017. O ponto de partida é um paradoxo. Os países latino-americanos compartilham a mesma cultura jurídica, tributária do <em>civil law</em> europeu; suas instituições judiciais nasceram de uma matriz muito parecida, num caso típico do que Bertrand Badie e Guy Hermet chamaram de “Estado importado”. Ainda assim, as relações entre juízes e políticos seguiram trajetórias nitidamente diferentes, e são essas trajetórias, dizem eles, que determinam as condições de protagonismo do Judiciário nas democracias recentes.</p>')
+
+b += chapter('02', 'c2', 'Como o estudo foi feito', 'Não pelas decisões, mas pelas pessoas que as tomam.')
+b += longform(
+    '<p>A maior parte da literatura sobre “judicialização da política” estuda o efeito das decisões dos tribunais. Engelmann e Bandeira olham para outro lugar: quem são os juízes das cortes superiores, de onde vêm e como chegaram lá. Mapearam <strong>286 ministros</strong> das cortes superiores de Argentina, Brasil, Chile, Colômbia e Venezuela que atuaram entre <strong>1990 e 2015</strong>, e cruzaram esses percursos com a macro-história das relações entre Judiciário e política em cada país.</p>',
+    '<p>Alguns traços aparecem em toda parte, independentemente do grau de autonomia da corte. Muitos ministros têm pós-graduação e dão aula, o que os autores ligam ao peso da doutrina e à fraca separação entre faculdades de direito e prática jurídica na região. Quase nenhum tem inserção internacional, ao contrário de outras elites burocráticas, como a dos economistas. Predomina a origem na magistratura, com mais gente vinda de outras profissões jurídicas no Brasil e na Argentina. E o associativismo de juízes é forte, sobretudo nesses dois países. O quadro geral é de uma elite que reproduz tradições jurídicas herdadas da colonização espanhola, com bastante conservadorismo doutrinário.</p>',
+    '<p>As diferenças aparecem quando se cruzam esses dados com a história política. É aí que surgem os dois caminhos.</p>')
+
+b += bet('Brasil e Argentina escolhem os ministros de suas cortes supremas por um modelo parecido: indicação presidencial com aprovação do Senado. Suas cortes terão trajetórias de autonomia parecidas?', [
+    ('Sim: quem controla a nomeação controla a corte, e o modelo é o mesmo.', ''),
+    ('Não: a regra de nomeação não basta; pesam a estabilidade institucional e a relação entre as elites.', '*Engelmann e Bandeira'),
+], '<p>Os autores ficam com a segunda. O Brasil, “apesar de compartilhar o mesmo modelo de recrutamento judicial da Argentina”, é para eles um caso típico de grande protagonismo político, enquanto a Argentina está no grupo de menor autonomia histórica.</p>')
+
+b += chapter('03', 'c3', 'Dois caminhos', 'A mesma matriz jurídica produziu cortes com graus muito diferentes de autonomia.', 'dif')
+b += scrolly('Onde cada corte ficou', [('p-ax0', axis(0), 'Os cinco países'), ('p-ax1', axis(1), 'Argentina e Venezuela'), ('p-ax2', axis(2), 'Chile e Colômbia'), ('p-ax3', axis(3), 'Brasil')], [
+    S('p-ax0', 'A tese', 'Dois grupos', '<p>No primeiro grupo, <strong>Argentina e Venezuela</strong>: Judiciários com padrão histórico de baixa autonomia, maior instabilidade institucional e aparelhamento pelos partidos. No segundo, <strong>Brasil, Chile e Colômbia</strong>: trajetórias em que predomina maior autonomia das cortes.</p><p>O agrupamento é analítico. Os países de cada grupo não têm a mesma história; compartilham uma dimensão, a forma como elites judiciais e políticas se relacionaram.</p>', 'dif'),
+    S('p-ax1', 'Caminho 1', 'Argentina e Venezuela', '<p>São os países em que mais ministros passaram por cargos eletivos, sinal de trânsito entre a corte e a política representativa. Na Argentina, a própria Corte validou por <em>acordadas</em> os golpes de 1930, 1943, 1955, 1962, 1966 e 1976; em 1947, o governo Perón destituiu quatro de seus cinco ministros por terem legitimado o golpe de 1930, e daí em diante cada troca de governo trocou a Corte inteira. Na Venezuela, os autores relatam descumprimento das regras de recrutamento e nomeações em regimes de exceção; quase metade dos ministros veio da magistratura, e isso não bastou.</p><p>Mas os dois países introduziram, na última década do estudo, mecanismos para afastar os ministros da política. Na Argentina, a autonomia da Corte ficou mais evidente, inclusive com confrontos abertos com o Executivo.</p>', 'conc'),
+    S('p-ax2', 'Caminho 2', 'Chile e Colômbia: cooptação', '<p>Os Judiciários chileno e colombiano são considerados os mais independentes da América do Sul, e os autores explicam isso pela <strong>cooptação</strong>: a própria hierarquia judicial participa da seleção e da promoção de seus membros. O recrutamento é endógeno, corporativo.</p><p>O preço é uma elite judicial “autocentrada e alheia às transformações do país”. Na Colômbia, a tendência foi atenuada: a violência política das últimas décadas tornou o Judiciário mais ativo. É a Corte que as Aulas 04 e 07 mostram em ação.</p>', 'dif'),
+    S('p-ax3', 'Caminho 2', 'Brasil: nomeação política, corte forte', '<p>O Brasil nomeia como a Argentina e, mesmo assim, está no outro grupo. O que explica a diferença, para os autores, é a maior estabilidade institucional e a preocupação das elites políticas com a legitimação jurídica.</p><p>O ativismo se acentuou nos anos 1990 e assumiu três formas: a ampliação de demandas coletivas por direitos da Constituição de 1988; a arbitragem de disputas entre Legislativo e Executivo; e, mais recentemente, o <strong>ativismo punitivo</strong> do “combate à corrupção”. Protagonismo, portanto, não é sinônimo de proteção de direitos.</p>', 'dif'),
+])
+
+b += chapter('04', 'c4', 'O mapa institucional', 'Dezenove países, quatro formas de organizar o controle de constitucionalidade.')
+b += longform(
+    '<p>O segundo material da aula é um quadro das cortes constitucionais latino-americanas no século XXI. Ele responde a outra pergunta: não como as cortes conquistaram autonomia, mas <strong>que desenho</strong> cada país deu ao controle de constitucionalidade hoje.</p>')
+b += scrolly('As cortes constitucionais da região (fronteiras atuais)', [('p-mp0', cmap(0), 'Modelo de controle'), ('p-mp1', cmap(1), 'Quem escolhe')], [
+    S('p-mp0', 'Onde está o controle', 'Quatro desenhos', '<p>Sete países criaram tribunais constitucionais autônomos, separados do Judiciário ordinário, quase todos na faixa andina e no Caribe. Seis puseram o controle numa sala especializada da corte suprema, padrão que domina a América Central. Cinco deixaram a função com a própria corte suprema, entre eles os três maiores países da região. Em Cuba, quem controla a Constituição é a Assembleia.</p>', 'dif'),
+    S('p-mp1', 'Quem escolhe', 'Política, magistratura, concurso, voto', '<p>Na maioria dos países, os juízes constitucionais saem de uma negociação entre Executivo e Legislativo. Em outros, a magistratura ou fontes mistas participam da escolha, o que lembra a cooptação que Engelmann e Bandeira associam à autonomia chilena. O Equador faz concurso público. E dois países, a <strong>Bolívia</strong> e o <strong>México</strong>, levaram a escolha às urnas.</p>', 'conc'),
+])
+b += wide(table(['País', 'Órgão', 'Modelo', 'Nº', 'Quem escolhe', 'Traço da jurisdição'], COURTS))
+b += longform(
+    '<p>O asterisco indica o número de integrantes da sala constitucional, e não da corte suprema inteira. Lido em colunas, o quadro mostra quatro coisas.</p>',
+    '<p><strong>Onde está o controle.</strong> Há tribunais constitucionais autônomos, separados do Judiciário ordinário (Bolívia, Chile, Colômbia, Equador, Guatemala, Peru, República Dominicana); salas constitucionais dentro das cortes supremas (Costa Rica, El Salvador, Honduras, Nicarágua, Paraguai, Venezuela); cortes supremas que acumulam a função (Argentina, Brasil, México, Panamá, Uruguai); e um caso de controle político, Cuba, onde quem controla é a própria Assembleia.</p>',
+    '<p><strong>Quem escolhe.</strong> A maioria combina Executivo e Legislativo, às vezes com maioria qualificada de dois terços (Argentina, Costa Rica, Uruguai). Alguns dão peso à própria magistratura (República Dominicana, Honduras, Paraguai) ou a concursos (Equador). E dois países elegem seus juízes constitucionais pelo voto popular: a <strong>Bolívia</strong> e, desde a reforma judicial recente, o <strong>México</strong>. A comparação com Engelmann e Bandeira fica interessante aqui: cooptação, nomeação política e eleição direta são três respostas diferentes à mesma tensão entre independência e legitimidade democrática.</p>',
+    '<p><strong>Como se controla.</strong> O controle pode ser difuso (qualquer juiz, no caso concreto, como na Argentina) ou concentrado (um órgão, com efeitos gerais); preventivo (antes de a lei valer, como no Chile e na República Dominicana) ou repressivo. O Brasil combina tudo, num sistema difuso e concentrado “muito amplo”.</p>',
+    '<p><strong>Quem chega à corte.</strong> Tutela, amparo e habeas corpus são vias pelas quais o cidadão leva diretamente uma violação de direitos à jurisdição constitucional. É por essa porta, a tutela colombiana, que chegaram os casos da T-153 e da T-025.</p>')
+
+b += chapter('05', 'c5', 'Cortes fortes são boas para a democracia?', 'O estudo não responde com um sim; mostra por que a pergunta é ambivalente.', 'dif')
+b += longform(
+    eixo('Cortes constitucionais, separação de poderes, democracia e proteção de direitos: o que a expansão da jurisdição constitucional fez com a democracia latino-americana?', 'Tema da aula de 17/08'),
+    '<p>A expansão da jurisdição constitucional é a resposta da redemocratização ao medo de que o autoritarismo voltasse. Uma corte com autonomia pode controlar o Executivo e proteger direitos quando maiorias os ameaçam. A Aula 01 mostrou por que isso importa numa região de presidentes fortes.</p>',
+    '<p>Engelmann e Bandeira terminam, porém, apontando dois riscos opostos. Onde a autonomia veio da cooptação, ela pode favorecer um <strong>hipercorporativismo</strong> que restringe respostas efetivas a demandas coletivas. Onde as democracias abriram as portas à justiça, pode haver <strong>hiperjudicialização</strong> de matérias políticas. E há uma tendência que cruza os dois eixos, o fortalecimento corporativo da magistratura somado a um protagonismo político crescente, que para os autores ainda está por ser desvendada e pode reconfigurar a representação política.</p>',
+    '<p>Para a prova, a resposta boa separa três coisas que o senso comum mistura: <strong>autonomia</strong> (a corte está protegida de pressões externas?), <strong>protagonismo</strong> (ela intervém em disputas políticas?) e <strong>proteção de direitos</strong> (a intervenção serve a quem?). Na leitura dos autores, o Chile combina autonomia alta com distância das transformações do país; o Brasil tem autonomia e protagonismo, e a proteção de direitos varia conforme o caso. O resto da disciplina testa essa distinção caso a caso: a ADPF 153 e as cortes colombianas diante do passado autoritário (Aulas 03 e 04), a Corte Interamericana diante da soberania popular (Aulas 05 e 06), o estado de coisas inconstitucional (Aulas 07 a 09).</p>')
+
+b += chapter('06', 'c6', 'Teste', 'Responda antes de abrir.')
+b += quiz([
+    ('Qual o paradoxo de partida de Engelmann e Bandeira?', 'Os países latino-americanos compartilham a mesma cultura jurídica, tributária do civil law europeu, e instituições judiciais de matriz semelhante (“Estado importado”), mas as relações entre elites judiciais e políticas seguiram trajetórias muito diferentes.'),
+    ('Qual o recorte do estudo?', '286 ministros das cortes superiores de Argentina, Brasil, Chile, Colômbia e Venezuela, entre 1990 e 2015, cruzando perfis e percursos com a macro-história política de cada país.'),
+    ('Quais são os dois grupos e o que caracteriza cada um?', 'Argentina e Venezuela: baixa autonomia histórica, instabilidade e aparelhamento partidário, com reformas recentes para afastar ministros da política. Brasil, Chile e Colômbia: maior autonomia, por cooptação (Chile e Colômbia) ou por estabilidade institucional e busca de legitimação jurídica (Brasil).'),
+    ('O que é cooptação, e qual seu custo?', 'É a participação da própria hierarquia judicial na seleção e promoção de seus membros. Gera autonomia e recrutamento endógeno, mas também uma elite autocentrada e alheia às transformações do país.'),
+    ('Por que o Brasil desmente a ideia de que nomeação política impede autonomia?', 'Porque usa o mesmo modelo de recrutamento da Argentina (presidente e Senado) e, ainda assim, tem uma corte com grande protagonismo, graças à estabilidade institucional e à preocupação das elites com a legitimação jurídica.'),
+    ('Quais países elegem juízes constitucionais pelo voto popular, segundo o quadro da aula?', 'Bolívia (Tribunal Constitucional Plurinacional) e México (Suprema Corte, com candidaturas postuladas pelos três Poderes).'),
+    ('Quais os dois riscos que os autores apontam no fim do estudo?', 'O hipercorporativismo, quando a autonomia restringe respostas a demandas coletivas, e a hiperjudicialização de matérias políticas, quando a democracia leva tudo às cortes.'),
+])
+
+lesson('02', 'aula-02.html', 'Cortes e democratização',
+       'Cortes constitucionais e democratização na América Latina: o estudo de Engelmann e Bandeira sobre a autonomia política do Judiciário em Argentina, Brasil, Chile, Colômbia e Venezuela, e o quadro das cortes constitucionais da região no século XXI.',
+       'Cortes e', 'democratização',
+       'A mesma herança jurídica, a mesma promessa de direitos. Mas algumas cortes <strong class="dif">ganharam autonomia</strong> e outras ficaram <strong class="conc">presas à política</strong>. A regra de nomeação explica pouco.',
+       hero, [('Aula', '17/08 · parte 2'), ('Leitura', '≈ 18 min'), ('Antes', 'Aula 01 · Constitucionalismo'), ('Depois', 'Aula 03 · ADPF 153')], b,
+       ('aula-01.html', '← Aula 01', 'Constitucionalismo latino-americano'), ('aula-03.html', 'Aula 03 →', 'ADPF 153 e a Lei de Anistia'), '17/08')

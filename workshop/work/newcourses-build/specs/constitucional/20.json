@@ -1,0 +1,33 @@
+{
+ "key": "20",
+ "date": "Semanas 15–18",
+ "pages": [
+  {
+   "file": "aula-20.html",
+   "h1a": "Propriedade: função",
+   "h1b": "social e intervenção",
+   "title": "Propriedade: garantia, função social e intervenção",
+   "desc": "Art. 5º, XXII e XXIII, função social urbana e rural, requisição, desapropriação, expropriação sem indenização do art. 243 e usucapião constitucional.",
+   "deck": "A Constituição protege uma posição individual <strong class=\"dif\">já submetida a fins e limites</strong>. A prova cobra a modalidade certa de intervenção: limitação, requisição, desapropriação, expropriação ou usucapião, cada uma com <strong class=\"conc\">requisitos próprios</strong>.",
+   "bet": {
+    "after_chapter": 3,
+    "question": "Um Município quer desapropriar de imediato um terreno urbano vazio, incluído no plano diretor e sujeito a lei municipal específica, pagando em títulos da dívida pública. Ele ainda não exigiu parcelamento ou edificação compulsórios nem aplicou IPTU progressivo. A medida é compatível com o art. 182, § 4º?",
+    "options": [
+     ["Sim: o terreno é não edificado e está no plano diretor, o que basta para a desapropriação com pagamento em títulos.", ""],
+     ["Não: a desapropriação-sanção pressupõe a sequência constitucional. Primeiro parcelamento ou edificação compulsórios, depois IPTU progressivo no tempo, e só então desapropriação com títulos, sempre que as anteriores não tiverem produzido o aproveitamento exigido.", "*"],
+     ["Sim: por ser interesse social, a desapropriação dispensa as etapas anteriores, que valem só para imóvel rural.", ""],
+     ["Não: em imóvel urbano só cabe desapropriação com justa indenização prévia em dinheiro, e os títulos são exclusivos da reforma agrária.", ""]
+    ],
+    "reveal": "<p>O art. 182, § 4º, exige área incluída no plano diretor, lei municipal específica e solo não edificado, subutilizado ou não utilizado, e permite medidas sucessivas. A desapropriação com títulos, resgatáveis em até dez anos, é a última. Se o proprietário constrói conforme a exigência após a primeira etapa, não se salta à desapropriação-sanção, e a frase &quot;o imóvel não cumpre sua função social&quot; não substitui o exame da sequência cumprida.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  ["Como se articulam o art. 5º, XXII, e o art. 5º, XXIII?", "Os dois comandos se leem juntos: se a função social eliminasse a posição individual, o inciso XXII perderia conteúdo; se a garantia impedisse qualquer dever coletivo, o XXIII não teria aplicação. A propriedade é relação entre o proprietário e os demais sujeitos, que devem respeitá-la, e a Constituição protege uma posição individual já submetida a fins e limites. Tavares não adota a função social como explicação exclusiva, porque a desapropriação exige indenização."],
+  ["Qual a diferença entre função social e limitação de polícia?", "A função social conforma a estrutura do direito, ajudando a definir o que a propriedade é e para que serve. As limitações de polícia condicionam o exercício de faculdades que continuam do proprietário, como a regra municipal de altura da construção. Descumprir uma regra de uso não autoriza retirar o bem."],
+  ["Quais os requisitos da função social rural e as consequências do descumprimento?", "O art. 186 exige simultaneamente aproveitamento racional e adequado, uso adequado dos recursos naturais e preservação ambiental, observância das normas trabalhistas e exploração favorável ao bem-estar de proprietários e trabalhadores. Não são alternativos: fazenda produtiva com trabalho irregular não cumpre. O descumprimento permite à União desapropriar por interesse social para reforma agrária (art. 184), sem afastar indenização e procedimento, e distinta da expropriação do art. 243."],
+  ["Como se distinguem restrição, servidão, requisição e desapropriação?", "Para Tavares, as restrições atingem o caráter absoluto da propriedade, as servidões o exclusivo e a desapropriação o perpétuo. A requisição do art. 5º, XXV, é uso temporário diante de perigo público iminente, com indenização ulterior só se houver dano, e não transfere a propriedade. A desapropriação transfere o bem ao Estado por necessidade ou utilidade pública ou interesse social, com justa indenização prévia em dinheiro, salvo exceções constitucionais de títulos (arts. 182, § 4º, III, e 184)."],
+  ["Quando a Constituição autoriza expropriação sem indenização?", "O art. 243 a prevê para imóveis rurais ou urbanos com culturas ilegais de plantas psicotrópicas ou exploração de trabalho escravo (hipótese incluída pela EC 81/2014), com destinação à reforma agrária e à habitação popular. Tavares sustenta que a exceção não se amplia por analogia: infração grave diversa das hipóteses do art. 243 não basta, e a hipótese constitucional e os requisitos legais precisam ser demonstrados."],
+  ["Quais os requisitos das usucapiões especiais urbana e rural e o que ficou pendente no RE 407.688 e no RE 305.416?", "A urbana exige posse contínua e sem oposição por mais de cinco anos de área de até 250 m², para moradia, sem outro imóvel; a rural exige mais de cinco anos em área de até 50 hectares, tornada produtiva por trabalho próprio ou familiar, com moradia e sem outro imóvel. Bens públicos não são usucapíveis (arts. 183, § 3º, e 191). No RE 407.688, Tavares reporta que a maioria manteve a penhora do único imóvel do fiador de locação, e a objeção é dele, não do Tribunal. No RE 305.416, sobre apartamento, não havia decisão final quando o caso é relatado."]
+ ]
+}

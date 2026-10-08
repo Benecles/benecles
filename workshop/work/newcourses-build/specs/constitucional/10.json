@@ -1,0 +1,63 @@
+{
+ "key": "10",
+ "date": "Semanas 12–13",
+ "pages": [
+  {
+   "file": "aula-10.html",
+   "h1a": "Normas no tempo",
+   "h1b": "e recepção",
+   "title": "Normas no tempo: recepção do direito anterior",
+   "desc": "Recepção como novação, natureza da lei anterior incompatível, ação cabível, lei em vacatio legis, emenda e mutação, lei revogada no curso da ação e a ADPF 153.",
+   "deck": "Constituição nova não zera o ordenamento: as normas anteriores compatíveis são novadas. A lição compara <strong class=\"dif\">inconstitucionalidade, revogação e não recepção</strong> e mostra a <strong class=\"conc\">ADPF 153</strong> como aplicação do tempo às leis-medida.",
+   "bet": {
+    "after_chapter": 2,
+    "question": "Uma lei de 1965, revogada expressamente em 1975, tem conteúdo perfeitamente compatível com a Constituição de 1988. Um candidato afirma que ela foi recepcionada em 1988. Está certo?",
+    "options": [
+     [
+      "Sim: basta a compatibilidade de conteúdo com a Constituição nova.",
+      ""
+     ],
+     [
+      "Não: um dos requisitos da recepção é a existência jurídica da lei na data imediatamente anterior à nova Constituição, e em 1988 ela já não existia.",
+      "*"
+     ],
+     [
+      "Sim: a novação revigora toda norma já editada, mesmo revogada, se o conteúdo é compatível.",
+      ""
+     ],
+     [
+      "Não: só se recepciona lei que tenha sido declarada constitucional em controle abstrato antes da mudança.",
+      ""
+     ]
+    ],
+    "reveal": "<p>A recepção exige dois requisitos ao mesmo tempo: existência jurídica na véspera da nova Constituição e compatibilidade de conteúdo. O primeiro evita o regime que Tavares considera catastrófico, em que toda norma editada alguma vez, ainda que retirada por ato posterior, poderia voltar com a Constituição nova. Na recepção, o conteúdo permanece e o fundamento de validade muda: a lei recepcionada é, juridicamente, uma lei nova.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Por que existe a recepção e o que muda na lei recepcionada?",
+   "Sem ela, o país ficaria sem regras até o legislador refazer todo o ordenamento. Segundo Kelsen, a Constituição nova filtra a legislação anterior: a compatível passa a valer como se por processo legislativo simplificado. Permanece o conteúdo, e o fundamento de validade passa a ser a Constituição nova, o que Tavares chama de novação."
+  ],
+  [
+   "Quais são os requisitos da recepção?",
+   "Dois, cumulativos: a lei antiga deve existir juridicamente na data imediatamente anterior à entrada em vigor da nova Constituição, e seu conteúdo deve ser compatível com os comandos novos."
+  ],
+  [
+   "Como Miranda, Mendes, o STF, Ramos e Tavares qualificam a lei anterior incompatível?",
+   "Para Jorge Miranda e Gilmar Mendes, inconstitucionalidade. Para o STF (Rp 946, ADI 2) e Elival da Silva Ramos, revogação. Garrido Falla vê questão de legalidade. Tavares rejeita as duas: é não recepção, extinção no plano da existência, sem conflito de leis no tempo nem vício de inconstitucionalidade."
+  ],
+  [
+   "Que ação cabe contra lei anterior à Constituição?",
+   "Para o STF, a ADI é incabível contra lei anterior à Constituição. Tavares tira a mesma consequência para a ADC e defende a admissão da ADPF, sugerindo ainda uma ação declaratória da existência da norma."
+  ],
+  [
+   "Como se resolve a lei em vacatio legis e a lei inválida sob a Constituição antiga?",
+   "Em vacatio, a solução depende de haver lei anterior e de a Constituição nova tolerar ou não a falta de lei. Se exige lei, a cláusula de vacatio cai; se tolera, o prazo é respeitado. A lei inválida sob a Constituição antiga e não declarada inconstitucional em controle abstrato pode ser recepcionada, mas o afetado pode pedir em controle difuso o reconhecimento da invalidade no período anterior (invalidade qualificada)."
+  ],
+  [
+   "O que decidiu o STF na ADPF 153 e qual a lógica sobre o tempo?",
+   "Por maioria, julgou improcedente o pedido da OAB de não recebimento do § 1º do art. 1º da Lei 6.683/1979, nos termos do voto de Eros Grau, com Lewandowski e Ayres Britto vencidos. Para o relator, a lei-medida se interpreta pela realidade do momento em que foi editada, e a EC 26/85 reafirmou a anistia, integrada à origem da ordem de 1988, de modo que a questão da recepção nem se coloca."
+  ]
+ ]
+}
