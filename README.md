@@ -2,7 +2,7 @@
 
 Benecles compiles source material (textbooks, slide decks, case law, syllabi) into structured courses: one topic per sitting, each claim traced to a source, each page checked before it ships. Law is the first subject it has compiled.
 
-**Example output, live:** https://benecles.github.io/ordenacoes-filipinas/ (seven law courses, published as *Ordenações Filipinas · guias de estudo*; content in Portuguese)
+**Example output, live:** https://benecles.dev/ (seven law courses, published as *Ordenações Filipinas · guias de estudo*; content in Portuguese)
 
 |  |  |
 |---|---|
