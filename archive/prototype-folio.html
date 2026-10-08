@@ -60,14 +60,14 @@ a{color:inherit}button{font:inherit}button,a{-webkit-tap-highlight-color:transpa
 <footer class="page-foot"><p>Um desenho que se constrói com o texto. Uma escolha que muda o percurso.</p><span class="page-no">04 <small>/ 04</small></span></footer></section>
 </div>
 </main>
-<footer class="bottomline"><p>O conteúdo é a matéria. A leitura é o experimento.</p><a href="VISUAL_CRAFT_NOTES.md">Caderno de bordo ↗</a></footer>
+<footer class="bottomline"><p>O conteúdo é a matéria. A leitura é o experimento.</p><a href="../docs/VISUAL_CRAFT_NOTES.md">Caderno de bordo ↗</a></footer>
 <script>
 (()=>{const tabs=[...document.querySelectorAll('.tab')],panels=[...document.querySelectorAll('.panel')],nav=document.querySelector('.tabs');nav.setAttribute('role','tablist');tabs.forEach(t=>t.setAttribute('role','tab'));panels.forEach(p=>{p.setAttribute('role','tabpanel');p.tabIndex=0});
 function select(n,focus=false){if(n<0||n>3)n=0;tabs.forEach((t,i)=>{t.setAttribute('aria-selected',String(i===n));t.tabIndex=i===n?0:-1;panels[i].hidden=i!==n});document.documentElement.style.setProperty('--accent',panels[n].dataset.accent);if(focus)tabs[n].focus();}
 function initial(){const n=Number(location.hash.replace('#folha-',''))-1;select(Number.isInteger(n)&&n>=0&&n<4?n:0)}
 tabs.forEach((t,n)=>{t.addEventListener('click',()=>{history.replaceState(null,'','#folha-'+(n+1));select(n)});t.addEventListener('keydown',e=>{let target;if(e.key==='ArrowRight')target=(n+1)%4;if(e.key==='ArrowLeft')target=(n+3)%4;if(e.key==='Home')target=0;if(e.key==='End')target=3;if(target!==undefined){e.preventDefault();history.replaceState(null,'','#folha-'+(target+1));select(target,true)}})});window.addEventListener('hashchange',initial);initial();})();
 </script>
-<script src="assets/offline.js" defer></script>
-<script src="assets/highlight.js" defer></script>
-<script src="assets/highlight-panel.js" defer></script>
+<script src="../assets/offline.js" defer></script>
+<script src="../assets/highlight.js" defer></script>
+<script src="../assets/highlight-panel.js" defer></script>
 </body></html>

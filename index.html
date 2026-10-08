@@ -4,7 +4,16 @@
 <script>(function(){var k='ordenacoes-theme',r=document.documentElement;try{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}catch(e){}document.addEventListener('DOMContentLoaded',function(){var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){var d=r.dataset.theme==='dark';b.setAttribute('aria-pressed',d)}sync();b.addEventListener('click',function(){var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{localStorage.setItem(k,d?'dark':'light')}catch(e){}sync()})})})()</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ordenações Filipinas · guias de estudo</title>
+<title>Ordenações Filipinas · Benecles</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Benecles">
+<meta property="og:title" content="Ordenações Filipinas · Benecles">
+<meta property="og:description" content="Sete disciplinas de Direito da UFRGS, compiladas de livros, slides e decisões em aulas de uma sentada, com figuras e fontes conferidas.">
+<meta property="og:url" content="https://benecles.dev/">
+<meta property="og:image" content="https://benecles.dev/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="description" content="Guias de estudo de Direito da UFRGS, disciplina por disciplina: aulas para ler, com diagramas.">
 <link rel="stylesheet" href="courses/controle-de-constitucionalidade/assets/controle.css">
 <style>
@@ -17,7 +26,7 @@ a.prancha:focus-visible{outline:3px solid var(--conc);outline-offset:4px}
 .prancha h2{font:750 30px/1.02 var(--sans);letter-spacing:-.02em;margin:8px 0 10px}
 .prancha p{margin:0;font-size:17px;line-height:1.5;color:var(--ink-2)}
 .prancha .stamp{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1.5px solid var(--ink)}
-.prancha .stamp span{padding:7px 12px;border-right:1px solid var(--ink);font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.prancha .stamp span{padding:7px 12px;border-right:1px solid var(--ink);font:11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
 .prancha .stamp span:last-child{border-right:0}
 .prancha .stamp b{display:block;font:600 13px var(--sans);letter-spacing:0;text-transform:none;color:var(--ink)}
 .prancha.vazia{border-style:dashed;box-shadow:none;background:transparent}
@@ -55,6 +64,8 @@ a.prancha:focus-visible{outline:3px solid var(--conc);outline-offset:4px}
 :root[data-theme="dark"] img{filter:brightness(.9)}
 body{transition:background-color .35s ease,color .35s ease}
 .topbar{align-items:center}
+.gh{display:inline-flex;align-items:center;gap:7px;color:var(--ink-2);text-decoration:none}.gh svg{width:14px;height:14px;fill:currentColor;flex:none}.gh:hover,.gh:focus-visible{color:var(--ink)}
+.hist-card button.danger:hover{color:#8a2f1c}
 .topbar>span{margin-left:auto}
 .theme-toggle{display:inline-flex;align-items:center;gap:8px;padding:4px 2px;border:0;background:none;color:var(--ink-2);font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer}
 .theme-toggle:hover{color:var(--ink)}
@@ -67,7 +78,7 @@ body{transition:background-color .35s ease,color .35s ease}
 </style>
 </head>
 <body>
-<nav class="topbar"><span>Ordenações Filipinas</span><span>UFRGS · Direito · 2026/2</span><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
+<nav class="topbar"><span>Ordenações Filipinas</span><span>UFRGS · Direito · 2026/2</span><a class="gh" href="https://github.com/Benecles/benecles"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a><button class="theme-toggle" type="button" aria-pressed="false" title="Alternar modo noite"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Modo noite</span></button></nav>
 
 <header class="hero hero-shelf"><h1 class="sr-only">Guias de estudo de Direito da UFRGS</h1></header>
 
@@ -173,12 +184,12 @@ body{transition:background-color .35s ease,color .35s ease}
 <section class="about">
   <div><h3>Guias de estudo, não resumos.</h3><p>O conteúdo aparece por inteiro, reorganizado para leitura, do conceito à jurisprudência.</p></div>
 </section>
-<footer class="foot"><span>Ordenações Filipinas</span><span class="foot-r"><a href="caderno.html">Meu caderno</a><details class="hist"><summary>Histórico neste aparelho</summary><div class="hist-card">
+<footer class="foot"><span>Ordenações Filipinas · <a class="gh" href="https://github.com/Benecles/benecles"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>Benecles</a></span><span class="foot-r"><a href="caderno.html">Meu caderno</a><details class="hist"><summary>Histórico neste aparelho</summary><div class="hist-card">
 <p>O site guarda, só neste navegador, a última aula aberta de cada disciplina (para o “continuar de onde parou”), suas marcações, favoritos e o progresso dos cartões.</p>
 <button type="button" data-act="resume">Esquecer onde parei</button>
 <label><input type="checkbox" data-act="nores"> Não lembrar onde parei</label>
 <button type="button" data-act="all" class="danger">Apagar tudo: marcações e cartões também</button>
-<p class="hist-st" role="status" aria-live="polite"></p></div></details><a href="index-folio-teoria.html">Página inicial anterior</a></span></footer>
+<p class="hist-st" role="status" aria-live="polite"></p></div></details></span></footer>
 <style>.foot-r{display:flex;gap:22px;align-items:baseline;flex-wrap:wrap}.hist{position:relative}.hist>summary{cursor:pointer;list-style:none;color:var(--muted)}.hist>summary::-webkit-details-marker{display:none}
 .hist>summary:hover,.hist[open]>summary{color:var(--conc)}.hist-card{position:absolute;right:0;bottom:calc(100% + 10px);width:min(340px,calc(100vw - 32px));padding:16px 18px;background:var(--paper);border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--grid-major);text-transform:none;letter-spacing:0;display:grid;gap:10px;z-index:20}
 .hist-card p{font:13.5px/1.45 var(--serif);color:var(--ink-2);margin:0}.hist-card button{font:600 13px var(--sans);text-align:left;padding:9px 12px;background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);cursor:pointer}

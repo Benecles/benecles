@@ -62,7 +62,7 @@ It began as one student's study site for the UFRGS law course. This repository h
 
 The workshop history comes from a private repository. Source texts (book chapters, slides, exams) and personal files were removed from every commit; the shelf and triage files keep the record of what each source was and where it was used.
 
-Earlier design directions are kept: `specimen/` shows each house component in every state, `experiments/` and the prototype pages at the root (`prototype-folio.html`, `index-alt-*.html`) are the original studies, and `VISUAL_CRAFT_NOTES.md` records the design process.
+Earlier design directions are kept: `specimen/` shows each house component in every state, `experiments/` holds the material studies, `archive/` the original prototype pages, and [`docs/VISUAL_CRAFT_NOTES.md`](docs/VISUAL_CRAFT_NOTES.md) the design log.
 
 ## License
 
