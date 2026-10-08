@@ -195,18 +195,6 @@ def slop_svg() -> str:
 
 # ---------------------------------------------------------------- page
 
-def spec(title: str, body: str, href: str | None = None, cls: str = "") -> str:
-    link = f'<a href="{esc(href)}">open ↗</a>' if href else ""
-    return f'<figure class="spec {cls}"><header><span>{title}</span>{link}</header><div class="b">{body}</div></figure>'
-
-
-def stage(no: str, model: str, title: str, text: str, chips: list[tuple[str, str]], art: str, extra: str = "") -> str:
-    ch = "".join(f'<span class="chip {c}">{esc(t)}</span>' for t, c in chips)
-    return (f'<div class="stage"><div class="no">{no}<small>{esc(model)}</small></div>'
-            f'<div><h3>{title}</h3><p>{text}</p><div class="chips">{ch}</div></div>'
-            f'<div>{art}</div>{extra}</div>')
-
-
 def intake() -> tuple[list[tuple[int, str]], int, int, int]:
     """The reading list of one job (Processo Civil I), measured from its chapter indexes."""
     import json
@@ -239,114 +227,262 @@ SHORT_TITLES = {
 }
 
 
+
+# ---------------------------------------------------------------- the lesson's own figures
+
+def proc_lessons() -> list[tuple[str, int]]:
+    """Published Processo Civil I lessons in syllabus order, with their reading time."""
+    out = []
+    for p in (ROOT / "courses/processo-civil-i").glob("aula-*.html"):
+        m = re.findall(r"≈ *(\d+) *min", p.read_text(encoding="utf-8"))
+        if m:
+            out.append((p.stem.replace("aula-", ""), int(m[0])))
+
+    def key(item):
+        num, _, suffix = item[0].partition("-")
+        return (int(num), suffix != "", suffix)
+    return sorted(out, key=key)
+
+
+STEPS = [  # (code, short name, big number, unit, excerpt lines, card title, card text)
+    ("01", "Course map", "22", "lessons on the map",
+     ["aula-06-citacao · week 7 · exam P1", "task: Ler AR, edital, mandado e certidão",
+      "      e identificar o ato registrado"],
+     "The syllabus is read in its own order",
+     "Each topic of the syllabus becomes a lesson, with one line on what the student must be able to do afterwards and links to the earlier lessons it builds on."),
+    ("02", "Shelf", "42", "sources catalogued",
+     ["didier-curso-vol1-2017 · book_base", "Curso de direito processual civil, vol. 1", "sha256 4afef9ce79a… · text layer"],
+     "Every source is catalogued",
+     "Each book, slide deck, decision and exam gets a row with its edition, its file and a SHA-256 fingerprint of that file. A book that never arrives stays listed as missing, and nothing from memory stands in for it."),
+    ("03", "Chapters", "1,283", "chapters cut",
+     ["===== p. 684 (PDF 682) =====", "CAPÍTULO 17 · Citação", "PDF 681–698 · 7,399 words"],
+     "Books are cut into chapters",
+     "Each book is cut along its own table of contents, and every page keeps its printed number. A script then confirms that no page is missing or counted twice."),
+    ("04", "Triage", "28,285", "decisions written down",
+     ["ch17 → aula-06-citacao · primary", "why: the bounded chapter on citação", "     supplies the essential doctrine"],
+     "Each chapter is matched to the lessons it serves",
+     "Every chapter is weighed against every lesson, and each decision is written down with its reason, rejections included."),
+    ("05", "Folder", "76", "files in Aula 06's folder",
+     ["20-primary-001-didier…-ch17.txt", "30-supporting-001…029 · CPC arts.", "50-exercises-and-exams.txt"],
+     "Each lesson's material goes into one folder",
+     "A script copies the chosen chapters, statute articles and exam questions into the lesson's folder and writes an index tracing every file to its page."),
+    ("06", "Plan", "18.4 : 1", "source words per lesson word",
+     ["Can do after reading:", "1. Read an AR, edital or mandado and", "   name the communication act recorded"],
+     "The lesson is planned before it is written",
+     "The plan names the tasks a student can do after reading, the exam traps, each section with its source pages, and each figure with the claim it carries."),
+    ("07", "Review", "2", "rounds before approval",
+     ["round 1 · REVISE · five numbered points", "round 2 · APPROVED", "“Figures use the actual records”"],
+     "A second reader checks the plan",
+     "A different model reads the plan against the syllabus and the exam questions. It approves the plan or returns it with at most five numbered objections, and a plan returned twice goes to Claude."),
+    ("08", "Writing", "≈ 23", "minutes to read Aula 06",
+     ["prose and figures in one context", "from the approved plan", "one writer per lesson"],
+     "Text and figures are written together",
+     "One writer drafts the prose and draws the figures in a single sitting, from the plan, so a figure and the paragraph beside it make the same claim."),
+    ("09", "Finish", "≥ 4", "source blocks per lesson",
+     ["blue · what a court decided", "orange · where a rule stops", "source block · reference in its header"],
+     "Every page gets the same finish",
+     "Marks, source blocks and type are shared across the site. Blue marks what a court decided, orange marks where a rule stops, and each quotation sits in a source block with its reference in the header."),
+    ("10", "Checks", "7", "scripts before it goes live",
+     ["quote_check · slop_lint · house_check", "marks_lint · breakscan", "check_all · offline build"],
+     "Scripts read the page before it goes live",
+     "A pull request waits until every script passes, and the main branch is the live site."),
+]
+
+
+def planta_svg(lessons, items, pages) -> str:
+    """The hero planta: what arrives (bars = pages), the line, what a student opens (bars = minutes)."""
+    W, H = 1080, 480
+    o = [f'<svg class="planta" viewBox="0 0 {W} {H}" role="img" aria-label="Processo Civil I: {len(items)} sources and {fmt(pages)} pages go down ten steps and come out as {len(lessons)} lessons">']
+    o.append('<style>.pk{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;fill:var(--ink-2)}'
+             '.pn{font:400 12px var(--mono);fill:var(--ink)}.pc{font:600 12px var(--mono);fill:var(--ink)}'
+             '.ps{font:500 11px var(--mono);fill:var(--muted)}.pt{font:700 15px var(--sans);fill:var(--ink)}'
+             '.planta a:hover .pt,.planta a:focus .pt{fill:var(--conc)}</style>')
+    # left: the pile, one bar per source, length = pages
+    lx, ly, lw = 20, 64, 250
+    o.append(f'<text class="pk" x="{lx}" y="30">What arrives</text>')
+    o.append(f'<text class="ps" x="{lx}" y="48">{len(items)} sources with page counts · bar = pages</text>')
+    mx = max(n for n, _ in items)
+    y = ly
+    for n, t in items[:6]:
+        w = lw * n / mx
+        o.append(f'<rect x="{lx}" y="{y:.1f}" width="{w:.1f}" height="16" style="fill:var(--ink);opacity:.85"/>')
+        o.append(f'<text class="pn" x="{lx + w + 8:.1f}" y="{y + 12.5:.1f}">{fmt(n)}</text>')
+        y += 26
+    rest = sum(n for n, _ in items[6:])
+    w = lw * rest / mx
+    o.append(f'<rect x="{lx}" y="{y:.1f}" width="{w:.1f}" height="16" style="fill:var(--ink);opacity:.4"/>')
+    o.append(f'<text class="pn" x="{lx + w + 8:.1f}" y="{y + 12.5:.1f}">{fmt(rest)} · {len(items) - 6} shorter sources together</text>')
+    y += 26
+    o.append(f'<text class="pc" x="{lx}" y="{y + 22:.1f}">{fmt(pages)} pages</text>')
+    pile_bottom = y
+    # middle: the line, ten steps, each a link to the chapter that explains it
+    cx, top, step = 520, 46, 40
+    o.append(f'<text class="pk" x="{cx + 20}" y="30">The line</text>')
+    o.append(f'<line x1="{cx}" y1="{top}" x2="{cx}" y2="{top + step * 9}" style="stroke:var(--ink);stroke-width:2.5"/>')
+    for i, (code, name, big, unit, *_r) in enumerate(STEPS):
+        yy = top + step * i
+        o.append(f'<a href="#c3"><circle cx="{cx}" cy="{yy}" r="8" style="fill:var(--paper);stroke:var(--ink);stroke-width:2.5"/>')
+        o.append(f'<text class="ps" x="{cx - 20}" y="{yy + 4}" text-anchor="end">{code}</text>')
+        o.append(f'<text class="pt" x="{cx + 20}" y="{yy + 5}">{esc(name)}</text>')
+        o.append(f'<text class="ps" x="{cx + 20 + len(name) * 8.6 + 10:.0f}" y="{yy + 5}">{esc(big)}</text></a>')
+    # threads: pile into the line, line out to the lessons (no arrowheads, no text crossed)
+    o.append(f'<path d="M{lx + lw + 60} {ly + 8}C{cx - 60} {ly + 8} {cx} {top - 40} {cx} {top - 10}" style="fill:none;stroke:var(--ink-2);stroke-width:1.2;opacity:.6"/>')
+    # right: what a student opens, one bar per lesson, length = minutes
+    rx, ry, rw = 790, 64, 210
+    o.append(f'<text class="pk" x="{rx}" y="30">What a student opens</text>')
+    o.append(f'<text class="ps" x="{rx}" y="48">{len(lessons)} lessons · bar = minutes</text>')
+    mm = max(m for _, m in lessons)
+    for k, (lid, m) in enumerate(lessons):
+        yy = ry + k * 19
+        w = rw * m / mm
+        hot = lid == "06-citacao"
+        o.append(f'<a href="courses/processo-civil-i/aula-{lid}.html"><rect x="{rx + 34}" y="{yy}" width="{w:.1f}" height="11" style="fill:var(--{"conc" if hot else "dif"});opacity:{1 if hot else .75}"/>')
+        code = lid.split('-')[0] + (lid.split('-')[1][0] if '-' in lid else '')
+        o.append(f'<text class="ps" x="{rx + 28}" y="{yy + 10}" text-anchor="end">{code}</text>')
+        o.append(f'<text class="pn" x="{rx + 40 + w:.1f}" y="{yy + 10}">{m}′</text></a>')
+    end = top + step * 9
+    o.append(f'<path d="M{cx} {end + 10}C{cx} {end + 40} {rx - 20} {end + 40} {rx - 20} {end - 20}L{rx - 20} {ry + 6}" style="fill:none;stroke:var(--ink-2);stroke-width:1.2;opacity:.6"/>')
+    o.append(f'<text class="pc" x="{rx}" y="{ry + len(lessons) * 19 + 22}">{len(lessons)} lessons · {min(m for _, m in lessons)} to {mm} min</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+def panel_svg(i: int) -> str:
+    """Scrolly panel i: the ten steps as a track, the current one lit, its number and a real excerpt."""
+    W, H = 656, 520
+    code, name, big, unit, lines, *_ = STEPS[i]
+    o = [f'<svg class="panel figkit{" on" if i == 0 else ""}" id="p-st{i}" viewBox="0 0 {W} {H}" role="img" aria-label="Step {code}, {esc(name)}: {esc(big)} {esc(unit)}">']
+    o.append('<style>.sk{font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;fill:var(--ink-2)}'
+             '.sb{font:800 92px var(--sans);fill:var(--ink)}.su{font:500 13px var(--mono);letter-spacing:.06em;fill:var(--ink-2)}'
+             '.sx{font:400 14px var(--mono);fill:var(--ink)}.sc{font:600 12px var(--mono);fill:var(--ink)}</style>')
+    x0, x1, y = 36, 620, 70
+    o.append(f'<line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" style="stroke:var(--ink);stroke-width:2"/>')
+    for j in range(len(STEPS)):
+        x = x0 + (x1 - x0) * j / (len(STEPS) - 1)
+        if j < i:
+            o.append(f'<circle cx="{x:.1f}" cy="{y}" r="6" style="fill:var(--ink)"/>')
+        elif j == i:
+            o.append(f'<circle cx="{x:.1f}" cy="{y}" r="11" style="fill:var(--conc)"/>')
+        else:
+            o.append(f'<circle cx="{x:.1f}" cy="{y}" r="6" style="fill:var(--paper);stroke:var(--ink);stroke-width:1.6"/>')
+        o.append(f'<text class="sc" x="{x:.1f}" y="{y - 22}" text-anchor="middle" style="fill:var(--{"conc" if j == i else "ink-2"})">{STEPS[j][0]}</text>')
+    o.append(f'<text class="sk" x="{x0}" y="150">{code} · {esc(name)}</text>')
+    o.append(f'<text class="sb" x="{x0 - 4}" y="250">{esc(big)}</text>')
+    o.append(f'<text class="su" x="{x0}" y="284">{esc(unit)}</text>')
+    o.append(f'<rect x="{x0}" y="326" width="{x1 - x0}" height="{40 + 26 * len(lines)}" style="fill:var(--paper-2);stroke:var(--ink);stroke-width:1.5"/>')
+    o.append(f'<text class="sk" x="{x0 + 16}" y="350">Aula 06 · citação e intimação</text>')
+    for k, line in enumerate(lines):
+        o.append(f'<text class="sx" x="{x0 + 16}" y="{380 + 26 * k}" xml:space="preserve">{esc(line)}</text>')
+    o.append("</svg>")
+    return "".join(o)
+
+
+def fonte(kind: str, head: str, loc: str, body: str, lang: str = "en") -> str:
+    cls = "fonte" + (f" {kind}" if kind else "")
+    return (f'<aside class="{cls}" aria-label="Fonte: {esc(head)}"><header><span>{head}</span><span class="loc">{loc}</span></header>'
+            f'<blockquote lang="{lang}"><p>{body}</p></blockquote></aside>')
+
+
 def build() -> str:
     days, total_commits = git_days()
     tc = triage_counts()
-    triage_total = sum(tc.values())
-    shelf = lift_svg(ROOT / "backstage/index.html", '<svg viewBox="0 0 1200 430"')
-    routing = lift_svg(ROOT / "backstage/index.html", '<svg viewBox="0 0 1200 600"')
     items, pages, words, nsrc = intake()
-    proc_pages = sorted((ROOT / "courses/processo-civil-i").glob("aula-*.html"))
-    proc_lessons = len(proc_pages)
-    _m = [int(x) for p in proc_pages for x in re.findall(r'≈ *(\d+) *min', p.read_text(encoding='utf-8'))[:1]]
-    mins = (min(_m), max(_m))
+    lessons = proc_lessons()
+    routing = lift_svg(ROOT / "backstage/index.html", '<svg viewBox="0 0 1200 600"')
+    planta = planta_svg(lessons, items, pages)
+    panels = "".join(panel_svg(i) for i in range(len(STEPS)))
+    cards = "".join(
+        f'<div class="step" data-panel="p-st{i}"><div class="card"><span class="label {"conc" if i == 6 else "dif"}">{s[0]} · {esc(s[1])}</span><h3>{esc(s[5])}</h3><p>{s[6]}</p></div></div>'
+        for i, s in enumerate(STEPS))
+    first = days[0][0]
 
-    pile = "".join(f'<li><span>{esc(SHORT_TITLES.get(t, t))}</span><span>{fmt(n)} pp.</span></li>' for n, t in items[:6])
-    rest = nsrc - 6
-
-    s0 = spec("course-map.json · aula-06-citacao", (
-        '<dl><dt>syllabus</dt><dd>Comunicação dos atos. Intimação. Citação. Processo Eletrônico. Cartas…</dd>'
-        '<dt>reader_task</dt><dd>Ler AR, edital, mandado e certidão de nota de expediente e identificar o ato de comunicação registrado.</dd>'
-        '<dt>week</dt><dd>7</dd><dt>exam</dt><dd>P1</dd></dl>'),
-        BLOB + "workshop/work/pipeline/processo-civil-i/course-map.md")
-    s1 = spec(f"shelf.csv · one row of {nsrc}", (
-        '<dl><dt>source_id</dt><dd>didier-curso-vol1-2017</dd><dt>role</dt><dd>book_base</dd>'
-        '<dt>title</dt><dd>Didier Jr., Curso de direito processual civil, vol. 1, 19ª ed. (2017)</dd>'
-        '<dt>sha256</dt><dd>4afef9ce79a…</dd><dt>text</dt><dd>text layer</dd></dl>'),
-        BLOB + "workshop/work/pipeline/processo-civil-i/shelf.csv")
-    s2 = spec("chapters/didier-curso-vol1-2017/ch17", (
-        '<div><span class="dim">index.json · ch17 · Citação · PDF 681–698 · printed 683–700 · 7,399 words</span>\n\n'
-        '<span class="hl">===== p. 684 (PDF 682) =====</span>\n  CAPÍTULO 17 · Citação\n  Sumário · 1. Generalidades – 2. A citação como “pressuposto processual” …</div>'))
-    s3 = spec(f"triage.csv · one decision of {fmt(triage_total)}", (
-        '<dl><dt>chapter</dt><dd>didier-curso-vol1-2017 · ch17</dd><dt>lesson</dt><dd>aula-06-citacao</dd>'
-        '<dt>role</dt><dd><span class="limit">primary</span></dd>'
-        '<dt>why</dt><dd class="q">Didier’s bounded chapter on citação supplies the essential-book doctrine for identifying the summons; the Moodle models are the assigned documents this lesson teaches readers to interpret.</dd></dl>'),
-        BLOB + "workshop/work/pipeline/processo-civil-i/triage.csv")
-    s4 = spec("compendium/aula-06-citacao/", (
-        '<ul class="files">'
-        '<li><span>00-index.md</span><span>provenance</span></li>'
-        '<li><span>10-slides.txt</span><span>slides</span></li>'
-        '<li><span class="pr">20-primary-001-didier…-ch17.txt</span><span>PDF 681–698</span></li>'
-        '<li><span class="pr">20-primary-002…006 · five Moodle records</span><span>whole</span></li>'
-        '<li><span class="su">30-supporting-001…029 · CPC arts. 238–275</span><span>by article</span></li>'
-        '<li><span class="su">30-supporting-030…036 · doctrine, exports</span><span>bounded</span></li>'
-        '<li><span>40-background-001…003</span><span>pages named</span></li>'
-        '<li><span>50-exercises-and-exams.txt</span><span>P1 2015 Q11</span></li></ul>'),
-        BLOB + "workshop/work/pipeline/processo-civil-i/compendium/aula-06-citacao/00-index.md")
-    s5 = spec("blueprint.md · A1 reader brief", (
-        '<div class="q"><span class="n">Can do after reading</span> <span class="dim">(tasks a question could ask, not topics)</span>\n'
-        '1. Read an AR, edital, mandado or Nota de Expediente certificate and name the communication act recorded.\n'
-        '2. Separate a completed citation from a failed attempt, and identify which sentence in the record supports that reading.</div>'
-        '<div style="margin-top:10px">Source ratio: 73,495 compendium words : 4,000 target words = <span class="hl">18.4 : 1</span></div>'),
-        BLOB + "workshop/work/pipeline/processo-civil-i/compendium/aula-06-citacao/blueprint.md")
-    s6 = (spec("panel.md · aula-13 · first round",
-               '<span class="v rev">REVISE</span><div class="q">The section architecture and source ledger are strong, but the chosen real case cannot carry the proposed CPC/2015 route as written.</div>',
-               BLOB + "workshop/work/pipeline/processo-civil-i/compendium/aula-13/panel.md")
-          + '<div style="height:16px"></div>'
-          + spec("panel.md · aula-06-citacao · second round",
-                 '<span class="v ok">APPROVED</span><div class="q">Figures 1, 2 and 4 use the actual records as inspectable objects.</div>',
-                 BLOB + "workshop/work/pipeline/processo-civil-i/compendium/aula-06-citacao/panel.md"))
-    s7 = ('<a class="thumb" href="courses/direito-latino-americano/aula-05.html"><img src="assets/gallery/chapter.jpg" alt="A step of the Gelman lesson: the map of four amnesties with Argentina marked, beside the paragraph that explains its grade" width="1400" height="750" loading="lazy"></a>')
-    s8 = ('<a class="thumb" href="specimen/casa.html"><img src="backstage/thumbs/casa.jpg" alt="The house style specimen: marks, source blocks and figures on one page" width="720" height="450" loading="lazy"></a>')
-
-    checks = (
-        '<table class="checks"><thead><tr><th>Script</th><th>Holds the page back when</th><th>Runs</th></tr></thead><tbody>'
-        '<tr><td>quote_check</td><td>a quotation cannot be found in the source texts</td><td>before the pull request</td></tr>'
-        '<tr><td>slop_lint</td><td>the prose pads with hedge stacks, staged objections or ritual conclusions (32 rules)</td><td>while writing, and before the pull request</td></tr>'
-        '<tr><td>house_check</td><td>the page lacks the shared marks, source blocks or figures</td><td>before the pull request</td></tr>'
-        '<tr><td>marks_lint</td><td>a mark is overused, or plain bold stands where a mark belongs</td><td>before the pull request</td></tr>'
-        '<tr><td>breakscan</td><td>text clips or overflows at 1,280 pixels</td><td>at Claude’s reading</td></tr>'
-        '<tr><td>check_all</td><td>a course front fails to regenerate byte for byte, or a link breaks</td><td>CI, on every push</td></tr>'
-        '<tr><td>offline build</td><td>the offline copy of the site differs from the published files</td><td>CI, on every push</td></tr>'
-        '</tbody></table>')
-
-    steps = "".join([
-        stage("01", "Sol · high", "The syllabus is read in its own order",
-              "Each topic becomes a lesson, with one line on what the student must be able to do afterwards and links to the earlier lessons it builds on.",
-              [("Claude reads the map", "gt")], s0),
-        stage("02", "Luna · high", "Every source is catalogued",
-              "Each book, slide deck, decision and exam gets a row with its edition, its file and a SHA-256 fingerprint of that file. A book that never arrives stays listed as missing, and nothing from memory stands in for it.",
-              [(f"{nsrc} sources", "c"), ("local OCR for scans", "")], s1),
-        stage("03", "Luna · high", "Books are cut into chapters",
-              "Each book is cut along its own table of contents, and every page keeps its printed number. A script then confirms that no page is missing or counted twice.",
-              [("1,283 chapters", "c"), ("pipeline_check s2", "")], s2),
-        stage("04", "Luna · xhigh", "Each chapter is matched to the lessons it serves",
-              "Every chapter is weighed against every lesson, and each decision is written down with its reason, rejections included.",
-              [(f"{fmt(triage_total)} decisions", "c"), ("pipeline_check s3", "")], s3,
-              extra=(f'<div class="wide"><div class="bp"><div class="cap"><span>Processo Civil I · which chapter feeds which lesson</span>'
-                     f'<span><span class="n">{fmt(tc["primary"])}</span> primary · {fmt(tc["supporting"])} supporting · {fmt(tc["unused"])} set aside</span></div>{routing}</div></div>')),
-        stage("05", "script", "Each lesson's material goes into one folder",
-              "A script copies the chosen chapters, statute articles and exam questions into the lesson's folder and writes an index tracing every file to its page.",
-              [("84 folders", "c"), ("pull_source.py", "")], s4),
-        stage("06", "Luna · max", "The lesson is planned before it is written",
-              "The plan names the tasks a student can do after reading, the exam traps, each section with its source pages, and each figure with the claim it carries.",
-              [("36 plans", "c")], s5),
-        stage("07", "Sol · high", "A second reader checks the plan",
-              "A different model reads the plan against the syllabus and the exam questions. It approves the plan or returns it with at most five numbered objections, and a plan returned twice goes to Claude.",
-              [("30 reviews", "c"), ("7-point rubric", "")], s6),
-        stage("08", "Luna · xhigh", "Text and figures are written together",
-              "One writer drafts the prose and draws the figures in a single sitting, from the plan. As the student reads, the figure beside the text moves to the case the paragraph is about.",
-              [("Claude reads the page", "gt")], s7),
-        stage("09", "Luna · xhigh", "Every page gets the same finish",
-              "Marks, source blocks and type are shared across the site. <span class=\"held\">Blue marks what a court decided</span> and <span class=\"limit\">orange marks where a rule stops</span>, on every page.",
-              [("casa.css", "")], s8),
-        stage("10", "CI", "Scripts read the page before it goes live",
-              "A pull request waits until every script below passes, and the main branch is the live site.",
-              [("Claude merges", "gt")], "", extra=f'<div class="wide">{checks}</div>'),
+    gallery = ''.join(f'<a class="g g-{k}" href="{href}"><img src="assets/gallery/{img}" alt="{esc(alt)}" width="{w}" height="{h}" loading="lazy"><span><span class="gk">{esc(kind)}</span>{esc(cap)}</span></a>' for k, href, img, w, h, kind, cap, alt in [
+        ("map", "courses/direito-latino-americano/index.html", "map.jpg", 1252, 1208, "Maps", "Five courts on one map, each route a lesson where one court answered another.", "Map of South America with five courts and numbered routes between their decisions"),
+        ("plan", "courses/controle-de-constitucionalidade/index.html", "planta.jpg", 1600, 1353, "Course indexes", "The semester drawn as one plan. Each piece opens its lesson.", "The semester plan of Controle de Constitucionalidade"),
+        ("cal", "specimen/instrumentos.html", "calendar.jpg", 1600, 905, "Instruments", "A 15-day deadline counted on the April 2015 calendar, holidays skipped.", "April 2015 calendar with fifteen working days counted"),
+        ("reg", "courses/processo-civil-i/index.html", "register.jpg", 1600, 1067, "The register", "Every lesson in syllabus order, with the task it trains and its reading time.", "The class register of Processo Civil I"),
+        ("bal", "specimen/instrumentos.html", "balance.jpg", 1600, 1141, "Instruments", "Art. 373 as a balance, with each party's facts on its own pan.", "Article 373 of the CPC drawn as a balance"),
+        ("seat", "specimen/instrumentos.html", "seating.jpg", 1600, 890, "Instruments", "The parties of a 2015 exam question seated in the joinder chart.", "A joinder chart with an exam's parties seated"),
+        ("atlas", "courses/direito-latino-americano/aula-01.html", "atlas.jpg", 1070, 1070, "Maps", "The Americas in 1808, on a timeline that runs to 1824.", "The Americas in 1808"),
     ])
 
-    commits = commits_svg(days)
-    first = days[0][0]
+    body = f'''
+<header class="hero">
+  <div class="kicker label"><span>Benecles.dev</span><span>Course compilers</span><span>Porto Alegre · 2026</span></div>
+  <h1><span class="split">From a reading list</span><span class="split">to a course</span></h1>
+  <p class="deck">Benecles.dev builds study websites from the material a course already has. Processo Civil I at UFRGS assigns <strong class="conc">{fmt(pages)} pages</strong>; its students read them as <strong class="dif">{len(lessons)} lessons</strong> of {min(m for _, m in lessons)} to {max(m for _, m in lessons)} minutes.</p>
+  <figure class="hero-planta">{planta}<figcaption><span>Fig. 0 · Processo Civil I, from what arrives to what a student opens</span><span>{nsrc} sources · {len(lessons)} lessons</span></figcaption></figure>
+  <div class="titleblock label" role="list"><div role="listitem">Founded<b>September 2026</b></div><div role="listitem">Based<b>Porto Alegre, Brazil</b></div><div role="listitem">Contact<b><a href="mailto:benecles@benecles.dev">benecles@benecles.dev</a></b></div><div role="listitem">Reading<b>≈ 10 min</b></div></div>
+</header>
+
+<section class="chapter" aria-labelledby="c1"><span class="num dif" aria-hidden="true">01</span><h2 id="c1">What we build</h2><p class="lede">What does a client hand over, and what comes back?</p></section>
+<div class="longform"><div>
+<div class="bet"><div><span class="bet-k">Before reading, a guess</span><p class="bet-q">For Processo Civil I, every chapter of every assigned source was weighed against every lesson, {fmt(sum(tc.values()))} decisions in all. How many of those decisions made a chapter one of a lesson's primary sources?</p><div class="bet-opts"><button type="button" data-opt="0" aria-pressed="false">About 9,000, roughly one in three.</button><button type="button" data-opt="1" aria-pressed="false">About 2,800, roughly one in ten.</button><button type="button" data-opt="2" data-court aria-pressed="false">{fmt(tc["primary"])}.<span class="who">triage.csv, Processo Civil I</span></button><button type="button" data-opt="3" aria-pressed="false">None. The lessons were written from the slides.</button></div><div class="bet-reveal"><p>{fmt(tc["primary"])}. Another {fmt(tc["supporting"])} decisions made a chapter supporting material, and {fmt(tc["unused"])} set a chapter aside, each with its reason written down. A lesson is built from a few chapters read closely.</p></div></div></div>
+<p>A client sends the books, slide decks, court decisions, statutes and past exams a course uses. We return one website of short lessons. Each lesson covers one topic of the syllabus, carries figures drawn for it, and quotes a source only after a script has found the quoted words in it. The first set, seven law courses for the 2026/2 semester at UFRGS, is already read by law students at UFRGS and USP.</p>
+<ul class="who-list">
+<li><span class="runin">A professor.</span> Your books, slide decks and assigned decisions become one site your students browse by class, and a quotation from your book carries the book's page in its header.</li>
+<li><span class="runin">A university.</span> Every course in a curriculum follows the same lesson format, figures and sourcing, so a student who has read one course knows how to read the next.</li>
+<li><span class="runin">A company.</span> Contracts, reports, regulations and case files become one compendium, cut into parts, filed under the questions they answer and traceable to the page.</li>
+<li><span class="runin">A tutoring school.</span> Your syllabus and your students' past exams become a course whose lessons close with the exam's own questions.</li>
+</ul>
+</div></div>
+
+<section class="chapter" aria-labelledby="c2"><span class="num dif" aria-hidden="true">02</span><h2 id="c2">What a course contains</h2><p class="lede">What does a student find when the site opens?</p></section>
+<div class="wide"><figure class="gal-fig"><div class="gal">{gallery}</div><figcaption><span>Fig. 1 · Taken from the courses already published</span><span>open any piece</span></figcaption></figure></div>
+
+<section class="chapter" aria-labelledby="c3"><span class="num dif" aria-hidden="true">03</span><h2 id="c3">How a course is made</h2><p class="lede">What happens between the reading list and the published lesson?</p></section>
+<div class="longform"><div><p>The specimens below follow one lesson, Processo Civil I, Aula 06, on <i>citação</i> and <i>intimação</i>, the court acts that tell a party it is being sued and keep it informed of each step that follows. The course is understood first, its material prepared second, and only then written.</p></div></div>
+<div class="scrolly">
+ <div class="stage" aria-hidden="true"><figure>{panels}<figcaption><span>Fig. 2 · The ten steps, with Aula 06's record at each</span><span class="stage-step">1 / 10</span></figcaption></figure></div>
+ <div class="steps">
+{cards}
+ </div>
+</div>
+<div class="wide"><figure class="bp"><div class="cap"><span>Fig. 3 · Processo Civil I · which chapter feeds which lesson</span><span><span class="n">{fmt(tc["primary"])}</span> primary · {fmt(tc["supporting"])} supporting · {fmt(tc["unused"])} set aside</span></div>{routing}</figure></div>
+
+<section class="chapter" aria-labelledby="c4"><span class="num dif" aria-hidden="true">04</span><h2 id="c4">What holds a page back</h2><p class="lede">What stops a bad page from going live?</p></section>
+<div class="longform"><div>
+<p>Models write the pages and scripts decide whether they ship. A script is trusted only after it has held back a page known to be bad. Seven of them read every lesson: <span class="term" tabindex="0" data-def="The script that finds every quoted passage of six or more words in the course's source texts.">quote_check</span> finds each quotation in the sources, slop_lint measures the prose against human legal writing, house_check and marks_lint confirm the shared finish, breakscan looks for clipped text at desktop width, and two CI checks rebuild the course indexes and the offline copy on every push.</p>
+{fonte("lim", "Panel · Processo Civil I, Aula 13", "first round", "<span class=\"key\">Verdict: REVISE.</span> The section architecture and source ledger are strong, but the chosen real case cannot carry the proposed CPC/2015 route as written.")}
+<p>A plan can be held back before a word of the lesson exists. The reviewing model reads the plan, the course map, the folder's index and the exam questions, and its verdict binds the writer. A plan returned twice goes to Claude. Aula 06 passed on its second round.</p>
+{fonte("dec", "Panel · Processo Civil I, Aula 06", "second round", "<span class=\"key\">APPROVED</span> [...] Figures 1, 2 and 4 use the actual records as inspectable objects.")}
+<p>The prose rules were measured before they were trusted. In 368 texts of human legal doctrine, negated inference (phrases like “não basta”) ran at 0.14 per thousand words; on 170 of our pages it ran at 2.43, and the rule now <span class="limit">caps it at 0.5</span>. Every other rule in slop_lint has its limit where no more than one human text in ten would be flagged.</p>
+</div></div>
+<div class="wide"><figure class="bp"><div class="cap"><span>Fig. 4 · Negated inference per 1,000 words</span><span><a href="{BLOB}workshop/work/slop-bench/BACKTEST.md">method</a></span></div>{slop_svg()}</figure></div>
+
+<section class="chapter" aria-labelledby="c5"><span class="num dif" aria-hidden="true">05</span><h2 id="c5">Who does the work</h2><p class="lede">Who decides, who writes, and who checks?</p></section>
+<div class="longform"><div>
+<p>Benecles chooses the courses, sets the priorities and decides what gets cut. Claude runs the editorial side through Claude Code. It writes the <span class="term" tabindex="0" data-def="A specification of what a piece of work is, how it must look and what it must never do, written before anyone builds it.">brief</span> for each step, owns the writing standard and the design system, draws figures, rebuilds reference lessons by hand and signs off every step. Codex supplies the volume. An orchestrator splits each brief into units of six or fewer and runs up to sixteen workers at once. The scripts decide what passes.</p>
+{fonte("", "CEO.md · mandate 8", "the brief", "The CEO’s job is the WHAT: take the chairman’s thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator’s.")}
+<p>A new Claude session reads <a href="{BLOB}workshop/CEO.md">CEO.md</a> first and continues from where the previous session stopped. Claude signs off eight of the ten steps, and the scripts work at the same eight.</p>
+</div></div>
+<div class="wide"><figure class="bp"><div class="cap"><span>Fig. 5 · Who works at each step</span><span>● works · <span class="n">◆</span> signs off · ○ reads</span></div>{relay_svg()}</figure></div>
+
+<section class="chapter" aria-labelledby="c6"><span class="num dif" aria-hidden="true">06</span><h2 id="c6">How mistakes stay fixed</h2><p class="lede">What happens after a fault is found?</p></section>
+<div class="longform"><div>
+<p>Two records change. The bug catalogue gains a row naming the symptom, its cause, the fix and the check that now catches it.</p>
+{fonte("", "BUGS.md · one row of 53", "Layout and CSS", "<span class=\"bug\"><span>symptom</span>Prose hugs the left edge of a wide screen (x = 0) while headings sit centred</span><span class=\"bug\"><span>cause</span>&lt;div class=\"prosa\"&gt; placed directly in &lt;body&gt;; house prose lives inside .wide</span><span class=\"bug\"><span>fix</span>Wrap in &lt;div class=\"wide\"&gt;; prose then aligns with the chapter heading</span><span class=\"bug\"><span>catches it</span><span class=\"key\">anatomy_check LOOSE-PROSA (in check_all)</span></span>")}
+<p>The flight log gains a numbered rule that every lesson in progress applies before its next step.</p>
+{fonte("lim", "FLIGHT-LOG.md · F-022 of 32", "S5a, S5", "A fictional “Comunidade C” carried the lesson while real Brazilian material exists. <span class=\"key\">Carriers are real: an article of the CF, a case, a statute.</span>")}
+<p>The site and the workshop behind it hold {fmt(total_commits)} commits since {first.day} {first:%B}, merged with their dates intact; the workshop's source texts were removed from every commit, and the ledgers that describe them remain.</p>
+</div></div>
+<div class="wide"><figure class="plate-fig"><div class="cap"><span>Fig. 6 · Commits per day</span><span>■ site · <span class="sw">■</span> workshop</span></div>{commits_svg(days)}</figure></div>
+
+<section class="chapter" aria-labelledby="c7"><span class="num" aria-hidden="true">07</span><h2 id="c7">Test</h2><p class="lede">Answer before opening.</p></section>
+<div class="wide">
+<div class="quiz">
+<details><summary>What happens to a book a client never sends?</summary><p>It stays on the shelf as a row marked missing, and its place is never filled from a summary or a model's memory.</p></details>
+<details><summary>Why does a different model review the plan?</summary><p>The writer knows the material too well to see what the plan leaves out. The reviewer reads only the plan, the course map, the folder's index and the exam questions, the way a thesis committee reads a proposal.</p></details>
+<details><summary>Where is a quotation checked?</summary><p>quote_check looks for every quoted passage of six or more words in the course's source texts before the pull request, and a cut without “[...]” counts as a failure.</p></details>
+</div>
+</div>
+<nav class="endnav" aria-label="Next"><a href="{GH}"><span>← Repository</span>github.com/Benecles/benecles</a><a href="ordenacoes-filipinas/" style="text-align:right"><span>First course set →</span>Ordenações Filipinas</a></nav>
+'''
+
+    ld = ('{"@context":"https://schema.org","@type":"Organization","name":"Benecles.dev","url":"https://benecles.dev/",'
+          '"email":"benecles@benecles.dev","foundingDate":"2026-09","address":{"@type":"PostalAddress","addressLocality":"Porto Alegre","addressCountry":"BR"},'
+          '"description":"Benecles.dev builds study websites from the material a course already has, with Claude running the editorial pipeline.",'
+          '"sameAs":["https://github.com/Benecles/benecles"]}')
 
     return f'''<!doctype html>
 <html lang="en">
@@ -354,110 +490,27 @@ def build() -> str:
 <script>(function(){{var k='ordenacoes-theme',r=document.documentElement;try{{if(localStorage.getItem(k)==='dark')r.dataset.theme='dark'}}catch(e){{}}document.addEventListener('DOMContentLoaded',function(){{var b=document.querySelector('.theme-toggle');if(!b)return;function sync(){{b.setAttribute('aria-pressed',r.dataset.theme==='dark')}}sync();b.addEventListener('click',function(){{var d=r.dataset.theme!=='dark';if(d)r.dataset.theme='dark';else delete r.dataset.theme;try{{localStorage.setItem(k,d?'dark':'light')}}catch(e){{}}sync()}})}})}})()</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Benecles.dev</title>
+<title>Benecles.dev · from a reading list to a course</title>
 <meta name="description" content="Benecles.dev builds study websites from the material a course already has: books, slides, decisions, statutes and past exams, published as short lessons with drawn figures and checked quotations. Built with Claude.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Benecles.dev">
-<meta property="og:title" content="Benecles.dev">
-<meta property="og:description" content="A course's books, slides and exams, turned into one study website. Built with Claude.">
+<meta property="og:title" content="Benecles.dev · from a reading list to a course">
+<meta property="og:description" content="Study websites built from the material a course already has, with Claude running the editorial pipeline.">
 <meta property="og:url" content="https://benecles.dev/">
 <meta property="og:image" content="https://benecles.dev/assets/benecles-og.png">
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="640">
 <meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{ld}</script>
 <link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="assets/casa.css">
+<link rel="stylesheet" href="courses/direito-latino-americano/assets/curso.css">
 <link rel="stylesheet" href="assets/benecles.css">
 </head>
-<body>
-<header class="top"><a class="mark" href="./">Benecles.dev</a>
-<nav aria-label="Sections"><a class="opt" href="#make">What a course contains</a><a class="opt" href="#for">Who it is for</a><a class="opt" href="#made">How it is made</a><a class="opt" href="#work">How we work</a><a href="#prior">Prior work</a><a href="{GH}">GitHub ↗</a>
-<button class="theme-toggle" type="button" aria-pressed="false" title="Night mode"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="sr">Night mode</span></button></nav></header>
-
-<main class="wrap">
-<div class="lead"><h1>Benecles.dev builds study websites from the material a course already has.</h1>
-<p>We take the books, slide decks, court decisions, statutes and past exams a course uses and publish them as one website of short lessons. Each lesson covers one topic of the syllabus, carries figures drawn for it, and quotes a source only after a script has found the quoted words in it. Professors, universities, companies and tutoring schools send us their material, and their students or staff get the site.</p></div>
-<div class="hero2">
-<figure class="pile"><header><span>Processo Civil I · UFRGS · what the syllabus assigns</span></header>
-<ul>{pile}<li class="more"><span>+ {rest} more: assigned articles, the CPC by article, Moodle case records, past exams</span><span></span></li></ul>
-<footer><span>{nsrc} sources</span><span>{fmt(pages)} pages</span></footer></figure>
-<figure class="page"><header><span>What a student opens · aula 06 of {proc_lessons}</span><a href="courses/processo-civil-i/aula-06-citacao.html">open ↗</a></header>
-<a href="courses/processo-civil-i/aula-06-citacao.html"><img src="assets/lesson-aula06.png" alt="The opening of the lesson Citação e intimação: title, the lesson's one-sentence summary, and a timeline of the civil procedure with this lesson's step marked" width="1280" height="860"></a>
-<footer><span>{proc_lessons} lessons published</span><span>≈ 23 minutes to read</span></footer></figure>
-</div>
-<p class="deck">Processo Civil I at UFRGS assigns {fmt(pages)} pages across {nsrc} sources. Its students read the same material as {proc_lessons} lessons of {mins[0]} to {mins[1]} minutes each.</p>
-<div class="cta"><a class="btn" href="#made">How it is made ↓</a><a class="btn ghost" href="mailto:benecles@benecles.dev">benecles@benecles.dev</a></div>
-
-<section id="make">
-<p class="kick">01 <i>What a course contains</i></p>
-<h2>Taken from the courses already published</h2>
-<div class="gal">
-<a class="g g-map" href="courses/direito-latino-americano/index.html"><img src="assets/gallery/map.jpg" alt="Map of South America with five courts and numbered routes between their decisions" width="1252" height="1208" loading="lazy"><span><span class="gk">Maps</span>Five courts on one map, each route a lesson where one court answered another.</span></a>
-<a class="g g-plan" href="courses/controle-de-constitucionalidade/index.html"><img src="assets/gallery/planta.jpg" alt="The semester plan of Controle de Constitucionalidade: every lesson placed as a piece of one drawing" width="1600" height="1353" loading="lazy"><span><span class="gk">Course indexes</span>The semester drawn as one plan. Each piece opens its lesson.</span></a>
-<a class="g g-reg" href="courses/processo-civil-i/index.html"><img src="assets/gallery/register.jpg" alt="The class register of Processo Civil I: numbered lessons, each with its task and reading time" width="1600" height="1067" loading="lazy"><span><span class="gk">The register</span>Every lesson in syllabus order, with the task it trains and its reading time.</span></a>
-<a class="g g-cal" href="specimen/instrumentos.html"><img src="assets/gallery/calendar.jpg" alt="April 2015 calendar with fifteen working days counted from the 6th to the 27th, holidays hatched" width="1600" height="905" loading="lazy"><span><span class="gk">Instruments</span>A 15-day deadline counted on the April 2015 calendar, holidays skipped.</span></a>
-<a class="g g-bal" href="specimen/instrumentos.html"><img src="assets/gallery/balance.jpg" alt="Article 373 of the CPC drawn as a balance: the plaintiff's fact on one pan, the defendant's facts on the other" width="1600" height="1141" loading="lazy"><span><span class="gk">Instruments</span>Art. 373 as a balance, with each party's facts on its own pan.</span></a>
-<a class="g g-seat" href="specimen/instrumentos.html"><img src="assets/gallery/seating.jpg" alt="A two-by-two chart of joinder types with the parties of an exam question seated in their cells" width="1600" height="890" loading="lazy"><span><span class="gk">Instruments</span>The parties of a 2015 exam question seated in the joinder chart.</span></a>
-<a class="g g-atlas" href="courses/direito-latino-americano/aula-01.html"><img src="assets/gallery/atlas.jpg" alt="The Americas in 1808, Spanish and Portuguese territories shaded, with a timeline from 1791 to 1824" width="1070" height="1070" loading="lazy"><span><span class="gk">Maps</span>The Americas in 1808, on a timeline that runs to 1824.</span></a>
-<a class="g g-fonte" href="courses/direito-latino-americano/aula-05.html"><img src="assets/gallery/fonte.jpg" alt="A source block quoting the Inter-American Court in Spanish, with its reference in the header and a translation toggle" width="1600" height="237" loading="lazy"><span><span class="gk">Source blocks</span>The court's own words in its own language, the reference in the header, a translation one click away.</span></a>
-</div>
-</section>
-
-<section id="for">
-<p class="kick">02 <i>Who it is for</i></p>
-<h2>Professors, universities, companies and tutoring schools</h2>
-<div class="clients">
-<div><span class="k">A professor</span><p>Your books, slide decks and assigned decisions become one site your students browse by class. A quotation from your book carries the book's page in its header.</p></div>
-<div><span class="k">A university</span><p>Every course in a curriculum follows the same lesson format, figures and sourcing, so a student who has read one course knows how to read the next.</p></div>
-<div><span class="k">A company</span><p>Contracts, reports, regulations and case files become one compendium, cut into parts, filed under the questions they answer and traceable to the page.</p></div>
-<div><span class="k">A tutoring school</span><p>Your syllabus and your students' past exams become a course whose lessons close with the exam's own questions.</p></div>
-</div>
-</section>
-
-<section id="made">
-<p class="kick">03 <i>How it is made</i></p>
-<h2>From a reading list to a published lesson</h2>
-<p class="intro">The specimens beside each step come from one lesson, Processo Civil I, Aula 06, on <i>citação</i> and <i>intimação</i>, the court acts that tell a party it is being sued and keep it informed of each step that follows.</p>
-<div class="stages">{steps}</div>
-<div class="two">
-<div><div class="bp" style="margin:0"><div class="cap"><span>slop_lint, measured on human legal writing</span><span><span class="n">0.5</span> cap</span></div>{slop_svg()}</div>
-<p class="note">In 368 texts of human legal doctrine, negated inference (phrases like “não basta”) ran at 0.14 per thousand words; on 170 of our pages it ran at 2.43. The rule now caps it at 0.5, and every other rule in slop_lint has its limit where no more than one human text in ten would be flagged. <a href="{BLOB}workshop/work/slop-bench/BACKTEST.md">Method and numbers</a>.</p></div>
-<div><p class="note" style="margin-top:0">A script is trusted only after it has held back a page known to be bad.</p></div>
-</div>
-</section>
-
-<section id="work">
-<p class="kick">04 <i>How we work</i></p>
-<h2>Who does what, and how mistakes stay fixed</h2>
-<div class="roles">
-<div><span class="k">Direction</span><h3>Benecles</h3><p>Chooses the courses, sets the priorities and decides what gets cut. The open decisions listed in CEO.md are his.</p></div>
-<div><span class="k">Editor and designer</span><h3>Claude</h3><p>Writes the brief for each step, owns the writing standard and the design system, draws figures, rebuilds reference lessons by hand and signs off every step. Anthropic’s model, working through Claude Code.</p></div>
-<div><span class="k">Volume</span><h3>Codex</h3><p>An orchestrator splits each brief into units of six or fewer and runs up to sixteen workers at once, Sol for the course map and the review and Luna for the other steps. OpenAI’s models.</p></div>
-<div><span class="k">Checks</span><h3>Scripts</h3><p>Each step has a script that can hold the work back. The scripts live in the repository beside the pages they read.</p></div>
-</div>
-<div class="bp"><div class="cap"><span>Who works at each step</span><span>● works · <span class="n">◆</span> signs off · ○ reads</span></div>{relay_svg()}</div>
-<div class="two">
-<div>{spec("BUGS.md · 53 rows · symptom → cause → fix → check", '<dl><dt>symptom</dt><dd>Prose hugs the left edge of a wide screen (x = 0) while headings sit centred</dd><dt>cause</dt><dd>&lt;div class="prosa"&gt; placed directly in &lt;body&gt;</dd><dt>fix</dt><dd>Wrap in &lt;div class="wide"&gt;</dd><dt>catches it</dt><dd>anatomy_check LOOSE-PROSA, in check_all</dd></dl>', BLOB + "workshop/BUGS.md")}
-<div style="height:20px"></div>
-{spec("FLIGHT-LOG.md · F-022 of 32", '<dl><dt>found</dt><dd>A fictional “Comunidade C” carried the lesson while real Brazilian material exists</dd><dt>rule</dt><dd class="q">Carriers are real: an article of the CF, a case, a statute.</dd><dt>applies to</dt><dd>S5a, S5</dd></dl>', BLOB + "workshop/FLIGHT-LOG.md")}</div>
-<div><p class="note" style="margin-top:0">When a script or a reader catches a fault, two records change. The bug catalogue gains a row naming the check that now catches it, and the flight log gains a numbered rule that every lesson in progress applies before its next step.</p>
-{spec("CEO.md · mandate 8", '<div class="q">The CEO’s job is the WHAT: take the chairman’s thin idea and develop it to the fullest (what it is, what it looks like, where it sits, how it behaves, what it must never do, how it fits the house and its ethos), then hand that to the orchestrator as a master brief. The HOW is the orchestrator’s.</div>', BLOB + "workshop/CEO.md")}
-<p class="note">A new Claude session reads CEO.md first and continues from where the previous session stopped.</p></div>
-</div>
-<div class="plate"><div class="cap"><span>Commits per day since {first.day} {first:%B} · {fmt(total_commits)} in all</span><span>■ site · <span class="sw">■</span> workshop</span></div>{commits}</div>
-<p class="note"><span class="k">Standards and logs</span> <a href="{BLOB}workshop/protocols/Source%20Pipeline.md">Source Pipeline</a> · <a href="{BLOB}workshop/protocols/Writing%20Standard.md">Writing Standard</a> · <a href="{BLOB}workshop/protocols/House%20Manual.md">House Manual</a> · <a href="{BLOB}workshop/protocols/Visual%20Genres.md">Visual Genres</a> · <a href="{BLOB}workshop/CEO.md">CEO.md</a> · <a href="{BLOB}workshop/FLIGHT-LOG.md">Flight log</a> · <a href="{BLOB}workshop/BUGS.md">Bugs</a></p>
-</section>
-
-<section id="prior">
-<p class="kick">05 <i>Prior work</i></p>
-<h2>Ordenações Filipinas, law courses for UFRGS</h2>
-<a class="prod" href="ordenacoes-filipinas/"><div class="img"><img src="assets/og.png" alt="The Ordenações Filipinas course shelf" width="1200" height="630" loading="lazy"></div>
-<div class="body"><span class="k">UFRGS · 2026/2 · in Portuguese</span><h3>Ordenações Filipinas</h3><p>Seven law courses, from constitutional review to civil procedure. Law students at UFRGS and USP study with it.</p>
-<div class="reg"><div><span>Courses</span><span class="n">7</span></div><div><span>Lessons</span><span class="n">149</span></div><div><span>Figures</span><span class="n">919</span></div></div><span class="go">Open the courses →</span></div></a>
-<div class="bp"><div class="cap"><span>Every lesson in Ordenações Filipinas, one spine each</span></div>{shelf}</div>
-</section>
-
-<footer class="foot"><span>Benecles.dev · <a href="mailto:benecles@benecles.dev">benecles@benecles.dev</a></span><span><a href="{GH}">GitHub ↗</a><span>Built with Claude</span></span></footer>
-</main>
+<body class="benecles">
+<nav class="topbar"><a href="./">Benecles.dev</a><span><a href="#c1">What we build</a> · <a href="#c3">How it is made</a> · <a href="#c5">Who does the work</a> · <a href="ordenacoes-filipinas/">First course set</a> · <a href="{GH}">GitHub ↗</a></span><button class="theme-toggle" type="button" aria-pressed="false" title="Night mode"><span class="tt-track" aria-hidden="true"><span class="tt-knob"></span></span><span class="tt-label">Night mode</span></button></nav>
+{body}
+<footer class="bfoot"><span>Benecles.dev · Porto Alegre, Brazil · <a href="mailto:benecles@benecles.dev">benecles@benecles.dev</a></span><span><a href="{GH}">GitHub ↗</a> · Built with Claude</span></footer>
+<script src="courses/direito-latino-americano/assets/curso.js"></script>
+<script src="assets/casa.js" defer></script>
 </body>
 </html>
 '''
