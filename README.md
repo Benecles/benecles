@@ -1,22 +1,39 @@
 # Benecles
 
-Benecles turns law-course source material (slides, textbooks, case law, syllabi) into structured study guides that a student can read in one sitting, search, and use offline. It started as one student's study site for the UFRGS law course and has grown into a publishing pipeline plus the guides it produces.
+Benecles compiles source material (textbooks, slide decks, case law, syllabi) into structured courses: one topic per sitting, each claim traced to a source, each page checked before it ships. Law is the first subject it has compiled.
 
-**Live:** https://benecles.github.io/ordenacoes-filipinas/ (published as *Ordenações Filipinas · guias de estudo*; the content is in Portuguese)
+**Example output, live:** https://benecles.github.io/ordenacoes-filipinas/ (seven law courses, published as *Ordenações Filipinas · guias de estudo*; content in Portuguese)
 
 |  |  |
 |---|---|
 | ![Course shelf on the home page](docs/img/home.png) | ![A lesson page: headline, thesis, timeline](docs/img/lesson.png) |
 
-## What it is
+## What the compiler does
 
-Not a folder of notes: every course is built from named sources, split into lessons of about 15–25 minutes, drawn with figures made for that lesson, and checked before it ships.
+A course goes through the same passes every time. Each pass leaves files you can open in [`workshop/`](workshop/).
 
-- **Who it is for:** law students working through a university syllabus.
-- **The problem:** course material arrives as slide decks and long books, and the student has to rebuild the argument alone. Summaries rarely say which source a claim comes from.
-- **What a guide gives you:** one syllabus topic per lesson, the question each decision answers, redrawn diagrams, review questions, and the source behind each claim.
+| Pass | What it produces | Where to look |
+|---|---|---|
+| Shelf | Every source for a course, catalogued by work and chapter | `workshop/work/pipeline/*/shelf.csv` |
+| Triage | For each chapter of each source, which lesson it feeds and why: 32,569 rows across four courses | `workshop/work/pipeline/*/triage.csv` |
+| Course map | The syllabus as a sequence of one-sitting lessons | `workshop/work/pipeline/*/course-map.md` |
+| Blueprint | Per lesson: the question, the cases, the figures, the sources to read (36 so far) | `workshop/work/pipeline/*/compendium/*/blueprint.md` |
+| Panel | A second model reviews each blueprint before writing starts (30 reviews) | `workshop/work/pipeline/*/compendium/*/panel.md` |
+| Write and draw | Lesson text, and figures drawn for that lesson | `workshop/work/*-build/`, `courses/` |
+| Check | Quotations must be found in the sources; prose is linted for padding; house style and layout are checked | `workshop/work/house-style/`, `workshop/work/slop-bench/` |
+| Build and ship | Static HTML, search index, catalogue, provenance, offline manifest; one PR per change, CI on every push | `tools/`, `.github/workflows/` |
 
-## What is published
+The method is written up in [`Source Pipeline.md`](workshop/protocols/Source%20Pipeline.md), the writing rules in [`Writing Standard.md`](workshop/protocols/Writing%20Standard.md) and the condensed [`House Manual.md`](workshop/protocols/House%20Manual.md).
+
+## The checks
+
+- **Quotations** (`workshop/work/house-style/quote_check.py`): every quotation on a page must be found in the source texts.
+- **Prose** (`workshop/protocols/tools/slop_lint.py`, `workshop/work/slop-bench/`): rules for padded or formulaic Portuguese, each backtested against 368 documents of human legal doctrine so that no more than 10% of human texts trip it. Method and numbers: [`BACKTEST.md`](workshop/work/slop-bench/BACKTEST.md).
+- **House style and anatomy** (`workshop/work/house-style/house_check.py`, `workshop/protocols/tools/marks_lint.py`, `tools/anatomy_check.py`): every page carries the shared components; loose prose and late panels are flagged.
+- **Build consistency** (`tools/check_all.sh`, run by CI): course fronts regenerate byte-identical, links resolve, the offline manifest matches the tree.
+- **Bugs and lessons**: every fix adds a row (symptom, cause, fix, check) to [`workshop/BUGS.md`](workshop/BUGS.md); every lesson learned at a gate becomes a numbered rule in [`workshop/FLIGHT-LOG.md`](workshop/FLIGHT-LOG.md).
+
+## Example output: seven law courses
 
 | Course | Pages |
 |---|--:|
@@ -28,31 +45,24 @@ Not a folder of notes: every course is built from named sources, split into less
 | Metodologia Jurídica | 13 |
 | Direito Latino-americano | 12 |
 
-187 pages and about 1.15 million words in seven courses, with 919 inline SVG figures. Pages include lesson texts, course fronts, review pages and cards. Processo Civil is being rebuilt from scratch as the reference course; the others are being brought up to the same standard one lesson at a time. Counts are taken from the files in this repository.
+187 pages, about 1.15 million words and 919 inline SVG figures. Figures are drawn as instruments for the lesson (a deadline on the real calendar, a seating chart of the parties, a statute as a balance) rather than stock flowcharts. Pages read without JavaScript, work offline once visited, and come in light and dark themes. Processo Civil is being rebuilt from scratch as the reference course.
 
-## How it is built
+## Built with Claude
 
-- **Static build.** `tools/build_course.py` reads Markdown sources and writes standalone HTML plus `catalogue.json`, `search-index.json` and `provenance.json`. Provenance records source names, input hashes, counts and every logged transformation; the build fails on unresolved links, diagram markers or a miscounted correction. See [tools/README.md](tools/README.md).
-- **Source discipline.** Source PDFs and books are not distributed here. Where a slide or author takes a debated position, the guide labels it as that source's position. The public editorial page explains source and version decisions and where review stopped.
-- **Search and catalogue.** Per-course search indexes and a catalogue, generated at build time. Search is an enhancement; reading and links work without JavaScript.
-- **Offline.** A service worker and a generated manifest of 280 files let a visited course be read without a connection. CI checks that the committed tree equals what `tools/offline_build.py` produces.
-- **Figures.** Diagrams are drawn per lesson as instruments (a deadline on the real calendar, a seating chart, a balance), not as stock flowcharts. Mermaid diagrams are compiled to SVG at build time and ship with a collapsed text list of the same relationships.
-- **Accessibility.** `lang="pt-BR"`, ARIA state on controls, a light and a dark theme, and graceful degradation without JavaScript.
-- **Quality checks.** `tools/check_all.sh` runs on every push and PR: front pages must regenerate byte-identical, lesson links and register data must resolve, and a page-anatomy check flags loose prose and late panels. The private workshop adds a house-style check, a quotation check (every quotation must be found in the sources), a prose linter for padded writing, and a layout scan at desktop and phone widths.
+Benecles directs the project and decides what ships. The work is done by AI agents under that direction:
 
-## History and process
+- **Claude** (Anthropic, through Claude Code) is the design and editorial lead: it writes the briefs, owns the writing standard and the design system, builds figures and lessons, and gates what ships. [`workshop/CEO.md`](workshop/CEO.md) is its running handoff between sessions.
+- **Codex** (OpenAI) does bulk content and engineering work from those briefs, coordinated through GitHub issues, run ledgers (`workshop/RUN-PROC-R2.md`) and pull requests.
 
-386 commits since 2026-09-05, 131 merged pull requests, one issue per change. [ISSUES.md](ISSUES.md) lists each merged change; `changelog.json` feeds the patch notes on the home page.
+Agents work in separate branches and worktrees, and every change passes the same checks. Agent instructions: [`AGENTS.md`](AGENTS.md), [`CLAUDE.md`](CLAUDE.md). The agents are how courses are built, not a feature the reader uses.
 
-Design process and earlier directions are kept, not hidden:
+## History
 
-- `specimen/` shows each house component in every state.
-- `experiments/` holds earlier material studies; `prototype-folio.html`, `index-alt-*.html` and the standalone pages at the root are the original prototypes, kept at their original URLs.
-- `VISUAL_CRAFT_NOTES.md` records the design process.
+It began as one student's study site for the UFRGS law course. This repository holds 680 commits: the site since 2026-09-05 and the pipeline workshop since 2026-09-28, merged with its history intact. [ISSUES.md](ISSUES.md) lists each merged change; `changelog.json` feeds the patch notes on the home page.
 
-## Built with AI agents
+The workshop history comes from a private repository. Source texts (book chapters, slides, exams) and personal files were removed from every commit; the shelf and triage files keep the record of what each source was and where it was used.
 
-Benecles directs the project and decides what ships. Much of the engineering, writing and design work is done by AI agents working under that direction: **Claude** (Anthropic, through Claude Code) as the design and editorial lead and the author of the house style and many of the figures and lessons, and **Codex** (OpenAI) for bulk content and engineering work, coordinated through GitHub issues and pull requests. Agents work in separate branches and worktrees, and every change goes through the same checks as a human one. The agent instructions are in [AGENTS.md](AGENTS.md) and [CLAUDE.md](CLAUDE.md). The agents are how the guides are built; they are not a feature the reader uses.
+Earlier design directions are kept: `specimen/` shows each house component in every state, `experiments/` and the prototype pages at the root (`prototype-folio.html`, `index-alt-*.html`) are the original studies, and `VISUAL_CRAFT_NOTES.md` records the design process.
 
 ## License
 
@@ -60,4 +70,4 @@ All rights reserved. Nothing here grants reuse of the content.
 
 ## Running it
 
-Open `index.html`, or serve the folder (`python3 -m http.server`). Rebuilding a course needs the private source files, so `tools/build_course.py` will not run without them.
+Open `index.html`, or serve the folder (`python3 -m http.server`). Rebuilding a course needs the source texts, which are not in this repository.
