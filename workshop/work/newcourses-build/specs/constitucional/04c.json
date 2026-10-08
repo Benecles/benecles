@@ -1,0 +1,63 @@
+{
+  "key": "04c",
+  "date": "Semanas 8–9",
+  "pages": [
+    {
+      "file": "aula-04-casos.html",
+      "h1a": "ADI 3.345 e o",
+      "h1b": "número de vereadores",
+      "title": "ADI 3.345: Resolução do TSE e número de vereadores",
+      "desc": "Em 2005 o STF julgou a ADI 3.345 e a ADI 3.365 contra a Resolução 21.702/2004 do TSE, que aplicou aos municípios o critério do RE 197.917 para fixar vereadores.",
+      "deck": "O TSE aplicou às eleições de 2004 a tese do STF sobre vereadores proporcionais à população (art. 29, IV). O caso decide se isso é <strong class=\"conc\">legislar</strong> ou <strong class=\"dif\">explicitar uma decisão do Supremo</strong>, e o que muda com o art. 16.",
+      "bet": {
+        "after_chapter": 0,
+        "question": "Em 2004, no RE 197.917, o STF decidiu que o art. 29, IV, da Constituição exige número de vereadores proporcional à população, dentro de limites fixados, e por isso a lei orgânica de um município pequeno não podia fixar onze vereadores quando só comportava nove. Para as eleições municipais daquele ano, o TSE editou a Resolução 21.702: mandou aplicar a todos os municípios os critérios declarados nesse julgamento e, onde a lei orgânica não se adequasse, fixou ele mesmo o número de vereadores. O PP e o PDT pedem ao STF que a declare inconstitucional: dizem que o TSE legislou, invadiu a autonomia das Câmaras Municipais e violou o art. 16, que impede a aplicação de lei que altere o processo eleitoral à eleição realizada em até um ano da sua vigência. Como o STF deve julgar as ações?",
+        "options": [
+          [
+            "Procedentes: a resolução criou regra nova sobre matéria de lei e de emenda constitucional, e usurpou a competência dos Legislativos municipais.",
+            ""
+          ],
+          [
+            "Procedentes só pelo art. 16: mudar o número de vereadores no ano da eleição altera o processo eleitoral.",
+            ""
+          ],
+          [
+            "Improcedentes: o TSE apenas explicitou, nos estritos limites e com fidelidade, o que o STF decidira no RE 197.917, e a resolução não ofendeu o art. 16 no caso concreto.",
+            "*"
+          ],
+          [
+            "Não conhecer das ações: a resolução seria mero ato regulamentar, sem densidade normativa para o controle abstrato.",
+            ""
+          ]
+        ],
+        "reveal": "<p>Por maioria, com o Ministro Marco Aurélio vencido, o Plenário julgou improcedentes as duas ações. A preliminar de não conhecimento, levantada pelo Procurador-Geral, foi rejeitada por unanimidade: a resolução tem autonomia jurídica e densidade normativa suficientes. No mérito, o voto do relator, Ministro Celso de Mello, sustenta que o TSE agiu em função da força normativa e da supremacia da Constituição e nada fez senão observar o sentido da decisão do Supremo. A legitimidade vem dessa fidelidade, não de competência geral do TSE.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "Que decisão do STF deu origem à Resolução 21.702/2004 do TSE, e o que ela decidiu?",
+      "O RE 197.917/SP, julgado em 24 de março de 2004, declarou incidentalmente inconstitucional dispositivo da Lei Orgânica de Mira Estrela que fixava onze vereadores num município que comportava nove. A tese foi que o art. 29, IV, exige número de vereadores proporcional à população dentro dos limites das faixas das alíneas a, b e c. O STF deu efeitos para o futuro, respeitados os mandatos em curso."
+    ],
+    [
+      "Que previa a Resolução 21.702 e por que o TSE a editou?",
+      "O art. 1º mandava observar nas eleições municipais de 2004 os critérios do RE 197.917; o art. 2º previa que, até 1º de junho, o TSE verificaria a legislação de cada município e, na omissão ou desconformidade, determinaria o número de vereadores; o art. 3º previa a observância de emenda que alterasse o art. 29, IV. A edição atendeu a pedido da Procuradoria-Geral Eleitoral, diante do risco para as convenções partidárias e da controvérsia gerada por inúmeras ações civis públicas."
+    ],
+    [
+      "Que alegaram os autores, e quais dispositivos invocaram?",
+      "O PP sustentou que a resolução criou regra independente, uma nova lei eleitoral, baseada em tabela feita para um caso específico, usurpando competência do Legislativo (art. 29, caput, e art. 2º). O PDT acrescentou que o número de vereadores é competência das Câmaras municipais, por autonomia dos municípios, só alterável por emenda constitucional, e que a resolução, ainda que admissível, violava a anterioridade de um ano do art. 16 se aplicada à eleição do mesmo ano."
+    ],
+    [
+      "Como o STF resolveu as questões preliminares?",
+      "Por unanimidade, reconheceu a legitimidade da participação processual dos Ministros Ellen Gracie, Carlos Velloso e Sepúlveda Pertence, porque impedimento e suspeição são institutos dos processos subjetivos e em regra não se aplicam ao controle concentrado, de caráter objetivo. Também por unanimidade, rejeitou a preliminar do Procurador-Geral, que via mero ato regulamentar: a resolução tem generalidade abstrata, autonomia jurídica e densidade normativa suficientes para o controle abstrato."
+    ],
+    [
+      "Qual foi a razão central do voto do relator e como ele tratou o art. 16?",
+      "O TSE não legislou: explicitou julgamento anterior do STF, nos estritos limites dele, e por isso agiu em função da força normativa, da unidade e da supremacia da Constituição, segundo a eficácia irradiante dos motivos determinantes do RE 197.917. Quanto ao art. 16, a resolução, ao só explicitar a interpretação do STF, não rompeu a igualdade de participação de partidos e candidatos, não deformou a normalidade das eleições nem teve propósito casuístico."
+    ],
+    [
+      "Que limites tem o precedente e que erros de prova ele evita?",
+      "A ADI não decide que o TSE pode fixar livremente o número de vereadores: a premissa é a fidelidade ao RE 197.917, e uma tabela nova, sem ligação com aquele julgamento, não seria sustentada. Também não decide que resolução do TSE nunca se sujeita ao art. 16. A decisão não foi unânime no mérito, pois Marco Aurélio ficou vencido, e o STF não declarou a resolução inconstitucional. É preciso ainda distinguir a ADI 3.345 (PP) da ADI 3.365 (PDT), apensada."
+    ]
+  ]
+}

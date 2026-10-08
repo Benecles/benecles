@@ -1,0 +1,63 @@
+{
+ "key": "11",
+ "date": "Semanas 12–13",
+ "pages": [
+  {
+   "file": "aula-11.html",
+   "h1a": "Constituição no",
+   "h1b": "espaço e tratados",
+   "title": "Constituição no espaço e abertura internacional",
+   "desc": "Qual Constituição controla a lei estrangeira, art. 17 da LINDB, incorporação e hierarquia dos tratados de direitos humanos (art. 5º, §§ 2º e 3º).",
+   "deck": "Três conflitos diferentes pedem três respostas: lei estrangeira contra a Constituição de origem, contra a brasileira e tratado contra direito interno. A lição fixa a <strong class=\"dif\">hierarquia dos tratados de direitos humanos</strong> e a armadilha do <strong class=\"conc\">rito do § 3º</strong>.",
+   "bet": {
+    "after_chapter": 3,
+    "question": "O Brasil ratificou um tratado de direitos humanos que não admite a prisão civil do depositário infiel. O Congresso o aprovou sem a votação qualificada do art. 5º, § 3º. Um juiz decreta a prisão de um depositário infiel com base na lei, e o art. 5º, LXVII, ainda menciona a hipótese. Como o STF resolve o conflito?",
+    "options": [
+     [
+      "O tratado tem estatura de emenda constitucional e revoga a parte do inciso LXVII.",
+      ""
+     ],
+     [
+      "O tratado é supralegal: fica acima das leis e abaixo da Constituição, e torna inaplicáveis as leis que autorizavam a prisão.",
+      "*"
+     ],
+     [
+      "O tratado equivale a lei ordinária, e a lei específica que autoriza a prisão prevalece pela especialidade.",
+      ""
+     ],
+     [
+      "O tratado é inválido, porque a Constituição prevê a prisão do depositário infiel e tratado não pode contrariá-la.",
+      ""
+     ]
+    ],
+    "reveal": "<p>Em dezembro de 2008, nos RE 466.343 e 349.703 e no HC 87.585, o STF passou a reconhecer a hierarquia supralegal dos tratados de direitos humanos incorporados sem o rito do § 3º. A Constituição não foi modificada: o conflito se resolveu no nível infraconstitucional. A estatura de emenda depende de aprovação em cada Casa, em dois turnos, por três quintos, e a paridade com a lei foi a orientação anterior.</p>"
+   }
+  }
+ ],
+ "quiz": [
+  [
+   "Como o juiz brasileiro trata a lei estrangeira que contraria a Constituição do país de origem?",
+   "Aplica o direito estrangeiro como ele funciona lá, inclusive com sua Constituição. Se o sistema de origem admite controle incidental, pode deixar de aplicar a norma no caso concreto, sem anulá-la nem declarar sua invalidade geral. A Ext 541 negou a extradição com base no art. 26 da Constituição italiana."
+  ],
+  [
+   "E a lei estrangeira que contraria a Constituição brasileira?",
+   "Não há controle de constitucionalidade entre normas de Estados diferentes. O juiz nega eficácia à norma no Brasil pelo art. 17 da LINDB, quando ofende soberania, ordem pública ou bons costumes, e a Constituição integra o núcleo da ordem pública, sem declarar a lei estrangeira inconstitucional."
+  ],
+  [
+   "Qual regra do art. 5º, XXXI, e qual o limite da revisão de carta rogatória (RE 634.595)?",
+   "Na sucessão de estrangeiro com bens no Brasil, aplica-se a lei brasileira em benefício do cônjuge ou dos filhos brasileiros quando for mais favorável que a lei pessoal do falecido. Na carta rogatória, o exame fica nos requisitos formais, e a revisão só ocorre se houver ofensa à soberania, à dignidade da pessoa humana ou à ordem pública."
+  ],
+  [
+   "Como o tratado entra no direito interno e onde fica na hierarquia, em regra?",
+   "O Executivo celebra, o Congresso aprova por decreto legislativo e o Executivo conclui por decreto. Desde o RE 80.004/SE (1977), o STF adota o dualismo moderado: tratado e lei ficam, em regra, no mesmo nível. A doutrina majoritária descrita por Sarlet defende a primazia do direito internacional."
+  ],
+  [
+   "Que exceção traz o art. 98 do CTN?",
+   "Tratados e convenções internacionais revogam ou modificam a legislação tributária interna e são observados pela que lhes sobrevenha. É regra específica do CTN e não vale para todo tratado."
+  ],
+  [
+   "O que fazem os §§ 2º e 3º do art. 5º e qual o resultado na prisão do depositário infiel?",
+   "O § 2º abre materialmente o catálogo aos direitos dos tratados, mas não fixa procedimento nem hierarquia. O § 3º dá equivalência de emenda ao tratado de direitos humanos aprovado em cada Casa, em dois turnos, por três quintos. Sem o rito, o tratado é supralegal e afasta as leis que autorizavam a prisão."
+  ]
+ ]
+}

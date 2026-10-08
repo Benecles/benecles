@@ -1,0 +1,15 @@
+REVISE
+
+1. **Make the Didier locators consistent throughout the plan.** A3 still gives printed pp. 507–509 / PDF pp. 507–509 for joinder, printed pp. 510–517 / PDF pp. 510–517 for the axes, and printed pp. 523–527 / PDF pp. 523–527 for absence consequences. These conflict with A0/A1/A4/A6, which give printed p. 510 / PDF pp. 508–509, printed pp. 511–518 / PDF pp. 510–517, and printed pp. 524–528 / PDF pp. 523–527 respectively. The full filename in A0 identifies the source, but does not resolve these contradictory pinpoints. Establish one verified printed/PDF mapping and apply it to every occurrence before S5.
+
+2. **Complete the closing assessment of the promised operations.** A1 task 2 promises recognition of plurality in the same proceeding and classification as active/passive/mixed; none of CLOSE-01–05 explicitly asks for those decisions or supplies their reasoning criteria. CLOSE-02 asks the reader to classify “one arrangement” without specifying that arrangement; its cited 2015 Q8 is a general multiple-choice question rather than a chosen arrangement. Specify the actual prompt and expected classification for CLOSE-02, and give an identified closing prompt that tests same-proceeding plurality and pole configuration. Keep this within the proposed one-sitting budget.
+
+3. **Give each practice item one definite use.** A2 says each trap is tested once, but A6 places 2015 A1 Q8 as retained matrix retrieval in §5 and again under CLOSE-02, and 2015 A2 Q4 as retained classification in §§4–5 and again under CLOSE-03. The crosswalk also offers optional classification practice without saying whether it replaces or supplements the closing tasks. Map retained practice to its single task ID and actual page location, or mark its section entry as an untested teaching use. Preserve the separately mapped Q7 appearances as unresolved archive records, with neither disputed answer used for practice.
+
+Second S5a panel: escalate this REVISE to the chairman under Source Pipeline; do not commission a third author round. The real-case A5 map, 13-appearance coverage map, planning-only fence, source-based live cuts, and proposed table/form instrument satisfy their respective architectural requirements; the blockers above concern source precision and assessment execution.
+
+CEO ruling 07/10: fixed 1–3
+
+1. `blueprint.md` A0–A10: fixed the source to Didier Jr., *Curso de direito processual civil*, vol. 1, 19ª ed. (2017), and standardized printed-page/PDF-page locators; A3 now follows the same mapping as the other sections.
+2. `blueprint.md` A1 task 2 and A6 Practice and retrieval check/CLOSE-06: added a closing prompt and expected answer for same-proceeding plurality and active, passive, and mixed pole configuration, within the one-sitting allocation.
+3. `blueprint.md` A6 Exam-bank crosswalk and Closing retrieval tasks: assigned retained Q3 to CLOSE-06 and Avaliação 2 Q4 to CLOSE-03 once each; removed their duplicate section practice and marked other relevant exam entries as coverage/archive records or untested teaching uses.

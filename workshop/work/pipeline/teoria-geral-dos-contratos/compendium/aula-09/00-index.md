@@ -1,0 +1,14 @@
+# Compendium — aula-09.html
+
+Provenance index assembled from `course-map.json` (S0), `shelf.csv` (S1), `chapters/` (S2), and `triage.csv` (S3).
+
+| File | Source | Chapter | Pages | Role | Why | SHA-256 |
+|---|---|---|---|---|---|---|
+| 10-slides.txt | slides-moodle-aula-9 | deck | PDF 1–10 | slides | Lesson slide deck from S1. | 99cf6a16264d4fb1e2cf71c8d1bb3b1a8933fc1bd965944304a2ac31b7bab0fa |
+| 20-primary-001-BASE-PEREIRA-CAIO-MARIO-III-capitulo-xxxvii-part-02.txt | BASE-PEREIRA-CAIO-MARIO-III | capitulo-xxxvii-part-02 | PDF 42–47 | primary | Interpretação dos contratos (n. 189): vontade declarada, intenção, boa-fé, usos e regras para adesão; 3.691 palavras. Com Venosa 07, a bibliografia básica essencial soma 10.522 palavras. | d3f95e8084c1dec25fe2c080f7ef755d04fa99cfb280eb359f5f0c4ef1f1f584 |
+| 20-primary-002-BASE-VENOSA-BASE-VENOSA-07.txt | BASE-VENOSA | BASE-VENOSA-07 | PDF 78–86 | primary | Interpretação dos contratos: examina sentido interpretativo, texto, contexto, usos e comportamento posterior; 6.831 palavras. Parte da bibliografia básica essencial. | e961b65ed7febf8812d7bd8b3e7f10208031eec379a918e5b577eb5d1c2a82bd |
+| 40-background-001-BASE-PEREIRA-CAIO-MARIO-III-capitulo-xxxvii-part-01.txt | BASE-PEREIRA-CAIO-MARIO-III | capitulo-xxxvii-part-01 | PDF 1–41 | background | Pré-requisito herdado de S0 — aula-01.html: Interpretar o contrato exige reconhecer as declarações que compõem o negócio jurídico.; aula-03.html: A boa-fé objetiva orienta a leitura do comportamento e da confiança gerada.; aula-05.html: Oferta e aceitação fornecem as declarações iniciais cujo sentido será interpretado.. | 5826db894af5e33cc6c7ffcfb4775d736f4999dc95c4b77c7518be0d4049e4a3 |
+| 40-background-002-BASE-VENOSA-BASE-VENOSA-01.txt | BASE-VENOSA | BASE-VENOSA-01 | PDF 20–27 | background | Pré-requisito herdado de S0 — aula-01.html: Interpretar o contrato exige reconhecer as declarações que compõem o negócio jurídico.. | c62c58e62a61a8548432df5c2a018bb9f648a199d00bf05e1f8dd2058e535924 |
+| 40-background-003-BASE-VENOSA-BASE-VENOSA-02.txt | BASE-VENOSA | BASE-VENOSA-02 | PDF 28–40 | background | Pré-requisito herdado de S0 — aula-03.html: A boa-fé objetiva orienta a leitura do comportamento e da confiança gerada.. | 27b94aa409ff5190ba83bf49c7d5b692f1664fbdef0c50d7d066a0e0d8ec37d8 |
+| 40-background-004-BASE-VENOSA-BASE-VENOSA-12.txt | BASE-VENOSA | BASE-VENOSA-12 | PDF 120–132 | background | Pré-requisito herdado de S0 — aula-05.html: Oferta e aceitação fornecem as declarações iniciais cujo sentido será interpretado.. | 4e16adc46d60d958f3eb82da3a2d62fa9bf27351d879189991753cc66b936883 |
+| 50-exercises-and-exams.txt | course-map.json | exam | — | exercises/exams (no assigned source) | S0 leaves lesson-specific assessment mapping undetermined; S3 assigns no exercise or exam chapter to this lesson. | 898ee1979372b8c735dc4851c26e5f806945c9cadd623097474e7b5df71a0933 |

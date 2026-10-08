@@ -1,0 +1,63 @@
+{
+  "key": "15b",
+  "date": "Unidade III",
+  "pages": [
+    {
+      "file": "aula-15.html",
+      "h1a": "Relação e norma",
+      "h1b": "em Cirne Lima",
+      "title": "Relação e norma em Cirne Lima",
+      "desc": "Cirne Lima e a ontologia da relação jurídica: fato jurídico, duas fundações da relação, ordem como organização, pessoa jurídica e círculo do direito positivo.",
+      "deck": "Para Cirne Lima, o direito específico é uma ontologia da relação, e a norma vem depois dela. <strong class=\"conc\">A ordem das duas fundações</strong> e a origem da autonomia da vontade são as armadilhas de leitura.",
+      "bet": {
+        "after_chapter": 4,
+        "question": "Ruy Cirne Lima distingue duas fundações da relação jurídica pelo critério de quem fixa o conteúdo do ato de vontade: na autonomia da vontade, é o próprio sujeito, como no domínio; na determinação pela norma, é a norma, que prescreve de antemão a finalidade a que o sujeito se submete. No direito romano, o marido que aceitou a datio dotis, a entrega do dote, submeteu-se à finalidade que a lei prescreve para o dote, e essa finalidade fixa de antemão até onde vai a dependência dos bens dotais em relação a ele. Em qual das duas fundações esse exemplo se situa?",
+        "options": [
+          [
+            "Na autonomia da vontade, porque o marido decide livremente o uso dos bens.",
+            ""
+          ],
+          [
+            "Na determinação pela norma, porque a finalidade prescrita fixa de antemão até onde vai a dependência dos bens dotais em relação a ele.",
+            "*"
+          ],
+          [
+            "Na autonomia da vontade, exposta assim por Santo Tomás.",
+            ""
+          ],
+          [
+            "Em nenhuma, porque o dote é fato jurídico instantâneo.",
+            ""
+          ]
+        ],
+        "reveal": "<p>Na determinação pela norma, o conteúdo do ato de vontade é fixado de antemão pela norma, em vista de uma finalidade (res). Na autonomia da vontade, ele fica à vontade do sujeito, como no domínio. A ordem das fórmulas latinas no texto é inversa à ordem dessas correspondências.</p><p>A autonomia da vontade é categoria moderna, e atribuí-la a Santo Tomás seria errado: Cirne Lima faz uma transposição por analogia.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "Que entrada Cirne Lima propõe para ler a ordem jurídica?",
+      "Em vez de começar pela norma, sustenta que a ontologia jurídica é, no que tem de específico, uma ontologia da relação. A relação recebe da metafísica geral as categorias do ser e só acrescenta a qualificação, per accidens, de ser jurídica."
+    ],
+    [
+      "O que é fato jurídico para Cirne Lima?",
+      "É o fato social pelo qual a ordem, segundo a justiça, se estabelece e se mantém: um estado duradouro que condiciona a relação, e não um instante. No contrato, reúne contratantes, objeto, contrato e coletividade social. A assinatura é só um momento desse conjunto."
+    ],
+    [
+      "Como se distinguem relações reais e obrigacionais?",
+      "O dever geral de respeito está no próprio conceito de fato jurídico, então não as separa. A distinção está na perseidade do termo: a coisa corpórea existe por si, e ações e abstenções dependem dos sujeitos. Isso explicaria a invasão do Direito das Obrigações pelo Direito das Coisas."
+    ],
+    [
+      "Quais as duas fundações da relação, com seus exemplos?",
+      "A autonomia da vontade, que se apoia no que a ação deixa no agente (exemplo, o domínio), e a determinação pela norma, que fixa previamente o conteúdo do ato de vontade em vista de uma finalidade (exemplo, o dote). É síntese de Cirne Lima, e a autonomia da vontade não aparece assim em Santo Tomás."
+    ],
+    [
+      "Que relação Cirne Lima estabelece entre norma, relação e ordem?",
+      "Ordem e relação são conversíveis no plano ontológico. A ordem como sistema de normas é o arquétipo normológico da ordem dinâmica, e a norma não é relação: antes da relação se faz a norma, e a regra se faz a partir do direito. A ordem dinâmica é organização e instrumento."
+    ],
+    [
+      "Qual é o círculo vicioso do direito positivo e como Cirne Lima o resolve?",
+      "O Estado, pessoa jurídica, edita normas positivas, e assim a ordem jurídica estática tem como razão formal a mesma ordem vista dinamicamente. Como cada plano pressupõe o outro, o fundamento está acima, no direito natural, que remete em última instância a Deus."
+    ]
+  ]
+}

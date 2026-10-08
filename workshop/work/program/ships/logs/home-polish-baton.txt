@@ -1,0 +1,1 @@
+2026-09-30 — HOME-POLISH SHIPPED — commit 1d65b63213. Updated the homepage preparation shelf and the 29–30 September patch note. Files: /Users/benecles/Documents/Codex/2026-09-05/okay-couple-things-so-first-of/work/study-lab-publish/index.html. Checks passed: offline build, polish capture where applicable, and polish check.

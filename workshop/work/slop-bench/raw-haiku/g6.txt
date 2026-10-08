@@ -1,0 +1,11 @@
+Criei um material didático de ~500 palavras que integra vários dos tópicos da sua lista de forma articulada. O texto é estruturado em torno de um eixo temático coerente: a tensão entre soberania popular e proteção de direitos fundamentais na América Latina.
+
+**O texto aborda:**
+- **Gelman vs. Uruguai** — como o caso paradigmático que questiona os limites da anistia democrática
+- **ADPF 153 e Lei de Anistia** — posicionamento brasileiro contrastado com a jurisprudência interamericana
+- **Gomes Lund vs. Brasil** — a condenação que criou obrigações que o STF havia recusado
+- **Controle concentrado (ADI, ADPF) e difuso** — mecanismos que operacionalizam a Constituição
+- **Modulação de efeitos** e **mandado de injunção** — instrumentos processuais específicos
+- **Autonomia das cortes constitucionais** — função contramajoritária e responsabilidade institucional
+
+O material é adequado para estudantes de Direito que já conhecem noções básicas e busca desenvolver pensamento crítico sobre a judicialização e seus limites legítimos. O arquivo está salvo em: `/private/tmp/claude-501/-private-tmp-claude-501--Users-benecles-91449f2f-8bd0-44df-b6bb-9522506e4d5e-scratchpad-rawgen/46e64c33-6b6e-43ac-a622-d91e81bdf95a/scratchpad/material_didatico_direito.md`

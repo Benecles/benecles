@@ -1,0 +1,63 @@
+{
+  "key": "14",
+  "date": "Unidade III",
+  "pages": [
+    {
+      "file": "aula-14.html",
+      "h1a": "A educação jurídica",
+      "h1b": "no Brasil oitocentista",
+      "title": "A educação jurídica no Brasil do século XIX",
+      "desc": "Cursos jurídicos brasileiros segundo Pimenta e Flores: modelo de Coimbra, projeto do Visconde da Cachoeira, Lei de 1827 e continuidade sem cópia integral.",
+      "deck": "Os cursos jurídicos brasileiros herdaram Coimbra e a reorganizaram. <strong class=\"conc\">Copiar Coimbra</strong> e <strong class=\"conc\">romper com Coimbra</strong> são as afirmações excessivas que a prova costuma apresentar.",
+      "bet": {
+        "after_chapter": 6,
+        "question": "A Universidade de Coimbra, reformada por Pombal em 1772, era o modelo português de ensino jurídico. Em 1825, o Visconde da Cachoeira elaborou um projeto de estatutos para um curso jurídico provisório no Rio de Janeiro, e em 1827 uma lei criou os cursos de São Paulo e Olinda. Uma questão afirma que os cursos jurídicos criados em 1827 copiaram Coimbra. Como se avalia a afirmação?",
+        "options": [
+          [
+            "Está correta, porque os Estatutos de Cachoeira reproduziam Coimbra.",
+            ""
+          ],
+          [
+            "Está incorreta, porque a independência rompeu totalmente com Coimbra.",
+            ""
+          ],
+          [
+            "É excessiva: a influência é clara, mas o processo combinou herança e adaptação, como mostra o contraste entre o projeto de 1825 e a Lei de 1827.",
+            "*"
+          ],
+          [
+            "Só é correta se os nomes das disciplinas coincidirem.",
+            ""
+          ]
+        ],
+        "reveal": "<p>Os primeiros agentes eram formados em Coimbra, e o projeto de Cachoeira dialogava com a reforma pombalina. Mas ele ajustava o ensino ao objetivo de formar quadros para o Estado brasileiro, e a Lei de 1827 selecionou e reorganizou as matérias em nove cadeiras.</p><p>Dizer que a independência rompeu com Coimbra também exagera, pois os agentes da ruptura vinham dessa tradição.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "Por que se reivindicava criar cursos jurídicos no Brasil?",
+      "Estudar em Portugal era caro e mantinha dependência intelectual, e o novo Estado precisava formar quadros próprios. A proposta de universidade em Vila Rica, em 1792, é um antecedente. As Academias de Direito também profissionalizaram a política, com bacharéis no Judiciário, no Executivo e no Legislativo."
+    ],
+    [
+      "O que mudou em Coimbra com a reforma pombalina?",
+      "Depois da expulsão dos jesuítas em 1759, os Estatutos de 1772 incorporaram Direito Natural, Direito Público, Direito das Gentes, história civil, Direito Romano e Direito Pátrio, numa sequência de bases gerais para o direito português e exercícios interpretativos."
+    ],
+    [
+      "Qual foi a sequência entre o decreto de 1825, os Estatutos de Cachoeira e os cursos de 1827?",
+      "Em 1825 um decreto criou provisoriamente um curso no Rio e encarregou Cachoeira dos estatutos, mas o curso não se efetivou. Os estatutos foram aproveitados em 1827, na fundação dos cursos de São Paulo e Olinda, pela Lei de 11 de agosto."
+    ],
+    [
+      "Como era o curso proposto por Cachoeira?",
+      "Um curso preparatório e um curso jurídico de cinco anos, para formar magistrados, advogados e também deputados, senadores e diplomatas. Ia do Direito Natural e das Institutas, no primeiro ano, ao Direito Pátrio, à Economia Política e à prática forense e extrajudicial no quinto."
+    ],
+    [
+      "Em que a Lei de 1827 difere do projeto de Cachoeira?",
+      "Manteve os cinco anos, mas organizou nove cadeiras em sequência diferente, com Direito Público Eclesiástico no segundo ano e Direito Mercantil e Marítimo no quarto. Não se deve atribuir à lei a grade exata do projeto só porque os Estatutos serviram de subsídio."
+    ],
+    [
+      "Que evidências mostram influência de Coimbra sem cópia integral?",
+      "A origem dos professores e dirigentes, os textos normativos usados como referência, as práticas e símbolos universitários e as escolhas curriculares. Comparar apenas nomes de disciplinas não prova continuidade, e é preciso identificar também o que foi alterado."
+    ]
+  ]
+}

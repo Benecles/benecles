@@ -1,0 +1,63 @@
+{
+  "key": "15",
+  "date": "Semanas 14–18",
+  "pages": [
+    {
+      "file": "aula-15.html",
+      "h1a": "Aplicação imediata e",
+      "h1b": "destinatários",
+      "title": "Aplicação imediata e destinatários dos direitos fundamentais",
+      "desc": "O art. 5º, § 1º, a máxima eficácia possível, a vinculação de legislador, administração e Judiciário e a eficácia direta prima facie entre particulares.",
+      "deck": "\"Aplicação imediata\" não significa <strong class=\"conc\">eficácia idêntica</strong> para todos os direitos nem dispensa a lei. A lição decide <strong class=\"dif\">quem está obrigado</strong>, do legislador ao particular, e como.",
+      "bet": {
+        "after_chapter": 6,
+        "question": "Uma associação privada, sem atribuição pública, exclui um sócio sem lhe dar oportunidade de defesa, e o estatuto nada diz sobre procedimento. A associação alega que a relação é privada e que o devido processo legal só vincula o Estado. A exclusão se sustenta?",
+        "options": [
+          [
+            "Sim: direitos fundamentais só vinculam o poder público, e a autonomia privada da associação basta para justificar a exclusão.",
+            ""
+          ],
+          [
+            "Sim: o art. 5º, § 1º, só alcança entidades privadas com atribuições públicas, e esta não as tem.",
+            ""
+          ],
+          [
+            "Não: os direitos fundamentais valem, em princípio e diretamente, também nas relações privadas, e o devido processo legal e a ampla defesa incidem sobre a entidade. Havendo choque com a autonomia da associação, o método é a ponderação, sem sacrificar por completo nenhum dos lados.",
+            "*"
+          ],
+          [
+            "Não: o STF firmou doutrina jurisprudencial uniforme de eficácia indireta, e por isso a lei civil deveria ter previsto a defesa.",
+            ""
+          ]
+        ],
+        "reveal": "<p>O STF, por maioria e em longo voto do Ministro Gilmar Mendes, reconheceu que a entidade privada deve observar o devido processo legal e a ampla defesa ao afastar compulsoriamente um associado, seguindo decisão anterior. A tese prevalente é a da eficácia direta prima facie, ponto de partida e não resultado: o modo de aplicar varia, e o conflito com a autonomia privada se resolve por ponderação. Também não há doutrina jurisprudencial consistente sobre o tema.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O que o art. 5º, § 1º, alcança e o que ele não faz?",
+      "Alcança todas as normas definidoras de direitos e garantias fundamentais, dentro ou fora do art. 5º, inclusive os direitos sociais, porque a Constituição de 1988 não separou regimes como a portuguesa. Não dá aplicabilidade direta a todas as demais normas constitucionais: a norma que impõe ao legislador o dever de legislar continua a exigir lei para alguns efeitos, embora sirva para declarar a inconstitucionalidade de atos contrários e a omissão."
+    ],
+    [
+      "Aplicação imediata significa eficácia idêntica ou dispensa a lei?",
+      "Nenhuma das duas. Os direitos são multifuncionais, com posições defensivas e prestacionais, e cada um tem âmbito de proteção e limites próprios, que determinam seus efeitos. A lei pode regulamentar e restringir e continua dando concretude aos direitos. O que o parágrafo exclui é que a falta de lei seja obstáculo absoluto à aplicação e à extração de efeitos úteis."
+    ],
+    [
+      "Que deveres Sarlet extrai do § 1º e qual a presunção que decorre deles?",
+      "Dois deveres que convivem: a regra de aplicação imediata e o dever de dar às normas de direitos fundamentais a máxima eficácia e efetividade possível, dirigido a todos os órgãos estatais, com ênfase nos jurisdicionais. As normas presumem-se de eficácia plena, salvo quando a própria Constituição dispuser o contrário de modo expresso. Pela formulação de Krüger, é a lei que se move no âmbito dos direitos fundamentais, e não o inverso."
+    ],
+    [
+      "Qual exemplo de aplicação direta sem lei Sarlet destaca na jurisprudência do STF?",
+      "O direito de greve dos servidores públicos, que o STF assegurou apesar de não existir lei que o regulasse. Sarlet nota que o Supremo raramente invoca o § 1º de forma expressa e não produziu interpretação uniforme, mas tende a aplicá-lo a todas as normas de direitos fundamentais e a rejeitar a mera programaticidade."
+    ],
+    [
+      "Quem são os destinatários dos direitos fundamentais e como cada Poder é vinculado?",
+      "Destinatário é o sujeito passivo, público ou privado; a Constituição de 1988 é omissa, ao contrário da portuguesa (art. 18/1), e o § 1º recebe sentido equivalente. O legislador não pode editar atos contrários e deve concretizar os direitos. A administração só executa leis conformes e as aplica de modo conforme, e não escapa pela forma de direito privado (Flucht in das Privatrecht). O Judiciário não aplica atos contrários à Constituição e deve dar aos direitos a maior eficácia possível."
+    ],
+    [
+      "Qual a tese prevalente sobre a eficácia dos direitos fundamentais nas relações privadas?",
+      "A doutrina oscila entre a eficácia mediata (indireta) e a imediata (direta), com posições intermediárias. Segundo Sarlet, prevalece a eficácia direta prima facie, com modo de aplicação variável. Quando o conflito é com outro direito fundamental ou com a autonomia privada, decide-se por ponderação e concordância prática, preservando o conteúdo essencial de cada um. Não há ainda doutrina jurisprudencial consistente e dominante."
+    ]
+  ]
+}

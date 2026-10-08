@@ -1,0 +1,15 @@
+# Compendium — aula-11.html
+
+Provenance index assembled from `course-map.json` (S0), `shelf.csv` (S1), `chapters/` (S2), and `triage.csv` (S3).
+
+| File | Source | Chapter | Pages | Role | Why | SHA-256 |
+|---|---|---|---|---|---|---|
+| 10-slides.txt | slides-aula-10-moodle | deck | PDF 1–11 | slides | Lesson slide deck from S1. | 4cb5a8b7bc8b83f9fecb36d75e3d23eb7573efd11ced5aa9d2dbf8885e3e7219 |
+| 20-primary-001-BASE-VENOSA-BASE-VENOSA-02.txt | BASE-VENOSA | BASE-VENOSA-02 | PDF 28–40 | primary | A seção sobre contratos de adesão e cláusulas predispostas discute diretamente cláusulas abusivas, tópico expresso da Aula 11. | 27b94aa409ff5190ba83bf49c7d5b692f1664fbdef0c50d7d066a0e0d8ec37d8 |
+| 20-primary-002-BASE-VENOSA-BASE-VENOSA-06.txt | BASE-VENOSA | BASE-VENOSA-06 | PDF 70–77 | primary | A seção 6.6 trata expressamente de lesão e práticas abusivas no Código do Consumidor, correspondendo aos defeitos de origem da Aula 11. | e6745b8d20c7df039b954845f0087de08bb7e37320c59ab4058775a0131d77ab |
+| 30-supporting-001-BASE-VENOSA-BASE-VENOSA-01.txt | BASE-VENOSA | BASE-VENOSA-01 | PDF 20–27 | supporting | A discussão da relação de consumo relaciona lesão, vantagem exagerada e cláusulas abusivas; complementa a análise dos defeitos presentes na celebração. | c62c58e62a61a8548432df5c2a018bb9f648a199d00bf05e1f8dd2058e535924 |
+| 40-background-001-BASE-PEREIRA-CAIO-MARIO-III-capitulo-xxxvii-part-01.txt | BASE-PEREIRA-CAIO-MARIO-III | capitulo-xxxvii-part-01 | PDF 1–41 | background | Pré-requisito herdado de S0 — aula-01.html: A cláusula abusiva em consumo pressupõe identificar essa modalidade de relação.; aula-03.html: O equilíbrio econômico e a boa-fé informam a avaliação do defeito inicial.. | 5826db894af5e33cc6c7ffcfb4775d736f4999dc95c4b77c7518be0d4049e4a3 |
+| 40-background-002-BASE-PEREIRA-CAIO-MARIO-III-capitulo-xxxvii-part-02.txt | BASE-PEREIRA-CAIO-MARIO-III | capitulo-xxxvii-part-02 | PDF 42–47 | background | Pré-requisito herdado de S0 — aula-03.html: O equilíbrio econômico e a boa-fé informam a avaliação do defeito inicial.. | d3f95e8084c1dec25fe2c080f7ef755d04fa99cfb280eb359f5f0c4ef1f1f584 |
+| 40-background-003-BASE-PEREIRA-CAIO-MARIO-III-capitulo-xxxviii.txt | BASE-PEREIRA-CAIO-MARIO-III | capitulo-xxxviii | PDF 48–64 | background | Pré-requisito herdado de S0 — aula-08.html: A adesão é uma das formas contratuais relevantes para avaliar cláusulas abusivas.. | 7903b47d61e22feec6135496d067bf06cb2aaf3d95892bab0b87df31252d440b |
+| 40-background-004-BASE-VENOSA-BASE-VENOSA-05.txt | BASE-VENOSA | BASE-VENOSA-05 | PDF 59–69 | background | Pré-requisito herdado de S0 — aula-08.html: A adesão é uma das formas contratuais relevantes para avaliar cláusulas abusivas.. | b0232812492c50c139c53542e19ce4657041452ac121660023553bd60c80199a |
+| 50-exercises-and-exams.txt | course-map.json | exam | — | exercises/exams (no assigned source) | S0 leaves lesson-specific assessment mapping undetermined; S3 assigns no exercise or exam chapter to this lesson. | 898ee1979372b8c735dc4851c26e5f806945c9cadd623097474e7b5df71a0933 |

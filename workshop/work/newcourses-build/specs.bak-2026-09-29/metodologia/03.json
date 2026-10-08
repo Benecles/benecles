@@ -1,0 +1,63 @@
+{
+  "key": "03",
+  "date": "Unidade I",
+  "pages": [
+    {
+      "file": "aula-03.html",
+      "h1a": "Casuísmo e sistema I",
+      "h1b": "o caso",
+      "title": "Casuísmo e sistema I: o caso",
+      "desc": "Casuísmo como crença social em Tau Anzoátegui, a palavra caso, a tradição romana e comum, probabilismo e a razão pela qual o fato diferente conta.",
+      "deck": "Tau trata a atenção ao caso como uma crença social, e não como uma técnica escolhida. <strong class=\"conc\">O passo que a prova cobra</strong> é mostrar por que o fato diferente muda a razão da regra.",
+      "bet": {
+        "after_chapter": 4,
+        "question": "Uma ordem geral impõe o mesmo procedimento a duas províncias, mas uma delas tem costumes locais que a norma não considerou. Como responde o método casuísta descrito por Tau?",
+        "options": [
+          [
+            "A ordem vale igualmente nas duas, porque a regra geral prevalece sobre as particularidades.",
+            ""
+          ],
+          [
+            "A ordem perde a força automaticamente na província com costumes próprios.",
+            ""
+          ],
+          [
+            "Identifica a regra, expõe a particularidade relevante de tempo, lugar, pessoas ou negócio e explica por que ela justifica manter, interpretar ou ajustar a regra.",
+            "*"
+          ],
+          [
+            "O caso concreto prevalece sobre a regra, e basta afirmá-lo.",
+            ""
+          ]
+        ],
+        "reveal": "<p>A regra continua útil, mas não substitui o exame das circunstâncias. Solórzano e Castillo de Bobadilla mostram que a medida da lei depende de província, tempo e negócio. A resposta correta torna visível o caminho entre fato, regra e solução.</p><p>Escrever apenas que o caso concreto prevalece não basta: é preciso apontar o fato que diferencia a situação e fundamentar.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "O que significa dizer que o casuísmo era uma crença, e não uma ideia?",
+      "Crença, para Tau, é um modo de pressupor e perceber a realidade, recebido do passado e raramente enunciado. Uma ideia precisa ser formulada e defendida. Tau usa a distinção de Ortega y Gasset, desenvolvida por Marías e incorporada por Maravall."
+    ],
+    [
+      "Por que Tau prefere a palavra caso à palavra casuísmo?",
+      "Os juristas dos séculos XVI a XVIII não usavam casuísmo, palavra que só se generalizou no século XIX. Casuísta nomeava quem tratava casos de consciência e ganhou sentido pejorativo. Caso era o termo corrente: o fato ocorrido ou a questão em que se fundava a lei ou a decisão."
+    ],
+    [
+      "O casuísmo dispensava toda regra geral?",
+      "Não. Uma categoria ou regra só valia se ajudasse a compreender e resolver a questão concreta. Brocardos como em caso novo, conselho novo mostram a desconfiança diante de regra aplicada sem atenção aos fatos."
+    ],
+    [
+      "Que papel tinham a tradição romana e a comum nessa atitude?",
+      "O jurista romano começava pelo problema concreto, e conceitos como aequitas e bona fides valoravam circunstâncias. Os juristas medievais harmonizavam textos do Corpus Iuris para casos concretos e argumentavam pelo provável com a communis opinio doctorum. Não houve, porém, um casuísmo puro."
+    ],
+    [
+      "Que justificativa Bermúdez de Pedraza dá para ensinar o Direito por fatos?",
+      "As consultas chegavam como particularidades de um fato, e uma pequena mudança nos fatos podia fazer variar o Direito. Regras universais eram perigosas, porque uma exceção bastava para mostrar que a formulação não abrangia todos os casos."
+    ],
+    [
+      "Qual é o limite do uso de exemplos e precedentes em Palafox e León Pinelo?",
+      "Exemplos e máximas ensinam, mas é preciso verificar se servem ao caso próprio, como quem confere se a armadura do arsenal serve. Livros e experiência dão material para refletir quando não há caso idêntico decidido, e não respostas prontas."
+    ]
+  ]
+}

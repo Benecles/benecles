@@ -1,0 +1,7 @@
+APPROVED
+
+1. A1 turns the S0 outcome into five answerable tasks; A2 maps each task’s trap to one closing item, with the exact Q11 reserved for item 5 in §06. The exercise set covers experience rules, initiative, necessity and impartiality.
+2. A4 and A6 give section-level locators within the indexed compendium: Marinoni PDF 256, 269–271 and 278; Barbosa Moreira PDF 56–57; the individually indexed CPC articles; and Q11 at PDF 2. The sequence recalls residual doubt, distinguishes fact from rule, explains evaluation, then introduces authority and safeguards.
+3. The syllabus’s burden topic is a bounded prerequisite recall; maxims and judicial evidentiary powers receive the main treatment. The blueprint correctly identifies Q11 as an Aula 15 bank appearance with express Aula 18 overlap, rather than claiming an exam question assigned directly to Aula 18.
+4. Art. 370 is one real carrier throughout. The figure operates on its statutory wording through selection and highlighting; the contrast remains an HTML table, and the rejected calendar would require invented chronology. No fictional litigation carries the plan.
+5. The 3,200-word plan fits S0’s one-sitting range. S0 confirms a planned route with no live page to cut. A3 is explicitly private, A8 makes defensible exclusions, and A2 assigns each trap one teaching location and one test without inviting source, slide or course-map commentary into the page.

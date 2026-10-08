@@ -1,0 +1,63 @@
+{
+  "key": "04",
+  "date": "Semanas 8–9",
+  "pages": [
+    {
+      "file": "aula-04.html",
+      "h1a": "Supremacia e",
+      "h1b": "guarda da Constituição",
+      "title": "Supremacia da Constituição e controle de constitucionalidade",
+      "desc": "Por que a Constituição é suprema e precisa de guardião, os modelos de controle (norte-americano, austríaco, francês) e as ações brasileiras (ADI, ADC, ADPF).",
+      "deck": "A supremacia não se executa sozinha: alguém precisa certificar a inconstitucionalidade. Esta aula compara os modelos de defesa e mostra <strong class=\"dif\">qual ação cabe em cada situação</strong>, com as <strong class=\"conc\">confusões clássicas entre concentrado e abstrato, ADI e ADPF</strong>.",
+      "bet": {
+        "after_chapter": 11,
+        "question": "Um legitimado do art. 103 quer derrubar uma lei municipal que ofende diretamente a Constituição. Qual via cabe?",
+        "options": [
+          [
+            "ADI, porque a lei municipal ofende diretamente a Constituição e o autor tem legitimidade universal.",
+            ""
+          ],
+          [
+            "ADC, porque basta pedir a declaração de constitucionalidade de ato normativo de qualquer ente.",
+            ""
+          ],
+          [
+            "ADPF, mas só se o dispositivo violado for preceito fundamental, como uma cláusula pétrea, e não houver outro meio eficaz de sanar a lesividade.",
+            "*"
+          ],
+          [
+            "Representação interventiva, porque envolve a autonomia municipal.",
+            ""
+          ]
+        ],
+        "reveal": "<p>A ADI só alcança ato normativo federal ou estadual, o que exclui a lei municipal. Isso satisfaz o primeiro requisito da ADPF, que é não haver outra ação abstrata específica. O segundo decide: a ADPF é residual (art. 4º da Lei 9.882/99) e defende preceito fundamental, não qualquer dispositivo constitucional.</p>"
+      }
+    }
+  ],
+  "quiz": [
+    [
+      "Que ideias dão à Constituição a condição de norma suprema?",
+      "Canotilho as resume assim: as normas constitucionais formam uma lex superior que tem em si o fundamento de validade; são normas de normas, fonte de produção de outras normas; e exigem que os atos dos poderes políticos lhes sejam conformes. Tavares vê na rigidez a fonte da supremacia, porque a lei ordinária contrária à Constituição rígida não a altera. Além de superlei, a Constituição é lei: regula condutas diretamente, sem depender do legislador."
+    ],
+    [
+      "Onde surgiu a ideia de controle judicial das leis e por que a Europa demorou a adotá-la?",
+      "O caso do Doutor Bonham (1610), de Coke, é a origem próxima, mas a tese perdeu para a supremacia do Parlamento depois de 1688. Nos Estados Unidos, Holmes v. Walton foi precedente e Marbury v. Madison (1803) o caso mais célebre. Na Europa, o princípio monárquico e a crítica de Lassalle a impediram, e só depois da Primeira Guerra, por volta de 1920, firmaram-se a supremacia constitucional e os tribunais constitucionais."
+    ],
+    [
+      "Que três eixos permitem classificar um sistema de controle, e onde ficam Estados Unidos, Áustria, Itália e França?",
+      "Quem controla: difuso (todos os juízes) ou concentrado (um só órgão). Como: concreto (dentro de um caso), abstrato (em tese) ou incidental (questão destacada de caso concreto e remetida ao tribunal constitucional). Quando: preventivo ou repressivo. Estados Unidos: difuso, concreto, repressivo. Áustria: concentrado, abstrato, repressivo. Itália: incidental. França: preventivo, pelo Conselho Constitucional. Concentrado não é sinônimo de abstrato."
+    ],
+    [
+      "Como o Brasil combinou os modelos, e qual o efeito do recurso extraordinário?",
+      "O Brasil une o controle concreto e difuso, feito por juízes e tribunais, e o controle abstrato, reservado ao STF, que vem da EC 16/65 e se aproxima do austríaco. Quando o STF julga um recurso extraordinário, o controle continua concreto, com efeitos interpartes; para valer para todos é necessária a resolução do Senado (art. 52, X). Na Rcl 4.335, só os Ministros Gilmar Mendes e Eros Grau aceitaram efeitos erga omnes, e os demais conheceram a reclamação pela Súmula Vinculante 26."
+    ],
+    [
+      "Que requisitos tem a ADI e como se diferenciam ADC e ADPF?",
+      "A ADI exige ofensa direta à Constituição, ato normativo federal ou estadual e posterior a 1988, com pertinência temática para o inc. IX do art. 103 e, em certos casos, para os incs. IV e V; o Advogado-Geral da União defende o ato. A ADC só cabe contra lei ou ato normativo federal, e a improcedência equivale à declaração de inconstitucionalidade. A ADPF é residual (art. 4º da Lei 9.882/99) e protege preceito fundamental. As três têm, em regra, efeitos ex tunc, erga omnes e vinculantes."
+    ],
+    [
+      "Que particularidades têm a súmula vinculante, a representação interventiva e o controle preventivo de PEC?",
+      "A súmula vinculante (EC 45/2004) tem, em regra, efeito ex nunc, erga omnes e vinculante, e a decisão que a descumpre gera reclamação ao STF (art. 102, I, l). A representação interventiva, para violação dos princípios sensíveis do art. 34, VII (art. 36, III), é controle concreto embora concentrado. O controle preventivo de PEC só ocorre de modo incidental, em mandado de segurança de parlamentar, que Tavares classifica como repressivo; para ele, a ADPF seria a via mais coerente."
+    ]
+  ]
+}

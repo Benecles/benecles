@@ -1,0 +1,13 @@
+Criei um material didático de aproximadamente 500 palavras em prosa corrida, conectando tópicos essenciais para estudantes de Direito:
+
+## Estrutura do material:
+
+**1. Teoria Finalista da Ação e Conceito Analítico de Crime** — Explica como a teoria finalista deslocou o foco da causalidade para a finalidade, e como o crime se estrutura em tipicidade, ilicitude e culpabilidade. Inclui diferenciação entre erro de tipo e erro de proibição.
+
+**2. Controle de Constitucionalidade** — Contrasta o controle difuso (exercido por qualquer juiz em caso concreto) com o controle concentrado (ADI/ADPF pelo STF), mostrando seus diferentes alcances e efeitos.
+
+**3. Casos Práticos** — A ADPF 153 (Lei de Anistia) como exemplo de tensão entre decisões nacionais e condenações internacionais (Gomes Lund vs. Brasil pela Corte Interamericana).
+
+**4. Modulação de Efeitos e Autonomia das Cortes** — Discute como o STF modula efeitos de suas decisões e o dilema fundamental da autonomia das cortes constitucionais na América Latina.
+
+O texto mantém linguagem acadêmica mas acessível, com exemplos concretos que ilustram como esses conceitos determinam na prática quem é condenado e qual é o alcance das decisões constitucionais. O arquivo foi salvo no scratchpad para você consultar.

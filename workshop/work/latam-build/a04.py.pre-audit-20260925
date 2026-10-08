@@ -1,0 +1,93 @@
+from common import *
+
+TL = [(80, '1991', 'Constituição', 'art. 22: a paz é direito e dever', 'ink'),
+      (250, '2012', 'Acto Leg. 01', 'Marco Jurídico para la Paz', 'dif'),
+      (420, '2013', 'C-579', 'a emenda não substitui a CF', 'dif'),
+      (590, '2015', 'C-694', 'priorização e vítimas', 'dif'),
+      (760, '2016', 'Acordo final', 'após o "não" no plebiscito', 'conc'),
+      (930, '2017', 'C-674', 'a JEP e seus limites', 'dif')]
+hero = '<path class="draw" d="M60 70H1020" style="fill:none;stroke:var(--ink);stroke-width:3"/>'
+for i, (x, y, a, b_, tone) in enumerate(TL):
+    col = {'ink': 'var(--ink)', 'dif': 'var(--dif)', 'conc': 'var(--conc)'}[tone]
+    hero += (f'<g class="pop" style="--d:{.2 + i * .2:.1f}s;font:12px var(--mono);letter-spacing:1px">'
+             f'<circle cx="{x}" cy="70" r="7" style="fill:{col}"/>'
+             f'<text x="{x}" y="46" text-anchor="middle" style="fill:{col}">{y}</text>'
+             f'<text x="{x}" y="100" text-anchor="middle" style="fill:var(--ink)">{a}</text>'
+             f'<text x="{x}" y="118" text-anchor="middle" style="fill:var(--ink-2);font-size:11px">{b_}</text></g>')
+
+# ---- Fig: the three decisions, each answering one question
+DEC = [('C-579/2013', 'Até onde a Constituição pode ser', 'reformada para viabilizar a transição?', 'A emenda não substitui a Constituição:', 'seleção e priorização são legítimas.'),
+       ('C-694/2015', 'Como compatibilizar a priorização', 'com os direitos das vítimas?', 'Priorizar não exclui: é técnica para', 'investigar a macrocriminalidade.'),
+       ('C-674/2017', 'Até onde o Acordo pode criar uma', 'nova institucionalidade?', 'Aceita a JEP, mas protege o juiz natural', 'dos civis e a supremacia da CF.')]
+def decisions(k):
+    o = T(40, 56, 'TRÊS DECISÕES, TRÊS PERGUNTAS', 't-small', style='letter-spacing:.1em')
+    for i, (c, q1, q2, a1, a2) in enumerate(DEC):
+        y = 80 + i * 168
+        on = i == k
+        o += G(R(40, y, 520, 148, 'w-dif ink' if on else 'f-paper ink', style='' if on else 'opacity:.4')
+               + T(58, y + 30, c, 't-mid' + (' tc-dif' if on else ''), style='' if on else 'opacity:.5')
+               + T(58, y + 56, q1, 't-small', style='' if on else 'opacity:.5') + T(58, y + 74, q2, 't-small', style='' if on else 'opacity:.5')
+               + (P(f'M58 {y+90}H540', 'thin') + T(58, y + 114, a1, 't-small tc-conc') + T(58, y + 132, a2, 't-small tc-conc') if on else ''),
+               'pop' if on else '', d=.15, extra=go(f'p-dc{i}', c))
+    return o
+
+b = ''
+b += chapter('01', 'c1', 'Uma Constituição feita para a paz', 'A Carta de 1991 nasceu da violência política e criou a Corte que depois julgaria a transição.', 'dif')
+b += longform(
+    '<p>A Constituição colombiana de 1991 surgiu de uma crise: conflito armado, narcotráfico, o assassinato de candidatos presidenciais (Luis Carlos Galán em 1989; Bernardo Jaramillo e Carlos Pizarro em 1990) e uma mobilização estudantil que, nas eleições de março de 1990, propôs uma "sétima cédula" para consultar a população sobre uma Assembleia Constituinte. A Assembleia foi eleita em dezembro de 1990 e instalada em fevereiro de 1991, com 70 constituintes de forças muito diferentes: liberais, conservadores, a Alianza Democrática M-19 (formada por ex-guerrilheiros desmobilizados), a União Patriótica e representantes indígenas.</p>',
+    '<p>Duas escolhas dessa Constituição explicam o resto da aula. A primeira é o <strong>art. 22</strong>: "la paz es un derecho y un deber de obligatorio cumplimiento". A paz deixa de ser apenas política de governo e passa a ser valor, direito e dever constitucional, o que depois servirá de fundamento para reformar a própria Constituição em nome da transição. A segunda é a criação da <strong>Corte Constitucional</strong>, órgão especializado que tirou o controle de constitucionalidade da Corte Suprema de Justiça.</p>',
+    '<h3>Como ler uma sentença da Corte Constitucional</h3>',
+    '<p>A Corte tem nove magistrados, com mandato de oito anos sem recondução, eleitos pelo Senado a partir de ternas do Presidente, do Conselho de Estado e da Corte Suprema. O prefixo da sentença diz o tipo de processo:</p>')
+b += wide(table(['Sigla', 'O que é', 'Como chega à Corte'], [
+    ['C', 'Controle abstrato de constitucionalidade', 'Ação pública de inconstitucionalidade: qualquer cidadão colombiano, sem demonstrar interesse próprio. Também o controle automático, quando a Constituição manda (decretos de exceção, atos do fast track da paz).'],
+    ['T', 'Tutela: proteção concreta de direitos fundamentais', 'A ação é decidida por outros juízes; a Corte seleciona algumas decisões e as revisa numa Sala de Revisión.'],
+    ['SU', 'Sentença de unificação', 'A Sala Plena unifica a jurisprudência, sobretudo em tutela.'],
+    ['A', 'Auto', 'Decisão processual da Corte.'],
+], hcls=['', '', '']))
+b += longform(
+    '<p>O processo é distribuído a um <strong>magistrado ponente</strong>, que prepara o projeto; no controle abstrato, quem decide é a Sala Plena, e o ponente não é necessariamente o autor da versão final. Quem acompanha o resultado mas discorda de parte dos fundamentos escreve uma <strong>aclaración de voto</strong>; quem discorda da decisão, total ou parcialmente, escreve um <strong>salvamento de voto</strong>. Na ação pública, qualquer cidadão pode ainda <strong>intervir</strong> para defender ou impugnar a norma durante os dez dias de "fijación en lista".</p>')
+
+b += chapter('02', 'c2', 'Três decisões sobre a justiça de transição', 'Cada sentença responde a uma pergunta diferente sobre até onde a paz pode mexer na Constituição.')
+b += bet('Uma emenda autoriza o Estado a processar só os máximos responsáveis por crimes graves e a renunciar, sob condições, à persecução dos demais casos. Isso substitui a Constituição?', [
+    ('Não: a paz legitima a seleção e a priorização, se os direitos das vítimas forem preservados.', '*Corte Constitucional, maioria (C-579/2013)'),
+    ('Sim: investigar e punir crimes graves é jus cogens e não admite renúncia.', 'Mauricio González Cuervo, vencido em parte'),
+], '<p>A Corte ficou com a primeira, ponderando paz e direitos das vítimas. O voto parcialmente vencido de González Cuervo é a posição do direito internacional mais estrito. A mesma tensão atravessa as outras duas decisões abaixo.</p>')
+b += scrolly('A Corte e a transição', [(f'p-dc{k}', decisions(k), DEC[k][0]) for k in range(3)], [
+    S('p-dc0', 'C-579/2013 · 28/08/2013', 'O Marco Jurídico para la Paz', '<p>O Acto Legislativo 01 de 2012 inseriu na Constituição instrumentos de justiça transicional. Membros da Comissão Colombiana de Juristas (Gustavo Gallón e outros) alegaram que autorizar o Estado a <strong>selecionar e priorizar</strong> casos, concentrando a persecução penal nos máximos responsáveis por crimes de lesa-humanidade, genocídio e crimes de guerra sistemáticos, e renunciar condicionalmente à persecução dos demais, <strong>substituía</strong> a Constituição: eliminava o dever estatal de garantir os direitos humanos. Como a Corte só controla emendas por vícios de procedimento e por "substituição" da Constituição, a pergunta era essa.</p><p>A maioria (ponente Jorge Ignacio Pretelt) respondeu que não. Ponderou a paz e a reconciliação com os direitos das vítimas à verdade, à justiça, à reparação e à não repetição, e concluiu que, para alcançar uma paz estável e duradoura, é legítimo adotar seleção e priorização. María Victoria Calle, Alberto Rojas e Luis Ernesto Vargas acompanharam em <em>aclaración</em>, exigindo rigor do legislador na regulamentação. Mauricio González Cuervo divergiu parcialmente: o dever de investigar e punir crimes graves de direito internacional é <em>jus cogens</em> e não admite renúncia em nome da paz.</p>', 'dif'),
+    S('p-dc1', 'C-694/2015 · 11/11/2015', 'Priorização e macrocriminalidade', '<p>A Lei 1.592 de 2012 reformou a Lei de Justiça e Paz (Lei 975 de 2005), o regime aplicado aos paramilitares desmobilizados. Os autores (Iván Cepeda, Alirio Uribe e outros) sustentaram que a <strong>priorização</strong> na investigação violava a igualdade das vítimas cujos casos não fossem escolhidos primeiro e o direito de acesso rápido à justiça.</p><p>A maioria (ponente Alberto Rojas) entendeu que priorizar não é excluir. É uma técnica de política criminal para investigar fenômenos complexos: em vez de resolver casos isolados, reconstrói a estrutura da organização armada e seus <strong>padrões macrocriminais</strong>, o que acaba servindo melhor às próprias vítimas. María Victoria Calle ficou parcialmente vencida: ao remeter a reparação integral para a via administrativa da Lei 1.448 de 2011, o modelo multiplica os ônus processuais das vítimas, obrigando-as a um segundo processo.</p>', 'dif'),
+    S('p-dc2', 'C-674/2017 · 14/11/2017', 'A Jurisdição Especial para a Paz', '<p>O Acto Legislativo 01 de 2017 constitucionalizou o sistema criado pelo Acordo de Paz. O controle foi automático, único e posterior, próprio do procedimento legislativo especial da paz (<em>fast track</em>); o ponente foi Luis Guillermo Guerrero. A Corte aceitou a nova arquitetura, mas fixou quatro limites:</p><p><strong>Juiz natural.</strong> Submeter obrigatoriamente à JEP terceiros civis e agentes do Estado não combatentes, perante um tribunal criado depois dos fatos, viola as garantias do juiz natural; para eles, a jurisdição é voluntária. <strong>Tutela.</strong> As regras que restringiam de forma especial a revisão, pela Corte, das tutelas contra decisões da JEP foram declaradas inexequíveis, porque deixariam a JEP imune à proteção dos direitos fundamentais. <strong>Soberania judicial.</strong> Especialistas estrangeiros não podem participar das deliberações das salas da JEP, nem sem voto; podem atuar como amicus curiae. <strong>Condicionalidade.</strong> O tratamento penal especial só se justifica se houver, em troca, contribuição efetiva com a verdade, a reparação e a não repetição.</p>'),
+])
+
+b += chapter('03', 'c3', 'O processo de paz entre as decisões', 'Entre a C-694 e a C-674 houve quatro anos de negociação, um plebiscito perdido e um segundo acordo.', 'dif')
+b += longform(
+    '<p>As FARC-EP surgiram em 1964 e se tornaram a maior e mais antiga guerrilha do país, num conflito que envolveu também forças estatais, paramilitares, narcotráfico e deslocamentos massivos de população. Houve tentativas de paz nos governos Betancur, Barco, Gaviria, Samper e Pastrana. Juan Manuel Santos, eleito em 2010 depois de ter sido ministro da Defesa de Álvaro Uribe, combinou pressão militar com negociação: os diálogos com as FARC começaram oficialmente em 2012, em Havana, com Noruega e Cuba como garantes. A pressão militar também tinha sua face mais grave, revelada em 2008 no escândalo dos "falsos positivos": civis executados por agentes do Estado e apresentados como guerrilheiros mortos em combate.</p>',
+    '<p>A agenda tinha seis pontos: reforma rural integral, participação política dos ex-combatentes, fim do conflito, drogas ilícitas, vítimas, e implementação e verificação. O ponto 5, sobre vítimas, é o que transforma a negociação em problema de justiça de transição. Dele nasceu o <strong>Sistema Integral de Verdad, Justicia, Reparación y No Repetición</strong>: a Comissão para o Esclarecimento da Verdade, a Unidade de Busca de Pessoas dadas por Desaparecidas, a Jurisdição Especial para a Paz (JEP), medidas de reparação e garantias de não repetição.</p>',
+    '<p>O primeiro acordo foi assinado em Cartagena em setembro de 2016 e submetido a plebiscito em 2 de outubro. O "não" venceu por 50,21% a 49,78%. Houve renegociação com governo, FARC, setores que fizeram campanha pelo "não", organizações sociais e vítimas, e um novo acordo foi assinado no Teatro Colón, em Bogotá, em 24 de novembro de 2016. O Acto Legislativo 01 de 2017 incorporou o sistema à Constituição e foi esse ato que a C-674/2017 examinou.</p>',
+    '<p>A JEP tem três Salas de Justiça (de Reconhecimento de Verdade e Responsabilidade; de Anistia ou Indulto; de Definição de Situações Jurídicas) e, acima delas, o Tribunal para a Paz, com cinco seções. A Seção de Apelação é o órgão de fechamento: unifica a jurisprudência da própria jurisdição.</p>')
+
+b += chapter('04', 'c4', 'Brasil e Colômbia, lado a lado', 'A mesma pergunta sobre justiça de transição recebeu respostas institucionais opostas.')
+b += wide(table(['', 'Brasil · ADPF 153', 'Colômbia · C-579, C-694, C-674'], [
+    ['Modelo de transição', 'Acordo político de anistia bilateral e ampla (1979).', 'Ponderação entre paz e justiça: seleção e priorização dos máximos responsáveis por crimes graves.'],
+    ['Agentes do Estado e terceiros', 'Anistiados (os crimes conexos incluem os da repressão).', 'Agentes combatentes vão à JEP; civis e terceiros não combatentes só de forma voluntária.'],
+    ['Papel da Corte', 'Autocontenção: julga improcedente e mantém o pacto intocado.', 'Intervenção ativa: valida a transição, mas impõe limites (juiz natural, tutela, soberania judicial, condicionalidades).'],
+    ['Vítimas', 'Direito à verdade invocado pela OAB e pelos votos vencidos, sem acolhida na maioria.', 'Centro do sistema: benefícios condicionados à verdade, à reparação e à não repetição.'],
+], hcls=['', 'conc', 'dif']))
+b += longform(eixo('A justiça de transição envolve obrigações internacionais de direitos humanos?'),
+    '<p>A Colômbia responde de um modo que o Brasil não respondeu: o dever de investigar e punir é levado a sério, mas modulado. A Corte aceita que o Estado não processe todos os casos, desde que concentre esforços nos máximos responsáveis e condicione qualquer benefício à verdade e à reparação. A divergência de González Cuervo mostra o outro extremo da resposta: se o dever é <em>jus cogens</em>, nem a paz autoriza renunciar a ele.</p>')
+
+b += chapter('05', 'c5', 'Teste', 'Responda antes de abrir.')
+b += quiz([
+    ('Por que a C-579/2013 examinou se a emenda "substituía" a Constituição?', 'Porque o objeto era uma reforma constitucional (Acto Legislativo 01 de 2012). A Corte só controla emendas por vícios de procedimento e por substituição dos elementos que definem a Constituição, e os autores alegavam que a seleção e priorização eliminavam o dever de garantir os direitos humanos.'),
+    ('O que a maioria da C-694/2015 entende por priorização?', 'Uma técnica de política criminal para investigar a macrocriminalidade: reconstruir a estrutura das organizações armadas e seus padrões, em vez de tratar casos isolados. Priorizar não é excluir definitivamente as demais vítimas.'),
+    ('Quais foram os quatro limites que a C-674/2017 impôs à JEP?', '(1) Jurisdição apenas voluntária para terceiros civis e agentes do Estado não combatentes (juiz natural); (2) as tutelas contra a JEP seguem o regime geral de revisão pela Corte; (3) especialistas estrangeiros não deliberam, só atuam como amicus curiae; (4) os benefícios penais dependem de verdade, reparação e não repetição.'),
+    ('Qual a diferença entre aclaración e salvamento de voto?', 'Na aclaración, o magistrado acompanha o resultado mas registra discordância de parte dos fundamentos. No salvamento, discorda da decisão, total ou parcialmente.'),
+    ('Qual foi o resultado do plebiscito de 2016 e o que aconteceu depois?', 'O "não" venceu por 50,21% a 49,78%. Houve renegociação com setores do "não", organizações sociais e vítimas, e um novo acordo foi assinado no Teatro Colón em 24/11/2016.'),
+    ('Em uma frase, como a professora compara o papel das cortes do Brasil e da Colômbia?', 'O STF adotou autocontenção, validando o pacto de 1979 sem tocá-lo; a Corte colombiana teve intervenção ativa, validando a transição mas impondo limites a ela.'),
+])
+
+lesson('04', 'aula-04.html', 'Justiça de transição na Colômbia',
+       'Corte Constitucional da Colômbia: C-579/2013 (Marco Jurídico para la Paz), C-694/2015 (priorização e macrocriminalidade), o processo de paz de 2012–2016 e a C-674/2017 (JEP).',
+       'Justiça de transição', 'na Colômbia',
+       'A Colômbia reformou a própria Constituição para fazer a paz, e a Corte Constitucional <strong class="dif">aceitou as reformas</strong>, mas sempre <strong class="conc">impondo limites</strong>: verdade, vítimas, juiz natural.',
+       hero, [('Aula', '24/08 · Justiça de transição'), ('Leitura', '≈ 22 min'), ('Antes', 'Aula 03 · Brasil'), ('Depois', 'Aula 05 · Gelman')], b,
+       ('aula-03.html', '← Aula 03', 'Justiça de transição no Brasil'), ('aula-05.html', 'Aula 05 →', 'Gelman e a soberania popular'), '24/08')

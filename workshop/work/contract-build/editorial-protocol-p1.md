@@ -1,0 +1,9 @@
+# P1 independent editorial protocol (private)
+
+Review the assigned page against its exact slide/page ranges in `slides/deck-map.md`, OCR keys and cases, `statutes-p1.md`, and `p1-adjudications.md`. Edit only the assigned public HTML and private ledger. Do not substitute a generic legal overview for the professor's sequence. Record substantive corrections in the ledger, including any unresolved conflict.
+
+1. **Coverage:** Every substantive source topic in the assigned range is explained; distinguish material merely mentioned from material actually developed. Every practice answer matches the private key's legal point, but problems/alternatives are genuinely paraphrased.
+2. **Legal accuracy:** Verify article numbers and exceptions in current compiled CC/CDC. Especially CC 418 (2024 wording), 422 (text covers conclusion/performance; negotiation reach is interpretive/case), 423 vs CDC 47, 427–435, 439–440, 462–466, 476–477, 441–446, 447–457 (456 repealed), 458–461. Do not turn a fact-bound holding or non-admission of appeal into a universal STJ rule. Q5 uses later EREsp/Tema 332, not the older local REsp.
+3. **Teaching:** For each major rule, give the trigger, consequence, and boundary. Diagrams must encode the correct relation and add instructional value. Concrete example/decision where it clarifies the rule. No pointlessly repetitive cards or boilerplate.
+4. **Public-facing:** No visible citations, source pins, slide/professor/gabarito/process narration, raw PDF links, or extended source quotation. Keep case numbers only if they help the learner; the private ledger carries source details. Use page names and navigation consistently.
+5. **Layout/accessibility:** HTML parses; headings ordered; links work; all SVG labels fit their boxes and avoid collision; no hex colors inside SVG; details/figures work without JS where possible; test 390 and 1440 CSS pixels. Record specific defects and fixes, not just 'looks good.'
