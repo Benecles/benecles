@@ -41,7 +41,7 @@
   document.head.appendChild(css);
 
   // behind the paper, in either theme: blueprint (the plans of the house), not the other theme
-  function otherSide() { return { bg: '#15335f', ink: '#eaf1fb', peek: 'assets/backstage-peek.jpg' }; }
+  function otherSide() { return { bg: '#15335f', ink: '#eaf1fb', peek: '../assets/backstage-peek.jpg' }; }
 
   function flash(i) {
     var d = document.createElement('div');
@@ -61,7 +61,7 @@
     layer.className = 'bs-stage ' + FALL;
     layer.innerHTML =
       '<div class="bs-under" style="background-color:' + s.bg + ';background-image:url(' + s.peek + ');color:' + s.ink + '">' +
-      '<a href="backstage/" style="color:' + s.ink + ';background:' + s.bg + '">Backstage&nbsp;→</a></div>' +
+      '<a href="../backstage/" style="color:' + s.ink + ';background:' + s.bg + '">Backstage&nbsp;→</a></div>' +
       '<div class="bs-flap"><div class="bs-face bs-front" style="background-position:-' + SQ.x + 'px -' + SQ.y + 'px"></div><div class="bs-face bs-back"></div></div>' +
       '<svg class="bs-cut" viewBox="0 0 ' + MAJOR + ' ' + MAJOR + '" width="' + (MAJOR + 2) + '" height="' + (MAJOR + 2) + '" aria-hidden="true"><path d="M1 ' + (MAJOR + 1) + ' V1 H' + (MAJOR + 1) + ' V' + (MAJOR + 1) + '"/></svg>';
     document.body.appendChild(layer);
