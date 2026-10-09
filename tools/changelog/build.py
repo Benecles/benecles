@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "changelog.json"
-HOME = ROOT / "ordenacoes-filipinas" / "index.html"
+HOME = ROOT / "index.html"
 START = "<!-- PATCHNOTES:START -->"
 END = "<!-- PATCHNOTES:END -->"
 
@@ -142,9 +142,7 @@ def main() -> None:
         raise SystemExit("Expected exactly one pair of PATCHNOTES markers")
     start = original.index(start_marker) + len(start_marker)
     end = original.index(end_marker)
-    # The shelf lives one level down (ordenacoes-filipinas/); changelog.json links are root-relative.
-    markup = re.sub(r'((?:href|src)=")(?!https?:|#|/|mailto:|data:|\.\./)', r"\1../", build_markup(data))
-    rendered = original[:start] + markup.encode("utf-8") + original[end:]
+    rendered = original[:start] + build_markup(data).encode("utf-8") + original[end:]
     HOME.write_bytes(rendered)
     print(f"Built {HOME.relative_to(ROOT)} from {DATA.relative_to(ROOT)}")
 

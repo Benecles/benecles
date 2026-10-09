@@ -1,8 +1,0 @@
-- Runtime: <Claude1 | Sol1 | …>
-- Task: <one line>
-- Working directories: <absolute paths>
-- Owned paths: <absolute paths this instance may write>
-- Phase: <planning | building | integrating | done>
-- Delegated work: <subagents and what each owns>
-- Blockers: <none | …>
-- Next action: <one concrete step>

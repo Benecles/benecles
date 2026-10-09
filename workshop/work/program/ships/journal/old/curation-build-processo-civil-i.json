@@ -1,5 +1,0 @@
-{
-  "order": "curation-build-processo-civil-i",
-  "phase": "error",
-  "error": "publish checkout is not clean before shipping:\n M courses/controle-de-constitucionalidade/index.html\n M courses/direito-constitucional-i/index.html\n M courses/direito-latino-americano/index.html\n M courses/metodologia-juridica/index.html\n M courses/processo-civil-i/index.html\n M courses/teoria-do-delito/index.html\n M courses/teoria-geral-dos-contratos/index.html\n M index.html\n"
-}

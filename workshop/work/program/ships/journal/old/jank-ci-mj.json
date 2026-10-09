@@ -1,5 +1,0 @@
-{
-  "order": "jank-ci-mj",
-  "phase": "error",
-  "error": "[Errno 11] Resource deadlock avoided"
-}
