@@ -35,7 +35,7 @@ def order():
     o += line(620,475,620,520,tone='conc',w=3)
     o += line(875,475,875,520,tone='ink',w=3)
     o += t(620,455,'INICIATIVA',size=11,fill='var(--ink-2)',weight=700,anchor='middle')
-    o += t(620,546,'PARTE · ARBITRAGEM',size=11,fill='var(--conc)',weight=700,anchor='middle')
+    o += t(620,546,'PARTE · INCOMPETÊNCIA RELATIVA / ARBITRAGEM',size=11,fill='var(--conc)',weight=700,anchor='middle')
     o += t(875,546,'JUIZ · DEMAIS',size=11,fill='var(--ink-2)',weight=600,anchor='middle')
     return svg('18 10 1010 555',o,cls='fig figkit',ident='pci-a08-contestation-order',label='Ordem da contestação: preliminares antes do mérito, fundamentos e provas; arbitragem depende de alegação da parte')
 
