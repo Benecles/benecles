@@ -1,5 +1,5 @@
 {
-"version": "5b52ff0cf78b",
+"version": "e4ed0685bb37",
 "files": [
 "assets/backstage-egg.js",
 "assets/backstage-peek.jpg",
@@ -158,9 +158,14 @@
 "courses/metodologia-juridica/",
 "courses/processo-civil-i/assets/aula-03.css",
 "courses/processo-civil-i/assets/aula-03.js",
+"courses/processo-civil-i/assets/aula-07-certidao.png",
 "courses/processo-civil-i/assets/aula-15.js",
 "courses/processo-civil-i/assets/aula-17.css",
 "courses/processo-civil-i/assets/aula-17.js",
+"courses/processo-civil-i/assets/citacao/ar-exemplo.png",
+"courses/processo-civil-i/assets/citacao/edital-2013.jpg",
+"courses/processo-civil-i/assets/citacao/mandado-cumprido.jpg",
+"courses/processo-civil-i/assets/citacao/mandado-nao-cumprido.jpg",
 "courses/processo-civil-i/assets/curso.css",
 "courses/processo-civil-i/assets/curso.js",
 "courses/processo-civil-i/aula-01.html",
