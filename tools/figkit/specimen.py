@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a12, processo_a14, processo_a15, processo_a17, processo_a18, processo_a18_house, proc_a10
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a12_house, processo_a14, processo_a15, processo_a17, processo_a18, processo_a18_house, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -49,9 +49,9 @@ ENTRIES = [
     ('Documento · recorte do mérito', 'delimitar', 'Processo · Aula 10 · parcela pronta',
      'As tiras inteiras e a tira recortada mostram o alcance; dois selos dão as condições alternativas para decidir o trecho.',
      'novo componente · pci-a10-art356', [proc_a10.statute_panel()], 'processo-civil-i'),
-    ('Documento · corte de estatuto', 'ler', 'Processo · Aula 12 · arts. 125 e 129',
-     'A relação regressiva aparece no inciso II; o resultado da demanda principal define quando o art. 129 manda examinar o pedido.',
-     'novo componente · pci-a12-art125-129', [processo_a12.panel()], 'processo-civil-i'),
+    ('Sequência processual', 'rastrear', 'Processo · Aula 12 · P1 2025/2, Q2',
+     'A cadeia da questão identifica quem promove cada pedido regressivo e o limite da denunciação sucessiva.',
+     'novos instrumentos · pci-a12-thread e pci-a12-result', processo_a12_house.panels(), 'processo-civil-i'),
     ('Partitura · operações probatórias', 'comparar', 'Processo · Aula 14 · teoria da prova',
      'Duas pautas percorrem os arts. 369 a 371: uma acompanha a afirmação e os meios; outra, a participação e as razões.',
      'substitui pci-a14-score', [processo_a14.panel()], 'processo-civil-i'),
