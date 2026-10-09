@@ -1,60 +1,143 @@
-"""Aula 07: read the dated notice and compare the two periods in the 2017 exam."""
-from figkit import t, line, svg
+"""Aula 07: source certificate and proportional 2017/2 P1 Q1 deadlines.
+
+Run ``python3 tools/figkit/processo_a07.py`` to insert these two generated
+panels into the lesson and its polish layer. The certificate remains an
+unaltered image asset; the first SVG only crops it and places reading marks.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+from figkit import line, svg, t
+
+ROOT = Path(__file__).resolve().parents[2]
+PAGE = ROOT / 'courses/processo-civil-i/aula-07.html'
+POLISH = ROOT / 'tools/polish/courses/processo-civil-i/aula-07.html.json'
+ASSET = 'assets/aula-07-certidao.png'
 
 
-def certificate():
-    """A source-ordered transcription of the date-bearing lines in the certificate."""
-    o = ''
-    o += t(40, 38, 'PODER JUDICIÁRIO', size=15, weight=700)
-    o += t(40, 62, 'CERTIDÃO', size=18, weight=700, fill='var(--ink)')
-    o += line(40, 77, 560, 77, tone='ink', w=1.3)
-    o += t(40, 112, 'NOTA Nº 1690/2015 · EDIÇÃO Nº 5561', size=12, weight=700)
-    o += t(40, 142, 'DISPONIBILIZADA NO DJE', size=11, fill='var(--ink-2)', weight=600)
-    o += t(560, 142, '21/05/2015', size=17, anchor='end', weight=700, fill='var(--conc)')
-    o += line(40, 154, 560, 154, tone='muted', w=1)
-    o += t(40, 190, 'PUBLICAÇÃO', size=11, fill='var(--ink-2)', weight=600)
-    o += t(40, 217, 'no primeiro dia útil que se seguir', size=15, weight=600)
-    o += line(40, 231, 560, 231, tone='muted', w=1)
-    o += t(40, 269, 'CERTIFICAÇÃO', size=11, fill='var(--ink-2)', weight=600)
-    o += t(560, 269, 'PORTO ALEGRE · 22/05/2015', size=15, anchor='end', weight=700, fill='var(--ink)')
-    o += line(40, 282, 560, 282, tone='ink', w=1.3)
-    return svg('24 15 552 286', o, cls='fig', ident='pci-a07-certificate',
-               label='Transcrição em ordem da certidão da Nota 1690/2015: disponibilização no DJE em 21 de maio de 2015, fórmula de publicação no primeiro dia útil seguinte e certificação em Porto Alegre em 22 de maio.')
+def certificate() -> str:
+    """Facsimile crops in their printed order, with marks over the source."""
+    # Source is 1440 × 2560. The two nested viewBoxes omit the intervening
+    # case text while keeping the certificate header, event, and final line.
+    upper = (f'<svg x="30" y="20" width="720" height="400" '
+             f'viewBox="0 0 1440 800" preserveAspectRatio="none">'
+             f'<image href="{ASSET}" width="1440" height="2560"/></svg>')
+    lower = (f'<svg x="30" y="438" width="720" height="180" '
+             f'viewBox="0 1810 1440 360" preserveAspectRatio="none">'
+             f'<image href="{ASSET}" width="1440" height="2560"/></svg>')
+    # A restrained reading hand: no transcription, inferred date, or event path.
+    marks = (
+        '<ellipse cx="545" cy="233" rx="70" ry="19" '
+        'style="fill:none;stroke:var(--conc);stroke-width:2.2"/>'
+        '<ellipse cx="678" cy="268" rx="36" ry="19" '
+        'style="fill:none;stroke:var(--conc);stroke-width:2.2"/>'
+        '<ellipse cx="628" cy="303" rx="79" ry="19" '
+        'style="fill:none;stroke:var(--conc);stroke-width:2.2"/>'
+        '<path d="M82 355L644 355" '
+        'style="fill:none;stroke:var(--conc);stroke-width:2.2;stroke-linecap:round"/>'
+        '<path d="M216 497L550 497" '
+        'style="fill:none;stroke:var(--conc);stroke-width:2.2;stroke-linecap:round"/>'
+    )
+    panel = svg('0 0 780 638', upper + lower + marks, cls='fig',
+               ident='pci-a07-certificate',
+               label='Fac-símile da certidão: PODER JUDICIÁRIO, CERTIDÃO; '
+                     'Nota nº 1690/2015; disponibilização na edição nº 5561 '
+                     'do Diário da Justiça Eletrônico em 21/05/2015; '
+                     'fórmula de publicação no primeiro dia útil seguinte; '
+                     'certificação em Porto Alegre em 22/05/2015.')
+    return panel.replace('<svg id=', '<svg style="display:block;width:100%;height:auto" id=', 1)
 
 
-def doubled_periods():
-    """A proportional comparison of the two periods stated in 2017 P1 Q1."""
-    x0, scale = 190, 12
-    o = t(20, 32, 'P1 · QUESTÃO 1 · 2017', size=13, weight=700)
-    o += t(20, 61, 'PRAZOS EM DIAS ÚTEIS', size=11, fill='var(--ink-2)', weight=600)
-    o += line(x0, 116, x0 + 30 * scale, 116, tone='muted', w=1.2)
-    for i in range(0, 31, 5):
-        x = x0 + i * scale
-        o += line(x, 108, x, 124, tone='ink', w=1.1)
-        o += t(x, 145, str(i), size=10.5, anchor='middle', weight=600)
-    o += t(20, 190, 'ODRAUDE', size=13, weight=700, fill='var(--ink)')
-    o += line(x0, 185, x0 + 15 * scale, 185, tone='ink', w=9)
-    o += line(x0 + 15 * scale, 173, x0 + 15 * scale, 197, tone='ink', w=2)
-    o += t(x0 + 15 * scale, 215, '15', size=15, anchor='middle', weight=700)
-    o += t(20, 272, 'UFRGS', size=13, weight=700, fill='var(--conc)')
-    o += line(x0, 267, x0 + 30 * scale, 267, tone='conc', w=9)
-    o += line(x0 + 30 * scale, 255, x0 + 30 * scale, 279, tone='conc', w=2)
-    o += t(x0 + 30 * scale, 298, '30', size=15, anchor='middle', weight=700, fill='var(--conc)')
-    return svg('12 12 566 300', o, cls='fig', ident='pci-a07-periods',
-               label='Escala proporcional de dias úteis na questão 1 da P1 de 2017: 15 para ODRAUDE e 30 para a UFRGS.')
+def doubled_periods() -> str:
+    """One unit scale makes thirty business days twice as long as fifteen."""
+    x0, unit = 170, 17
+    x15, x30 = x0 + 15 * unit, x0 + 30 * unit
+    o = t(x0, 42, '02/03/2018', size=14, weight=700, ls='0')
+    o += line(x0, 58, x0, 244, tone='ink', w=1.5)
+    o += t(20, 112, 'ODRAUDE', size=15, weight=700, ls='0')
+    o += line(x0, 106, x15, 106, tone='ink', w=12)
+    o += line(x15, 91, x15, 121, tone='ink', w=2.2)
+    o += t(x15, 146, '22/03/2018', size=14, anchor='middle', weight=700, ls='0')
+    o += t((x0 + x15) / 2, 87, '15 DIAS ÚTEIS', size=11.5,
+           anchor='middle', weight=700)
+    o += t(20, 202, 'UFRGS', size=15, weight=700,
+           fill='var(--conc)', ls='0')
+    o += line(x0, 196, x30, 196, tone='conc', w=12)
+    o += line(x30, 181, x30, 211, tone='conc', w=2.2)
+    o += t(x30, 236, '13/04/2018', size=14, anchor='middle', weight=700,
+           fill='var(--conc)', ls='0')
+    o += t((x0 + x30) / 2, 177, '30 DIAS ÚTEIS', size=11.5,
+           anchor='middle', weight=700, fill='var(--conc)')
+    panel = svg('0 0 775 260', o, cls='fig', ident='pci-a07-periods',
+               label='P1 2017/2, questão 1: início comum em 02/03/2018. '
+                     'ODRAUDE: 15 dias úteis até 22/03/2018. UFRGS: '
+                     '30 dias úteis até 13/04/2018, excluído o feriado '
+                     'de 30/03 indicado na prova.')
+    return panel.replace('<svg id=', '<svg style="display:block;width:100%;height:auto" id=', 1)
 
 
-def panels():
+def panels() -> tuple[str, str]:
     return certificate(), doubled_periods()
 
 
-def specimen_sections():
+def insert(s: str) -> str:
     a, b = panels()
-    return f'''<section class="ref"><header><span class="g">Documento · ler</span><span class="v">verbo · identificar</span></header>
-<h2>Processo · Aula 07 · Certidão de Nota de Expediente</h2>
-<p>A transcrição mantém a ordem das inscrições do documento: disponibilização, fórmula de publicação e data da certificação. As marcas tipográficas localizam o que o aluno deve ler.</p>
-<p class="r">PCI-A07 · certidão Moodle, p. 1 · fonte no compêndio da aula</p><div class="grid"><div class="s">{a}</div></div></section>
-<section class="ref"><header><span class="g">Escala · faixa proporcional</span><span class="v">verbo · comparar</span></header>
-<h2>Processo · Aula 07 · P1 de 2017, questão 1</h2>
-<p>As extensões levam os próprios prazos à mesma escala; a proporção mostra a duplicação sem converter as datas finais em linhas de texto.</p>
-<p class="r">PCI-A07 · exam-2017-2-p1, p. 1, Q1 · CPC arts. 183, 219, 224 e 335</p><div class="grid"><div class="s">{b}</div></div></section>'''
+    old = '<img src="assets/aula-07-certidao.png" alt="Fac-símile da certidão de publicação da Nota nº 1690/2015">'
+    if 'id="pci-a07-certificate"' not in s:
+        if s.count(old) != 1:
+            raise ValueError('A07 certificate insertion point changed')
+        s = s.replace(old, a, 1)
+    old = 'O dia final é 13/04.</p>'
+    if 'id="pci-a07-periods"' not in s:
+        if s.count(old) != 1:
+            raise ValueError('A07 deadline insertion point changed')
+        figure = (f' <figure class="source-record" style="max-width:900px;margin:32px auto">'
+                  f'{b}<figcaption>P1 2017/2 · questão 1 · prazos de contestação</figcaption></figure>')
+        s = s.replace(old, old + figure, 1)
+    return s
+
+
+def integrate() -> None:
+    before = PAGE.read_text()
+    after = insert(before)
+    data = json.loads(POLISH.read_text())
+    touched = 0
+    for op in data:
+        old = op['after']
+        if '<img src="assets/aula-07-certidao.png"' in old:
+            a, _ = panels()
+            op['after'] = old.replace(
+                '<img src="assets/aula-07-certidao.png" alt="Fac-símile da certidão de publicação da Nota nº 1690/2015">',
+                a, 1)
+            touched += 1
+        elif 'O dia final é 13/04.</p>' in old:
+            _, b = panels()
+            op['after'] = old.replace(
+                'O dia final é 13/04.</p>',
+                'O dia final é 13/04.</p> <figure class="source-record" style="max-width:900px;margin:32px auto">'
+                + b + '<figcaption>P1 2017/2 · questão 1 · prazos de contestação</figcaption></figure>',
+                1)
+            touched += 1
+    if touched == 0:
+        if not all(sum(f'id="{ident}"' in op['after'] for op in data) == 1
+                   for ident in ('pci-a07-certificate', 'pci-a07-periods')):
+            raise ValueError('A07 polish figures are missing')
+    elif touched != 2:
+        raise ValueError(f'Expected both A07 polish figure insertions, found {touched}')
+    PAGE.write_text(after)
+    POLISH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    print('A07: inserted 2 inline SVG panels in page and polish layer')
+
+
+def specimen_sections() -> str:
+    a, b = panels()
+    return (f'<section class="ref"><h2>Processo · Aula 07 · Certidão</h2>'
+            f'<div class="grid"><div class="s">{a}</div></div></section>'
+            f'<section class="ref"><h2>Processo · Aula 07 · P1 2017/2</h2>'
+            f'<div class="grid"><div class="s">{b}</div></div></section>')
+
+
+if __name__ == '__main__':
+    integrate()
