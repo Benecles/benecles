@@ -63,19 +63,25 @@ def statute_text(index_path, article_id):
     index=json.loads(index_path.read_text())
     chapter=next(c for c in index['chapters'] if c['id']==article_id)
     source=(index_path.parent / index['capture_path']).resolve()
-    parser=TextExtractor(); parser.feed(source.read_text(encoding=index.get('capture_encoding','utf-8'),errors='replace'))
+    number=re.search(r'\d+',article_id).group(0)
+    target=f'art{number}'
+    class ArticleExtractor(HTMLParser):
+        def __init__(self): super().__init__(); self.active=False; self.parts=[]
+        def handle_starttag(self,tag,attrs):
+            if tag!='a': return
+            name=dict(attrs).get('name','')
+            if name==target: self.active=True
+            elif self.active and re.fullmatch(r'art\d+',name): self.active=False
+        def handle_data(self,data):
+            if self.active: self.parts.append(data)
+    parser=ArticleExtractor()
+    parser.feed(source.read_text(encoding=index.get('capture_encoding','utf-8'),errors='replace'))
+    if not parser.parts: raise ValueError(f'Cannot find {article_id} in official CPC capture')
     text=' '.join(' '.join(parser.parts).split())
-    # The official HTML capture is parsed as text; isolate this article until the next article marker.
-    num=re.search(r'\d+',article_id).group(0)
-    start=re.search(rf'Art\.?\s*{num}\s*[º°.]?',text,re.I)
-    if not start: raise ValueError(f'Cannot find {article_id} in official CPC capture')
-    tail=text[start.start():]
-    next_article=re.search(r'\s+Art\.?\s*\d+\s*[º°.]',tail[len(start.group(0)):],re.I)
-    if next_article: tail=tail[:len(start.group(0))+next_article.start()]
-    section=re.search(r'\s+Se[cç][aã]o\s+[IVXLCDM]+\b',tail,re.I)
-    if section: tail=tail[:section.start()]
-    clean=re.sub(r'\b(arts?)\s+\.',r'\1.',tail.strip())
-    return re.sub(r'\s+([,.;:])',r'\1',clean)
+    section=re.search(r'\s+(?:Se[cç][aã]o|Subse[cç][aã]o|Cap[ií]tulo|T[ií]tulo)\s+[IVXLCDM]+\b',text,re.I)
+    if section: text=text[:section.start()]
+    text=re.sub(r'\b(arts?)\s+\.',r'\1.',text)
+    return re.sub(r'\s+([,.;:])',r'\1',text).strip()
 
 def answer_details(q):
     aps=q['appearances']; official=[]; verified=[]; basis=[]
@@ -87,6 +93,12 @@ def answer_details(q):
         for c in a.get('citations',[]) or []:
             loc=c.get('locator')
             if loc and loc not in basis: basis.append(str(loc))
+    if q.get('id')=='exam-2018-2-p1-v1-q8' and 'Sim. Exame de mérito. Coisa julgada.' in official:
+        official=[x for x in official if x!='Exame de mérito. Coisa julgada.']
+    if q.get('id')=='exam-2018-2-p1-v1-q10':
+        verified=[x for x in verified if not x.startswith('Pedido subsidiário é formulado para ser examinado apenas se o pedido principal não for acolhido')]
+    if q.get('id')=='exam-2018-2-p1-v1-q9':
+        verified=[re.sub(r'\s*O gabarito não fornece exemplo concreto para validação\.?$', '', x) for x in verified]
     key='; '.join(official) if official else 'Não indicado no arquivo-fonte.'
     ans='; '.join(verified) if verified else 'Resposta verificada não registrada no arquivo-fonte.'
     return key,ans,('; '.join(basis) if basis else 'Base não registrada no arquivo-fonte.')
