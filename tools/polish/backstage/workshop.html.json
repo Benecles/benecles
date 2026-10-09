@@ -2,5 +2,41 @@
 {
 "before": "Inside the workshop</h1>\n<p class=\"lede\">Raw course material goes in one end, a finished course comes out the other. This is every stage in between, what each one is for, the house style it builds toward, and what I'd change.</p>\n\n<div class=\"box\" role=\"img\" aria-label=\"Inputs, the workshop, and outputs\">\n  <div><span class=\"k\">Goes",
 "after": "Inside the workshop</h1>\n\n<div class=\"box\" role=\"img\" aria-label=\"Inputs, the workshop, and outputs\">\n  <div><span class=\"k\">Goes"
+},
+{
+"before": "<h2><span class=\"n\">02</span>The line, stage by stage</h2>\n<p>This is",
+"after": "<h2><span class=\"n\">02</span>The line</h2>\n<p>This is"
+},
+{
+"before": "Scans are OCR'd locally, never by cloud vision. Duplicates collapse to",
+"after": "Scans are OCR'd locally. Duplicates collapse to"
+},
+{
+"before": "3 of one book, not whole books. A lesson also",
+"after": "3 of one book. A lesson also"
+},
+{
+"before": "Teach the mental model, not a list of facts.</li>\n<li><b>One ",
+"after": "Teach the mental model the facts hang on.</li>\n<li><b>One "
+},
+{
+"before": "anti-slop limits are set from data, not taste.</b> The five ",
+"after": "anti-slop limits are measured on human doctrine.</b> The five "
+},
+{
+"before": "summary of a decision, never dressed as a quote</div>\n</div>\n<p>Foreign-language",
+"after": "summary of a decision</div>\n</div>\n<p>Foreign-language"
+},
+{
+"before": "\n<h3>Figures</h3>\n<p>Instruments, not diagrams. A figure is ",
+"after": "\n<h3>Figures</h3>\n<p>A figure is "
+},
+{
+"before": "Quotes pasted by script, never typed by a model.</b> <span class=\"tag\">ruled today",
+"after": "Quotes pasted by script.</b> <span class=\"tag\">ruled today"
+},
+{
+"before": "</div></li>\n<li><div><b>Eyes on figures, one sheet per wave.",
+"after": "</div></li>\n<li><div><b>One figure sheet per wave."
 }
 ]
