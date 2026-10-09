@@ -222,13 +222,13 @@ a { color: var(--dif); }
 </div>
 <p>They coordinate through plain files and GitHub: one <b>issue</b> per stage; a <b>run ledger</b> (<code>RUN-PROC-R2.md</code>) where every result and question lands; the <b>flight log</b>, where every mistake becomes a numbered rule the next wave must apply; <code>BUGS.md</code> (symptom → cause → fix); and <code>CEO.md</code>, the handoff that lets a fresh Claude take the chair cold.</p>
 
-<h2><span class="n">02</span>The line, stage by stage</h2>
+<h2><span class="n">02</span>The line</h2>
 <p>This is the Source Pipeline as Processo Civil is running it now. The order is fixed: understand, prepare the workbench, then write. No stage starts before the previous one passes its check.</p>
 <div class="line">
 <div class="st"><div class="id">S0<small>Sol</small></div><div><h3>Course map</h3><p>Reads the syllabus, the Moodle snapshot and the slide titles. Decides the lessons (one sitting each), what each lets the reader do, which exam it belongs to, which earlier lessons it depends on, and which URLs stay or redirect.</p><div class="io">in: cronograma, Moodle · out: course-map.json (22 lessons for Processo)</div></div></div>
-<div class="st"><div class="id">S1<small>Luna</small></div><div><h3>Shelf</h3><p>Every file gets a row: role (assigned reading, base book, exam, peer note), fingerprint, text status. Scans are OCR'd locally, never by cloud vision. Duplicates collapse to one row. Anything missing is marked missing and is never filled from memory.</p><div class="io">out: shelf.csv (42 rows for Processo; Cintra still missing)</div></div></div>
+<div class="st"><div class="id">S1<small>Luna</small></div><div><h3>Shelf</h3><p>Every file gets a row: role (assigned reading, base book, exam, peer note), fingerprint, text status. Scans are OCR'd locally. Duplicates collapse to one row. Anything missing is marked missing and is never filled from memory.</p><div class="io">out: shelf.csv (42 rows for Processo; Cintra still missing)</div></div></div>
 <div class="st"><div class="id">S2<small>Luna</small></div><div><h3>Split</h3><p>Every book is cut along its own table of contents, with each page marked, so every later quote can be traced to a page.</p><div class="io">out: 1,276 chapter files with page markers</div></div></div>
-<div class="st key"><div class="id">S3<small>Luna xhigh</small></div><div><h3>Triage</h3><p>Every chapter is matched against every lesson: primary, supporting, background or unused, each with a one-line reason. Precision is the point: Aula 09 gets chapter 3 of one book, not whole books. A lesson also inherits the key chapters of the lessons it builds on.</p><div class="io">out: triage.csv (28,241 rows)</div></div></div>
+<div class="st key"><div class="id">S3<small>Luna xhigh</small></div><div><h3>Triage</h3><p>Every chapter is matched against every lesson: primary, supporting, background or unused, each with a one-line reason. Precision is the point: Aula 09 gets chapter 3 of one book. A lesson also inherits the key chapters of the lessons it builds on.</p><div class="io">out: triage.csv (28,241 rows)</div></div></div>
 <div class="st"><div class="id">S4<small>script</small></div><div><h3>Compendium</h3><p>A script stitches each lesson's workbench: slides, primary chapters, supporting, background, exam questions, the CPC articles, plus an index saying where every file came from.</p><div class="io">out: one folder per lesson, 1,082 provenance rows</div></div></div>
 <div class="st"><div class="id">S4b<small>Luna</small></div><div><h3>Exam bank</h3><p>Every question from every past exam, verbatim, with the official answer key, an answer checked against the current CPC, the topic and the lesson. Repeats merge; reworded versions stay linked as variants; exclusions keep their reason.</p><div class="io">out: 61 questions, 8 exams (the PDF on your Desktop is built from this)</div></div></div>
 <div class="st key"><div class="id">S5a<small>Luna max · Sol</small></div><div><h3>Blueprint, then panel</h3><p>Before a word is written, the lesson is planned: its function, sections in order with the pages each draws on, every exam question placed, every figure justified, one real case as the thread. A separate panel judges the plan like a thesis committee: APPROVED, or REVISE with at most five points. A second REVISE comes to me.</p><div class="io">out: blueprint.md + panel.md per lesson</div></div></div>
@@ -255,11 +255,11 @@ a { color: var(--dif); }
 <h3>Writing</h3>
 <p>The Writing Standard, Parts A–G. The rules that matter most:</p>
 <ul>
-<li><b>Why before what.</b> Teach the mental model, not a list of facts.</li>
+<li><b>Why before what.</b> Teach the mental model the facts hang on.</li>
 <li><b>One real case runs through the lesson.</b> No invented settings.</li>
 <li><b>One sitting:</b> 15–25 minutes, about 2.5–4.5k words.</li>
 <li><b>The prose never talks about its sources, the slides or the professor.</b> That's backstage. Attribution lives only in a source block's header.</li>
-<li><b>The anti-slop limits are set from data, not taste.</b> The five pathologies you named (fake disagreement, circular explanation, restatement, over-sectioning, reflexive hedging) are banned outright.</li>
+<li><b>The anti-slop limits are measured on human doctrine.</b> The five pathologies you named (fake disagreement, circular explanation, restatement, over-sectioning, reflexive hedging) are banned outright.</li>
 </ul>
 <h3>Sources</h3>
 <p>The lesson is a collage of the real material with our explanation around it. Every quote is verbatim, with a page or article number. The bar on the left says what kind of source it is:</p>
@@ -267,13 +267,13 @@ a { color: var(--dif); }
   <div class="sw" style="--c: var(--dif)"><b>Blue bar</b>statute or decision: the operative text</div>
   <div class="sw" style="--c: var(--conc)"><b>Orange bar</b>the limit: what the rule doesn't do</div>
   <div class="sw" style="--c: var(--ink)"><b>Ink bar</b>doctrine: the assigned reading, the treatise</div>
-  <div class="sw" style="--c: var(--muted)"><b>Resumo</b>our summary of a decision, never dressed as a quote</div>
+  <div class="sw" style="--c: var(--muted)"><b>Resumo</b>our summary of a decision</div>
 </div>
 <p>Foreign-language quotes carry a "tradução nossa" toggle. Primary sources (the law, the decision) come first; doctrine interprets them; our prose connects them to the case.</p>
 <h3>Marks in the text</h3>
 <p>Colour means something. <span class="held">Blue bold</span> is what was decided; <span class="limit">orange bold</span> is the limit. Each is capped at one per paragraph and eight words. There's one highlighter per chapter, for the sentence worth memorising. Terms get a dotted underline with their definition on hover, taken from the lesson's own sentence. Plain bold is retired.</p>
 <h3>Figures</h3>
-<p>Instruments, not diagrams. A figure is a real object (the petição, the case file, the calendar with the deadline counted) or a measured relation. The test: delete every word, and something meaningful should be left. A table in disguise fails, and so does a quoted article dressed as a drawing. Here are today's fifteen Processo figures, the way the new tool shows them:</p>
+<p>A figure is a real object (the petição, the case file, the calendar with the deadline counted) or a measured relation. The test: delete every word, and something meaningful should be left. A table in disguise fails, and so does a quoted article dressed as a drawing. Here are today's fifteen Processo figures, the way the new tool shows them:</p>
 <figure><img src="figure-sheet.jpg" alt="Contact sheet of 15 Processo Civil figures from 12 lessons, in a grid"><figcaption>Best: Aula 10 Figs. 1–2, Aula 15 Figs. 1 and 3 (real objects, big type, colour that means something). Weakest: Aula 04 and Aula 18 (statute text as a figure), Aula 16 Fig. 1 and Aula 11 (tiny drawing in a big empty frame).</figcaption></figure>
 <h3>The page itself</h3>
 <p>House paper with a drafting grid, ink, and blue and orange that always carry meaning. The type is Archivo for display, Spectral for reading and IBM Plex Mono for labels. A 1,083 px reading column, calm motion, desktop first.</p>
@@ -282,8 +282,8 @@ a { color: var(--dif); }
 <h2><span class="n">05</span>What I think</h2>
 <p>The architecture is sound, and today proved it. Everything I checked traced back to a real page: the exam bank, the quotes in Aula 01, the case threads. The two stages that decide quality (triage and the blueprint panel) are doing their job. The weak link was always the last mile: whether the finished page actually wears the house style, and whether the figures are any good. Two of my ideas below are already done.</p>
 <ol class="ideas">
-<li><div><b>Quotes pasted by script, never typed by a model.</b> <span class="tag">ruled today</span><p>The writer picks the passage; a script copies it from the source by page or article and marks any cut. Fidelity stops depending on the model being careful, and Codex's content filter can't block statute text any more.</p></div></li>
-<li><div><b>Eyes on figures, one sheet per wave.</b> <span class="tag">built today</span><p>The contact sheet was your idea, and it's the right one. Every writer runs it before handing in, and I look at one sheet per course instead of forty crops.</p></div></li>
+<li><div><b>Quotes pasted by script.</b> <span class="tag">ruled today</span><p>The writer picks the passage; a script copies it from the source by page or article and marks any cut. Fidelity stops depending on the model being careful, and Codex's content filter can't block statute text any more.</p></div></li>
+<li><div><b>One figure sheet per wave.</b> <span class="tag">built today</span><p>The contact sheet was your idea, and it's the right one. Every writer runs it before handing in, and I look at one sheet per course instead of forty crops.</p></div></li>
 <li><div><b>Make the professor's Moodle placement count as evidence in triage.</b> <span class="tag">proposal</span><p>You save the Moodle snapshots so we know which resource the professor meant for which week. Today the course map reads them, but triage doesn't treat "the professor put this file under this week" as its own signal. For well-organised courses like Latam, that placement should outrank our own topic matching. It's one column in S0 and one rule in S3.</p></div></li>
 <li><div><b>One house manual instead of seven documents and a 31-row log.</b> <span class="tag">proposal, mine to do</span><p>The style lives in the Writing Standard, STYLE.md, Design Direction, Visual Genres, Visual Casting, the figure kit and the flight log. Writers have to hold all of it. I'd fold the flight-log lessons back into the standards after each course, and make the specimen page the one place that shows every element, with its rule beside it.</p></div></li>
 <li><div><b>Finish Processo before copying it.</b> <span class="tag">sequencing</span><p>Let it run to the end, give it one proper read, write the RETRO, then send the other six courses through the improved line. Copying it now would copy its faults six times.</p></div></li>
