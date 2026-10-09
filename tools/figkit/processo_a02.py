@@ -44,6 +44,40 @@ def panel():
     )
 
 
+def q8():
+    """Comparison instrument for the actual 2018/2 P1 question 8."""
+    o = t(490, 28, "P1 · 2018/2 · QUESTÃO 8 · EFEITO FUTURO", size=12,
+          fill="var(--ink-2)", anchor="middle", weight=600, caps=True)
+    o += line(110, 158, 870, 158, tone="ink", w=1.6)
+    for x, tone in ((280, "conc"), (700, "dif")):
+        o += line(x, 143, x, 175, tone=tone, w=1.8)
+        o += f'<circle cx="{x}" cy="158" r="7" style="fill:var(--paper);stroke:{figkit.TONE[tone]};stroke-width:2"/>'
+    o += t(280, 112, "INDEFERIMENTO DA INICIAL", size=12, fill="var(--conc)",
+           anchor="middle", weight=700, caps=True)
+    o += t(700, 112, "IMPROCEDÊNCIA LIMINAR", size=12, fill="var(--dif)",
+           anchor="middle", weight=700, caps=True)
+    o += t(280, 218, "sem resolução do mérito", size=18, fill="var(--ink)",
+           anchor="middle", weight=500, ls="0")
+    o += t(280, 246, "possibilidade de repropositura", size=12, fill="var(--ink-2)",
+           anchor="middle", weight=500, ls=".02em")
+    o += t(700, 218, "com resolução do mérito", size=18, fill="var(--ink)",
+           anchor="middle", weight=500, ls="0")
+    o += t(700, 246, "coisa julgada", size=12, fill="var(--ink-2)",
+           anchor="middle", weight=600, ls=".02em")
+    o += t(490, 302, "CLASSIFIQUE O RESULTADO, NÃO APENAS O MOMENTO DA DECISÃO",
+           size=11, fill="var(--ink-2)", anchor="middle", weight=600, caps=True)
+    return svg(
+        "70 10 910 315", o, ident="pci-a02-q8",
+        label=("Instrumento para a questão 8 da P1 de 2018/2. O indeferimento da inicial "
+               "é sem resolução do mérito; a improcedência liminar resolve o mérito e pode "
+               "produzir coisa julgada. A questão pergunta pelo efeito futuro."),
+    )
+
+
+def q8_card():
+    return f'''<figure class="figure-card">{q8()}<figcaption>Fig. 1 · A diferença que a questão 8 da P1 de 2018/2 pede para o futuro.</figcaption><span class="src" hidden data-src="exam-bank.json, exam-2018-2-p1-v1-q8, provas 2018-2 P1 v1 e v2, PDF p. 2; CPC, arts. 330, 332, 485, I, 486, 487, I"></span></figure>'''
+
+
 def probe_page():
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Figkit · Processo Aula 02</title>
@@ -64,6 +98,15 @@ def inject_page():
         text, count = re.subn(r'<svg id="pci-a02-s5".*?</svg>', panel(), text, count=1, flags=re.S)
         if count != 1:
             raise SystemExit(f"Expected one figure marker or SVG in {page}")
+    q8_marker = "<!-- FIGURE: PCI-A02-Q8 -->"
+    if text.count(q8_marker) == 1:
+        text = text.replace(q8_marker, q8_card())
+    else:
+        text, count = re.subn(
+            r'<figure class="figure-card"><svg class="fig" viewBox="0 0 980 330".*?</figure>',
+            lambda _: q8_card(), text, count=1, flags=re.S)
+        if count != 1:
+            raise SystemExit(f"Expected one Q8 comparison figure in {page}")
     page.write_text(text, encoding="utf-8")
 
 
