@@ -1,0 +1,10 @@
+[
+{
+"before": "Q1</text></svg><figcaption>Fig. 2 · O enunciado",
+"after": "Q1</text></svg><figcaption>Fig. 1 · O enunciado"
+},
+{
+"before": "</text><text x=\"1050\" y=\"565\" text-anchor=\"end\" style=\"font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;fill:var(--ink-2)\">DECISÃO</text></svg><figcaption>Uma mesma medida ",
+"after": "</text><text x=\"1050\" y=\"565\" text-anchor=\"end\" style=\"font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.08em;fill:var(--ink-2)\">DECISÃO</text></svg><figcaption>Fig. 2 · Uma mesma medida "
+}
+]

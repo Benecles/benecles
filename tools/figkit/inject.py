@@ -5,7 +5,7 @@ Run: python3 tools/figkit/inject.py        (then offline_build, polish capture/c
 """
 import os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import controle_a01, controle_a02, controle_a07, controle_a27, delito_u01, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04, processo_a01
+import controle_a01, controle_a02, controle_a07, controle_a27, delito_u01, delito_u04, delito_u05, contratos_a01, latam_a02, consti_a04, processo_a01, processo_a12_house, processo_a13, processo_a14, processo_a16, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -25,6 +25,20 @@ PAGES = {
     'courses/direito-latino-americano/aula-02.html': by_ids(*latam_a02.panels()),
     'courses/direito-constitucional-i/aula-04.html': by_ids(*consti_a04.panels()),
     'courses/processo-civil-i/aula-01.html': by_ids(processo_a01.panel()),
+    'courses/processo-civil-i/aula-10.html': {
+        'a10_hero': proc_a10.hero(),
+        **by_ids(proc_a10.statute_panel()),
+        '__optional__': ['pci-a10-art356'],  # the lesson author locates the new panel
+    },
+    'courses/processo-civil-i/aula-12.html': by_ids(*processo_a12_house.panels()),
+    'courses/processo-civil-i/aula-16.html': {
+        **by_ids(processo_a16.panel(), processo_a16.excerpt_panel()),
+        '__optional__': ['pci-a16-excerpt'],  # inserted by the page author inside §07
+    },
+    'courses/processo-civil-i/aula-14.html': {
+        **by_ids(processo_a14.panel(), processo_a14.docket_panel()),
+        '__optional__': ['pci-a14-docket'],  # installed by the page author after panel integration
+    },
 }
 
 
@@ -41,6 +55,7 @@ def element_span(s, start):
 def inject(path, repl):
     p = os.path.join(ROOT, path)
     s = open(p).read()
+    replaced = 0
     for ident in repl.get('__remove__', []):
         m = re.search(rf'<svg\b[^>]*\bid="{re.escape(ident)}"', s)
         if not m:
@@ -52,16 +67,22 @@ def inject(path, repl):
             continue
         if key == 'hero':
             m = re.search(r'<svg\b[^>]*class="hero-fork[^"]*"', s)
+        elif key == 'a10_hero':
+            container = re.search(r'<figure\b[^>]*class="hero-figure[^"]*"[^>]*>', s)
+            m = re.compile(r'<svg\b').search(s, container.end()) if container else None
         else:
             m = re.search(rf'<svg\b[^>]*\bid="{re.escape(key)}"', s)
             if not m and key == 'tdl-u01-s7':
                 m = re.search(r'<svg\b[^>]*\baria-label="O mesmo fato passa por recortes normativos diferentes e gera juízos provisórios diferentes"', s)
+        if not m and key in repl.get('__optional__', []):
+            continue
         if not m:
             raise SystemExit(f'{path}: no <svg> for {key}')
         a, b = element_span(s, m.start())
         s = s[:a] + new + s[b:]
+        replaced += 1
     open(p, 'w').write(s)
-    return sum(not key.startswith('__') for key in repl)
+    return replaced
 
 
 if __name__ == '__main__':
