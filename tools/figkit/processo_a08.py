@@ -21,7 +21,6 @@ def figures():
 
     # The matched exam's exact date and ordinal sequencing; no invented date for Dalvo's filing.
     b=''
-    b += t(34,42,'AVALIAÇÃO 2 · 2015 · Q1',size=13,weight=700)
     b += line(90,157,630,157,w=2)
     xs=[130,560]
     for i,x in enumerate(xs):
@@ -35,7 +34,7 @@ def figures():
     b += t(560,193,'complementa a defesa',size=12,anchor='middle')
     b += t(34,252,'SEROTONINA · SEM DEFESA · SEM ADVOGADO',size=12,weight=700,fill='var(--ink-2)')
     b += t(34,279,'Data da contestação não informada',size=11,fill='var(--ink-2)')
-    timeline=svg('20 15 660 290',b,cls='fig',ident='pci-a08-timeline',label='Sequência dos atos e datas expressamente indicados no enunciado da Avaliação 2 de 2015')
+    timeline=svg('20 88 660 217',b,cls='fig',ident='pci-a08-timeline',label='Sequência dos atos e datas expressamente indicados no enunciado da Avaliação 2 de 2015')
     return claim,timeline
 
 if __name__=='__main__':
