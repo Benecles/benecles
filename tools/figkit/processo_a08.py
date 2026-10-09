@@ -23,15 +23,14 @@ def figures():
     b=''
     b += t(34,42,'AVALIAÇÃO 2 · 2015 · Q1',size=13,weight=700)
     b += line(90,157,630,157,w=2)
-    xs=[130,335,560]
+    xs=[130,560]
     for i,x in enumerate(xs):
-        tone='var(--ink)' if i<2 else 'var(--dif)'
+        tone='var(--ink)' if x==130 else 'var(--dif)'
         b += f'<circle cx="{x}" cy="157" r="9" style="fill:var(--paper);stroke:{tone};stroke-width:3"/>'
     b += t(130,112,'01/04/2015',size=12,weight=700,anchor='middle')
     b += t(130,193,'audiência preliminar',size=12,anchor='middle')
     b += line(335,130,535,130,w=5,tone='conc')
     b += t(435,112,'1ª SEMANA DO PRAZO',size=11,weight=700,anchor='middle',fill='var(--conc)')
-    b += t(335,193,'Dalvo contesta',size=12,anchor='middle')
     b += t(560,112,'13/04/2015',size=12,weight=700,anchor='middle',fill='var(--dif)')
     b += t(560,193,'complementa a defesa',size=12,anchor='middle')
     b += t(34,252,'SEROTONINA · SEM DEFESA · SEM ADVOGADO',size=12,weight=700,fill='var(--ink-2)')
