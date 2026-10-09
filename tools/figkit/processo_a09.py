@@ -3,14 +3,14 @@ from figkit import t, line, svg
 
 
 def citation_record():
-    o = t(35, 48, '2018 · Q4 · ADAMASTOR × FRANCISCO', size=14, weight=700)
+    o = t(35, 48, '2018 · Q4 · CITAÇÃO DE FLORINDA', size=14, weight=700)
     o += line(35, 65, 1040, 65, w=1.4)
     o += line(91, 109, 91, 460, w=2)
     entries = [
-        (135, 'COBRANÇA', 'Francisco é citado para audiência', 'citação para comparecer', 'ink'),
-        (235, 'HORA CERTA', 'Florinda · 1ª tentativa', 'o enunciado descreve a atipicidade', 'conc'),
-        (335, '05 SET.', 'Mandado juntado aos autos', 'a vizinha Valquíria recebe o mandado', 'ink'),
-        (435, '05 SET.', 'Advogada de Florinda comparece', 'há resposta no processo', 'dif'),
+        (135, '1ª VISITA', 'Florinda não é encontrada', 'oficial suspeita de ocultação e marca hora certa', 'conc'),
+        (235, 'DIA SEGUINTE', 'Citação por hora certa', 'mandado cumprido na pessoa da vizinha Valquíria', 'ink'),
+        (335, '05 SET.', 'Mandado juntado aos autos', 'citação por hora certa de Florinda', 'ink'),
+        (435, '05 SET.', 'Advogado de Florinda comparece', 'constituído após a notícia espalhada por Valquíria', 'dif'),
     ]
     for y, when, title, detail, tone in entries:
         o += line(79, y, 103, y, tone=tone, w=3)
@@ -21,7 +21,7 @@ def citation_record():
     o += t(35, 510, 'VERSÃO 1  ·  alternativa d', size=12, fill='var(--dif)', weight=700)
     o += t(540, 510, 'VERSÃO 2  ·  alternativa c', size=12, fill='var(--dif)', weight=700)
     return svg('20 25 1035 510', o, cls='fig', ident='pci-a09-citation-record',
-               label='Autos da questão 4 de 2018: a diligência descrita e o comparecimento da advogada de Florinda no mesmo dia')
+               label='Autos da questão 4 de 2018: primeira diligência sem localizar Florinda, citação por hora certa no dia seguinte, juntada do mandado e comparecimento do advogado em 5 de setembro')
 
 
 def objection_docket():
