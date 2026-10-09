@@ -112,12 +112,13 @@ def render_question(q):
 def render_review(page, questions, index_path):
     source=page.read_text()
     # Keep the current course identity, hero, styling, and course route; replace the page's review content.
-    start=source.index('<nav class="revisao-nav"')
+    source=source.replace('<div role="listitem">Cobertura<b>Semanas 1–9</b></div><div role="listitem">Organização<b>ordem do programa</b></div><div role="listitem">Respostas<b>gabarito comentado</b></div>', '<div role="listitem">Cobertura<span class="title-value">Semanas 1–9</span></div><div role="listitem">Organização<span class="title-value">ordem do programa</span></div><div role="listitem">Respostas<span class="title-value">gabarito comentado</span></div>')
+    if '.titleblock .title-value' not in source: source=source.replace('</style>', '.topic-block .answer-label{display:inline-block;margin-right:5px;font:500 10px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--conc)}.topic-block .frame .answer-label{display:block;margin:0 0 5px}.titleblock .title-value{display:block;font-weight:600}\n</style>', 1)
+    # Offsets are taken after the edits above: computing them first shifted the splice into the hero (gate 09/10).
+    start=source.index('<nav class="revisao-nav"', source.index('</header>'))
     nav_end=source.index('</nav>',start)+len('</nav>')
     intro_start=source.index('<div class="revisao-intro">',nav_end)
     intro_end=source.index('</div>',intro_start)+len('</div>')
-    source=source.replace('<div role="listitem">Cobertura<b>Semanas 1–9</b></div><div role="listitem">Organização<b>ordem do programa</b></div><div role="listitem">Respostas<b>gabarito comentado</b></div>', '<div role="listitem">Cobertura<span class="title-value">Semanas 1–9</span></div><div role="listitem">Organização<span class="title-value">ordem do programa</span></div><div role="listitem">Respostas<span class="title-value">gabarito comentado</span></div>')
-    source=source.replace('</style>', '.topic-block .answer-label{display:inline-block;margin-right:5px;font:500 10px/1.5 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--conc)}.topic-block .frame .answer-label{display:block;margin:0 0 5px}.titleblock .title-value{display:block;font-weight:600}\n</style>', 1)
     nav='''<nav class="revisao-nav" aria-label="Tópicos da revisão">'''+''.join(f'<a href="#{t["id"]}">{esc(t["label"])}</a>' for t in TOPICS)+'''</nav>'''
     intro='''<div class="revisao-intro"><p>Em cada questão, identifique o ato processual, localize a regra e confronte seus requisitos com os fatos narrados. Nas objetivas, teste cada alternativa pela condição legal que decide o caso; nas dissertativas, conclua antes de justificar.</p></div>'''
     blocks=[]
