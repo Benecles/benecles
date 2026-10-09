@@ -1,5 +1,0 @@
-| course | lesson | figure ID | real object on sheet | form | move / claim | verdict |
-|---|---|---|---|---|---|---|
-| Teoria Geral dos Contratos | Index | tgc-index-s1 | Course map: the contract’s life from negotiations through formation, assignment, performance, and termination, with lesson links at their relevant stages | lifecycle map / course navigation | Trace the course’s lessons along the contract’s lifecycle, locating each topic at the stage it governs | keep |
-| Teoria Geral dos Contratos | Revisão P1 | tgc-revisao-p1-s1 | Decorative branching marks with labels for concept, principles, formation, third-party incidents, and classification lessons | decorative hero strip | The opening strip is decorative and carries no substantive claim | redo |
-| Teoria Geral dos Contratos | Revisão P2 | tgc-revisao-p2-s1 | Decorative branching marks with labels for interpretation, revision, assignment, and termination lessons | decorative hero strip | The opening strip is decorative and carries no substantive claim | redo |

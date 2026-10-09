@@ -18,12 +18,22 @@ assetver.run()   # course CSS/JS links carry a hash of the file, so edits reach 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 KEEP = ('.html', '.css', '.js', '.json', '.svg', '.ico', '.png', '.jpg', '.jpeg', '.webp', '.gif', '.woff', '.woff2')
-SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude', 'docs', 'workshop', 'archive', 'gallery'}
-SKIP_FILES = {'offline-manifest.json', 'sw.js', 'lesson-aula06.png', 'benecles-og.png'}  # landing-page images stay out of the readers' offline cache
+SKIP_DIRS = {'.git', 'tools', 'node_modules', '.claude'}
+SKIP_FILES = {'offline-manifest.json', 'sw.js'}
 
 # Retired prototypes and alternate homepages kept for the design archive (Issue #80).
 # Readers in modo avião do not need to download these (~240 KB).
-ARCHIVE_PAGES = set()  # retired prototypes now live in archive/ (skipped as a directory)
+ARCHIVE_PAGES = {
+    'index-alt-a.html',
+    'index-alt-b.html',
+    'index-alt-c.html',
+    'index-before-folio.html',
+    'prototype-folio.html',
+    'a-terra-muda-de-dono.html',
+    'bifurcacao-constitucional.html',
+    'dossie-do-delito.html',
+    'glossario-ancorado.html',
+}
 
 def public_files():
     out = []
@@ -55,8 +65,7 @@ def add_script(path):
     return True
 
 files = public_files()
-NO_READER_TOOLS = {'index.html'}  # the Benecles front door: no offline plane or highlighter
-added = [p for p in files if p.endswith('.html') and p not in NO_READER_TOOLS and add_script(p)]
+added = [p for p in files if p.endswith('.html') and add_script(p)]
 h = hashlib.sha1()
 entries = []
 for p in files:

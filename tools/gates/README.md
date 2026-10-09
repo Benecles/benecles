@@ -5,7 +5,7 @@
 The default target is `http://127.0.0.1:8767/`. With no manifest, the runner captures `/`. Pass a manifest path and output directory as needed:
 
 ```sh
-node \
+/Users/benecles/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node \
   tools/gates/gate.mjs \
   --manifest /absolute/path/to/gate-manifest.json \
   --output /absolute/path/to/captures \

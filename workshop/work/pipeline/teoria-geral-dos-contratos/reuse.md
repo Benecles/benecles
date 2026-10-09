@@ -1,7 +1,0 @@
-# S1 reuse and source caveats
-
-Reused the existing TGC prep inventory and Moodle mapping (`work/contract-prep/01-file-inventory.csv`, `03-moodle-map.md`) and source-derived text already in `work/contract-prep/text/` and `work/contract-prep/text/ocr/`. Those source text files are listed individually in `shelf.csv` with hashes; duplicate OCR filename variants remain distinct paths. Prep depth notes were not treated as source authority. The requested `work/book-extracts/`, `work/contract-depth/extracts/`, and `work/source-intake-2026-09-28/` directories are absent on this S0 branch.
-
-The local basic books are Venosa, 17ª ed. (2016), and Caio Mário, vol. III (2014); both predate Lei 13.874/2019. The plan-linked current editions are unavailable locally. Shelf rows for article-level CC, CDC, CF/88, and Lei 13.874/2019 text are marked missing as local article extracts; availability notes point to official consolidated legislation, and no whole statute is included.
-
-The located Gerson Branco article is “Solidariedade social e socialidade na disciplina da liberdade contratual” (2003), with duplicate/provenance copies and existing searchable text listed. It predates the 2019 amendments and does not establish the current arts. 421/421-A framework. The supplementary Branco/Silva 2023 book is not on disk; a current Gerson Branco source for arts. 421/421-A remains a gap to resolve before S2/S3 use. Official current-term exam papers/keys are also not located; available peer exam and exercise material is labeled non-authoritative.
