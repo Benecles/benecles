@@ -6,17 +6,23 @@ def protocol():
     o += t(28,67,'PEDIDO DE INFORMAÇÃO · ÚLTIMO DIA',size=11,fill='var(--ink-2)',weight=600)
     o += line(28,82,572,82,w=1.5)
     # Two actual receipt tracks; the time limit is encoded by a boundary, not prose cells.
-    for y,lab,tone,end,limit in [(156,'PETIÇÃO EM PAPEL','dif',350,420),(330,'ATO ELETRÔNICO','conc',490,490)]:
+    for y,lab,tone,end,limit in [(156,'PETIÇÃO EM PAPEL','dif',350,420),(330,'ATO ELETRÔNICO','conc',555,555)]:
         o += t(34,y-32,lab,size=13,weight=700,fill=f'var(--{tone})')
         o += line(45,y,555,y,w=2,tone='muted')
         o += line(45,y-12,45,y+12,w=2)
-        o += line(555,y-12,555,y+12,w=2)
+        if tone == 'dif':
+            o += line(555,y-12,555,y+12,w=2)
         o += f'<circle cx="{end}" cy="{y}" r="12" style="fill:var(--{tone}-wash);stroke:var(--{tone});stroke-width:2"/>'
         o += t(45,y+31,'INÍCIO',size=10,fill='var(--ink-2)')
-        o += t(555,y+40,'FIM DO DIA',size=10,fill='var(--ink-2)',anchor='end')
-        o += line(limit,y-24,limit,y+25,tone=tone,w=2.4)
-        o += t(limit,y-38,'CORTE',size=10,fill=f'var(--{tone})',anchor='middle',weight=700)
-        o += t(34,y+59,'EXPEDIENTE DO FÓRUM' if tone=='dif' else '24:00 · HORÁRIO DO JUÍZO',size=11,fill='var(--ink)',weight=600)
+        if tone == 'dif':
+            o += t(555,y+40,'FIM DO DIA',size=10,fill='var(--ink-2)',anchor='end')
+            o += line(limit,y-24,limit,y+25,tone=tone,w=2.4)
+            o += t(limit,y-38,'CORTE',size=10,fill=f'var(--{tone})',anchor='middle',weight=700)
+            o += t(34,y+59,'EXPEDIENTE DO FÓRUM',size=11,fill='var(--ink)',weight=600)
+        else:
+            o += line(limit,y-16,limit,y+15,tone=tone,w=2.4)
+            o += t(limit,y-38,'24:00 · HORÁRIO DO JUÍZO',size=11,fill='var(--ink)',anchor='end',weight=600)
+            o += t(555,y+54,'FIM DO DIA',size=10,fill='var(--ink-2)',anchor='end')
     o += t(300,240,'O REGISTRO PRECISA FICAR ANTES DO CORTE',size=11,anchor='middle',weight=600)
     return svg('18 20 564 385',o,cls='fig',ident='pci-a06-protocol',label='Dois recibos de prática do ato com cortes distintos no último dia: expediente do fórum para papel e meia-noite do juízo para ato eletrônico')
 
@@ -38,10 +44,12 @@ def carta():
     o += line(126,326,460,326,w=1)
     o += t(126,350,'ASSINATURA DO JUIZ',size=10,fill='var(--ink-2)',weight=600)
     o += line(126,360,276,360,w=1)
-    o += t(28,435,'RECUSA: REQUISITO AUSENTE · INCOMPETÊNCIA · DÚVIDA DE AUTENTICIDADE',size=10,fill='var(--conc)',weight=700)
-    o += t(28,462,'DECISÃO MOTIVADA  ·  DEVOLUÇÃO / REMESSA COMPETENTE',size=10,weight=600)
-    o += t(28,489,'CARTA CUMPRIDA → RETORNO EM 10 DIAS',size=10,fill='var(--ink-2)',weight=600)
-    return svg('18 14 564 500',o,cls='fig',ident='pci-a06-letter',label='Espécime material de carta precatória com juízos, objeto, peças, prazo, intimação e assinatura, acompanhado dos fundamentos de recusa e retorno')
+    o += t(28,426,'RECUSA · REQUISITO LEGAL AUSENTE',size=11,fill='var(--conc)',weight=700)
+    o += t(28,444,'INCOMPETÊNCIA MATERIAL OU HIERÁRQUICA',size=11,fill='var(--conc)',weight=700)
+    o += t(28,462,'DÚVIDA DE AUTENTICIDADE',size=11,fill='var(--conc)',weight=700)
+    o += t(28,484,'DECISÃO MOTIVADA · DEVOLUÇÃO / REMESSA',size=11,weight=600)
+    o += t(28,506,'CARTA CUMPRIDA → RETORNO EM 10 DIAS',size=11,fill='var(--ink-2)',weight=600)
+    return svg('18 14 564 520',o,cls='fig',ident='pci-a06-letter',label='Espécime material de carta precatória com juízos, objeto, peças, prazo, intimação e assinatura, acompanhado dos fundamentos de recusa e retorno')
 
 if __name__ == '__main__':
     print(protocol()); print(carta())
