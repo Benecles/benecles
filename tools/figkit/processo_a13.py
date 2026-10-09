@@ -62,7 +62,6 @@ def ruler_panel():
     o += f'<path d="M{xc-9} 211L{xc} 198L{xc+9} 211" style="fill:none;stroke:var(--conc);stroke-width:2.2"/>'
     o += t(xc-8, 173, 'TETO', size=11, anchor='end', fill='var(--conc)', weight=700)
     o += t(xc, 388, '30 DIAS', size=18, anchor='end', fill='var(--conc)', weight=700, ls='.04em')
-    o += t(54, 388, '0', size=11, fill='var(--ink-2)', weight=600)
     o += t(54, 440, 'NUNCA SUPERIOR A', size=11, fill='var(--ink-2)', weight=600)
     o += t(1005, 440, 'MÁXIMO, NÃO ESPERA OBRIGATÓRIA', size=11, anchor='end', fill='var(--ink-2)', weight=600)
     # Empty track beyond the cap shows there is no further statutory interval.
