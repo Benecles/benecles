@@ -71,7 +71,7 @@ def page():
     return f'''<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Figuras · referências · Ordenações Filipinas</title>
 <link rel="stylesheet" href="../courses/controle-de-constitucionalidade/assets/controle.css">
-<link rel="stylesheet" href="../courses/processo-civil-i/assets/aula-17.css">
+<link rel="stylesheet" href="../courses/processo-civil-i/assets/aula-17.css"><link rel="stylesheet" href="../courses/processo-civil-i/assets/aula-03.css">
 <style>body{{max-width:1180px;margin:0 auto;padding:28px 16px 80px}}
 h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--serif,serif);color:var(--ink-2);max-width:62ch;margin:0 0 30px}}
 .ref{{border-top:1.5px solid var(--ink);padding:16px 0 26px}} .ref header{{display:flex;gap:14px;font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase}}
@@ -82,7 +82,7 @@ h1{{font:750 34px/1.05 var(--sans);margin:0 0 6px}} .lede{{font:17px/1.5 var(--s
 .s:has(.figkit-document){{border:0;background:none;padding:0}}
 .s svg{{display:block;width:100%;height:auto;opacity:1!important;visibility:visible!important;position:static!important;transform:none!important}}</style></head><body>
 <h1>Figuras · referências</h1><p class="lede">Uma referência feita à mão por gênero, cada uma refazendo uma figura real do site. É o padrão contra o qual as outras são julgadas.</p>
-{processo_a17.specimen_section()}{processo_a03.specimen_section()}{''.join(out)}{processo_a15.specimen_section()}{processo_a11.specimen_sections()}
+{processo_a17.specimen_section()}{processo_a03.specimen_section()}{processo_a03.specimen_figures()}{''.join(out)}{processo_a15.specimen_section()}{processo_a11.specimen_sections()}
 <script src="../courses/processo-civil-i/assets/aula-17.js"></script><script src="../courses/processo-civil-i/assets/aula-03.js"></script></body></html>'''
 
 

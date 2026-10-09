@@ -49,3 +49,19 @@
 }
 @media(prefers-reduced-motion:reduce){.a03-classifier td{transition:none}}
 @media print{.a03-classifier{box-shadow:none;break-inside:avoid;page-break-inside:avoid}}
+.a03-figure{max-width:1180px;margin:24px auto 32px;padding:0 clamp(16px,4vw,48px)}
+.a03-figure svg{display:block;width:100%;height:auto;background:var(--paper);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.a03-figure .kicker{font:700 16px var(--mono);letter-spacing:.08em;fill:var(--ink-2)}
+.a03-figure .side{font:700 17px var(--mono);letter-spacing:.08em;fill:var(--ink)}
+.a03-figure .name{font:600 18px var(--sans);fill:var(--ink)}
+.a03-figure .tiny{font:600 13px var(--mono);letter-spacing:.06em;fill:var(--ink-2)}
+.a03-figure .person{fill:var(--paper);stroke:var(--conc);stroke-width:3}
+.a03-figure .axis{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 5}
+.a03-figure .relation{stroke:var(--ink-2);stroke-width:2}
+.a03-figure .bracket{stroke:var(--dif);stroke-width:4}
+.a03-figure .filed{stroke:var(--conc);stroke-width:3}
+.a03-figure .outcome{stroke:var(--dif);stroke-width:3}
+.a03-figure .docket{fill:var(--conc-wash);stroke:var(--conc);stroke-width:2}
+.a03-figure .paper{fill:var(--dif-wash);stroke:var(--dif);stroke-width:2}
+.a03-figure .inside{font:600 13px var(--mono);fill:var(--ink)}
+.a03-figure figcaption{max-width:72ch;margin:9px 0 0;font:16px/1.5 var(--serif);color:var(--ink-2)}

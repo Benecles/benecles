@@ -1,6 +1,6 @@
 """Processo Civil I · Aula 03: a two-question litisconsortium classifier."""
 from pathlib import Path
-import os
+import os, re
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGE = ROOT / 'courses' / 'processo-civil-i' / 'aula-03.html'
@@ -39,10 +39,48 @@ def instrument():
 </figure>'''
 
 
+def mixed_poles():
+    """The real 2015/1 exam arrangement: two people in each pole."""
+    return '''<figure class="a03-figure" id="a03-mixed-poles" aria-labelledby="a03-mixed-title">
+<svg class="fig figkit" viewBox="0 0 820 300" role="img" aria-labelledby="a03-mixed-title a03-mixed-desc">
+<title id="a03-mixed-title">Avaliação 1 de 2015/1: pluralidade nos dois polos</title><desc id="a03-mixed-desc">Gustavo e Maique aparecem como autores no mesmo processo; Valter e Os Galos Primos aparecem como réus. Há pluralidade ativa e passiva, configuração mista.</desc>
+<text x="410" y="30" text-anchor="middle" class="kicker">AVALIAÇÃO 1 · 2015/1 · Q3(e)</text>
+<text x="105" y="70" text-anchor="middle" class="side">AUTORES</text><text x="715" y="70" text-anchor="middle" class="side">RÉUS</text>
+<path d="M410 54V267" class="axis"/><text x="410" y="286" text-anchor="middle" class="tiny">UM PROCESSO</text>
+<circle cx="105" cy="130" r="28" class="person"/><circle cx="105" cy="210" r="28" class="person"/>
+<text x="155" y="136" class="name">Gustavo</text><text x="155" y="216" class="name">Maique</text>
+<circle cx="715" cy="130" r="28" class="person"/><circle cx="715" cy="210" r="28" class="person"/>
+<text x="665" y="136" text-anchor="end" class="name">Valter</text><text x="665" y="216" text-anchor="end" class="name">Os Galos Primos</text>
+<path d="M350 114V226M470 114V226" class="bracket"/>
+</svg><figcaption>Dois autores e dois réus no mesmo processo formam pluralidade ativa e passiva: litisconsórcio misto.</figcaption></figure>'''
+
+
+def didier_case():
+    """A real case thread, with the absent co-borrower outside the filed action."""
+    return '''<figure class="a03-figure" id="a03-didier-case" aria-labelledby="a03-didier-title">
+<svg class="fig figkit" viewBox="0 0 820 300" role="img" aria-labelledby="a03-didier-title a03-didier-desc">
+<title id="a03-didier-title">REsp 1.222.822, como relatado por Didier</title><desc id="a03-didier-desc">Mutuários casados figuram na relação de financiamento. Só o marido ajuizou a ação revisional. O STJ reconheceu litisconsórcio ativo necessário no relato de Didier; ele critica a consequência.</desc>
+<text x="410" y="30" text-anchor="middle" class="kicker">FINANCIAMENTO IMOBILIÁRIO · RESP 1.222.822</text>
+<text x="130" y="75" text-anchor="middle" class="side">MUTUÁRIOS</text><text x="410" y="75" text-anchor="middle" class="side">AÇÃO REVISIONAL</text><text x="690" y="75" text-anchor="middle" class="side">RESULTADO RELATADO</text>
+<circle cx="90" cy="145" r="25" class="person"/><circle cx="170" cy="145" r="25" class="person"/>
+<text x="90" y="198" text-anchor="middle" class="name">marido</text><text x="170" y="198" text-anchor="middle" class="name">esposa</text>
+<path d="M95 235H165" class="relation"/><text x="130" y="260" text-anchor="middle" class="tiny">contrato comum</text>
+<path d="M210 145H320" class="relation filed"/><circle cx="410" cy="145" r="50" class="docket"/><text x="410" y="141" text-anchor="middle" class="inside">só o marido</text><text x="410" y="161" text-anchor="middle" class="inside">ajuizou</text>
+<path d="M460 145H620" class="relation outcome"/><path d="M620 108H760V182H620Z" class="paper"/><text x="690" y="137" text-anchor="middle" class="inside">extinta sem</text><text x="690" y="157" text-anchor="middle" class="inside">mérito</text>
+<text x="410" y="286" text-anchor="middle" class="tiny">STJ: necessidade ativa · crítica de Didier: barreira à revisão</text>
+</svg><figcaption>O caso atribuído a Didier põe em discussão a participação necessária no polo ativo; a unidade do mérito exige análise própria.</figcaption></figure>'''
+
+
 def specimen_section():
     return f'''<section class="ref native-ref"><header><span class="g">Instrumento · classificação em dois eixos</span><span class="v">verbo · classificar</span></header>
 <h2>Processo · Aula 03 · litisconsórcio</h2><p>Duas respostas independentes localizam o caso em uma das quatro combinações do CPC.</p><p class="r">novo componente · pci-a03-classifier</p>
 {instrument()}</section>'''
+
+
+def specimen_figures():
+    return f'''<section class="ref native-ref"><header><span>Objeto · polos da demanda</span><span class="v">verbo · localizar</span></header>
+<h2>Processo · Aula 03 · Avaliação 1 de 2015/1</h2><p>A posição dos litigantes e a quantidade em cada lado permitem classificar a configuração.</p><p class="r">novos componentes · pci-a03-mixed-poles / pci-a03-didier-case</p>
+{mixed_poles()}{didier_case()}</section>'''
 
 
 def specimen_page():
@@ -71,6 +109,17 @@ def install():
     return PAGE
 
 
+def install_figures():
+    source = PAGE.read_text(encoding='utf-8')
+    for figure_id, render in (('a03-mixed-poles', mixed_poles), ('a03-didier-case', didier_case)):
+        pattern = re.compile(r'<figure class="a03-figure" id="' + re.escape(figure_id) + r'".*?</figure>', re.S)
+        source, count = pattern.subn(render(), source, count=1)
+        if count != 1:
+            raise SystemExit(f'expected one #{figure_id} in {PAGE}')
+    PAGE.write_text(source, encoding='utf-8')
+    return PAGE
+
+
 if __name__ == '__main__':
     probe = os.environ.get('FIGKIT_PROBE')
     if probe:
@@ -78,4 +127,5 @@ if __name__ == '__main__':
         print(probe)
     else:
         print(install())
+        print(install_figures())
     print('no text warnings')
