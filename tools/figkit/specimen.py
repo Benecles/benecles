@@ -2,7 +2,7 @@
 Run: python3 tools/figkit/specimen.py"""
 import os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a14, processo_a15, processo_a17, processo_a18, processo_a18_house, proc_a10
+import figkit, controle_a01, delito_u01, delito_u04, contratos_a01, controle_a27, delito_u05, latam_a02, consti_a04, processo_a01, processo_a11, processo_a13, processo_a14, processo_a15, processo_a17, processo_a18, processo_a18_house, proc_a10
 
 ROOT = os.path.join(os.path.dirname(__file__), '..', '..')
 
@@ -43,6 +43,9 @@ ENTRIES = [
     ('Documento · anatomia', 'ler', 'Processo · Aula 01 · petição inicial',
      'A petição como peça real: ler os incisos do art. 319 nos campos onde aparecem e localizar o contrato anexo do art. 320.',
      'substitui pci-a01-s2', [processo_a01.panel()], 'processo-civil-i'),
+    ('Autos · documento e hipótese', 'localizar', 'Processo · Aula 13 · histórico e variação',
+     'O fólio mantém a sentença de 2016 como registro; a variação marca uma data controvertida e a pergunta de prova sem atribuir a regra atual ao caso.',
+     'novo componente · pci-a13-docket / ruler / variation', [processo_a13.docket_panel(), processo_a13.ruler_panel(), processo_a13.variation_panel()], 'processo-civil-i'),
     ('Autos · tempo medido', 'ordenar', 'Processo · Aula 10 · Florianópolis',
      'Compra informada por mês, ajuizamento e decisão por dia: a escala preserva a precisão de cada registro.',
      'novo componente · pci-a10-docket', [proc_a10.hero()], 'processo-civil-i'),
