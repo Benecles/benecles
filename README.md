@@ -2,7 +2,7 @@
 
 A paper-inspired reading collection for law-school study guides.
 
-Live: https://benecles.github.io/ordenacoes-filipinas/
+Live: https://benecles.dev/
 
 ## Courses
 
